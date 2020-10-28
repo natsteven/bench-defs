@@ -1,4 +1,4 @@
-# SV-COMP Replicability
+# SV-COMP Reproducibility
 This repository describes the configuration of the competition machines (below)
 and the benchmark definition for each verifier (folder benchmark-defs),
 in order to make results of the competition more replicable.
