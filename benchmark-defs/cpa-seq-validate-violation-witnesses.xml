@@ -17,7 +17,7 @@
   <option name="-setprop">cpa.smg.zeroingMemoryAllocation=calloc,kzalloc,kcalloc,kzalloc_node,ldv_zalloc</option>
   <option name="-setprop">cpa.smg.deallocationFunctions=free,kfree,kfree_const</option>
 
-<rundefinition name="sv-comp21_unreach-call">
+<rundefinition name="SV-COMP21_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -61,6 +61,10 @@
     <includesfile>../../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
     <propertyfile expectedverdict="false">../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-XCSP">
+    <includesfile>../../sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
+    <propertyfile expectedverdict="false">../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
@@ -75,9 +79,13 @@
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="false">../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64Large-ReachSafety">
+    <includesfile>../../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</includesfile>
+    <propertyfile expectedverdict="false">../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_valid-memsafety">
+<rundefinition name="SV-COMP21_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -116,7 +124,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_no-overflow">
+<rundefinition name="SV-COMP21_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -135,7 +143,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_termination">
+<rundefinition name="SV-COMP21_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 

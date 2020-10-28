@@ -8,7 +8,7 @@
   
   <option name="--full-output"/>
   
-<rundefinition name="sv-comp21_unreach-call">
+<rundefinition name="SV-COMP21_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -73,7 +73,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_valid-memsafety">
+<rundefinition name="SV-COMP21_valid-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -109,7 +109,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_no-overflow">
+<rundefinition name="SV-COMP21_no-overflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -125,7 +125,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp21_termination">
+<rundefinition name="SV-COMP21_termination">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/termination.prp</propertyfile>
