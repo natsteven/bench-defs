@@ -13,7 +13,7 @@ fi
 
 # Prepare config info
 PROVENANCEFILE="`pwd`/provenance.txt";
-PROVENANCEVERIFIER="./results-logs/${VERIFIER}-config.txt";
+PROVENANCEVERIFIER="./results-logs/${VERIFIER}-provenance.txt";
 cp -f ${PROVENANCEFILE} ${PROVENANCEVERIFIER};
 echo "Archive: ${VERIFIER}.zip-sha1-"`shasum ${ARCHIVE} | sed "s/\(.\{10\}\).*/\1/"` >> ${PROVENANCEVERIFIER};
 echo "on `date -Iminutes`" >> ${PROVENANCEVERIFIER};
