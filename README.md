@@ -7,7 +7,7 @@ in order to make results of the competition more replicable.
 ## Setup
 The following steps setup the benchmarking environment:
 - `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git .`
-- `make init`
+- `make init` (takes a while: downloads several GB of data from repositories)
 - `make update`
 
 ## Unpacking
