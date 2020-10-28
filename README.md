@@ -4,6 +4,19 @@ and the benchmark definition for each verifier (folder benchmark-defs),
 in order to make results of the competition more replicable.
 
 
+## Setup
+The following steps setup the benchmarking environment:
+- git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git .
+- make init
+- make update
+
+## Unpacking
+The following step unpacks tool `A`:
+- make bin/A
+
+## Benchmarking
+- TODO
+
 ## Ubuntu Packages on Apollon Machines
 
 ### Docker Image

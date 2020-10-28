@@ -1,0 +1,9 @@
+[submodule "benchexec"]
+	path = benchexec
+	url = https://github.com/sosy-lab/benchexec
+[submodule "archives"]
+	path = archives
+	url = https://gitlab.com/sosy-lab/sv-comp/archives-2021
+[submodule "sv-benchmarks"]
+	path = sv-benchmarks
+	url = https://github.com/sosy-lab/sv-benchmarks
