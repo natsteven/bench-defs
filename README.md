@@ -6,13 +6,13 @@ in order to make results of the competition more replicable.
 
 ## Setup
 The following steps setup the benchmarking environment:
-- git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git .
-- make init
-- make update
+- `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git .`
+- `make init`
+- `make update`
 
 ## Unpacking
 The following step unpacks tool `A`:
-- make bin/A
+- `make bin/A`
 
 ## Benchmarking
 - TODO
