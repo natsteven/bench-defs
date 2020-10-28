@@ -1,4 +1,4 @@
-competition: sv-comp20
+competition: SV-COMP21
 
 verifiers:
   - 2ls
@@ -30,8 +30,18 @@ verifiers:
   - jdart
   - spf
 
+# Properties used in the competition
+properties:
+    - no-overflow
+    - termination
+    - unreach-call
+    - valid-memcleanup
+    - valid-memsafety
+    - assert_java
+
 categories:
   ReachSafety:
+    properties: unreach-call
     categories:
       - ReachSafety-Arrays
       - ReachSafety-BitVectors
@@ -43,6 +53,7 @@ categories:
       - ReachSafety-ProductLines
       - ReachSafety-Recursive
       - ReachSafety-Sequentialized
+      - ReachSafety-XCSP
     verifiers:
       - 2ls
       - brick
@@ -73,6 +84,9 @@ categories:
       - metaval-correctness
 
   MemSafety:
+    properties:
+      - valid-memsafety
+      - valid-memcleanup
     categories:
       - MemSafety-Arrays
       - MemSafety-Heap
@@ -104,6 +118,7 @@ categories:
       - metaval-correctness
 
   ConcurrencySafety:
+    properties: unreach-call
     categories:
       - ConcurrencySafety-Main
     verifiers:
@@ -124,6 +139,7 @@ categories:
       - yogar-cbmc
 
   NoOverflows:
+    properties: no-overflow
     categories:
       - NoOverflows-BitVectors
       - NoOverflows-Other
@@ -152,6 +168,7 @@ categories:
       - metaval-correctness
 
   Termination:
+    properties: termination
     categories:
       - Termination-MainControlFlow
       - Termination-MainHeap
@@ -175,11 +192,16 @@ categories:
       - metaval-violation
 
   SoftwareSystems:
+    properties:
+      - unreach-call
+      - no-overflow
+      - valid-memsafety
     categories:
       - SoftwareSystems-AWS-C-Common-ReachSafety
       - SoftwareSystems-BusyBox-MemSafety
       - SoftwareSystems-BusyBox-NoOverflows
       - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+      - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - SoftwareSystems-OpenBSD-MemSafety
     verifiers:
       - 2ls
@@ -205,6 +227,12 @@ categories:
       - metaval-correctness
 
   Overall:
+    properties:
+        - no-overflow
+        - termination
+        - unreach-call
+        - valid-memcleanup
+        - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -227,6 +255,11 @@ categories:
       - veriabs
 
   FalsificationOverall:
+    properties:
+        - no-overflow
+        - unreach-call
+        - valid-memcleanup
+        - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -248,6 +281,8 @@ categories:
       - veriabs
 
   JavaOverall:
+    properties:
+      - assert_java
     categories:
       - ReachSafety-Java
     verifiers:
@@ -269,6 +304,7 @@ categories_process_order:
   - ReachSafety-ProductLines
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
+  - ReachSafety-XCSP
   - ReachSafety
   - MemSafety-Arrays
   - MemSafety-Heap
@@ -290,6 +326,7 @@ categories_process_order:
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
   - SoftwareSystems
   - FalsificationOverall
@@ -309,6 +346,7 @@ categories_table_order:
   - ReachSafety-ProductLines
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
+  - ReachSafety-XCSP
   - MemSafety
   - MemSafety-Arrays
   - MemSafety-Heap
@@ -330,6 +368,7 @@ categories_table_order:
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
   - FalsificationOverall
   - Overall
