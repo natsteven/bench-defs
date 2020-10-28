@@ -53,6 +53,7 @@ categories:
       - ReachSafety-ProductLines
       - ReachSafety-Recursive
       - ReachSafety-Sequentialized
+      - ReachSafety-XCSP
     verifiers:
       - 2ls
       - brick
@@ -200,6 +201,7 @@ categories:
       - SoftwareSystems-BusyBox-MemSafety
       - SoftwareSystems-BusyBox-NoOverflows
       - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+      - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - SoftwareSystems-OpenBSD-MemSafety
     verifiers:
       - 2ls
@@ -302,6 +304,7 @@ categories_process_order:
   - ReachSafety-ProductLines
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
+  - ReachSafety-XCSP
   - ReachSafety
   - MemSafety-Arrays
   - MemSafety-Heap
@@ -323,6 +326,7 @@ categories_process_order:
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
   - SoftwareSystems
   - FalsificationOverall
@@ -342,6 +346,7 @@ categories_table_order:
   - ReachSafety-ProductLines
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
+  - ReachSafety-XCSP
   - MemSafety
   - MemSafety-Arrays
   - MemSafety-Heap
@@ -363,6 +368,7 @@ categories_table_order:
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
   - FalsificationOverall
   - Overall
