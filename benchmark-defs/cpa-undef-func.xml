@@ -75,6 +75,9 @@
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
   </tasks>
+  <tasks name="MemSafety-Juliet">
+    <includesfile>../../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+  </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>

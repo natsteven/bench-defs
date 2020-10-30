@@ -103,6 +103,10 @@
     <includesfile>../../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile expectedverdict="true">../../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
+  <tasks name="MemSafety-Juliet">
+    <includesfile>../../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+    <propertyfile expectedverdict="true">../../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
