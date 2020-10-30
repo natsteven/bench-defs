@@ -135,7 +135,7 @@ def _check_task_defs_match_set(xml_file: Path, /, tasks_dir: Path):
             included_set = Path(include.text)
             benchmark_dir = (xml_file.parent / included_set.parent).resolve()
             expected_dir = tasks_dir.resolve()
-            if benchmark_dir != expected_dir:
+            if expected_dir.exists() and benchmark_dir != expected_dir:
                 errors.append(
                     "Expected benchmark directory to be {} for tasks {} (was {})".format(
                         expected_dir, name, benchmark_dir
@@ -250,9 +250,17 @@ def main(argv=None):
     category_info = parse_yaml(args.category_structure)
     verifiers_in_overall = _verifiers_in_overall(category_info)
     success = True
+    if not args.tasks_directory or not args.tasks_directory.exists():
+        info(
+            f"Tasks directory doesn't exist. Will skip some checks. (Directory: {str(args.tasks_directory)})"
+        )
     for bench_def in args.benchmark_definition:
         success &= _check_bench_def(bench_def, tasks_dir=args.tasks_directory)
-        if bench_def.name in verifiers_in_overall:
+        if (
+            args.tasks_directory
+            and args.tasks_directory.exists()
+            and bench_def.name in verifiers_in_overall
+        ):
             success &= _check_all_sets_used(
                 bench_def,
                 tasks_directory=args.tasks_directory,
