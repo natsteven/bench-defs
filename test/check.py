@@ -188,7 +188,7 @@ def _check_bench_def(xml: Path, /, tasks_dir: Path):
         error(xml)
         for msg in errors:
             error(msg)
-    return bool(errors)
+    return not errors
 
 
 def parse_yaml(yaml_file):
