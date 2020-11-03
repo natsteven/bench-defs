@@ -208,7 +208,8 @@ def parse_args(argv):
     )
     parser.add_argument(
         "--tasks-directory",
-        default="sv-benchmarks/c",
+        dest="tasks_base_dir",
+        default="sv-benchmarks",
         required=False,
         help="directory to benchmark tasks",
     )
@@ -221,7 +222,7 @@ def parse_args(argv):
     args = parser.parse_args(argv)
 
     args.category_structure = Path(args.category_structure)
-    args.tasks_directory = Path(args.tasks_directory)
+    args.tasks_base_dir = Path(args.tasks_base_dir)
     args.benchmark_definition = [
         Path(bench_def) for bench_def in args.benchmark_definition
     ]
@@ -240,7 +241,16 @@ def parse_args(argv):
 
 def _verifiers_in_overall(category_info):
     return [
-        v + BENCHDEF_SUFFIX for v in category_info["categories"]["Overall"]["verifiers"]
+        v + BENCHDEF_SUFFIX
+        for v in category_info["categories"]["Overall"]["verifiers"]
+        + category_info["categories"]["JavaOverall"]["verifiers"]
+    ]
+
+
+def _verifiers_in_java(category_info):
+    return [
+        v + BENCHDEF_SUFFIX
+        for v in category_info["categories"]["JavaOverall"]["verifiers"]
     ]
 
 
@@ -251,21 +261,23 @@ def main(argv=None):
 
     category_info = parse_yaml(args.category_structure)
     verifiers_in_overall = _verifiers_in_overall(category_info)
+    java_verifiers = _verifiers_in_java(category_info)
     success = True
-    if not args.tasks_directory or not args.tasks_directory.exists():
+    if not args.tasks_base_dir or not args.tasks_base_dir.exists():
         info(
-            f"Tasks directory doesn't exist. Will skip some checks. (Directory: {str(args.tasks_directory)})"
+            f"Tasks directory doesn't exist. Will skip some checks. (Directory: {str(args.tasks_base_dir)})"
         )
     for bench_def in args.benchmark_definition:
-        success &= _check_bench_def(bench_def, tasks_dir=args.tasks_directory)
-        if (
-            args.tasks_directory
-            and args.tasks_directory.exists()
-            and bench_def.name in verifiers_in_overall
-        ):
+        if bench_def.name in java_verifiers:
+            tasks_directory = args.tasks_base_dir / "java"
+        else:
+            tasks_directory = args.tasks_base_dir / "c"
+
+        success &= _check_bench_def(bench_def, tasks_dir=tasks_directory)
+        if tasks_directory.exists() and bench_def.name in verifiers_in_overall:
             success &= _check_all_sets_used(
                 bench_def,
-                tasks_directory=args.tasks_directory,
+                tasks_directory=tasks_directory,
                 exceptions=ALLOWLIST_TASK_SETS,
             )
 
