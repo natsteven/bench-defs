@@ -18,6 +18,8 @@ ALLOWLIST_TASK_SETS = [
     "NoDataRace-Main.set",
     # only properties not used in SV-COMP
     "SoftwareSystems-SQLite-MemSafety.set",
+    # unused
+    "Unused_Juliet.set",
 ]
 
 COLOR_RED = "\033[31;1m"
@@ -170,7 +172,7 @@ def _check_all_sets_used(
 
     assert len(sets_included) <= len(
         all_sets
-    ), f"More sets used than exist for {str(bench_def)} and {str(tasks_directory)}"
+    ), f"More sets used than exist for {str(bench_def)} and {str(tasks_directory)}: {sets_included - all_sets}"
     missing_sets = all_sets - sets_included
 
     if missing_sets:
