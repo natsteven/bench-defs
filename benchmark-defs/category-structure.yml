@@ -203,6 +203,9 @@ categories:
       - SoftwareSystems-DeviceDriversLinux64-ReachSafety
       - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - SoftwareSystems-OpenBSD-MemSafety
+      - SoftwareSystems-uthash-MemSafety
+      - SoftwareSystems-uthash-NoOverflows
+      - SoftwareSystems-uthash-ReachSafety
     verifiers:
       - 2ls
       - cbmc
@@ -328,6 +331,9 @@ categories_process_order:
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
+  - SoftwareSystems-uthash-MemSafety
+  - SoftwareSystems-uthash-NoOverflows
+  - SoftwareSystems-uthash-ReachSafety
   - SoftwareSystems
   - FalsificationOverall
   - Overall
@@ -370,6 +376,9 @@ categories_table_order:
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - SoftwareSystems-OpenBSD-MemSafety
+  - SoftwareSystems-uthash-MemSafety
+  - SoftwareSystems-uthash-NoOverflows
+  - SoftwareSystems-uthash-ReachSafety
   - FalsificationOverall
   - Overall
   - JavaOverall
