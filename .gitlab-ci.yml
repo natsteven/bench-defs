@@ -10,14 +10,11 @@ image: ${CI_REGISTRY_IMAGE}/test
 
 # Do not checkout any submodules for now; sv-benchmarks and archives-20xx are just too big
 variables:
-  GIT_SUBMODULE_STRATEGY: none
+  GIT_SUBMODULE_STRATEGY: normal
   GIT_DEPTH: "1"
 
 check-definitions:
   stage: checks
-  before_script:
-    - git submodule sync
-    - git submodule update --init sv-benchmarks
   script:
     - ./test/check.py benchmark-defs/*xml
 
