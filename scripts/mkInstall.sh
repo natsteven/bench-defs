@@ -4,7 +4,8 @@
 # @description Unzips and checks the structure of tool archive.
 
 VERIFIER=$1;
-ARCHIVE="`pwd`/archives/2021/${VERIFIER}.zip";
+YEAR=`scripts/parseInitConfig.py --get-year benchmark-defs/category-structure.yml`;
+ARCHIVE="`pwd`/archives/${YEAR}/${VERIFIER}.zip";
 
 if [ -z $VERIFIER ]; then
   echo "Error: No verifier specified.";

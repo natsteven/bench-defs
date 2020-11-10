@@ -2,8 +2,8 @@
 
 # @title Write provenance information to config file
 # @description Prepare Phase: write info about competition and components used to file
-COMPETITIONNAME="SV-COMP";
-YEAR="2021";
+COMPETITIONNAME=`scripts/parseInitConfig.py --get-comp benchmark-defs/category-structure.yml`;
+YEAR=`scripts/parseInitConfig.py --get-year benchmark-defs/category-structure.yml`;
 TARGETSERVER=`echo ${COMPETITIONNAME} | tr [:upper:] [:lower:]`
 export PROVENANCEFILE="`pwd`/provenance.txt";
 rm -f "$PROVENANCEFILE"
