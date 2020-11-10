@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This file is part of the competition environment.
+#
+# SPDX-FileCopyrightText: 2011-2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
 # @title Install Tool Archive
 # @description Unzips and checks the structure of tool archive.
 
