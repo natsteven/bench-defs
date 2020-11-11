@@ -54,6 +54,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-Combinations">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 
 </rundefinition>
 

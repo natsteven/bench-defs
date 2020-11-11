@@ -59,6 +59,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-Combinations">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+    <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
