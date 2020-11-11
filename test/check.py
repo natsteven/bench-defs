@@ -11,15 +11,15 @@ import yaml
 BENCHDEF_SUFFIX = ".xml"
 ALLOWLIST_TASK_SETS = [
     # only properties not used in SV-COMP
-    "DefinedBehavior-TerminCrafted.set",
+    "DefinedBehavior-TerminCrafted",
     # only properties not used in SV-COMP
-    "DefinedBehavior-Arrays.set",
+    "DefinedBehavior-Arrays",
     # only properties not used in SV-COMP
-    "NoDataRace-Main.set",
+    "NoDataRace-Main",
     # only properties not used in SV-COMP
-    "SoftwareSystems-SQLite-MemSafety.set",
+    "SoftwareSystems-SQLite-MemSafety",
     # unused
-    "Unused_Juliet.set",
+    "Unused_Juliet",
 ]
 
 COLOR_RED = "\033[31;1m"
@@ -158,8 +158,46 @@ def _check_task_defs_match_set(xml_file: Path, /, tasks_dir: Path):
     return errors
 
 
+def _get_base_categories_participating(
+    verifier, category_info, exclude_opt_outs=False
+) -> set:
+    if category_info["opt_out"] and verifier in category_info["opt_out"]:
+        opt_outs = set(category_info["opt_out"][verifier])
+    else:
+        opt_outs = set()
+    if category_info["opt_in"] and verifier in category_info["opt_in"]:
+        opt_ins = set(category_info["opt_in"][verifier])
+    else:
+        opt_ins = set()
+
+    meta_categories = category_info["categories"]
+    categories_participating = set()
+    for category, info in meta_categories.items():
+        if category in opt_outs:
+            continue
+        participants = info["verifiers"]
+        if verifier in participants:
+            categories_participating |= set(info["categories"])
+
+    categories_participating = categories_participating - set(meta_categories.keys())
+    if exclude_opt_outs:
+        categories_participating -= opt_outs
+    categories_participating |= opt_ins
+    return categories_participating
+
+
+def _get_verifier_name(bench_def: Path) -> str:
+    return bench_def.name[: -len(".xml")]
+
+
+def _get_category_name(set_file) -> str:
+    if isinstance(set_file, Path):
+        return set_file.name[: -len(".set")]
+    return set_file[: -len(".set")]
+
+
 def _check_all_sets_used(
-    bench_def: Path, /, tasks_directory: Path, exceptions: list = []
+    bench_def: Path, category_info, /, tasks_directory: Path, exceptions: list = []
 ):
     tasks_defined = _get_tasks(bench_def)
     sets_included = {
@@ -167,25 +205,38 @@ def _check_all_sets_used(
         for t in tasks_defined
         for include in t.findall("includesfile")
     }
+    categories_included = {_get_category_name(setfile) for setfile in sets_included}
+    categories_expected = _get_base_categories_participating(
+        _get_verifier_name(bench_def), category_info
+    )
 
-    all_sets = {p.name for p in tasks_directory.glob("*.set")} - set(exceptions)
+    if not categories_expected:
+        return [f"No entry in category info"]
 
-    assert len(sets_included) <= len(
-        all_sets
-    ), f"More sets used than exist for {str(bench_def)} and {str(tasks_directory)}: {sets_included - all_sets}"
-    missing_sets = all_sets - sets_included
+    if len(categories_included) > len(categories_expected):
+        return [
+            f"More sets used than expected: {categories_included - categories_expected}"
+        ]
+    missing_categories = categories_expected - categories_included - set(exceptions)
 
-    if missing_sets:
-        error(f"Missing includes for following sets: {missing_sets}")
-        return False
-    return True
+    if missing_categories:
+        return [f"Missing includes for following sets: {missing_categories}"]
+    return list()
 
 
-def _check_bench_def(xml: Path, /, tasks_dir: Path):
+def _check_bench_def(xml: Path, category_info, /, tasks_dir: Path):
     """Checks the given xml benchmark definition for conformance."""
     info(str(xml), label="CHECKING")
     errors = _check_valid(xml)
     errors += _check_task_defs_match_set(xml, tasks_dir=tasks_dir)
+    if tasks_dir.exists() and not "validate" in xml.name:
+        errors += _check_all_sets_used(
+            xml,
+            category_info,
+            tasks_directory=tasks_dir,
+            exceptions=ALLOWLIST_TASK_SETS,
+        )
+
     if errors:
         error(xml)
         for msg in errors:
@@ -239,18 +290,9 @@ def parse_args(argv):
     return args
 
 
-def _verifiers_in_overall(category_info):
+def _verifiers_in_category(category_info, category):
     return [
-        v + BENCHDEF_SUFFIX
-        for v in category_info["categories"]["Overall"]["verifiers"]
-        + category_info["categories"]["JavaOverall"]["verifiers"]
-    ]
-
-
-def _verifiers_in_java(category_info):
-    return [
-        v + BENCHDEF_SUFFIX
-        for v in category_info["categories"]["JavaOverall"]["verifiers"]
+        v + BENCHDEF_SUFFIX for v in category_info["categories"][category]["verifiers"]
     ]
 
 
@@ -260,8 +302,7 @@ def main(argv=None):
     args = parse_args(argv)
 
     category_info = parse_yaml(args.category_structure)
-    verifiers_in_overall = _verifiers_in_overall(category_info)
-    java_verifiers = _verifiers_in_java(category_info)
+    java_verifiers = _verifiers_in_category(category_info, "JavaOverall")
     success = True
     if not args.tasks_base_dir or not args.tasks_base_dir.exists():
         info(
@@ -273,13 +314,7 @@ def main(argv=None):
         else:
             tasks_directory = args.tasks_base_dir / "c"
 
-        success &= _check_bench_def(bench_def, tasks_dir=tasks_directory)
-        if tasks_directory.exists() and bench_def.name in verifiers_in_overall:
-            success &= _check_all_sets_used(
-                bench_def,
-                tasks_directory=tasks_directory,
-                exceptions=ALLOWLIST_TASK_SETS,
-            )
+        success &= _check_bench_def(bench_def, category_info, tasks_dir=tasks_directory)
 
     return 0 if success else 1
 
