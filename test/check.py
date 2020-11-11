@@ -239,18 +239,9 @@ def parse_args(argv):
     return args
 
 
-def _verifiers_in_overall(category_info):
+def _verifiers_in_category(category_info, category):
     return [
-        v + BENCHDEF_SUFFIX
-        for v in category_info["categories"]["Overall"]["verifiers"]
-        + category_info["categories"]["JavaOverall"]["verifiers"]
-    ]
-
-
-def _verifiers_in_java(category_info):
-    return [
-        v + BENCHDEF_SUFFIX
-        for v in category_info["categories"]["JavaOverall"]["verifiers"]
+        v + BENCHDEF_SUFFIX for v in category_info["categories"][category]["verifiers"]
     ]
 
 
@@ -260,8 +251,10 @@ def main(argv=None):
     args = parse_args(argv)
 
     category_info = parse_yaml(args.category_structure)
-    verifiers_in_overall = _verifiers_in_overall(category_info)
-    java_verifiers = _verifiers_in_java(category_info)
+    java_verifiers = _verifiers_in_category(category_info, "JavaOverall")
+    verifiers_in_overall = java_verifiers + _verifiers_in_category(
+        category_info, "Overall"
+    )
     success = True
     if not args.tasks_base_dir or not args.tasks_base_dir.exists():
         info(
