@@ -97,7 +97,6 @@ categories:
       - MemSafety-Heap
       - MemSafety-LinkedLists
       - MemSafety-Other
-      - MemSafety-TerminCrafted
       - MemSafety-MemCleanup
     verifiers:
       - 2ls
@@ -318,7 +317,6 @@ categories_process_order:
   - MemSafety-Heap
   - MemSafety-LinkedLists
   - MemSafety-Other
-  - MemSafety-TerminCrafted
   - MemSafety-MemCleanup
   - MemSafety
   - ConcurrencySafety-Main
@@ -363,7 +361,6 @@ categories_table_order:
   - MemSafety-Heap
   - MemSafety-LinkedLists
   - MemSafety-Other
-  - MemSafety-TerminCrafted
   - MemSafety-MemCleanup
   - ConcurrencySafety
   - ConcurrencySafety-Main
