@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import argparse
 import sys
-import os
 import logging
 from pathlib import Path
 from urllib import request
