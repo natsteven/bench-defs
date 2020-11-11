@@ -31,6 +31,10 @@ verifiers:
   - jdart
   - spf
 
+
+not_participating:
+  - blast
+
 # Properties used in the competition
 properties:
     - no-overflow

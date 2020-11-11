@@ -296,6 +296,10 @@ def _verifiers_in_category(category_info, category):
     ]
 
 
+def _unused_verifiers(category_info):
+    return category_info["not_participating"]
+
+
 def main(argv=None):
     if argv is None:
         argv = sys.argv[1:]
@@ -303,12 +307,16 @@ def main(argv=None):
 
     category_info = parse_yaml(args.category_structure)
     java_verifiers = _verifiers_in_category(category_info, "JavaOverall")
+    unmaintained = _unused_verifiers(category_info)
     success = True
     if not args.tasks_base_dir or not args.tasks_base_dir.exists():
         info(
             f"Tasks directory doesn't exist. Will skip some checks. (Directory: {str(args.tasks_base_dir)})"
         )
     for bench_def in args.benchmark_definition:
+        if _get_verifier_name(bench_def) in unmaintained:
+            info(f"{bench_def}", label="SKIPPING")
+            continue
         if bench_def.name in java_verifiers:
             tasks_directory = args.tasks_base_dir / "java"
         else:
