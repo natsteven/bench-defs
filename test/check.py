@@ -290,12 +290,15 @@ def parse_args(argv):
 
 
 def _verifiers_in_category(category_info, category):
-    return [
-        v + BENCHDEF_SUFFIX for v in category_info["categories"][category]["verifiers"]
-    ]
+    categories = category_info["categories"]
+    if category not in categories:
+        return []
+    return [v + BENCHDEF_SUFFIX for v in categories[category]["verifiers"]]
 
 
 def _unused_verifiers(category_info):
+    if "not_participating" not in category_info:
+        return []
     return category_info["not_participating"]
 
 
