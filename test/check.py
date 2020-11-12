@@ -172,7 +172,7 @@ def _get_base_categories_participating(
     meta_categories = category_info["categories"]
     categories_participating = set()
     for category, info in meta_categories.items():
-        if category in opt_outs:
+        if exclude_opt_outs and category in opt_outs:
             continue
         participants = info["verifiers"]
         if verifier in participants:
