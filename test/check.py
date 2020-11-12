@@ -314,7 +314,7 @@ def main(argv=None):
         )
     for bench_def in args.benchmark_definition:
         if _get_verifier_name(bench_def) in unmaintained:
-            info(f"{bench_def}", label="SKIPPING")
+            info(f"{bench_def}", label="SKIP")
             continue
         if bench_def.name in java_verifiers:
             tasks_directory = args.tasks_base_dir / "java"
