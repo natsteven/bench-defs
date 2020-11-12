@@ -33,7 +33,38 @@ verifiers:
 
 
 not_participating:
+  - aprove
   - blast
+  - cbmc-path
+  - ceagle
+  - civl
+  - consequence
+  - cpa-bam-slicing 
+  - cpa-kind
+  - cpa-undef-func
+  - depthk
+  - divine-explicit
+  - divine-smt
+  - esbmc-falsi
+  - esbmc-incr
+  - esbmc-kind
+  - forester
+  - frama-c-sv
+  - gazer-theta
+  - goblint
+  - hiptnt
+  - interpchecker
+  - jpf
+  - korn
+  - lazycseqabs
+  - lazycseqswarm
+  - mucseq
+  - skink
+  - smack
+  - symdivine
+  - ulcseq
+  - viap
+  - yogar-cbmc-parallel
 
 # Properties used in the competition
 properties:
@@ -59,6 +90,7 @@ categories:
       - ReachSafety-Recursive
       - ReachSafety-Sequentialized
       - ReachSafety-XCSP
+      - ReachSafety-Combinations
     verifiers:
       - 2ls
       - brick
@@ -98,6 +130,7 @@ categories:
       - MemSafety-LinkedLists
       - MemSafety-Other
       - MemSafety-MemCleanup
+      - MemSafety-Juliet
     verifiers:
       - 2ls
       - cbmc
@@ -312,12 +345,14 @@ categories_process_order:
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
   - ReachSafety-XCSP
+  - ReachSafety-Combinations
   - ReachSafety
   - MemSafety-Arrays
   - MemSafety-Heap
   - MemSafety-LinkedLists
   - MemSafety-Other
   - MemSafety-MemCleanup
+  - MemSafety-Juliet
   - MemSafety
   - ConcurrencySafety-Main
   - ConcurrencySafety
@@ -356,12 +391,14 @@ categories_table_order:
   - ReachSafety-Recursive
   - ReachSafety-Sequentialized
   - ReachSafety-XCSP
+  - ReachSafety-Combinations
   - MemSafety
   - MemSafety-Arrays
   - MemSafety-Heap
   - MemSafety-LinkedLists
   - MemSafety-Other
   - MemSafety-MemCleanup
+  - MemSafety-Juliet
   - ConcurrencySafety
   - ConcurrencySafety-Main
   - NoOverflows
