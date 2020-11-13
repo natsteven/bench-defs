@@ -7,8 +7,8 @@
 <rundefinition name="SV-COMP21_witness-check">
   <option name="--ignoreSelfLoops"/>
 
-  <tasks>
-    <include>../../results-verified/LOGDIR/*/witness.graphml</include>
+  <tasks name="Linting">
+    <includesfile>Linting.set</includesfile>
   </tasks>
 
 </rundefinition>
