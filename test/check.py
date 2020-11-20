@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import argparse
 import sys
-import os
 import logging
 from pathlib import Path
 from urllib import request
@@ -173,7 +172,7 @@ def _get_base_categories_participating(
     meta_categories = category_info["categories"]
     categories_participating = set()
     for category, info in meta_categories.items():
-        if category in opt_outs:
+        if exclude_opt_outs and category in opt_outs:
             continue
         participants = info["verifiers"]
         if verifier in participants:
@@ -291,9 +290,16 @@ def parse_args(argv):
 
 
 def _verifiers_in_category(category_info, category):
-    return [
-        v + BENCHDEF_SUFFIX for v in category_info["categories"][category]["verifiers"]
-    ]
+    categories = category_info["categories"]
+    if category not in categories:
+        return []
+    return [v + BENCHDEF_SUFFIX for v in categories[category]["verifiers"]]
+
+
+def _unused_verifiers(category_info):
+    if "not_participating" not in category_info:
+        return []
+    return category_info["not_participating"]
 
 
 def main(argv=None):
@@ -303,12 +309,16 @@ def main(argv=None):
 
     category_info = parse_yaml(args.category_structure)
     java_verifiers = _verifiers_in_category(category_info, "JavaOverall")
+    unmaintained = _unused_verifiers(category_info)
     success = True
     if not args.tasks_base_dir or not args.tasks_base_dir.exists():
         info(
             f"Tasks directory doesn't exist. Will skip some checks. (Directory: {str(args.tasks_base_dir)})"
         )
     for bench_def in args.benchmark_definition:
+        if _get_verifier_name(bench_def) in unmaintained:
+            info(f"{bench_def}", label="SKIP")
+            continue
         if bench_def.name in java_verifiers:
             tasks_directory = args.tasks_base_dir / "java"
         else:
