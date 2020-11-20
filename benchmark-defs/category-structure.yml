@@ -107,6 +107,7 @@ categories:
       - veriabs
       - verifuzz
     validators:
+      - witnesslint
       - cpa-seq-correctness
       - cpa-seq-violation
       - cpa-witness2test-violation
@@ -142,6 +143,7 @@ categories:
       - ukojak
       - utaipan
     validators:
+      - witnesslint
       - cpa-seq-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -191,6 +193,7 @@ categories:
       - utaipan
       - verifuzz
     validators:
+      - witnesslint
       - cpa-seq-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -218,6 +221,7 @@ categories:
       - ukojak
       - utaipan
     validators:
+      - witnesslint
       - cpa-seq-violation
       - uautomizer-violation
       - metaval-violation
@@ -250,6 +254,7 @@ categories:
       - ukojak
       - utaipan
     validators:
+      - witnesslint
       - cpa-seq-correctness
       - cpa-seq-violation
       - cpa-witness2test-violation
