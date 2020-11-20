@@ -7,3 +7,6 @@
 [submodule "benchexec"]
 	path = benchexec
 	url = https://gitlab.com/sosy-lab/software/benchexec
+[submodule "scripts"]
+	path = scripts
+	url = https://gitlab.com/sosy-lab/benchmarking/competition-scripts

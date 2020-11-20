@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-GIT_REPOS := benchexec sv-benchmarks archives
+GIT_REPOS := archives sv-benchmarks benchexec scripts
 
 init: $(GIT_REPOS)
 
