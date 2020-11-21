@@ -48,7 +48,6 @@ not_participating:
   - depthk
   - divine-explicit
   - divine-smt
-  - esbmc
   - esbmc-falsi
   - gacal
   - forester
