@@ -8,7 +8,7 @@
 
 <rundefinition name="SV-COMP21_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
   <option name="-svcomp19"/>
   <option name="-heap">10000M</option>
@@ -89,7 +89,7 @@
 
 <rundefinition name="SV-COMP21_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">symbiotic</option>
 
   <tasks name="MemSafety-Arrays">
@@ -137,7 +137,7 @@
 
 <rundefinition name="SV-COMP21_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
   <option name="--full-output"/>
@@ -163,7 +163,7 @@
 
 <rundefinition name="SV-COMP21_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
   <option name="--full-output"/>

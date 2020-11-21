@@ -14,7 +14,7 @@
 
 <rundefinition name="SV-COMP21_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
