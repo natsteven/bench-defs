@@ -6,24 +6,27 @@ verifiers:
   - brick
   - cbmc
   - cpa-bam-bnb
-  - cpa-seq
   - cpa-lockator
+  - cpa-seq
   - dartagnan
   - divine
-  - esbmc
-  - gacal
+  - esbmc-incr
+  - esbmc-kind
+  - frama-c-sv
+  - gazer-theta
+  - goblint
+  - korn
   - lazycseq
-  - map2check
   - pesco
   - pinaka
   - predatorhp
+  - smack
   - symbiotic
   - uautomizer
   - ukojak
   - utaipan
   - veriabs
   - verifuzz
-  - yogar-cbmc
   - coastal
   - java-ranger
   - jayhorn
@@ -45,25 +48,23 @@ not_participating:
   - depthk
   - divine-explicit
   - divine-smt
+  - esbmc
   - esbmc-falsi
-  - esbmc-incr
-  - esbmc-kind
+  - gacal
   - forester
-  - frama-c-sv
-  - gazer-theta
-  - goblint
   - hiptnt
   - interpchecker
   - jpf
   - korn
   - lazycseqabs
   - lazycseqswarm
+  - map2check
   - mucseq
   - skink
-  - smack
   - symdivine
   - ulcseq
   - viap
+  - yogar-cbmc
   - yogar-cbmc-parallel
 
 # Properties used in the competition
