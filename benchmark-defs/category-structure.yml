@@ -6,24 +6,27 @@ verifiers:
   - brick
   - cbmc
   - cpa-bam-bnb
-  - cpa-seq
   - cpa-lockator
+  - cpa-seq
   - dartagnan
   - divine
-  - esbmc
-  - gacal
+  - esbmc-incr
+  - esbmc-kind
+  - frama-c-sv
+  - gazer-theta
+  - goblint
+  - korn
   - lazycseq
-  - map2check
   - pesco
   - pinaka
   - predatorhp
+  - smack
   - symbiotic
   - uautomizer
   - ukojak
   - utaipan
   - veriabs
   - verifuzz
-  - yogar-cbmc
   - coastal
   - java-ranger
   - jayhorn
@@ -45,25 +48,23 @@ not_participating:
   - depthk
   - divine-explicit
   - divine-smt
+  - esbmc
   - esbmc-falsi
-  - esbmc-incr
-  - esbmc-kind
+  - gacal
   - forester
-  - frama-c-sv
-  - gazer-theta
-  - goblint
   - hiptnt
   - interpchecker
   - jpf
   - korn
   - lazycseqabs
   - lazycseqswarm
+  - map2check
   - mucseq
   - skink
-  - smack
   - symdivine
   - ulcseq
   - viap
+  - yogar-cbmc
   - yogar-cbmc-parallel
 
 # Properties used in the competition
@@ -96,10 +97,13 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
+      - goblint
       - map2check
       - pesco
       - pinaka
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -134,10 +138,12 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - map2check
       - pesco
       - predatorhp
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -164,9 +170,13 @@ categories:
       - cpa-lockator
       - dartagnan
       - divine
-      - esbmc
+      - esbmc-incr
+      - esbmc-kind
+      - frama-c-sv
       - lazycseq
+      - goblint
       - pesco
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -183,10 +193,12 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - map2check
       - pesco
       - pinaka
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -213,9 +225,11 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - pesco
       - pinaka
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -247,8 +261,10 @@ categories:
       - cpa-bam-bnb
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - pesco
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -283,9 +299,11 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - pesco
       - pinaka
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -308,9 +326,11 @@ categories:
       - cbmc
       - cpa-seq
       - divine
-      - esbmc
+      - esbmc-kind
+      - frama-c-sv
       - pesco
       - pinaka
+      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -428,6 +448,14 @@ opt_out:
     - SoftwareSystems
   map2check:
     - ReachSafety
+  goblint:
+    - SoftwareSystems-BusyBox-MemSafety
+    - NoOverflows-BitVectors
+    - NoOverflows-Other
+    - SoftwareSystems-BusyBox-NoOverflows
+    - SoftwareSystems-uthash-NoOverflows
+    - SoftwareSystems-OpenBSD-MemSafety
+    - SoftwareSystems-uthash-MemSafety
   pinaka:
     - FalsificationOverall
     - Overall
@@ -435,13 +463,28 @@ opt_out:
     - ReachSafety
 
 opt_in: 
+  brick:
+    - ReachSafety-Floats
   dartagnan:
     - ReachSafety-Arrays
     - ReachSafety-BitVectors
     - ReachSafety-Loops
   gacal:
     - ReachSafety-Loops
+  gazer-theta:
+    - ReachSafety-BitVectors
+    - ReachSafety-ControlFlow
+    - ReachSafety-ECA
+    - ReachSafety-Floats
+    - ReachSafety-Loops
+    - ReachSafety-ProductLines
+    - ReachSafety-Recursive
+    - ReachSafety-XCSP
+    - ReachSafety-Combinations
+  goblint:
+    - SoftwareSystems-AWS-C-Common-ReachSafety
+    - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - SoftwareSystems-uthash-ReachSafety
   predatorhp:
     - ReachSafety-Heap
-  brick:
-    - ReachSafety-Floats
