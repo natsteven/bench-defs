@@ -153,6 +153,10 @@ def _check_task_defs_match_set(xml_file: Path, /, tasks_dir: Path):
                         set_name, name
                     )
                 )
+        if task_tag.findall("option"):
+            errors.append(
+                "task {} contains <option> tag.".format(name)
+            )
 
     return errors
 
