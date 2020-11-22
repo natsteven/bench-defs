@@ -1,12 +1,8 @@
 # To execute a job locally, install gitlab-runner (https://docs.gitlab.com/runner/install/)
 # and run the following command:
-# gitlab-runner exec docker --docker-privileged --docker-volumes /sys/fs/cgroup:/sys/fs/cgroup:rw --env CI_REGISTRY_IMAGE=registry.gitlab.com/sosy-lab/software/test-format <<JOB_NAME>>
+# gitlab-runner exec docker --docker-privileged --docker-volumes /sys/fs/cgroup:/sys/fs/cgroup:rw <<JOB_NAME>>
 
-stages:
-  - images
-  - checks
-
-image: ${CI_REGISTRY_IMAGE}/test
+image: registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/python:latest
 
 # Do not checkout any submodules for now; sv-benchmarks and archives-20xx are just too big.
 # Set depth to 10, such that new commits in one of the submodules makes do not break the CI immediately.
@@ -16,25 +12,7 @@ variables:
   GIT_DEPTH: "10"
 
 check-definitions:
-  stage: checks
   script:
     - ./test/check.py benchmark-defs/*xml
 
-.build-docker:
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
-  script:
-    - mkdir -p /root/.docker
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
-    - /kaniko/executor --dockerfile $CI_PROJECT_DIR/$DOCKERFILE --destination $CI_REGISTRY_IMAGE/$IMAGE
-  only:
-    - schedules
-    - web
 
-build-docker:test:latest:
-  extends: .build-docker
-  stage: images
-  variables:
-    DOCKERFILE: test/Dockerfile.test
-    IMAGE: test:latest
