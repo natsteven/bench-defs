@@ -325,6 +325,9 @@ def main(argv=None):
         if _get_verifier_name(bench_def) in unmaintained:
             info(f"{bench_def}", label="SKIP")
             continue
+        if bench_def.is_dir():
+            info(str(bench_def) + " (is directory)", label="SKIP")
+            continue
         if bench_def.name in java_verifiers:
             tasks_directory = args.tasks_base_dir / "java"
         else:
