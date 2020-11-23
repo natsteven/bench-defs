@@ -13,6 +13,6 @@ variables:
 
 check-definitions:
   script:
-    - ./test/check.py benchmark-defs/*xml
+    - ./scripts/test/check-benchdef-svcomp.py benchmark-defs/*xml
 
 
