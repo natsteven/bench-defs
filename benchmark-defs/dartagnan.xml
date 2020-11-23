@@ -5,13 +5,6 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**.graphml</resultfiles>
-
-      <option name="-o">O3</option>
-      <option name="-cat">cat/sc.cat</option>
-      <option name="-bp"></option>
-      <option name="-incrementalSolver"></option>
-      <option name="-w"></option>
-      <option name="-i"></option>
       
 <rundefinition name="SV-COMP21_unreach-call">
   <tasks name="ReachSafety-Loops">
