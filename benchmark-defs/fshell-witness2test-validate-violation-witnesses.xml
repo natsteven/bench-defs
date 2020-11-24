@@ -78,6 +78,20 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP21_valid-memcleanup">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--graphml-witness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Juliet">
+    <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 <rundefinition name="SV-COMP21_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--graphml-witness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
@@ -102,13 +116,9 @@
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
-  <tasks name="MemSafety-MemCleanup">
-    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
   <tasks name="MemSafety-Juliet">
     <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
