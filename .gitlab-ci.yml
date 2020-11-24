@@ -7,9 +7,14 @@ image: registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/python:late
 # Do not checkout any submodules for now; sv-benchmarks and archives-20xx are just too big.
 # Set depth to 10, such that new commits in one of the submodules makes do not break the CI immediately.
 variables:
-  GIT_SUBMODULE_STRATEGY: normal
+  GIT_SUBMODULE_STRATEGY: none
   GIT_STRATEGY: fetch
-  GIT_DEPTH: "10"
+  GIT_DEPTH: 1
+  REQUIRED_SUBMODULES: "scripts benchexec sv-benchmarks"
+
+before_script:
+  - git submodule sync
+  - git submodule update --init $REQUIRED_SUBMODULES
 
 check-definitions:
   script:
