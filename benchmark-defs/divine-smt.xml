@@ -76,6 +76,17 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP21_valid-memcleanup">
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Juliet">
+    <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 <rundefinition name="SV-COMP21_valid-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -93,13 +104,9 @@
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
-  <tasks name="MemSafety-MemCleanup">
-    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
   <tasks name="MemSafety-Juliet">
     <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
