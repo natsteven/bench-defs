@@ -13,7 +13,9 @@ init: $(GIT_REPOS)
 $(GIT_REPOS):
 	git submodule update --init $@
 
+.PHONY: update
 update: | update-repos provenance.txt
+	git pull --rebase
 
 update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
 $(foreach g,$(GIT_REPOS),$(g)/.update): $(GIT_REPOS)
