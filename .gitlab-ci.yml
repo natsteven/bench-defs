@@ -22,6 +22,10 @@ before_script:
 
 check-definitions:
   script:
-    - ./scripts/test/check-benchdef-svcomp.py benchmark-defs/*xml
+    - ./scripts/test/check-benchdef.py benchmark-defs/*xml
+
+check-category-structure:
+  script:
+    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml
 
 
