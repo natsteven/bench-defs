@@ -13,7 +13,7 @@ include:
 variables:
   GIT_SUBMODULE_STRATEGY: none
   GIT_STRATEGY: fetch
-  GIT_DEPTH: 1
+  GIT_DEPTH: 10
   REQUIRED_SUBMODULES: "scripts benchexec sv-benchmarks"
 
 before_script:
