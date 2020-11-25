@@ -14,7 +14,7 @@ $(GIT_REPOS):
 	git submodule update --init $@
 
 .PHONY: update
-update: | update-repos provenance.txt
+update: | update-repos
 	git pull --rebase
 
 update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
@@ -23,10 +23,6 @@ $(foreach g,$(GIT_REPOS),$(g)/.update): $(GIT_REPOS)
 	cd $(@D) && \
 		git checkout master || git checkout trunk && \
 		git pull --rebase || true
-
-.PHONY: provenance.txt
-provenance.txt:
-	./scripts/mkProvenanceInfo.sh $(GIT_REPOS)
 
 bin/%:	./archives/2021/%.zip
 	./scripts/mkInstall.sh $(*F)
