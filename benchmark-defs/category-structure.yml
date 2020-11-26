@@ -370,6 +370,7 @@ categories_process_order:
   - MemSafety-Juliet
   - MemSafety
   - ConcurrencySafety-Main
+  - NoDataRace-Main
   - ConcurrencySafety
   - NoOverflows-BitVectors
   - NoOverflows-Other
@@ -416,6 +417,7 @@ categories_table_order:
   - MemSafety-Juliet
   - ConcurrencySafety
   - ConcurrencySafety-Main
+  - NoDataRace-Main
   - NoOverflows
   - NoOverflows-BitVectors
   - NoOverflows-Other
