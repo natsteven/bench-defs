@@ -71,6 +71,7 @@ properties:
     - no-overflow
     - termination
     - unreach-call
+    - no-data-race
     - valid-memcleanup
     - valid-memsafety
     - assert_java
@@ -158,7 +159,9 @@ categories:
       - metaval-correctness
 
   ConcurrencySafety:
-    properties: unreach-call
+    properties:
+      - unreach-call
+      - no-data-race
     categories:
       - ConcurrencySafety-Main
       - NoDataRace-Main
