@@ -6,9 +6,10 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-q"/>
-  <option name="-s0"/>
-  <option name="-t">900</option>
+  <option name="-quiet"/>
+  <option name="-model"/>
+  <option name="-witness">witness.graphml</option>
+  <option name="-timeout">900</option>
   <option name="-eld"/>
 
 <rundefinition name="SV-COMP21_unreach-call">
