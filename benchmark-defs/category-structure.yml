@@ -260,6 +260,7 @@ categories:
       - divine
       - esbmc-kind
       - frama-c-sv
+      - goblint
       - pesco
       - smack
       - symbiotic
@@ -478,10 +479,5 @@ opt_in:
     - ReachSafety-Recursive
     - ReachSafety-XCSP
     - ReachSafety-Combinations
-  goblint:
-    - SoftwareSystems-AWS-C-Common-ReachSafety
-    - SoftwareSystems-DeviceDriversLinux64-ReachSafety
-    - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-    - SoftwareSystems-uthash-ReachSafety
   predatorhp:
     - ReachSafety-Heap
