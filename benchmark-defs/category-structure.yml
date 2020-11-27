@@ -103,7 +103,6 @@ categories:
       - map2check
       - pesco
       - pinaka
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -143,7 +142,6 @@ categories:
       - map2check
       - pesco
       - predatorhp
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -178,7 +176,6 @@ categories:
       - lazycseq
       - goblint
       - pesco
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -200,7 +197,6 @@ categories:
       - map2check
       - pesco
       - pinaka
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -231,7 +227,6 @@ categories:
       - frama-c-sv
       - pesco
       - pinaka
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -305,7 +300,6 @@ categories:
       - frama-c-sv
       - pesco
       - pinaka
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
@@ -332,7 +326,6 @@ categories:
       - frama-c-sv
       - pesco
       - pinaka
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
