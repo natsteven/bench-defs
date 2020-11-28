@@ -25,5 +25,5 @@ $(foreach g,$(GIT_REPOS),$(g)/.update): $(GIT_REPOS)
 		git pull --rebase || true
 
 bin/%:	./archives/2021/%.zip
-	./scripts/mkInstall.sh $(*F)
+	./scripts/execute-runs/mkInstall.sh $(*F)
 
