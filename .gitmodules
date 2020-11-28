@@ -10,3 +10,6 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://gitlab.com/sosy-lab/benchmarking/competition-scripts
+[submodule "coveriteam"]
+	path = coveriteam
+	url = https://gitlab.com/sosy-lab/software/coveriteam
