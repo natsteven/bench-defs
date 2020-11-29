@@ -194,6 +194,7 @@ categories:
       - divine
       - esbmc-kind
       - frama-c-sv
+      - goblint
       - map2check
       - pesco
       - pinaka
@@ -448,10 +449,6 @@ opt_out:
     - ReachSafety
   goblint:
     - SoftwareSystems-BusyBox-MemSafety
-    - NoOverflows-BitVectors
-    - NoOverflows-Other
-    - SoftwareSystems-BusyBox-NoOverflows
-    - SoftwareSystems-uthash-NoOverflows
     - SoftwareSystems-OpenBSD-MemSafety
     - SoftwareSystems-uthash-MemSafety
   pinaka:
