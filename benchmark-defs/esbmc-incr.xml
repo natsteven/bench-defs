@@ -7,6 +7,7 @@
   <resultfiles>**.graphml</resultfiles>
   
   <option name="-s">incr</option>
+  <option name="--concurrency"/>
 
 <rundefinition name="SV-COMP21_unreach-call">
   <tasks name="ConcurrencySafety-Main">
