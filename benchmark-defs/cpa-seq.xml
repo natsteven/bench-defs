@@ -163,4 +163,9 @@
   </tasks>
 </rundefinition>
 
+  <columns>
+    <column title="UsedConfig">Used algorithm property</column>
+  </columns>
+
+
 </benchmark>
