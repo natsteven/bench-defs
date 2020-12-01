@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-random">10</random>
+  <option name="-random">10</option>
   <option name="-model"/>
   <option name="-witness">witness.graphml</option>
   <option name="-timeout">900</option>
