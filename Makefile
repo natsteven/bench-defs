@@ -8,17 +8,15 @@ GIT_REPOS := archives sv-benchmarks benchexec scripts coveriteam
 
 init: $(GIT_REPOS)
 
-# Always try to update git repos - without PHONY, make wouldn't update once the directories exist
-.PHONY: $(GIT_REPOS)
 $(GIT_REPOS):
 	git submodule update --init $@
 
-.PHONY: update
 update: | update-repos
 	@echo "\n# Updating" bench-defs
 	git pull --rebase
 
 update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
+
 $(foreach g,$(GIT_REPOS),$(g)/.update): $(GIT_REPOS)
 	@echo "\n# Updating" $(@D)
 	cd $(@D) && \
