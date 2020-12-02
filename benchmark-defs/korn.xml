@@ -7,8 +7,14 @@
   <resultfiles>**.graphml</resultfiles>
 
   <option name="-random">10</option>
-  <option name="-model"/>
   <option name="-witness">witness.graphml</option>
+
+  <option name="-model"/>
+  <option name="-write"/>
+
+  <option name="-timeout">20</option>
+  <option name="-z3"/>
+
   <option name="-timeout">900</option>
   <option name="-eld"/>
 
