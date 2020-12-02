@@ -18,7 +18,7 @@ variables:
 
 before_script:
   - git submodule sync
-  - git submodule update --init $REQUIRED_SUBMODULES
+  - git submodule update --depth 50 --init $REQUIRED_SUBMODULES
 
 check-definitions:
   script:
