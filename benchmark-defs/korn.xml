@@ -64,12 +64,12 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
-  <!-- <tasks name="ReachSafety-XCSP">
+  <tasks name="ReachSafety-XCSP">
     <includesfile>../sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
-  <tasks name="ReachSafety-Combinations">
+  <!-- <tasks name="ReachSafety-Combinations">
     <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
