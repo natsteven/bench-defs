@@ -5,11 +5,12 @@
 # SPDX-License-Identifier: Apache-2.0
 
 GIT_REPOS := archives sv-benchmarks benchexec scripts coveriteam
+GIT_STORES := $(foreach g,$(GIT_REPOS),$(g)/.git)
 
-init: $(GIT_REPOS)
+init: $(GIT_STORES)
 
-$(GIT_REPOS):
-	git submodule update --init $@
+$(GIT_STORES):
+	git submodule update --init $(@D)
 
 update: | update-repos
 	@echo "\n# Updating" bench-defs
@@ -17,7 +18,7 @@ update: | update-repos
 
 update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
 
-$(foreach g,$(GIT_REPOS),$(g)/.update): $(GIT_REPOS)
+%/.update: %/.git
 	@echo "\n# Updating" $(@D)
 	cd $(@D) && \
 		git checkout master || git checkout trunk && \
