@@ -80,18 +80,18 @@ categories:
   ReachSafety:
     properties: unreach-call
     categories:
-      - ReachSafety-Arrays
-      - ReachSafety-BitVectors
-      - ReachSafety-ControlFlow
-      - ReachSafety-ECA
-      - ReachSafety-Floats
-      - ReachSafety-Heap
-      - ReachSafety-Loops
-      - ReachSafety-ProductLines
-      - ReachSafety-Recursive
-      - ReachSafety-Sequentialized
-      - ReachSafety-XCSP
-      - ReachSafety-Combinations
+      - unreach-call.ReachSafety-Arrays
+      - unreach-call.ReachSafety-BitVectors
+      - unreach-call.ReachSafety-ControlFlow
+      - unreach-call.ReachSafety-ECA
+      - unreach-call.ReachSafety-Floats
+      - unreach-call.ReachSafety-Heap
+      - unreach-call.ReachSafety-Loops
+      - unreach-call.ReachSafety-ProductLines
+      - unreach-call.ReachSafety-Recursive
+      - unreach-call.ReachSafety-Sequentialized
+      - unreach-call.ReachSafety-XCSP
+      - unreach-call.ReachSafety-Combinations
     verifiers:
       - 2ls
       - cbmc
@@ -125,12 +125,12 @@ categories:
       - valid-memsafety
       - valid-memcleanup
     categories:
-      - MemSafety-Arrays
-      - MemSafety-Heap
-      - MemSafety-LinkedLists
-      - MemSafety-Other
-      - MemSafety-MemCleanup
-      - MemSafety-Juliet
+      - valid-memsafety.MemSafety-Arrays
+      - valid-memsafety.MemSafety-Heap
+      - valid-memsafety.MemSafety-LinkedLists
+      - valid-memsafety.MemSafety-Other
+      - valid-memcleanup.MemSafety-MemCleanup
+      - valid-memsafety.MemSafety-Juliet
     verifiers:
       - 2ls
       - cbmc
@@ -159,8 +159,8 @@ categories:
       - unreach-call
       - no-data-race
     categories:
-      - ConcurrencySafety-Main
-      - NoDataRace-Main
+      - unreach-call.ConcurrencySafety-Main
+      - no-data-race.NoDataRace-Main
     verifiers:
       - 2ls
       - cbmc
@@ -182,8 +182,8 @@ categories:
   NoOverflows:
     properties: no-overflow
     categories:
-      - NoOverflows-BitVectors
-      - NoOverflows-Other
+      - no-overflow.NoOverflows-BitVectors
+      - no-overflow.NoOverflows-Other
     verifiers:
       - 2ls
       - cbmc
@@ -212,9 +212,9 @@ categories:
   Termination:
     properties: termination
     categories:
-      - Termination-MainControlFlow
-      - Termination-MainHeap
-      - Termination-Other
+      - termination.Termination-MainControlFlow
+      - termination.Termination-MainHeap
+      - termination.Termination-Other
     verifiers:
       - 2ls
       - cbmc
@@ -239,15 +239,15 @@ categories:
       - no-overflow
       - valid-memsafety
     categories:
-      - SoftwareSystems-AWS-C-Common-ReachSafety
-      - SoftwareSystems-BusyBox-MemSafety
-      - SoftwareSystems-BusyBox-NoOverflows
-      - SoftwareSystems-DeviceDriversLinux64-ReachSafety
-      - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-      - SoftwareSystems-OpenBSD-MemSafety
-      - SoftwareSystems-uthash-MemSafety
-      - SoftwareSystems-uthash-NoOverflows
-      - SoftwareSystems-uthash-ReachSafety
+      - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+      - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+      - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+      - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+      - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+      - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+      - valid-memsafety.SoftwareSystems-uthash-MemSafety
+      - no-overflow.SoftwareSystems-uthash-NoOverflows
+      - unreach-call.SoftwareSystems-uthash-ReachSafety
     verifiers:
       - 2ls
       - cbmc
@@ -329,7 +329,7 @@ categories:
     properties:
       - assert_java
     categories:
-      - ReachSafety-Java
+      - assert_java.ReachSafety-Java
     verifiers:
       - coastal
       - java-ranger
@@ -339,96 +339,96 @@ categories:
       - spf
 
 categories_process_order:
-  - ReachSafety-Arrays
-  - ReachSafety-BitVectors
-  - ReachSafety-ControlFlow
-  - ReachSafety-ECA
-  - ReachSafety-Floats
-  - ReachSafety-Heap
-  - ReachSafety-Loops
-  - ReachSafety-ProductLines
-  - ReachSafety-Recursive
-  - ReachSafety-Sequentialized
-  - ReachSafety-XCSP
-  - ReachSafety-Combinations
+  - unreach-call.ReachSafety-Arrays
+  - unreach-call.ReachSafety-BitVectors
+  - unreach-call.ReachSafety-ControlFlow
+  - unreach-call.ReachSafety-ECA
+  - unreach-call.ReachSafety-Floats
+  - unreach-call.ReachSafety-Heap
+  - unreach-call.ReachSafety-Loops
+  - unreach-call.ReachSafety-ProductLines
+  - unreach-call.ReachSafety-Recursive
+  - unreach-call.ReachSafety-Sequentialized
+  - unreach-call.ReachSafety-XCSP
+  - unreach-call.ReachSafety-Combinations
   - ReachSafety
-  - MemSafety-Arrays
-  - MemSafety-Heap
-  - MemSafety-LinkedLists
-  - MemSafety-Other
-  - MemSafety-MemCleanup
-  - MemSafety-Juliet
+  - valid-memsafety.MemSafety-Arrays
+  - valid-memsafety.MemSafety-Heap
+  - valid-memsafety.MemSafety-LinkedLists
+  - valid-memsafety.MemSafety-Other
+  - valid-memcleanup.MemSafety-MemCleanup
+  - valid-memsafety.MemSafety-Juliet
   - MemSafety
-  - ConcurrencySafety-Main
-  - NoDataRace-Main
+  - unreach-call.ConcurrencySafety-Main
+  - no-data-race.NoDataRace-Main
   - ConcurrencySafety
-  - NoOverflows-BitVectors
-  - NoOverflows-Other
+  - no-overflow.NoOverflows-BitVectors
+  - no-overflow.NoOverflows-Other
   - NoOverflows
-  - Termination-MainControlFlow
-  - Termination-MainHeap
-  - Termination-Other
+  - termination.Termination-MainControlFlow
+  - termination.Termination-MainHeap
+  - termination.Termination-Other
   - Termination
-  - SoftwareSystems-AWS-C-Common-ReachSafety
-  - SoftwareSystems-BusyBox-MemSafety
-  - SoftwareSystems-BusyBox-NoOverflows
-  - SoftwareSystems-DeviceDriversLinux64-ReachSafety
-  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-  - SoftwareSystems-OpenBSD-MemSafety
-  - SoftwareSystems-uthash-MemSafety
-  - SoftwareSystems-uthash-NoOverflows
-  - SoftwareSystems-uthash-ReachSafety
+  - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+  - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+  - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+  - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - valid-memsafety.SoftwareSystems-uthash-MemSafety
+  - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - SoftwareSystems
   - FalsificationOverall
   - Overall
-  - ReachSafety-Java
+  - assert_java.ReachSafety-Java
   - JavaOverall
 
 categories_table_order:
   - ReachSafety
-  - ReachSafety-Arrays
-  - ReachSafety-BitVectors
-  - ReachSafety-ControlFlow
-  - ReachSafety-ECA
-  - ReachSafety-Floats
-  - ReachSafety-Heap
-  - ReachSafety-Loops
-  - ReachSafety-ProductLines
-  - ReachSafety-Recursive
-  - ReachSafety-Sequentialized
-  - ReachSafety-XCSP
-  - ReachSafety-Combinations
+  - unreach-call.ReachSafety-Arrays
+  - unreach-call.ReachSafety-BitVectors
+  - unreach-call.ReachSafety-ControlFlow
+  - unreach-call.ReachSafety-ECA
+  - unreach-call.ReachSafety-Floats
+  - unreach-call.ReachSafety-Heap
+  - unreach-call.ReachSafety-Loops
+  - unreach-call.ReachSafety-ProductLines
+  - unreach-call.ReachSafety-Recursive
+  - unreach-call.ReachSafety-Sequentialized
+  - unreach-call.ReachSafety-XCSP
+  - unreach-call.ReachSafety-Combinations
   - MemSafety
-  - MemSafety-Arrays
-  - MemSafety-Heap
-  - MemSafety-LinkedLists
-  - MemSafety-Other
-  - MemSafety-MemCleanup
-  - MemSafety-Juliet
+  - valid-memsafety.MemSafety-Arrays
+  - valid-memsafety.MemSafety-Heap
+  - valid-memsafety.MemSafety-LinkedLists
+  - valid-memsafety.MemSafety-Other
+  - valid-memcleanup.MemSafety-MemCleanup
+  - valid-memsafety.MemSafety-Juliet
   - ConcurrencySafety
-  - ConcurrencySafety-Main
-  - NoDataRace-Main
+  - unreach-call.ConcurrencySafety-Main
+  - no-data-race.NoDataRace-Main
   - NoOverflows
-  - NoOverflows-BitVectors
-  - NoOverflows-Other
+  - no-overflow.NoOverflows-BitVectors
+  - no-overflow.NoOverflows-Other
   - Termination
-  - Termination-MainControlFlow
-  - Termination-MainHeap
-  - Termination-Other
+  - termination.Termination-MainControlFlow
+  - termination.Termination-MainHeap
+  - termination.Termination-Other
   - SoftwareSystems
-  - SoftwareSystems-AWS-C-Common-ReachSafety
-  - SoftwareSystems-BusyBox-MemSafety
-  - SoftwareSystems-BusyBox-NoOverflows
-  - SoftwareSystems-DeviceDriversLinux64-ReachSafety
-  - SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-  - SoftwareSystems-OpenBSD-MemSafety
-  - SoftwareSystems-uthash-MemSafety
-  - SoftwareSystems-uthash-NoOverflows
-  - SoftwareSystems-uthash-ReachSafety
+  - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+  - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+  - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+  - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - valid-memsafety.SoftwareSystems-uthash-MemSafety
+  - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - FalsificationOverall
   - Overall
   - JavaOverall
-  - ReachSafety-Java
+  - assert_java.ReachSafety-Java
 
 opt_out:
   pesco:
