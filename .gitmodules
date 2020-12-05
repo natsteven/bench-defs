@@ -13,3 +13,6 @@
 [submodule "coveriteam"]
 	path = coveriteam
 	url = https://gitlab.com/sosy-lab/software/coveriteam
+[submodule "sv-witnesses"]
+	path = sv-witnesses
+	url = https://github.com/sosy-lab/sv-witnesses.git
