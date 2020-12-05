@@ -32,6 +32,11 @@ that has mostly the same packages installed as the competition machines:
 
 
 ## Parameters of RunExec for SV-COMP
+<!-- Fetch latest version from the Ansible configuration for the competition machines:
+https://gitlab.com/sosy-lab/admin/sysadmin/ansible/-/blob/master/roles/vcloud-worker/templates/Config.j2
+Last synchronized: 2020-12-05 from commit 670c4eb
+-->
+
 ```
 --container
 --read-only-dir /
