@@ -24,6 +24,3 @@ update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
 		git checkout master || git checkout trunk && \
 		git pull --rebase || true
 
-bin/%:	./archives/2021/%.zip
-	./scripts/execute-runs/mkInstall.sh $(*F)
-
