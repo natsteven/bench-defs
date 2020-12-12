@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-GIT_REPOS := archives sv-benchmarks benchexec scripts coveriteam
+GIT_REPOS := archives sv-benchmarks benchexec scripts coveriteam sv-witnesses
 GIT_STORES := $(foreach g,$(GIT_REPOS),$(g)/.git)
 
 init: $(GIT_STORES)
