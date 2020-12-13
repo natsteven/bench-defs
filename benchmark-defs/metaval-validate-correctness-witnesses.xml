@@ -85,7 +85,7 @@
 
 <rundefinition name="SV-COMP21_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">symbiotic</option>
   <option name="--sv-comp"/>
   <option name="--witness">witness.graphml</option>
@@ -98,7 +98,7 @@
 
 <rundefinition name="SV-COMP21_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">symbiotic</option>
   <option name="--sv-comp"/>
   <option name="--witness">witness.graphml</option>
