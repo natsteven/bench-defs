@@ -99,7 +99,6 @@ categories:
       - divine
       - esbmc-kind
       - goblint
-      - map2check
       - pesco
       - pinaka
       - symbiotic
@@ -107,7 +106,6 @@ categories:
       - ukojak
       - utaipan
       - veriabs
-      - verifuzz
     validators:
       - witnesslint
       - cpa-seq-correctness
@@ -137,7 +135,6 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
-      - map2check
       - pesco
       - predatorhp
       - symbiotic
@@ -177,7 +174,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - yogar-cbmc
 
   NoOverflows:
     properties: no-overflow
@@ -191,14 +187,12 @@ categories:
       - divine
       - esbmc-kind
       - goblint
-      - map2check
       - pesco
       - pinaka
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
     validators:
       - witnesslint
       - cpa-seq-violation
