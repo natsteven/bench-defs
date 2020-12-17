@@ -434,9 +434,9 @@ opt_out:
   map2check:
     - ReachSafety
   goblint:
-    - SoftwareSystems-BusyBox-MemSafety
-    - SoftwareSystems-OpenBSD-MemSafety
-    - SoftwareSystems-uthash-MemSafety
+    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
   pinaka:
     - FalsificationOverall
     - Overall
@@ -445,27 +445,27 @@ opt_out:
 
 opt_in: 
   brick:
-    - ReachSafety-Floats
+    - unreach-call.ReachSafety-Floats
   dartagnan:
-    - ReachSafety-Arrays
-    - ReachSafety-BitVectors
-    - ReachSafety-Loops
+    - unreach-call.ReachSafety-Arrays
+    - unreach-call.ReachSafety-BitVectors
+    - unreach-call.ReachSafety-Loops
   frama-c-sv:
-    - NoOverflows-BitVectors
-    - NoOverflows-Other
-    - SoftwareSystems-BusyBox-NoOverflows
-    - SoftwareSystems-uthash-NoOverflows
+    - no-overflow.NoOverflows-BitVectors
+    - no-overflow.NoOverflows-Other
+    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-uthash-NoOverflows
   gacal:
-    - ReachSafety-Loops
+    - unreach-call.ReachSafety-Loops
   gazer-theta:
-    - ReachSafety-BitVectors
-    - ReachSafety-ControlFlow
-    - ReachSafety-ECA
-    - ReachSafety-Floats
-    - ReachSafety-Loops
-    - ReachSafety-ProductLines
-    - ReachSafety-Recursive
-    - ReachSafety-XCSP
-    - ReachSafety-Combinations
+    - unreach-call.ReachSafety-BitVectors
+    - unreach-call.ReachSafety-ControlFlow
+    - unreach-call.ReachSafety-ECA
+    - unreach-call.ReachSafety-Floats
+    - unreach-call.ReachSafety-Loops
+    - unreach-call.ReachSafety-ProductLines
+    - unreach-call.ReachSafety-Recursive
+    - unreach-call.ReachSafety-XCSP
+    - unreach-call.ReachSafety-Combinations
   predatorhp:
-    - ReachSafety-Heap
+    - unreach-call.ReachSafety-Heap
