@@ -186,6 +186,7 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
+      - frama-c-sv
       - goblint
       - pesco
       - pinaka
@@ -451,8 +452,6 @@ opt_in:
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Loops
   frama-c-sv:
-    - no-overflow.NoOverflows-BitVectors
-    - no-overflow.NoOverflows-Other
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   gacal:
