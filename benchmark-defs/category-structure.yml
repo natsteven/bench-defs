@@ -436,7 +436,6 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
-    - SoftwareSystems
   map2check:
     - ReachSafety
   goblint:
