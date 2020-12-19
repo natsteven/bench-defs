@@ -34,6 +34,14 @@ verifiers:
   - spf
 
 
+# Verifiers participating hors concours are executed and listed in the final results,
+# but can not win any medals
+hors_concours:
+  - predatorhp
+  - coastal
+  - spf
+
+
 not_participating:
   - aprove
   - blast
