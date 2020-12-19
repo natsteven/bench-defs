@@ -443,8 +443,6 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
-  predatorhp:
-    - ReachSafety
 
 opt_in: 
   brick:
@@ -468,5 +466,3 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
-  predatorhp:
-    - unreach-call.ReachSafety-Heap
