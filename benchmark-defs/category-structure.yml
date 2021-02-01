@@ -174,14 +174,14 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
       - cpa-lockator
+      - cpa-seq
       - dartagnan
       - divine
       - esbmc-incr
       - esbmc-kind
-      - lazycseq
       - goblint
+      - lazycseq
       - pesco
       - symbiotic
       - uautomizer
