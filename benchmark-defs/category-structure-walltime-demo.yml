@@ -1,0 +1,80 @@
+competition: SV-COMP
+year: 2020
+
+verifiers:
+  - cpa-seq
+  - cpa-par
+  - cpa-par-aws
+  - esbmc
+  - esbmc-par
+  - esbmc-par-aws
+
+# Properties used in the competition
+properties:
+    - unreach-call
+
+categories:
+  ReachSafety:
+    properties: unreach-call
+    categories:
+      - unreach-call.ReachSafety-Arrays
+      - unreach-call.ReachSafety-BitVectors
+      - unreach-call.ReachSafety-ControlFlow
+      - unreach-call.ReachSafety-Floats
+      - unreach-call.ReachSafety-Heap
+      - unreach-call.ReachSafety-Loops
+    verifiers:
+      - cpa-seq
+      - cpa-par
+      - cpa-par-aws
+      - esbmc
+      - esbmc-par
+      - esbmc-par-aws
+
+  Overall:
+    properties:
+        - unreach-call
+    categories:
+      - ReachSafety
+    verifiers:
+      - cpa-seq
+      - cpa-par
+      - cpa-par-aws
+      - esbmc
+      - esbmc-par
+      - esbmc-par-aws
+
+  FalsificationOverall:
+    properties:
+        - unreach-call
+    categories:
+      - ReachSafety
+    verifiers:
+      - cpa-seq
+      - cpa-par
+      - cpa-par-aws
+      - esbmc
+      - esbmc-par
+      - esbmc-par-aws
+
+categories_process_order:
+  - unreach-call.ReachSafety-Arrays
+  - unreach-call.ReachSafety-BitVectors
+  - unreach-call.ReachSafety-ControlFlow
+  - unreach-call.ReachSafety-Floats
+  - unreach-call.ReachSafety-Heap
+  - unreach-call.ReachSafety-Loops
+  - ReachSafety
+
+categories_table_order:
+  - unreach-call.ReachSafety-Arrays
+  - unreach-call.ReachSafety-BitVectors
+  - unreach-call.ReachSafety-ControlFlow
+  - unreach-call.ReachSafety-Floats
+  - unreach-call.ReachSafety-Heap
+  - unreach-call.ReachSafety-Loops
+  - ReachSafety
+  
+opt_out:
+
+opt_in: 
