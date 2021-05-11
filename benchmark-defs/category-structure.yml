@@ -69,6 +69,7 @@ not_participating:
   - skink
   - symdivine
   - ulcseq
+  - verifier-false
   - verifuzz
   - viap
   - yogar-cbmc
