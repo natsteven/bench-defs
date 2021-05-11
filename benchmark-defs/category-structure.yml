@@ -51,11 +51,15 @@ not_participating:
   - consequence
   - cpa-bam-slicing 
   - cpa-kind
+  - cpa-par
+  - cpa-par-aws
   - cpa-undef-func
   - depthk
   - divine-explicit
   - divine-smt
   - esbmc-falsi
+  - esbmc-par
+  - esbmc-par-aws
   - gacal
   - forester
   - hiptnt
