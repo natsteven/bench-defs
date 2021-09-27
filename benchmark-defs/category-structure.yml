@@ -8,6 +8,7 @@ verifiers:
   - cpa-bam-bnb
   - cpa-lockator
   - cpa-seq
+  - crux
   - dartagnan
   - divine
   - esbmc-incr
@@ -113,6 +114,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-seq
+      - crux
       - divine
       - esbmc-kind
       - goblint
@@ -201,6 +203,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-seq
+      - crux
       - divine
       - esbmc-kind
       - frama-c-sv
@@ -266,6 +269,7 @@ categories:
       - cbmc
       - cpa-bam-bnb
       - cpa-seq
+      - crux
       - divine
       - esbmc-kind
       - goblint
