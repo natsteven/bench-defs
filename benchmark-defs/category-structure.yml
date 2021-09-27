@@ -252,6 +252,7 @@ categories:
       - valid-memsafety
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+      - unreach-call.SoftwareSystems-BusyBox-ReachSafety
       - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
       - no-overflow.SoftwareSystems-BusyBox-NoOverflows
       - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -380,6 +381,7 @@ categories_process_order:
   - termination.Termination-Other
   - Termination
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -427,6 +429,7 @@ categories_table_order:
   - termination.Termination-Other
   - SoftwareSystems
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
