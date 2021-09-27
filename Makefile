@@ -22,5 +22,5 @@ update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
 	@echo "\n# Updating" $(@D)
 	cd $(@D) && \
 		git checkout main || git checkout master || git checkout trunk && \
-		git pull --rebase || true
+		git pull --rebase --prune || true
 
