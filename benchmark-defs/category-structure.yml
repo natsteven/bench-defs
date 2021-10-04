@@ -21,6 +21,7 @@ verifiers:
   - pesco
   - pinaka
   - predatorhp
+  - sesl
   - smack
   - symbiotic
   - uautomizer
@@ -156,6 +157,7 @@ categories:
       - esbmc-kind
       - pesco
       - predatorhp
+      - sesl
       - symbiotic
       - uautomizer
       - ukojak
