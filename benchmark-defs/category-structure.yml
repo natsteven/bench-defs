@@ -7,7 +7,7 @@ verifiers:
   - cbmc
   - cpa-bam-bnb
   - cpa-lockator
-  - cpa-seq
+  - cpachecker
   - crux
   - dartagnan
   - divine
@@ -114,7 +114,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - crux
       - divine
       - esbmc-kind
@@ -128,8 +128,8 @@ categories:
       - veriabs
     validators:
       - witnesslint
-      - cpa-seq-correctness
-      - cpa-seq-violation
+      - cpachecker-correctness
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - nitwit-violation
@@ -152,7 +152,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - pesco
@@ -164,7 +164,7 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -183,7 +183,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-lockator
-      - cpa-seq
+      - cpachecker
       - dartagnan
       - divine
       - esbmc-incr
@@ -204,7 +204,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - crux
       - divine
       - esbmc-kind
@@ -218,7 +218,7 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -235,7 +235,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - pesco
@@ -246,7 +246,7 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - uautomizer-violation
       - metaval-violation
 
@@ -270,7 +270,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-bam-bnb
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - goblint
@@ -282,8 +282,8 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-correctness
-      - cpa-seq-violation
+      - cpachecker-correctness
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -308,7 +308,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - pesco
@@ -332,7 +332,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - pesco
