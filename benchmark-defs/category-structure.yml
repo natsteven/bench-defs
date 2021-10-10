@@ -10,6 +10,7 @@ verifiers:
   - cpachecker
   - crux
   - dartagnan
+  - deagle
   - divine
   - esbmc-incr
   - esbmc-kind
@@ -185,6 +186,7 @@ categories:
       - cpa-lockator
       - cpachecker
       - dartagnan
+      - deagle
       - divine
       - esbmc-incr
       - esbmc-kind
