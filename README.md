@@ -22,7 +22,7 @@ The following step unpacks tool `ATESTER`:
 ### Docker Image
 SV-COMP provides a Docker image that tries to provide an environment
 that has mostly the same packages installed as the competition machines:
-- Docker definition: https://gitlab.com/sosy-lab/benchmarking/competition-scripts/-/blob/main/test/Dockerfile.user.2021
+- Docker definition: https://gitlab.com/sosy-lab/benchmarking/competition-scripts/-/blob/main/test/Dockerfile.user.2022
 - Docker image: `registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest`
 - Test if the tool works with the installation:
   - Unzip tool archive to temporary directory `<TOOL>` (**`<TOOL>` must be an absolute path!**)
