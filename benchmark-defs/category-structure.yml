@@ -2,12 +2,64 @@ competition: SV-COMP
 year: 2022
 
 verifiers:
-  - 2ls
-  - brick
-  - cbmc
-  - cpa-bam-bnb
-  - cpa-lockator
-  - cpachecker
+  - 2ls:
+    - name: 2LS
+    - lang: C
+    - url: https://github.com/diffblue/2ls
+    - required-ubuntu-packages:
+    - jury-member:
+      - name: Viktor Malík
+      - affiliation: Brno University of Technology, Czechia
+      - url: https://www.fit.vut.cz/person/imalik/.en
+  - brick:
+    - name: BRICK
+    - lang: C
+    - url: https://github.com/brick-tool-dev/BRICK-2.0
+    - required-ubuntu-packages:
+    - jury-member:
+      - name: Lei Bu
+      - affiliation: Nanjing University, China
+      - url: 
+  - cbmc:
+    - name: CBMC
+    - lang: C
+    - url: https://www.cprover.org/cbmc/
+    - required-ubuntu-packages:
+      - libc6-dev-i386
+      - linux-libc-dev:i386
+      - gcc
+    - jury-member:
+      - name: Michael Tautschnig
+      - affiliation: Queen Mary University of London, UK
+      - url: https://www.tautschnig.net/
+  - cpa-bam-bnb:
+    - name: CPA-BAM-BnB
+    - lang: C
+    - url: https://cpachecker.sosy-lab.org
+    - required-ubuntu-packages:
+    - jury-member:
+      - name: Vadim Mutilin
+      - affiliation: ISP RAS, Russia
+      - url: 
+  - cpa-lockator:
+    - name: 
+    - lang: 
+    - url: 
+    - required-ubuntu-packages:
+    - jury-member:
+      - name: 
+      - affiliation: 
+      - url: 
+  - cpachecker:
+    - name: CPAchecker 2.1
+    - lang: C
+    - url: https://cpachecker.sosy-lab.org
+    - required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    - jury-member:
+      - name: Thomas Bunk
+      - affiliation: LMU Munich, Germany
+      - url: https://www.sosy-lab.org/people/bunk/
   - crux
   - dartagnan
   - deagle
