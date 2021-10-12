@@ -11,6 +11,15 @@ verifiers:
       name: Viktor Malík
       affiliation: Brno University of Technology, Czechia
       url: https://www.fit.vut.cz/person/imalik/.en
+  aprove:
+    name: AProVE
+    lang: C
+    url: aprove.informatik.rwth-aachen.de
+    required-ubuntu-packages: []
+    jury-member:
+      name: Jera Hensel
+      affiliation: RWTH Aachen, Germany
+      url: 
   brick:
     name: BRICK
     lang: C
@@ -336,7 +345,6 @@ hors_concours:
 
 
 not_participating:
-  - aprove
   - blast
   - cbmc-path
   - ceagle
@@ -526,6 +534,7 @@ categories:
       - termination.Termination-Other
     verifiers:
       - 2ls
+      - aprove
       - cbmc
       - cpachecker
       - divine
