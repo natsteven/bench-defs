@@ -48,7 +48,8 @@ verifiers:
     name: CPA-BAM-BnB
     lang: C
     url: https://cpachecker.sosy-lab.org
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Vadim Mutilin
       affiliation: ISP RAS, Russia
@@ -57,7 +58,8 @@ verifiers:
     name: CPALockator
     lang: C
     url:  https://cpachecker.sosy-lab.org
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Pavel Andrianov
       affiliation: ISP RAS, Russia
@@ -76,7 +78,8 @@ verifiers:
     name: Crux
     lang: C
     url: https://crux.galois.com/
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Ryan Scott
       affiliation: Galois, USA
@@ -229,7 +232,6 @@ verifiers:
     url: https://smackers.github.io/
     required-ubuntu-packages:
       - clang-10
-      - dotnet-sdk-3.1
     jury-member:
       name: Zvonimir Rakamaric
       affiliation: University of Utah, USA
