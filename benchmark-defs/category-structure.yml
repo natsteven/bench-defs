@@ -408,7 +408,7 @@ categories:
       - jdart
       - spf
     validators:
-      - wit4java
+      - wit4java-violation
       
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
