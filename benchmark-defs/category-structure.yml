@@ -355,7 +355,9 @@ categories:
       - jbmc
       - jdart
       - spf
-
+    validators:
+      - wit4java
+      
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
   - unreach-call.ReachSafety-BitVectors
