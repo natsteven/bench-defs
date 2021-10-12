@@ -9,7 +9,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Viktor Malík
-      affiliation: Brno University of Technology, Czechia
+      institution: Brno University of Technology
+      country: Czechia
       url: https://www.fit.vut.cz/person/imalik/.en
   aprove:
     name: AProVE
@@ -21,7 +22,8 @@ verifiers:
       - openjdk-11-jre
     jury-member:
       name: Jera Hensel
-      affiliation: RWTH Aachen, Germany
+      institution: RWTH Aachen
+      country: Germany
       url: 
   brick:
     name: BRICK
@@ -30,7 +32,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Lei Bu
-      affiliation: Nanjing University, China
+      institution: Nanjing University
+      country: China
       url: 
   cbmc:
     name: CBMC
@@ -42,7 +45,8 @@ verifiers:
       - linux-libc-dev:i386
     jury-member:
       name: Michael Tautschnig
-      affiliation: Queen Mary University of London, UK
+      institution: Queen Mary University of London
+      country: UK
       url: https://www.tautschnig.net/
   cpa-bam-bnb:
     name: CPA-BAM-BnB
@@ -52,7 +56,8 @@ verifiers:
       - openjdk-11-jre-headless
     jury-member:
       name: Vadim Mutilin
-      affiliation: ISP RAS, Russia
+      institution: ISP RAS
+      country: Russia
       url: 
   cpa-lockator:
     name: CPALockator
@@ -62,7 +67,8 @@ verifiers:
       - openjdk-11-jre-headless
     jury-member:
       name: Pavel Andrianov
-      affiliation: ISP RAS, Russia
+      institution: ISP RAS
+      country: Russia
       url:  null
   cpachecker:
     name: CPAchecker 2.1
@@ -72,7 +78,8 @@ verifiers:
       - openjdk-11-jre-headless
     jury-member:
       name: Thomas Bunk
-      affiliation: LMU Munich, Germany
+      institution: LMU Munich
+      country: Germany
       url: https://www.sosy-lab.org/people/bunk/
   crux:
     name: Crux
@@ -82,7 +89,8 @@ verifiers:
       - openjdk-11-jre-headless
     jury-member:
       name: Ryan Scott
-      affiliation: Galois, USA
+      institution: Galois
+      country: USA
       url: https://ryanglscott.github.io/
   dartagnan:
     name: Dartagnan
@@ -93,7 +101,8 @@ verifiers:
       - llvm-11
     jury-member:
       name: Hernán Ponce de León
-      affiliation: Bundeswehr University Munich
+      institution: Bundeswehr University Munich
+      country: Germany
       url: https://hernanponcedeleon.github.io
   deagle:
     name: Deagle
@@ -102,7 +111,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Fei He
-      affiliation: Tsinghua University
+      institution: Tsinghua University
+      country: China
       url: https://thufv.github.io/team
   divine:
     name: DIVINE
@@ -111,7 +121,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Henrich Lauko
-      affiliation: Masaryk University, Brno, Czechia
+      institution: Masaryk University, Brno
+      country: Czechia
       url: 
   esbmc-incr:
     name: ESBMC-incr
@@ -121,7 +132,8 @@ verifiers:
       - python-is-python2
     jury-member:
       name: Felipe R. Monteiro
-      affiliation: Amazon Web Services, USA
+      institution: Amazon Web Services
+      country: USA
       url: https://feliperodri.github.io/
   esbmc-kind:
     name: ESBMC-kind
@@ -131,7 +143,8 @@ verifiers:
       - python-is-python2
     jury-member:
       name: Rafael Sá Menezes
-      affiliation: University of Manchester
+      institution: University of Manchester
+      country: UK
       url: 
   frama-c-sv:
     name: Frama-C
@@ -142,7 +155,8 @@ verifiers:
       - libwhy3-ocaml-dev
     jury-member:
       name: Martin Spiessl
-      affiliation: LMU Munich, Germany
+      institution: LMU Munich
+      country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
   gazer-theta:
     name: Gazer-Theta
@@ -154,7 +168,8 @@ verifiers:
       - openjdk-11-jdk-headless
     jury-member:
       name: Ákos Hajdu
-      affiliation: Budapest University of Technology and Economics, Hungary
+      institution: Budapest University of Technology and Economics
+      country: Hungary
       url: https://hajduakos.github.io/
   goblint:
     name: Goblint
@@ -163,7 +178,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Simmo Saan
-      affiliation: University of Tartu, Estonia
+      institution: University of Tartu
+      country: Estonia
       url: 
   korn:
     name: Korn
@@ -172,7 +188,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Gidon Ernst
-      affiliation: LMU Munich, Germany
+      institution: LMU Munich
+      country: Germany
       url: https://www.sosy-lab.org/people/ernst/
   lazycseq:
     name: Lazy-CSeq
@@ -181,7 +198,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Omar Inverso
-      affiliation: Gran Sasso Science Institute, Italy
+      institution: Gran Sasso Science Institute
+      country: Italy
       url: https://cs.gssi.it/omar.inverso
   pesco:
     name: PeSCo
@@ -190,7 +208,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Cedric Richter
-      affiliation: Paderborn University, Germany
+      institution: Paderborn University
+      country: Germany
       url: https://en.cs.uni-paderborn.de/sms/team/people/cedric-richter
   pinaka:
     name: Pinaka
@@ -199,7 +218,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Saurabh Joshi
-      affiliation: IIT Hyderabad, India
+      institution: IIT Hyderabad
+      country: India
       url: https://sbjoshi.github.io/
   predatorhp:
     name: PredatorHP
@@ -211,7 +231,8 @@ verifiers:
       - python-is-python2
     jury-member:
       name: Hors Concours
-      affiliation: --
+      institution: --
+      country: --
       url: 
   sesl:
     name: SESL
@@ -224,7 +245,8 @@ verifiers:
       - openssl
     jury-member:
       name: Xie Li
-      affiliation: Academy of Sciences, China
+      institution: Academy of Sciences
+      country: China
       url: 
   smack:
     name: SMACK
@@ -234,7 +256,8 @@ verifiers:
       - clang-10
     jury-member:
       name: Zvonimir Rakamaric
-      affiliation: University of Utah, USA
+      institution: University of Utah
+      country: USA
       url: https://zvonimir.info/
   symbiotic:
     name: Symbiotic
@@ -245,7 +268,8 @@ verifiers:
       - python-lxml
     jury-member:
       name: Marek Chalupa
-      affiliation: Masaryk University, Brno, Czechia
+      institution: Masaryk University, Brno
+      country: Czechia
       url: 
   uautomizer:
     name: UAutomizer
@@ -254,7 +278,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Matthias Heizmann
-      affiliation: University of Freiburg, Germany
+      institution: University of Freiburg
+      country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/heizmann
   ukojak:
     name: UKojak
@@ -263,7 +288,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Dominik Klumpp
-      affiliation: University of Freiburg, Germany
+      institution: University of Freiburg
+      country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/klumpp
   utaipan:
     name: UTaipan
@@ -272,7 +298,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Daniel Dietsch
-      affiliation: University of Freiburg, Germany
+      institution: University of Freiburg
+      country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/dietsch
   veriabs:
     name: VeriAbs
@@ -286,7 +313,8 @@ verifiers:
       - python-is-python2
     jury-member:
       name: Priyanka Darke
-      affiliation: Tata Consultancy Services, India
+      institution: Tata Consultancy Services
+      country: India
       url: 
   coastal:
     name: COASTAL
@@ -295,7 +323,7 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Hors Concours
-      affiliation: --
+      institution: --
       url: 
   java-ranger:
     name: Java-Ranger
@@ -304,7 +332,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Soha Hussein
-      affiliation: University of Minnesota, USA
+      institution: University of Minnesota
+      country: USA
       url: https://www.linkedin.com/in/sohahusse/
   jayhorn:
     name: JayHorn
@@ -314,7 +343,8 @@ verifiers:
     - openjdk-8-jdk
     jury-member:
       name: Hossein Hojjat
-      affiliation: University of Tehran, Iran
+      institution: University of Tehran
+      country: Iran
       url: https://ece.ut.ac.ir/en/~hojjat
   jbmc:
     name: JBMC
@@ -323,7 +353,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Peter Schrammel
-      affiliation: University of Sussex and Diffblue, UK
+      institution: University of Sussex and Diffblue
+      country: UK
       url: http://www.schrammel.it
   jdart:
     name: JDart
@@ -332,7 +363,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Falk Howar
-      affiliation: TU Dortmund, Germany
+      institution: TU Dortmund
+      country: Germany
       url: https://falkhowar.de
   spf:
     name: SPF
@@ -341,7 +373,8 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Hors Concours
-      affiliation: --
+      institution: --
+      country: --
       url: 
 
 
