@@ -15,7 +15,10 @@ verifiers:
     name: AProVE
     lang: C
     url: aprove.informatik.rwth-aachen.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - clang
+      - mono-runtime
+      - openjdk-11-jre
     jury-member:
       name: Jera Hensel
       affiliation: RWTH Aachen, Germany
@@ -34,9 +37,9 @@ verifiers:
     lang: C
     url: https://www.cprover.org/cbmc/
     required-ubuntu-packages:
+      - gcc
       - libc6-dev-i386
       - linux-libc-dev:i386
-      - gcc
     jury-member:
       name: Michael Tautschnig
       affiliation: Queen Mary University of London, UK
@@ -111,7 +114,8 @@ verifiers:
     name: ESBMC-incr
     lang: C
     url: https://esbmc.org/
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python-is-python2
     jury-member:
       name: Felipe R. Monteiro
       affiliation: Amazon Web Services, USA
@@ -120,7 +124,8 @@ verifiers:
     name: ESBMC-kind
     lang: C
     url: http://esbmc.org/
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python-is-python2
     jury-member:
       name: Rafael Sá Menezes
       affiliation: University of Manchester
@@ -131,6 +136,7 @@ verifiers:
     url: https://frama-c.com/
     required-ubuntu-packages:
       - frama-c-base
+      - libwhy3-ocaml-dev
     jury-member:
       name: Martin Spiessl
       affiliation: LMU Munich, Germany
@@ -140,11 +146,9 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/gazer
     required-ubuntu-packages:
-      - openjdk-11-jdk-headless
       - clang-9
-      - llvm-9-dev
-      - llvm-9-tools
-      - llvm-9-runtime
+      - llvm-9
+      - openjdk-11-jdk-headless
     jury-member:
       name: Ákos Hajdu
       affiliation: Budapest University of Technology and Economics, Hungary
@@ -198,7 +202,10 @@ verifiers:
     name: PredatorHP
     lang: C
     url: https://www.fit.vutbr.cz/research/groups/verifit/tools/predator-hp/
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - expect
+      - gcc-7-multilib
+      - python-is-python2
     jury-member:
       name: Hors Concours
       affiliation: --
@@ -208,10 +215,10 @@ verifiers:
     lang: C
     url: https://spencerl-y.github.io/SESL/
     required-ubuntu-packages:
-      - openssl
-      - libssl-dev
       - clang
+      - libssl-dev
       - llvm
+      - openssl
     jury-member:
       name: Xie Li
       affiliation: Academy of Sciences, China
@@ -270,11 +277,11 @@ verifiers:
     lang: C
     url: https://www.tcs.com/designing-complex-intelligent-systems
     required-ubuntu-packages:
-      - openjdk-8-jre
+      - clang-6.0
       - libc6-dev-i386
-      - Boost version 1.68.0
-      - llvm
-      - clang version 6.0.0
+      - llvm-6.0
+      - openjdk-8-jre
+      - python-is-python2
     jury-member:
       name: Priyanka Darke
       affiliation: Tata Consultancy Services, India
