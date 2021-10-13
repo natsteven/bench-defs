@@ -201,6 +201,16 @@ verifiers:
       institution: Gran Sasso Science Institute
       country: Italy
       url: https://cs.gssi.it/omar.inverso
+  locksmith:
+    name: Locksmith
+    lang: C
+    url: http://www.cs.umd.edu/projects/PL/locksmith/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Vesal Vojdani
+      institution: University of Tartu
+      country: Estonia
+      url: 
   pesco:
     name: PeSCo
     lang: C
@@ -838,3 +848,5 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
+  locksmith:
+    - no-data-race.NoDataRace-Main
