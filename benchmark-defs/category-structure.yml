@@ -335,6 +335,16 @@ verifiers:
       name: Hors Concours
       institution: --
       url: 
+  gdart:
+    name: GDart
+    lang: Java
+    url: https://github.com/tudo-aqua/gdart-svcomp
+    required-ubuntu-packages: []
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund
+      country: Germany
+      url: https://falkhowar.de
   java-ranger:
     name: Java-Ranger
     lang: Java
@@ -701,6 +711,7 @@ categories:
       - assert_java.ReachSafety-Java
     verifiers:
       - coastal
+      - gdart
       - java-ranger
       - jayhorn
       - jbmc
