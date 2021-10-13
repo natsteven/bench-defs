@@ -315,7 +315,16 @@ verifiers:
       name: Priyanka Darke
       institution: Tata Consultancy Services
       country: India
-      url: 
+      url:
+  infer:
+    name: Infer-SV
+    lang: C
+    url: https://fbinfer.com/
+    jury-member:
+      name: Matthias Kettl
+      institution: LMU Munich
+      country: Germany
+      url:
   coastal:
     name: COASTAL
     lang: Java
@@ -467,6 +476,7 @@ categories:
       - ukojak
       - utaipan
       - veriabs
+      - infer
     validators:
       - witnesslint
       - cpachecker-correctness
@@ -503,6 +513,7 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -537,6 +548,7 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+      - infer
 
   NoOverflows:
     properties: no-overflow
@@ -558,6 +570,7 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -623,6 +636,7 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+      - infer
     validators:
       - witnesslint
       - cpachecker-correctness

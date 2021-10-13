@@ -6,11 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-svcomp22"/>
-  <option name="-heap">10000M</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900 s</option>
-
 <rundefinition name="SV-COMP22_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -152,18 +147,10 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_termination">
-  <tasks name="Termination-MainControlFlow">
-    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="Termination-MainHeap">
-    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="Termination-Other">
-    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+<rundefinition name="SV-COMP22_no-data-race">
+  <tasks name="NoDataRace-Main">
+    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
