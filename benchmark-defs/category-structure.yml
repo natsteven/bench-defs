@@ -16,6 +16,7 @@ verifiers:
   - frama-c-sv
   - gazer-theta
   - goblint
+  - graves
   - korn
   - lazycseq
   - pesco
@@ -118,6 +119,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -154,6 +156,7 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - predatorhp
       - symbiotic
@@ -187,6 +190,7 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
+      - graves
       - lazycseq
       - pesco
       - symbiotic
@@ -208,6 +212,7 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -236,6 +241,7 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -272,6 +278,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - graves
       - pesco
       - smack
       - symbiotic
@@ -309,6 +316,7 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -333,6 +341,7 @@ categories:
       - cpa-seq
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -461,6 +470,11 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
+  graves:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
 
 opt_in: 
   brick:
