@@ -281,6 +281,19 @@ verifiers:
       institution: Masaryk University, Brno
       country: Czechia
       url: 
+  theta:
+    name: Theta
+    lang: C
+    url: https://github.com/ftsrg/theta
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+      - libgomp1
+      - libmpfr-dev
+    jury-member:
+      name: Vince Molnár
+      institution: Budapest University of Technology and Economics
+      country: Hungary
+      url:
   uautomizer:
     name: UAutomizer
     lang: C
@@ -483,6 +496,7 @@ categories:
       - pesco
       - pinaka
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -554,6 +568,7 @@ categories:
       - lazycseq
       - pesco
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
