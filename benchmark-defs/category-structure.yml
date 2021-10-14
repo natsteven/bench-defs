@@ -42,7 +42,6 @@ verifiers:
     required-ubuntu-packages:
       - gcc
       - libc6-dev-i386
-      - linux-libc-dev:i386
     jury-member:
       name: Michael Tautschnig
       institution: Queen Mary University of London
