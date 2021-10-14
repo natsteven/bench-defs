@@ -250,9 +250,8 @@ verifiers:
     url: https://spencerl-y.github.io/SESL/
     required-ubuntu-packages:
       - clang
-      - libssl-dev
+      - libssl1.1
       - llvm
-      - openssl
     jury-member:
       name: Xie Li
       institution: Academy of Sciences
@@ -288,7 +287,7 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
       - libgomp1
-      - libmpfr-dev
+      - libmpfr6
     jury-member:
       name: Vince Molnár
       institution: Budapest University of Technology and Economics
