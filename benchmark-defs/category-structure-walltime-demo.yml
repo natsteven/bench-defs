@@ -2,7 +2,7 @@ competition: SV-COMP
 year: 2020
 
 verifiers:
-  - cpa-seq
+  - cpachecker
   - cpa-par
   - cpa-par-aws
   - esbmc
@@ -24,7 +24,7 @@ categories:
       - unreach-call.ReachSafety-Heap
       - unreach-call.ReachSafety-Loops
     verifiers:
-      - cpa-seq
+      - cpachecker
       - cpa-par
       - cpa-par-aws
       - esbmc
@@ -37,7 +37,7 @@ categories:
     categories:
       - ReachSafety
     verifiers:
-      - cpa-seq
+      - cpachecker
       - cpa-par
       - cpa-par-aws
       - esbmc
@@ -50,7 +50,7 @@ categories:
     categories:
       - ReachSafety
     verifiers:
-      - cpa-seq
+      - cpachecker
       - cpa-par
       - cpa-par-aws
       - esbmc

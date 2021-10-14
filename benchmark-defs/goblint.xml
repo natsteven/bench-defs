@@ -8,7 +8,7 @@
 
   <option name="--conf">conf/svcomp21.json</option>
 
-<rundefinition name="SV-COMP21_unreach-call">
+<rundefinition name="SV-COMP22_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -86,14 +86,14 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_no-data-race">
+<rundefinition name="SV-COMP22_no-data-race">
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_valid-memsafety">
+<rundefinition name="SV-COMP22_valid-memsafety">
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -108,7 +108,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_no-overflow">
+<rundefinition name="SV-COMP22_no-overflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>

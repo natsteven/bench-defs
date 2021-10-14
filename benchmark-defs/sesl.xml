@@ -1,19 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="predatorhp" timelimit="15 min" memlimit="15 GB" cpuCores="8">
-
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
+<benchmark tool="sesl" timelimit="15 min" memlimit="15 GB" cpuCores="8">
 
   <resultfiles>**.graphml</resultfiles>
-  
-  <option name="--witness">error-witness.graphml</option> 
-
-<rundefinition name="SV-COMP22_valid-memcleanup">
-  <tasks name="MemSafety-MemCleanup">
-    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
-</rundefinition>
 
 <rundefinition name="SV-COMP22_valid-memsafety">
   <tasks name="MemSafety-Arrays">
@@ -35,6 +24,13 @@
   <tasks name="MemSafety-Juliet">
     <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP22_valid-memcleanup">
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 </rundefinition>
 

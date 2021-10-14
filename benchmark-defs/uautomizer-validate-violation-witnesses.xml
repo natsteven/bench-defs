@@ -8,7 +8,7 @@
 
   <option name="--full-output"/>
 
-<rundefinition name="SV-COMP21_unreach-call">
+<rundefinition name="SV-COMP22_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -65,6 +65,10 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-BusyBox-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-ReachSafety.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <excludesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</excludesfile>
@@ -80,7 +84,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_valid-memcleanup">
+<rundefinition name="SV-COMP22_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -90,7 +94,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_valid-memsafety">
+<rundefinition name="SV-COMP22_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -133,7 +137,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_no-overflow">
+<rundefinition name="SV-COMP22_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -156,7 +160,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP21_termination">
+<rundefinition name="SV-COMP22_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 

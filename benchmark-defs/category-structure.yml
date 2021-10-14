@@ -1,39 +1,413 @@
 competition: SV-COMP
-year: 2021
+year: 2022
 
 verifiers:
-  - 2ls
-  - brick
-  - cbmc
-  - cpa-bam-bnb
-  - cpa-lockator
-  - cpa-seq
-  - crux
-  - dartagnan
-  - divine
-  - esbmc-incr
-  - esbmc-kind
-  - frama-c-sv
-  - gazer-theta
-  - goblint
-  - graves
-  - korn
-  - lazycseq
-  - pesco
-  - pinaka
-  - predatorhp
-  - smack
-  - symbiotic
-  - uautomizer
-  - ukojak
-  - utaipan
-  - veriabs
-  - coastal
-  - java-ranger
-  - jayhorn
-  - jbmc
-  - jdart
-  - spf
+  2ls:
+    name: 2LS
+    lang: C
+    url: https://github.com/diffblue/2ls
+    required-ubuntu-packages: []
+    jury-member:
+      name: Viktor Malík
+      institution: Brno University of Technology
+      country: Czechia
+      url: https://www.fit.vut.cz/person/imalik/.en
+  aprove:
+    name: AProVE
+    lang: C
+    url: aprove.informatik.rwth-aachen.de
+    required-ubuntu-packages:
+      - clang
+      - mono-runtime
+      - openjdk-11-jre
+    jury-member:
+      name: Jera Hensel
+      institution: RWTH Aachen
+      country: Germany
+      url: 
+  brick:
+    name: BRICK
+    lang: C
+    url: https://github.com/brick-tool-dev/BRICK-2.0
+    required-ubuntu-packages: []
+    jury-member:
+      name: Lei Bu
+      institution: Nanjing University
+      country: China
+      url: 
+  cbmc:
+    name: CBMC
+    lang: C
+    url: https://www.cprover.org/cbmc/
+    required-ubuntu-packages:
+      - gcc
+      - libc6-dev-i386
+      - linux-libc-dev:i386
+    jury-member:
+      name: Michael Tautschnig
+      institution: Queen Mary University of London
+      country: UK
+      url: https://www.tautschnig.net/
+  cpa-bam-bnb:
+    name: CPA-BAM-BnB
+    lang: C
+    url: https://cpachecker.sosy-lab.org
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Vadim Mutilin
+      institution: ISP RAS
+      country: Russia
+      url: 
+  cpa-lockator:
+    name: CPALockator
+    lang: C
+    url:  https://cpachecker.sosy-lab.org
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Pavel Andrianov
+      institution: ISP RAS
+      country: Russia
+      url:  null
+  cpachecker:
+    name: CPAchecker 2.1
+    lang: C
+    url: https://cpachecker.sosy-lab.org
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Thomas Bunk
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/bunk/
+  crux:
+    name: Crux
+    lang: C
+    url: https://crux.galois.com/
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Ryan Scott
+      institution: Galois
+      country: USA
+      url: https://ryanglscott.github.io/
+  dartagnan:
+    name: Dartagnan
+    lang: C
+    url: https://github.com/hernanponcedeleon/Dat3M
+    required-ubuntu-packages:
+      - clang-11
+      - llvm-11
+    jury-member:
+      name: Hernán Ponce de León
+      institution: Bundeswehr University Munich
+      country: Germany
+      url: https://hernanponcedeleon.github.io
+  deagle:
+    name: Deagle
+    lang: C
+    url: https://github.com/Misasasa/Deagle
+    required-ubuntu-packages: []
+    jury-member:
+      name: Fei He
+      institution: Tsinghua University
+      country: China
+      url: https://thufv.github.io/team
+  divine:
+    name: DIVINE
+    lang: C
+    url: https://divine.fi.muni.cz/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Henrich Lauko
+      institution: Masaryk University, Brno
+      country: Czechia
+      url: 
+  esbmc-incr:
+    name: ESBMC-incr
+    lang: C
+    url: https://esbmc.org/
+    required-ubuntu-packages:
+      - python-is-python2
+    jury-member:
+      name: Felipe R. Monteiro
+      institution: Amazon Web Services
+      country: USA
+      url: https://feliperodri.github.io/
+  esbmc-kind:
+    name: ESBMC-kind
+    lang: C
+    url: http://esbmc.org/
+    required-ubuntu-packages:
+      - python-is-python2
+    jury-member:
+      name: Rafael Sá Menezes
+      institution: University of Manchester
+      country: UK
+      url: 
+  frama-c-sv:
+    name: Frama-C
+    lang: C
+    url: https://frama-c.com/
+    required-ubuntu-packages:
+      - frama-c-base
+      - libwhy3-ocaml-dev
+    jury-member:
+      name: Martin Spiessl
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/spiessl/
+  gazer-theta:
+    name: Gazer-Theta
+    lang: C
+    url: https://github.com/ftsrg/gazer
+    required-ubuntu-packages:
+      - clang-9
+      - llvm-9
+      - openjdk-11-jdk-headless
+    jury-member:
+      name: Ákos Hajdu
+      institution: Budapest University of Technology and Economics
+      country: Hungary
+      url: https://hajduakos.github.io/
+  goblint:
+    name: Goblint
+    lang: C
+    url: https://goblint.in.tum.de/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Simmo Saan
+      institution: University of Tartu
+      country: Estonia
+      url: 
+  graves:
+    name: GraVeS
+    lang: C
+    url: https://github.com/will-leeson/cpachecker
+    required-ubuntu-packages: 
+      - openjdk-11-jre-headless
+      - ant
+    jury-member:
+      name: Will Leeson
+      institution: University of Virginia
+      country: United States of America
+      url: https://will-leeson.github.io/
+  korn:
+    name: Korn
+    lang: C
+    url: https://github.com/gernst/korn
+    required-ubuntu-packages: []
+    jury-member:
+      name: Gidon Ernst
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/ernst/
+  lazycseq:
+    name: Lazy-CSeq
+    lang: C
+    url: https://github.com/omainv/cseq/releases
+    required-ubuntu-packages: []
+    jury-member:
+      name: Omar Inverso
+      institution: Gran Sasso Science Institute
+      country: Italy
+      url: https://cs.gssi.it/omar.inverso
+  locksmith:
+    name: Locksmith
+    lang: C
+    url: http://www.cs.umd.edu/projects/PL/locksmith/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Vesal Vojdani
+      institution: University of Tartu
+      country: Estonia
+      url: 
+  pesco:
+    name: PeSCo
+    lang: C
+    url: https://github.com/cedricrupb/cpachecker
+    required-ubuntu-packages: []
+    jury-member:
+      name: Cedric Richter
+      institution: Paderborn University
+      country: Germany
+      url: https://en.cs.uni-paderborn.de/sms/team/people/cedric-richter
+  pinaka:
+    name: Pinaka
+    lang: C
+    url: https://github.com/sbjoshi/Pinaka
+    required-ubuntu-packages: []
+    jury-member:
+      name: Saurabh Joshi
+      institution: IIT Hyderabad
+      country: India
+      url: https://sbjoshi.github.io/
+  predatorhp:
+    name: PredatorHP
+    lang: C
+    url: https://www.fit.vutbr.cz/research/groups/verifit/tools/predator-hp/
+    required-ubuntu-packages:
+      - expect
+      - gcc-7-multilib
+      - python-is-python2
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url: 
+  sesl:
+    name: SESL
+    lang: C
+    url: https://spencerl-y.github.io/SESL/
+    required-ubuntu-packages:
+      - clang
+      - libssl-dev
+      - llvm
+      - openssl
+    jury-member:
+      name: Xie Li
+      institution: Academy of Sciences
+      country: China
+      url: 
+  smack:
+    name: SMACK
+    lang: C
+    url: https://smackers.github.io/
+    required-ubuntu-packages:
+      - clang-10
+    jury-member:
+      name: Zvonimir Rakamaric
+      institution: University of Utah
+      country: USA
+      url: https://zvonimir.info/
+  symbiotic:
+    name: Symbiotic
+    lang: C
+    url: https://github.com/staticafi/symbiotic
+    required-ubuntu-packages:
+      - python3
+      - python-lxml
+    jury-member:
+      name: Marek Chalupa
+      institution: Masaryk University, Brno
+      country: Czechia
+      url: 
+  uautomizer:
+    name: UAutomizer
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages: []
+    jury-member:
+      name: Matthias Heizmann
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/heizmann
+  ukojak:
+    name: UKojak
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages: []
+    jury-member:
+      name: Dominik Klumpp
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/klumpp
+  utaipan:
+    name: UTaipan
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages: []
+    jury-member:
+      name: Daniel Dietsch
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/dietsch
+  veriabs:
+    name: VeriAbs
+    lang: C
+    url: https://www.tcs.com/designing-complex-intelligent-systems
+    required-ubuntu-packages:
+      - clang-6.0
+      - libc6-dev-i386
+      - llvm-6.0
+      - openjdk-8-jre
+      - python-is-python2
+    jury-member:
+      name: Priyanka Darke
+      institution: Tata Consultancy Services
+      country: India
+      url: 
+  coastal:
+    name: COASTAL
+    lang: Java
+    url: https://www.cs.sun.ac.za/coastal
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      url: 
+  gdart:
+    name: GDart
+    lang: Java
+    url: https://github.com/tudo-aqua/gdart-svcomp
+    required-ubuntu-packages: []
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund
+      country: Germany
+      url: https://falkhowar.de
+  java-ranger:
+    name: Java-Ranger
+    lang: Java
+    url: https://github.com/vaibhavbsharma/java-ranger
+    required-ubuntu-packages: []
+    jury-member:
+      name: Soha Hussein
+      institution: University of Minnesota
+      country: USA
+      url: https://www.linkedin.com/in/sohahusse/
+  jayhorn:
+    name: JayHorn
+    lang: Java
+    url: https://github.com/jayhorn/jayhorn
+    required-ubuntu-packages:
+    - openjdk-8-jdk
+    jury-member:
+      name: Hossein Hojjat
+      institution: University of Tehran
+      country: Iran
+      url: https://ece.ut.ac.ir/en/~hojjat
+  jbmc:
+    name: JBMC
+    lang: Java
+    url: https://github.com/diffblue/cbmc
+    required-ubuntu-packages: []
+    jury-member:
+      name: Peter Schrammel
+      institution: University of Sussex and Diffblue
+      country: UK
+      url: http://www.schrammel.it
+  jdart:
+    name: JDart
+    lang: Java
+    url: https://github.com/tudo-aqua/jdart
+    required-ubuntu-packages: []
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund
+      country: Germany
+      url: https://falkhowar.de
+  spf:
+    name: SPF
+    lang: Java
+    url: https://github.com/SymbolicPathFinder/jpf-symbc
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url: 
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
@@ -45,7 +419,6 @@ hors_concours:
 
 
 not_participating:
-  - aprove
   - blast
   - cbmc-path
   - ceagle
@@ -114,7 +487,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - crux
       - divine
       - esbmc-kind
@@ -129,8 +502,8 @@ categories:
       - veriabs
     validators:
       - witnesslint
-      - cpa-seq-correctness
-      - cpa-seq-violation
+      - cpachecker-correctness
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - nitwit-violation
@@ -153,19 +526,20 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - graves
       - pesco
       - predatorhp
+      - sesl
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -184,8 +558,9 @@ categories:
       - 2ls
       - cbmc
       - cpa-lockator
-      - cpa-seq
+      - cpachecker
       - dartagnan
+      - deagle
       - divine
       - esbmc-incr
       - esbmc-kind
@@ -206,7 +581,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - crux
       - divine
       - esbmc-kind
@@ -221,7 +596,7 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -237,8 +612,9 @@ categories:
       - termination.Termination-Other
     verifiers:
       - 2ls
+      - aprove
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - graves
@@ -250,7 +626,7 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-violation
+      - cpachecker-violation
       - uautomizer-violation
       - metaval-violation
 
@@ -274,7 +650,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-bam-bnb
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - goblint
@@ -287,8 +663,8 @@ categories:
       - utaipan
     validators:
       - witnesslint
-      - cpa-seq-correctness
-      - cpa-seq-violation
+      - cpachecker-correctness
+      - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
       - uautomizer-correctness
@@ -313,7 +689,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - graves
@@ -338,7 +714,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpa-seq
+      - cpachecker
       - divine
       - esbmc-kind
       - graves
@@ -355,12 +731,15 @@ categories:
       - assert_java.ReachSafety-Java
     verifiers:
       - coastal
+      - gdart
       - java-ranger
       - jayhorn
       - jbmc
       - jdart
       - spf
-
+    validators:
+      - wit4java-violation
+      
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
   - unreach-call.ReachSafety-BitVectors
@@ -505,3 +884,5 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
+  locksmith:
+    - no-data-race.NoDataRace-Main

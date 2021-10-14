@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-<rundefinition name="SV-COMP21_termination">
+<rundefinition name="SV-COMP22_termination">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

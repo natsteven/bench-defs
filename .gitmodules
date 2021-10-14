@@ -3,7 +3,7 @@
 	url = https://gitlab.com/sosy-lab/sv-comp/archives-2022
 [submodule "sv-benchmarks"]
 	path = sv-benchmarks
-	url = https://gitlab.com/sosy-lab/software/sv-benchmarks
+	url = https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks
 [submodule "benchexec"]
 	path = benchexec
 	url = https://gitlab.com/sosy-lab/software/benchexec
