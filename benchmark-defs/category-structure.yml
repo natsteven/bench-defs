@@ -19,7 +19,7 @@ verifiers:
     required-ubuntu-packages:
       - clang
       - mono-runtime
-      - openjdk-11-jre
+      - openjdk-11-jre-headless
     jury-member:
       name: Jera Hensel
       institution: RWTH Aachen
@@ -332,7 +332,7 @@ verifiers:
       - clang-6.0
       - libc6-dev-i386
       - llvm-6.0
-      - openjdk-8-jre
+      - openjdk-8-jre-headless
       - python-is-python2
     jury-member:
       name: Priyanka Darke
@@ -373,7 +373,7 @@ verifiers:
     lang: Java
     url: https://github.com/jayhorn/jayhorn
     required-ubuntu-packages:
-    - openjdk-8-jdk
+    - openjdk-8-jdk-headless
     jury-member:
       name: Hossein Hojjat
       institution: University of Tehran
