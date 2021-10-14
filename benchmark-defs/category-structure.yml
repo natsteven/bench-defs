@@ -274,7 +274,7 @@ verifiers:
     url: https://github.com/staticafi/symbiotic
     required-ubuntu-packages:
       - python3
-      - python-lxml
+      - python3-lxml
     jury-member:
       name: Marek Chalupa
       institution: Masaryk University, Brno
