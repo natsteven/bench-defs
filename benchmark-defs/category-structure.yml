@@ -181,6 +181,18 @@ verifiers:
       institution: University of Tartu
       country: Estonia
       url: 
+  graves:
+    name: GraVeS
+    lang: C
+    url: https://github.com/will-leeson/cpachecker
+    required-ubuntu-packages: 
+      - openjdk-11-jre-headless
+      - ant
+    jury-member:
+      name: Will Leeson
+      institution: University of Virginia
+      country: United States of America
+      url: https://will-leeson.github.io/
   korn:
     name: Korn
     lang: C
@@ -493,6 +505,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -530,6 +543,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - predatorhp
       - sesl
@@ -565,6 +579,7 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
+      - graves
       - lazycseq
       - pesco
       - symbiotic
@@ -587,6 +602,7 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -616,6 +632,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -652,6 +669,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - graves
       - pesco
       - smack
       - symbiotic
@@ -689,6 +707,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -713,6 +732,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -844,6 +864,11 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
+  graves:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
 
 opt_in: 
   brick:
