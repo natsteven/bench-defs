@@ -19,7 +19,7 @@ verifiers:
     required-ubuntu-packages:
       - clang
       - mono-runtime
-      - openjdk-11-jre
+      - openjdk-11-jre-headless
     jury-member:
       name: Jera Hensel
       institution: RWTH Aachen
@@ -42,7 +42,6 @@ verifiers:
     required-ubuntu-packages:
       - gcc
       - libc6-dev-i386
-      - linux-libc-dev:i386
     jury-member:
       name: Michael Tautschnig
       institution: Queen Mary University of London
@@ -262,9 +261,8 @@ verifiers:
     url: https://spencerl-y.github.io/SESL/
     required-ubuntu-packages:
       - clang
-      - libssl-dev
+      - libssl1.1
       - llvm
-      - openssl
     jury-member:
       name: Xie Li
       institution: Academy of Sciences
@@ -287,7 +285,7 @@ verifiers:
     url: https://github.com/staticafi/symbiotic
     required-ubuntu-packages:
       - python3
-      - python-lxml
+      - python3-lxml
     jury-member:
       name: Marek Chalupa
       institution: Masaryk University, Brno
@@ -300,7 +298,7 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
       - libgomp1
-      - libmpfr-dev
+      - libmpfr6
     jury-member:
       name: Vince Molnár
       institution: Budapest University of Technology and Economics
@@ -344,7 +342,7 @@ verifiers:
       - clang-6.0
       - libc6-dev-i386
       - llvm-6.0
-      - openjdk-8-jre
+      - openjdk-8-jre-headless
       - python-is-python2
     jury-member:
       name: Priyanka Darke
@@ -385,7 +383,7 @@ verifiers:
     lang: Java
     url: https://github.com/jayhorn/jayhorn
     required-ubuntu-packages:
-    - openjdk-8-jdk
+    - openjdk-8-jdk-headless
     jury-member:
       name: Hossein Hojjat
       institution: University of Tehran
