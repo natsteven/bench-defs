@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="--conf">conf/svcomp21.json</option>
+  <option name="--conf">conf/svcomp22.json</option>
 
 <rundefinition name="SV-COMP22_unreach-call">
   <tasks name="ReachSafety-Arrays">
