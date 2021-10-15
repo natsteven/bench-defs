@@ -207,6 +207,7 @@ verifiers:
     name: Infer-SV
     lang: C
     url: https://fbinfer.com/
+    required-ubuntu-packages: []
     jury-member:
       name: Matthias Kettl
       institution: LMU Munich
