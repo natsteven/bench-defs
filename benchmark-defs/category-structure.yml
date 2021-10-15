@@ -24,7 +24,7 @@ verifiers:
       name: Jera Hensel
       institution: RWTH Aachen
       country: Germany
-      url: 
+      url:
   brick:
     name: BRICK
     lang: C
@@ -34,7 +34,7 @@ verifiers:
       name: Lei Bu
       institution: Nanjing University
       country: China
-      url: 
+      url:
   cbmc:
     name: CBMC
     lang: C
@@ -57,18 +57,18 @@ verifiers:
       name: Vadim Mutilin
       institution: ISP RAS
       country: Russia
-      url: 
+      url:
   cpa-lockator:
     name: CPALockator
     lang: C
-    url:  https://cpachecker.sosy-lab.org
+    url: https://cpachecker.sosy-lab.org
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
       name: Pavel Andrianov
       institution: ISP RAS
       country: Russia
-      url:  null
+      url: null
   cpachecker:
     name: CPAchecker 2.1
     lang: C
@@ -122,7 +122,7 @@ verifiers:
       name: Henrich Lauko
       institution: Masaryk University, Brno
       country: Czechia
-      url: 
+      url:
   esbmc-incr:
     name: ESBMC-incr
     lang: C
@@ -144,7 +144,7 @@ verifiers:
       name: Rafael Sá Menezes
       institution: University of Manchester
       country: UK
-      url: 
+      url:
   frama-c-sv:
     name: Frama-C
     lang: C
@@ -179,12 +179,12 @@ verifiers:
       name: Simmo Saan
       institution: University of Tartu
       country: Estonia
-      url: 
+      url:
   graves:
     name: GraVeS
     lang: C
     url: https://github.com/will-leeson/cpachecker
-    required-ubuntu-packages: 
+    required-ubuntu-packages:
       - openjdk-11-jre-headless
       - ant
     jury-member:
@@ -221,7 +221,7 @@ verifiers:
       name: Vesal Vojdani
       institution: University of Tartu
       country: Estonia
-      url: 
+      url:
   pesco:
     name: PeSCo
     lang: C
@@ -254,7 +254,7 @@ verifiers:
       name: Hors Concours
       institution: --
       country: --
-      url: 
+      url:
   sesl:
     name: SESL
     lang: C
@@ -267,7 +267,7 @@ verifiers:
       name: Xie Li
       institution: Academy of Sciences
       country: China
-      url: 
+      url:
   smack:
     name: SMACK
     lang: C
@@ -290,7 +290,7 @@ verifiers:
       name: Marek Chalupa
       institution: Masaryk University, Brno
       country: Czechia
-      url: 
+      url:
   theta:
     name: Theta
     lang: C
@@ -308,27 +308,41 @@ verifiers:
     name: UAutomizer
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Matthias Heizmann
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/heizmann
-  ukojak:
-    name: UKojak
+  ugemcutter:
+    name: UGemCutter
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Dominik Klumpp
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/klumpp
+  ukojak:
+    name: UKojak
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Frank Schüssele
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/schuessele
   utaipan:
     name: UTaipan
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Daniel Dietsch
       institution: University of Freiburg
@@ -348,7 +362,7 @@ verifiers:
       name: Priyanka Darke
       institution: Tata Consultancy Services
       country: India
-      url: 
+      url:
   coastal:
     name: COASTAL
     lang: Java
@@ -357,7 +371,7 @@ verifiers:
     jury-member:
       name: Hors Concours
       institution: --
-      url: 
+      url:
   gdart:
     name: GDart
     lang: Java
@@ -383,7 +397,7 @@ verifiers:
     lang: Java
     url: https://github.com/jayhorn/jayhorn
     required-ubuntu-packages:
-    - openjdk-8-jdk-headless
+      - openjdk-8-jdk-headless
     jury-member:
       name: Hossein Hojjat
       institution: University of Tehran
@@ -418,8 +432,7 @@ verifiers:
       name: Hors Concours
       institution: --
       country: --
-      url: 
-
+      url:
 
 validators:
   cpa-witness2test-violation:
@@ -444,7 +457,6 @@ validators:
       country: --
       url: 
 
-
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
 hors_concours:
@@ -452,14 +464,13 @@ hors_concours:
   - coastal
   - spf
 
-
 not_participating:
   - blast
   - cbmc-path
   - ceagle
   - civl
   - consequence
-  - cpa-bam-slicing 
+  - cpa-bam-slicing
   - cpa-kind
   - cpa-par
   - cpa-par-aws
@@ -490,18 +501,17 @@ not_participating:
 
 # Properties used in the competition
 properties:
-    - no-overflow
-    - termination
-    - unreach-call
-    - no-data-race
-    - valid-memcleanup
-    - valid-memsafety
-    - assert_java
-
+  - no-overflow
+  - termination
+  - unreach-call
+  - no-data-race
+  - valid-memcleanup
+  - valid-memsafety
+  - assert_java
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-    - no-data-race.NoDataRace-Main
+  - no-data-race.NoDataRace-Main
 
 categories:
   ReachSafety:
@@ -607,6 +617,7 @@ categories:
       - symbiotic
       - theta
       - uautomizer
+      - ugemcutter
       - ukojak
       - utaipan
 
@@ -711,11 +722,11 @@ categories:
 
   Overall:
     properties:
-        - no-overflow
-        - termination
-        - unreach-call
-        - valid-memcleanup
-        - valid-memsafety
+      - no-overflow
+      - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -738,10 +749,10 @@ categories:
 
   FalsificationOverall:
     properties:
-        - no-overflow
-        - unreach-call
-        - valid-memcleanup
-        - valid-memsafety
+      - no-overflow
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -776,7 +787,7 @@ categories:
       - spf
     validators:
       - wit4java-violation
-      
+
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
   - unreach-call.ReachSafety-BitVectors
@@ -892,7 +903,7 @@ opt_out:
     - NoOverflows
     - Termination
 
-opt_in: 
+opt_in:
   brick:
     - unreach-call.ReachSafety-Floats
   crux:
