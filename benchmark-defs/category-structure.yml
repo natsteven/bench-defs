@@ -203,6 +203,16 @@ verifiers:
       institution: University of Virginia
       country: United States of America
       url: https://will-leeson.github.io/
+  infer:
+    name: Infer-SV
+    lang: C
+    url: https://fbinfer.com/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Matthias Kettl
+      institution: LMU Munich
+      country: Germany
+      url:
   korn:
     name: Korn
     lang: C
@@ -683,6 +693,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - infer
       - lart
       - pesco
       - pinaka
@@ -723,6 +734,7 @@ categories:
       - divine
       - esbmc-kind
       - graves
+      - infer
       - pesco
       - predatorhp
       - sesl
@@ -760,6 +772,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - infer
       - lazycseq
       - pesco
       - symbiotic
@@ -784,6 +797,7 @@ categories:
       - frama-c-sv
       - goblint
       - graves
+      - infer
       - pesco
       - pinaka
       - symbiotic
@@ -852,6 +866,7 @@ categories:
       - goblint
       - graves
       - lart
+      - infer
       - pesco
       - smack
       - symbiotic
