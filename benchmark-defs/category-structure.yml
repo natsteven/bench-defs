@@ -888,6 +888,12 @@ opt_out:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
+  lart:
+    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-uthash-NoOverflows
   pinaka:
     - FalsificationOverall
     - Overall
