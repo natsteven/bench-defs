@@ -201,6 +201,7 @@ verifiers:
       name: Gidon Ernst
       institution: LMU Munich
       country: Germany
+      url: https://www.sosy-lab.org/people/ernst/
   lart:
     name: LART
     lang: C
