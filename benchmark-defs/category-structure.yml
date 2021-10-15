@@ -209,7 +209,7 @@ verifiers:
     required-ubuntu-packages:
       - clang-12
       - llvm-12
-      - libz3-dev
+      - libz3-4
       - python3
       - python3-lxml
     jury-member:
