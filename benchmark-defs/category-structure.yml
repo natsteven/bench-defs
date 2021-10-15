@@ -546,11 +546,8 @@ categories:
       - divine
       - esbmc-kind
       - goblint
-<<<<<<< HEAD
-      - infer
-=======
       - graves
->>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
+      - infer
       - pesco
       - pinaka
       - symbiotic
@@ -588,11 +585,8 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
-<<<<<<< HEAD
-      - infer
-=======
       - graves
->>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
+      - infer
       - pesco
       - predatorhp
       - sesl
@@ -628,11 +622,8 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
-<<<<<<< HEAD
-      - infer
-=======
       - graves
->>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
+      - infer
       - lazycseq
       - pesco
       - symbiotic
@@ -656,11 +647,8 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
-<<<<<<< HEAD
-      - infer
-=======
       - graves
->>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
+      - infer
       - pesco
       - pinaka
       - symbiotic
@@ -727,11 +715,8 @@ categories:
       - divine
       - esbmc-kind
       - goblint
-<<<<<<< HEAD
-      - infer
-=======
       - graves
->>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
+      - infer
       - pesco
       - smack
       - symbiotic
