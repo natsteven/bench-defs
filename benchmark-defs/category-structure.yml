@@ -741,8 +741,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - cpachecker
       - cpa-bam-smg
+      - cpachecker
       - divine
       - esbmc-kind
       - graves
