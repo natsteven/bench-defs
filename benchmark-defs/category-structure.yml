@@ -58,6 +58,17 @@ verifiers:
       institution: ISP RAS
       country: Russia
       url:
+  cpa-bam-smg:
+    name: CPA-BAM-SMG
+    lang: C
+    url: https://cpachecker.sosy-lab.org
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Anton Vasilyev
+      institution: ISP RAS
+      country: Russia
+      url:
   cpa-lockator:
     name: CPALockator
     lang: C
@@ -730,6 +741,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - cpa-bam-smg
       - cpachecker
       - divine
       - esbmc-kind
@@ -860,6 +872,7 @@ categories:
       - 2ls
       - cbmc
       - cpa-bam-bnb
+      - cpa-bam-smg
       - cpachecker
       - divine
       - esbmc-kind
