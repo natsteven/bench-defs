@@ -605,6 +605,7 @@ categories:
       - cbmc
       - cpa-lockator
       - cpachecker
+      - cseq3
       - dartagnan
       - deagle
       - divine
