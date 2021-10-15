@@ -196,6 +196,8 @@ verifiers:
     url: https://github.com/will-leeson/cpachecker
     required-ubuntu-packages:
       - openjdk-11-jre-headless
+      - llvm-11
+      - clang-11      
     jury-member:
       name: Will Leeson
       institution: University of Virginia
