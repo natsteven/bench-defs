@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="cpachecker" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
+<benchmark tool="infer" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
@@ -84,13 +84,6 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_valid-memcleanup">
-  <tasks name="MemSafety-MemCleanup">
-    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
-</rundefinition>
-
 <rundefinition name="SV-COMP22_valid-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -146,6 +139,7 @@
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 </rundefinition>
+
 
 <rundefinition name="SV-COMP22_no-data-race">
   <tasks name="NoDataRace-Main">
