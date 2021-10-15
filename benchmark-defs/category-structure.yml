@@ -180,7 +180,16 @@ verifiers:
       name: Simmo Saan
       institution: University of Tartu
       country: Estonia
-      url: 
+      url:
+  infer:
+    name: Infer-SV
+    lang: C
+    url: https://fbinfer.com/
+    jury-member:
+      name: Matthias Kettl
+      institution: LMU Munich
+      country: Germany
+      url:
   korn:
     name: Korn
     lang: C
@@ -315,15 +324,6 @@ verifiers:
       name: Priyanka Darke
       institution: Tata Consultancy Services
       country: India
-      url:
-  infer:
-    name: Infer-SV
-    lang: C
-    url: https://fbinfer.com/
-    jury-member:
-      name: Matthias Kettl
-      institution: LMU Munich
-      country: Germany
       url:
   coastal:
     name: COASTAL
