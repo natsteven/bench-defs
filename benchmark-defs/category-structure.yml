@@ -469,6 +469,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - infer
       - pesco
       - pinaka
       - symbiotic
@@ -476,7 +477,6 @@ categories:
       - ukojak
       - utaipan
       - veriabs
-      - infer
     validators:
       - witnesslint
       - cpachecker-correctness
@@ -506,6 +506,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - infer
       - pesco
       - predatorhp
       - sesl
@@ -513,7 +514,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -542,13 +542,13 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
+      - infer
       - lazycseq
       - pesco
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - infer
 
   NoOverflows:
     properties: no-overflow
@@ -564,13 +564,13 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+      - infer
       - pesco
       - pinaka
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -630,13 +630,13 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - infer
       - pesco
       - smack
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-correctness
