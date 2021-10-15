@@ -19,12 +19,12 @@ verifiers:
     required-ubuntu-packages:
       - clang
       - mono-runtime
-      - openjdk-11-jre
+      - openjdk-11-jre-headless
     jury-member:
       name: Jera Hensel
       institution: RWTH Aachen
       country: Germany
-      url: 
+      url:
   brick:
     name: BRICK
     lang: C
@@ -34,7 +34,7 @@ verifiers:
       name: Lei Bu
       institution: Nanjing University
       country: China
-      url: 
+      url:
   cbmc:
     name: CBMC
     lang: C
@@ -42,7 +42,6 @@ verifiers:
     required-ubuntu-packages:
       - gcc
       - libc6-dev-i386
-      - linux-libc-dev:i386
     jury-member:
       name: Michael Tautschnig
       institution: Queen Mary University of London
@@ -58,18 +57,18 @@ verifiers:
       name: Vadim Mutilin
       institution: ISP RAS
       country: Russia
-      url: 
+      url:
   cpa-lockator:
     name: CPALockator
     lang: C
-    url:  https://cpachecker.sosy-lab.org
+    url: https://cpachecker.sosy-lab.org
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
       name: Pavel Andrianov
       institution: ISP RAS
       country: Russia
-      url:  null
+      url: null
   cpachecker:
     name: CPAchecker 2.1
     lang: C
@@ -123,7 +122,7 @@ verifiers:
       name: Henrich Lauko
       institution: Masaryk University, Brno
       country: Czechia
-      url: 
+      url:
   esbmc-incr:
     name: ESBMC-incr
     lang: C
@@ -145,7 +144,7 @@ verifiers:
       name: Rafael Sá Menezes
       institution: University of Manchester
       country: UK
-      url: 
+      url:
   frama-c-sv:
     name: Frama-C
     lang: C
@@ -181,6 +180,18 @@ verifiers:
       institution: University of Tartu
       country: Estonia
       url:
+  graves:
+    name: GraVeS
+    lang: C
+    url: https://github.com/will-leeson/cpachecker
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+      - ant
+    jury-member:
+      name: Will Leeson
+      institution: University of Virginia
+      country: United States of America
+      url: https://will-leeson.github.io/
   infer:
     name: Infer-SV
     lang: C
@@ -210,6 +221,16 @@ verifiers:
       institution: Gran Sasso Science Institute
       country: Italy
       url: https://cs.gssi.it/omar.inverso
+  locksmith:
+    name: Locksmith
+    lang: C
+    url: http://www.cs.umd.edu/projects/PL/locksmith/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Vesal Vojdani
+      institution: University of Tartu
+      country: Estonia
+      url:
   pesco:
     name: PeSCo
     lang: C
@@ -242,21 +263,20 @@ verifiers:
       name: Hors Concours
       institution: --
       country: --
-      url: 
+      url:
   sesl:
     name: SESL
     lang: C
     url: https://spencerl-y.github.io/SESL/
     required-ubuntu-packages:
       - clang
-      - libssl-dev
+      - libssl1.1
       - llvm
-      - openssl
     jury-member:
       name: Xie Li
       institution: Academy of Sciences
       country: China
-      url: 
+      url:
   smack:
     name: SMACK
     lang: C
@@ -274,37 +294,64 @@ verifiers:
     url: https://github.com/staticafi/symbiotic
     required-ubuntu-packages:
       - python3
-      - python-lxml
+      - python3-lxml
     jury-member:
       name: Marek Chalupa
       institution: Masaryk University, Brno
       country: Czechia
-      url: 
+      url:
+  theta:
+    name: Theta
+    lang: C
+    url: https://github.com/ftsrg/theta
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+      - libgomp1
+      - libmpfr6
+    jury-member:
+      name: Vince Molnár
+      institution: Budapest University of Technology and Economics
+      country: Hungary
+      url:
   uautomizer:
     name: UAutomizer
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Matthias Heizmann
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/heizmann
-  ukojak:
-    name: UKojak
+  ugemcutter:
+    name: UGemCutter
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Dominik Klumpp
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/klumpp
+  ukojak:
+    name: UKojak
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Frank Schüssele
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/schuessele
   utaipan:
     name: UTaipan
     lang: C
     url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Daniel Dietsch
       institution: University of Freiburg
@@ -318,7 +365,7 @@ verifiers:
       - clang-6.0
       - libc6-dev-i386
       - llvm-6.0
-      - openjdk-8-jre
+      - openjdk-8-jre-headless
       - python-is-python2
     jury-member:
       name: Priyanka Darke
@@ -333,7 +380,17 @@ verifiers:
     jury-member:
       name: Hors Concours
       institution: --
-      url: 
+      url:
+  gdart:
+    name: GDart
+    lang: Java
+    url: https://github.com/tudo-aqua/gdart-svcomp
+    required-ubuntu-packages: []
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund
+      country: Germany
+      url: https://falkhowar.de
   java-ranger:
     name: Java-Ranger
     lang: Java
@@ -349,7 +406,7 @@ verifiers:
     lang: Java
     url: https://github.com/jayhorn/jayhorn
     required-ubuntu-packages:
-    - openjdk-8-jdk
+      - openjdk-8-jdk-headless
     jury-member:
       name: Hossein Hojjat
       institution: University of Tehran
@@ -384,8 +441,30 @@ verifiers:
       name: Hors Concours
       institution: --
       country: --
-      url: 
+      url:
 
+validators:
+  cpa-witness2test-violation:
+    name: CPA-witness2test
+    lang: C
+    url: https://cpachecker.sosy-lab.org/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Thomas Lemberger
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/lemberger/
+  wit4java:
+    name: WIT4JAVA
+    lang: Java
+    url: https://github.com/Anthonysdu/wit4java
+    required-ubuntu-packages:
+     - python3-networkx
+    jury-member:
+      name: --
+      institution: --
+      country: --
+      url: 
 
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
@@ -394,14 +473,13 @@ hors_concours:
   - coastal
   - spf
 
-
 not_participating:
   - blast
   - cbmc-path
   - ceagle
   - civl
   - consequence
-  - cpa-bam-slicing 
+  - cpa-bam-slicing
   - cpa-kind
   - cpa-par
   - cpa-par-aws
@@ -432,18 +510,17 @@ not_participating:
 
 # Properties used in the competition
 properties:
-    - no-overflow
-    - termination
-    - unreach-call
-    - no-data-race
-    - valid-memcleanup
-    - valid-memsafety
-    - assert_java
-
+  - no-overflow
+  - termination
+  - unreach-call
+  - no-data-race
+  - valid-memcleanup
+  - valid-memsafety
+  - assert_java
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-    - no-data-race.NoDataRace-Main
+  - no-data-race.NoDataRace-Main
 
 categories:
   ReachSafety:
@@ -469,10 +546,15 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+<<<<<<< HEAD
       - infer
+=======
+      - graves
+>>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
       - pesco
       - pinaka
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -506,7 +588,11 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+<<<<<<< HEAD
       - infer
+=======
+      - graves
+>>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
       - pesco
       - predatorhp
       - sesl
@@ -542,11 +628,17 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
+<<<<<<< HEAD
       - infer
+=======
+      - graves
+>>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
       - lazycseq
       - pesco
       - symbiotic
+      - theta
       - uautomizer
+      - ugemcutter
       - ukojak
       - utaipan
 
@@ -564,7 +656,11 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+<<<<<<< HEAD
       - infer
+=======
+      - graves
+>>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
       - pesco
       - pinaka
       - symbiotic
@@ -594,6 +690,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - pinaka
       - symbiotic
@@ -630,7 +727,11 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+<<<<<<< HEAD
       - infer
+=======
+      - graves
+>>>>>>> 1fe00b1a287b7dd900d5bccd260a54960d903c06
       - pesco
       - smack
       - symbiotic
@@ -650,11 +751,11 @@ categories:
 
   Overall:
     properties:
-        - no-overflow
-        - termination
-        - unreach-call
-        - valid-memcleanup
-        - valid-memsafety
+      - no-overflow
+      - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -668,6 +769,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -676,10 +778,10 @@ categories:
 
   FalsificationOverall:
     properties:
-        - no-overflow
-        - unreach-call
-        - valid-memcleanup
-        - valid-memsafety
+      - no-overflow
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -692,6 +794,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - graves
       - pesco
       - symbiotic
       - uautomizer
@@ -705,6 +808,7 @@ categories:
       - assert_java.ReachSafety-Java
     verifiers:
       - coastal
+      - gdart
       - java-ranger
       - jayhorn
       - jbmc
@@ -712,7 +816,7 @@ categories:
       - spf
     validators:
       - wit4java-violation
-      
+
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
   - unreach-call.ReachSafety-BitVectors
@@ -822,8 +926,13 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
+  graves:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
 
-opt_in: 
+opt_in:
   brick:
     - unreach-call.ReachSafety-Floats
   crux:
@@ -852,3 +961,5 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
+  locksmith:
+    - no-data-race.NoDataRace-Main
