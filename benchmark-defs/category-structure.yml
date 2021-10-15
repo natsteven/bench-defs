@@ -465,6 +465,18 @@ validators:
       institution: --
       country: --
       url: 
+  symbiotic-witch:
+    name: Symbiotic-Witch
+    lang: C
+    url: https://github.com/staticafi/symbiotic
+    required-ubuntu-packages:
+      - python3
+    jury-member:
+      name: Paulína Ayaziová
+      institution: Masaryk University, Brno
+      country: Czechia
+      url: 
+
 
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
@@ -566,6 +578,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - symbiotic-witch
 
   MemSafety:
     properties:
@@ -729,6 +742,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - symbiotic-witch
 
   Overall:
     properties:
