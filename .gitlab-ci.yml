@@ -36,4 +36,4 @@ check-valid-required-packages:
   before_script: []
   script:
     - apt-get update
-    - yq -r '[ .verifiers[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | xargs -n 1 chronic apt-cache show -q=0
+    - yq -r '[ (.verifiers + .validators)[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | xargs -n 1 chronic apt-cache show -q=0
