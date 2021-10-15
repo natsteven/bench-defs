@@ -91,6 +91,16 @@ verifiers:
       institution: Galois
       country: USA
       url: https://ryanglscott.github.io/
+  cseq3:
+    name: CSeq 3
+    lang: C
+    url: https://gitlab.com/emersonwds/cseq
+    required-ubuntu-packages: []
+    jury-member:
+      name: Emerson Sales
+      institution: Gran Sasso Science Institute
+      country: Italy
+      url: https://github.com/Emersonwds
   dartagnan:
     name: Dartagnan
     lang: C
@@ -604,6 +614,7 @@ categories:
       - cbmc
       - cpa-lockator
       - cpachecker
+      - cseq3
       - dartagnan
       - deagle
       - divine
