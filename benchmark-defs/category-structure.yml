@@ -315,6 +315,17 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/heizmann
+  ugemcutter:
+    name: UGemCutter
+    lang: C
+    url: https://ultimate.informatik.uni-freiburg.de
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Dominik Klumpp
+      institution: University of Freiburg
+      country: Germany
+      url: https://swt.informatik.uni-freiburg.de/staff/klumpp
   ukojak:
     name: UKojak
     lang: C
@@ -337,17 +348,6 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-  ugemcutter:
-    name: UGemCutter
-    lang: C
-    url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages:
-      - openjdk-11-jre-headless
-    jury-member:
-      name: Dominik Klumpp
-      institution: University of Freiburg
-      country: Germany
-      url: https://swt.informatik.uni-freiburg.de/staff/klumpp
   veriabs:
     name: VeriAbs
     lang: C
@@ -606,9 +606,9 @@ categories:
       - symbiotic
       - theta
       - uautomizer
+      - ugemcutter
       - ukojak
       - utaipan
-      - ugemcutter
 
   NoOverflows:
     properties: no-overflow
