@@ -432,7 +432,17 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/lemberger/
-
+  wit4java:
+    name: WIT4JAVA
+    lang: Java
+    url: https://github.com/Anthonysdu/wit4java
+    required-ubuntu-packages:
+     - python3-networkx
+    jury-member:
+      name: --
+      institution: --
+      country: --
+      url: 
 
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
