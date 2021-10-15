@@ -692,6 +692,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - infer
       - lart
       - pesco
       - pinaka
@@ -701,7 +702,6 @@ categories:
       - ukojak
       - utaipan
       - veriabs
-      - infer
     validators:
       - witnesslint
       - cpachecker-correctness
@@ -733,6 +733,7 @@ categories:
       - divine
       - esbmc-kind
       - graves
+      - infer
       - pesco
       - predatorhp
       - sesl
@@ -740,7 +741,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -771,6 +771,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - infer
       - lazycseq
       - pesco
       - symbiotic
@@ -779,7 +780,6 @@ categories:
       - ugemcutter
       - ukojak
       - utaipan
-      - infer
 
   NoOverflows:
     properties: no-overflow
@@ -796,13 +796,13 @@ categories:
       - frama-c-sv
       - goblint
       - graves
+      - infer
       - pesco
       - pinaka
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-violation
@@ -865,13 +865,13 @@ categories:
       - goblint
       - graves
       - lart
+      - infer
       - pesco
       - smack
       - symbiotic
       - uautomizer
       - ukojak
       - utaipan
-      - infer
     validators:
       - witnesslint
       - cpachecker-correctness
