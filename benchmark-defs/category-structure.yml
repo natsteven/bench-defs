@@ -878,8 +878,8 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - lart
       - infer
+      - lart
       - pesco
       - smack
       - symbiotic
