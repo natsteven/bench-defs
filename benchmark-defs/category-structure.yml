@@ -144,6 +144,16 @@ verifiers:
       institution: Masaryk University, Brno
       country: Czechia
       url:
+  ebf:
+    name: EBF
+    lang: C
+    url: https://github.com/fatimahkj/EBF
+    required-ubuntu-packages: []
+    jury-member:
+      name: Fatimah Aljaafari
+      institution: Univeristy of Manchester
+      country: UK
+      url:
   esbmc-incr:
     name: ESBMC-incr
     lang: C
