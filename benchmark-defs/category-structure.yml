@@ -102,8 +102,8 @@ verifiers:
       institution: Galois
       country: USA
       url: https://ryanglscott.github.io/
-  cseq3:
-    name: CSeq 3
+  cseq:
+    name: CSeq
     lang: C
     url: https://gitlab.com/emersonwds/cseq
     required-ubuntu-packages: []
@@ -786,7 +786,7 @@ categories:
       - cbmc
       - cpa-lockator
       - cpachecker
-      - cseq3
+      - cseq
       - dartagnan
       - deagle
       - divine
