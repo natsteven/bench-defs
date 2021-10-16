@@ -420,6 +420,21 @@ verifiers:
       institution: Tata Consultancy Services
       country: India
       url:
+  verifuzz:
+    name: VeriFuzz
+    lang: C
+    url: https://gitlab.com/raveenkm/archives-2021/-/tree/master/2021
+    required-ubuntu-packages:
+      - gcc-multilib
+      - libc6-dev-i386
+      - python2
+      - python3-sklearn
+      - python3-pandas
+    jury-member:
+      name: Raveendra Kumar Medicherla
+      institution: Tata Consultancy Services
+      country: India
+      url:
   coastal:
     name: COASTAL
     lang: Java
