@@ -685,7 +685,6 @@ not_participating:
   - skink
   - symdivine
   - ulcseq
-  - verifuzz
   - viap
   - yogar-cbmc
   - yogar-cbmc-parallel
