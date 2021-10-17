@@ -225,7 +225,7 @@ verifiers:
       country: United States of America
       url: https://will-leeson.github.io/
   infer:
-    name: Infer-SV
+    name: Infer
     lang: C
     url: https://fbinfer.com/
     required-ubuntu-packages: []
