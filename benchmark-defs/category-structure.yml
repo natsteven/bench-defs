@@ -425,11 +425,17 @@ verifiers:
     lang: C
     url: https://gitlab.com/raveenkm/archives-2021/-/tree/master/2021
     required-ubuntu-packages:
+      - clang-12
+      - framac-c-base
       - gcc-multilib
       - libc6-dev-i386
+      - libwhy3-ocaml-dev
+      - llvm-12
+      - openjdk-8-jdk-headless
       - python2
       - python3-sklearn
       - python3-pandas
+      - why3
     jury-member:
       name: Raveendra Kumar Medicherla
       institution: Tata Consultancy Services
