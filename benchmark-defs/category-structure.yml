@@ -955,6 +955,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - goblint
       - graves
       - pesco
       - symbiotic
