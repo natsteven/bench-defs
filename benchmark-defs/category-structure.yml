@@ -776,6 +776,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - goblint
       - graves
       - infer
       - pesco
@@ -874,6 +875,7 @@ categories:
       - cpachecker
       - divine
       - esbmc-kind
+      - goblint
       - graves
       - pesco
       - pinaka
@@ -1111,6 +1113,8 @@ opt_out:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - MemSafety
+    - Termination
   lart:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
