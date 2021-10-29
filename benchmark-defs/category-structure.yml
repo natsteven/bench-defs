@@ -683,7 +683,6 @@ not_participating:
   - hiptnt
   - interpchecker
   - jpf
-  - korn
   - lazycseqabs
   - lazycseqswarm
   - map2check
@@ -1154,5 +1153,10 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
+  korn:
+    - unreach-call.ReachSafety-ControlFlow
+    - unreach-call.ReachSafety-Loops
+    - unreach-call.ReachSafety-Recursive
+    - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
