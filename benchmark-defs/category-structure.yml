@@ -794,6 +794,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - symbiotic-witch
 
   ConcurrencySafety:
     properties:
