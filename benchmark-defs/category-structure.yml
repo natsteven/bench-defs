@@ -295,10 +295,10 @@ verifiers:
     url: https://github.com/sbjoshi/Pinaka
     required-ubuntu-packages: []
     jury-member:
-      name: Saurabh Joshi
-      institution: IIT Hyderabad
-      country: India
-      url: https://sbjoshi.github.io/
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
   predatorhp:
     name: PredatorHP
     lang: C
@@ -332,10 +332,10 @@ verifiers:
     required-ubuntu-packages:
       - clang-10
     jury-member:
-      name: Zvonimir Rakamaric
-      institution: University of Utah
-      country: USA
-      url: https://zvonimir.info/
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
   symbiotic:
     name: Symbiotic
     lang: C
@@ -657,8 +657,10 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
 hors_concours:
+  - pinaka
   - predatorhp
   - coastal
+  - smack
   - spf
 
 not_participating:
