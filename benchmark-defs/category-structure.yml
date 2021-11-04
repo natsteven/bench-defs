@@ -1160,25 +1160,25 @@ opt_out:
     - NoOverflows
     - Termination
   coveriteam-verifier-algo-selection:
-    - no-data-race.NoDataRace-Main
-    - MemSafety
-    - NoOverflows
-    - Termination
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - no-data-race.NoDataRace-Main
+    - MemSafety
+    - NoOverflows
+    - Termination
   coveriteam-verifier-parallel-portfolio:
     - no-data-race.NoDataRace-Main
-    - MemSafety
-    - NoOverflows
-    - Termination
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - MemSafety
+    - NoOverflows
+    - Termination
 
 opt_in:
   brick:
