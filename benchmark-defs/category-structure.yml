@@ -47,6 +47,26 @@ verifiers:
       institution: Queen Mary University of London
       country: UK
       url: https://www.tautschnig.net/
+  coveriteam-verifier-algo-selection:
+    name: CoVeriTeam-Verifier-AlgoSelection
+    lang: C
+    url: https://gitlab.com/sosy-lab/software/coveriteam
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
+  coveriteam-verifier-parallel-portfolio:
+    name: CoVeriTeam-Verifier-ParallelPortfolio
+    lang: C
+    url: https://gitlab.com/sosy-lab/software/coveriteam
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
   cpa-bam-bnb:
     name: CPA-BAM-BnB
     lang: C
@@ -657,6 +677,8 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
 hors_concours:
+  - coveriteam-verifier-algo-selection
+  - coveriteam-verifier-parallel-portfolio
   - pinaka
   - predatorhp
   - coastal
@@ -729,6 +751,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-algo-selection
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - crux
       - divine
@@ -809,6 +833,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-algo-selection
+      - coveriteam-verifier-parallel-portfolio
       - cpa-lockator
       - cpachecker
       - cseq
@@ -1131,6 +1157,16 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
+  coveriteam-verifier-algo-selection:
+    - no-data-race.NoDataRace-Main
+    - MemSafety
+    - NoOverflows
+    - Termination
+  coveriteam-verifier-parallel-portfolio:
+    - no-data-race.NoDataRace-Main
+    - MemSafety
+    - NoOverflows
+    - Termination
 
 opt_in:
   brick:
@@ -1168,3 +1204,15 @@ opt_in:
     - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
+  coveriteam-verifier-algo-selection:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
+  coveriteam-verifier-parallel-portfolio:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
