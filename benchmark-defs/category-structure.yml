@@ -47,6 +47,26 @@ verifiers:
       institution: Queen Mary University of London
       country: UK
       url: https://www.tautschnig.net/
+  coveriteam-verifier-algo-selection:
+    name: CoVeriTeam-Verifier-AlgoSelection
+    lang: C
+    url: https://gitlab.com/sosy-lab/software/coveriteam
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
+  coveriteam-verifier-parallel-portfolio:
+    name: CoVeriTeam-Verifier-ParallelPortfolio
+    lang: C
+    url: https://gitlab.com/sosy-lab/software/coveriteam
+    required-ubuntu-packages: []
+    jury-member:
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
   cpa-bam-bnb:
     name: CPA-BAM-BnB
     lang: C
@@ -657,6 +677,8 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
 hors_concours:
+  - coveriteam-verifier-algo-selection
+  - coveriteam-verifier-parallel-portfolio
   - pinaka
   - predatorhp
   - coastal
@@ -729,6 +751,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-algo-selection
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - crux
       - divine
@@ -911,6 +935,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-algo-selection
+      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
       - cpa-bam-smg
       - cpachecker
@@ -1131,6 +1157,26 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
+  coveriteam-verifier-algo-selection:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
+    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - no-overflow.SoftwareSystems-uthash-NoOverflows
+  coveriteam-verifier-parallel-portfolio:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
+    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - no-overflow.SoftwareSystems-uthash-NoOverflows
 
 opt_in:
   brick:
