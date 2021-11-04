@@ -833,6 +833,8 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-algo-selection
+      - coveriteam-verifier-parallel-portfolio
       - cpa-lockator
       - cpachecker
       - cseq
@@ -1158,8 +1160,8 @@ opt_out:
     - NoOverflows
     - Termination
   coveriteam-verifier-algo-selection:
+    - no-data-race.NoDataRace-Main
     - MemSafety
-    - ConcurrencySafety
     - NoOverflows
     - Termination
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
@@ -1168,8 +1170,8 @@ opt_out:
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   coveriteam-verifier-parallel-portfolio:
+    - no-data-race.NoDataRace-Main
     - MemSafety
-    - ConcurrencySafety
     - NoOverflows
     - Termination
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
