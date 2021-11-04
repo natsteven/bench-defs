@@ -937,8 +937,6 @@ categories:
     verifiers:
       - 2ls
       - cbmc
-      - coveriteam-verifier-algo-selection
-      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
       - cpa-bam-smg
       - cpachecker
@@ -1160,22 +1158,12 @@ opt_out:
     - NoOverflows
     - Termination
   coveriteam-verifier-algo-selection:
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
     - no-data-race.NoDataRace-Main
     - MemSafety
     - NoOverflows
     - Termination
   coveriteam-verifier-parallel-portfolio:
     - no-data-race.NoDataRace-Main
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
     - MemSafety
     - NoOverflows
     - Termination
@@ -1216,3 +1204,15 @@ opt_in:
     - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
+  coveriteam-verifier-algo-selection:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
+  coveriteam-verifier-parallel-portfolio:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
