@@ -4,6 +4,21 @@ and the benchmark definition for each verifier (folder [benchmark-defs/](benchma
 in order to make results of the competition reproducible.
 
 
+## Components for Reproducing Competition Results
+
+The competition uses several components to execute the benchmarks.
+The components are described in the following table.
+
+| Component              | Repository                                                      |
+| ---                    | ---                                                             |
+| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       |
+| Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  |
+| Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools |
+| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               |
+| Benchmarking Framework | https://github.com/sosy-lab/benchexec                           |
+| Witness Format         | https://github.com/sosy-lab/sv-witnesses                        |
+| Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format |
+
 ## Setup
 The following steps set up the benchmarking environment:
 - `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
@@ -11,6 +26,7 @@ The following steps set up the benchmarking environment:
 - `make update`
 
 For reproducing results of a specific edition of the competition, please checkout the tag for that edition.
+
 
 ## Executing a Benchmark for a Particular Tool
 
