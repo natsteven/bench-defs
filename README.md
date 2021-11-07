@@ -10,12 +10,33 @@ The following steps setup the benchmarking environment:
 - `make init` (takes a while: downloads several GB of data from repositories)
 - `make update`
 
-## Unpacking
-The following step unpacks tool `ATESTER`:
-- `./scripts/execute-runs/mkInstall.sh ATESTER ./bin/tmp.EYQoLIz1UC-ATESTER`
+For reproducing results of a specific edition of the competition, please checkout the tag for that edition.
 
-## Benchmarking
-- TODO
+## Executing a Benchmark for a Particular Tool
+
+Assume that we would like to reproduce results for the verifier `CPAchecker`.
+We can execute the verification runs using the following command:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+
+In the following we explain some of the steps.
+
+### Unpack a Tool
+
+The following command unpacks the verifier `CPAchecker`:
+- `mkdir bin/cpachecker-32KkXQ0CzM`
+- `scripts/execute-runs/mkInstall.sh cpachecker bin/cpachecker-32KkXQ0CzM`
+
+### Assemble Provenance Information for a Tool
+
+The following command prints information about the repositories and their versions:
+- `scripts/execute-runs/mkProvenanceInfo.sh cpachecker`
+
+### Execute a Benchmark for a Tool
+
+- `cd bin/cpachecker-32KkXQ0CzM`
+- `../../benchexec/bin/benchexec -t ReachSafety-ControlFlow ../../benchmark-defs/cpachecker.xml -o ../../results-verified/`
+
 
 ## Ubuntu Packages on Apollon Machines
 
