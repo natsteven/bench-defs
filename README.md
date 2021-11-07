@@ -47,7 +47,6 @@ that has mostly the same packages installed as the competition machines.
 The Docker image is described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
 
-
 ### Parameters of RunExec
 
 The parameters that are passed to the [BenchExec](https://github.com/sosy-lab/benchexec) [1]
