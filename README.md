@@ -21,6 +21,7 @@ The components are described in the following table.
 | Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format | (know)                   |
 | Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
 
+
 ## Setup
 The following steps set up the benchmarking environment:
 - `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
