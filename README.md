@@ -1,11 +1,11 @@
 # SV-COMP Reproducibility
 This repository describes the configuration of the competition machines (below)
-and the benchmark definition for each verifier (folder benchmark-defs),
+and the benchmark definition for each verifier (folder [benchmark-defs/](benchmark-defs/)),
 in order to make results of the competition reproducible.
 
 
 ## Setup
-The following steps setup the benchmarking environment:
+The following steps set up the benchmarking environment:
 - `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
 - `make init` (takes a while: downloads several GB of data from repositories)
 - `make update`
