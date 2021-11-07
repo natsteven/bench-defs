@@ -9,15 +9,17 @@ in order to make results of the competition reproducible.
 The competition uses several components to execute the benchmarks.
 The components are described in the following table.
 
-| Component              | Repository                                                      |
-| ---                    | ---                                                             |
-| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       |
-| Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  |
-| Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools |
-| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               |
-| Benchmarking Framework | https://github.com/sosy-lab/benchexec                           |
-| Witness Format         | https://github.com/sosy-lab/sv-witnesses                        |
-| Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format |
+| Component              | Repository                                                      | Participants             |
+| ---                    | ---                                                             | ---                      |
+| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       | add, fix, review tasks   |
+| Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
+| Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
+| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               | submit to participate    |
+| Benchmarking Framework | https://github.com/sosy-lab/benchexec                           | (use to test their tool) |
+| Competition Scripts    | https://gitlab.com/sosy-lab/benchmarking/competition-scripts    | (use to reproduce)       |
+| Witness Format         | https://github.com/sosy-lab/sv-witnesses                        | (know)                   |
+| Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format | (know)                   |
+| Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
 
 ## Setup
 The following steps set up the benchmarking environment:
