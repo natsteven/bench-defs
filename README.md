@@ -50,12 +50,13 @@ https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
 
 ## Parameters of RunExec
 
-The parameters that are passed to the [BenchExec][1][2] executor `runexec` on the competition machines
+The parameters that are passed to the [BenchExec][1] executor `runexec` on the competition machines
 are described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#parameters-of-runexec
 
 [1]: Dirk Beyer, Stefan Löwe, and Philipp Wendler.
      Reliable Benchmarking: Requirements and Solutions.
      International Journal on Software Tools for Technology Transfer (STTT), 21(1):1-29, 2019.
-     https://doi.org/10.1007/s10009-017-0469-y 
+     https://doi.org/10.1007/s10009-017-0469-y
+
 [2]: https://github.com/sosy-lab/benchexec
