@@ -215,12 +215,13 @@ verifiers:
       url:
       gitlab: rafaelsamenezes
   frama-c-sv:
-    name: Frama-C
+    name: Frama-C-SV
     lang: C
-    url: https://frama-c.com/
+    url: https://gitlab.com/sosy-lab/software/frama-c-sv
     required-ubuntu-packages:
       - frama-c-base
       - libwhy3-ocaml-dev
+      - python3-pycparser
     jury-member:
       name: Martin Spiessl
       institution: LMU Munich
