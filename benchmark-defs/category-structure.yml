@@ -587,6 +587,17 @@ validators:
       institution: Queen Mary University of London
       country: UK
       url: https://www.tautschnig.net/
+  gwit-validate-violation-witnesses:
+    name: GWIT
+    lang: Java
+    url: https://github.com/tudo-aqua/gwit
+    required-ubuntu-packages:
+     - python3-yaml
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund University
+      country: Germany
+      url: https://falkhowar.de
   metaval-validate-correctness-witnesses:
     name: MetaVal
     lang: C
@@ -1034,6 +1045,7 @@ categories:
       - spf
     validators:
       - wit4java-violation
+      - gwit-violation
 
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
