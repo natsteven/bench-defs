@@ -80,9 +80,9 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Vadim Mutilin
-      institution: ISP RAS
-      country: Russia
+      name: Hors Concours
+      institution: --
+      country: --
       url:
       gitlab: p.andrianov
   cpa-bam-smg:
@@ -104,10 +104,10 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Pavel Andrianov
-      institution: ISP RAS
-      country: Russia
-      url: null
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
       gitlab: p.andrianov
   cpachecker:
     name: CPAchecker 2.1
@@ -236,10 +236,9 @@ verifiers:
       - llvm-9
       - openjdk-11-jdk-headless
     jury-member:
-      name: Ákos Hajdu
-      institution: Budapest University of Technology and Economics
-      country: Hungary
-      url: https://hajduakos.github.io/
+      name: Hors Concours
+      institution: --
+      url:
       gitlab: AdamZsofi
   goblint:
     name: Goblint
@@ -749,13 +748,17 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but can not win any medals
 hors_concours:
+  - coastal
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
+  - cpa-bam-bnb
+  - cpalockator
+  - gazer-theta
   - pinaka
   - predatorhp
-  - coastal
   - smack
   - spf
+
 
 not_participating:
   - blast
