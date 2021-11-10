@@ -174,9 +174,9 @@ verifiers:
     url: https://divine.fi.muni.cz/
     required-ubuntu-packages: []
     jury-member:
-      name: Henrich Lauko
-      institution: Masaryk University, Brno
-      country: Czechia
+      name: Hors Concours
+      institution: --
+      country: --
       url:
       gitlab: xlauko
   ebf:
@@ -197,10 +197,10 @@ verifiers:
     required-ubuntu-packages:
       - python-is-python2
     jury-member:
-      name: Felipe R. Monteiro
-      institution: Amazon Web Services
-      country: USA
-      url: https://feliperodri.github.io/
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
       gitlab: feliperodri
   esbmc-kind:
     name: ESBMC-kind
@@ -309,10 +309,10 @@ verifiers:
     url: https://github.com/omainv/cseq/releases
     required-ubuntu-packages: []
     jury-member:
-      name: Omar Inverso
-      institution: Gran Sasso Science Institute
-      country: Italy
-      url: https://cs.gssi.it/omar.inverso
+      name: Hors Concours
+      institution: --
+      country: --
+      url:
       gitlab: omainv
   locksmith:
     name: Locksmith
@@ -753,7 +753,10 @@ hors_concours:
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
   - cpalockator
+  - divine
+  - esbmc-incr
   - gazer-theta
+  - lazycseq
   - pinaka
   - predatorhp
   - smack
