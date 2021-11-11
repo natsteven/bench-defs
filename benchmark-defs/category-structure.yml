@@ -876,6 +876,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-smg
       - cpachecker
       - divine
@@ -944,6 +945,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - crux
       - divine
@@ -979,6 +981,7 @@ categories:
       - 2ls
       - aprove
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - esbmc-kind
@@ -1016,6 +1019,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
       - cpa-bam-smg
       - cpachecker
@@ -1061,6 +1065,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - esbmc-kind
@@ -1087,6 +1092,7 @@ categories:
     verifiers:
       - 2ls
       - cbmc
+      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - esbmc-kind
@@ -1280,9 +1286,4 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
-  coveriteam-verifier-parallel-portfolio:
-    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-    - unreach-call.SoftwareSystems-uthash-ReachSafety
+
