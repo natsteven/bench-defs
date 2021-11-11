@@ -10,7 +10,7 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
-  <option name="-svcomp21"/>
+  <option name="-svcomp22"/>
   <option name="-heap">5000M</option>
   <option name="-benchmark"/>
   <option name="-timelimit">900s</option>
