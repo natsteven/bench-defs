@@ -1237,16 +1237,6 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
-  coveriteam-verifier-algo-selection:
-    - no-data-race.NoDataRace-Main
-    - MemSafety
-    - NoOverflows
-    - Termination
-  coveriteam-verifier-parallel-portfolio:
-    - no-data-race.NoDataRace-Main
-    - MemSafety
-    - NoOverflows
-    - Termination
 
 opt_in:
   brick:
