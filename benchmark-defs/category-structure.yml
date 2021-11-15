@@ -883,7 +883,6 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - infer
       - pesco
       - predatorhp
       - sesl
