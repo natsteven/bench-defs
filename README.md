@@ -1,59 +1,84 @@
 # SV-COMP Reproducibility
 This repository describes the configuration of the competition machines (below)
-and the benchmark definition for each verifier (folder benchmark-defs),
+and the benchmark definition for each verifier (folder [benchmark-defs/](benchmark-defs/)),
 in order to make results of the competition reproducible.
 
 
+## Components for Reproducing Competition Results
+
+The competition uses several components to execute the benchmarks.
+The components are described in the following table.
+
+| Component              | Repository                                                      | Participants             |
+| ---                    | ---                                                             | ---                      |
+| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       | add, fix, review tasks   |
+| Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
+| Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
+| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               | submit to participate    |
+| Benchmarking Framework | https://github.com/sosy-lab/benchexec                           | (use to test their tool) |
+| Competition Scripts    | https://gitlab.com/sosy-lab/benchmarking/competition-scripts    | (use to reproduce)       |
+| Witness Format         | https://github.com/sosy-lab/sv-witnesses                        | (know)                   |
+| Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format | (know)                   |
+| Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
+
+
 ## Setup
-The following steps setup the benchmarking environment:
-- `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git .`
+The following steps set up the benchmarking environment:
+- `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
 - `make init` (takes a while: downloads several GB of data from repositories)
 - `make update`
 
-## Unpacking
-The following step unpacks tool `ATESTER`:
-- `./scripts/execute-runs/mkInstall.sh ATESTER ./bin/tmp.EYQoLIz1UC-ATESTER`
+For reproducing results of a specific edition of the competition, please checkout the tag for that edition.
 
-## Benchmarking
-- TODO
 
-## Ubuntu Packages on Apollon Machines
+## Executing a Benchmark for a Particular Tool
+
+Assume that we would like to reproduce results for the verifier `CPAchecker`.
+We can execute the verification runs using the following command:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+
+In the following we explain some of the steps.
+
+### Unpack a Tool
+
+The following command unpacks the verifier `CPAchecker`:
+- `mkdir bin/cpachecker-32KkXQ0CzM`
+- `scripts/execute-runs/mkInstall.sh cpachecker bin/cpachecker-32KkXQ0CzM`
+
+### Assemble Provenance Information for a Tool
+
+The following command prints information about the repositories and their versions:
+- `scripts/execute-runs/mkProvenanceInfo.sh cpachecker`
+
+### Execute a Benchmark for a Tool
+
+- `cd bin/cpachecker-32KkXQ0CzM`
+- `../../benchexec/bin/benchexec -t ReachSafety-ControlFlow ../../benchmark-defs/cpachecker.xml -o ../../results-verified/`
+
+
+## Computing Environment on Competition Machines
 
 ### Docker Image
+
 SV-COMP provides a Docker image that tries to provide an environment
-that has mostly the same packages installed as the competition machines:
-- Docker definition: https://gitlab.com/sosy-lab/benchmarking/competition-scripts/-/blob/main/test/Dockerfile.user.2022
-- Docker image: `registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest`
-- Test if the tool works with the installation:
-  - Unzip tool archive to temporary directory `<TOOL>` (**`<TOOL>` must be an absolute path!**)
-  - `docker pull registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest`
-  - `docker run --rm -i -t --volume=<TOOL>:/tool --workdir=/tool registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest bash`
-  - Start tool
+that has mostly the same packages installed as the competition machines.
+The Docker image is described here:
+https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
+
+### Parameters of RunExec
+
+The parameters that are passed to the [BenchExec](https://github.com/sosy-lab/benchexec) [1]
+executor [runexec](https://github.com/sosy-lab/benchexec/blob/main/doc/runexec.md) on the competition machines
+are described here:
+https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#parameters-of-runexec
 
 
-## Parameters of RunExec for SV-COMP
-<!-- Fetch latest version from the Ansible configuration for the competition machines:
-https://gitlab.com/sosy-lab/admin/sysadmin/ansible/-/blob/master/roles/vcloud-worker/templates/Config.j2
-Last synchronized: 2020-12-05 from commit 670c4eb
--->
+## References
 
-```
---container
---read-only-dir /
---hidden-dir /home
---hidden-dir /var/lib/cloudy # environment-specific
---set-cgroup-value pids.max=5000
---output-directory <work-dir>
---overlay-dir <run-dir>
---debug
---maxOutputSize 2MB
---dir <work-dir>
---output <logfile>
---timelimit <depends on benchmark XML>
---softtimelimit 900s # only if specified in benchmark XML
---memlimit 15GB
---memoryNodes 0 # hardware-specific
---cores 0-7 # hardware-specific
-```
+[1]: Dirk Beyer, Stefan Löwe, and Philipp Wendler.
+     Reliable Benchmarking: Requirements and Solutions.
+     International Journal on Software Tools for Technology Transfer (STTT), 21(1):1-29, 2019.
+     https://doi.org/10.1007/s10009-017-0469-y
 
 
