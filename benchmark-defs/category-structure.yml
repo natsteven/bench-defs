@@ -12,7 +12,7 @@ verifiers:
       institution: Brno University of Technology
       country: Czechia
       url: https://www.fit.vut.cz/person/imalik/.en
-      gitlab: viktor.malik
+    code-owner: viktor.malik
   aprove:
     name: AProVE
     lang: C
@@ -26,7 +26,7 @@ verifiers:
       institution: RWTH Aachen
       country: Germany
       url:
-      gitlab: jhensel
+    code-owner: jhensel
   brick:
     name: BRICK
     lang: C
@@ -37,7 +37,7 @@ verifiers:
       institution: Nanjing University
       country: China
       url:
-      gitlab: brick-tool-dev
+    code-owner: brick-tool-dev
   cbmc:
     name: CBMC
     lang: C
@@ -50,7 +50,7 @@ verifiers:
       institution: Queen Mary University of London
       country: UK
       url: https://www.tautschnig.net/
-      gitlab: tautschnig
+    code-owner: tautschnig
   coveriteam-verifier-algo-selection:
     name: CoVeriTeam-Verifier-AlgoSelection
     lang: C
@@ -61,7 +61,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: skanav
+    code-owner: skanav
   coveriteam-verifier-parallel-portfolio:
     name: CoVeriTeam-Verifier-ParallelPortfolio
     lang: C
@@ -72,7 +72,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: skanav
+    code-owner: skanav
   cpa-bam-bnb:
     name: CPA-BAM-BnB
     lang: C
@@ -84,7 +84,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: p.andrianov
+    code-owner: p.andrianov
   cpa-bam-smg:
     name: CPA-BAM-SMG
     lang: C
@@ -96,7 +96,7 @@ verifiers:
       institution: ISP RAS
       country: Russia
       url:
-      gitlab: Druidos
+    code-owner: Druidos
   cpa-lockator:
     name: CPALockator
     lang: C
@@ -108,7 +108,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: p.andrianov
+    code-owner: p.andrianov
   cpachecker:
     name: CPAchecker 2.1
     lang: C
@@ -120,7 +120,7 @@ verifiers:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/bunk/
-      gitlab: TBunk
+    code-owner: TBunk
   crux:
     name: Crux
     lang: C
@@ -132,7 +132,7 @@ verifiers:
       institution: Galois
       country: USA
       url: https://ryanglscott.github.io/
-      gitlab: RyanGlScott
+    code-owner: RyanGlScott
   cseq:
     name: CSeq
     lang: C
@@ -143,7 +143,7 @@ verifiers:
       institution: Gran Sasso Science Institute
       country: Italy
       url: https://github.com/Emersonwds
-      gitlab: emersonwds
+    code-owner: emersonwds
   dartagnan:
     name: Dartagnan
     lang: C
@@ -156,7 +156,7 @@ verifiers:
       institution: Bundeswehr University Munich
       country: Germany
       url: https://hernanponcedeleon.github.io
-      gitlab: hernanponcedeleon
+    code-owner: hernanponcedeleon
   deagle:
     name: Deagle
     lang: C
@@ -167,7 +167,7 @@ verifiers:
       institution: Tsinghua University
       country: China
       url: https://thufv.github.io/team
-      gitlab: Misasasa
+    code-owner: Misasasa
   divine:
     name: DIVINE
     lang: C
@@ -178,7 +178,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: xlauko
+    code-owner: xlauko
   ebf:
     name: EBF
     lang: C
@@ -189,7 +189,7 @@ verifiers:
       institution: Univeristy of Manchester
       country: UK
       url:
-      gitlab: fatimahaljaafari
+    code-owner: fatimahaljaafari
   esbmc-incr:
     name: ESBMC-incr
     lang: C
@@ -201,7 +201,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: feliperodri
+    code-owner: feliperodri
   esbmc-kind:
     name: ESBMC-kind
     lang: C
@@ -213,7 +213,7 @@ verifiers:
       institution: University of Manchester
       country: UK
       url:
-      gitlab: rafaelsamenezes
+    code-owner: rafaelsamenezes
   frama-c-sv:
     name: Frama-C-SV
     lang: C
@@ -227,7 +227,7 @@ verifiers:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-      gitlab: masp
+    code-owner: masp
   gazer-theta:
     name: Gazer-Theta
     lang: C
@@ -240,7 +240,7 @@ verifiers:
       name: Hors Concours
       institution: --
       url:
-      gitlab: AdamZsofi
+    code-owner: AdamZsofi
   goblint:
     name: Goblint
     lang: C
@@ -251,7 +251,7 @@ verifiers:
       institution: University of Tartu
       country: Estonia
       url:
-      gitlab: sim642
+    code-owner: sim642
   graves:
     name: GraVeS
     lang: C
@@ -265,7 +265,7 @@ verifiers:
       institution: University of Virginia
       country: United States of America
       url: https://will-leeson.github.io/
-      gitlab: will-leeson
+    code-owner: will-leeson
   infer:
     name: Infer
     lang: C
@@ -276,7 +276,7 @@ verifiers:
       institution: LMU Munich
       country: Germany
       url:
-      gitlab: matthiaskettl
+    code-owner: matthiaskettl
   korn:
     name: Korn
     lang: C
@@ -287,7 +287,7 @@ verifiers:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/ernst/
-      gitlab: gernst
+    code-owner: gernst
   lart:
     name: LART
     lang: C
@@ -303,7 +303,7 @@ verifiers:
       institution: Masaryk University, Brno
       country: Czechia
       url: https://xlauko.github.io/ 
-      gitlab: xlauko
+    code-owner: xlauko
   lazycseq:
     name: Lazy-CSeq
     lang: C
@@ -314,7 +314,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: omainv
+    code-owner: omainv
   locksmith:
     name: Locksmith
     lang: C
@@ -325,7 +325,7 @@ verifiers:
       institution: University of Tartu
       country: Estonia
       url:
-      gitlab: vesal.vojdani
+    code-owner: vesal.vojdani
   pesco:
     name: PeSCo
     lang: C
@@ -336,7 +336,7 @@ verifiers:
       institution: Paderborn University
       country: Germany
       url: https://en.cs.uni-paderborn.de/sms/team/people/cedric-richter
-      gitlab: cedricrupb
+    code-owner: cedricrupb
   pinaka:
     name: Pinaka
     lang: C
@@ -347,7 +347,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: akashbanerjeeab
+    code-owner: akashbanerjeeab
   predatorhp:
     name: PredatorHP
     lang: C
@@ -361,7 +361,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: masp
+    code-owner: masp
   sesl:
     name: SESL
     lang: C
@@ -375,7 +375,7 @@ verifiers:
       institution: Academy of Sciences
       country: China
       url:
-      gitlab: SpencerL-Y
+    code-owner: SpencerL-Y
   smack:
     name: SMACK
     lang: C
@@ -387,7 +387,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: zrakamar
+    code-owner: zrakamar
   symbiotic:
     name: Symbiotic
     lang: C
@@ -400,7 +400,7 @@ verifiers:
       institution: Masaryk University, Brno
       country: Czechia
       url:
-      gitlab: mchalupa
+    code-owner: mchalupa
   theta:
     name: Theta
     lang: C
@@ -414,7 +414,7 @@ verifiers:
       institution: Budapest University of Technology and Economics
       country: Hungary
       url:
-      gitlab: AdamZsofi
+    code-owner: AdamZsofi
   uautomizer:
     name: UAutomizer
     lang: C
@@ -426,7 +426,7 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/heizmann
-      gitlab: danieldietsch
+    code-owner: danieldietsch
   ugemcutter:
     name: UGemCutter
     lang: C
@@ -438,7 +438,7 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/klumpp
-      gitlab: danieldietsch
+    code-owner: danieldietsch
   ukojak:
     name: UKojak
     lang: C
@@ -450,7 +450,7 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/schuessele
-      gitlab: danieldietsch
+    code-owner: danieldietsch
   utaipan:
     name: UTaipan
     lang: C
@@ -462,7 +462,7 @@ verifiers:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-      gitlab: danieldietsch
+    code-owner: danieldietsch
   veriabs:
     name: VeriAbs
     lang: C
@@ -478,7 +478,7 @@ verifiers:
       institution: Tata Consultancy Services
       country: India
       url:
-      gitlab: sakshiagrawal1812
+    code-owner: sakshiagrawal1812
   verifuzz:
     name: VeriFuzz
     lang: C
@@ -500,7 +500,7 @@ verifiers:
       institution: Tata Consultancy Services
       country: India
       url:
-      gitlab: m.raveendra.kumar
+    code-owner: m.raveendra.kumar
   coastal:
     name: COASTAL
     lang: Java
@@ -510,7 +510,7 @@ verifiers:
       name: Hors Concours
       institution: --
       url:
-      gitlab: jacogeld
+    code-owner: jacogeld
   gdart:
     name: GDart
     lang: Java
@@ -522,7 +522,7 @@ verifiers:
       institution: TU Dortmund
       country: Germany
       url: https://falkhowar.de
-      gitlab: mmuesly
+    code-owner: mmuesly
   java-ranger:
     name: Java-Ranger
     lang: Java
@@ -533,7 +533,7 @@ verifiers:
       institution: University of Minnesota
       country: USA
       url: https://www.linkedin.com/in/sohahusse/
-      gitlab: soha3
+    code-owner: soha3
   jayhorn:
     name: JayHorn
     lang: Java
@@ -545,7 +545,7 @@ verifiers:
       institution: Tehran Institute for Advanced Studies
       country: Iran
       url:
-      gitlab: ali-shamakhi
+    code-owner: ali-shamakhi
   jbmc:
     name: JBMC
     lang: Java
@@ -556,7 +556,7 @@ verifiers:
       institution: University of Sussex and Diffblue
       country: UK
       url: http://www.schrammel.it
-      gitlab: peterschrammel
+    code-owner: peterschrammel
   jdart:
     name: JDart
     lang: Java
@@ -568,7 +568,7 @@ verifiers:
       institution: TU Dortmund
       country: Germany
       url: https://falkhowar.de
-      gitlab: mmuesly
+    code-owner: mmuesly
   spf:
     name: SPF
     lang: Java
@@ -579,7 +579,7 @@ verifiers:
       institution: --
       country: --
       url:
-      gitlab: yannicnoller
+    code-owner: yannicnoller
 
 validators:
   cpachecker-validate-correctness-witnesses:
@@ -592,7 +592,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/bunk/
-      gitlab: TBunk
+    code-owner: TBunk
   cpachecker-validate-violation-witnesses:
     name: CPAchecker
     lang: C
@@ -603,7 +603,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/bunk/
-      gitlab: TBunk
+    code-owner: TBunk
   cpa-witness2test-validate-violation-witnesses:
     name: CPA-witness2test
     lang: C
@@ -614,7 +614,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/lemberger/
-      gitlab: TBunk
+    code-owner: TBunk
   dartagnan-validate-violation-witnesses:
     name: Dartagnan
     lang: C
@@ -627,7 +627,7 @@ validators:
       institution: Bundeswehr University Munich
       country: Germany
       url: https://hernanponcedeleon.github.io
-      gitlab: hernanponcedeleon
+    code-owner: hernanponcedeleon
   fshell-witness2test-validate-violation-witnesses:
     name: CBMC
     lang: C
@@ -640,7 +640,7 @@ validators:
       institution: Queen Mary University of London
       country: UK
       url: https://www.tautschnig.net/
-      gitlab: tautschnig
+    code-owner: tautschnig
   gwit-validate-violation-witnesses:
     name: GWIT
     lang: Java
@@ -652,7 +652,7 @@ validators:
       institution: TU Dortmund University
       country: Germany
       url: https://falkhowar.de
-      gitlab: fhowar
+    code-owner: fhowar
   metaval-validate-correctness-witnesses:
     name: MetaVal
     lang: C
@@ -663,7 +663,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-      gitlab: masp
+    code-owner: masp
   metaval-validate-violation-witnesses:
     name: MetaVal
     lang: C
@@ -674,7 +674,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-      gitlab: masp
+    code-owner: masp
   nitwit-validate-violation-witnesses:
     name: NITWIT
     lang: C
@@ -685,7 +685,7 @@ validators:
       institution: RWTH Aachen
       country: Germany
       url: https://moves.rwth-aachen.de/people/berger/
-      gitlab: blizzard4591
+    code-owner: blizzard4591
   symbiotic-witch-validate-violation-witnesses:
     name: Symbiotic-Witch
     lang: C
@@ -697,7 +697,7 @@ validators:
       institution: Masaryk University, Brno
       country: Czechia
       url: 
-      gitlab: mchalupa
+    code-owner: mchalupa
   uautomizer-validate-correctness-witnesses:
     name: UAutomizer
     lang: C
@@ -709,7 +709,7 @@ validators:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-      gitlab: 
+    code-owner: danieldietsch
   uautomizer-validate-violation-witnesses:
     name: UAutomizer
     lang: C
@@ -721,7 +721,7 @@ validators:
       institution: University of Freiburg
       country: Germany
       url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-      gitlab: danieldietsch
+    code-owner: danieldietsch
   wit4java-validate-violation-witnesses:
     name: WIT4JAVA
     lang: Java
@@ -733,7 +733,7 @@ validators:
       institution: --
       country: --
       url: 
-      gitlab: Anthonysdu
+    code-owner: Anthonysdu
   witnesslint-validate-witnesses:
     name: WitnessLint
     lang: C
@@ -744,7 +744,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-      gitlab: masp
+    code-owner: masp
 
 
 
