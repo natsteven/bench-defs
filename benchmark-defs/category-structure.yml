@@ -540,10 +540,10 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-8-jdk-headless
     jury-member:
-      name: Hossein Hojjat
-      institution: University of Tehran
+      name: Ali Shamakhi
+      institution: Tehran Institute for Advanced Studies
       country: Iran
-      url: https://ece.ut.ac.ir/en/~hojjat
+      url:
       gitlab: ali-shamakhi
   jbmc:
     name: JBMC
