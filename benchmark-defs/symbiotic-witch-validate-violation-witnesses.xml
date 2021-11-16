@@ -82,4 +82,81 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP22_valid-memcleanup">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP22_valid-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+
+  <tasks name="MemSafety-Arrays">
+    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Heap">
+    <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-LinkedLists">
+    <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Other">
+    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Juliet">
+    <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+
+  <tasks name="SoftwareSystems-BusyBox-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-OpenBSD-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-uthash-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemSafety.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP22_no-overflow">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+
+  <tasks name="NoOverflows-BitVectors">
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+  <tasks name="NoOverflows-Other">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+
+  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-uthash-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+
 </benchmark>
