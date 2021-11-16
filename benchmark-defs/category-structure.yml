@@ -973,6 +973,7 @@ categories:
   Termination:
     properties: termination
     categories:
+      - termination.Termination-BitVectors
       - termination.Termination-MainControlFlow
       - termination.Termination-MainHeap
       - termination.Termination-Other
@@ -1147,6 +1148,7 @@ categories_process_order:
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
   - NoOverflows
+  - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
   - termination.Termination-MainHeap
   - termination.Termination-Other
@@ -1195,6 +1197,7 @@ categories_table_order:
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
   - Termination
+  - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
   - termination.Termination-MainHeap
   - termination.Termination-Other
