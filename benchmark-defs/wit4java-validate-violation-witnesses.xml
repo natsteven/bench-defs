@@ -8,7 +8,7 @@
 
 <rundefinition name="SV-COMP22_assert_java">
   <requiredfiles>../results/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.GraphML</option>
+  <option name="--witness">../../results/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
