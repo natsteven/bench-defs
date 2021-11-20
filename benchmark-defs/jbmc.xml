@@ -6,6 +6,8 @@
 
   <resultfiles>**.graphml</resultfiles>
 
+  <option name="--graphml-witness">witness.graphml</option>
+
 <rundefinition name="SV-COMP22_assert_java">
   <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
