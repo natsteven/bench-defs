@@ -1240,6 +1240,9 @@ opt_out:
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - MemSafety
     - Termination
+  infer:
+    - unreach-call.ReachSafety-Floats
+    - no-data-race.NoDataRace-Main
   lart:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
