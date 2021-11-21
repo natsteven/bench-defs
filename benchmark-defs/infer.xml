@@ -23,6 +23,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-Floats">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
