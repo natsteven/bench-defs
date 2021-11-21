@@ -522,7 +522,9 @@ verifiers:
       institution: TU Dortmund
       country: Germany
       url: https://falkhowar.de
-    code-owner: mmuesly
+    code-owner:
+      - fhowar
+      - mmuesly
   java-ranger:
     name: Java-Ranger
     lang: Java
@@ -568,7 +570,9 @@ verifiers:
       institution: TU Dortmund
       country: Germany
       url: https://falkhowar.de
-    code-owner: mmuesly
+    code-owner:
+      - fhowar
+      - mmuesly
   spf:
     name: SPF
     lang: Java
@@ -652,7 +656,9 @@ validators:
       institution: TU Dortmund University
       country: Germany
       url: https://falkhowar.de
-    code-owner: fhowar
+    code-owner:
+      - fhowar
+      - mmuesly
   metaval-validate-correctness-witnesses:
     name: MetaVal
     lang: C
