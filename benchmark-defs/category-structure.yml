@@ -515,7 +515,8 @@ verifiers:
     name: GDart
     lang: Java
     url: https://github.com/tudo-aqua/gdart-svcomp
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Falk Howar
       institution: TU Dortmund
@@ -560,7 +561,8 @@ verifiers:
     name: JDart
     lang: Java
     url: https://github.com/tudo-aqua/jdart
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
     jury-member:
       name: Falk Howar
       institution: TU Dortmund
@@ -644,7 +646,7 @@ validators:
     lang: Java
     url: https://github.com/tudo-aqua/gwit
     required-ubuntu-packages:
-     - python3-yaml
+     - openjdk-11-jre-headless
     jury-member:
       name: Falk Howar
       institution: TU Dortmund University
