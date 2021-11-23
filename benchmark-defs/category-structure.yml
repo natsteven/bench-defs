@@ -55,7 +55,16 @@ verifiers:
     name: CoVeriTeam-Verifier-AlgoSelection
     lang: C
     url: https://gitlab.com/sosy-lab/software/coveriteam
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python-is-python2
+      - python3-numpy
+      - clang
+      - python2
+      - openjdk-11-jre
+      - clang-10
+      - python3-lxml 
+      - gcc
+      - libc6-dev-i386
     jury-member:
       name: Hors Concours
       institution: --
@@ -66,7 +75,16 @@ verifiers:
     name: CoVeriTeam-Verifier-ParallelPortfolio
     lang: C
     url: https://gitlab.com/sosy-lab/software/coveriteam
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python-is-python2
+      - python3-numpy
+      - clang
+      - python2
+      - openjdk-11-jre
+      - clang-10
+      - python3-lxml 
+      - gcc
+      - libc6-dev-i386
     jury-member:
       name: Hors Concours
       institution: --
