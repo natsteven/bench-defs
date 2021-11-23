@@ -1233,8 +1233,16 @@ opt_out:
     - MemSafety
     - Termination
   infer:
+    # Infer can't handle floats
     - unreach-call.ReachSafety-Floats
+    # Infer's RacerD analysis does not work on these C examples
     - no-data-race.NoDataRace-Main
+    # Tasks contain specific error-methods that infer-sv can not handle because of modular analysis
+    - unreach-call.ReachSafety-ProductLines
+    - unreach-call.ReachSafety-Combinations
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   lart:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
