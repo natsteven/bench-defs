@@ -862,6 +862,7 @@ categories:
       - crux
       - divine
       - esbmc-kind
+      - frama-c-sv
       - goblint
       - graves
       - infer
@@ -1252,6 +1253,12 @@ opt_out:
     - Termination
   map2check:
     - ReachSafety
+  frama-c-sv:
+    - unreach-call.ReachSafety-ControlFlow
+    - unreach-call.ReachSafety-Floats
+    - unreach-call.ReachSafety-Heap
+    - unreach-call.ReachSafety-Sequentialized
+    - unreach-call.ReachSafety-XCSP
   goblint:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
