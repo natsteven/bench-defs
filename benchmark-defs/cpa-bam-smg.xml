@@ -10,6 +10,12 @@
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
 
+  <option name="-setprop">counterexample.export.graphml=witness.graphml</option>
+  <option name="-setprop">cpa.arg.proofWitness=witness.graphml</option>
+  <option name="-setprop">termination.violation.witness=witness.graphml</option>
+  <option name="-setprop">counterexample.export.compressWitness=false</option>
+  <option name="-setprop">cpa.arg.compressWitness=false</option>
+
 <rundefinition name="SV-COMP22_unreach-call">
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
