@@ -290,9 +290,9 @@ verifiers:
     url: https://fbinfer.com/
     required-ubuntu-packages: []
     jury-member:
-      name: Matthias Kettl
-      institution: LMU Munich
-      country: Germany
+      name: Hors Concours
+      institution: --
+      country: --
       url:
     code-owner: matthiaskettl
   korn:
