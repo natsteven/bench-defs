@@ -4,7 +4,7 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
-  <resultfiles>**.graphml</resultfiles>
+  <resultfiles>**/*.graphml</resultfiles>
 
 <rundefinition name="SV-COMP22_valid-memsafety">
   <tasks name="MemSafety-Arrays">

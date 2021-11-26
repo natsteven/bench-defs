@@ -13,7 +13,7 @@ SPDX-License-Identifier: Apache-2.0
 <benchmark tool="coveriteam-verifier-validator" displayName="CoVeriTeam-Verifier-AlgoSelection" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
-  <resultfiles>**.graphml</resultfiles>
+  <resultfiles>**/*.graphml</resultfiles>
 
   <option name="verifier-algo-selection.cvt"></option>
   <option name="--cache-dir">cache</option>
