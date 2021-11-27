@@ -8,7 +8,7 @@
   memlimit="16 GB"
   cpuCores="8">
 
-  <resultfiles>**.graphml</resultfiles>
+  <resultfiles>**/*.graphml</resultfiles>
 
   <option name="-portfolio"/>
   <option name="-heap">10000M</option>

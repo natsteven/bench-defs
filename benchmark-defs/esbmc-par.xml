@@ -7,7 +7,7 @@
            memlimit="16 GB"
            cpuCores="8">
 
-  <resultfiles>**.graphml</resultfiles>
+  <resultfiles>**/*.graphml</resultfiles>
 
   <rundefinition name="SV-COMP20_unreach-call">
     <tasks name="ReachSafety-Arrays">
