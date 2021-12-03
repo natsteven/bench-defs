@@ -30,19 +30,61 @@ The following steps set up the benchmarking environment:
 
 For reproducing results of a specific edition of the competition, please checkout the tag for that edition.
 
+The following sections assume that the working directory is the same as used in the above commands.
 
 ## Executing a Benchmark for a Particular Tool
 
-Assume that we would like to reproduce results for the verifier `CPAchecker`.
-We can execute the verification runs using the following command:
+Assume that we would like to reproduce results for the tool `CPAchecker`,
+including results validation.
+This can be achieved using the following command:
 
-`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+`scripts/execute-runs/mkRunVerify.sh cpachecker`
 
-In the following we explain some of the steps.
+The above command executes the verification runs with tool `CPAchecker`, and
+afterwards all result validators that are declared in `benchmark-defs/category-structure.yml`.
+
+If we would like to execute only verification runs, then we can use the following command:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+
+The parameters specify the:
+- benchmarking utility (BenchExec) to be used to run the benchmark,
+- tool archive, i.e., we use the archive file `archives/*/cpachecker.zip`,
+- benchmark definition, i.e., we use `benchmark-defs/cpachecker.xml`,
+- name of the witness files, to which the unification script links the witness produced by the tool,
+- pattern using which the unification script searches for produced witnesses, and
+- the directory in which the results shall be stored.
+
+For quick tests and sanity checks, BenchExec can be told to restrict the execution to a certain test-set.
+For example, to restrict the execution to the sub-category `ReachSafety-ControlFlow`,
+you can replace `"../../benchexec/bin/benchexec"` by `"../../benchexec/bin/benchexec -t ReachSafety-ControlFlow"`.
+
+Furthermore, BenchExec can be told to overwrite limit from the benchmark definitions (which should be used only for test executions).
+To see if a tool generally works and produces outputs, you could use (assuming we use a machine with 8 cores and 32 GB of RAM)
+the additional parameters `--timelimit 60 --memorylimit 3GB --limitCores 1 --numOfThreads 8` to
+- limit the CPU time to `60 s`,
+- limit the memory to `3GB`,
+- limit the number of cores to `1`, and
+- set the number of runs executed in parallel to `8`.
+
+It is important to execute the tools (when running experiments) in a container.
+Since we use BenchExec, this is done automatically.
+In order to protect our file system and to give proper write access to the tool inside the container,
+we add the setup of the overlay filesystem using the parameters
+- `--read-only-dir /` to make sure the tool we execute does not write at unexpected places,
+- `--overlay-dir /home` to let BenchExec setup a directory to the tool inside the container, and
+- `--overlay-dir .` to give permission to write to the working directory.
+
+A complete command line would look as follows:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home --overlay-dir ." cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+
+
+In the following we explain some of the steps that the above script does for us.
 
 ### Unpack a Tool
 
-The following command unpacks the verifier `CPAchecker`:
+The following command unpacks the tool `CPAchecker`:
 - `mkdir bin/cpachecker-32KkXQ0CzM`
 - `scripts/execute-runs/mkInstall.sh cpachecker bin/cpachecker-32KkXQ0CzM`
 
