@@ -47,7 +47,15 @@ afterwards all result validators that are declared in `benchmark-defs/category-s
 
 If we would like to execute only verification runs, then we can use the following command:
 
-`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+```
+scripts/execute-runs/execute-runcollection.sh \
+    "../../benchexec/bin/benchexec" \
+    cpachecker \
+    cpachecker.xml \
+    witness.graphml \
+    .graphml \
+    ../../results-verified/
+```
 
 The parameters specify the:
 - benchmarking utility (BenchExec) to be used to run the benchmark,
@@ -79,7 +87,17 @@ we add the setup of the overlay filesystem using the parameters
 
 A complete command line would look as follows:
 
-`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home --overlay-dir ." cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
+```
+scripts/execute-runs/execute-runcollection.sh \
+    "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
+                                   -t ReachSafety-ControlFlow \
+                                   --read-only-dir / --overlay-dir /home --overlay-dir ." \
+    cpachecker \
+    cpachecker.xml \
+    witness.graphml \
+    .graphml \
+    ../../results-verified/
+```
 
 
 ### Executing Only Validation Runs (Incl. Witness Linter)
@@ -94,13 +112,31 @@ Suppose we would like to run result validation for violation results with CPAche
 We would make a copy of `cpachecker-validate-violation-witnesses.xml` to `cpachecker-validate-violation-witnesses-cpachecker.xml`
 and replace the string as mentioned above there. The we can run:
 
-`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec --memorylimit 3GB --numOfThreads 8 --limitCores 1 -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home " val_cpachecker cpachecker-validate-violation-witnesses-cpachecker.xml witness.graphml .graphml ../../results-validated`
+```
+scripts/execute-runs/execute-runcollection.sh \
+    "../../benchexec/bin/benchexec --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
+                                   -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home " \
+    val_cpachecker \
+    cpachecker-validate-violation-witnesses-cpachecker.xml \
+    witness.graphml \
+    .graphml \
+    ../../results-validated
+```
 
 Suppose we would like to run the witness linter to check that the witnesses are syntactically valid.
 We would make a copy of `witnesslint-validate-witnesses.xml` to `witnesslint-validate-witnesses-cpachecker.xml`
 and replace the string as mentioned above there. The we can run:
 
-`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home --overlay-dir ." val_witnesslint witnesslint-validate-witnesses-cpachecker.xml witness.graphml .graphml ../../results-validated/`
+```
+scripts/execute-runs/execute-runcollection.sh \
+    "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow \
+                                   --read-only-dir / --overlay-dir /home --overlay-dir ." \
+    val_witnesslint \
+    witnesslint-validate-witnesses-cpachecker.xml \
+    witness.graphml \
+    .graphml \
+    ../../results-validated/
+```
 
 
 ### Detailed Execution of Tools
