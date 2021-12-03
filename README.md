@@ -43,6 +43,8 @@ This can be achieved using the following command:
 The above command executes the verification runs with tool `CPAchecker`, and
 afterwards all result validators that are declared in `benchmark-defs/category-structure.yml`.
 
+### Executing Only Verification Runs
+
 If we would like to execute only verification runs, then we can use the following command:
 
 `scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec" cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
@@ -80,23 +82,52 @@ A complete command line would look as follows:
 `scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home --overlay-dir ." cpachecker cpachecker.xml witness.graphml .graphml ../../results-verified/`
 
 
-In the following we explain some of the steps that the above script does for us.
+### Executing Only Validation Runs (Incl. Witness Linter)
 
-### Unpack a Tool
+The above executions produce results (witnesses) in a results directory similar to `cpachecker.2021-12-03_10-39-40.files/`
+inside the output directory `results-verified/`.
+
+The benchmark definition for validation must be updated with this results directory:
+The string `results-verified/LOGDIR/` must be replaced by the string `results-verified/cpachecker.2021-12-03_10-39-40.files/`
+
+Suppose we would like to run result validation for violation results with CPAchecker.
+We would make a copy of `cpachecker-validate-violation-witnesses.xml` to `cpachecker-validate-violation-witnesses-cpachecker.xml`
+and replace the string as mentioned above there. The we can run:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec --memorylimit 3GB --numOfThreads 8 --limitCores 1 -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home " val_cpachecker cpachecker-validate-violation-witnesses-cpachecker.xml witness.graphml .graphml ../../results-validated`
+
+Suppose we would like to run the witness linter to check that the witnesses are syntactically valid.
+We would make a copy of `witnesslint-validate-witnesses.xml` to `witnesslint-validate-witnesses-cpachecker.xml`
+and replace the string as mentioned above there. The we can run:
+
+`scripts/execute-runs/execute-runcollection.sh "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home --overlay-dir ." val_witnesslint witnesslint-validate-witnesses-cpachecker.xml witness.graphml .graphml ../../results-validated/`
+
+
+### Detailed Execution of Tools
+
+In the following we explain some of the steps that the script `scripts/execute-runs/execute-runcollection.sh` normally performs for us.
+
+#### Unpack a Tool
 
 The following command unpacks the tool `CPAchecker`:
 - `mkdir bin/cpachecker-32KkXQ0CzM`
 - `scripts/execute-runs/mkInstall.sh cpachecker bin/cpachecker-32KkXQ0CzM`
 
-### Assemble Provenance Information for a Tool
+#### Assemble Provenance Information for a Tool
 
 The following command prints information about the repositories and their versions:
 - `scripts/execute-runs/mkProvenanceInfo.sh cpachecker`
 
-### Execute a Benchmark for a Tool
+#### Execute a Benchmark for a Tool
 
 - `cd bin/cpachecker-32KkXQ0CzM`
 - `../../benchexec/bin/benchexec -t ReachSafety-ControlFlow ../../benchmark-defs/cpachecker.xml -o ../../results-verified/`
+
+#### Initialize Result Files (for Validation Runs and Reproduction)
+
+The script `scripts/execute-runs/execute-runcollection.sh` also performs some post-processing steps to:
+- create a mapping from files to SHA hashes (for output files like witnesses, and for input files like programs, specifications, and task definitions) and
+- create a symbolic link at a uniform location of the result files (in order to be able to feed the results as input to validation runs).
 
 
 ## Computing Environment on Competition Machines
