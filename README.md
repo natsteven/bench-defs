@@ -91,7 +91,7 @@ A complete command line would look as follows:
 scripts/execute-runs/execute-runcollection.sh \
     "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
                                    -t ReachSafety-ControlFlow \
-                                   --read-only-dir / --overlay-dir /home --overlay-dir ." \
+                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
     cpachecker \
     cpachecker.xml \
     witness.graphml \
@@ -115,7 +115,8 @@ and replace the string as mentioned above there. The we can run:
 ```
 scripts/execute-runs/execute-runcollection.sh \
     "../../benchexec/bin/benchexec --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
-                                   -t ReachSafety-ControlFlow --read-only-dir / --overlay-dir /home " \
+                                   -t ReachSafety-ControlFlow \
+                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
     val_cpachecker \
     cpachecker-validate-violation-witnesses-cpachecker.xml \
     witness.graphml \
@@ -130,7 +131,7 @@ and replace the string as mentioned above there. The we can run:
 ```
 scripts/execute-runs/execute-runcollection.sh \
     "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow \
-                                   --read-only-dir / --overlay-dir /home --overlay-dir ." \
+                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
     val_witnesslint \
     witnesslint-validate-witnesses-cpachecker.xml \
     witness.graphml \
