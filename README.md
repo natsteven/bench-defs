@@ -49,25 +49,26 @@ If we would like to execute only verification runs, then we can use the followin
 
 ```
 scripts/execute-runs/execute-runcollection.sh \
-    "../../benchexec/bin/benchexec" \
-    cpachecker \
-    cpachecker.xml \
+    benchexec/bin/benchexec \
+    archives/2022/cpachecker.zip \
+    benchmark-defs/cpachecker.xml \
     witness.graphml \
     .graphml \
-    ../../results-verified/
+    results-verified/
 ```
 
 The parameters specify the:
 - benchmarking utility (BenchExec) to be used to run the benchmark,
-- tool archive, i.e., we use the archive file `archives/*/cpachecker.zip`,
-- benchmark definition, i.e., we use `benchmark-defs/cpachecker.xml`,
+- tool archive,
+- benchmark definition,
 - name of the witness files, to which the unification script links the witness produced by the tool,
-- pattern using which the unification script searches for produced witnesses, and
-- the directory in which the results shall be stored.
+- pattern using which the unification script searches for produced witnesses,
+- the directory in which the results shall be stored, and
+- (optional) parameters to be passed to the benchmarking utility.
 
 For quick tests and sanity checks, BenchExec can be told to restrict the execution to a certain test-set.
 For example, to restrict the execution to the sub-category `ReachSafety-ControlFlow`,
-you can replace `"../../benchexec/bin/benchexec"` by `"../../benchexec/bin/benchexec -t ReachSafety-ControlFlow"`.
+you add an extra parameter `-t ReachSafety-ControlFlow` that is passed to the benchmarking utility.
 
 Furthermore, BenchExec can be told to overwrite limit from the benchmark definitions (which should be used only for test executions).
 To see if a tool generally works and produces outputs, you could use (assuming we use a machine with 8 cores and 32 GB of RAM)
@@ -89,14 +90,15 @@ A complete command line would look as follows:
 
 ```
 scripts/execute-runs/execute-runcollection.sh \
-    "../../benchexec/bin/benchexec --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
-                                   -t ReachSafety-ControlFlow \
-                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
-    cpachecker \
-    cpachecker.xml \
+    benchexec/bin/benchexec \
+    archives/2022/cpachecker.zip \
+    benchmark-defs/cpachecker.xml \
     witness.graphml \
     .graphml \
-    ../../results-verified/
+    results-verified/
+    --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
+    -t ReachSafety-ControlFlow \
+    --read-only-dir / --overlay-dir /home --overlay-dir ./
 ```
 
 
@@ -114,29 +116,31 @@ and replace the string as mentioned above there. The we can run:
 
 ```
 scripts/execute-runs/execute-runcollection.sh \
-    "../../benchexec/bin/benchexec --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
-                                   -t ReachSafety-ControlFlow \
-                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
-    val_cpachecker \
-    cpachecker-validate-violation-witnesses-cpachecker.xml \
+    benchexec/bin/benchexec \
+    archives/2022/val_cpachecker.zip \
+    benchmark-defs/cpachecker-validate-violation-witnesses-cpachecker.xml \
     witness.graphml \
     .graphml \
-    ../../results-validated
+    ../../results-validated/ \
+    --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
+    -t ReachSafety-ControlFlow \
+    --read-only-dir / --overlay-dir /home --overlay-dir ./
 ```
 
 Suppose we would like to run the witness linter to check that the witnesses are syntactically valid.
 We would make a copy of `witnesslint-validate-witnesses.xml` to `witnesslint-validate-witnesses-cpachecker.xml`
-and replace the string as mentioned above there. The we can run:
+and replace the string as mentioned above there. Then we can run:
 
 ```
 scripts/execute-runs/execute-runcollection.sh \
-    "../../benchexec/bin/benchexec -t ReachSafety-ControlFlow \
-                                   --read-only-dir / --overlay-dir /home --overlay-dir ./" \
-    val_witnesslint \
-    witnesslint-validate-witnesses-cpachecker.xml \
+    benchexec/bin/benchexec \
+    archives/2022/val_witnesslint.zip \
+    benchmark-defs/witnesslint-validate-witnesses-cpachecker.xml \
     witness.graphml \
     .graphml \
-    ../../results-validated/
+    results-validated/ \
+    -t ReachSafety-ControlFlow \
+    --read-only-dir / --overlay-dir /home --overlay-dir ./
 ```
 
 
@@ -148,12 +152,12 @@ In the following we explain some of the steps that the script `scripts/execute-r
 
 The following command unpacks the tool `CPAchecker`:
 - `mkdir bin/cpachecker-32KkXQ0CzM`
-- `scripts/execute-runs/mkInstall.sh cpachecker bin/cpachecker-32KkXQ0CzM`
+- `scripts/execute-runs/mkInstall.sh archives/2022/cpachecker.zip bin/cpachecker-32KkXQ0CzM`
 
 #### Assemble Provenance Information for a Tool
 
 The following command prints information about the repositories and their versions:
-- `scripts/execute-runs/mkProvenanceInfo.sh cpachecker`
+- `scripts/execute-runs/mkProvenanceInfo.sh archives/2022/cpachecker.zip`
 
 #### Execute a Benchmark for a Tool
 
