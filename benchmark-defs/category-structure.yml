@@ -271,7 +271,7 @@ verifiers:
       url:
     code-owner: sim642
   graves:
-    name: GraVeS
+    name: Graves-CPA
     lang: C
     url: https://github.com/will-leeson/cpachecker
     required-ubuntu-packages:
