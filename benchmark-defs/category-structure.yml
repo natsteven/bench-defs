@@ -182,7 +182,7 @@ verifiers:
       country: Estonia
       url: 
   graves:
-    name: GraVeS
+    name: Graves-CPA
     lang: C
     url: https://github.com/will-leeson/cpachecker
     required-ubuntu-packages: 
