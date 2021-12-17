@@ -257,6 +257,7 @@ verifiers:
     jury-member:
       name: Hors Concours
       institution: --
+      country: --
       url:
     code-owner: AdamZsofi
   goblint:
@@ -527,6 +528,7 @@ verifiers:
     jury-member:
       name: Hors Concours
       institution: --
+      country: --
       url:
     code-owner: jacogeld
   gdart:
