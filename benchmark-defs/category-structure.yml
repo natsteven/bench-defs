@@ -351,9 +351,9 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Cedric Richter
-      institution: Paderborn University
+      institution: University of Oldenburg, Germany
       country: Germany
-      url: https://en.cs.uni-paderborn.de/sms/team/people/cedric-richter
+      url: https://uol.de/en/computingscience/groups/formal-methods/team/cedric-richter
     code-owner: cedricrupb
   pinaka:
     name: Pinaka
