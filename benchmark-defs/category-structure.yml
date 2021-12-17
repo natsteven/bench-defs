@@ -16,7 +16,7 @@ verifiers:
   aprove:
     name: AProVE
     lang: C
-    url: aprove.informatik.rwth-aachen.de
+    url: https://aprove.informatik.rwth-aachen.de
     required-ubuntu-packages:
       - clang
       - mono-runtime
