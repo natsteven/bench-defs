@@ -95,7 +95,7 @@ scripts/execute-runs/execute-runcollection.sh \
     benchmark-defs/cpachecker.xml \
     witness.graphml \
     .graphml \
-    results-verified/
+    results-verified/ \
     --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
     -t ReachSafety-ControlFlow \
     --read-only-dir / --overlay-dir /home --overlay-dir ./
