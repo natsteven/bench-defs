@@ -178,14 +178,14 @@ verifiers:
   deagle:
     name: Deagle
     lang: C
-    url: https://github.com/Misasasa/Deagle
+    url: https://github.com/thufv/Deagle
     required-ubuntu-packages: []
     jury-member:
       name: Fei He
       institution: Tsinghua University
       country: China
-      url: https://thufv.github.io/team
-    code-owner: Misasasa
+      url: https://feihe.github.io/
+    code-owner: thufv
   divine:
     name: DIVINE
     lang: C
