@@ -204,7 +204,7 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Fatimah Aljaafari
-      institution: Univeristy of Manchester
+      institution: University of Manchester
       country: UK
       url:
     code-owner: fatimahaljaafari
