@@ -11,7 +11,7 @@ The components are described in the following table.
 
 | Component              | Repository                                                      | Participants             |
 | ---                    | ---                                                             | ---                      |
-| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       | add, fix, review tasks   |
+| Verification Tasks     | https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks          | add, fix, review tasks   |
 | Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
 | Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
 | Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               | submit to participate    |
