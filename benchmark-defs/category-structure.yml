@@ -755,9 +755,9 @@ validators:
     required-ubuntu-packages:
      - python3-networkx
     jury-member:
-      name: --
-      institution: --
-      country: --
+      name: Tong Wu
+      institution: University of Manchester
+      country: UK
       url: 
     code-owner: Anthonysdu
   witnesslint-validate-witnesses:
