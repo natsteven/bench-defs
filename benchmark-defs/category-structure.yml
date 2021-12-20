@@ -888,7 +888,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   MemSafety:
     properties:
@@ -928,7 +928,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   ConcurrencySafety:
     properties:
@@ -997,7 +997,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   Termination:
     properties: termination
@@ -1075,7 +1075,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   Overall:
     properties:
