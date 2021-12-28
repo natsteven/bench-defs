@@ -101,6 +101,8 @@ scripts/execute-runs/execute-runcollection.sh \
     --read-only-dir / --overlay-dir /home/ --overlay-dir ./
 ```
 
+**Note:** If you execute [CoVeriTeam](https://gitlab.com/sosy-lab/software/coveriteam/)-based tools, or other tools that use CGroups, then the following additional parameter is necessary:
+`--full-access-dir /sys/fs/cgroup`.
 
 ### Executing Only Validation Runs (Incl. Witness Linter)
 
