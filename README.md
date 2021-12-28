@@ -71,10 +71,10 @@ For example, to restrict the execution to the sub-category `ReachSafety-ControlF
 you add an extra parameter `-t ReachSafety-ControlFlow` that is passed to the benchmarking utility.
 
 Furthermore, BenchExec can be told to overwrite limit from the benchmark definitions (which should be used only for test executions).
-To see if a tool generally works and produces outputs, you could use (assuming we use a machine with 8 cores and 32 GB of RAM)
+To see if a tool generally works and produces outputs, you could use (assuming we use a machine with 8 cores and 30 GB of RAM)
 the additional parameters `--timelimit 60 --memorylimit 3GB --limitCores 1 --numOfThreads 8` to
 - limit the CPU time to `60 s`,
-- limit the memory to `3GB`,
+- limit the memory to `3 GB`,
 - limit the number of cores to `1`, and
 - set the number of runs executed in parallel to `8`.
 
@@ -83,8 +83,8 @@ Since we use BenchExec, this is done automatically.
 In order to protect our file system and to give proper write access to the tool inside the container,
 we add the setup of the overlay filesystem using the parameters
 - `--read-only-dir /` to make sure the tool we execute does not write at unexpected places,
-- `--overlay-dir /home` to let BenchExec setup a directory to the tool inside the container, and
-- `--overlay-dir .` to give permission to write to the working directory.
+- `--overlay-dir /home/` to let BenchExec setup a directory for the tool inside the container, and
+- `--overlay-dir ./` to give permission to write to the working directory.
 
 A complete command line would look as follows:
 
@@ -96,9 +96,9 @@ scripts/execute-runs/execute-runcollection.sh \
     witness.graphml \
     .graphml \
     results-verified/ \
-    --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
     -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
+    --timelimit 60 --memorylimit 3GB --limitCores 1 --numOfThreads 8 \
+    --read-only-dir / --overlay-dir /home/ --overlay-dir ./
 ```
 
 
@@ -122,9 +122,9 @@ scripts/execute-runs/execute-runcollection.sh \
     witness.graphml \
     .graphml \
     ../../results-validated/ \
-    --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
     -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
+    --memorylimit 3GB --limitCores 1 --numOfThreads 8 \
+    --read-only-dir / --overlay-dir /home/ --overlay-dir ./
 ```
 
 Suppose we would like to run the witness linter to check that the witnesses are syntactically valid.
@@ -140,7 +140,7 @@ scripts/execute-runs/execute-runcollection.sh \
     .graphml \
     results-validated/ \
     -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
+    --read-only-dir / --overlay-dir /home/ --overlay-dir ./
 ```
 
 
@@ -162,7 +162,7 @@ The following command prints information about the repositories and their versio
 #### Execute a Benchmark for a Tool
 
 - `cd bin/cpachecker-32KkXQ0CzM`
-- `../../benchexec/bin/benchexec -t ReachSafety-ControlFlow ../../benchmark-defs/cpachecker.xml -o ../../results-verified/`
+- `../../benchexec/bin/benchexec ../../benchmark-defs/cpachecker.xml --outputpath ../../results-verified/ -t ReachSafety-ControlFlow`
 
 #### Initialize Result Files (for Validation Runs and Reproduction)
 
