@@ -1,10 +1,11 @@
-# SV-COMP Reproducibility
+# SV-COMP Reproducibility - Overview
+
 This repository describes the configuration of the competition machines (below)
 and the benchmark definition for each verifier (folder [benchmark-defs/](benchmark-defs/)),
 in order to make results of the competition reproducible.
 
 
-## Components for Reproducing Competition Results
+# Components for Reproducing Competition Results
 
 The competition uses several components to execute the benchmarks.
 The components are described in the following table.
@@ -22,7 +23,7 @@ The components are described in the following table.
 | Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
 
 
-## Setup
+# Setup
 The following steps set up the benchmarking environment:
 - `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
 - `make init` (takes a while: downloads several GB of data from repositories)
@@ -43,7 +44,7 @@ This can be achieved using the following command:
 The above command executes the verification runs with tool `CPAchecker`, and
 afterwards all result validators that are declared in `benchmark-defs/category-structure.yml`.
 
-### Executing Only Verification Runs
+## Executing Only Verification Runs
 
 If we would like to execute only verification runs, then we can use the following command:
 
@@ -150,39 +151,39 @@ scripts/execute-runs/execute-runcollection.sh \
 
 In the following we explain some of the steps that the script `scripts/execute-runs/execute-runcollection.sh` normally performs for us.
 
-#### Unpack a Tool
+### Unpack a Tool
 
 The following command unpacks the tool `CPAchecker`:
 - `mkdir bin/cpachecker-32KkXQ0CzM`
 - `scripts/execute-runs/mkInstall.sh archives/2022/cpachecker.zip bin/cpachecker-32KkXQ0CzM`
 
-#### Assemble Provenance Information for a Tool
+### Assemble Provenance Information for a Tool
 
 The following command prints information about the repositories and their versions:
 - `scripts/execute-runs/mkProvenanceInfo.sh archives/2022/cpachecker.zip`
 
-#### Execute a Benchmark for a Tool
+### Execute a Benchmark for a Tool
 
 - `cd bin/cpachecker-32KkXQ0CzM`
 - `../../benchexec/bin/benchexec ../../benchmark-defs/cpachecker.xml --outputpath ../../results-verified/ -t ReachSafety-ControlFlow`
 
-#### Initialize Result Files (for Validation Runs and Reproduction)
+### Initialize Result Files (for Validation Runs and Reproduction)
 
 The script `scripts/execute-runs/execute-runcollection.sh` also performs some post-processing steps to:
 - create a mapping from files to SHA hashes (for output files like witnesses, and for input files like programs, specifications, and task definitions) and
 - create a symbolic link at a uniform location of the result files (in order to be able to feed the results as input to validation runs).
 
 
-## Computing Environment on Competition Machines
+# Computing Environment on Competition Machines
 
-### Docker Image
+## Docker Image
 
 SV-COMP provides a Docker image that tries to provide an environment
 that has mostly the same packages installed as the competition machines.
 The Docker image is described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
 
-### Parameters of RunExec
+## Parameters of RunExec
 
 The parameters that are passed to the [BenchExec](https://github.com/sosy-lab/benchexec) [1]
 executor [runexec](https://github.com/sosy-lab/benchexec/blob/main/doc/runexec.md) on the competition machines
@@ -190,7 +191,7 @@ are described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#parameters-of-runexec
 
 
-## References
+# References
 
 [1]: Dirk Beyer, Stefan Löwe, and Philipp Wendler.
      Reliable Benchmarking: Requirements and Solutions.
