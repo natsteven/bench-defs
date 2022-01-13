@@ -23,6 +23,12 @@ The components are described in the following table.
 | Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format | (know)                   |
 | Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
 
+Archives published at Zenodo:
+
+| Year | Verification Tasks                      | Competition Results                     | Verification Witnesses                  | BenchExec                               |
+| ---  | ---                                     | ---                                     | ---                                     | ---                                     |
+| 2022 | https://doi.org/10.5281/zenodo.5831003  | https://doi.org/10.5281/zenodo.5831008  | https://doi.org/10.5281/zenodo.5838498  | https://doi.org/10.5281/zenodo.5720267  |
+| 2021 | https://doi.org/10.5281/zenodo.4459126  | https://doi.org/10.5281/zenodo.4458215  | https://doi.org/10.5281/zenodo.4459196  | https://doi.org/10.5281/zenodo.4317433  |
 
 
 # Instructions for Execution and Reproduction
