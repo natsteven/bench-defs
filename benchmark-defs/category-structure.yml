@@ -653,7 +653,7 @@ validators:
       url: https://hernanponcedeleon.github.io
     code-owner: hernanponcedeleon
   fshell-witness2test-validate-violation-witnesses:
-    name: CBMC
+    name: CProver-witness2test
     lang: C
     url: https://www.cprover.org/cbmc/
     required-ubuntu-packages:
