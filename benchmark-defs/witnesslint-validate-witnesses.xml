@@ -178,15 +178,14 @@
 </rundefinition>
 
   <columns>
-    <column title="witness-type">Witness Type</column>
-    <column title="witness-file">Witness File</column>
-    <column title="witness-type">Witness Type</column>
-    <column title="producer">Producer</column>
-    <column title="creation-time">Creation Time</column>
-    <column title="architecture">Architecture</column>
-    <column title="program-file">Program File</column>
-    <column title="program-hash">Program Hash</column>
-    <column title="source-code-language">Source Code Language</column>
+    <column title="witnesslint-witness-type">Witness Type</column>
+    <column title="witnesslint-witness-file">Witness File</column>
+    <column title="witnesslint-producer">Producer</column>
+    <column title="witnesslint-creation-time">Creation Time</column>
+    <column title="witnesslint-architecture">Architecture</column>
+    <column title="witnesslint-program-file">Program File</column>
+    <column title="witnesslint-program-hash">Program Hash</column>
+    <column title="witnesslint-source-code-language">Source Code Language</column>
   </columns>
 
 </benchmark>
