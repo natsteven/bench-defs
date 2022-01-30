@@ -352,7 +352,7 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Cedric Richter
-      institution: University of Oldenburg, Germany
+      institution: University of Oldenburg
       country: Germany
       url: https://uol.de/en/computingscience/groups/formal-methods/team/cedric-richter
     code-owner: cedricrupb
