@@ -282,7 +282,7 @@ verifiers:
     jury-member:
       name: Will Leeson
       institution: University of Virginia
-      country: United States of America
+      country: USA
       url: https://will-leeson.github.io/
     code-owner: will-leeson
   infer:
