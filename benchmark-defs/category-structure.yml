@@ -501,7 +501,7 @@ verifiers:
   verifuzz:
     name: VeriFuzz
     lang: C
-    url: https://gitlab.com/raveenkm/archives-2021/-/tree/master/2021
+    url:
     required-ubuntu-packages:
       - clang-12
       - frama-c-base
