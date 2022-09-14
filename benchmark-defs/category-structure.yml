@@ -501,7 +501,7 @@ verifiers:
   verifuzz:
     name: VeriFuzz
     lang: C
-    url:
+    url: https://www.tcs.com
     required-ubuntu-packages:
       - clang-12
       - frama-c-base
