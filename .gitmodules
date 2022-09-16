@@ -1,6 +1,6 @@
 [submodule "archives"]
 	path = archives
-	url = https://gitlab.com/sosy-lab/sv-comp/archives-2022
+	url = https://gitlab.com/sosy-lab/sv-comp/archives-2023
 [submodule "sv-benchmarks"]
 	path = sv-benchmarks
 	url = https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks
