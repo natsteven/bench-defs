@@ -12,7 +12,7 @@
 
   <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/java/properties/assert.prp</propertyfile>
+    <propertyfile >../sv-benchmarks/java/properties/assert.prp</propertyfile>
   </tasks>
 </rundefinition>
 
