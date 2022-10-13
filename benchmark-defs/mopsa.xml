@@ -39,10 +39,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
-<!--   <tasks name="ReachSafety-Recursive"> -->
-<!--     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile> -->
-<!--     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile> -->
-<!--   </tasks> -->
+  <tasks name="ReachSafety-Recursive">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
   <tasks name="ReachSafety-Sequentialized">
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -84,12 +84,12 @@
   </tasks>
 </rundefinition>
 
-<!-- <rundefinition name="SV-COMP22_valid-memcleanup"> -->
-<!--   <tasks name="MemSafety-MemCleanup"> -->
-<!--     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile> -->
-<!--     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile> -->
-<!--   </tasks> -->
-<!-- </rundefinition> -->
+<rundefinition name="SV-COMP22_valid-memcleanup">
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
 
 <rundefinition name="SV-COMP22_valid-memsafety">
   <tasks name="MemSafety-Arrays">
