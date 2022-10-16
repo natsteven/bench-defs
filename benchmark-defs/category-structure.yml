@@ -356,6 +356,18 @@ verifiers:
       country: Germany
       url: https://uol.de/en/computingscience/groups/formal-methods/team/cedric-richter
     code-owner: cedricrupb
+  pichecker:
+    name: PIChecker
+    lang: C
+    url: https://gitlab.com/Lapulatos/pichecker
+    required-ubuntu-packages:
+      - openjdk-11-jre-headless
+    jury-member:
+      name: Cong Tian
+      institution: Xidian University
+      country: China
+      url:
+    code-owner: JieSu
   pinaka:
     name: Pinaka
     lang: C
@@ -956,6 +968,7 @@ categories:
       - infer
       - lazycseq
       - pesco
+      - pichecker
       - symbiotic
       - theta
       - uautomizer
