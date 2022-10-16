@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP22_unreach-call">
+<rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -84,7 +84,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_valid-memsafety">
+<rundefinition name="SV-COMP23_valid-memsafety">
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -99,7 +99,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_no-overflow">
+<rundefinition name="SV-COMP23_no-overflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>

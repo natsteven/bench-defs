@@ -14,7 +14,7 @@
   <option name="-setprop">cpa.callstack.skipVoidRecursion=true</option>
   <option name="-setprop">cpa.callstack.skipFunctionPointerRecursion=true</option>
 
-<rundefinition name="SV-COMP22_unreach-call">
+<rundefinition name="SV-COMP23_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -90,7 +90,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_valid-memsafety">
+<rundefinition name="SV-COMP23_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -133,7 +133,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP22_no-overflow">
+<rundefinition name="SV-COMP23_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
