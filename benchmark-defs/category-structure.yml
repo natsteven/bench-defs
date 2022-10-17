@@ -345,6 +345,28 @@ verifiers:
       country: Estonia
       url:
     code-owner: vesal.vojdani
+  mopsa:
+    name: Mopsa
+    lang: C
+    url: https://gitlab.com/mopsa/mopsa-analyzer
+    required-ubuntu-packages:
+      - clang
+      - libc6-dev-i386
+      - libclang-cpp10-dev
+      - libclang-dev
+      - libgmp-dev
+      - libmpfr-dev
+      - llvm
+      - llvm-dev 
+    jury-member:
+      name: Raphaël Monat
+      institution: Inria, University of Lille
+      country: France
+      url: https://www.rmonat.fr
+    code-owner:
+      - antoine_mine
+      - aouadjaout
+      - rmonat
   pesco:
     name: PeSCo
     lang: C
@@ -880,6 +902,7 @@ categories:
       - graves
       - infer
       - lart
+      - mopsa
       - pesco
       - pinaka
       - symbiotic
@@ -923,6 +946,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - mopsa
       - pesco
       - predatorhp
       - sesl
@@ -994,6 +1018,7 @@ categories:
       - goblint
       - graves
       - infer
+      - mopsa
       - pesco
       - pinaka
       - symbiotic
@@ -1071,6 +1096,7 @@ categories:
       - graves
       - infer
       - lart
+      - mopsa
       - pesco
       - smack
       - symbiotic
@@ -1113,6 +1139,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - mopsa
       - pesco
       - symbiotic
       - uautomizer
@@ -1272,6 +1299,9 @@ opt_out:
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - MemSafety
+    - Termination
+  mopsa:
+    - ConcurrencySafety
     - Termination
   infer:
     # Infer can't handle floats
