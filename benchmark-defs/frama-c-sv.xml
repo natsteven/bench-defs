@@ -5,9 +5,9 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**/*.graphml</resultfiles>
+  <option name="--reach-as-overflow"/>
 
 <rundefinition name="SV-COMP23_unreach-call">
-  <option name="--reach-as-overflow"/>
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
