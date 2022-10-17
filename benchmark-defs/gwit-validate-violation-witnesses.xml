@@ -2,7 +2,7 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="gwit" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
+<require cpuModel="Intel Core i7-10700 @ 2.90 GHz" cpuCores="2"/>
  
   <resultfiles>**/*.graphml</resultfiles>
 
