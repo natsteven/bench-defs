@@ -1,5 +1,5 @@
 competition: SV-COMP
-year: 2022
+year: 2023
 
 verifiers:
   2ls:
@@ -178,14 +178,14 @@ verifiers:
   deagle:
     name: Deagle
     lang: C
-    url: https://github.com/Misasasa/Deagle
+    url: https://github.com/thufv/Deagle
     required-ubuntu-packages: []
     jury-member:
       name: Fei He
       institution: Tsinghua University
       country: China
-      url: https://thufv.github.io/team
-    code-owner: Misasasa
+      url: https://feihe.github.io/
+    code-owner: thufv
   divine:
     name: DIVINE
     lang: C
@@ -204,7 +204,7 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Fatimah Aljaafari
-      institution: Univeristy of Manchester
+      institution: University of Manchester
       country: UK
       url:
     code-owner: fatimahaljaafari
@@ -282,7 +282,7 @@ verifiers:
     jury-member:
       name: Will Leeson
       institution: University of Virginia
-      country: United States of America
+      country: USA
       url: https://will-leeson.github.io/
     code-owner: will-leeson
   infer:
@@ -352,7 +352,7 @@ verifiers:
     required-ubuntu-packages: []
     jury-member:
       name: Cedric Richter
-      institution: University of Oldenburg, Germany
+      institution: University of Oldenburg
       country: Germany
       url: https://uol.de/en/computingscience/groups/formal-methods/team/cedric-richter
     code-owner: cedricrupb
@@ -501,7 +501,7 @@ verifiers:
   verifuzz:
     name: VeriFuzz
     lang: C
-    url: https://gitlab.com/raveenkm/archives-2021/-/tree/master/2021
+    url: https://www.tcs.com
     required-ubuntu-packages:
       - clang-12
       - frama-c-base
@@ -653,7 +653,7 @@ validators:
       url: https://hernanponcedeleon.github.io
     code-owner: hernanponcedeleon
   fshell-witness2test-validate-violation-witnesses:
-    name: CBMC
+    name: CProver-witness2test
     lang: C
     url: https://www.cprover.org/cbmc/
     required-ubuntu-packages:
@@ -755,9 +755,9 @@ validators:
     required-ubuntu-packages:
      - python3-networkx
     jury-member:
-      name: --
-      institution: --
-      country: --
+      name: Tong Wu
+      institution: University of Manchester
+      country: UK
       url: 
     code-owner: Anthonysdu
   witnesslint-validate-witnesses:
@@ -888,7 +888,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   MemSafety:
     properties:
@@ -928,7 +928,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   ConcurrencySafety:
     properties:
@@ -997,7 +997,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   Termination:
     properties: termination
@@ -1075,7 +1075,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
-      - symbiotic-witch
+      - symbiotic-witch-violation
 
   Overall:
     properties:

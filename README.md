@@ -1,17 +1,19 @@
-# SV-COMP Reproducibility
+# SV-COMP Reproducibility - Overview
+
 This repository describes the configuration of the competition machines (below)
 and the benchmark definition for each verifier (folder [benchmark-defs/](benchmark-defs/)),
 in order to make results of the competition reproducible.
 
 
-## Components for Reproducing Competition Results
+
+# Components for Reproducing Competition Results
 
 The competition uses several components to execute the benchmarks.
 The components are described in the following table.
 
 | Component              | Repository                                                      | Participants             |
 | ---                    | ---                                                             | ---                      |
-| Verification Tasks     | https://github.com/sosy-lab/sv-benchmarks                       | add, fix, review tasks   |
+| Verification Tasks     | https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks          | add, fix, review tasks   |
 | Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
 | Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
 | Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               | submit to participate    |
@@ -21,166 +23,41 @@ The components are described in the following table.
 | Task-Definition Format | https://gitlab.com/sosy-lab/benchmarking/task-definition-format | (know)                   |
 | Remote Execution       | https://gitlab.com/sosy-lab/software/coveriteam                 | (use to test their tool) |
 
+Archives published at Zenodo:
 
-## Setup
-The following steps set up the benchmarking environment:
-- `git clone https://gitlab.com/sosy-lab/sv-comp/bench-defs.git ./`
-- `make init` (takes a while: downloads several GB of data from repositories)
-- `make update`
-
-For reproducing results of a specific edition of the competition, please checkout the tag for that edition.
-
-The following sections assume that the working directory is the same as used in the above commands.
-
-## Executing a Benchmark for a Particular Tool
-
-Assume that we would like to reproduce results for the tool `CPAchecker`,
-including results validation.
-This can be achieved using the following command:
-
-`scripts/execute-runs/mkRunVerify.sh cpachecker`
-
-The above command executes the verification runs with tool `CPAchecker`, and
-afterwards all result validators that are declared in `benchmark-defs/category-structure.yml`.
-
-### Executing Only Verification Runs
-
-If we would like to execute only verification runs, then we can use the following command:
-
-```
-scripts/execute-runs/execute-runcollection.sh \
-    benchexec/bin/benchexec \
-    archives/2022/cpachecker.zip \
-    benchmark-defs/cpachecker.xml \
-    witness.graphml \
-    .graphml \
-    results-verified/
-```
-
-The parameters specify the:
-- benchmarking utility (BenchExec) to be used to run the benchmark,
-- tool archive,
-- benchmark definition,
-- name of the witness files, to which the unification script links the witness produced by the tool,
-- pattern using which the unification script searches for produced witnesses,
-- the directory in which the results shall be stored, and
-- (optional) parameters to be passed to the benchmarking utility.
-
-For quick tests and sanity checks, BenchExec can be told to restrict the execution to a certain test-set.
-For example, to restrict the execution to the sub-category `ReachSafety-ControlFlow`,
-you add an extra parameter `-t ReachSafety-ControlFlow` that is passed to the benchmarking utility.
-
-Furthermore, BenchExec can be told to overwrite limit from the benchmark definitions (which should be used only for test executions).
-To see if a tool generally works and produces outputs, you could use (assuming we use a machine with 8 cores and 32 GB of RAM)
-the additional parameters `--timelimit 60 --memorylimit 3GB --limitCores 1 --numOfThreads 8` to
-- limit the CPU time to `60 s`,
-- limit the memory to `3GB`,
-- limit the number of cores to `1`, and
-- set the number of runs executed in parallel to `8`.
-
-It is important to execute the tools (when running experiments) in a container.
-Since we use BenchExec, this is done automatically.
-In order to protect our file system and to give proper write access to the tool inside the container,
-we add the setup of the overlay filesystem using the parameters
-- `--read-only-dir /` to make sure the tool we execute does not write at unexpected places,
-- `--overlay-dir /home` to let BenchExec setup a directory to the tool inside the container, and
-- `--overlay-dir .` to give permission to write to the working directory.
-
-A complete command line would look as follows:
-
-```
-scripts/execute-runs/execute-runcollection.sh \
-    benchexec/bin/benchexec \
-    archives/2022/cpachecker.zip \
-    benchmark-defs/cpachecker.xml \
-    witness.graphml \
-    .graphml \
-    results-verified/
-    --timelimit 60 --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
-    -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
-```
+| Year | Verification Tasks                      | Competition Results                     | Verification Witnesses                  | BenchExec                               |
+| ---  | ---                                     | ---                                     | ---                                     | ---                                     |
+| 2022 | https://doi.org/10.5281/zenodo.5831003  | https://doi.org/10.5281/zenodo.5831008  | https://doi.org/10.5281/zenodo.5838498  | https://doi.org/10.5281/zenodo.5720267  |
+| 2021 | https://doi.org/10.5281/zenodo.4459126  | https://doi.org/10.5281/zenodo.4458215  | https://doi.org/10.5281/zenodo.4459196  | https://doi.org/10.5281/zenodo.4317433  |
+| 2020 | https://doi.org/10.5281/zenodo.3633334  | https://doi.org/10.5281/zenodo.3630205  | https://doi.org/10.5281/zenodo.3630188  | https://doi.org/10.5281/zenodo.3574420  |
+| 2019 | https://doi.org/10.5281/zenodo.2598729  |                                         | https://doi.org/10.5281/zenodo.2559175  | https://doi.org/10.5281/zenodo.1638192  |
+| 2018 |                                         |                                         |                                         |                                         |
+| 2017 |                                         |                                         |                                         |                                         |
+| 2016 | https://doi.org/10.5281/zenodo.1158644  |                                         |                                         |                                         |
 
 
-### Executing Only Validation Runs (Incl. Witness Linter)
+# Instructions for Execution and Reproduction
 
-The above executions produce results (witnesses) in a results directory similar to `cpachecker.2021-12-03_10-39-40.files/`
-inside the output directory `results-verified/`.
-
-The benchmark definition for validation must be updated with this results directory:
-The string `results-verified/LOGDIR/` must be replaced by the string `results-verified/cpachecker.2021-12-03_10-39-40.files/`
-
-Suppose we would like to run result validation for violation results with CPAchecker.
-We would make a copy of `cpachecker-validate-violation-witnesses.xml` to `cpachecker-validate-violation-witnesses-cpachecker.xml`
-and replace the string as mentioned above there. The we can run:
-
-```
-scripts/execute-runs/execute-runcollection.sh \
-    benchexec/bin/benchexec \
-    archives/2022/val_cpachecker.zip \
-    benchmark-defs/cpachecker-validate-violation-witnesses-cpachecker.xml \
-    witness.graphml \
-    .graphml \
-    ../../results-validated/ \
-    --memorylimit 3GB --numOfThreads 8 --limitCores 1 \
-    -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
-```
-
-Suppose we would like to run the witness linter to check that the witnesses are syntactically valid.
-We would make a copy of `witnesslint-validate-witnesses.xml` to `witnesslint-validate-witnesses-cpachecker.xml`
-and replace the string as mentioned above there. Then we can run:
-
-```
-scripts/execute-runs/execute-runcollection.sh \
-    benchexec/bin/benchexec \
-    archives/2022/val_witnesslint.zip \
-    benchmark-defs/witnesslint-validate-witnesses-cpachecker.xml \
-    witness.graphml \
-    .graphml \
-    results-validated/ \
-    -t ReachSafety-ControlFlow \
-    --read-only-dir / --overlay-dir /home --overlay-dir ./
-```
+Concrete instructions on how to execute the experiments and to reproduce the results of the competition are available here:
+https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#instructions-for-execution-and-reproduction
 
 
-### Detailed Execution of Tools
 
-In the following we explain some of the steps that the script `scripts/execute-runs/execute-runcollection.sh` normally performs for us.
+# Computing Environment on Competition Machines
 
-#### Unpack a Tool
+## Installed Ubuntu packages
 
-The following command unpacks the tool `CPAchecker`:
-- `mkdir bin/cpachecker-32KkXQ0CzM`
-- `scripts/execute-runs/mkInstall.sh archives/2022/cpachecker.zip bin/cpachecker-32KkXQ0CzM`
+A description of all installed Ubuntu packages, with their versions is given here:
+https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#installed-ubuntu-packages
 
-#### Assemble Provenance Information for a Tool
-
-The following command prints information about the repositories and their versions:
-- `scripts/execute-runs/mkProvenanceInfo.sh archives/2022/cpachecker.zip`
-
-#### Execute a Benchmark for a Tool
-
-- `cd bin/cpachecker-32KkXQ0CzM`
-- `../../benchexec/bin/benchexec -t ReachSafety-ControlFlow ../../benchmark-defs/cpachecker.xml -o ../../results-verified/`
-
-#### Initialize Result Files (for Validation Runs and Reproduction)
-
-The script `scripts/execute-runs/execute-runcollection.sh` also performs some post-processing steps to:
-- create a mapping from files to SHA hashes (for output files like witnesses, and for input files like programs, specifications, and task definitions) and
-- create a symbolic link at a uniform location of the result files (in order to be able to feed the results as input to validation runs).
-
-
-## Computing Environment on Competition Machines
-
-### Docker Image
+## Docker Image
 
 SV-COMP provides a Docker image that tries to provide an environment
 that has mostly the same packages installed as the competition machines.
 The Docker image is described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
 
-### Parameters of RunExec
+## Parameters of RunExec
 
 The parameters that are passed to the [BenchExec](https://github.com/sosy-lab/benchexec) [1]
 executor [runexec](https://github.com/sosy-lab/benchexec/blob/main/doc/runexec.md) on the competition machines
@@ -188,7 +65,8 @@ are described here:
 https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#parameters-of-runexec
 
 
-## References
+
+# References
 
 [1]: Dirk Beyer, Stefan Löwe, and Philipp Wendler.
      Reliable Benchmarking: Requirements and Solutions.

@@ -6,13 +6,13 @@
  
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP22_assert_java">
+<rundefinition name="SV-COMP23_assert_java">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/java/properties/assert.prp</propertyfile>
+    <propertyfile >../sv-benchmarks/java/properties/assert.prp</propertyfile>
   </tasks>
 </rundefinition>
 

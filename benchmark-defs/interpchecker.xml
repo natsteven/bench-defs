@@ -10,7 +10,7 @@
   <option name="-heap">10000M</option>
   <option name="-disable-java-assertions"/>
 
-<rundefinition name="SV-COMP22">
+<rundefinition name="SV-COMP23">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

@@ -11,7 +11,7 @@
   <option name="--silent"/>
   <option name="-Os"/>
 
-<rundefinition name="SV-COMP22_unreach-call">
+<rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-ControlFlow">
     <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
