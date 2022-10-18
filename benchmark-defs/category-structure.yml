@@ -110,9 +110,9 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Anton Vasilyev
-      institution: ISP RAS
-      country: Russia
+      name: Hors Concours
+      institution: --
+      country: --
       url:
     code-owner: Druidos
   cpa-lockator:
