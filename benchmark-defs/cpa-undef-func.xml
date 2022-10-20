@@ -42,6 +42,10 @@
   <tasks name="ReachSafety-Sequentialized">
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
   </tasks>
+  <tasks name="ReachSafety-Hardware">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
