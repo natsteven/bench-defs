@@ -232,6 +232,20 @@ verifiers:
       country: UK
       url:
     code-owner: rafaelsamenezes
+  esbmc-ml:
+    name: ESBMC-ml
+    lang: C
+    url: https://github.com/Anthonysdu/ESBMC-ML
+    required-ubuntu-packages:
+      - python3-anytree
+      - python3-scikit-learn 0.24.2
+      - clang
+    jury-member:
+      name: Tong Wu
+      institution: University of Manchester
+      country: UK
+      url:
+    code-owner: rafaelsamenezes
   frama-c-sv:
     name: Frama-C-SV
     lang: C
@@ -987,6 +1001,7 @@ categories:
       - ebf
       - esbmc-incr
       - esbmc-kind
+      - esbmc-ml
       - goblint
       - graves
       - infer
