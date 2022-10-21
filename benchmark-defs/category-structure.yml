@@ -999,11 +999,11 @@ categories:
       - ebf
       - esbmc-incr
       - esbmc-kind
-      - lf-checker
       - goblint
       - graves
       - infer
       - lazycseq
+      - lf-checker
       - pesco
       - pichecker
       - symbiotic
