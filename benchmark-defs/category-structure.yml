@@ -620,10 +620,10 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Falk Howar
-      institution: TU Dortmund
-      country: Germany
-      url: https://falkhowar.de
+      name: Hors Concours
+      institution: --
+      country: --
+      url: --
     code-owner:
       - fhowar
       - mmuesly
