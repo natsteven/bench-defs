@@ -232,13 +232,11 @@ verifiers:
       country: UK
       url:
     code-owner: rafaelsamenezes
-  esbmc-ml:
-    name: ESBMC-ml
+  lf-checker:
+    name: lf-checker
     lang: C
-    url: https://github.com/Anthonysdu/ESBMC-ML
+    url: https://github.com/Anthonysdu/lf-checker
     required-ubuntu-packages:
-      - python3-anytree
-      - python3-scikit-learn 0.24.2
       - clang
     jury-member:
       name: Tong Wu
@@ -1001,7 +999,7 @@ categories:
       - ebf
       - esbmc-incr
       - esbmc-kind
-      - esbmc-ml
+      - lf-checker
       - goblint
       - graves
       - infer
