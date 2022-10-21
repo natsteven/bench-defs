@@ -245,7 +245,7 @@ verifiers:
       institution: University of Manchester
       country: UK
       url:
-    code-owner: rafaelsamenezes
+    code-owner: Tong Wu
   frama-c-sv:
     name: Frama-C-SV
     lang: C
