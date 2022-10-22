@@ -348,6 +348,18 @@ verifiers:
       country: --
       url:
     code-owner: omainv
+  lf-checker:
+    name: lf-checker
+    lang: C
+    url: https://github.com/Anthonysdu/lf-checker
+    required-ubuntu-packages:
+      - clang
+    jury-member:
+      name: Tong Wu
+      institution: University of Manchester
+      country: UK
+      url:
+    code-owner: Tong Wu
   locksmith:
     name: Locksmith
     lang: C
@@ -1006,6 +1018,7 @@ categories:
       - graves
       - infer
       - lazycseq
+      - lf-checker
       - pesco
       - pichecker
       - symbiotic
