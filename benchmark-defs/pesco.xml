@@ -61,6 +61,10 @@
       <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
+    <tasks name="ReachSafety-Hardware">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
 
     <tasks name="ConcurrencySafety-Main">
       <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
