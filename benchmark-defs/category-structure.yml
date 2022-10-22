@@ -1043,7 +1043,7 @@ categories:
     categories:
       - unreach-call.ConcurrencySafety-Main
       - no-data-race.NoDataRace-Main
-      - no-overflow.ConcurrencySafety-NoOverflow
+      - no-overflow.ConcurrencySafety-NoOverflows
     verifiers:
       - 2ls
       - bubaak
@@ -1079,7 +1079,7 @@ categories:
     categories:
       - no-overflow.NoOverflows-BitVectors
       - no-overflow.NoOverflows-Other
-      - no-overflow.ConcurrencySafety-NoOverflow
+      - no-overflow.ConcurrencySafety-NoOverflows
     verifiers:
       - 2ls
       - bubaak
@@ -1298,7 +1298,7 @@ categories_process_order:
   - MemSafety
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
-  - no-overflow.ConcurrencySafety-NoOverflow
+  - no-overflow.ConcurrencySafety-NoOverflows
   - ConcurrencySafety
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
@@ -1350,11 +1350,11 @@ categories_table_order:
   - ConcurrencySafety
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
-  - no-overflow.ConcurrencySafety-NoOverflow
+  - no-overflow.ConcurrencySafety-NoOverflows
   - NoOverflows
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
-  - no-overflow.ConcurrencySafety-NoOverflow
+  - no-overflow.ConcurrencySafety-NoOverflows
   - Termination
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
