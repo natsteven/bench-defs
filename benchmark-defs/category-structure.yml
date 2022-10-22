@@ -134,11 +134,11 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Thomas Bunk
+      name: Henrik Wachowitz
       institution: LMU Munich
       country: Germany
-      url: https://www.sosy-lab.org/people/bunk/
-    code-owner: TBunk
+      url: https://www.sosy-lab.org/people/wachowitz/
+    code-owner: ricffb
   crux:
     name: Crux
     lang: C
