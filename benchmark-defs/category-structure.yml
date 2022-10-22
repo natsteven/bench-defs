@@ -283,7 +283,7 @@ verifiers:
       name: Simmo Saan
       institution: University of Tartu
       country: Estonia
-      url:
+      url: https://sim642.eu/
     code-owner: sim642
   graves:
     name: Graves-CPA
