@@ -1405,6 +1405,8 @@ opt_out:
 
 opt_in:
   brick:
+    - unreach-call.ReachSafety-Arrays
+    - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
