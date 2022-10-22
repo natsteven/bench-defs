@@ -580,6 +580,17 @@ verifiers:
       country: India
       url:
     code-owner: m.raveendra.kumar
+  verioover:
+    name: VeriOover
+    lang: C
+    url: https://github.com/PaperSheeper/VeriOover-SV
+    required-ubuntu-packages: []
+    jury-member:
+      name: HaiPeng Qu
+      institution: Ocean University of China
+      country: China
+      url:
+    code-owner: hobooe
   coastal:
     name: COASTAL
     lang: Java
@@ -1437,4 +1448,6 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+  verioover:
+    - no-overflow.NoOverflows-BitVectors
 
