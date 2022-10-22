@@ -653,6 +653,18 @@ verifiers:
     code-owner:
       - fhowar
       - mmuesly
+  mlb:
+    name: MLB
+    lang: Java
+    url: https://github.com/MLB-SE/Experiment
+    required-ubuntu-packages:
+      - openjdk-8-jre-headless
+    jury-member:
+      name: Lei Bu
+      institution: Nanjing University
+      country: China
+      url:
+    code-owner: MLB-SE
   spf:
     name: SPF
     lang: Java
@@ -1214,6 +1226,7 @@ categories:
       - jayhorn
       - jbmc
       - jdart
+      - mlb
       - spf
     validators:
       - wit4java-violation
