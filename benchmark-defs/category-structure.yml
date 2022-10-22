@@ -485,15 +485,15 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/theta
     required-ubuntu-packages:
-      - openjdk-11-jre-headless
+      - openjdk-17-jre-headless
       - libgomp1
       - libmpfr6
     jury-member:
-      name: Vince Molnár
+      name: Levente Bajczi
       institution: Budapest University of Technology and Economics
       country: Hungary
-      url:
-    code-owner: AdamZsofi
+      url: http://mit.bme.hu/~bajczi
+    code-owner: levente.bajczi
   uautomizer:
     name: UAutomizer
     lang: C
