@@ -260,6 +260,20 @@ verifiers:
       country: --
       url:
     code-owner: AdamZsofi
+  gdart-llvm:
+    name: GDart-LLVM
+    lang: C
+    url: https://github.com/tudo-aqua/gdart-llvm
+    required-ubuntu-packages: []
+    jury-member:
+      name: Falk Howar
+      institution: TU Dortmund
+      country: Germany
+      url: https://falkhowar.de
+    code-owner:
+      - fhowar
+      - mmuesly
+      - simon.dierl
   goblint:
     name: Goblint
     lang: C
@@ -898,6 +912,7 @@ categories:
       - crux
       - divine
       - esbmc-kind
+      - gdart-llvm
       - goblint
       - graves
       - infer
@@ -1297,6 +1312,18 @@ opt_out:
     - Termination
   map2check:
     - ReachSafety
+  gdart-llvm:
+    - unreach-call.ReachSafety-Arrays
+    - unreach-call.ReachSafety-BitVectors
+    - unreach-call.ReachSafety-ECA
+    - unreach-call.ReachSafety-Floats
+    - unreach-call.ReachSafety-Heap
+    - unreach-call.ReachSafety-Loops
+    - unreach-call.ReachSafety-ProductLines
+    - unreach-call.ReachSafety-Recursive
+    - unreach-call.ReachSafety-Sequentialized
+    - unreach-call.ReachSafety-XCSP
+    - unreach-call.ReachSafety-Combinations
   goblint:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
