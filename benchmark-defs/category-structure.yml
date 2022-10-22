@@ -467,7 +467,7 @@ verifiers:
       institution: Budapest University of Technology and Economics
       country: Hungary
       url: http://mit.bme.hu/~bajczi
-    code-owner: AdamZsofi
+    code-owner: levente.bajczi
   uautomizer:
     name: UAutomizer
     lang: C
