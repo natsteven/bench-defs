@@ -475,11 +475,11 @@ verifiers:
       - python3
       - python3-lxml
     jury-member:
-      name: Marek Chalupa
+      name: Marek Trtik
       institution: Masaryk University, Brno
       country: Czechia
       url:
-    code-owner: mchalupa
+    code-owner: trtikm
   theta:
     name: Theta
     lang: C
