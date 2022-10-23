@@ -919,8 +919,7 @@ properties:
   - assert_java
 
 # scores in demo categories are not counted towards the Overall score
-demo_categories:
-  - no-data-race.NoDataRace-Main
+demo_categories: []
 
 categories:
   ReachSafety:
