@@ -806,7 +806,7 @@ validators:
       institution: Masaryk University, Brno
       country: Czechia
       url: 
-    code-owner: mchalupa
+    code-owner: payazi
   uautomizer-validate-correctness-witnesses:
     name: UAutomizer
     lang: C
