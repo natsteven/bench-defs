@@ -341,7 +341,8 @@ verifiers:
     name: Lazy-CSeq
     lang: C
     url: https://github.com/omainv/cseq/releases
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python2
     jury-member:
       name: Hors Concours
       institution: --
