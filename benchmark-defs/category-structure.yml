@@ -379,7 +379,7 @@ verifiers:
     required-ubuntu-packages:
       - clang
       - libc6-dev-i386
-      - libclang-cpp10-dev
+      - libclang-cpp-dev
       - libclang-dev
       - libgmp-dev
       - libmpfr-dev
