@@ -1327,11 +1327,46 @@ categories_table_order:
   - assert_java.ReachSafety-Java
 
 opt_out:
+  2ls:
+    - no-data-race.NoDataRace-Main
+  cbmc:
+    - no-data-race.NoDataRace-Main
+  coveriteam-verifier-algo-selection:
+    - no-data-race.NoDataRace-Main
+  coveriteam-verifier-parallel-portfolio:
+    - no-data-race.NoDataRace-Main
+  cpa-lockator:
+    - no-data-race.NoDataRace-Main
+  cpachecker:
+    - no-data-race.NoDataRace-Main
+  deagle:
+    - no-data-race.NoDataRace-Main
+  divine:
+    - no-data-race.NoDataRace-Main
+  ebf:
+    - no-data-race.NoDataRace-Main
+  esbmc-incr:
+    - no-data-race.NoDataRace-Main
+  esbmc-kind:
+    - no-data-race.NoDataRace-Main
+  lazycseq:
+    - no-data-race.NoDataRace-Main
+  lf-checker:
+    - no-data-race.NoDataRace-Main
+  pichecker:
+    - no-data-race.NoDataRace-Main
+  symbiotic:
+    - no-data-race.NoDataRace-Main
+  theta:
+    - no-data-race.NoDataRace-Main
+  verifuzz:
+    - no-data-race.NoDataRace-Main
   pesco:
     - MemSafety
     - ConcurrencySafety
     - NoOverflows
     - Termination
+    - no-data-race.NoDataRace-Main
   map2check:
     - ReachSafety
   gdart-llvm:
@@ -1384,6 +1419,7 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
+    - no-data-race.NoDataRace-Main
 
 opt_in:
   brick:
