@@ -5,6 +5,7 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**/*.graphml</resultfiles>
+  <option name = "--sv22" />
   
 <rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-Arrays">
