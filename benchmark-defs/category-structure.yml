@@ -56,7 +56,6 @@ verifiers:
     lang: C
     url: https://gitlab.com/sosy-lab/software/coveriteam
     required-ubuntu-packages:
-      - python-is-python2
       - python3-numpy
       - clang
       - python2
@@ -76,7 +75,6 @@ verifiers:
     lang: C
     url: https://gitlab.com/sosy-lab/software/coveriteam
     required-ubuntu-packages:
-      - python-is-python2
       - python3-numpy
       - clang
       - python2
@@ -212,8 +210,7 @@ verifiers:
     name: ESBMC-incr
     lang: C
     url: https://esbmc.org/
-    required-ubuntu-packages:
-      - python-is-python2
+    required-ubuntu-packages: []
     jury-member:
       name: Hors Concours
       institution: --
@@ -224,8 +221,7 @@ verifiers:
     name: ESBMC-kind
     lang: C
     url: http://esbmc.org/
-    required-ubuntu-packages:
-      - python-is-python2
+    required-ubuntu-packages: []
     jury-member:
       name: Rafael Sá Menezes
       institution: University of Manchester
@@ -237,8 +233,6 @@ verifiers:
     lang: C
     url: https://gitlab.com/sosy-lab/software/frama-c-sv
     required-ubuntu-packages:
-      - frama-c-base
-      - libwhy3-ocaml-dev
       - python3-pycparser
     jury-member:
       name: Martin Spiessl
@@ -251,8 +245,6 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/gazer
     required-ubuntu-packages:
-      - clang-9
-      - llvm-9
       - openjdk-11-jdk-headless
     jury-member:
       name: Hors Concours
@@ -341,7 +333,8 @@ verifiers:
     name: Lazy-CSeq
     lang: C
     url: https://github.com/omainv/cseq/releases
-    required-ubuntu-packages: []
+    required-ubuntu-packages:
+      - python2
     jury-member:
       name: Hors Concours
       institution: --
@@ -378,7 +371,7 @@ verifiers:
     required-ubuntu-packages:
       - clang
       - libc6-dev-i386
-      - libclang-cpp10-dev
+      - libclang-cpp-dev
       - libclang-dev
       - libgmp-dev
       - libmpfr-dev
@@ -433,8 +426,6 @@ verifiers:
     url: https://www.fit.vutbr.cz/research/groups/verifit/tools/predator-hp/
     required-ubuntu-packages:
       - expect
-      - gcc-7-multilib
-      - python-is-python2
     jury-member:
       name: Hors Concours
       institution: --
@@ -447,7 +438,6 @@ verifiers:
     url: https://spencerl-y.github.io/SESL/
     required-ubuntu-packages:
       - clang
-      - libssl1.1
       - llvm
     jury-member:
       name: Xie Li
@@ -459,8 +449,7 @@ verifiers:
     name: SMACK
     lang: C
     url: https://smackers.github.io/
-    required-ubuntu-packages:
-      - clang-10
+    required-ubuntu-packages: []
     jury-member:
       name: Hors Concours
       institution: --
@@ -475,11 +464,11 @@ verifiers:
       - python3
       - python3-lxml
     jury-member:
-      name: Marek Chalupa
+      name: Marek Trtik
       institution: Masaryk University, Brno
       country: Czechia
       url:
-    code-owner: mchalupa
+    code-owner: trtikm
   theta:
     name: Theta
     lang: C
@@ -547,11 +536,8 @@ verifiers:
     lang: C
     url: https://www.tcs.com/designing-complex-intelligent-systems
     required-ubuntu-packages:
-      - clang-6.0
       - libc6-dev-i386
-      - llvm-6.0
       - openjdk-8-jre-headless
-      - python-is-python2
     jury-member:
       name: Priyanka Darke
       institution: Tata Consultancy Services
@@ -564,16 +550,13 @@ verifiers:
     url: https://www.tcs.com
     required-ubuntu-packages:
       - clang-12
-      - frama-c-base
       - gcc-multilib
       - libc6-dev-i386
-      - libwhy3-ocaml-dev
       - llvm-12
       - openjdk-8-jdk-headless
       - python2
       - python3-sklearn
       - python3-pandas
-      - why3
     jury-member:
       name: Raveendra Kumar Medicherla
       institution: Tata Consultancy Services
@@ -806,7 +789,7 @@ validators:
       institution: Masaryk University, Brno
       country: Czechia
       url: 
-    code-owner: mchalupa
+    code-owner: payazi
   uautomizer-validate-correctness-witnesses:
     name: UAutomizer
     lang: C
