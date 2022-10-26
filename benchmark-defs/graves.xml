@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-  <option name="-svcomp22-graves"/>
+  <option name="-svcomp23-graves"/>
   <option name="-heap">10000M</option>
   <option name="-benchmark"/>
   <option name="-timelimit">900 s</option>

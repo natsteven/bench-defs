@@ -291,6 +291,25 @@ verifiers:
       country: USA
       url: https://will-leeson.github.io/
     code-owner: will-leeson
+  graves-par:
+    name: Graves-Par
+    lang: C
+    url: https://https://github.com/mgerrard/graves-par
+    required-ubuntu-packages:
+      - python-is-python2
+      - python3-numpy
+      - clang
+      - python2
+      - openjdk-11-jre
+      - clang-10
+      - python3-lxml 
+      - gcc
+      - libc6-dev-i386     
+    jury-member:
+      name: Mitchell Gerrard
+      institution: University of Virginia
+      country: USA
+    code-owner: mgerrard
   infer:
     name: Infer
     lang: C
@@ -933,6 +952,7 @@ categories:
       - gdart-llvm
       - goblint
       - graves
+      - graves-par
       - infer
       - lart
       - mopsa
@@ -979,6 +999,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - graves-par
       - mopsa
       - pesco
       - predatorhp
@@ -1022,6 +1043,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - graves-par
       - infer
       - lazycseq
       - lf-checker
@@ -1051,6 +1073,7 @@ categories:
       - frama-c-sv
       - goblint
       - graves
+      - graves-par
       - infer
       - mopsa
       - pesco
@@ -1088,6 +1111,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - graves-par 
       - pesco
       - pinaka
       - symbiotic
@@ -1129,6 +1153,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - graves-par
       - infer
       - lart
       - mopsa
@@ -1174,6 +1199,7 @@ categories:
       - esbmc-kind
       - goblint
       - graves
+      - graves-par
       - mopsa
       - pesco
       - symbiotic
@@ -1201,6 +1227,7 @@ categories:
       - divine
       - esbmc-kind
       - graves
+      - graves-par
       - pesco
       - symbiotic
       - uautomizer
