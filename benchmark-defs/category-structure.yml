@@ -697,33 +697,33 @@ validators:
     url: https://cpachecker.sosy-lab.org/
     required-ubuntu-packages: []
     jury-member:
-      name: Thomas Bunk
+      name: Henrik Wachowitz
       institution: LMU Munich
       country: Germany
-      url: https://www.sosy-lab.org/people/bunk/
-    code-owner: TBunk
+      url: https://www.sosy-lab.org/people/wachowitz/
+    code-owner: ricffb
   cpachecker-validate-violation-witnesses:
     name: CPAchecker
     lang: C
     url: https://cpachecker.sosy-lab.org/
     required-ubuntu-packages: []
     jury-member:
-      name: Thomas Bunk
+      name: Henrik Wachowitz
       institution: LMU Munich
       country: Germany
-      url: https://www.sosy-lab.org/people/bunk/
-    code-owner: TBunk
+      url: https://www.sosy-lab.org/people/wachowitz/
+    code-owner: ricffb
   cpa-witness2test-validate-violation-witnesses:
     name: CPA-witness2test
     lang: C
     url: https://cpachecker.sosy-lab.org/
     required-ubuntu-packages: []
     jury-member:
-      name: Thomas Lemberger
+      name: Henrik Wachowitz
       institution: LMU Munich
       country: Germany
-      url: https://www.sosy-lab.org/people/lemberger/
-    code-owner: TBunk
+      url: https://www.sosy-lab.org/people/wachowitz/
+    code-owner: ricffb
   dartagnan-validate-violation-witnesses:
     name: Dartagnan
     lang: C
