@@ -169,7 +169,7 @@ verifiers:
       - llvm-11
     jury-member:
       name: Hernán Ponce de León
-      institution: Bundeswehr University Munich
+      institution: Huawei Dresden Research Center
       country: Germany
       url: https://hernanponcedeleon.github.io
     code-owner: hernanponcedeleon
