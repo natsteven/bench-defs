@@ -1008,7 +1008,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
     validators:
       - witnesslint
       - cpachecker-violation
@@ -1055,7 +1054,6 @@ categories:
       - ugemcutter
       - ukojak
       - utaipan
-      - verifuzz
 
   NoOverflows:
     properties: no-overflow
@@ -1163,7 +1161,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
     validators:
       - witnesslint
       - cpachecker-correctness
@@ -1233,7 +1230,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
 
   JavaOverall:
     properties:
