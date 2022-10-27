@@ -38,6 +38,20 @@ verifiers:
       country: China
       url:
     code-owner: brick-tool-dev
+  bubaak:
+    name: Bubaak
+    lang: C
+    url: https://gitlab.com/mchalupa/bubaak
+    required-ubuntu-packages:
+      - clang
+      - python3
+      - python3-lxml
+    jury-member:
+      name: Marek Chalupa
+      institution: Institute of Science and Technology Austria, ISTA
+      country: Austria
+      url:
+    code-owner: mchalupa
   cbmc:
     name: CBMC
     lang: C
@@ -942,6 +956,7 @@ categories:
       - unreach-call.ReachSafety-Hardware
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
@@ -991,6 +1006,7 @@ categories:
       - valid-memsafety.MemSafety-Juliet
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-smg
@@ -1028,6 +1044,7 @@ categories:
       - no-data-race.NoDataRace-Main
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
@@ -1062,6 +1079,7 @@ categories:
       - no-overflow.NoOverflows-Other
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -1102,6 +1120,7 @@ categories:
     verifiers:
       - 2ls
       - aprove
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -1142,6 +1161,7 @@ categories:
       - unreach-call.SoftwareSystems-uthash-ReachSafety
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
@@ -1189,6 +1209,7 @@ categories:
       - SoftwareSystems
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -1218,6 +1239,7 @@ categories:
       - SoftwareSystems
     verifiers:
       - 2ls
+      - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
