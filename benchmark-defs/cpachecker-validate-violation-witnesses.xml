@@ -2,7 +2,7 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="cpachecker" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="AMD EPYC 7713 64-Core,Intel Core i7-6700 @ 3.40 GHz" cpuCores="2"/>
+<require cpuModel="Intel Core i7-6700 @ 3.40 GHz" cpuCores="2"/>
 
   <resultfiles>**/*.graphml</resultfiles>
 
