@@ -77,7 +77,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflows">
+<rundefinition name="SV-COMP23_no-overflow">
   <tasks name="ConcurrencySafety-NoOverflows">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
