@@ -12,7 +12,7 @@ SPDX-License-Identifier: Apache-2.0
 
 <benchmark tool="coveriteam-verifier-validator" displayName="CoVeriTeam-Verifier-ParPortfolio" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
   <resultfiles>**/*.graphml</resultfiles>
 
   <option name="verifier-parallel-portfolio.cvt"></option>
