@@ -1460,11 +1460,6 @@ opt_in:
     - unreach-call.SoftwareSystems-uthash-ReachSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
-  dartagnan:
-    - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-BitVectors
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-Hardware
   frama-c-sv:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
