@@ -16,4 +16,10 @@
             <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
         </tasks>
     </rundefinition>
+    <rundefinition name="SV-COMP23_no-overflow">
+        <tasks name="ConcurrencySafety-NoOverflows">
+            <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+            <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+        </tasks>
+    </rundefinition>
 </benchmark>
