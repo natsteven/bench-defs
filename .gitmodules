@@ -1,18 +1,18 @@
 [submodule "archives"]
 	path = archives
-	url = https://gitlab.com/sosy-lab/sv-comp/archives-2023
+	url = https://gitlab.com/sosy-lab/sv-comp/archives-2023.git
 [submodule "sv-benchmarks"]
 	path = sv-benchmarks
-	url = https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks
+	url = https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git
 [submodule "benchexec"]
 	path = benchexec
-	url = https://gitlab.com/sosy-lab/software/benchexec
+	url = https://gitlab.com/sosy-lab/software/benchexec.git
 [submodule "scripts"]
 	path = scripts
-	url = https://gitlab.com/sosy-lab/benchmarking/competition-scripts
+	url = https://gitlab.com/sosy-lab/benchmarking/competition-scripts.git
 [submodule "coveriteam"]
 	path = coveriteam
-	url = https://gitlab.com/sosy-lab/software/coveriteam
+	url = https://gitlab.com/sosy-lab/software/coveriteam.git
 [submodule "sv-witnesses"]
 	path = sv-witnesses
-	url = https://github.com/sosy-lab/sv-witnesses.git
+	url = https://gitlab.com/sosy-lab/benchmarking/sv-witnesses.git
