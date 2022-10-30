@@ -73,8 +73,7 @@ verifiers:
       - python3-numpy
       - clang
       - python2
-      - openjdk-11-jre
-      - clang-10
+      - openjdk-11-jre-headless
       - python3-lxml 
       - gcc
       - libc6-dev-i386
@@ -92,8 +91,7 @@ verifiers:
       - python3-numpy
       - clang
       - python2
-      - openjdk-11-jre
-      - clang-10
+      - openjdk-11-jre-headless
       - python3-lxml 
       - gcc
       - libc6-dev-i386
@@ -310,12 +308,10 @@ verifiers:
     lang: C
     url: https://https://github.com/mgerrard/graves-par
     required-ubuntu-packages:
-      - python-is-python2
       - python3-numpy
       - clang
       - python2
       - openjdk-11-jre
-      - clang-10
       - python3-lxml 
       - gcc
       - libc6-dev-i386     
@@ -507,7 +503,6 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/theta
     required-ubuntu-packages:
-      - openjdk-17-jre-headless
       - libgomp1
       - libmpfr6
     jury-member:
