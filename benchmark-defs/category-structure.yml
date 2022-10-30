@@ -311,7 +311,7 @@ verifiers:
       - python3-numpy
       - clang
       - python2
-      - openjdk-11-jre
+      - openjdk-11-jre-headless
       - python3-lxml 
       - gcc
       - libc6-dev-i386     
