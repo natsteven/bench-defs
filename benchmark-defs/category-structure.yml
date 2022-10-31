@@ -503,6 +503,7 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/theta
     required-ubuntu-packages:
+      - openjdk-17-jre-headless
       - libgomp1
       - libmpfr6
     jury-member:
