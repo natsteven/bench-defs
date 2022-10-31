@@ -31,9 +31,10 @@ check-category-structure:
 check-installed-required-packages:
   # This large image is not actually necessary, but it is currently the easiest way
   # to get an image with the correct Ubuntu version and some required utilities.
-  image: registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/test:latest
+  image: registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest
   # no submodules required
-  before_script: []
+  before_script:
+    - pip install yq
   script:
     - echo "Checking if all required packages are valid and available for the Ubuntu version used for the competition ..."
     - apt-get update
