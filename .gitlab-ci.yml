@@ -38,7 +38,7 @@ check-installed-required-packages:
   script:
     - echo "Checking if all required packages are valid and available for the Ubuntu version used for the competition ..."
     - apt-get update
-    - apt-get install -y moreutils
+    - apt-get install -y jq moreutils
     - yq -r '[ (.verifiers + .validators)[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | xargs -n 1 chronic apt-cache show -q=0
     - echo "Checking if all required packages are installed in the competition installation ..."
     # The first check prints missing required packages, then second check makes the CI fail
