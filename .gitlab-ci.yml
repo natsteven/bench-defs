@@ -28,7 +28,7 @@ check-category-structure:
   script:
     - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml
 
-check-valid-required-packages:
+check-installed-required-packages:
   # This large image is not actually necessary, but it is currently the easiest way
   # to get an image with the correct Ubuntu version and some required utilities.
   image: registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/test:latest
