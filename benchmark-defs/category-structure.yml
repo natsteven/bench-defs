@@ -1404,6 +1404,8 @@ opt_out:
     - no-data-race.NoDataRace-Main
   cpachecker:
     - no-data-race.NoDataRace-Main
+  dartagnan:
+    - no-overflow.ConcurrencySafety-NoOverflows
   deagle:
     - no-data-race.NoDataRace-Main
   divine:
