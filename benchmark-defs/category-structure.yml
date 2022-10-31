@@ -251,9 +251,10 @@ verifiers:
     lang: C
     url: https://github.com/ftsrg/gazer
     required-ubuntu-packages:
-      - clang-9
-      - llvm-9
-      - openjdk-11-jdk-headless
+      - libtinfo5
+      - python3
+      - openjdk-11-jre-headless
+      - libgomp1
     jury-member:
       name: Hors Concours
       institution: --
