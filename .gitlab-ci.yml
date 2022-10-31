@@ -35,6 +35,10 @@ check-installed-required-packages:
   # no submodules required
   before_script: []
   script:
+    - echo "Checking if all required packages are valid and available for the Ubuntu version used for the competition ..."
+    - apt-get update
+    - yq -r '[ (.verifiers + .validators)[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | xargs -n 1 chronic apt-cache show -q=0
+    - echo "Checking if all required packages are installed in the competition installation ..."
     # The first check prints missing required packages, then second check makes the CI fail
     - yq -r '[ (.verifiers + .validators)[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | xargs -n 1 dpkg --get-selections 2>&1 >/dev/null
     - yq -r '[ (.verifiers + .validators)[]."required-ubuntu-packages"[] ] | unique [] ' benchmark-defs/category-structure.yml | while read PKG; do dpkg --get-selections $PKG | grep install || exit 1; done
