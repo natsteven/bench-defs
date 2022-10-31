@@ -572,6 +572,22 @@ verifiers:
       country: India
       url:
     code-owner: sakshiagrawal1812
+  veriabsl:
+    name: VeriAbsL
+    lang: C
+    url: https://www.tcs.com/designing-complex-intelligent-systems
+    required-ubuntu-packages:
+      - libc6-dev-i386
+      - openjdk-8-jre-headless
+      - python3-pip
+      - python3-sklearn
+      - python3-pandas
+    jury-member:
+      name: Priyanka Darke
+      institution: Tata Consultancy Services
+      country: India
+      url:
+    code-owner: sakshiagrawal1812
   verifuzz:
     name: VeriFuzz
     lang: C
@@ -974,6 +990,7 @@ categories:
       - ukojak
       - utaipan
       - veriabs
+      - veriabsl
       - verifuzz
     validators:
       - witnesslint
