@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="divine4" timelimit="15 min" memlimit="15 GB" cpuCores="8">
+<benchmark tool="bubaak" timelimit="15 min" memlimit="15 GB" cpuCores="8">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**/*.graphml</resultfiles>
 
-  <option name="--no-symbolic"></option>
+  <option name="-sv-comp"/>
+  <option name="-sv-comp-witness">witness.graphml</option>
 
 <rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-Arrays">
@@ -71,6 +72,10 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-BusyBox-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <excludesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</excludesfile>
@@ -78,6 +83,10 @@
   </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64Large-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-uthash-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 </rundefinition>
@@ -147,9 +156,18 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
+
+  <tasks name="ConcurrencySafety-NoOverflows">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP23_termination">
+  <tasks name="Termination-BitVectors">
+    <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
@@ -163,5 +181,15 @@
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
 </rundefinition>
+
+<rundefinition name="SV-COMP23_no-data-race">
+  <tasks name="NoDataRace-Main">
+    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+
+
 
 </benchmark>

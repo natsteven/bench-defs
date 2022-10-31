@@ -2,7 +2,7 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="ceagle" timelimit="15 min" memlimit="15 GB" cpuCores="8">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
   <resultfiles>**/*.graphml</resultfiles>
   
@@ -55,6 +55,10 @@
   </tasks>
   <tasks name="ReachSafety-Combinations">
     <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="ReachSafety-Hardware">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
@@ -139,6 +143,10 @@
   <tasks name="SoftwareSystems-uthash-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-OpenBSD-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
