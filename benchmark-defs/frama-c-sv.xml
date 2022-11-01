@@ -6,6 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
   <option name="--reach-as-overflow"/>
+  <option name="--allow-unsafe"/> <!-- allow working with tmp dir without sticky bit -->
 
 <rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-Arrays">
