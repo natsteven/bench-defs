@@ -6,6 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
+  <option name="--expectViolationWitness"/>
   <option name="--full-output"/>
   <option name="--witness-type">violation_witness</option>
 

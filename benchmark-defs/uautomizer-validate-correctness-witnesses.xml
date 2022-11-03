@@ -6,6 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
+  <option name="--expectCorrectnessWitness"/>
   <option name="--full-output"/>
   <option name="--witness-type">correctness_witness</option>
 

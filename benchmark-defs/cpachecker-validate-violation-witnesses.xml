@@ -7,6 +7,7 @@
   <resultfiles>**/*.graphml</resultfiles>
 
   <option name="-witnessValidation"/>
+  <option name="-expectViolationWitness"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
