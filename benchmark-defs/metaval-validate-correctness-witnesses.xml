@@ -6,8 +6,6 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-  <option name="--metaValExpectCorrectnessWitness"/>
-
 <rundefinition name="SV-COMP23_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
