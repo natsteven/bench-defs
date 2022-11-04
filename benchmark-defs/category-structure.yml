@@ -884,7 +884,7 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: masp
+    code-owner: dbeyer
 
 
 
