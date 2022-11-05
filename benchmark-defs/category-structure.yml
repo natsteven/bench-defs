@@ -1102,6 +1102,11 @@ categories:
       - ugemcutter
       - ukojak
       - utaipan
+    validators:
+      - witnesslint-correctness
+      - witnesslint-violation
+      - cpachecker-violation
+      - dartagnan-violation
 
   NoOverflows:
     properties: no-overflow
