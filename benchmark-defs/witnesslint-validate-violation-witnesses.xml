@@ -33,7 +33,7 @@
   </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfilev>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
@@ -57,11 +57,11 @@
   </tasks>
   <tasks name="ReachSafety-Combinations">
     <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
-    <propertyfilev>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="ReachSafety-Hardware">
     <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
-    <propertyfilev>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
   <tasks name="ConcurrencySafety-Main">
