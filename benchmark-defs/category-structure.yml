@@ -874,7 +874,18 @@ validators:
       country: UK
       url: 
     code-owner: Anthonysdu
-  witnesslint-validate-witnesses:
+  witnesslint-validate-violation-witnesses:
+    name: WitnessLint
+    lang: C
+    url: https://github.com/sosy-lab/sv-witnesses
+    required-ubuntu-packages: []
+    jury-member:
+      name: Martin Spiessl
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/spiessl/
+    code-owner: dbeyer
+  witnesslint-validate-correctness-witnesses:
     name: WitnessLint
     lang: C
     url: https://github.com/sosy-lab/sv-witnesses
@@ -997,7 +1008,8 @@ categories:
       - veriabsl
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-correctness
       - cpachecker-violation
       - cpa-witness2test-violation
@@ -1041,7 +1053,8 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -1118,7 +1131,8 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -1155,7 +1169,8 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - uautomizer-violation
       - metaval-violation
@@ -1200,7 +1215,8 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-correctness
       - cpachecker-violation
       - cpa-witness2test-violation
