@@ -6,11 +6,8 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-  <option name="-svcomp21-pesco"/>
-  <option name="-heap">10000M</option>
-  <option name="-stack">2048k</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900 s</option>
+  <option name="--memory">10000M</option>
+  <option name="--timelimit">900</option>
 
   <rundefinition name="SV-COMP23_unreach-call">
     <tasks name="ReachSafety-Arrays">
