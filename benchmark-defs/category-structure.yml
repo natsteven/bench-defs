@@ -1307,8 +1307,6 @@ categories:
       - mlb
       - spf
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
       - wit4java-violation
       - gwit-violation
 
