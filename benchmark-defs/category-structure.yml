@@ -1093,8 +1093,7 @@ categories:
   NoOverflows:
     properties: no-overflow
     categories:
-      - no-overflow.NoOverflows-BitVectors
-      - no-overflow.NoOverflows-Other
+      - no-overflow.NoOverflows-Main
     verifiers:
       - 2ls
       - bubaak
@@ -1315,8 +1314,7 @@ categories_process_order:
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
   - ConcurrencySafety
-  - no-overflow.NoOverflows-BitVectors
-  - no-overflow.NoOverflows-Other
+  - no-overflow.NoOverflows-Main
   - NoOverflows
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
@@ -1367,8 +1365,7 @@ categories_table_order:
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
   - NoOverflows
-  - no-overflow.NoOverflows-BitVectors
-  - no-overflow.NoOverflows-Other
+  - no-overflow.NoOverflows-Main
   - Termination
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
