@@ -1094,6 +1094,7 @@ categories:
     properties: no-overflow
     categories:
       - no-overflow.NoOverflows-Main
+      - no-overflow.NoOverflows-Juliet
     verifiers:
       - 2ls
       - bubaak
@@ -1315,6 +1316,7 @@ categories_process_order:
   - no-overflow.ConcurrencySafety-NoOverflows
   - ConcurrencySafety
   - no-overflow.NoOverflows-Main
+  - no-overflow.NoOverflows-Juliet
   - NoOverflows
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
@@ -1366,6 +1368,7 @@ categories_table_order:
   - no-overflow.ConcurrencySafety-NoOverflows
   - NoOverflows
   - no-overflow.NoOverflows-Main
+  - no-overflow.NoOverflows-Juliet
   - Termination
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
