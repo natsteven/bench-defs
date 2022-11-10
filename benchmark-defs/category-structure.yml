@@ -1537,5 +1537,6 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   verioover:
-    - no-overflow.NoOverflows-BitVectors
+    - no-overflow.NoOverflows-Main
+    - no-overflow.NoOverflows-Juliet
 
