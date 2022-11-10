@@ -149,15 +149,6 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-<<<<<<< HEAD:benchmark-defs/witnesslint-validate-witnesses.xml
-  <tasks name="NoOverflows-Main">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
-  <tasks name="NoOverflows-Juliet">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-=======
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -165,7 +156,6 @@
   <tasks name="NoOverflows-Juliet">
     <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
->>>>>>> main:benchmark-defs/witnesslint-validate-correctness-witnesses.xml
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
