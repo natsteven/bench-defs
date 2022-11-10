@@ -14,7 +14,8 @@ $(GIT_STORES):
 
 update: | update-repos
 	@echo "\n# Updating" bench-defs
-	git pull --rebase
+	git checkout main
+	git pull --rebase --prune
 
 update-repos: $(foreach g,$(GIT_REPOS),$(g)/.update)
 

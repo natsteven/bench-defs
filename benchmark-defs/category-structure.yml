@@ -582,10 +582,19 @@ verifiers:
     url: https://www.tcs.com/designing-complex-intelligent-systems
     required-ubuntu-packages:
       - libc6-dev-i386
-      - openjdk-8-jre-headless
+      - openjdk-11-jre-headless
       - python3-pip
-      - python3-sklearn
+      - python3-absl
+      - python3-astunparse
+      - python3-flatbuffers
+      - python3-gast
+      - python3-h5py
+      - python3-packaging
+      - python3-termcolor
+      - python3-wrapt
+      - python3-typing-extensions
       - python3-pandas
+      - python3-sklearn
     jury-member:
       name: Priyanka Darke
       institution: Tata Consultancy Services
@@ -874,7 +883,7 @@ validators:
       country: UK
       url: 
     code-owner: Anthonysdu
-  witnesslint-validate-witnesses:
+  witnesslint-validate-violation-witnesses:
     name: WitnessLint
     lang: C
     url: https://github.com/sosy-lab/sv-witnesses
@@ -884,7 +893,18 @@ validators:
       institution: LMU Munich
       country: Germany
       url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: masp
+    code-owner: dbeyer
+  witnesslint-validate-correctness-witnesses:
+    name: WitnessLint
+    lang: C
+    url: https://github.com/sosy-lab/sv-witnesses
+    required-ubuntu-packages: []
+    jury-member:
+      name: Martin Spiessl
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/spiessl/
+    code-owner: dbeyer
 
 
 
@@ -997,7 +1017,8 @@ categories:
       - veriabsl
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-correctness
       - cpachecker-violation
       - cpa-witness2test-violation
@@ -1041,7 +1062,8 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -1089,6 +1111,11 @@ categories:
       - ugemcutter
       - ukojak
       - utaipan
+    validators:
+      - witnesslint-correctness
+      - witnesslint-violation
+      - cpachecker-violation
+      - dartagnan-violation
 
   NoOverflows:
     properties: no-overflow
@@ -1118,7 +1145,8 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
@@ -1155,7 +1183,8 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-violation
       - uautomizer-violation
       - metaval-violation
@@ -1200,7 +1229,8 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint
+      - witnesslint-correctness
+      - witnesslint-violation
       - cpachecker-correctness
       - cpachecker-violation
       - cpa-witness2test-violation
