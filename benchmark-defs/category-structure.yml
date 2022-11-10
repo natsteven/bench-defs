@@ -1568,5 +1568,4 @@ opt_in:
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   verioover:
     - no-overflow.NoOverflows-Main
-    - no-overflow.NoOverflows-Juliet
 
