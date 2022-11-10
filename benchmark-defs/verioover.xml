@@ -7,8 +7,8 @@
   <resultfiles>**/*.graphml</resultfiles>
 
 <rundefinition name="SV-COMP23_no-overflow">
-  <tasks name="NoOverflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+  <tasks name="NoOverflows-Main">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 </rundefinition>

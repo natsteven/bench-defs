@@ -102,11 +102,11 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP23_prop-nooverflow_undef-func">
-  <tasks name="NoOverflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+  <tasks name="NoOverflows-Main">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
   </tasks>
-  <tasks name="NoOverflows-Other">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+  <tasks name="NoOverflows-Juliet">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
