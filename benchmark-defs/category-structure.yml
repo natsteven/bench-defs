@@ -595,6 +595,10 @@ verifiers:
       - python3-typing-extensions
       - python3-pandas
       - python3-sklearn
+      - python3-certifi
+      - python3-idna
+      - python3-requests
+      - python3-urllib3
     jury-member:
       name: Priyanka Darke
       institution: Tata Consultancy Services
