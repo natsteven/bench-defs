@@ -1082,10 +1082,12 @@ categories:
       - unreach-call
       - no-data-race
       - no-overflow
+      - valid-memsafety
     categories:
       - unreach-call.ConcurrencySafety-Main
       - no-data-race.NoDataRace-Main
       - no-overflow.ConcurrencySafety-NoOverflows
+      - valid-memsafety.ConcurrencySafety-MemSafety
     verifiers:
       - 2ls
       - bubaak
@@ -1348,6 +1350,7 @@ categories_process_order:
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
+  - valid-memsafety.ConcurrencySafety-MemSafety
   - ConcurrencySafety
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
@@ -1400,6 +1403,7 @@ categories_table_order:
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
+  - valid-memsafety.ConcurrencySafety-MemSafety
   - NoOverflows
   - no-overflow.NoOverflows-BitVectors
   - no-overflow.NoOverflows-Other
