@@ -71,6 +71,10 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-coreutils-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
   <tasks name="SoftwareSystems-uthash-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
