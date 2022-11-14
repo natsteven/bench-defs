@@ -29,5 +29,12 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP23_valid-memsafety">
+  <tasks name="ConcurrencySafety-MemSafety">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 </benchmark>
 

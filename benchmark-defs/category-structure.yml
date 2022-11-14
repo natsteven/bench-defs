@@ -595,6 +595,10 @@ verifiers:
       - python3-typing-extensions
       - python3-pandas
       - python3-sklearn
+      - python3-certifi
+      - python3-idna
+      - python3-requests
+      - python3-urllib3
     jury-member:
       name: Priyanka Darke
       institution: Tata Consultancy Services
@@ -1078,10 +1082,12 @@ categories:
       - unreach-call
       - no-data-race
       - no-overflow
+      - valid-memsafety
     categories:
       - unreach-call.ConcurrencySafety-Main
       - no-data-race.NoDataRace-Main
       - no-overflow.ConcurrencySafety-NoOverflows
+      - valid-memsafety.ConcurrencySafety-MemSafety
     verifiers:
       - 2ls
       - bubaak
@@ -1344,6 +1350,7 @@ categories_process_order:
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
+  - valid-memsafety.ConcurrencySafety-MemSafety
   - ConcurrencySafety
   - no-overflow.NoOverflows-Main
   - no-overflow.NoOverflows-Juliet
@@ -1396,6 +1403,7 @@ categories_table_order:
   - unreach-call.ConcurrencySafety-Main
   - no-data-race.NoDataRace-Main
   - no-overflow.ConcurrencySafety-NoOverflows
+  - valid-memsafety.ConcurrencySafety-MemSafety
   - NoOverflows
   - no-overflow.NoOverflows-Main
   - no-overflow.NoOverflows-Juliet
