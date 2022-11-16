@@ -20,7 +20,7 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-coreutils-ReachSafety">
-    <excludesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-ReachSafety.set</excludesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
