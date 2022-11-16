@@ -1545,10 +1545,13 @@ opt_in:
     - unreach-call.ReachSafety-Floats
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    # no unreach-call.SoftwareSystems-BusyBox-ReachSafety?
+    - unreach-call.SoftwareSystems-coreutils-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   frama-c-sv:
     - unreach-call.ReachSafety-Arrays
