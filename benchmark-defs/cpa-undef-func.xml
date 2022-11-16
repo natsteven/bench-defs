@@ -87,6 +87,10 @@
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
   </tasks>
+  <tasks name="SoftwareSystems-coreutils-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -102,11 +106,11 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP23_prop-nooverflow_undef-func">
-  <tasks name="NoOverflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+  <tasks name="NoOverflows-Main">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
   </tasks>
-  <tasks name="NoOverflows-Other">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+  <tasks name="NoOverflows-Juliet">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">

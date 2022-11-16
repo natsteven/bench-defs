@@ -1126,8 +1126,8 @@ categories:
   NoOverflows:
     properties: no-overflow
     categories:
-      - no-overflow.NoOverflows-BitVectors
-      - no-overflow.NoOverflows-Other
+      - no-overflow.NoOverflows-Main
+      - no-overflow.NoOverflows-Juliet
     verifiers:
       - 2ls
       - bubaak
@@ -1202,6 +1202,9 @@ categories:
       - valid-memsafety
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+      - unreach-call.SoftwareSystems-coreutils-ReachSafety
+      - valid-memsafety.SoftwareSystems-coreutils-MemSafety
+      - no-overflow.SoftwareSystems-coreutils-NoOverflows
       - unreach-call.SoftwareSystems-BusyBox-ReachSafety
       - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
       - no-overflow.SoftwareSystems-BusyBox-NoOverflows
@@ -1352,8 +1355,8 @@ categories_process_order:
   - no-overflow.ConcurrencySafety-NoOverflows
   - valid-memsafety.ConcurrencySafety-MemSafety
   - ConcurrencySafety
-  - no-overflow.NoOverflows-BitVectors
-  - no-overflow.NoOverflows-Other
+  - no-overflow.NoOverflows-Main
+  - no-overflow.NoOverflows-Juliet
   - NoOverflows
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
@@ -1361,6 +1364,9 @@ categories_process_order:
   - termination.Termination-Other
   - Termination
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - unreach-call.SoftwareSystems-coreutils-ReachSafety
+  - valid-memsafety.SoftwareSystems-coreutils-MemSafety
+  - no-overflow.SoftwareSystems-coreutils-NoOverflows
   - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
@@ -1405,8 +1411,8 @@ categories_table_order:
   - no-overflow.ConcurrencySafety-NoOverflows
   - valid-memsafety.ConcurrencySafety-MemSafety
   - NoOverflows
-  - no-overflow.NoOverflows-BitVectors
-  - no-overflow.NoOverflows-Other
+  - no-overflow.NoOverflows-Main
+  - no-overflow.NoOverflows-Juliet
   - Termination
   - termination.Termination-BitVectors
   - termination.Termination-MainControlFlow
@@ -1414,6 +1420,9 @@ categories_table_order:
   - termination.Termination-Other
   - SoftwareSystems
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+  - unreach-call.SoftwareSystems-coreutils-ReachSafety
+  - valid-memsafety.SoftwareSystems-coreutils-MemSafety
+  - no-overflow.SoftwareSystems-coreutils-NoOverflows
   - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
@@ -1489,6 +1498,7 @@ opt_out:
     - unreach-call.ReachSafety-Hardware
   goblint:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
@@ -1511,10 +1521,12 @@ opt_out:
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
   lart:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
     - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   pinaka:
     - FalsificationOverall
@@ -1533,10 +1545,13 @@ opt_in:
     - unreach-call.ReachSafety-Floats
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    # no unreach-call.SoftwareSystems-BusyBox-ReachSafety?
+    - unreach-call.SoftwareSystems-coreutils-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   frama-c-sv:
     - unreach-call.ReachSafety-Arrays
@@ -1548,6 +1563,7 @@ opt_in:
     - unreach-call.ReachSafety-Combinations
     - unreach-call.ReachSafety-Hardware
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
   gacal:
     - unreach-call.ReachSafety-Loops
@@ -1571,9 +1587,10 @@ opt_in:
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-coreutils-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   verioover:
-    - no-overflow.NoOverflows-BitVectors
+    - no-overflow.NoOverflows-Main
 
