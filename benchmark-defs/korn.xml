@@ -7,6 +7,7 @@
   <resultfiles>**/*.graphml</resultfiles>
 
   <option name="-witness">witness.graphml</option>
+  <option name="-smt2">clauses.smt2</option>
 
   <option name="-model"/>
   <option name="-write"/>
