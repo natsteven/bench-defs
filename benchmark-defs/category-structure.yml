@@ -1485,7 +1485,7 @@ opt_out:
     - ReachSafety
   gdart-llvm:
     - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-BitVectors
+    - unreach-call.ReachSafety-ControlFlow
     - unreach-call.ReachSafety-ECA
     - unreach-call.ReachSafety-Floats
     - unreach-call.ReachSafety-Heap
