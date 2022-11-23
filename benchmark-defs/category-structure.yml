@@ -569,7 +569,7 @@ verifiers:
     url: https://www.tcs.com/designing-complex-intelligent-systems
     required-ubuntu-packages:
       - libc6-dev-i386
-      - openjdk-8-jre-headless
+      - openjdk-11-jre-headless
     jury-member:
       name: Priyanka Darke
       institution: Tata Consultancy Services
