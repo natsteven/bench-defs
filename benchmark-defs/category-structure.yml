@@ -436,7 +436,7 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Cong Tian
+      name: Jie Su
       institution: Xidian University
       country: China
       url:
@@ -1469,6 +1469,8 @@ opt_out:
     - no-data-race.NoDataRace-Main
   pichecker:
     - no-data-race.NoDataRace-Main
+    - no-overflow.ConcurrencySafety-NoOverflows
+    - valid-memsafety.ConcurrencySafety-MemSafety
   symbiotic:
     - no-data-race.NoDataRace-Main
   theta:
