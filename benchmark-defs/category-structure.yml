@@ -138,7 +138,7 @@ verifiers:
       url:
     code-owner: p.andrianov
   cpachecker:
-    name: CPAchecker 2.1
+    name: CPAchecker
     lang: C
     url: https://cpachecker.sosy-lab.org
     required-ubuntu-packages:
@@ -1053,10 +1053,8 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
-      - esbmc-kind
-      - goblint
-      - graves
-      - graves-par
+      - esbmc-kindUpdate the name of CPAchecker in the category structure
+
       - mopsa
       - pesco
       - predatorhp
