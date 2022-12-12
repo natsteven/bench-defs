@@ -345,22 +345,6 @@ verifiers:
       country: Germany
       url: https://www.sosy-lab.org/people/ernst/
     code-owner: gernst
-  lart:
-    name: LART
-    lang: C
-    url: https://github.com/xlauko/lart
-    required-ubuntu-packages:
-      - clang-12
-      - llvm-12
-      - libz3-4
-      - python3
-      - python3-lxml
-    jury-member:
-      name: Henrich Lauko
-      institution: Masaryk University, Brno
-      country: Czechia
-      url: https://xlauko.github.io/ 
-    code-owner: xlauko
   lazycseq:
     name: Lazy-CSeq
     lang: C
