@@ -1053,8 +1053,10 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
-      - esbmc-kindUpdate the name of CPAchecker in the category structure
-
+      - esbmc-kind
+      - goblint
+      - graves
+      - graves-par
       - mopsa
       - pesco
       - predatorhp
