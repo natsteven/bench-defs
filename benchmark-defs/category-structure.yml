@@ -952,6 +952,7 @@ not_participating:
   - hiptnt
   - interpchecker
   - jpf
+  - lart
   - lazycseqabs
   - lazycseqswarm
   - map2check
