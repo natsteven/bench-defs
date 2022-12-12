@@ -22,9 +22,9 @@ verifiers:
       - mono-runtime
       - openjdk-11-jre-headless
     jury-member:
-      name: Jera Hensel
-      institution: RWTH Aachen
-      country: Germany
+      name: Hors Concours
+      institution: --
+      country: --
       url:
     code-owner: jhensel
   brick:
@@ -156,9 +156,9 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-11-jre-headless
     jury-member:
-      name: Ryan Scott
-      institution: Galois
-      country: USA
+      name: Hors Concours
+      institution: --
+      country: --
       url: https://ryanglscott.github.io/
     code-owner: RyanGlScott
   cseq:
@@ -345,22 +345,6 @@ verifiers:
       country: Germany
       url: https://www.sosy-lab.org/people/ernst/
     code-owner: gernst
-  lart:
-    name: LART
-    lang: C
-    url: https://github.com/xlauko/lart
-    required-ubuntu-packages:
-      - clang-12
-      - llvm-12
-      - libz3-4
-      - python3
-      - python3-lxml
-    jury-member:
-      name: Henrich Lauko
-      institution: Masaryk University, Brno
-      country: Czechia
-      url: https://xlauko.github.io/ 
-    code-owner: xlauko
   lazycseq:
     name: Lazy-CSeq
     lang: C
@@ -472,9 +456,9 @@ verifiers:
       - clang
       - llvm
     jury-member:
-      name: Xie Li
-      institution: Academy of Sciences
-      country: China
+      name: Hors Concours
+      institution: --
+      country: --
       url:
     code-owner: SpencerL-Y
   smack:
@@ -678,9 +662,9 @@ verifiers:
     required-ubuntu-packages:
       - openjdk-8-jdk-headless
     jury-member:
-      name: Ali Shamakhi
-      institution: Tehran Institute for Advanced Studies
-      country: Iran
+      name: Hors Concours
+      institution: --
+      country: --
       url:
     code-owner: ali-shamakhi
   jbmc:
@@ -952,6 +936,7 @@ not_participating:
   - hiptnt
   - interpchecker
   - jpf
+  - lart
   - lazycseqabs
   - lazycseqswarm
   - map2check
@@ -1008,7 +993,6 @@ categories:
       - graves
       - graves-par
       - infer
-      - lart
       - mopsa
       - pesco
       - pinaka
@@ -1229,7 +1213,6 @@ categories:
       - graves
       - graves-par
       - infer
-      - lart
       - mopsa
       - pesco
       - smack
@@ -1521,15 +1504,6 @@ opt_out:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  lart:
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
-    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - no-overflow.SoftwareSystems-coreutils-NoOverflows
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
   pinaka:
     - FalsificationOverall
     - Overall
