@@ -1009,7 +1009,6 @@ categories:
       - graves
       - graves-par
       - infer
-      - lart
       - mopsa
       - pesco
       - pinaka
@@ -1230,7 +1229,6 @@ categories:
       - graves
       - graves-par
       - infer
-      - lart
       - mopsa
       - pesco
       - smack
@@ -1522,15 +1520,6 @@ opt_out:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  lart:
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
-    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - no-overflow.SoftwareSystems-coreutils-NoOverflows
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
   pinaka:
     - FalsificationOverall
     - Overall
