@@ -167,9 +167,9 @@ verifiers:
     url: https://gitlab.com/emersonwds/cseq
     required-ubuntu-packages: []
     jury-member:
-      name: Emerson Sales
-      institution: Gran Sasso Science Institute
-      country: Italy
+      name: Hors Concours
+      institution: --
+      country: --
       url: https://github.com/Emersonwds
     code-owner: emersonwds
   dartagnan:
