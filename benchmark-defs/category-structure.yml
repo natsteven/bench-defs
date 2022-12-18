@@ -319,7 +319,7 @@ verifiers:
       - gcc
       - libc6-dev-i386     
     jury-member:
-      name: Mitchell Gerrard
+      name: Hors Concurs
       institution: University of Virginia
       country: USA
     code-owner: mgerrard
