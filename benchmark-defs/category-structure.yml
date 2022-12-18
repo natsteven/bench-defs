@@ -826,7 +826,7 @@ validators:
   symbiotic-witch-validate-violation-witnesses:
     name: Symbiotic-Witch
     lang: C
-    url: https://github.com/staticafi/symbiotic
+    url: https://github.com/ayazip/witch-klee
     required-ubuntu-packages:
       - python3
     jury-member:
