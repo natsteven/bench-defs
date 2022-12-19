@@ -55,7 +55,7 @@ https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#installed-ubuntu-p
 SV-COMP provides a Docker image that tries to provide an environment
 that has mostly the same packages installed as the competition machines.
 The Docker image is described here:
-https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#docker-image
+https://gitlab.com/sosy-lab/benchmarking/competition-scripts/#container-image
 
 ## Parameters of RunExec
 
