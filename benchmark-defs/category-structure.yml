@@ -688,7 +688,7 @@ verifiers:
       name: Hors Concours
       institution: --
       country: --
-      url: --
+      url:
     code-owner:
       - fhowar
       - mmuesly
