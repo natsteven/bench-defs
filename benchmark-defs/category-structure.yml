@@ -903,10 +903,16 @@ hors_concours:
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
+  - cpa-bam-smg
   - cpalockator
+  - crux
+  - cseq
   - divine
   - esbmc-incr
   - gazer-theta
+  - infer
+  - jayhorn
+  - jdart
   - lazycseq
   - pinaka
   - predatorhp
