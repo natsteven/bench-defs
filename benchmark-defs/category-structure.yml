@@ -1452,8 +1452,6 @@ opt_out:
     - valid-memsafety.ConcurrencySafety-MemSafety
   symbiotic:
     - no-data-race.NoDataRace-Main
-  theta:
-    - no-data-race.NoDataRace-Main
   verifuzz:
     - no-data-race.NoDataRace-Main
   pesco:
