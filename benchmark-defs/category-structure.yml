@@ -1432,8 +1432,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   cpa-lockator:
     - no-data-race.NoDataRace-Main
-  cpachecker:
-    - no-data-race.NoDataRace-Main
   deagle:
     - no-data-race.NoDataRace-Main
   divine:
