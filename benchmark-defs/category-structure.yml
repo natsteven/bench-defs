@@ -13,20 +13,6 @@ verifiers:
       country: Czechia
       url: https://www.fit.vut.cz/person/imalik/.en
     code-owner: viktor.malik
-  aprove:
-    name: AProVE
-    lang: C
-    url: https://aprove.informatik.rwth-aachen.de
-    required-ubuntu-packages:
-      - clang
-      - mono-runtime
-      - openjdk-11-jre-headless
-    jury-member:
-      name: Hors Concours
-      institution: --
-      country: --
-      url:
-    code-owner: jhensel
   brick:
     name: BRICK
     lang: C
@@ -448,30 +434,6 @@ verifiers:
       country: --
       url:
     code-owner: masp
-  sesl:
-    name: SESL
-    lang: C
-    url: https://spencerl-y.github.io/SESL/
-    required-ubuntu-packages:
-      - clang
-      - llvm
-    jury-member:
-      name: Hors Concours
-      institution: --
-      country: --
-      url:
-    code-owner: SpencerL-Y
-  smack:
-    name: SMACK
-    lang: C
-    url: https://smackers.github.io/
-    required-ubuntu-packages: []
-    jury-member:
-      name: Hors Concours
-      institution: --
-      country: --
-      url:
-    code-owner: zrakamar
   symbiotic:
     name: Symbiotic
     lang: C
@@ -916,7 +878,6 @@ hors_concours:
   - lazycseq
   - pinaka
   - predatorhp
-  - smack
   - spf
 
 
@@ -1050,7 +1011,6 @@ categories:
       - mopsa
       - pesco
       - predatorhp
-      - sesl
       - symbiotic
       - uautomizer
       - ukojak
@@ -1161,7 +1121,6 @@ categories:
       - termination.Termination-Other
     verifiers:
       - 2ls
-      - aprove
       - bubaak
       - cbmc
       - coveriteam-verifier-parallel-portfolio
@@ -1221,7 +1180,6 @@ categories:
       - infer
       - mopsa
       - pesco
-      - smack
       - symbiotic
       - uautomizer
       - ukojak
