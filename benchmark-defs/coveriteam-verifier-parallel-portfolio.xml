@@ -18,7 +18,6 @@ SPDX-License-Identifier: Apache-2.0
   <option name="verifier-parallel-portfolio.cvt"></option>
   <option name="--cache-dir">cache</option>
   <option name="--no-cache-update"></option>
-  <option name="--use-python-processes"></option>
 
 <rundefinition name="SV-COMP23_unreach-call">
   <tasks name="ReachSafety-Arrays">
