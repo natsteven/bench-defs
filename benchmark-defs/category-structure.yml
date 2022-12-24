@@ -1228,6 +1228,20 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+    validators:
+      - witnesslint-correctness
+      - witnesslint-violation
+      - cpachecker-correctness
+      - cpachecker-violation
+      - cpa-witness2test-violation
+      - dartagnan-violation
+      - fshell-witness2test-violation
+      - nitwit-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - metaval-violation
+      - metaval-correctness
+      - symbiotic-witch-violation
 
   FalsificationOverall:
     properties:
@@ -1256,6 +1270,19 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
+    validators:
+      - witnesslint-correctness
+      - witnesslint-violation
+      - cpachecker-correctness
+      - cpachecker-violation
+      - cpa-witness2test-violation
+      - fshell-witness2test-violation
+      - nitwit-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - metaval-violation
+      - metaval-correctness
+      - symbiotic-witch-violation
 
   JavaOverall:
     properties:
