@@ -1434,8 +1434,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   divine:
     - no-data-race.NoDataRace-Main
-  ebf:
-    - no-data-race.NoDataRace-Main
   esbmc-incr:
     - no-data-race.NoDataRace-Main
   esbmc-kind:
@@ -1561,4 +1559,9 @@ opt_in:
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   verioover:
     - no-overflow.NoOverflows-Main
+  ebf:
+    - unreach-call.ConcurrencySafety-Main
+    - no-overflow.ConcurrencySafety-NoOverflows
+    - valid-memsafety.ConcurrencySafety-MemSafety
+
 
