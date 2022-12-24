@@ -389,7 +389,7 @@ verifiers:
       - aouadjaout
       - rmonat
   pesco:
-    name: PeSCo
+    name: PeSCo-CPA
     lang: C
     url: https://github.com/cedricrupb/cpachecker
     required-ubuntu-packages: []
