@@ -955,7 +955,6 @@ categories:
       - crux
       - divine
       - esbmc-kind
-      - gdart-llvm
       - goblint
       - graves
       - graves-par
@@ -1451,19 +1450,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   map2check:
     - ReachSafety
-  gdart-llvm:
-    - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-ControlFlow
-    - unreach-call.ReachSafety-ECA
-    - unreach-call.ReachSafety-Floats
-    - unreach-call.ReachSafety-Heap
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-ProductLines
-    - unreach-call.ReachSafety-Recursive
-    - unreach-call.ReachSafety-Sequentialized
-    - unreach-call.ReachSafety-XCSP
-    - unreach-call.ReachSafety-Combinations
-    - unreach-call.ReachSafety-Hardware
   goblint:
     - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-coreutils-MemSafety
@@ -1536,6 +1522,8 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
     - unreach-call.ReachSafety-Combinations
+  gdart-llvm:
+    - unreach-call.ReachSafety-BitVectors
   korn:
     - unreach-call.ReachSafety-ControlFlow
     - unreach-call.ReachSafety-Loops
