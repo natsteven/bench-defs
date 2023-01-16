@@ -882,6 +882,7 @@ hors_concours:
 
 
 not_participating:
+  - aprove
   - blast
   - cbmc-path
   - ceagle
@@ -908,7 +909,9 @@ not_participating:
   - lazycseqswarm
   - map2check
   - mucseq
+  - sesl
   - skink
+  - smack
   - symdivine
   - ulcseq
   - viap
