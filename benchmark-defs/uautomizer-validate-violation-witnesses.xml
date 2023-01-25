@@ -185,6 +185,10 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
+  <tasks name="Termination-BitVectors">
+    <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
+    <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
