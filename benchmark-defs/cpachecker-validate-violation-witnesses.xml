@@ -18,9 +18,6 @@
   <option name="-setprop">cpa.smg.deallocationFunctions=free,kfree,kfree_const</option>
 
 <rundefinition name="SV-COMP23_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -107,9 +104,6 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP23_valid-memcleanup">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
@@ -117,9 +111,6 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP23_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -134,10 +125,6 @@
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
-    <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-  </tasks>
-  <tasks name="MemSafety-TerminCrafted">
-    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="MemSafety-Juliet">
@@ -165,12 +152,14 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemSafety.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
+
+  <tasks name="ConcurrencySafety-MemSafety">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
+    <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP23_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -192,12 +181,18 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
+
+  <tasks name="ConcurrencySafety-NoOverflows">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+    <propertyfile >../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP23_termination">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  <tasks name="Termination-BitVectors">
+    <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
+    <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
