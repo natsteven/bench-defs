@@ -948,6 +948,7 @@ categories:
       - unreach-call.ReachSafety-XCSP
       - unreach-call.ReachSafety-Combinations
       - unreach-call.ReachSafety-Hardware
+      - unreach-call.ReachSafety-Hardness
     verifiers:
       - 2ls
       - bubaak
