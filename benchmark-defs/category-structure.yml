@@ -1074,6 +1074,7 @@ categories:
       - witnesslint-violation
       - cpachecker-violation
       - dartagnan-violation
+      - uautomizer-violation
 
   NoOverflows:
     properties: no-overflow
