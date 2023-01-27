@@ -165,11 +165,11 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemSafety.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
-
+  <!-- Opt out 
   <tasks name="ConcurrencySafety-MemSafety">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-  </tasks>
+  </tasks> -->
 </rundefinition>
 
 <rundefinition name="SV-COMP23_no-data-race">
@@ -217,15 +217,16 @@
 <rundefinition name="SV-COMP23_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  <!-- Opt out
   <tasks name="Termination-BitVectors">
     <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
+  
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
+  </tasks> -->
   <tasks name="Termination-MainHeap">
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
     <propertyfile >../sv-benchmarks/c/properties/termination.prp</propertyfile>
