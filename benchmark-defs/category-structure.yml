@@ -34,7 +34,7 @@ verifiers:
       - python3-lxml
     jury-member:
       name: Marek Chalupa
-      institution: Institute of Science and Technology Austria, ISTA
+      institution: ISTA
       country: Austria
       url:
     code-owner: mchalupa
@@ -381,7 +381,7 @@ verifiers:
       - llvm-dev 
     jury-member:
       name: Raphaël Monat
-      institution: Inria, University of Lille
+      institution: Inria and University of Lille
       country: France
       url: https://www.rmonat.fr
     code-owner:
