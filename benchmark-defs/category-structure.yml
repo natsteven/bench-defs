@@ -996,8 +996,8 @@ categories:
       - valid-memsafety.MemSafety-Heap
       - valid-memsafety.MemSafety-LinkedLists
       - valid-memsafety.MemSafety-Other
-      - valid-memcleanup.MemSafety-MemCleanup
       - valid-memsafety.MemSafety-Juliet
+      - valid-memcleanup.MemSafety-MemCleanup
     verifiers:
       - 2ls
       - bubaak
@@ -1037,9 +1037,9 @@ categories:
       - valid-memsafety
     categories:
       - unreach-call.ConcurrencySafety-Main
-      - no-data-race.NoDataRace-Main
-      - no-overflow.ConcurrencySafety-NoOverflows
       - valid-memsafety.ConcurrencySafety-MemSafety
+      - no-overflow.ConcurrencySafety-NoOverflows
+      - no-data-race.NoDataRace-Main
     verifiers:
       - 2ls
       - bubaak
@@ -1325,13 +1325,13 @@ categories_process_order:
   - valid-memsafety.MemSafety-Heap
   - valid-memsafety.MemSafety-LinkedLists
   - valid-memsafety.MemSafety-Other
-  - valid-memcleanup.MemSafety-MemCleanup
   - valid-memsafety.MemSafety-Juliet
+  - valid-memcleanup.MemSafety-MemCleanup
   - MemSafety
   - unreach-call.ConcurrencySafety-Main
-  - no-data-race.NoDataRace-Main
-  - no-overflow.ConcurrencySafety-NoOverflows
   - valid-memsafety.ConcurrencySafety-MemSafety
+  - no-overflow.ConcurrencySafety-NoOverflows
+  - no-data-race.NoDataRace-Main
   - ConcurrencySafety
   - no-overflow.NoOverflows-Main
   - no-overflow.NoOverflows-Juliet
@@ -1381,13 +1381,13 @@ categories_table_order:
   - valid-memsafety.MemSafety-Heap
   - valid-memsafety.MemSafety-LinkedLists
   - valid-memsafety.MemSafety-Other
-  - valid-memcleanup.MemSafety-MemCleanup
   - valid-memsafety.MemSafety-Juliet
+  - valid-memcleanup.MemSafety-MemCleanup
   - ConcurrencySafety
   - unreach-call.ConcurrencySafety-Main
-  - no-data-race.NoDataRace-Main
-  - no-overflow.ConcurrencySafety-NoOverflows
   - valid-memsafety.ConcurrencySafety-MemSafety
+  - no-overflow.ConcurrencySafety-NoOverflows
+  - no-data-race.NoDataRace-Main
   - NoOverflows
   - no-overflow.NoOverflows-Main
   - no-overflow.NoOverflows-Juliet
