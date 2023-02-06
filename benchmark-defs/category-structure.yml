@@ -344,7 +344,7 @@ verifiers:
       url:
     code-owner: omainv
   lf-checker:
-    name: lf-checker
+    name: LF-checker
     lang: C
     url: https://github.com/Anthonysdu/lf-checker
     required-ubuntu-packages:
