@@ -25,15 +25,16 @@ The components are described in the following table.
 
 Archives published at Zenodo:
 
-| Year | Verification Tasks                      | Competition Results                     | Verification Witnesses                  | BenchExec                               |
-| ---  | ---                                     | ---                                     | ---                                     | ---                                     |
-| 2022 | https://doi.org/10.5281/zenodo.5831003  | https://doi.org/10.5281/zenodo.5831008  | https://doi.org/10.5281/zenodo.5838498  | https://doi.org/10.5281/zenodo.5720267  |
-| 2021 | https://doi.org/10.5281/zenodo.4459126  | https://doi.org/10.5281/zenodo.4458215  | https://doi.org/10.5281/zenodo.4459196  | https://doi.org/10.5281/zenodo.4317433  |
-| 2020 | https://doi.org/10.5281/zenodo.3633334  | https://doi.org/10.5281/zenodo.3630205  | https://doi.org/10.5281/zenodo.3630188  | https://doi.org/10.5281/zenodo.3574420  |
-| 2019 | https://doi.org/10.5281/zenodo.2598729  |                                         | https://doi.org/10.5281/zenodo.2559175  | https://doi.org/10.5281/zenodo.1638192  |
-| 2018 |                                         |                                         |                                         |                                         |
-| 2017 |                                         |                                         |                                         |                                         |
-| 2016 | https://doi.org/10.5281/zenodo.1158644  |                                         |                                         |                                         |
+| Year | Verification Tasks                      | Tool Archives                           | Competition Results                     | Verification Witnesses                  | BenchExec                               |
+| ---  | ---                                     | ---                                     | ---                                     | ---                                     | ---                                     |
+| 2023 | https://doi.org/10.5281/zenodo.7627783  | https://doi.org/10.5281/zenodo.7627829  | https://doi.org/10.5281/zenodo.7627787  | https://doi.org/10.5281/zenodo.7627791  | https://doi.org/10.5281/zenodo.7612021  |
+| 2022 | https://doi.org/10.5281/zenodo.5831003  |                                         | https://doi.org/10.5281/zenodo.5831008  | https://doi.org/10.5281/zenodo.5838498  | https://doi.org/10.5281/zenodo.5720267  |
+| 2021 | https://doi.org/10.5281/zenodo.4459126  |                                         | https://doi.org/10.5281/zenodo.4458215  | https://doi.org/10.5281/zenodo.4459196  | https://doi.org/10.5281/zenodo.4317433  |
+| 2020 | https://doi.org/10.5281/zenodo.3633334  |                                         | https://doi.org/10.5281/zenodo.3630205  | https://doi.org/10.5281/zenodo.3630188  | https://doi.org/10.5281/zenodo.3574420  |
+| 2019 | https://doi.org/10.5281/zenodo.2598729  |                                         |                                         | https://doi.org/10.5281/zenodo.2559175  | https://doi.org/10.5281/zenodo.1638192  |
+| 2018 |                                         |                                         |                                         |                                         |                                         |
+| 2017 |                                         |                                         |                                         |                                         |                                         |
+| 2016 | https://doi.org/10.5281/zenodo.1158644  |                                         |                                         |                                         |                                         |
 
 
 # Instructions for Execution and Reproduction
