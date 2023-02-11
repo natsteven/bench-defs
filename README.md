@@ -16,7 +16,7 @@ The components are described in the following table.
 | Verification Tasks     | https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks          | add, fix, review tasks   |
 | Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
 | Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
-| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2022               | submit to participate    |
+| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2023               | submit to participate    |
 | Benchmarking Framework | https://github.com/sosy-lab/benchexec                           | (use to test their tool) |
 | Competition Scripts    | https://gitlab.com/sosy-lab/benchmarking/competition-scripts    | (use to reproduce)       |
 | Witness Format         | https://github.com/sosy-lab/sv-witnesses                        | (know)                   |
