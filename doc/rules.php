@@ -195,7 +195,7 @@ as a reaction to the community feedback after the first competition
 
 <h5>Memory Safety (only for category 'MemorySafety'):</h5>
 <p>
-<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2022/results/sv-benchmarks/c/properties/valid-memsafety.prp")); ?>
+<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2023/results/sv-benchmarks/c/properties/valid-memsafety.prp")); ?>
     </pre>
 </p>
 
@@ -253,7 +253,7 @@ as a reaction to the community feedback after the first competition
 
 <h5>Memory Cleanup (only for category 'MemorySafety'):</h5>
 <p>
-<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2022/results/sv-benchmarks/c/properties/valid-memcleanup.prp")); ?>
+<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2023/results/sv-benchmarks/c/properties/valid-memcleanup.prp")); ?>
     </pre>
 </p>
 
@@ -281,7 +281,7 @@ as a reaction to the community feedback after the first competition
 
 <h5>No Overflow:</h5>
 <p>
-<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2022/results/sv-benchmarks/c/properties/no-overflow.prp")); ?>
+<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2023/results/sv-benchmarks/c/properties/no-overflow.prp")); ?>
     </pre>
 </p>
 
@@ -310,7 +310,7 @@ as a reaction to the community feedback after the first competition
 
 <h5>No Data Race (only for category 'ConcurrencySafety'):</h5>
 <p>
-<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2022/results/sv-benchmarks/c/properties/no-data-race.prp")); ?>
+<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2023/results/sv-benchmarks/c/properties/no-data-race.prp")); ?>
     </pre>
 </p>
 
@@ -338,7 +338,7 @@ as a reaction to the community feedback after the first competition
 
 <h5>Termination (only for category 'Termination'):</h5>
 <p>
-<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2022/results/sv-benchmarks/c/properties/termination.prp")); ?>
+<pre><?php echo trim(file_get_contents("https://sv-comp.sosy-lab.org/2023/results/sv-benchmarks/c/properties/termination.prp")); ?>
     </pre>
 </p>
 
