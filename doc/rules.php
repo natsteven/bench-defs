@@ -1,6 +1,11 @@
 <?php require('../template.php');
 pageHeader(); ?>
 
+<!--
+  Changes to this file should be commited also to
+  https://gitlab.com/sosy-lab/sv-comp/bench-defs/-/blob/main/doc/rules.php
+-->
+
 <style type="text/css">
   table,
   td {
@@ -760,7 +765,7 @@ with having the real results of the tool counted towards the meta category, but 
 </p>
 
 <p style="text-align: right; font-size: 70%;">
-  $LastChangedDate:: 2023-02-11 17:24:33 +0100 #$
+  $LastChangedDate:: 2023-02-11 18:20:33 +0100 #$
 </p>
 
 <?php pageFooter(); ?>
