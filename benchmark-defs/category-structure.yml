@@ -512,7 +512,7 @@ verifiers:
   veriabs:
     name: VeriAbs
     lang: C
-    url: https://www.tcs.com/designing-complex-intelligent-systems
+    url: https://www.tcs.com
     required-ubuntu-packages:
       - libc6-dev-i386
       - openjdk-11-jre-headless
@@ -525,7 +525,7 @@ verifiers:
   veriabsl:
     name: VeriAbsL
     lang: C
-    url: https://www.tcs.com/designing-complex-intelligent-systems
+    url: https://www.tcs.com
     required-ubuntu-packages:
       - libc6-dev-i386
       - openjdk-11-jre-headless
