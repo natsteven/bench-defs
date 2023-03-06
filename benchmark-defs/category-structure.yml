@@ -1166,9 +1166,9 @@ categories:
       - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
       - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+      - unreach-call.SoftwareSystems-uthash-ReachSafety
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
       - no-overflow.SoftwareSystems-uthash-NoOverflows
-      - unreach-call.SoftwareSystems-uthash-ReachSafety
     verifiers:
       - 2ls
       - bubaak
@@ -1352,9 +1352,9 @@ categories_process_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
   - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
-  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - SoftwareSystems
   - FalsificationOverall
   - Overall
@@ -1408,9 +1408,9 @@ categories_table_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
   - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
-  - unreach-call.SoftwareSystems-uthash-ReachSafety
   - FalsificationOverall
   - Overall
   - JavaOverall
