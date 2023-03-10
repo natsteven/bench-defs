@@ -305,7 +305,7 @@ verifiers:
       - gcc
       - libc6-dev-i386     
     jury-member:
-      name: Hors Concurs
+      name: Hors Concours
       institution: University of Virginia
       country: USA
     code-owner: mgerrard
