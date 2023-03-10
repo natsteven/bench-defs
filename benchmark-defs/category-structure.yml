@@ -442,7 +442,7 @@ verifiers:
       - python3
       - python3-lxml
     jury-member:
-      name: Marek Trtik
+      name: Marek Trtík
       institution: Masaryk University, Brno
       country: Czechia
       url:
