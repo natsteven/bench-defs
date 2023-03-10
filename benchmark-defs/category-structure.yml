@@ -295,7 +295,7 @@ verifiers:
   graves-par:
     name: Graves-Par
     lang: C
-    url: https://https://github.com/mgerrard/graves-par
+    url: https://github.com/mgerrard/graves-par
     required-ubuntu-packages:
       - python3-numpy
       - clang
