@@ -18,7 +18,7 @@
   <option name="-timeout">20</option>
   <option name="-z3"/>
 
-  <option name="-timeout">900</option>
+  <option name="-timeout">990</option>
   <option name="-eld:portfolio"/>
 
 <rundefinition name="SV-COMP23_unreach-call">
