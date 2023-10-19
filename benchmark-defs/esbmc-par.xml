@@ -3,7 +3,7 @@
 <benchmark tool="esbmc"
            timelimit="120 min"
            hardtimelimit="121 min"
-           walltimelimit="15 min"
+           walltimelimit="16.5 min"
            memlimit="16 GB"
            cpuCores="8">
 
