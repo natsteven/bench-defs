@@ -6,7 +6,7 @@
   hardtimelimit="121 min"
   walltimelimit="16.5 min"
   memlimit="16 GB"
-  cpuCores="8">
+  cpuCores="4">
 
   <resultfiles>**/*.graphml</resultfiles>
 
