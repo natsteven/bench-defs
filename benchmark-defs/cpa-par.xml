@@ -4,7 +4,7 @@
   tool="cpachecker"
   timelimit="120 min"
   hardtimelimit="121 min"
-  walltimelimit="16.5 min"
+  walltimelimit="990 s"
   memlimit="16 GB"
   cpuCores="4">
 
