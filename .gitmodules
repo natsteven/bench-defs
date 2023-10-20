@@ -16,3 +16,6 @@
 [submodule "sv-witnesses"]
 	path = sv-witnesses
 	url = https://gitlab.com/sosy-lab/benchmarking/sv-witnesses.git
+[submodule "fm-tools"]
+	path = fm-tools
+	url = https://gitlab.com/sosy-lab/benchmarking/fm-tools.git
