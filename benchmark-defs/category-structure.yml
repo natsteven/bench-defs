@@ -752,6 +752,18 @@ validators:
     code-owner:
       - fhowar
       - mmuesly
+  jcwit-validate-correctness-witnesses:
+    name: JCWIT
+    lang: Java
+    url: https://github.com/Chriszai/JCWIT
+    required-ubuntu-packages:
+      - python3-networkx
+    jury-member:
+      name: Zaiyu Cheng
+      institution: University of Manchester
+      country: UK
+      url: 
+    code-owner: Chriszai
   metaval-validate-correctness-witnesses:
     name: MetaVal
     lang: C
@@ -1305,6 +1317,7 @@ categories:
     validators:
       - wit4java-violation
       - gwit-violation
+      - jcwit-correctness
 
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
