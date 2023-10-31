@@ -606,19 +606,6 @@ verifiers:
     code-owner:
       - fhowar
       - mmuesly
-  swat:
-    name: SWAT
-    lang: Java
-    url: https://www.its.uni-luebeck.de/
-    required-ubuntu-packages:
-      - openjdk-17-jre-headless
-      - python3-pip
-    jury-member:
-      name: Nils Loose
-      institution: University of Luebeck
-      country: Germany
-      url: 
-    code-owner: nloose
   java-ranger:
     name: Java-Ranger
     lang: Java
@@ -690,6 +677,19 @@ verifiers:
       country: --
       url:
     code-owner: yannicnoller
+  swat:
+    name: SWAT
+    lang: Java
+    url: https://www.its.uni-luebeck.de/
+    required-ubuntu-packages:
+      - openjdk-17-jre-headless
+      - python3-pip
+    jury-member:
+      name: Nils Loose
+      institution: University of Luebeck
+      country: Germany
+      url: 
+    code-owner: nloose
 
 validators:
   cpachecker-validate-correctness-witnesses:
@@ -1322,13 +1322,13 @@ categories:
     verifiers:
       - coastal
       - gdart
-      - swat
       - java-ranger
       - jayhorn
       - jbmc
       - jdart
       - mlb
       - spf
+      - swat
     validators:
       - wit4java-violation
       - gwit-violation
