@@ -611,7 +611,7 @@ verifiers:
     lang: Java
     url: https://www.its.uni-luebeck.de/
     required-ubuntu-packages:
-      - openjdk-17-jdk
+      - openjdk-17-jre-headless
       - python3-pip
     jury-member:
       name: Nils Loose
