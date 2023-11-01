@@ -117,6 +117,17 @@ validators:
       country: UK
       url: https://www.tautschnig.net/
     code-owner: tautschnig
+  goblint-validate-correctness-witnesses:
+    name: Goblint
+    lang: C
+    url: https://goblint.in.tum.de/
+    required-ubuntu-packages: []
+    jury-member:
+      name: Simmo Saan
+      institution: University of Tartu
+      country: Estonia
+      url: https://sim642.eu/
+    code-owner: sim642
   gwit-validate-violation-witnesses:
     name: GWIT
     lang: Java
@@ -372,6 +383,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - nitwit-violation
       - uautomizer-correctness
       - uautomizer-violation
@@ -415,6 +427,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -466,6 +479,7 @@ categories:
       - witnesslint-violation
       - cpachecker-violation
       - dartagnan-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
 
@@ -503,6 +517,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -538,6 +553,7 @@ categories:
       - witnesslint-correctness
       - witnesslint-violation
       - cpachecker-violation
+      - goblint-correctness
       - uautomizer-violation
       - metaval-violation
 
@@ -588,6 +604,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -632,6 +649,7 @@ categories:
       - cpa-witness2test-violation
       - dartagnan-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - nitwit-violation
       - uautomizer-correctness
       - uautomizer-violation
