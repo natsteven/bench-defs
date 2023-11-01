@@ -37,6 +37,7 @@ verifiers:
   - pichecker
   - pinaka
   - predatorhp
+  - sv-sanitizers
   - symbiotic
   - theta
   - uautomizer
@@ -405,6 +406,7 @@ categories:
       - mopsa
       - pesco
       - predatorhp
+      - sv-sanitizers
       - symbiotic
       - uautomizer
       - ukojak
@@ -932,6 +934,14 @@ opt_in:
     - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
+  sv-sanitizers:
+    - no-data-race.NoDataRace-Main
+    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
+    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
+    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - valid-memsafety.ConcurrencySafety-MemSafety
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-BusyBox-ReachSafety
