@@ -4,6 +4,7 @@ year: 2024
 # Information about verifiers was moved to https://gitlab.com/sosy-lab/benchmarking/fm-tools
 verifiers:
   - 2ls
+  - aise
   - brick
   - bubaak
   - cbmc
@@ -885,6 +886,8 @@ opt_out:
     - no-data-race.NoDataRace-Main
 
 opt_in:
+  aise:
+    - unreach-call.ReachSafety-Loops
   brick:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
