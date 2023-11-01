@@ -143,6 +143,17 @@ validators:
       country: UK
       url: 
     code-owner: Chriszai
+  mopsa-validate-correctness-witnesses:
+    name: Mopsa
+    lang: C
+    url: https://gitlab.com/mopsa/mopsa-analyzer
+    required-ubuntu-packages: [clang, libc6-dev-i386, libclang-cpp-dev, libclang-dev, libgmp-dev, libmpfr-dev, llvm, llvm-dev]
+    jury-member:
+      name: Raphaël Monat
+      institution: Inria and University of Lille
+      country: France
+      url: https://rmonat.fr
+    code-owner: rmonat 
   metaval-validate-correctness-witnesses:
     name: MetaVal
     lang: C
@@ -377,6 +388,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - mopsa-correctness
       - symbiotic-witch-violation
 
   MemSafety:
@@ -419,6 +431,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - mopsa-correctness
       - symbiotic-witch-violation
 
   ConcurrencySafety:
@@ -507,6 +520,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - mopsa-correctness
       - symbiotic-witch-violation
 
   Termination:
@@ -592,6 +606,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - mopsa-correctness
       - symbiotic-witch-violation
 
   Overall:
@@ -619,6 +634,7 @@ categories:
       - goblint
       - graves
       - graves-par
+      - mopsa
       - pesco
       - symbiotic
       - uautomizer
@@ -637,6 +653,7 @@ categories:
       - uautomizer-violation
       - metaval-violation
       - metaval-correctness
+      - mopsa-correctness
       - symbiotic-witch-violation
 
   FalsificationOverall:
