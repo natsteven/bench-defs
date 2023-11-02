@@ -269,7 +269,6 @@ hors_concours:
   - jdart
   - lazycseq
   - pinaka
-  - predatorhp
   - spf
 
 
@@ -948,6 +947,10 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+  predatorhp:
+    - unreach-call.ReachSafety-Heap
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
   verioover:
     - no-overflow.NoOverflows-Main
 
