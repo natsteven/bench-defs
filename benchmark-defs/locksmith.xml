@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP23_no-data-race">
+<rundefinition name="SV-COMP24_no-data-race">
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
