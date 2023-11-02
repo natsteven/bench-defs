@@ -20,6 +20,7 @@ verifiers:
   - deagle
   - divine
   - ebf
+  - emergentheta
   - esbmc-incr
   - esbmc-kind
   - frama-c-sv
