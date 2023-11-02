@@ -6,7 +6,7 @@
 
     <option name="--verify_yaml_witness"></option>
 
-    <rundefinition name="SV-COMP23_unreach-call">
+    <rundefinition name="SV-COMP24_unreach-call">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 
         <tasks name="ReachSafety-Arrays">
@@ -98,7 +98,7 @@
         </tasks>
     </rundefinition>
 
-    <rundefinition name="SV-COMP23_valid-memcleanup">
+    <rundefinition name="SV-COMP24_valid-memcleanup">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 
         <tasks name="MemSafety-MemCleanup">
@@ -107,7 +107,7 @@
         </tasks>
     </rundefinition>
 
-    <rundefinition name="SV-COMP23_valid-memsafety">
+    <rundefinition name="SV-COMP24_valid-memsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 
         <tasks name="MemSafety-Arrays">
@@ -158,7 +158,7 @@
         </tasks>
     </rundefinition>
 
-    <rundefinition name="SV-COMP23_no-overflow">
+    <rundefinition name="SV-COMP24_no-overflow">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 
         <tasks name="NoOverflows-Main">
