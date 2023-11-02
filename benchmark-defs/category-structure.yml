@@ -13,6 +13,7 @@ verifiers:
   - cpa-bam-smg
   - cpa-lockator
   - cpachecker
+  - cpv
   - crux
   - cseq
   - dartagnan
@@ -250,7 +251,7 @@ validators:
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
-# but can not win any medals
+# but cannot win any medals
 hors_concours:
   - coastal
   - coveriteam-verifier-algo-selection
@@ -347,6 +348,7 @@ categories:
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
+      - cpv
       - crux
       - divine
       - esbmc-kind
@@ -889,6 +891,13 @@ opt_in:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
+  cpv:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-coreutils-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     # no unreach-call.SoftwareSystems-BusyBox-ReachSafety?
