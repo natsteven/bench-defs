@@ -1,4 +1,3 @@
-
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="theta" timelimit="990 s" hardtimelimit="1050 s" memlimit="15 GB" cpuCores="4">
@@ -10,7 +9,7 @@
   <option name="--algorithm">KINDUCTION</option>
   <option name="--loglevel">RESULT</option>
   
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
