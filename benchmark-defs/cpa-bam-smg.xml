@@ -16,7 +16,7 @@
   <option name="-setprop">counterexample.export.compressWitness=false</option>
   <option name="-setprop">cpa.arg.compressWitness=false</option>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -44,14 +44,14 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memcleanup">
+<rundefinition name="SV-COMP24_valid-memcleanup">
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memsafety">
+<rundefinition name="SV-COMP24_valid-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -95,7 +95,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>

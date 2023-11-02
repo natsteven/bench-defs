@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -65,7 +65,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -76,7 +76,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_termination">
+<rundefinition name="SV-COMP24_termination">
   <tasks name="Termination-BitVectors">
     <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
