@@ -11,7 +11,7 @@
   <option name="-benchmark"/>
   <option name="-timelimit">900 s</option>
 
-<rundefinition name="SV-COMP23_unreach-call_undef-func">
+<rundefinition name="SV-COMP24_unreach-call_undef-func">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
   </tasks>
@@ -61,7 +61,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_prop-memsafety_undef-func">
+<rundefinition name="SV-COMP24_prop-memsafety_undef-func">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
   </tasks>
@@ -105,7 +105,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_prop-nooverflow_undef-func">
+<rundefinition name="SV-COMP24_prop-nooverflow_undef-func">
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
   </tasks>
@@ -118,7 +118,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_termination_undef-func">
+<rundefinition name="SV-COMP24_termination_undef-func">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
   </tasks>

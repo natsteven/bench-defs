@@ -19,7 +19,7 @@ SPDX-License-Identifier: Apache-2.0
   <option name="--cache-dir">cache</option>
   <option name="--no-cache-update"></option>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -109,21 +109,21 @@ SPDX-License-Identifier: Apache-2.0
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-data-race">
+<rundefinition name="SV-COMP24_no-data-race">
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <tasks name="ConcurrencySafety-NoOverflows">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memsafety">
+<rundefinition name="SV-COMP24_valid-memsafety">
   <tasks name="ConcurrencySafety-MemSafety">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
