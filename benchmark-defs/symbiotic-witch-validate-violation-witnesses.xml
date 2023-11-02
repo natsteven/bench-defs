@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -90,7 +90,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memcleanup">
+<rundefinition name="SV-COMP24_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -100,7 +100,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memsafety">
+<rundefinition name="SV-COMP24_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -151,7 +151,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 

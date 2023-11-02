@@ -6,7 +6,7 @@
  
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP23_assert_java">
+<rundefinition name="SV-COMP24_assert_java">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
