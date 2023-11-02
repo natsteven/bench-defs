@@ -6,6 +6,7 @@ verifiers:
   - 2ls
   - brick
   - bubaak
+  - bubaak-split
   - cbmc
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
@@ -344,6 +345,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
@@ -395,6 +397,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-smg
@@ -437,6 +440,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
@@ -479,6 +483,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -521,6 +526,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -566,6 +572,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
@@ -613,6 +620,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -656,6 +664,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
