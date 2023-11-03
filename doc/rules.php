@@ -486,7 +486,7 @@ as a reaction to the community feedback after the first competition
   there are three resource limits for each verification run:
   a memory limit of 15 GB (14.6 GiB) of RAM,
   a runtime limit of 15 min of CPU time,
-  and a limit to 8 processing units of a CPU.
+  and a limit to 4 processing units of a CPU.
   If a verifier hangs, i.e., does not continue to consume CPU time, then the verifier is killed after 15 min of wall time,
   and the resulting runtime is set to 15 min.
 </p>
@@ -765,7 +765,7 @@ with having the real results of the tool counted towards the meta category, but 
 </p>
 
 <p style="text-align: right; font-size: 70%;">
-  $LastChangedDate:: 2023-02-11 18:20:33 +0100 #$
+  $LastChangedDate:: 2023-10-19 20:02:16 +0200 #$
 </p>
 
 <?php pageFooter(); ?>
