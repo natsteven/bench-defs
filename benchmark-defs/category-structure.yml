@@ -38,6 +38,7 @@ verifiers:
   - pichecker
   - pinaka
   - predatorhp
+  - proton
   - symbiotic
   - theta
   - uautomizer
@@ -355,6 +356,7 @@ categories:
       - graves-par 
       - pesco
       - pinaka
+      - proton
       - symbiotic
       - uautomizer
       - ukojak
