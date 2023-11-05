@@ -41,6 +41,7 @@ verifiers:
   - pinaka
   - predatorhp
   - proton
+  - relay-sv
   - symbiotic
   - theta
   - uautomizer
@@ -771,6 +772,8 @@ opt_in:
     - unreach-call.ReachSafety-Recursive
     - unreach-call.ReachSafety-XCSP
   locksmith:
+    - no-data-race.NoDataRace-Main
+  relay-sv:
     - no-data-race.NoDataRace-Main
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
