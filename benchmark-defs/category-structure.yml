@@ -64,18 +64,22 @@ verifiers:
   - swat
 
 validators:
-  - cpachecker
-  - cpa-witness2test
-  - dartagnan
-  - fshell-witness2test
-  - gwit
-  - jcwit
-  - metaval
-  - nitwit
-  - symbiotic-witch
-  - uautomizer
-  - wit4java
-  - witnesslint
+  - cpachecker-validate-correctness-witnesses
+  - cpachecker-validate-violation-witnesses
+  - cpa-witness2test-validate-violation-witnesses
+  - dartagnan-validate-violation-witnesses
+  - fshell-witness2test-validate-violation-witnesses
+  - gwit-validate-violation-witnesses
+  - jcwit-validate-correctness-witnesses
+  - metaval-validate-correctness-witnesses
+  - metaval-validate-violation-witnesses
+  - nitwit-validate-violation-witnesses
+  - symbiotic-witch-validate-violation-witnesses
+  - uautomizer-validate-correctness-witnesses
+  - uautomizer-validate-violation-witnesses
+  - wit4java-validate-violation-witnesses
+  - witnesslint-validate-violation-witnesses
+  - witnesslint-validate-correctness-witnesses
 
 
 
