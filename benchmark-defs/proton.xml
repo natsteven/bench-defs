@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="proton" timelimit="990 s" memlimit="15 GB" cpuCores="4">
+
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+
+  <resultfiles>**/*.graphml</resultfiles>
+  
+  <option name="--graphml-witness">witness.graphml</option>
+
+<rundefinition name="SV-COMP23_termination">
+  <tasks name="Termination-BitVectors">
+    <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+  <tasks name="Termination-MainControlFlow">
+    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+  <tasks name="Termination-MainHeap">
+    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+  <tasks name="Termination-Other">
+    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+</benchmark>
