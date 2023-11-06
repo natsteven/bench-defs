@@ -70,6 +70,7 @@ validators:
   - cpa-witness2test-validate-violation-witnesses
   - dartagnan-validate-violation-witnesses
   - fshell-witness2test-validate-violation-witnesses
+  - goblint-validate-correctness-witnesses
   - gwit-validate-violation-witnesses
   - jcwit-validate-correctness-witnesses
   - metaval-validate-correctness-witnesses
@@ -209,6 +210,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - nitwit-violation
       - uautomizer-correctness
       - uautomizer-violation
@@ -254,6 +256,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -306,6 +309,7 @@ categories:
       - witnesslint-violation
       - cpachecker-violation
       - dartagnan-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
 
@@ -344,6 +348,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -381,6 +386,7 @@ categories:
       - witnesslint-correctness
       - witnesslint-violation
       - cpachecker-violation
+      - goblint-correctness
       - uautomizer-violation
       - metaval-violation
 
@@ -432,6 +438,7 @@ categories:
       - cpachecker-violation
       - cpa-witness2test-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - uautomizer-correctness
       - uautomizer-violation
       - metaval-violation
@@ -477,6 +484,7 @@ categories:
       - cpa-witness2test-violation
       - dartagnan-violation
       - fshell-witness2test-violation
+      - goblint-correctness
       - nitwit-violation
       - uautomizer-correctness
       - uautomizer-violation
