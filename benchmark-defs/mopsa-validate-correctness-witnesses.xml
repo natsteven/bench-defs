@@ -8,6 +8,8 @@
 
     <rundefinition name="SV-COMP24_unreach-call">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+        <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+
 
         <tasks name="ReachSafety-Arrays">
             <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -100,6 +102,7 @@
 
     <rundefinition name="SV-COMP24_valid-memcleanup">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+        <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
         <tasks name="MemSafety-MemCleanup">
             <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
@@ -109,6 +112,7 @@
 
     <rundefinition name="SV-COMP24_valid-memsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+        <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
         <tasks name="MemSafety-Arrays">
             <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -160,6 +164,7 @@
 
     <rundefinition name="SV-COMP24_no-overflow">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+        <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
         <tasks name="NoOverflows-Main">
             <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
