@@ -79,6 +79,7 @@ validators:
   - symbiotic-witch-validate-violation-witnesses
   - uautomizer-validate-correctness-witnesses
   - uautomizer-validate-violation-witnesses
+  - witch-validate-violation-witnesses
   - wit4java-validate-violation-witnesses
   - witnesslint-validate-violation-witnesses
   - witnesslint-validate-correctness-witnesses
@@ -217,6 +218,7 @@ categories:
       - metaval-violation
       - metaval-correctness
       - symbiotic-witch-violation
+      - witch-violation
 
   MemSafety:
     properties:
@@ -354,6 +356,7 @@ categories:
       - metaval-violation
       - metaval-correctness
       - symbiotic-witch-violation
+      - witch-violation
 
   Termination:
     properties: termination
@@ -444,6 +447,7 @@ categories:
       - metaval-violation
       - metaval-correctness
       - symbiotic-witch-violation
+      - witch-violation
 
   Overall:
     properties:
@@ -491,6 +495,7 @@ categories:
       - metaval-violation
       - metaval-correctness
       - symbiotic-witch-violation
+      - witch-violation
 
   FalsificationOverall:
     properties:
@@ -533,6 +538,7 @@ categories:
       - metaval-violation
       - metaval-correctness
       - symbiotic-witch-violation
+      - witch-violation
 
   JavaOverall:
     properties:
