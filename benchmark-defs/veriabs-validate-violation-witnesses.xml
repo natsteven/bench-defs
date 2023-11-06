@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.graphml</resultfiles>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -60,6 +60,10 @@
   </tasks>
   <tasks name="ReachSafety-Hardware">
     <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="ReachSafety-Hardness">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Hardness.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
