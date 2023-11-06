@@ -6,7 +6,7 @@
 
   <resultfiles>**/*.yml</resultfiles>
 
-  <option name="-svcomp24"/>
+  <option name="--sv-comp"/>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
