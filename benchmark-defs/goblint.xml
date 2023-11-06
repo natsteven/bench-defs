@@ -5,10 +5,11 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
   <resultfiles>**/*.graphml</resultfiles>
+  <resultfiles>**/*.yml</resultfiles>
 
-  <option name="--conf">conf/svcomp23.json</option>
+  <option name="--conf">conf/svcomp24.json</option>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -98,21 +99,21 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-data-race">
+<rundefinition name="SV-COMP24_no-data-race">
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memcleanup">
+<rundefinition name="SV-COMP24_valid-memcleanup">
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_valid-memsafety">
+<rundefinition name="SV-COMP24_valid-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -161,7 +162,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -190,7 +191,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_termination">
+<rundefinition name="SV-COMP24_termination">
   <tasks name="Termination-BitVectors">
     <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

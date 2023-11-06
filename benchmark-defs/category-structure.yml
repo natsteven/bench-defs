@@ -4,8 +4,10 @@ year: 2024
 # Information about verifiers was moved to https://gitlab.com/sosy-lab/benchmarking/fm-tools
 verifiers:
   - 2ls
+  - aise
   - brick
   - bubaak
+  - bubaak-split
   - cbmc
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
@@ -13,12 +15,14 @@ verifiers:
   - cpa-bam-smg
   - cpa-lockator
   - cpachecker
+  - cpv
   - crux
   - cseq
   - dartagnan
   - deagle
   - divine
   - ebf
+  - emergentheta
   - esbmc-incr
   - esbmc-kind
   - frama-c-sv
@@ -37,6 +41,8 @@ verifiers:
   - pichecker
   - pinaka
   - predatorhp
+  - proton
+  - relay-sv
   - sv-sanitizers
   - symbiotic
   - theta
@@ -59,199 +65,27 @@ verifiers:
   - swat
 
 validators:
-  cpachecker-validate-correctness-witnesses:
-    name: CPAchecker
-    lang: C
-    url: https://cpachecker.sosy-lab.org/
-    required-ubuntu-packages: []
-    jury-member:
-      name: Henrik Wachowitz
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/wachowitz/
-    code-owner: ricffb
-  cpachecker-validate-violation-witnesses:
-    name: CPAchecker
-    lang: C
-    url: https://cpachecker.sosy-lab.org/
-    required-ubuntu-packages: []
-    jury-member:
-      name: Henrik Wachowitz
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/wachowitz/
-    code-owner: ricffb
-  cpa-witness2test-validate-violation-witnesses:
-    name: CPA-witness2test
-    lang: C
-    url: https://cpachecker.sosy-lab.org/
-    required-ubuntu-packages: []
-    jury-member:
-      name: Henrik Wachowitz
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/wachowitz/
-    code-owner: ricffb
-  dartagnan-validate-violation-witnesses:
-    name: Dartagnan
-    lang: C
-    url: https://github.com/hernanponcedeleon/Dat3M
-    required-ubuntu-packages:
-      - clang-11
-      - llvm-11
-    jury-member:
-      name: Hernán Ponce de León
-      institution: Huawei Dresden Research Center
-      country: Germany
-      url: https://hernanponcedeleon.github.io
-    code-owner: hernanponcedeleon
-  fshell-witness2test-validate-violation-witnesses:
-    name: CProver-witness2test
-    lang: C
-    url: https://www.cprover.org/cbmc/
-    required-ubuntu-packages:
-      - gcc
-      - libc6-dev-i386
-    jury-member:
-      name: Michael Tautschnig
-      institution: Queen Mary University of London
-      country: UK
-      url: https://www.tautschnig.net/
-    code-owner: tautschnig
-  gwit-validate-violation-witnesses:
-    name: GWIT
-    lang: Java
-    url: https://github.com/tudo-aqua/gwit
-    required-ubuntu-packages:
-     - openjdk-11-jre-headless
-    jury-member:
-      name: Falk Howar
-      institution: TU Dortmund University
-      country: Germany
-      url: https://falkhowar.de
-    code-owner:
-      - fhowar
-      - mmuesly
-  jcwit-validate-correctness-witnesses:
-    name: JCWIT
-    lang: Java
-    url: https://github.com/Chriszai/JCWIT
-    required-ubuntu-packages:
-      - python3-networkx
-    jury-member:
-      name: Zaiyu Cheng
-      institution: University of Manchester
-      country: UK
-      url: 
-    code-owner: Chriszai
-  metaval-validate-correctness-witnesses:
-    name: MetaVal
-    lang: C
-    url: https://gitlab.com/sosy-lab/software/metaval
-    required-ubuntu-packages: []
-    jury-member:
-      name: Martin Spiessl
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: masp
-  metaval-validate-violation-witnesses:
-    name: MetaVal
-    lang: C
-    url: https://gitlab.com/sosy-lab/software/metaval
-    required-ubuntu-packages: []
-    jury-member:
-      name: Martin Spiessl
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: masp
-  nitwit-validate-violation-witnesses:
-    name: NITWIT
-    lang: C
-    url: https://github.com/moves-rwth/nitwit-validator/
-    required-ubuntu-packages: []
-    jury-member:
-      name: Jana (Philipp) Berger
-      institution: RWTH Aachen
-      country: Germany
-      url: https://moves.rwth-aachen.de/people/berger/
-    code-owner: blizzard4591
-  symbiotic-witch-validate-violation-witnesses:
-    name: Symbiotic-Witch
-    lang: C
-    url: https://github.com/ayazip/witch-klee
-    required-ubuntu-packages:
-      - python3
-    jury-member:
-      name: Paulína Ayaziová
-      institution: Masaryk University, Brno
-      country: Czechia
-      url: 
-    code-owner: payazi
-  uautomizer-validate-correctness-witnesses:
-    name: UAutomizer
-    lang: C
-    url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages:
-      - openjdk-11-jre-headless
-    jury-member:
-      name: Daniel Dietsch
-      institution: University of Freiburg
-      country: Germany
-      url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-    code-owner: danieldietsch
-  uautomizer-validate-violation-witnesses:
-    name: UAutomizer
-    lang: C
-    url: https://ultimate.informatik.uni-freiburg.de
-    required-ubuntu-packages:
-      - openjdk-11-jre-headless
-    jury-member:
-      name: Daniel Dietsch
-      institution: University of Freiburg
-      country: Germany
-      url: https://swt.informatik.uni-freiburg.de/staff/dietsch
-    code-owner: danieldietsch
-  wit4java-validate-violation-witnesses:
-    name: WIT4JAVA
-    lang: Java
-    url: https://github.com/Anthonysdu/wit4java
-    required-ubuntu-packages:
-     - python3-networkx
-    jury-member:
-      name: Tong Wu
-      institution: University of Manchester
-      country: UK
-      url: 
-    code-owner: Anthonysdu
-  witnesslint-validate-violation-witnesses:
-    name: WitnessLint
-    lang: C
-    url: https://github.com/sosy-lab/sv-witnesses
-    required-ubuntu-packages: []
-    jury-member:
-      name: Martin Spiessl
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: dbeyer
-  witnesslint-validate-correctness-witnesses:
-    name: WitnessLint
-    lang: C
-    url: https://github.com/sosy-lab/sv-witnesses
-    required-ubuntu-packages: []
-    jury-member:
-      name: Martin Spiessl
-      institution: LMU Munich
-      country: Germany
-      url: https://www.sosy-lab.org/people/spiessl/
-    code-owner: dbeyer
+  - cpachecker-validate-correctness-witnesses
+  - cpachecker-validate-violation-witnesses
+  - cpa-witness2test-validate-violation-witnesses
+  - dartagnan-validate-violation-witnesses
+  - fshell-witness2test-validate-violation-witnesses
+  - gwit-validate-violation-witnesses
+  - jcwit-validate-correctness-witnesses
+  - metaval-validate-correctness-witnesses
+  - metaval-validate-violation-witnesses
+  - nitwit-validate-violation-witnesses
+  - symbiotic-witch-validate-violation-witnesses
+  - uautomizer-validate-correctness-witnesses
+  - uautomizer-validate-violation-witnesses
+  - wit4java-validate-violation-witnesses
+  - witnesslint-validate-violation-witnesses
+  - witnesslint-validate-correctness-witnesses
 
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
-# but can not win any medals
+# but cannot win any medals
 hors_concours:
   - coastal
   - coveriteam-verifier-algo-selection
@@ -269,7 +103,6 @@ hors_concours:
   - jdart
   - lazycseq
   - pinaka
-  - predatorhp
   - spf
 
 
@@ -344,12 +177,15 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
+      - cpv
       - crux
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -394,6 +230,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-smg
@@ -437,6 +274,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-algo-selection
       - coveriteam-verifier-parallel-portfolio
@@ -479,6 +317,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -521,6 +360,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -531,6 +371,7 @@ categories:
       - graves-par 
       - pesco
       - pinaka
+      - proton
       - symbiotic
       - uautomizer
       - ukojak
@@ -566,6 +407,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
@@ -613,6 +455,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -656,6 +499,7 @@ categories:
     verifiers:
       - 2ls
       - bubaak
+      - bubaak-split
       - cbmc
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
@@ -854,12 +698,6 @@ opt_out:
   map2check:
     - ReachSafety
   goblint:
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
-    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - MemSafety
     - Termination
   mopsa:
     - ConcurrencySafety
@@ -887,10 +725,19 @@ opt_out:
     - no-data-race.NoDataRace-Main
 
 opt_in:
+  aise:
+    - unreach-call.ReachSafety-Loops
   brick:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
+  cpv:
+    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
+    - unreach-call.SoftwareSystems-coreutils-ReachSafety
+    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
+    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     # no unreach-call.SoftwareSystems-BusyBox-ReachSafety?
@@ -934,6 +781,8 @@ opt_in:
     - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
+  relay-sv:
+    - no-data-race.NoDataRace-Main
   sv-sanitizers:
     - no-data-race.NoDataRace-Main
     - valid-memsafety.SoftwareSystems-coreutils-MemSafety
@@ -949,6 +798,10 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+  predatorhp:
+    - unreach-call.ReachSafety-Heap
+    - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - valid-memsafety.SoftwareSystems-uthash-MemSafety
   verioover:
     - no-overflow.NoOverflows-Main
 
