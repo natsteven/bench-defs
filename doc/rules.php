@@ -150,7 +150,7 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-  No category is excluded from validation of violation witnesses.
+  The category *NoDataRace* is excluded from validation of violation witnesses.
   The following categories are excluded from validation of correctness witnesses:
   *-Arrays, *-Floats, *-Heap, *MemSafety*, ConcurrencySafety-*, *NoDataRace*, and Termination-*.
 </p>
