@@ -404,12 +404,11 @@ categories:
       - valid-memsafety.SoftwareSystems-coreutils-MemSafety
       - no-overflow.SoftwareSystems-coreutils-NoOverflows
       - unreach-call.SoftwareSystems-BusyBox-ReachSafety
-      - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
       - no-overflow.SoftwareSystems-BusyBox-NoOverflows
       - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
       - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-      - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+      - valid-memsafety.SoftwareSystems-Other-MemSafety
       - unreach-call.SoftwareSystems-uthash-ReachSafety
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
       - no-overflow.SoftwareSystems-uthash-NoOverflows
@@ -601,12 +600,11 @@ categories_process_order:
   - valid-memsafety.SoftwareSystems-coreutils-MemSafety
   - no-overflow.SoftwareSystems-coreutils-NoOverflows
   - unreach-call.SoftwareSystems-BusyBox-ReachSafety
-  - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
@@ -658,12 +656,11 @@ categories_table_order:
   - valid-memsafety.SoftwareSystems-coreutils-MemSafety
   - no-overflow.SoftwareSystems-coreutils-NoOverflows
   - unreach-call.SoftwareSystems-BusyBox-ReachSafety
-  - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+  - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
@@ -800,9 +797,8 @@ opt_in:
   sv-sanitizers:
     - no-data-race.NoDataRace-Main
     - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-    - valid-memsafety.SoftwareSystems-BusyBox-MemSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - valid-memsafety.SoftwareSystems-OpenBSD-MemSafety
+    - valid-memsafety.SoftwareSystems-Other-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - valid-memsafety.ConcurrencySafety-MemSafety
   coveriteam-verifier-algo-selection:

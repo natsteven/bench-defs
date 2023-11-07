@@ -115,10 +115,6 @@
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
 
-  <tasks name="SoftwareSystems-BusyBox-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-  </tasks>
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -160,8 +156,8 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
-  <tasks name="SoftwareSystems-OpenBSD-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+  <tasks name="SoftwareSystems-Other-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-Other-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-uthash-MemSafety">

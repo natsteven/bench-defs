@@ -104,10 +104,6 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_valid-memsafety">
-  <tasks name="SoftwareSystems-BusyBox-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-  </tasks>
   <tasks name="SoftwareSystems-coreutils-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -116,8 +112,8 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
-  <tasks name="SoftwareSystems-OpenBSD-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+  <tasks name="SoftwareSystems-Other-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-Other-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-uthash-MemSafety">
