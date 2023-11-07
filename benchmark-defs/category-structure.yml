@@ -400,14 +400,13 @@ categories:
       - valid-memsafety
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-      - unreach-call.SoftwareSystems-coreutils-ReachSafety
       - valid-memsafety.SoftwareSystems-coreutils-MemSafety
       - no-overflow.SoftwareSystems-coreutils-NoOverflows
-      - unreach-call.SoftwareSystems-BusyBox-ReachSafety
       - no-overflow.SoftwareSystems-BusyBox-NoOverflows
       - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
       - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
       - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+      - unreach-call.SoftwareSystems-Other-ReachSafety
       - valid-memsafety.SoftwareSystems-Other-MemSafety
       - unreach-call.SoftwareSystems-uthash-ReachSafety
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
@@ -596,14 +595,13 @@ categories_process_order:
   - termination.Termination-Other
   - Termination
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-  - unreach-call.SoftwareSystems-coreutils-ReachSafety
   - valid-memsafety.SoftwareSystems-coreutils-MemSafety
   - no-overflow.SoftwareSystems-coreutils-NoOverflows
-  - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
@@ -652,14 +650,13 @@ categories_table_order:
   - termination.Termination-Other
   - SoftwareSystems
   - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-  - unreach-call.SoftwareSystems-coreutils-ReachSafety
   - valid-memsafety.SoftwareSystems-coreutils-MemSafety
   - no-overflow.SoftwareSystems-coreutils-NoOverflows
-  - unreach-call.SoftwareSystems-BusyBox-ReachSafety
   - no-overflow.SoftwareSystems-BusyBox-NoOverflows
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
@@ -744,17 +741,15 @@ opt_in:
     - unreach-call.ReachSafety-Floats
   cpv:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-coreutils-ReachSafety
-    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    # no unreach-call.SoftwareSystems-BusyBox-ReachSafety?
-    - unreach-call.SoftwareSystems-coreutils-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-coreutils-NoOverflows
@@ -803,10 +798,9 @@ opt_in:
     - valid-memsafety.ConcurrencySafety-MemSafety
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-BusyBox-ReachSafety
-    - unreach-call.SoftwareSystems-coreutils-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
+    - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   predatorhp:
     - unreach-call.ReachSafety-Heap
