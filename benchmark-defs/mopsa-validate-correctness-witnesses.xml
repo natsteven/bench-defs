@@ -4,8 +4,6 @@
 
     <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-    <option name="--verify_yaml_witness"></option>
-
     <rundefinition name="SV-COMP24_unreach-call">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
         <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
