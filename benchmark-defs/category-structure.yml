@@ -65,6 +65,7 @@ verifiers:
   - swat
 
 validators:
+  - concurrentwitness2test-validate-violation-witnesses
   - cpachecker-validate-correctness-witnesses
   - cpachecker-validate-violation-witnesses
   - cpa-witness2test-validate-violation-witnesses
@@ -205,6 +206,7 @@ categories:
       - veriabsl
       - verifuzz
     validators:
+      - concurrentwitness2test-violation
       - witnesslint-correctness
       - witnesslint-violation
       - cpachecker-correctness
