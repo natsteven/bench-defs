@@ -11,7 +11,7 @@
   <option name="-benchmark"/>
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
   <option name="-correctness-witness-validation"/>
@@ -68,6 +68,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-Hardness">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Hardness.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
@@ -96,7 +100,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
+<rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
   <option name="-correctness-witness-validation--overflow"/>

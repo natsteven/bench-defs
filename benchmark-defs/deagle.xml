@@ -5,38 +5,29 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="4"/>
 
   <resultfiles>**.graphml</resultfiles>
-  
-  <option name="--graphml-witness">error-witness.graphml</option>
 
-<rundefinition name="SV-COMP23_valid-memsafety">
-  <option name="--no-assertions"/>
-  <option name="--pointer-check"/>
+<rundefinition name="SV-COMP24_valid-memsafety">
   <tasks name="ConcurrencySafety-MemSafety">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-overflow">
-  <option name="--no-assertions"/>
-  <option name="--signed-overflow-check"/>
-  <option name="--unwind">2</option>
+<rundefinition name="SV-COMP24_no-overflow">
   <tasks name="ConcurrencySafety-NoOverflows">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_no-data-race">
-  <option name="--no-assertions"/>
-  <option name="--datarace"/>
+<rundefinition name="SV-COMP24_no-data-race">
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP23_unreach-call">
+<rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
