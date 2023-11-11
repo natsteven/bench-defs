@@ -4,7 +4,7 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-  <resultfiles>**/witness.graphml</resultfiles>
+  <resultfiles>**/witness.{graphml,yml}</resultfiles>
 
   <option name="--metavalWitnessType">correctness_witness</option>
 
