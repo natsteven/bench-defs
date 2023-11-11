@@ -8,7 +8,7 @@
   memlimit="16 GB"
   cpuCores="4">
 
-  <resultfiles>**/*.graphml</resultfiles>
+  <resultfiles>**/witness.{graphml,yml}</resultfiles>
 
   <option name="-portfolio"/>
   <option name="-heap">10000M</option>
