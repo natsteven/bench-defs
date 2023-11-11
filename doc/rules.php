@@ -140,7 +140,9 @@ as a reaction to the community feedback after the first competition
 <h4>Witnesses</h4>
 <p>
   There is a <a href="https://github.com/sosy-lab/sv-witnesses/">fixed exchange format for the witnesses</a>.
-  The witness has to be written to a file, which is given to a witness validator to check validity.
+  The witness has to be written to a file
+  <span style="font-family: monospace;">witness.graphml</span> or <span style="font-family: monospace;">witness.yml</span>,
+  which is given to a witness validator to check validity.
   The result is counted as correct only if the validator successfully checked it.
   (There are currently four witness validators under active development,
   based on CPAchecker, CProver, and Ultimate Automizer.)
