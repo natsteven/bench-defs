@@ -144,8 +144,6 @@ as a reaction to the community feedback after the first competition
   <span style="font-family: monospace;">witness.graphml</span> or <span style="font-family: monospace;">witness.yml</span>,
   which is given to a witness validator to check validity.
   The result is counted as correct only if at least one validator successfully validated it.
-  (There are currently four witness validators under active development,
-  based on CPAchecker, CProver, and Ultimate Automizer.)
   The resource limits for the witness validators are 2 processing units, 7 GB memory, and
   10 % of the verification time (i.e., 90 s) for violation witnesses
   and 100 % (900 s) for correctness witnesses.
