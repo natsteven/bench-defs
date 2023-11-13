@@ -65,6 +65,10 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Hardness.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-Fuzzle">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Fuzzle.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP24_no-overflow">
