@@ -177,6 +177,7 @@ categories:
       - unreach-call.ReachSafety-Combinations
       - unreach-call.ReachSafety-Hardware
       - unreach-call.ReachSafety-Hardness
+      - unreach-call.ReachSafety-Fuzzle
     verifiers:
       - 2ls
       - bubaak
