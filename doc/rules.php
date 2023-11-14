@@ -166,7 +166,11 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-  The definition 'init(main())' gives the initial states of the program by a call of function 'main' (with no parameters).
+  The definition 'init(main())' gives the initial states of the program by a call of function 'main'.
+  If the program defines the function main with parameters (as allowed by the C standard),
+  we assume that the initial values of these parameters satisfy the conditions specified in the C standard.
+</p>
+<p>
   The definition 'LTL(f)' specifies that formula 'f' holds at every initial state of the program.
   The LTL (linear-time temporal logic) operator 'G f' means that 'f' globally holds.
   The proposition 'label(L)' is true if the C label 'L' is reached.
