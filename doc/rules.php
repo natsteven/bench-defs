@@ -499,7 +499,7 @@ as a reaction to the community feedback after the first competition
 <p>
   The competition environment feeds the candidates with parameters when started for a verification run.
   There is one global set of parameters that can be used to tune the verifier to the benchmark programs.
-  Verifiers are forbidden from using the program name or the current category to tune their parameters.
+  Verifiers are forbidden from using the program name, its hash, or the current category to tune their parameters.
   This set of (command-line) parameters have to be defined in the competition contribution paper
   and in the benchmark definition.
   One parameter defines the specification file.
