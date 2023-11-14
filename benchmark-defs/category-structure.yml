@@ -177,6 +177,7 @@ categories:
       - unreach-call.ReachSafety-Combinations
       - unreach-call.ReachSafety-Hardware
       - unreach-call.ReachSafety-Hardness
+      - unreach-call.ReachSafety-Fuzzle
     verifiers:
       - 2ls
       - bubaak
@@ -581,6 +582,7 @@ categories_process_order:
   - unreach-call.ReachSafety-Combinations
   - unreach-call.ReachSafety-Hardware
   - unreach-call.ReachSafety-Hardness
+  - unreach-call.ReachSafety-Fuzzle
   - ReachSafety
   - valid-memsafety.MemSafety-Arrays
   - valid-memsafety.MemSafety-Heap
@@ -636,6 +638,7 @@ categories_table_order:
   - unreach-call.ReachSafety-Combinations
   - unreach-call.ReachSafety-Hardware
   - unreach-call.ReachSafety-Hardness
+  - unreach-call.ReachSafety-Fuzzle
   - MemSafety
   - valid-memsafety.MemSafety-Arrays
   - valid-memsafety.MemSafety-Heap

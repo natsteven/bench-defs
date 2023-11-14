@@ -140,10 +140,12 @@ as a reaction to the community feedback after the first competition
 <h4>Witnesses</h4>
 <p>
   There is a <a href="https://github.com/sosy-lab/sv-witnesses/">fixed exchange format for the witnesses</a>.
-  The witness has to be written to a file, which is given to a witness validator to check validity.
-  The result is counted as correct only if the validator successfully checked it.
-  (There are currently four witness validators under active development,
-  based on CPAchecker, CProver, and Ultimate Automizer.)
+  The witness has to be written to a file
+  <span style="font-family: monospace;">witness.graphml</span> or <span style="font-family: monospace;">witness.yml</span>,
+  which is given to a witness validator to check validity.
+  The result is counted as correct only if at least one validator successfully validated it.
+  Verifiers may output both a GraphML (version 1) and a YAML (version 2.0) witness,
+  in which case it suffices that one of these two witnesses is validated.
   The resource limits for the witness validators are 2 processing units, 7 GB memory, and
   10 % of the verification time (i.e., 90 s) for violation witnesses
   and 100 % (900 s) for correctness witnesses.
@@ -766,7 +768,7 @@ with having the real results of the tool counted towards the meta category, but 
 </p>
 
 <p style="text-align: right; font-size: 70%;">
-  $LastChangedDate:: 2023-10-19 20:02:16 +0200 #$
+  $LastChangedDate:: 2023-11-11 14:38:43 +0100 #$
 </p>
 
 <?php pageFooter(); ?>
