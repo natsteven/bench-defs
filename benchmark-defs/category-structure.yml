@@ -425,6 +425,7 @@ categories:
       - unreach-call
       - no-overflow
       - valid-memsafety
+      - valid-memcleanup
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
       - valid-memsafety.SoftwareSystems-coreutils-MemSafety
@@ -438,6 +439,7 @@ categories:
       - unreach-call.SoftwareSystems-uthash-ReachSafety
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
       - no-overflow.SoftwareSystems-uthash-NoOverflows
+      - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
     verifiers:
       - 2ls
       - bubaak
@@ -649,6 +651,7 @@ categories_process_order:
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - SoftwareSystems
   - FalsificationOverall
   - Overall
@@ -705,6 +708,7 @@ categories_table_order:
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - FalsificationOverall
   - Overall
   - JavaOverall

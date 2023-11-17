@@ -81,6 +81,10 @@
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
   </tasks>
   <tasks name="MemSafety-Juliet">
+  <tasks name="SoftwareSystems-uthash-MemCleanup">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
+  </tasks>
+  <tasks name="MemSafety-Juliet">
     <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
   </tasks>
 
