@@ -111,8 +111,8 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_valid-memcleanup">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
@@ -121,8 +121,8 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -173,8 +173,8 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_no-data-race">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
@@ -183,8 +183,8 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
@@ -215,8 +215,8 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP24_termination">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
   <!-- Opt out
   <tasks name="Termination-BitVectors">
     <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
