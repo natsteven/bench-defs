@@ -426,6 +426,7 @@ categories:
       - no-overflow
       - valid-memsafety
       - valid-memcleanup
+      - termination
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
       - valid-memsafety.SoftwareSystems-coreutils-MemSafety
@@ -440,6 +441,7 @@ categories:
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
       - no-overflow.SoftwareSystems-uthash-NoOverflows
       - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+      - termination.SoftwareSystems-DeviceDriversLinux64-Termination
     verifiers:
       - 2ls
       - bubaak
@@ -652,6 +654,7 @@ categories_process_order:
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - SoftwareSystems
   - FalsificationOverall
   - Overall
@@ -709,6 +712,7 @@ categories_table_order:
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - FalsificationOverall
   - Overall
   - JavaOverall

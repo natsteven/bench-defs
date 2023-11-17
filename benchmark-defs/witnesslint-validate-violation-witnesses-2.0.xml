@@ -224,6 +224,10 @@
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
   <columns>

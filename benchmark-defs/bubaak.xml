@@ -204,6 +204,10 @@
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP24_no-data-race">
