@@ -7,7 +7,7 @@
            memlimit="16 GB"
            cpuCores="4">
 
-  <resultfiles>**/witness.{graphml,yml}</resultfiles>
+  <resultfiles>**/witness.*</resultfiles>
 
   <rundefinition name="SV-COMP20_unreach-call">
     <tasks name="ReachSafety-Arrays">

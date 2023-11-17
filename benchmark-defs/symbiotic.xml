@@ -4,7 +4,7 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-  <resultfiles>**/witness.{graphml,yml}</resultfiles>
+  <resultfiles>**/witness.*</resultfiles>
   
   <option name="--witness">witness.graphml</option>
   <option name="--sv-comp"/>
