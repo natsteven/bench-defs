@@ -64,7 +64,9 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-Other-ReachSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-Other-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-uthash-ReachSafety">

@@ -87,7 +87,9 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-Other-ReachSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-Other-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-ReachSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-uthash-ReachSafety">
@@ -113,7 +115,8 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-Other-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-Other-MemSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="SoftwareSystems-uthash-MemSafety">
@@ -124,6 +127,22 @@
   <tasks name="ConcurrencySafety-MemSafety">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP24_termination">
+  <!-- Required so all SoftwareSystems categories are included, but opted out. -->
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP24_valid-memcleanup">
+  <!-- Required so all SoftwareSystems categories are included, but opted out. -->
+  <tasks name="SoftwareSystems-uthash-MemCleanup">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 </rundefinition>
 

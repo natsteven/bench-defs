@@ -425,6 +425,8 @@ categories:
       - unreach-call
       - no-overflow
       - valid-memsafety
+      - valid-memcleanup
+      - termination
     categories:
       - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
       - valid-memsafety.SoftwareSystems-coreutils-MemSafety
@@ -438,6 +440,8 @@ categories:
       - unreach-call.SoftwareSystems-uthash-ReachSafety
       - valid-memsafety.SoftwareSystems-uthash-MemSafety
       - no-overflow.SoftwareSystems-uthash-NoOverflows
+      - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+      - termination.SoftwareSystems-DeviceDriversLinux64-Termination
     verifiers:
       - 2ls
       - bubaak
@@ -649,6 +653,8 @@ categories_process_order:
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - SoftwareSystems
   - FalsificationOverall
   - Overall
@@ -705,6 +711,8 @@ categories_table_order:
   - unreach-call.SoftwareSystems-uthash-ReachSafety
   - valid-memsafety.SoftwareSystems-uthash-MemSafety
   - no-overflow.SoftwareSystems-uthash-NoOverflows
+  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - FalsificationOverall
   - Overall
   - JavaOverall
@@ -721,6 +729,12 @@ opt_out:
     - no-data-race.NoDataRace-Main
   cpa-lockator:
     - no-data-race.NoDataRace-Main
+  cpa-bam-bnb:
+    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+  cpa-bam-smg:
+    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   divine:
     - no-data-race.NoDataRace-Main
   ebf:
@@ -754,6 +768,7 @@ opt_out:
   mopsa:
     - ConcurrencySafety
     - Termination
+    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   infer:
     # Infer can't handle floats
     - unreach-call.ReachSafety-Floats
@@ -766,6 +781,7 @@ opt_out:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   pinaka:
     - FalsificationOverall
     - Overall
@@ -831,6 +847,8 @@ opt_in:
     - unreach-call.ReachSafety-XCSP
   locksmith:
     - no-data-race.NoDataRace-Main
+  proton:
+    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   relay-sv:
     - no-data-race.NoDataRace-Main
   sv-sanitizers:
@@ -840,6 +858,7 @@ opt_in:
     - valid-memsafety.SoftwareSystems-Other-MemSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - valid-memsafety.ConcurrencySafety-MemSafety
+    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -850,6 +869,7 @@ opt_in:
     - unreach-call.ReachSafety-Heap
     - unreach-call.SoftwareSystems-uthash-ReachSafety
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
+    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   verioover:
     - no-overflow.NoOverflows-Main
 
