@@ -67,7 +67,9 @@ verifiers:
 validators:
   - concurrentwitness2test-validate-violation-witnesses-1.0
   - cpachecker-validate-correctness-witnesses-1.0
+  - cpachecker-validate-correctness-witnesses-2.0
   - cpachecker-validate-violation-witnesses-1.0
+  - cpachecker-validate-violation-witnesses-2.0
   - cpa-witness2test-validate-violation-witnesses-1.0
   - dartagnan-validate-violation-witnesses-1.0
   - fshell-witness2test-validate-violation-witnesses-1.0
@@ -84,7 +86,9 @@ validators:
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-1.0
+  - witnesslint-validate-violation-witnesses-2.0
   - witnesslint-validate-correctness-witnesses-1.0
+  - witnesslint-validate-correctness-witnesses-2.0
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
@@ -209,9 +213,13 @@ categories:
     validators:
       - concurrentwitness2test-violation-1.0
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
@@ -258,8 +266,11 @@ categories:
       - utaipan
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
@@ -313,8 +324,11 @@ categories:
       - utaipan
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - dartagnan-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
@@ -350,9 +364,13 @@ categories:
       - verifuzz
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
@@ -393,8 +411,11 @@ categories:
       - verifuzz
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - goblint-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
@@ -440,9 +461,13 @@ categories:
       - utaipan
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
@@ -488,9 +513,13 @@ categories:
       - utaipan
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - dartagnan-violation-1.0
       - fshell-witness2test-violation-1.0
@@ -534,9 +563,13 @@ categories:
       - utaipan
     validators:
       - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
       - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
       - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
       - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
       - cpa-witness2test-violation-1.0
       - fshell-witness2test-violation-1.0
       - nitwit-violation-1.0
