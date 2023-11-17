@@ -9,8 +9,7 @@
   <option name="-svcomp23-graves"/>
   <option name="-heap">10000M</option>
   <option name="-benchmark"/>
-  <option name="-timelimit">990 s</option>
-  <option name="-setprop">limits.time.cpu::required=990s</option>
+  <option name="-timelimit">900 s</option>
 
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
