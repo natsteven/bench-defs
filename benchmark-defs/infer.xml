@@ -130,6 +130,22 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP24_termination">
+  <!-- Required so all SoftwareSystems categories are included, but opted out. -->
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP24_valid-memcleanup">
+  <!-- Required so all SoftwareSystems categories are included, but opted out. -->
+  <tasks name="SoftwareSystems-uthash-MemCleanup">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 <rundefinition name="SV-COMP24_no-overflow">
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>

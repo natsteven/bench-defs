@@ -109,4 +109,12 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP24_termination">
+  <!-- Required so all SoftwareSystems categories are included, but opted out. -->
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 </benchmark>
