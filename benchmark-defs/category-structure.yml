@@ -65,26 +65,26 @@ verifiers:
   - swat
 
 validators:
-  - concurrentwitness2test-validate-violation-witnesses
-  - cpachecker-validate-correctness-witnesses
-  - cpachecker-validate-violation-witnesses
-  - cpa-witness2test-validate-violation-witnesses
-  - dartagnan-validate-violation-witnesses
-  - fshell-witness2test-validate-violation-witnesses
-  - goblint-validate-correctness-witnesses
-  - gwit-validate-violation-witnesses
-  - jcwit-validate-correctness-witnesses
-  - metaval-validate-correctness-witnesses
-  - metaval-validate-violation-witnesses
-  - mopsa-validate-correctness-witnesses
-  - nitwit-validate-violation-witnesses
-  - symbiotic-witch-validate-violation-witnesses
-  - uautomizer-validate-correctness-witnesses
-  - uautomizer-validate-violation-witnesses
-  - witch-validate-violation-witnesses
-  - wit4java-validate-violation-witnesses
-  - witnesslint-validate-violation-witnesses
-  - witnesslint-validate-correctness-witnesses
+  - concurrentwitness2test-validate-violation-witnesses-1.0
+  - cpachecker-validate-correctness-witnesses-1.0
+  - cpachecker-validate-violation-witnesses-1.0
+  - cpa-witness2test-validate-violation-witnesses-1.0
+  - dartagnan-validate-violation-witnesses-1.0
+  - fshell-witness2test-validate-violation-witnesses-1.0
+  - goblint-validate-correctness-witnesses-2.0
+  - gwit-validate-violation-witnesses-1.0
+  - jcwit-validate-correctness-witnesses-1.0
+  - metaval-validate-correctness-witnesses-1.0
+  - metaval-validate-violation-witnesses-1.0
+  - mopsa-validate-correctness-witnesses-2.0
+  - nitwit-validate-violation-witnesses-1.0
+  - symbiotic-witch-validate-violation-witnesses-1.0
+  - uautomizer-validate-correctness-witnesses-1.0
+  - uautomizer-validate-violation-witnesses-1.0
+  - witch-validate-violation-witnesses-2.0
+  - wit4java-validate-violation-witnesses-1.0
+  - witnesslint-validate-violation-witnesses-1.0
+  - witnesslint-validate-correctness-witnesses-1.0
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
@@ -207,22 +207,22 @@ categories:
       - veriabsl
       - verifuzz
     validators:
-      - concurrentwitness2test-violation
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-correctness
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - fshell-witness2test-violation
-      - goblint-correctness
-      - nitwit-violation
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - mopsa-correctness
-      - symbiotic-witch-violation
-      - witch-violation
+      - concurrentwitness2test-violation-1.0
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-correctness-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - nitwit-violation-1.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
 
   MemSafety:
     properties:
@@ -257,18 +257,18 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - fshell-witness2test-violation
-      - goblint-correctness
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - mopsa-correctness
-      - symbiotic-witch-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
 
   ConcurrencySafety:
     properties:
@@ -312,13 +312,13 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-violation
-      - dartagnan-violation
-      - goblint-correctness
-      - uautomizer-correctness
-      - uautomizer-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-violation-1.0
+      - dartagnan-violation-1.0
+      - goblint-correctness-2.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
 
   NoOverflows:
     properties: no-overflow
@@ -349,20 +349,20 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-correctness
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - fshell-witness2test-violation
-      - goblint-correctness
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - mopsa-correctness
-      - symbiotic-witch-violation
-      - witch-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-correctness-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
 
   Termination:
     properties: termination
@@ -392,12 +392,12 @@ categories:
       - utaipan
       - verifuzz
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-violation
-      - goblint-correctness
-      - uautomizer-violation
-      - metaval-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-violation-1.0
+      - goblint-correctness-2.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
 
   SoftwareSystems:
     properties:
@@ -439,20 +439,20 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-correctness
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - fshell-witness2test-violation
-      - goblint-correctness
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - mopsa-correctness
-      - symbiotic-witch-violation
-      - witch-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-correctness-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
 
   Overall:
     properties:
@@ -487,22 +487,22 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-correctness
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - dartagnan-violation
-      - fshell-witness2test-violation
-      - goblint-correctness
-      - nitwit-violation
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - mopsa-correctness
-      - symbiotic-witch-violation
-      - witch-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-correctness-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - dartagnan-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - nitwit-violation-1.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
 
   FalsificationOverall:
     properties:
@@ -533,19 +533,19 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness
-      - witnesslint-violation
-      - cpachecker-correctness
-      - cpachecker-violation
-      - cpa-witness2test-violation
-      - fshell-witness2test-violation
-      - nitwit-violation
-      - uautomizer-correctness
-      - uautomizer-violation
-      - metaval-violation
-      - metaval-correctness
-      - symbiotic-witch-violation
-      - witch-violation
+      - witnesslint-correctness-1.0
+      - witnesslint-violation-1.0
+      - cpachecker-correctness-1.0
+      - cpachecker-violation-1.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - nitwit-violation-1.0
+      - uautomizer-correctness-1.0
+      - uautomizer-violation-1.0
+      - metaval-violation-1.0
+      - metaval-correctness-1.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
 
   JavaOverall:
     properties:
@@ -563,9 +563,9 @@ categories:
       - spf
       - swat
     validators:
-      - wit4java-violation
-      - gwit-violation
-      - jcwit-correctness
+      - wit4java-violation-1.0
+      - gwit-violation-1.0
+      - jcwit-correctness-1.0
 
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
