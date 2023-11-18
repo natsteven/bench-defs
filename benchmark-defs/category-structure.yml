@@ -335,7 +335,6 @@ categories:
       - dartagnan-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
 
   NoOverflows:
