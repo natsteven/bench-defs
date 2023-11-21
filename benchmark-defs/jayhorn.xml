@@ -6,7 +6,7 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--graphml-witness" > witness.GBphml </option>
+   <option name="--graphml-witness">witness.graphml</option>
 
 <rundefinition name="SV-COMP24_assert_java">
   <tasks name="ReachSafety-Java">
