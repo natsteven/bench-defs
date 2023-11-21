@@ -609,6 +609,17 @@ The submitted system has to meet the following requirements:
   in order to avoid forcing developers to create a new tool for every new concept.
 </p>
 
+<h3>Requirements on Verifier Behavior</h3>
+<p>
+  The verifier should not use identifiers contained in the verification task to fingerprint and identify individual tasks or groups of tasks.
+  It is acceptable to use occurrence of calls to extern functions from standard libraries
+  (for example <code>malloc</code>, <code>pthread_create</code>, arithmetic functions, etc.)
+  to detect which feature a verification tasks uses
+  and change the verifier behavior based on this.
+  The competition organizer is allowed to apply obfuscation to the C code
+  and rename local identifiers (with the exception of extern functions and an allowlist of common identifiers).
+</p>
+
 <h3 id="scores">Evaluation by Scores and Runtime</h3>
 
 <p>
