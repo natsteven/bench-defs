@@ -6,6 +6,7 @@
 
   <option name="--expectCorrectnessWitness"/>
   <option name="--ignoreSelfLoops"/>
+  <option name="--expectedWitnessVersion">1.0</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
