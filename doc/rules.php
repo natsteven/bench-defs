@@ -168,7 +168,7 @@ as a reaction to the community feedback after the first competition
 <p>
   The definition 'init(main())' gives the initial states of the program by a call of function 'main'.
   If the program defines the function main with parameters (as allowed by the C standard),
-  we assume that the initial values of these parameters satisfy the conditions specified in the C standard.
+  we assume that the initial values of these parameters satisfy the conditions specified in the C standard (detailed in Section 5.1.2.2.1, "Program Startup", of the C99 standard).
 </p>
 <p>
   The definition 'LTL(f)' specifies that formula 'f' holds at every initial state of the program.
