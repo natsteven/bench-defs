@@ -867,9 +867,6 @@ opt_in:
     - unreach-call.SoftwareSystems-uthash-ReachSafety
   predatorhp:
     - unreach-call.ReachSafety-Heap
-    - unreach-call.SoftwareSystems-uthash-ReachSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   verioover:
     - no-overflow.NoOverflows-Main
 

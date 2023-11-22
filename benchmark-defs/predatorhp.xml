@@ -6,16 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
   
-  <option name="--witness">error-witness.graphml</option> 
+  <option name="--witness">witness.graphml</option> 
 
 <rundefinition name="SV-COMP24_unreach-call">
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-
-  <tasks name="SoftwareSystems-uthash-ReachSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 </rundefinition>
@@ -23,10 +18,6 @@
 <rundefinition name="SV-COMP24_valid-memcleanup">
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
-  <tasks name="SoftwareSystems-uthash-MemCleanup">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 </rundefinition>
@@ -50,11 +41,6 @@
   </tasks>
   <tasks name="MemSafety-Juliet">
     <includesfile>../sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-  </tasks>
-
-  <tasks name="SoftwareSystems-uthash-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 </rundefinition>
