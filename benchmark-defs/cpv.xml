@@ -5,10 +5,9 @@
   <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--svcomp"/>
   <option name="--no-cache-update"/>
-  <option name="--verifier">AVR</option>
-  <option name="--verifier-version">pdr</option>
-  
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
