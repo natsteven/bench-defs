@@ -82,6 +82,7 @@ validators:
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-1.0
+  - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
@@ -225,6 +226,7 @@ categories:
       - goblint-correctness-2.0
       - nitwit-violation-1.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
@@ -275,6 +277,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
@@ -375,6 +378,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
@@ -476,6 +480,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
@@ -530,6 +535,7 @@ categories:
       - goblint-correctness-2.0
       - nitwit-violation-1.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
@@ -578,6 +584,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - nitwit-violation-1.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
