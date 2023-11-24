@@ -10,6 +10,7 @@
   <option name="--no-cache-update"></option>
   <option name="--all-possible-invariant-locations"></option>
   <option name="--fuzzy-invariant-locations">1</option>
+  <option name="--non-strict"/>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
