@@ -770,8 +770,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   map2check:
     - ReachSafety
-  goblint:
-    - Termination
   mopsa:
     - ConcurrencySafety
     - Termination
