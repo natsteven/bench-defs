@@ -87,10 +87,10 @@ validators:
   - uautomizer-validate-violation-witnesses-1.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
-  - witnesslint-validate-violation-witnesses-1.0
-  - witnesslint-validate-violation-witnesses-2.0
   - witnesslint-validate-correctness-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-2.0
+  - witnesslint-validate-violation-witnesses-1.0
+  - witnesslint-validate-violation-witnesses-2.0
 
 
 # Verifiers participating hors concours are executed and listed in the final results,
