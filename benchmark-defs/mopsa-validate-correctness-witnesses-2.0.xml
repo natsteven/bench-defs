@@ -70,10 +70,10 @@
             <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
 
-        <tasks name="ConcurrencySafety-Main">
-            <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-        </tasks>
+        <!-- <tasks name="ConcurrencySafety-Main">
+             <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+             <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+             </tasks> -->
 
         <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
             <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
@@ -157,10 +157,6 @@
             <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
         </tasks>
 
-        <tasks name="ConcurrencySafety-MemSafety">
-            <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-        </tasks>
     </rundefinition>
 
     <rundefinition name="SV-COMP24_no-overflow">
@@ -189,9 +185,5 @@
             <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
         </tasks>
 
-        <tasks name="ConcurrencySafety-NoOverflows">
-            <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-        </tasks>
     </rundefinition>
 </benchmark>
