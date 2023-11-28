@@ -7,7 +7,7 @@
   <option name="--expectViolationWitness"/>
   <option name="--ignoreSelfLoops"/>
   <option name="--expectedWitnessVersion">2.0</option>
-  <option name="--ignore-faulty-witness"/>
+  <option name="--ignoreFaultyWitness"/>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
@@ -238,13 +238,19 @@
   <columns>
     <column title="witnesslint-witness-type">Witness Type</column>
     <column title="witnesslint-witness-type-match">Witness Type-Match</column>
+    <column title="witnesslint-witness-type-match">Witness Version-Match</column>
     <column title="witnesslint-witness-file">Witness File</column>
+    <column title="witnesslint-witness-hash">Witness Hash</column>
+    <column title="witnesslint-witness-version">Witness Version</column>
+    <column title="witnesslint-lines-of-code">Witness Lines of Code</column>
+    <column title="witnesslint-size-bytes">Witness Size in Bytes</column>
     <column title="witnesslint-producer">Producer</column>
     <column title="witnesslint-creation-time">Creation Time</column>
     <column title="witnesslint-architecture">Architecture</column>
     <column title="witnesslint-program-file">Program File</column>
     <column title="witnesslint-program-hash">Program Hash</column>
     <column title="witnesslint-source-code-language">Source Code Language</column>
+    <column title="witnesslint-specification">Specification</column>
   </columns>
 
 </benchmark>
