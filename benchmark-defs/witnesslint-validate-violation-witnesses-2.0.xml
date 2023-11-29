@@ -238,7 +238,7 @@
   <columns>
     <column title="witnesslint-witness-type">Witness Type</column>
     <column title="witnesslint-witness-type-match">Witness Type-Match</column>
-    <column title="witnesslint-witness-type-match">Witness Version-Match</column>
+    <column title="witnesslint-witness-version-match">Witness Version-Match</column>
     <column title="witnesslint-witness-file">Witness File</column>
     <column title="witnesslint-witness-hash">Witness Hash</column>
     <column title="witnesslint-witness-version">Witness Version</column>
