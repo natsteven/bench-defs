@@ -52,7 +52,6 @@ verifiers:
   - utaipan
   - veriabs
   - veriabsl
-  - verifuzz
   - verioover
   - coastal
   - gdart
@@ -148,6 +147,7 @@ not_participating:
   - smack
   - symdivine
   - ulcseq
+  - verifuzz
   - viap
   - yogar-cbmc
   - yogar-cbmc-parallel
