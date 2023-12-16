@@ -107,6 +107,7 @@ hors_concours:
   - esbmc-incr
   - gazer-theta
   - infer
+  - pesco
   - jayhorn
   - jdart
   - lazycseq
