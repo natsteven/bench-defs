@@ -95,6 +95,7 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but cannot win any medals
 hors_concours:
+  - cbmc
   - coastal
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
@@ -106,12 +107,19 @@ hors_concours:
   - divine
   - esbmc-incr
   - gazer-theta
-  - infer
-  - pesco
+  - gdart-llvm
+  - graves
+  - graves-par
+  - java-ranger
   - jdart
   - lazycseq
+  - lf-checker
+  - locksmith
+  - pesco
+  - pichecker
   - pinaka
   - spf
+  - verioover
 
 
 not_participating:
