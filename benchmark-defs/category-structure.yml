@@ -100,7 +100,7 @@ hors_concours:
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
   - cpa-bam-smg
-  - cpalockator
+  - cpa-lockator
   - crux
   - cseq
   - divine
