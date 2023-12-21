@@ -219,7 +219,6 @@ categories:
       - utaipan
       - veriabs
       - veriabsl
-      - verifuzz
     validators:
       - concurrentwitness2test-violation-1.0
       - witnesslint-correctness-1.0
@@ -375,7 +374,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
     validators:
       - witnesslint-correctness-1.0
       - witnesslint-correctness-2.0
@@ -424,7 +422,6 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-      - verifuzz
     validators:
       - witnesslint-correctness-1.0
       - witnesslint-correctness-2.0
@@ -772,8 +769,6 @@ opt_out:
     - no-overflow.ConcurrencySafety-NoOverflows
     - valid-memsafety.ConcurrencySafety-MemSafety
   symbiotic:
-    - no-data-race.NoDataRace-Main
-  verifuzz:
     - no-data-race.NoDataRace-Main
   pesco:
     - MemSafety
