@@ -758,8 +758,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   esbmc-incr:
     - no-data-race.NoDataRace-Main
-  esbmc-kind:
-    - no-data-race.NoDataRace-Main
   lazycseq:
     - no-data-race.NoDataRace-Main
   lf-checker:
