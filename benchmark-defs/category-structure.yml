@@ -42,7 +42,6 @@ verifiers:
   - pinaka
   - predatorhp
   - proton
-  - relay-sv
   - sv-sanitizers
   - symbiotic
   - theta
@@ -118,6 +117,7 @@ hors_concours:
   - pesco
   - pichecker
   - pinaka
+  - relay-sv
   - spf
   - verioover
 
