@@ -117,7 +117,6 @@ hors_concours:
   - pesco
   - pichecker
   - pinaka
-  - relay-sv
   - spf
   - verioover
 
@@ -150,6 +149,7 @@ not_participating:
   - lazycseqswarm
   - map2check
   - mucseq
+  - relay-sv
   - sesl
   - skink
   - smack
