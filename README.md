@@ -16,7 +16,7 @@ The components are described in the following table.
 | Verification Tasks     | https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks          | add, fix, review tasks   |
 | Benchmark Definitions  | https://gitlab.com/sosy-lab/sv-comp/bench-defs                  | define their parameters  |
 | Tool-Info Modules      | https://github.com/sosy-lab/benchexec/tree/main/benchexec/tools | define inferface         |
-| Verifier Archives      | https://gitlab.com/sosy-lab/sv-comp/archives-2023               | submit to participate    |
+| Verifiers              | https://gitlab.com/sosy-lab/benchmarking/fm-tools               | submit to participate    |
 | Benchmarking Framework | https://github.com/sosy-lab/benchexec                           | (use to test their tool) |
 | Competition Scripts    | https://gitlab.com/sosy-lab/benchmarking/competition-scripts    | (use to reproduce)       |
 | Witness Format         | https://github.com/sosy-lab/sv-witnesses                        | (know)                   |
@@ -25,8 +25,9 @@ The components are described in the following table.
 
 Archives published at Zenodo:
 
-| Year | Verification Tasks                      | Tool Archives                           | Competition Results                     | Verification Witnesses                  | BenchExec                               |
+| Year | Verification Tasks                      | Tools                                   | Competition Results                     | Verification Witnesses                  | BenchExec                               |
 | ---  | ---                                     | ---                                     | ---                                     | ---                                     | ---                                     |
+| 2024 | https://doi.org/10.5281/zenodo.10669723 | https://doi.org/10.5281/zenodo.10669735 | https://doi.org/10.5281/zenodo.10669731  | https://doi.org/10.5281/zenodo.10669737 | https://doi.org/10.5281/zenodo.10671136 |
 | 2023 | https://doi.org/10.5281/zenodo.7627783  | https://doi.org/10.5281/zenodo.7627829  | https://doi.org/10.5281/zenodo.7627787  | https://doi.org/10.5281/zenodo.7627791  | https://doi.org/10.5281/zenodo.7612021  |
 | 2022 | https://doi.org/10.5281/zenodo.5831003  |                                         | https://doi.org/10.5281/zenodo.5831008  | https://doi.org/10.5281/zenodo.5838498  | https://doi.org/10.5281/zenodo.5720267  |
 | 2021 | https://doi.org/10.5281/zenodo.4459126  |                                         | https://doi.org/10.5281/zenodo.4458215  | https://doi.org/10.5281/zenodo.4459196  | https://doi.org/10.5281/zenodo.4317433  |
