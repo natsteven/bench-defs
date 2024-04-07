@@ -1,15 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="graves" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+<benchmark tool="graves" displayName="Graves-CPA" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
-
-  <option name="-svcomp23-graves"/>
-  <option name="-heap">10000M</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900 s</option>
 
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -103,23 +98,23 @@
     </tasks>
   </rundefinition>
 
-<rundefinition name="SV-COMP24_no-data-race">
-  <tasks name="NoDataRace-Main">
-    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
-  </tasks>
-</rundefinition>
+  <rundefinition name="SV-COMP24_no-data-race">
+    <tasks name="NoDataRace-Main">
+      <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memcleanup">
-  <tasks name="MemSafety-MemCleanup">
-    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
-  <tasks name="SoftwareSystems-uthash-MemCleanup">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-  </tasks>
-</rundefinition>
+  <rundefinition name="SV-COMP24_valid-memcleanup">
+    <tasks name="MemSafety-MemCleanup">
+      <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-MemCleanup">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 
   <rundefinition name="SV-COMP24_valid-memsafety">
     <tasks name="MemSafety-Arrays">

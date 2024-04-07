@@ -1,69 +1,69 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="frama-c-sv" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+<benchmark tool="frama-c-sv" displayName="Frama-C-SV" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
-  <option name="--reach-as-overflow"/>
-  <option name="--allow-unsafe"/> <!-- allow working with tmp dir without sticky bit -->
 
-<rundefinition name="SV-COMP24_unreach-call">
-  <tasks name="ReachSafety-Arrays">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-BitVectors">
-    <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-ECA">
-    <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Loops">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-ProductLines">
-    <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Recursive">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Combinations">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Hardware">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-</rundefinition>
+  <rundefinition name="SV-COMP24_unreach-call">
+    <tasks name="ReachSafety-Arrays">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-BitVectors">
+      <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-ECA">
+      <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Loops">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-ProductLines">
+      <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Recursive">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Combinations">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Hardware">
+      <includesfile>../sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    </rundefinition>
 
-<rundefinition name="SV-COMP24_no-overflow">
-  <tasks name="NoOverflows-Main">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
-  <tasks name="NoOverflows-Juliet">
-    <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
+  <rundefinition name="SV-COMP24_no-overflow">
+    <tasks name="NoOverflows-Main">
+      <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="NoOverflows-Juliet">
+      <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
 
-  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
-  <tasks name="SoftwareSystems-coreutils-NoOverflows">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
-  <tasks name="SoftwareSystems-uthash-NoOverflows">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-  </tasks>
-</rundefinition>
-</benchmark>
+    <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-coreutils-NoOverflows">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-NoOverflows.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-NoOverflows">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+
+    </rundefinition>
+
+  </benchmark>
