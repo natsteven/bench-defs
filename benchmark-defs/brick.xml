@@ -8,15 +8,15 @@
 
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
-      <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
     <tasks name="ReachSafety-BitVectors">
-      <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
     <tasks name="ReachSafety-Floats">
-      <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
     </rundefinition>
