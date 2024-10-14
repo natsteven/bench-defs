@@ -113,7 +113,7 @@
 
   <tasks name="NoDataRace-Main">
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-data-race.prp</propertyfile expectedverdict="true">
+    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
   </tasks>
 </rundefinition>
 
