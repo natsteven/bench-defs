@@ -6,6 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--conf">conf/svcomp24.json</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

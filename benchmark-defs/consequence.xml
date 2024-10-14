@@ -7,7 +7,7 @@
 
 <rundefinition name="SV-COMP23">
   <tasks name="ConcurrencySafety-Main">
-    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 </rundefinition>

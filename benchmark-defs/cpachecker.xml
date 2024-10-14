@@ -6,6 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="-svcomp24"/>
+  <option name="-heap">10000M</option>
+  <option name="-benchmark"/>
+  <option name="-timelimit">900 s</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -255,4 +260,9 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+  <columns>
+    <column title="UsedConfig">Used algorithm property</column>
+  </columns>
+
 </benchmark>

@@ -6,6 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="verifier-parallel-portfolio.cvt"></option>
+  <option name="--cache-dir">cache</option>
+  <option name="--no-cache-update"></option>
+  <option name="--use-python-processes"></option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

@@ -6,6 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <!-- No options, the starter script handles everything. The only possible option would be the output flag, without that the witnesses and test harnesses are generated into the working directory -->
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>

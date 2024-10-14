@@ -6,6 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="-svcomp21-bam-bnb"/>
+  <option name="-disable-java-assertions"/>
+  <option name="-heap">10000m</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>

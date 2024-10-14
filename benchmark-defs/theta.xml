@@ -6,6 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--witness-only"/>
+  <option name="--portfolio">COMPLEX</option>
+  <option name="--loglevel">RESULT</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

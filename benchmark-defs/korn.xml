@@ -6,6 +6,23 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="-witness">witness.graphml</option>
+  <option name="-smt2">clauses.smt2</option>
+
+  <option name="-model"/>
+  <option name="-write"/>
+
+  <option name="-random">10</option>
+
+  <option name="-timeout">20</option>
+  <option name="-golem"/>
+
+  <option name="-timeout">20</option>
+  <option name="-z3"/>
+
+  <option name="-timeout">900</option>
+  <option name="-eld:portfolio"/>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-ControlFlow">
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>

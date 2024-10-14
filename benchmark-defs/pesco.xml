@@ -6,6 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--memory">10000M</option>
+  <option name="--timelimit">900</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

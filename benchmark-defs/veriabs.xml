@@ -6,6 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name = "--sv22" />
+
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

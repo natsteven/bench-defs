@@ -6,6 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--graphml-witness">witness.graphml</option>
+
   <rundefinition name="SV-COMP24_termination">
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>

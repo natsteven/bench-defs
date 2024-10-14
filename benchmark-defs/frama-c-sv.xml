@@ -6,6 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="--reach-as-overflow"/>
+  <option name="--allow-unsafe"/> <!-- allow working with tmp dir without sticky bit -->
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

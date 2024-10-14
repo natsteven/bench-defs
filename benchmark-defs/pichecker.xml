@@ -6,6 +6,12 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="-svcomp23-pichecker"/>
+  <option name="-heap">14000M</option>
+  <option name="-stack">2048k</option>
+  <option name="-benchmark"/>
+  <option name="-timelimit">900 s</option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ConcurrencySafety-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>

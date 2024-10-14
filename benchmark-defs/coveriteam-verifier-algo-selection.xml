@@ -6,6 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+  <option name="verifier-algo-selection.cvt"></option>
+  <option name="--cache-dir">cache</option>
+  <option name="--no-cache-update"></option>
+
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
