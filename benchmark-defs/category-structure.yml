@@ -37,6 +37,7 @@ verifiers:
   - lf-checker
   - locksmith
   - mopsa
+  - nacpa
   - pesco
   - pichecker
   - pinaka
@@ -114,6 +115,7 @@ hors_concours:
   - lazycseq
   - lf-checker
   - locksmith
+  - nacpa
   - pesco
   - pichecker
   - pinaka
