@@ -260,4 +260,8 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+  <columns>
+    <column title="UsedConfig">Used algorithm property</column>
+  </columns>
 </benchmark>

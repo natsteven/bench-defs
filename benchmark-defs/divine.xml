@@ -6,8 +6,6 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-s">kinduction</option>
-
   <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

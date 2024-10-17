@@ -42,6 +42,9 @@
       <includesfile>../sv-benchmarks/c/XCSP.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    </rundefinition>
+  </rundefinition>
 
-  </benchmark>
+  <columns>
+    <column title="backend">backend:</column>
+  </columns>
+</benchmark>
