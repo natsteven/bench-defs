@@ -6,7 +6,7 @@
 
 <resultfiles>**/witness.*</resultfiles>
 
-<rundefinition name="SV-COMP24_unreach-call">
+<rundefinition name="SV-COMP25_unreach-call">
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
