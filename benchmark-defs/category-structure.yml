@@ -32,6 +32,7 @@ verifiers:
   - goblint
   - graves
   - graves-par
+  - hornix
   - infer
   - korn
   - lazycseq
@@ -884,6 +885,9 @@ opt_in:
     - unreach-call.ReachSafety-Combinations
   gdart-llvm:
     - unreach-call.ReachSafety-BitVectors
+  hornix:
+    - unreach-call.ReachSafety-Loops
+    - unreach-call.ReachSafety-Recursive  
   korn:
     - unreach-call.ReachSafety-ControlFlow
     - unreach-call.ReachSafety-Loops
