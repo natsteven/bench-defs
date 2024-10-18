@@ -7,15 +7,15 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <option name="--metavalWitnessType">correctness_witness</option>
+  <option name="--metavalVerifierBackend">cpachecker</option>
+  <option name="--svcomp24"/>
+  <option name="--heap">5000M</option>
+  <option name="--benchmark"/>
+  <option name="--timelimit">900s</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="--metavalVerifierBackend">cpachecker</option>
-  <option name="-svcomp22"/>
-  <option name="-heap">5000M</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900s</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -106,9 +106,6 @@
 <rundefinition name="SV-COMP24_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="--metavalVerifierBackend">symbiotic</option>
-  <option name="--sv-comp"/>
-  <option name="--witness">witness.yml</option>
 
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
@@ -123,9 +120,6 @@
 <rundefinition name="SV-COMP24_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="--metavalVerifierBackend">symbiotic</option>
-  <option name="--sv-comp"/>
-  <option name="--witness">witness.yml</option>
 
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -174,8 +168,6 @@
 <rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="--metavalVerifierBackend">ultimateautomizer</option>
-  <option name="--full-output"/>
 
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>

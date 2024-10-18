@@ -7,15 +7,15 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <option name="--metavalWitnessType">violation_witness</option>
+  <option name="--metavalVerifierBackend">cpachecker</option>
+  <option name="--svcomp24"/>
+  <option name="--heap">10000M</option>
+  <option name="--benchmark"/>
+  <option name="--timelimit">900s</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  <option name="--metavalVerifierBackend">cpachecker</option>
-  <option name="-svcomp22"/>
-  <option name="-heap">5000M</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900s</option>
 
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -109,9 +109,6 @@
 <rundefinition name="SV-COMP24_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  <option name="--metavalVerifierBackend">symbiotic</option>
-  <option name="--sv-comp"/>
-  <option name="--witness">witness.graphml</option>
 
     <tasks name="MemSafety-MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
@@ -130,9 +127,6 @@
 <rundefinition name="SV-COMP24_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  <option name="--metavalVerifierBackend">symbiotic</option>
-  <option name="--sv-comp"/>
-  <option name="--witness">witness.graphml</option>
 
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -185,8 +179,6 @@
 <rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  <option name="--metavalVerifierBackend">ultimateautomizer</option>
-  <option name="--full-output"/>
 
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -231,8 +223,6 @@
 <rundefinition name="SV-COMP24_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  <option name="--metavalVerifierBackend">ultimateautomizer</option>
-  <option name="--full-output"/>
 
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
