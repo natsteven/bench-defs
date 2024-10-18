@@ -6,15 +6,16 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-setprop">witness.checkProgramHash=false</option>
-  <option name="-heap">5000m</option>
-  <option name="-benchmark"/>
-  <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
+  <option name="--heap">5000m</option>
+  <option name="--benchmark"/>
+
+  <option name="--option">witness.checkProgramHash=false</option>
+  <option name="--option">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="-correctness-witness-validation"/>
+  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <option name="--correctness-witness-validation"/>
 
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -107,8 +108,8 @@
 
 <rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-  <option name="-correctness-witness-validation--overflow"/>
+  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <option name="--correctness-witness-validation--overflow"/>
 
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
