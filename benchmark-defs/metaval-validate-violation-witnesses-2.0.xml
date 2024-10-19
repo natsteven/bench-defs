@@ -11,7 +11,7 @@
   <option name="--svcomp24"/>
   <option name="--heap">5000M</option>
   <option name="--benchmark"/>
-  <option name="--timelimit">900s</option>
+  <option name="--timelimit">90s</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
