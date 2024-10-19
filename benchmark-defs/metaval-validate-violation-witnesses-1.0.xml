@@ -9,7 +9,7 @@
   <option name="--metavalWitnessType">violation_witness</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
   <option name="--svcomp24"/>
-  <option name="--heap">10000M</option>
+  <option name="--heap">5000M</option>
   <option name="--benchmark"/>
   <option name="--timelimit">900s</option>
 
