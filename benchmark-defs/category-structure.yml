@@ -370,6 +370,7 @@ categories:
       - mopsa
       - pesco
       - pinaka
+      - sv-sanitizers
       - symbiotic
       - uautomizer
       - ukojak
@@ -870,6 +871,10 @@ opt_in:
     - valid-memsafety.SoftwareSystems-uthash-MemSafety
     - valid-memsafety.ConcurrencySafety-MemSafety
     - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+    - no-overflow.SoftwareSystems-coreutils-NoOverflows
+    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
+    - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - no-overflow.ConcurrencySafety-NoOverflows
   coveriteam-verifier-algo-selection:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety

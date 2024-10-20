@@ -70,4 +70,33 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP24_no-overflow">
+  <tasks name="NoOverflows-Main">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+  <tasks name="NoOverflows-Juliet">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+
+  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-coreutils-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-uthash-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+
+  <tasks name="ConcurrencySafety-NoOverflows">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 </benchmark>
