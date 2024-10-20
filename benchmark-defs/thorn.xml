@@ -88,6 +88,10 @@
     <includesfile>../sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
+  <tasks name="ConcurrencySafety-NoOverflows">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP24_termination">
@@ -106,6 +110,21 @@
   <tasks name="Termination-Other">
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+
+<rundefinition name="SV-COMP24_no-data-race">
+  <tasks name="NoDataRace-Main">
+    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP24_valid-memsafety">
+  <tasks name="ConcurrencySafety-MemSafety">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 </rundefinition>
 
