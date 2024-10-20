@@ -45,6 +45,7 @@ verifiers:
   - sv-sanitizers
   - symbiotic
   - theta
+  - thorn
   - uautomizer
   - ugemcutter
   - ukojak
