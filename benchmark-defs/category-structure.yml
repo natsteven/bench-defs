@@ -47,6 +47,7 @@ verifiers:
   - sv-sanitizers
   - symbiotic
   - theta
+  - thorn
   - uautomizer
   - ugemcutter
   - ukojak
@@ -216,6 +217,7 @@ categories:
       - pinaka
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -336,6 +338,7 @@ categories:
       - pichecker
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ugemcutter
       - ukojak
@@ -380,6 +383,7 @@ categories:
       - sv-sanitizers
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -431,6 +435,7 @@ categories:
       - proton
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -811,6 +816,10 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
+  thorn:
+    - no-data-race.NoDataRace-Main
+    - no-overflow.ConcurrencySafety-NoOverflows
+    - valid-memsafety.ConcurrencySafety-MemSafety
   graves:
     - MemSafety
     - ConcurrencySafety
