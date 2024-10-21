@@ -310,10 +310,10 @@ as a reaction to the community feedback after the first competition
       </td>
       <td>
         It can never happen that the resulting type of an operation
-        is a signed integer type but the resulting value is not in the
+        is a signed-integer type but the resulting value is not in the
         range of values that are representable by that type.
-        Specifically, signed integer overflow which is undefined behavior according to the C11 standard.
-        (Hence, conversions to signed integer types do not violate this property.)
+        Specifically, signed-integer overflow is undefined behavior according to the C11 standard.
+        (Hence, conversions to signed-integer types do not violate this property.)
       </td>
     </tr>
   </tbody>
