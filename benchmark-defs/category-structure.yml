@@ -42,8 +42,8 @@ verifiers:
   - pinaka
   - predatorhp
   - proton
-  - svf-svc
   - sv-sanitizers
+  - svf-svc
   - symbiotic
   - theta
   - uautomizer
