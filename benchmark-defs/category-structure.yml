@@ -213,6 +213,7 @@ categories:
       - mopsa
       - pesco
       - pinaka
+      - svf-svc
       - symbiotic
       - theta
       - uautomizer
@@ -272,6 +273,7 @@ categories:
       - pesco
       - predatorhp
       - sv-sanitizers
+      - svf-svc
       - symbiotic
       - uautomizer
       - ukojak
@@ -371,6 +373,7 @@ categories:
       - mopsa
       - pesco
       - pinaka
+      - svf-svc
       - symbiotic
       - uautomizer
       - ukojak
@@ -473,6 +476,7 @@ categories:
       - infer
       - mopsa
       - pesco
+      - svf-svc
       - symbiotic
       - uautomizer
       - ukojak
