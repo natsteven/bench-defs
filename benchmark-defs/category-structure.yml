@@ -37,11 +37,13 @@ verifiers:
   - lf-checker
   - locksmith
   - mopsa
+  - nacpa
   - pesco
   - pichecker
   - pinaka
   - predatorhp
   - proton
+  - racerf
   - sv-sanitizers
   - symbiotic
   - theta
@@ -91,7 +93,6 @@ validators:
   - witnesslint-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-2.0
 
-
 # Verifiers participating hors concours are executed and listed in the final results,
 # but cannot win any medals
 hors_concours:
@@ -115,12 +116,12 @@ hors_concours:
   - lazycseq
   - lf-checker
   - locksmith
+  - nacpa
   - pesco
   - pichecker
   - pinaka
   - spf
   - verioover
-
 
 not_participating:
   - aprove
@@ -211,6 +212,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - symbiotic
@@ -270,10 +272,12 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - predatorhp
       - sv-sanitizers
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -329,6 +333,7 @@ categories:
       - infer
       - lazycseq
       - lf-checker
+      - nacpa
       - pesco
       - pichecker
       - symbiotic
@@ -364,6 +369,7 @@ categories:
       - cpachecker
       - crux
       - divine
+      - emergentheta
       - esbmc-kind
       - frama-c-sv
       - goblint
@@ -371,11 +377,13 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - sv-sanitizers
       - symbiotic
       - thorn
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -416,15 +424,18 @@ categories:
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
-      - graves-par 
+      - graves-par
+      - nacpa
       - pesco
       - pinaka
       - proton
       - symbiotic
       - thorn
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -477,6 +488,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -531,6 +543,7 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -582,6 +595,7 @@ categories:
       - esbmc-kind
       - graves
       - graves-par
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -870,6 +884,8 @@ opt_in:
     - no-data-race.NoDataRace-Main
   proton:
     - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  racerf:
+    - no-data-race.NoDataRace-Main
   relay-sv:
     - no-data-race.NoDataRace-Main
   sv-sanitizers:
@@ -894,4 +910,3 @@ opt_in:
     - unreach-call.ReachSafety-Heap
   verioover:
     - no-overflow.NoOverflows-Main
-
