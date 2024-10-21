@@ -275,6 +275,7 @@ categories:
       - sv-sanitizers
       - svf-svc
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -364,6 +365,7 @@ categories:
       - cpachecker
       - crux
       - divine
+      - emergentheta
       - esbmc-kind
       - frama-c-sv
       - goblint
@@ -375,6 +377,7 @@ categories:
       - pinaka
       - sv-sanitizers
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
@@ -415,6 +418,7 @@ categories:
       - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -423,6 +427,7 @@ categories:
       - pinaka
       - proton
       - symbiotic
+      - theta
       - uautomizer
       - ukojak
       - utaipan
