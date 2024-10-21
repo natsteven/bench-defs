@@ -91,7 +91,6 @@ validators:
   - witnesslint-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-2.0
 
-
 # Verifiers participating hors concours are executed and listed in the final results,
 # but cannot win any medals
 hors_concours:
@@ -121,7 +120,6 @@ hors_concours:
   - pinaka
   - spf
   - verioover
-
 
 not_participating:
   - aprove
@@ -212,6 +210,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - symbiotic
@@ -270,6 +269,7 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - predatorhp
       - sv-sanitizers
@@ -330,6 +330,7 @@ categories:
       - infer
       - lazycseq
       - lf-checker
+      - nacpa
       - pesco
       - pichecker
       - symbiotic
@@ -372,6 +373,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - sv-sanitizers
@@ -421,7 +423,8 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - graves-par 
+      - graves-par
+      - nacpa
       - pesco
       - pinaka
       - proton
@@ -479,6 +482,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -533,6 +537,7 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -584,6 +589,7 @@ categories:
       - esbmc-kind
       - graves
       - graves-par
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -892,4 +898,3 @@ opt_in:
     - unreach-call.ReachSafety-Heap
   verioover:
     - no-overflow.NoOverflows-Main
-
