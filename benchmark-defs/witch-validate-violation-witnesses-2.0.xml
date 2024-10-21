@@ -101,6 +101,40 @@
     </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP24_valid-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+
+    <tasks name="MemSafety-Arrays">
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Heap">
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-LinkedLists">
+      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Other">
+      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Juliet">
+      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
+      <!-- Exclude Juliet_test unsafe memsafety tasks without subproperty from competition. Originally excluded in commit 024bdad652 by @versokova -->
+      <exclude>../sv-benchmarks/c/Juliet_Test/*_bad.yml</exclude>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+</rundefinition>
+
 <rundefinition name="SV-COMP24_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
