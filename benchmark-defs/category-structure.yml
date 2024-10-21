@@ -43,6 +43,7 @@ verifiers:
   - pinaka
   - predatorhp
   - proton
+  - racerf
   - sv-sanitizers
   - symbiotic
   - theta
@@ -874,6 +875,8 @@ opt_in:
     - no-data-race.NoDataRace-Main
   proton:
     - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  racerf:
+    - no-data-race.NoDataRace-Main
   relay-sv:
     - no-data-race.NoDataRace-Main
   sv-sanitizers:
