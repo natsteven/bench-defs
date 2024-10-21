@@ -1,34 +1,43 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="proton" timelimit="15 min" memlimit="15 GB" cpuCores="4">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="proton" displayName="PROTON" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
-  
+
   <option name="--graphml-witness">witness.graphml</option>
 
-<rundefinition name="SV-COMP24_termination">
-  <tasks name="Termination-BitVectors">
-    <includesfile>../sv-benchmarks/c/Termination-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="Termination-MainControlFlow">
-    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="Termination-MainHeap">
-    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="Termination-Other">
-    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-  </tasks>
-</rundefinition>
-
+  <rundefinition name="SV-COMP24_termination">
+    <tasks name="Termination-BitVectors">
+      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainControlFlow">
+      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainHeap">
+      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-Other">
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 </benchmark>
