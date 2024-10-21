@@ -26,4 +26,4 @@ check-definitions:
 
 check-category-structure:
   script:
-    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml
+    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/
