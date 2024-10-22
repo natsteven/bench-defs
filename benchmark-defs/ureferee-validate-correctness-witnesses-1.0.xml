@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="symbiotic-witch" displayName="Witch" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
+<benchmark tool="ultimatereferee" timelimit="15 min" hardtimelimit="16 min" memlimit="7 GB" cpuCores="2">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-  <resultfiles>**/witness.*</resultfiles>
+  <resultfiles></resultfiles>
 
-  <option name="--sv-comp"/>
+  <option name="--full-output"/>
+  <option name="--witness-type">correctness_witness</option>
 
 <rundefinition name="SV-COMP24_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -101,9 +102,23 @@
     </tasks>
 </rundefinition>
 
+<rundefinition name="SV-COMP24_valid-memcleanup">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+  <tasks name="SoftwareSystems-uthash-MemCleanup">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 <rundefinition name="SV-COMP24_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -133,11 +148,34 @@
       <exclude>../sv-benchmarks/c/Juliet_Test/*_bad.yml</exclude>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
+
+    <tasks name="SoftwareSystems-coreutils-MemSafety">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-MemSafety">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-Other-MemSafety">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-MemSafety">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+
+    <tasks name="ConcurrencySafety-MemSafety">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP24_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -177,7 +215,11 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-</rundefinition>
 
+    <tasks name="ConcurrencySafety-NoOverflows">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+</rundefinition>
 
 </benchmark>

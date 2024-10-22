@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="symbiotic-witch" displayName="Witch" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
+<benchmark tool="theta" displayName="Thorn" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--sv-comp"/>
-
-<rundefinition name="SV-COMP24_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-
+  <option name="--svcomp"/>
+  <option name="--portfolio">HORN</option>
+  <option name="--loglevel">RESULT</option>
+  
+  <rundefinition name="SV-COMP24_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -76,69 +75,14 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
+    <tasks name="ConcurrencySafety-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <excludesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large.set</excludesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-    <tasks name="SoftwareSystems-DeviceDriversLinux64Large-ReachSafety">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-    <tasks name="SoftwareSystems-Other-ReachSafety">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-    <tasks name="SoftwareSystems-uthash-ReachSafety">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-</rundefinition>
+  </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
-    <tasks name="MemSafety-Arrays">
-      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="MemSafety-Heap">
-      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="MemSafety-LinkedLists">
-      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="MemSafety-Other">
-      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="MemSafety-Juliet">
-      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <!-- Exclude Juliet_test unsafe memsafety tasks without subproperty from competition. Originally excluded in commit 024bdad652 by @versokova -->
-      <exclude>../sv-benchmarks/c/Juliet_Test/*_bad.yml</exclude>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP24_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness-check">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-
+  <rundefinition name="SV-COMP24_no-overflow">
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -165,19 +109,54 @@
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 
-    <tasks name="SoftwareSystems-BusyBox-NoOverflows">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
+    <tasks name="ConcurrencySafety-NoOverflows">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-coreutils-NoOverflows">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-    <tasks name="SoftwareSystems-uthash-NoOverflows">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-</rundefinition>
+  </rundefinition>
 
+
+  <rundefinition name="SV-COMP24_termination">
+    <tasks name="Termination-BitVectors">
+      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainControlFlow">
+      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainHeap">
+      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-Other">
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_no-data-race">
+    <tasks name="NoDataRace-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_valid-memsafety">
+    <tasks name="ConcurrencySafety-MemSafety">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 
 </benchmark>

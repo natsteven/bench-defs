@@ -9,6 +9,7 @@ verifiers:
   - bubaak
   - bubaak-split
   - cbmc
+  - cooperace
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
@@ -37,15 +38,18 @@ verifiers:
   - lf-checker
   - locksmith
   - mopsa
+  - nacpa
   - pesco
   - pichecker
   - pinaka
   - predatorhp
   - proton
+  - racerf
   - sv-sanitizers
   - svf-svc
   - symbiotic
   - theta
+  - thorn
   - uautomizer
   - ugemcutter
   - ukojak
@@ -91,12 +95,12 @@ validators:
   - witnesslint-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-2.0
 
-
 # Verifiers participating hors concours are executed and listed in the final results,
 # but cannot win any medals
 hors_concours:
   - cbmc
   - coastal
+  - cooperace
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
@@ -115,12 +119,12 @@ hors_concours:
   - lazycseq
   - lf-checker
   - locksmith
+  - nacpa
   - pesco
   - pichecker
   - pinaka
   - spf
   - verioover
-
 
 not_participating:
   - aprove
@@ -211,11 +215,13 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - svf-svc
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -270,6 +276,7 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - predatorhp
       - sv-sanitizers
@@ -331,10 +338,12 @@ categories:
       - infer
       - lazycseq
       - lf-checker
+      - nacpa
       - pesco
       - pichecker
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ugemcutter
       - ukojak
@@ -373,12 +382,14 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - pinaka
       - sv-sanitizers
       - svf-svc
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -423,12 +434,14 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - graves-par 
+      - graves-par
+      - nacpa
       - pesco
       - pinaka
       - proton
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -481,6 +494,7 @@ categories:
       - graves-par
       - infer
       - mopsa
+      - nacpa
       - pesco
       - svf-svc
       - symbiotic
@@ -536,6 +550,7 @@ categories:
       - graves
       - graves-par
       - mopsa
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -587,6 +602,7 @@ categories:
       - esbmc-kind
       - graves
       - graves-par
+      - nacpa
       - pesco
       - symbiotic
       - uautomizer
@@ -807,6 +823,10 @@ opt_out:
   pinaka:
     - FalsificationOverall
     - Overall
+  thorn:
+    - no-data-race.NoDataRace-Main
+    - no-overflow.ConcurrencySafety-NoOverflows
+    - valid-memsafety.ConcurrencySafety-MemSafety
   graves:
     - MemSafety
     - ConcurrencySafety
@@ -821,6 +841,8 @@ opt_in:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
+  cooperace:
+    - no-data-race.NoDataRace-Main
   cpv:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -871,6 +893,8 @@ opt_in:
     - no-data-race.NoDataRace-Main
   proton:
     - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  racerf:
+    - no-data-race.NoDataRace-Main
   relay-sv:
     - no-data-race.NoDataRace-Main
   sv-sanitizers:
@@ -895,4 +919,3 @@ opt_in:
     - unreach-call.ReachSafety-Heap
   verioover:
     - no-overflow.NoOverflows-Main
-
