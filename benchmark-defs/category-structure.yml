@@ -9,6 +9,7 @@ verifiers:
   - bubaak
   - bubaak-split
   - cbmc
+  - cooperace
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
@@ -98,6 +99,7 @@ validators:
 hors_concours:
   - cbmc
   - coastal
+  - cooperace
   - coveriteam-verifier-algo-selection
   - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
@@ -834,6 +836,8 @@ opt_in:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
+  cooperace:
+    - no-data-race.NoDataRace-Main
   cpv:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
