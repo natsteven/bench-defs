@@ -249,6 +249,7 @@ as a reaction to the community feedback after the first competition
             block is also tracked.
           </li>
         </ol>  
+        In particular, a leaked memory block is not tracked. Hence, a program with a memory leak does not satisfy this property. 
       </td>
     </tr>
   </tbody>
