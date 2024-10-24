@@ -490,7 +490,7 @@ as a reaction to the community feedback after the first competition
 
 <p>
   Each verification run will be started on a machine with
-  a GNU/Linux operating system (x86_64-linux, Ubuntu 22.04);
+  a GNU/Linux operating system (x86_64-linux, the latest LTS release of Ubuntu);
   there are three resource limits for each verification run:
   a memory limit of 15 GB (14.6 GiB) of RAM,
   a runtime limit of 15 min of CPU time,
