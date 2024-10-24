@@ -885,10 +885,14 @@ opt_in:
   gdart-llvm:
     - unreach-call.ReachSafety-BitVectors
   korn:
+    - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-ControlFlow
+    - unreach-call.ReachSafety-ECA
     - unreach-call.ReachSafety-Loops
     - unreach-call.ReachSafety-Recursive
+    - unreach-call.ReachSafety-Sequentialized
     - unreach-call.ReachSafety-XCSP
+    - unreach-call.ReachSafety-Fuzzle
   locksmith:
     - no-data-race.NoDataRace-Main
   proton:
