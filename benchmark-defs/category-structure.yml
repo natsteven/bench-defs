@@ -339,6 +339,7 @@ categories:
       - infer
       - lazycseq
       - lf-checker
+      - mopsa
       - nacpa
       - pesco
       - pichecker
@@ -436,6 +437,7 @@ categories:
       - goblint
       - graves
       - graves-par
+      - mopsa
       - nacpa
       - pesco
       - pinaka
@@ -804,10 +806,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   map2check:
     - ReachSafety
-  mopsa:
-    - ConcurrencySafety
-    - Termination
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   infer:
     # Infer can't handle floats
     - unreach-call.ReachSafety-Floats
