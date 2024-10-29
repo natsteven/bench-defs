@@ -470,7 +470,7 @@ as a reaction to the community feedback after the first competition
 <p>
   <strong>__VERIFIER_atomic: </strong>
   These functions are deprecated, but still used in existing tasks.
-  Please consider using native C feature to model atomicity (e.g., atomic types, atomic loads / stores, mutexes, ...) instead.<br>
+  Please consider using standard C features from <tt>stdatomic.h</tt> and <tt>pthread.h</tt> to model atomicity (e.g., atomic types, atomic loads / stores, mutexes, ...).<br>
   For modeling an atomic execution of a sequence of statements in a multi-threaded run-time environment,
   those statements can be placed between two function calls <tt>__VERIFIER_atomic_begin()</tt> and <tt>__VERIFIER_atomic_end()</tt>
   or those statements can be placed in a function whose name matches <tt>__VERIFIER_atomic_</tt>.
