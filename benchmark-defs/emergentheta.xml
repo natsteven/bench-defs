@@ -11,7 +11,7 @@
   <option name="--loglevel">RESULT</option>
   
 
-  <rundefinition name="SV-COMP24_unreach-call">
+  <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -77,7 +77,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_no-overflow">
+  <rundefinition name="SV-COMP25_no-overflow">
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -105,7 +105,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_termination">
+  <rundefinition name="SV-COMP25_termination">
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

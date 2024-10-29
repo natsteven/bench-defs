@@ -11,7 +11,7 @@
   <option name="-benchmark"/>
   <option name="-timelimit">900 s</option>
 
-<rundefinition name="SV-COMP24_unreach-call_undef-func">
+<rundefinition name="SV-COMP25_unreach-call_undef-func">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -106,7 +106,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_prop-memsafety_undef-func">
+<rundefinition name="SV-COMP25_prop-memsafety_undef-func">
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
@@ -160,7 +160,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_prop-nooverflow_undef-func">
+<rundefinition name="SV-COMP25_prop-nooverflow_undef-func">
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -206,7 +206,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_termination_undef-func">
+<rundefinition name="SV-COMP25_termination_undef-func">
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

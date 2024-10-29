@@ -8,7 +8,7 @@
 
   <option name="--backend">framac-wp</option>
 
-<rundefinition name="SV-COMP24_unreach-call">
+<rundefinition name="SV-COMP25_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -101,7 +101,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_no-overflow">
+<rundefinition name="SV-COMP25_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 

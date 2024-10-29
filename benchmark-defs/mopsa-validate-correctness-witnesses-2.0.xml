@@ -4,7 +4,7 @@
 
     <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-    <rundefinition name="SV-COMP24_unreach-call">
+    <rundefinition name="SV-COMP25_unreach-call">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
         <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -97,7 +97,7 @@
     </tasks>
     </rundefinition>
 
-    <rundefinition name="SV-COMP24_valid-memcleanup">
+    <rundefinition name="SV-COMP25_valid-memcleanup">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
         <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -115,7 +115,7 @@
     </tasks>
     </rundefinition>
 
-    <rundefinition name="SV-COMP24_valid-memsafety">
+    <rundefinition name="SV-COMP25_valid-memsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
         <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -168,7 +168,7 @@
 
     </rundefinition>
 
-    <rundefinition name="SV-COMP24_no-overflow">
+    <rundefinition name="SV-COMP25_no-overflow">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
         <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
