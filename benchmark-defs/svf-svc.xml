@@ -4,7 +4,7 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
-<rundefinition name="SV-COMP24_unreach-call">
+<rundefinition name="SV-COMP25_unreach-call">
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -95,7 +95,7 @@
   </tasks>
 </rundefinition>
 
-  <rundefinition name="SV-COMP24_valid-memcleanup">
+  <rundefinition name="SV-COMP25_valid-memcleanup">
     <tasks name="MemSafety-MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
@@ -111,7 +111,7 @@
   </rundefinition>
 
 
-<rundefinition name="SV-COMP24_valid-memsafety">
+<rundefinition name="SV-COMP25_valid-memsafety">
 
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -163,7 +163,7 @@
 </rundefinition>
 
 
-<rundefinition name="SV-COMP24_no-overflow">
+<rundefinition name="SV-COMP25_no-overflow">
   <tasks name="NoOverflows-Main">
     <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
     <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -205,7 +205,7 @@
 
 </rundefinition>
 
-<rundefinition name="SV-COMP24_termination">
+<rundefinition name="SV-COMP25_termination">
   <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
