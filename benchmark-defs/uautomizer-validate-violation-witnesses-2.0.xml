@@ -109,7 +109,7 @@
 
 <rundefinition name="SV-COMP24_no-data-race">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="NoDataRace-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
