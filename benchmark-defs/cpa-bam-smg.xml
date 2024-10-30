@@ -16,7 +16,7 @@
   <option name="-setprop">counterexample.export.compressWitness=false</option>
   <option name="-setprop">cpa.arg.compressWitness=false</option>
 
-  <rundefinition name="SV-COMP24_unreach-call">
+  <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -42,7 +42,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_valid-memcleanup">
+  <rundefinition name="SV-COMP25_valid-memcleanup">
     <tasks name="MemSafety-MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
@@ -57,7 +57,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_valid-memsafety">
+  <rundefinition name="SV-COMP25_valid-memsafety">
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
@@ -107,7 +107,7 @@
 
     </rundefinition>
 
-  <rundefinition name="SV-COMP24_no-overflow">
+  <rundefinition name="SV-COMP25_no-overflow">
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -123,7 +123,7 @@
 
     </rundefinition>
 
-  <rundefinition name="SV-COMP24_termination">
+  <rundefinition name="SV-COMP25_termination">
     <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

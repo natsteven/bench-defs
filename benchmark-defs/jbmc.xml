@@ -8,7 +8,7 @@
 
   <option name="--graphml-witness">witness.graphml</option>
 
-<rundefinition name="SV-COMP24_assert_java">
+<rundefinition name="SV-COMP25_assert_java">
   <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
     <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>

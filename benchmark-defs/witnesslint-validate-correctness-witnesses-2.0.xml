@@ -9,7 +9,7 @@
   <option name="--expectedWitnessVersion">2.0</option>
   <option name="--ignoreFaultyWitness"/>
 
-<rundefinition name="SV-COMP24_unreach-call">
+<rundefinition name="SV-COMP25_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -107,7 +107,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_no-data-race">
+<rundefinition name="SV-COMP25_no-data-race">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -117,7 +117,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memcleanup">
+<rundefinition name="SV-COMP25_valid-memcleanup">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -135,7 +135,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memsafety">
+<rundefinition name="SV-COMP25_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -192,7 +192,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_no-overflow">
+<rundefinition name="SV-COMP25_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -241,7 +241,7 @@
     </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_termination">
+<rundefinition name="SV-COMP25_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
