@@ -89,6 +89,9 @@ validators:
   - uautomizer-validate-correctness-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
+  - uautomizer-validate-violation-witnesses-2.0
+  - ureferee-validate-correctness-witnesses-1.0
+  - ureferee-validate-correctness-witnesses-2.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-1.0
@@ -246,6 +249,9 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - mopsa-correctness-2.0
@@ -360,7 +366,9 @@ categories:
       - dartagnan-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
 
   NoOverflows:
     properties: no-overflow
@@ -411,6 +419,7 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - mopsa-correctness-2.0
@@ -520,6 +529,9 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - mopsa-correctness-2.0
@@ -576,6 +588,9 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - mopsa-correctness-2.0
@@ -626,6 +641,9 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - symbiotic-witch-violation-1.0
