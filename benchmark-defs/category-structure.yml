@@ -89,6 +89,9 @@ validators:
   - uautomizer-validate-correctness-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
+  - uautomizer-validate-violation-witnesses-2.0
+  - ureferee-validate-correctness-witnesses-1.0
+  - ureferee-validate-correctness-witnesses-2.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-1.0
