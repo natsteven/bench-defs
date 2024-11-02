@@ -420,8 +420,6 @@ categories:
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-correctness-1.0
       - mopsa-correctness-2.0
