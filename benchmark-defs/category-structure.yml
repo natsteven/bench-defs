@@ -490,6 +490,7 @@ categories:
       - no-overflow.SoftwareSystems-uthash-NoOverflows
       - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
       - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+      - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
     verifiers:
       - 2ls
       - bubaak
@@ -713,6 +714,7 @@ categories_process_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
@@ -771,6 +773,7 @@ categories_table_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
@@ -866,6 +869,7 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -875,6 +879,7 @@ opt_in:
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   frama-c-sv:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
@@ -939,6 +944,7 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   predatorhp:
     - unreach-call.ReachSafety-Heap
   verioover:
