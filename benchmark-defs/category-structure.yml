@@ -81,8 +81,12 @@ validators:
   - gwit-validate-violation-witnesses-1.0
   - jcwit-validate-correctness-witnesses-1.0
   - liv-validate-correctness-witnesses-1.0
+  - liv-validate-correctness-witnesses-2.0
   - metaval-validate-correctness-witnesses-1.0
+  - metaval-validate-correctness-witnesses-2.0
   - metaval-validate-violation-witnesses-1.0
+  - metaval-validate-violation-witnesses-2.0
+  - metaval++-validate-correctness-witnesses-2.0
   - mopsa-validate-correctness-witnesses-2.0
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
@@ -245,6 +249,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - nitwit-violation-1.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
@@ -253,7 +258,10 @@ categories:
       - ureferee-correctness-1.0
       - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -304,11 +312,14 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
 
@@ -416,12 +427,15 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - uautomizer-violation-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -467,6 +481,7 @@ categories:
       - goblint-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
 
   SoftwareSystems:
     properties:
@@ -527,6 +542,7 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
@@ -534,7 +550,10 @@ categories:
       - ureferee-correctness-1.0
       - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -593,7 +612,9 @@ categories:
       - ureferee-correctness-1.0
       - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -646,6 +667,7 @@ categories:
       - ureferee-correctness-1.0
       - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
