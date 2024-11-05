@@ -261,4 +261,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+{extension}
 </benchmark>

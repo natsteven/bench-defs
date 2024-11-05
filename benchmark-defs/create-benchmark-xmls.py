@@ -123,6 +123,11 @@ def parse_cli(argv):
         "--xml-template", required=True, help="XML template file to use"
     )
     parser.add_argument(
+        "--extension-directory",
+        default=None,
+        help="Directory to consider for template extensions",
+    )
+    parser.add_argument(
         "--category-structure", required=True, help="Category structure to use"
     )
     parser.add_argument("--output", required=True, help="Output folder")
@@ -142,7 +147,21 @@ def parse_cli(argv):
 
     if not os.path.exists(args.xml_template):
         raise ValueError(f"File {args.xml_template} does not exist")
+    xml_template_file = args.xml_template
     args.xml_template = open(args.xml_template).read()
+
+    if args.extension_directory is not None and not os.path.exists(
+        args.extension_directory
+    ):
+        raise ValueError(f"Directory {args.extension_directory} does not exist")
+    elif args.extension_directory is None:
+        args.extension_directory = os.path.join(
+            os.path.dirname(xml_template_file), "..", "extensions"
+        )
+        print(
+            f"No extension directory given, using default directory: {args.extension_directory}",
+            file=sys.stderr,
+        )
 
     if not os.path.exists(args.category_structure):
         raise ValueError(f"File {args.category_structure} does not exist")
@@ -185,6 +204,18 @@ def _get_toolinfo_options(
         f'  <option name="{option}" />' for option in options_as_sequence
     ]
     return "\n".join(options_as_xml_sequence)
+
+
+def _get_tool_xml_extension(tool_name: str, extension_dir: str) -> str:
+    """
+    Look in extension_dir for a file named {tool_name}.ext and return its contents.
+
+    :return: The contents of the extension file, or an empty string if the file does not exist.
+    """
+    extension_file = os.path.join(extension_dir, f"{tool_name}.ext")
+    if not os.path.exists(extension_file):
+        return ""
+    return open(extension_file).read()
 
 
 def get_category_name_as_in_xml(category_name_as_in_category_structure: str) -> str:
@@ -248,10 +279,14 @@ def handle_verifier_data(tool_name, data, cli_args):
     benchexec_toolinfo_options = _get_toolinfo_options(
         data, competition=RELEVANT_COMPETITION, track="Verification"
     )
+    extension = _get_tool_xml_extension(
+        tool_name, extension_dir=cli_args.extension_directory
+    )
     xml_with_all_categories = cli_args.xml_template.format(
         toolinfo_name=toolinfo_name,
         name=display_name,
         benchexec_toolinfo_options=benchexec_toolinfo_options,
+        extension=extension,
     )
 
     xml_with_only_opt_ins = purge_categories(
