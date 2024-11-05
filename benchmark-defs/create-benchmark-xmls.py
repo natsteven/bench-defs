@@ -12,7 +12,7 @@ FM_TOOLS_BENCHEXEC_TOOLINFO_MODULE = "benchexec_toolinfo_module"
 FM_TOOLS_INPUT_LANGUAGE = "input_languages"
 FM_TOOLS_PARTICIPATION = "competition_participations"
 XML_DOCTYPE_DECLARATION = """<?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 """
 
 
