@@ -6,6 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
+{benchexec_toolinfo_options}
+
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>

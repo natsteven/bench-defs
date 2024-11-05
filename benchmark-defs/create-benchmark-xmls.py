@@ -3,6 +3,7 @@
 import argparse
 import os
 import sys
+from pathlib import Path
 import yaml
 
 from xml.etree import ElementTree as ET
@@ -11,6 +12,10 @@ RELEVANT_COMPETITION = "SV-COMP 2024"
 FM_TOOLS_BENCHEXEC_TOOLINFO_MODULE = "benchexec_toolinfo_module"
 FM_TOOLS_INPUT_LANGUAGE = "input_languages"
 FM_TOOLS_PARTICIPATION = "competition_participations"
+FM_TOOLS_PARTICIPATION_TOOL_VERSION = "tool_version"
+FM_TOOLS_VERSIONS = "versions"
+FM_TOOLS_VERSION_NAME = "version"
+FM_TOOLS_VERSION_BENCHEXEC_TOOLINFO_OPTIONS = "benchexec_toolinfo_options"
 XML_DOCTYPE_DECLARATION = """<?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 """
@@ -32,15 +37,67 @@ def parse_xml_with_comments(xml_string):
     return ET.fromstring(xml_string, parser=parser)
 
 
-def participates_as_c_verifier(tool_file):
+def _parse_tool_data(tool_data: str | Path | dict) -> dict:
+    if isinstance(tool_data, (str, Path)):
+        return yaml.safe_load(open(tool_data))
+    return tool_data
+
+
+def get_version_info(tool_data: str | Path | dict, version: str) -> dict:
+    """
+    Return the info for a given tool version.
+
+    :param tool_data: The tool's fm-tools data (YAML file or parsed dict).
+    :param version: The version of interest (for example "2.3.1")
+    :return: The version info for the given version, or None if the tool does not
+             have a version with the given version string.
+    """
+    tool_data = _parse_tool_data(tool_data)
+    return next(
+        (
+            v
+            for v in tool_data[FM_TOOLS_VERSIONS]
+            if v[FM_TOOLS_VERSION_NAME] == version
+        ),
+        None,
+    )
+
+
+def get_participation_info(
+    tool_data: str | Path | dict, *, competition, track
+) -> dict | None:
+    """
+    Return the participation info for a tool in a given competition and track.
+
+    :param tool_data: The tool's fm-tools data (YAML file or parsed dict).
+    :param competition: The competition of interest (for example "SV-COMP 2024").
+    :param track: The track of interest (for example "Verification" or "Validation of
+                  Correctness Witnesses 1.0").
+    :return: The participation info for the tool in the given competition and track,
+             or None if the tool does not participate in the given combination
+             of competition and track.
+    """
+    tool_data = _parse_tool_data(tool_data)
     try:
-        tool_data = yaml.safe_load(open(tool_file))
-        return "C" in tool_data[FM_TOOLS_INPUT_LANGUAGE] and any(
-            p["competition"] == RELEVANT_COMPETITION and p["track"] == "Verification"
-            for p in tool_data[FM_TOOLS_PARTICIPATION]
+        return next(
+            (
+                p
+                for p in tool_data[FM_TOOLS_PARTICIPATION]
+                if p["competition"] == competition and p["track"] == track
+            ),
+            None,
         )
-    except:
-        return False
+    except KeyError:
+        # Missing key in tool-data
+        return None
+
+
+def participates_as_c_verifier(tool_file) -> bool:
+    return bool(
+        get_participation_info(
+            tool_file, competition=RELEVANT_COMPETITION, track="Verification"
+        )
+    )
 
 
 def get_c_verifiers(data_dir: str) -> dict:
@@ -112,6 +169,24 @@ def _get_toolinfo_name(data: dict) -> str:
     return toolinfo_name
 
 
+def _get_toolinfo_options(
+    data: str | Path | dict, *, competition: str, track: str
+) -> str:
+    participation_info = get_participation_info(
+        data, competition=competition, track=track
+    )
+    tool_version = participation_info[FM_TOOLS_PARTICIPATION_TOOL_VERSION]
+    version_info = get_version_info(data, version=tool_version)
+    options_as_sequence = version_info[FM_TOOLS_VERSION_BENCHEXEC_TOOLINFO_OPTIONS]
+    # The order of options must stay as in FM-tools data. We can not differentiate
+    # between a positional argument and a command-line flag, so we need to preserve
+    # the order of the options as given in the tool's fm-tools data.
+    options_as_xml_sequence = [
+        f'  <option name="{option}" />' for option in options_as_sequence
+    ]
+    return "\n".join(options_as_xml_sequence)
+
+
 def get_category_name_as_in_xml(category_name_as_in_category_structure: str) -> str:
     try:
         return category_name_as_in_category_structure.split(".")[1]
@@ -170,8 +245,13 @@ def purge_categories(xml_str, tool_name, category_structure) -> str:
 def handle_verifier_data(tool_name, data, cli_args):
     display_name = data["name"]
     toolinfo_name = _get_toolinfo_name(data)
+    benchexec_toolinfo_options = _get_toolinfo_options(
+        data, competition=RELEVANT_COMPETITION, track="Verification"
+    )
     xml_with_all_categories = cli_args.xml_template.format(
-        toolinfo_name=toolinfo_name, name=display_name
+        toolinfo_name=toolinfo_name,
+        name=display_name,
+        benchexec_toolinfo_options=benchexec_toolinfo_options,
     )
 
     xml_with_only_opt_ins = purge_categories(
