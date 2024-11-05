@@ -6,10 +6,12 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--svcomp"/>
-  <option name="--portfolio">HORN</option>
-  <option name="--loglevel">RESULT</option>
-  
+  <option name="--svcomp" />
+  <option name="--portfolio" />
+  <option name="HORN" />
+  <option name="--loglevel" />
+  <option name="RESULT" />
+
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -79,8 +81,22 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
+
+    </rundefinition>
+
+  <rundefinition name="SV-COMP25_no-data-race">
+    <tasks name="NoDataRace-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
   </rundefinition>
 
+  <rundefinition name="SV-COMP25_valid-memsafety">
+    <tasks name="ConcurrencySafety-MemSafety">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 
   <rundefinition name="SV-COMP25_no-overflow">
     <tasks name="NoOverflows-Main">
@@ -115,7 +131,6 @@
     </tasks>
   </rundefinition>
 
-
   <rundefinition name="SV-COMP25_termination">
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
@@ -143,20 +158,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-  </rundefinition>
+    </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-data-race">
-    <tasks name="NoDataRace-Main">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
-    </tasks>
-  </rundefinition>
-
-  <rundefinition name="SV-COMP25_valid-memsafety">
-    <tasks name="ConcurrencySafety-MemSafety">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-  </rundefinition>
 
 </benchmark>

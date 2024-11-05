@@ -6,9 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness-only" />
-  <option name="--backend" />
-  <option name="IMC_THEN_KIND" />
+  <option name="--svcomp" />
+  <option name="--portfolio" />
+  <option name="EMERGENT" />
   <option name="--loglevel" />
   <option name="RESULT" />
 

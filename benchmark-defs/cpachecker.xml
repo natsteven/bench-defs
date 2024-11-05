@@ -6,11 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-svcomp24" />
-  <option name="-heap" />
+  <option name="--svcomp24" />
+  <option name="--heap" />
   <option name="10000M" />
-  <option name="-benchmark" />
-  <option name="-timelimit" />
+  <option name="--benchmark" />
+  <option name="--timelimit" />
   <option name="900 s" />
 
   <rundefinition name="SV-COMP25_unreach-call">

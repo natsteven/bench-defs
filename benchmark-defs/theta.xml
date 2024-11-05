@@ -6,9 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness-only" />
+  <option name="--svcomp" />
   <option name="--portfolio" />
-  <option name="COMPLEX" />
+  <option name="STABLE" />
   <option name="--loglevel" />
   <option name="RESULT" />
 

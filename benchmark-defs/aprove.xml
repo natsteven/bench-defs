@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="aprove" timelimit="15 min" memlimit="15 GB" cpuCores="4">
+<benchmark tool="aprove" displayName="AProVE (KoAT + LoAT)" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
+
+
 
   <rundefinition name="SV-COMP25_termination">
     <tasks name="Termination-BitVectors">
@@ -33,6 +35,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-  </rundefinition>
+    </rundefinition>
+
 
 </benchmark>
