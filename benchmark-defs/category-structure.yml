@@ -5,6 +5,7 @@ year: 2025
 verifiers:
   - 2ls
   - aise
+  - aprove
   - brick
   - bubaak
   - bubaak-split
@@ -135,7 +136,6 @@ hors_concours:
   - verioover
 
 not_participating:
-  - aprove
   - blast
   - cbmc-path
   - ceagle
@@ -449,6 +449,7 @@ categories:
       - termination.Termination-Other
     verifiers:
       - 2ls
+      - aprove
       - bubaak
       - bubaak-split
       - cbmc
