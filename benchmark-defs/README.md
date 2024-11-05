@@ -12,6 +12,8 @@ The files are automatically generated from:
 Example execution:
 ```
 python3 ../scripts/test/create-benchdefs.py \
+    --competition "SV-COMP 2025" \
+    --track "Verification" \
     --xml-template-directory reference/ \
     --category-structure category-structure.yml \
     --fm-data ../fm-tools/data/ \
