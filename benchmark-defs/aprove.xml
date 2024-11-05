@@ -33,10 +33,6 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    </tasks>
   </rundefinition>
 
 </benchmark>
