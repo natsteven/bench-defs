@@ -92,7 +92,7 @@ def get_participation_info(
         return None
 
 
-def participates_as_c_verifier(tool_file) -> bool:
+def participates_as_verifier(tool_file) -> bool:
     return bool(
         get_participation_info(
             tool_file, competition=RELEVANT_COMPETITION, track="Verification"
@@ -104,12 +104,16 @@ def get_c_verifiers(data_dir: str) -> dict:
     return {
         get_tool_name(fil): os.path.join(data_dir, fil)
         for fil in os.listdir(data_dir)
-        if participates_as_c_verifier(os.path.join(data_dir, fil))
+        if participates_as_verifier(os.path.join(data_dir, fil))
     }
 
 
 def get_tool_name(filename: str) -> str:
     return filename.split(".yml")[0].split("/")[-1]
+
+
+def is_verification_track(track: str) -> bool:
+    return track == "Verification"
 
 
 def parse_cli(argv):
@@ -120,7 +124,9 @@ def parse_cli(argv):
         "--fm-data", required=True, help="fm-tools data file or directory"
     )
     parser.add_argument(
-        "--xml-template", required=True, help="XML template file to use"
+        "--xml-template-directory",
+        required=True,
+        help="Directory to consider for XML templates",
     )
     parser.add_argument(
         "--extension-directory",
@@ -145,10 +151,8 @@ def parse_cli(argv):
         for tool_name, data_file in args.fm_data.items()
     }
 
-    if not os.path.exists(args.xml_template):
-        raise ValueError(f"File {args.xml_template} does not exist")
-    xml_template_file = args.xml_template
-    args.xml_template = open(args.xml_template).read()
+    if not os.path.exists(args.xml_template_directory):
+        raise ValueError(f"Directory {args.xml_template_directory} does not exist")
 
     if args.extension_directory is not None and not os.path.exists(
         args.extension_directory
@@ -156,7 +160,7 @@ def parse_cli(argv):
         raise ValueError(f"Directory {args.extension_directory} does not exist")
     elif args.extension_directory is None:
         args.extension_directory = os.path.join(
-            os.path.dirname(xml_template_file), "..", "extensions"
+            args.xml_template_directory, "..", "extensions"
         )
         print(
             f"No extension directory given, using default directory: {args.extension_directory}",
@@ -218,6 +222,31 @@ def _get_tool_xml_extension(tool_name: str, extension_dir: str) -> str:
     return open(extension_file).read()
 
 
+def _get_xml_template(data: dict, xml_template_dir: str, track: str) -> str:
+    """
+    Return the XML template for a tool. Placeholders for the tool's data
+    are written in the returned template as {placeholder_name}.
+
+    :param data: The tool's fm-tools data.
+    :param xml_template_dir: The directory containing the XML templates.
+    :param track: The track for which the XML template should be used (for example "Verification").
+    :return: The XML template for the tool.
+    """
+    tool_languages = data[FM_TOOLS_INPUT_LANGUAGE]
+    assert (
+        len(tool_languages) == 1
+    ), "Currently, we assume that every tool works for a single input language, only"
+    tool_language = tool_languages[0]
+
+    if is_verification_track(track):
+        template_file = os.path.join(
+            xml_template_dir, f"reference-verifier-{tool_language}.xml"
+        )
+    else:
+        raise ValueError(f"Unhandled track: {track}")
+    return open(template_file).read()
+
+
 def get_category_name_as_in_xml(category_name_as_in_category_structure: str) -> str:
     try:
         return category_name_as_in_category_structure.split(".")[1]
@@ -273,16 +302,17 @@ def purge_categories(xml_str, tool_name, category_structure) -> str:
     return XML_DOCTYPE_DECLARATION + new_xml
 
 
-def handle_verifier_data(tool_name, data, cli_args):
+def handle_verifier_data(tool_name, data, cli_args, track="Verification"):
     display_name = data["name"]
     toolinfo_name = _get_toolinfo_name(data)
     benchexec_toolinfo_options = _get_toolinfo_options(
-        data, competition=RELEVANT_COMPETITION, track="Verification"
+        data, competition=RELEVANT_COMPETITION, track=track
     )
     extension = _get_tool_xml_extension(
         tool_name, extension_dir=cli_args.extension_directory
     )
-    xml_with_all_categories = cli_args.xml_template.format(
+    xml_template = _get_xml_template(data, cli_args.xml_template_directory, track=track)
+    xml_with_all_categories = xml_template.format(
         toolinfo_name=toolinfo_name,
         name=display_name,
         benchexec_toolinfo_options=benchexec_toolinfo_options,
@@ -305,7 +335,7 @@ def main(argv=None):
     data = cli_args.fm_data
 
     for name, single_verifier in data.items():
-        handle_verifier_data(name, single_verifier, cli_args)
+        handle_verifier_data(name, single_verifier, cli_args, track="Verification")
 
 
 if __name__ == "__main__":

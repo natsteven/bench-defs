@@ -12,7 +12,7 @@ The files are automatically generated from:
 Example execution:
 ```
 python3 ./create-benchmark-xmls.py \
-    --xml-template reference/reference-verifier-C.xml \
+    --xml-template-directory reference/ \
     --category-structure category-structure.yml \
     --fm-data ../fm-tools/data/ \
     --output .
