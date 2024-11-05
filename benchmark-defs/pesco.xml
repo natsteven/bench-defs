@@ -6,8 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--memory">10000M</option>
-  <option name="--timelimit">900</option>
+  <option name="--memory" />
+  <option name="10000M" />
+  <option name="--timelimit" />
+  <option name="900" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -262,4 +264,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

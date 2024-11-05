@@ -6,7 +6,7 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--full-output"/>
+  <option name="--full-output" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -261,4 +261,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

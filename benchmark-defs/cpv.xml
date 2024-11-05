@@ -6,8 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--svcomp"/>
-  <option name="--no-cache-update"/>
+  <option name="--svcomp" />
+  <option name="--no-cache-update" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">

@@ -6,9 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-svcomp21-bam-bnb"/>
-  <option name="-disable-java-assertions"/>
-  <option name="-heap">10000m</option>
+  <option name="-svcomp21-bam-bnb" />
+  <option name="-disable-java-assertions" />
+  <option name="-heap" />
+  <option name="10000m" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
@@ -90,4 +91,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>
