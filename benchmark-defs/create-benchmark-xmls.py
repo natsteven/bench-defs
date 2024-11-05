@@ -102,10 +102,14 @@ def parse_cli(argv):
 def _get_toolinfo_name(data: dict) -> str:
     module = data[FM_TOOLS_BENCHEXEC_TOOLINFO_MODULE]
     if module.startswith("benchexec.tools."):
-        return module[len("benchexec.tools.") :]
-    if module.startswith("http") and module.endswith(".py"):
-        return module.split("/")[-1].split(".py")[0]
-    return module
+        toolinfo_name = module[len("benchexec.tools.") :]
+    elif module.startswith("http"):
+        toolinfo_name = module.split("/")[-1]
+    else:
+        toolinfo_name = module
+    if toolinfo_name.endswith(".py"):
+        return toolinfo_name.split(".py")[0]
+    return toolinfo_name
 
 
 def get_category_name_as_in_xml(category_name_as_in_category_structure: str) -> str:
