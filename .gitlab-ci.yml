@@ -27,3 +27,9 @@ check-definitions:
 check-category-structure:
   script:
     - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/
+
+check-benchdefs-consistency:
+  script:
+    - echo "The benchmark definitions in this repository should match the ones we auto-generate based on FM-Tools data. If they do not, the definitions, FM-Tools data, or generation script must be adjusted."
+    - ./scripts/test/create-benchdefs.py --competition 'SV-COMP 2025' --track 'Verification' --xml-template-directory benchmark-defs/reference/ --category-structure benchmark-defs/category-structure.yml --fm-data fm-tools/data --output benchmark-defs/
+    - git diff --exit-code benchmark-defs/
