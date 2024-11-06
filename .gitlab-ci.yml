@@ -14,7 +14,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: none
   GIT_STRATEGY: fetch
   GIT_DEPTH: 50
-  REQUIRED_SUBMODULES: "scripts benchexec sv-benchmarks"
+  REQUIRED_SUBMODULES: "scripts benchexec sv-benchmarks fm-tools"
 
 before_script:
   - git submodule sync
