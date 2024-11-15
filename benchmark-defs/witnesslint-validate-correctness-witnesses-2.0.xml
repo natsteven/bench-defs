@@ -7,7 +7,6 @@
   <option name="--expectCorrectnessWitness"/>
   <option name="--ignoreSelfLoops"/>
   <option name="--expectedWitnessVersion">2.0</option>
-  <option name="--ignoreFaultyWitness"/>
 
 <rundefinition name="SV-COMP25_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
