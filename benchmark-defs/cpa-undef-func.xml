@@ -135,8 +135,6 @@
     </tasks>
     <tasks name="MemSafety-Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <!-- Exclude Juliet_test unsafe memsafety tasks without subproperty from competition. Originally excluded in commit 024bdad652 by @versokova -->
-      <exclude>../sv-benchmarks/c/Juliet_Test/*_bad.yml</exclude>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
