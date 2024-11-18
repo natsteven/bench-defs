@@ -139,7 +139,7 @@ as a reaction to the community feedback after the first competition
 
 <h4>Witnesses</h4>
 <p>
-  There is a <a href="https://github.com/sosy-lab/sv-witnesses/">fixed exchange format for the witnesses</a>.
+  There is a <a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/">fixed exchange format for the witnesses</a>.
   The witness has to be written to a file
   <span style="font-family: monospace;">witness.graphml</span> or <span style="font-family: monospace;">witness.yml</span>,
   which is given to a witness validator to check validity.
