@@ -59,6 +59,7 @@ verifiers:
   - veriabs
   - veriabsl
   - verioover
+  - witnessmap
   - coastal
   - gdart
   - java-ranger
@@ -559,6 +560,45 @@ categories:
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
 
+  ValidationBenchmarks:
+    properties: 
+      - unreach-call
+    categories:
+      - unreach-call.CorrectnessWitnesses-Loops
+      - unreach-call.ViolationWitnesses-ControlFlow
+    verifiers:
+      - witnessmap
+    validators:
+      - concurrentwitness2test-violation-1.0
+      - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
+      - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
+      - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
+      - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - liv-correctness-1.0
+      - liv-correctness-2.0
+      - nitwit-violation-1.0
+      - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
+      - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
+      - metaval-violation-1.0
+      - metaval-violation-2.0
+      - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
+
   Overall:
     properties:
       - no-overflow
@@ -746,6 +786,9 @@ categories_process_order:
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - SoftwareSystems
+  - unreach-call.CorrectnessWitnesses-Loops
+  - unreach-call.ViolationWitnesses-ControlFlow
+  - ValidationBenchmarks
   - FalsificationOverall
   - Overall
   - assert_java.ReachSafety-Java
@@ -804,6 +847,9 @@ categories_table_order:
   - no-overflow.SoftwareSystems-uthash-NoOverflows
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  - unreach-call.CorrectnessWitnesses-Loops
+  - unreach-call.ViolationWitnesses-ControlFlow
+  - ValidationBenchmarks
   - FalsificationOverall
   - Overall
   - JavaOverall
