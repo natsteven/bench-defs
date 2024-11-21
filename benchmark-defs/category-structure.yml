@@ -559,7 +559,7 @@ categories:
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
 
-  ValidationBenchmarks:
+  ValidationCrafted:
     properties: 
       - unreach-call
     categories:
@@ -787,7 +787,7 @@ categories_process_order:
   - SoftwareSystems
   - unreach-call.CorrectnessWitnesses-Loops
   - unreach-call.ViolationWitnesses-ControlFlow
-  - ValidationBenchmarks
+  - ValidationCrafted
   - FalsificationOverall
   - Overall
   - assert_java.ReachSafety-Java
@@ -848,7 +848,7 @@ categories_table_order:
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - unreach-call.CorrectnessWitnesses-Loops
   - unreach-call.ViolationWitnesses-ControlFlow
-  - ValidationBenchmarks
+  - ValidationCrafted
   - FalsificationOverall
   - Overall
   - JavaOverall
