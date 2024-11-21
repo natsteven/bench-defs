@@ -46,7 +46,7 @@ verifiers:
   - proton
   - racerf
   - sv-sanitizers
-  - svf_svc
+  - svf-svc
   - symbiotic
   - theta
   - thorn
@@ -218,7 +218,7 @@ categories:
       - nacpa
       - pesco
       - pinaka
-      - svf_svc
+      - svf-svc
       - symbiotic
       - theta
       - thorn
@@ -280,7 +280,7 @@ categories:
       - pesco
       - predatorhp
       - sv-sanitizers
-      - svf_svc
+      - svf-svc
       - symbiotic
       - theta
       - uautomizer
@@ -386,7 +386,7 @@ categories:
       - pesco
       - pinaka
       - sv-sanitizers
-      - svf_svc
+      - svf-svc
       - symbiotic
       - theta
       - thorn
@@ -496,7 +496,7 @@ categories:
       - mopsa
       - nacpa
       - pesco
-      - svf_svc
+      - svf-svc
       - symbiotic
       - uautomizer
       - ukojak
