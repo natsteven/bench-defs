@@ -5,6 +5,7 @@ year: 2025
 verifiers:
   - 2ls
   - aise
+  - aprove
   - brick
   - bubaak
   - bubaak-split
@@ -32,6 +33,7 @@ verifiers:
   - goblint
   - graves
   - graves-par
+  - hornix
   - infer
   - korn
   - lazycseq
@@ -57,6 +59,7 @@ verifiers:
   - veriabs
   - veriabsl
   - verioover
+  - witnessmap
   - coastal
   - gdart
   - java-ranger
@@ -80,14 +83,21 @@ validators:
   - gwit-validate-violation-witnesses-1.0
   - jcwit-validate-correctness-witnesses-1.0
   - liv-validate-correctness-witnesses-1.0
+  - liv-validate-correctness-witnesses-2.0
   - metaval-validate-correctness-witnesses-1.0
+  - metaval-validate-correctness-witnesses-2.0
   - metaval-validate-violation-witnesses-1.0
+  - metaval-validate-violation-witnesses-2.0
+  - metaval++-validate-correctness-witnesses-2.0
   - mopsa-validate-correctness-witnesses-2.0
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
+  - uautomizer-validate-violation-witnesses-2.0
+  - ureferee-validate-correctness-witnesses-1.0
+  - ureferee-validate-correctness-witnesses-2.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-1.0
@@ -127,7 +137,6 @@ hors_concours:
   - verioover
 
 not_participating:
-  - aprove
   - blast
   - cbmc-path
   - ceagle
@@ -241,12 +250,19 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - nitwit-violation-1.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -297,11 +313,14 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
 
@@ -338,6 +357,7 @@ categories:
       - infer
       - lazycseq
       - lf-checker
+      - mopsa
       - nacpa
       - pesco
       - pichecker
@@ -358,7 +378,9 @@ categories:
       - dartagnan-violation-1.0
       - goblint-correctness-2.0
       - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
 
   NoOverflows:
     properties: no-overflow
@@ -406,11 +428,15 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -424,6 +450,7 @@ categories:
       - termination.Termination-Other
     verifiers:
       - 2ls
+      - aprove
       - bubaak
       - bubaak-split
       - cbmc
@@ -435,6 +462,7 @@ categories:
       - goblint
       - graves
       - graves-par
+      - mopsa
       - nacpa
       - pesco
       - pinaka
@@ -455,6 +483,7 @@ categories:
       - goblint-correctness-2.0
       - uautomizer-violation-1.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
 
   SoftwareSystems:
     properties:
@@ -478,6 +507,7 @@ categories:
       - no-overflow.SoftwareSystems-uthash-NoOverflows
       - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
       - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+      - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
     verifiers:
       - 2ls
       - bubaak
@@ -514,11 +544,57 @@ categories:
       - fshell-witness2test-violation-1.0
       - goblint-correctness-2.0
       - liv-correctness-1.0
+      - liv-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
+      - mopsa-correctness-2.0
+      - symbiotic-witch-violation-1.0
+      - witch-violation-2.0
+
+  ValidationBenchmarks:
+    properties: 
+      - unreach-call
+    categories:
+      - unreach-call.CorrectnessWitnesses-Loops
+      - unreach-call.ViolationWitnesses-ControlFlow
+    verifiers:
+      - witnessmap
+    validators:
+      - concurrentwitness2test-violation-1.0
+      - witnesslint-correctness-1.0
+      - witnesslint-correctness-2.0
+      - witnesslint-violation-1.0
+      - witnesslint-violation-2.0
+      - cpachecker-correctness-1.0
+      - cpachecker-correctness-2.0
+      - cpachecker-violation-1.0
+      - cpachecker-violation-2.0
+      - cpa-witness2test-violation-1.0
+      - fshell-witness2test-violation-1.0
+      - goblint-correctness-2.0
+      - liv-correctness-1.0
+      - liv-correctness-2.0
+      - nitwit-violation-1.0
+      - uautomizer-correctness-1.0
+      - uautomizer-correctness-2.0
+      - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
+      - metaval-violation-1.0
+      - metaval-violation-2.0
+      - metaval-correctness-1.0
+      - metaval-correctness-2.0
+      - metaval++-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -573,8 +649,13 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
+      - metaval-correctness-2.0
       - mopsa-correctness-2.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -623,7 +704,11 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
+      - metaval-violation-2.0
       - metaval-correctness-1.0
       - symbiotic-witch-violation-1.0
       - witch-violation-2.0
@@ -692,6 +777,7 @@ categories_process_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
@@ -700,6 +786,9 @@ categories_process_order:
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   - SoftwareSystems
+  - unreach-call.CorrectnessWitnesses-Loops
+  - unreach-call.ViolationWitnesses-ControlFlow
+  - ValidationBenchmarks
   - FalsificationOverall
   - Overall
   - assert_java.ReachSafety-Java
@@ -750,6 +839,7 @@ categories_table_order:
   - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
   - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
   - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
+  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   - unreach-call.SoftwareSystems-Other-ReachSafety
   - valid-memsafety.SoftwareSystems-Other-MemSafety
   - unreach-call.SoftwareSystems-uthash-ReachSafety
@@ -757,6 +847,9 @@ categories_table_order:
   - no-overflow.SoftwareSystems-uthash-NoOverflows
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  - unreach-call.CorrectnessWitnesses-Loops
+  - unreach-call.ViolationWitnesses-ControlFlow
+  - ValidationBenchmarks
   - FalsificationOverall
   - Overall
   - JavaOverall
@@ -803,10 +896,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   map2check:
     - ReachSafety
-  mopsa:
-    - ConcurrencySafety
-    - Termination
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
   infer:
     # Infer can't handle floats
     - unreach-call.ReachSafety-Floats
@@ -849,6 +938,7 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   crux:
     - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
     - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -858,6 +948,7 @@ opt_in:
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-coreutils-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   frama-c-sv:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
@@ -884,11 +975,18 @@ opt_in:
     - unreach-call.ReachSafety-Combinations
   gdart-llvm:
     - unreach-call.ReachSafety-BitVectors
+  hornix:
+    - unreach-call.ReachSafety-Loops
+    - unreach-call.ReachSafety-Recursive  
   korn:
+    - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-ControlFlow
+    - unreach-call.ReachSafety-ECA
     - unreach-call.ReachSafety-Loops
     - unreach-call.ReachSafety-Recursive
+    - unreach-call.ReachSafety-Sequentialized
     - unreach-call.ReachSafety-XCSP
+    - unreach-call.ReachSafety-Fuzzle
   locksmith:
     - no-data-race.NoDataRace-Main
   proton:
@@ -915,6 +1013,7 @@ opt_in:
     - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
     - unreach-call.SoftwareSystems-Other-ReachSafety
     - unreach-call.SoftwareSystems-uthash-ReachSafety
+    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   predatorhp:
     - unreach-call.ReachSafety-Heap
   verioover:

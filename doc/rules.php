@@ -152,7 +152,7 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-  The category *NoDataRace* is excluded from validation of violation witnesses.
+  No category is excluded from validation of violation witnesses.
   The following categories are excluded from validation of correctness witnesses:
   *-Arrays, *-Floats, *-Heap, *MemSafety*, ConcurrencySafety-*, *NoDataRace*, and Termination-*.
 </p>
@@ -468,10 +468,12 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-  <strong>__VERIFIER_atomic_begin(): </strong>
+  <strong>__VERIFIER_atomic_*(): </strong>
+  These functions are deprecated, but still used in existing tasks.
+  Please consider using standard C features from <tt>stdatomic.h</tt> and <tt>pthread.h</tt> to model atomicity (e.g., atomic types, atomic loads / stores, mutexes, ...).<br>
   For modeling an atomic execution of a sequence of statements in a multi-threaded run-time environment,
   those statements can be placed between two function calls <tt>__VERIFIER_atomic_begin()</tt> and <tt>__VERIFIER_atomic_end()</tt>
-  (deprecated but still valid: those statements can be placed in a function whose name matches <tt>__VERIFIER_atomic_</tt>).
+  or those statements can be placed in a function whose name starts with <tt>__VERIFIER_atomic_</tt>.
   The verifiers are instructed to assume that the execution between those calls is not interrupted.
   The two calls need to occur within the same control-flow block; nesting or interleaving of those function calls is not allowed.
 </p>

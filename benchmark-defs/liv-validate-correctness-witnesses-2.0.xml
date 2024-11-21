@@ -12,7 +12,7 @@
   <option name="--fuzzy-invariant-locations">1</option>
   <option name="--non-strict"/>
 
-<rundefinition name="SV-COMP24_unreach-call">
+<rundefinition name="SV-COMP25_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
   <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -103,9 +103,22 @@
     <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+  <tasks name="SoftwareSystems-Intel-TDX-Module-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-Intel-TDX-Module.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+
+  <tasks name="CorrectnessWitnesses-Loops">
+    <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
+  <tasks name="ViolationWitnesses-ControlFlow">
+    <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+  </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memcleanup">
+<rundefinition name="SV-COMP25_valid-memcleanup">
 <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -123,7 +136,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_valid-memsafety">
+<rundefinition name="SV-COMP25_valid-memsafety">
 <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -175,7 +188,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="SV-COMP24_no-overflow">
+<rundefinition name="SV-COMP25_no-overflow">
 <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 

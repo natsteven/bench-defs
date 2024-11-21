@@ -10,7 +10,7 @@
   <option name="--portfolio">HORN</option>
   <option name="--loglevel">RESULT</option>
   
-  <rundefinition name="SV-COMP24_unreach-call">
+  <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -82,7 +82,7 @@
   </rundefinition>
 
 
-  <rundefinition name="SV-COMP24_no-overflow">
+  <rundefinition name="SV-COMP25_no-overflow">
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -116,7 +116,7 @@
   </rundefinition>
 
 
-  <rundefinition name="SV-COMP24_termination">
+  <rundefinition name="SV-COMP25_termination">
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
@@ -145,14 +145,14 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_no-data-race">
+  <rundefinition name="SV-COMP25_no-data-race">
     <tasks name="NoDataRace-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP24_valid-memsafety">
+  <rundefinition name="SV-COMP25_valid-memsafety">
     <tasks name="ConcurrencySafety-MemSafety">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
