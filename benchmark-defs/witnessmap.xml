@@ -4,6 +4,8 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
 
+<resultfiles>**/witness.*</resultfiles>
+
 <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="CorrectnessWitnesses-Loops">
         <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
