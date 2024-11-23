@@ -12,6 +12,7 @@
   <option name="--fuzzy-invariant-locations">1</option>
   <option name="--non-strict"/>
   <option name="--prep-cgroup"/>
+  <option name="--debug"/>
 
 <rundefinition name="SV-COMP25_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
