@@ -145,7 +145,6 @@
     </tasks>
     <tasks name="MemSafety-Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <exclude>../sv-benchmarks/c/Juliet_Test/*_bad.yml</exclude>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
