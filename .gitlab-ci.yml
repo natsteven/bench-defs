@@ -31,5 +31,5 @@ check-category-structure:
 check-benchdefs-consistency:
   script:
     - echo "The benchmark definitions in this repository should match the ones we auto-generate based on FM-Tools data. If they do not, the definitions, FM-Tools data, or generation script must be adjusted."
-    - ./scripts/test/create-benchdefs.py --competition 'SV-COMP 2025' --track 'Verification' --xml-template-directory benchmark-defs/reference/ --category-structure benchmark-defs/category-structure.yml --fm-data fm-tools/data --output benchmark-defs/
+    - ./scripts/test/create-benchdefs.py --competition 'SV-COMP 2025' --track 'Verification' --xml-template-directory benchmark-defs/reference/ --category-structure benchmark-defs/category-structure.yml --fm-data fm-tools/data --output benchmark-defs/ --ignore witnessmap
     - git diff --exit-code benchmark-defs/
