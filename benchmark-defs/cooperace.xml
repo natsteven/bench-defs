@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="cooperace" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="cooperace" displayName="CoOpeRace" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
+
+
 
   <rundefinition name="SV-COMP25_no-data-race">
     <tasks name="NoDataRace-Main">
@@ -13,4 +15,4 @@
     </tasks>
   </rundefinition>
 
-</benchmark>
+  </benchmark>

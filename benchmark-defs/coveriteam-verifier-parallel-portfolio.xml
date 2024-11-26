@@ -1,12 +1,4 @@
 <?xml version="1.0"?>
-<!--
-This file is redistributed as part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
-https://gitlab.com/sosy-lab/software/coveriteam
-
-SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
-
-SPDX-License-Identifier: Apache-2.0
--->
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="coveriteam-verifier-validator" displayName="CoVeriTeam-Verifier-ParallelPortfolio" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
@@ -14,9 +6,10 @@ SPDX-License-Identifier: Apache-2.0
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="verifier-parallel-portfolio.cvt"></option>
-  <option name="--cache-dir">cache</option>
-  <option name="--no-cache-update"></option>
+  <option name="verifier-parallel-portfolio.cvt" />
+  <option name="--cache-dir" />
+  <option name="cache" />
+  <option name="--no-cache-update" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -270,7 +263,5 @@ SPDX-License-Identifier: Apache-2.0
     </tasks>
   </rundefinition>
 
-  <columns>
-    <column title="UsedConfig">Used algorithm property</column>
-  </columns>
+
 </benchmark>

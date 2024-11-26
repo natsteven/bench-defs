@@ -6,7 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness">witness.graphml</option> 
+  <option name="--witness" />
+  <option name="witness.graphml" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Heap">

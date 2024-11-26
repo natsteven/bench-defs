@@ -6,9 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-sv-comp"/>
-  <option name="-sv-comp-witness">witness.graphml</option>
-  <option name="-timeout">900</option>
+  <option name="-sv-comp" />
+  <option name="-sv-comp-witness" />
+  <option name="witness.graphml" />
+  <option name="-timeout" />
+  <option name="900" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -261,4 +263,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

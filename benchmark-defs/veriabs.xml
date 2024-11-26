@@ -6,8 +6,7 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name = "--veriabs" />
-
+  <option name="--veriabs" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">

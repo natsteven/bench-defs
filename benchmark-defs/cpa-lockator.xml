@@ -6,9 +6,10 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-svcomp21-lockator"/>
-  <option name="-disable-java-assertions"/>
-  <option name="-heap">12000m</option>
+  <option name="-svcomp21-lockator" />
+  <option name="-disable-java-assertions" />
+  <option name="-heap" />
+  <option name="12000m" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ConcurrencySafety-Main">

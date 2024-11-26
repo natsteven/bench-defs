@@ -6,8 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--svcomp"/>
-  <option name="--no-cache-update"/>
+  <option name="--svcomp" />
+  <option name="--no-cache-update" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -73,6 +73,7 @@
       <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-  </rundefinition>
 
-</benchmark>
+    </rundefinition>
+
+  </benchmark>

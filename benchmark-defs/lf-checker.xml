@@ -6,7 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--concurrencyFlagPredictor">DT2.sav</option>
+  <option name="--concurrencyFlagPredictor" />
+  <option name="DT2.sav" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ConcurrencySafety-Main">

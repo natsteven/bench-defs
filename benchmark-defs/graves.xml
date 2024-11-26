@@ -6,10 +6,12 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-svcomp23-graves"/>
-  <option name="-heap">10000M</option>
-  <option name="-benchmark"/>
-  <option name="-timelimit">900 s</option>
+  <option name="-svcomp23-graves" />
+  <option name="-heap" />
+  <option name="10000M" />
+  <option name="-benchmark" />
+  <option name="-timelimit" />
+  <option name="900 s" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -262,4 +264,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

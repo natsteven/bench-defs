@@ -6,15 +6,20 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-svcomp22-bam-smg"/>
-  <option name="-disable-java-assertions"/>
-  <option name="-heap">10000m</option>
-
-  <option name="-setprop">counterexample.export.graphml=witness.graphml</option>
-  <option name="-setprop">cpa.arg.proofWitness=witness.graphml</option>
-  <option name="-setprop">termination.violation.witness=witness.graphml</option>
-  <option name="-setprop">counterexample.export.compressWitness=false</option>
-  <option name="-setprop">cpa.arg.compressWitness=false</option>
+  <option name="-svcomp22-bam-smg" />
+  <option name="-disable-java-assertions" />
+  <option name="-heap" />
+  <option name="10000m" />
+  <option name="-setprop" />
+  <option name="counterexample.export.graphml=witness.graphml" />
+  <option name="-setprop" />
+  <option name="cpa.arg.proofWitness=witness.graphml" />
+  <option name="-setprop" />
+  <option name="termination.violation.witness=witness.graphml" />
+  <option name="-setprop" />
+  <option name="counterexample.export.compressWitness=false" />
+  <option name="-setprop" />
+  <option name="cpa.arg.compressWitness=false" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
@@ -131,4 +136,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

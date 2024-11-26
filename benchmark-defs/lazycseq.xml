@@ -6,7 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness">error-witness.graphml</option>
+  <option name="--witness" />
+  <option name="error-witness.graphml" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ConcurrencySafety-Main">

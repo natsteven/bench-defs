@@ -6,8 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness">witness.graphml</option>
-  <option name="--sv-comp"/>
+  <option name="--witness" />
+  <option name="witness.graphml" />
+  <option name="--sv-comp" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -260,4 +261,6 @@
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+
 </benchmark>

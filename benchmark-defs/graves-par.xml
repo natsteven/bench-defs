@@ -6,10 +6,11 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="verifier-parallel-portfolio.cvt"></option>
-  <option name="--cache-dir">cache</option>
-  <option name="--no-cache-update"></option>
-  <option name="--use-python-processes"></option>
+  <option name="verifier-parallel-portfolio.cvt" />
+  <option name="--cache-dir" />
+  <option name="cache" />
+  <option name="--no-cache-update" />
+  <option name="--use-python-processes" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ReachSafety-Arrays">
@@ -263,7 +264,5 @@
     </tasks>
   </rundefinition>
 
-  <columns>
-    <column title="UsedConfig">Used algorithm property</column>
-  </columns>
+
 </benchmark>

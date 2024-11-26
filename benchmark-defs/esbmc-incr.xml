@@ -6,8 +6,9 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-s">incr</option>
-  <option name="--concurrency"/>
+  <option name="-s" />
+  <option name="incr" />
+  <option name="--concurrency" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="ConcurrencySafety-Main">
