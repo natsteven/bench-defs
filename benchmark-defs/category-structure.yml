@@ -715,8 +715,10 @@ categories:
   JavaOverall:
     properties:
       - assert_java
+      - runtime-exception
     categories:
       - assert_java.ReachSafety-Java
+      - runtime-exception.RuntimeException-Java
     verifiers:
       - coastal
       - gdart
