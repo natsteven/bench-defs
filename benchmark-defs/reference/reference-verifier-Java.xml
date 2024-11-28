@@ -15,5 +15,12 @@
     </tasks>
   </rundefinition>
 
+  <rundefinition name="SV-COMP25_runtime-exception">
+    <tasks name="RuntimeException-Java">
+      <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+      <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
 {extension}
 </benchmark>
