@@ -720,14 +720,10 @@ categories:
       - assert_java.ReachSafety-Java
       - runtime-exception.RuntimeException-Java
     verifiers:
-      - coastal
       - gdart
       - java-ranger
-      - jayhorn
       - jbmc
-      - jdart
       - mlb
-      - spf
       - swat
     validators:
       - wit4java-violation-1.0
@@ -1014,3 +1010,11 @@ opt_in:
     - unreach-call.ReachSafety-Heap
   verioover:
     - no-overflow.NoOverflows-Main
+  coastal:
+    - assert_java.ReachSafety-Java
+  jayhorn:
+    - assert_java.ReachSafety-Java
+  jdart:
+    - assert_java.ReachSafety-Java
+  spf:
+    - assert_java.ReachSafety-Java
