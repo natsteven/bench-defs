@@ -793,6 +793,7 @@ categories_process_order:
   - FalsificationOverall
   - Overall
   - assert_java.ReachSafety-Java
+  - runtime-exception.RuntimeException-Java
   - JavaOverall
 
 categories_table_order:
@@ -855,6 +856,7 @@ categories_table_order:
   - Overall
   - JavaOverall
   - assert_java.ReachSafety-Java
+  - runtime-exception.RuntimeException-Java
 
 opt_out:
   2ls:
