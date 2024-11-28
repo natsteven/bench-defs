@@ -182,6 +182,7 @@ properties:
   - valid-memcleanup
   - valid-memsafety
   - assert_java
+  - runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories: []
