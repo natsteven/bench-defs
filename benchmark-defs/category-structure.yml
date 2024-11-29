@@ -724,8 +724,6 @@ categories:
       - gdart
       - java-ranger
       - jbmc
-      - mlb
-      - swat
     validators:
       - wit4java-violation-1.0
       - gwit-violation-1.0
@@ -1017,5 +1015,9 @@ opt_in:
     - assert_java.ReachSafety-Java
   jdart:
     - assert_java.ReachSafety-Java
+  mlb:
+    - assert_java.ReachSafety-Java
   spf:
+    - assert_java.ReachSafety-Java
+  swat:
     - assert_java.ReachSafety-Java
