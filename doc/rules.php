@@ -271,6 +271,20 @@ as a reaction to the community feedback after the first competition
   The proposition 'call(func())' is true if the function 'func()' is called.
 </p>
 
+<h5>Accepted Verdict Formats:</h5>
+<p>
+  If a verification run detects that a property is violated,
+  then the violated (potentially partial) property has to be given in the result:
+  <span style="color:green">FALSE(<i>p</i>)</span>,
+  with p in 
+  {unreach-call, termination, no-overflow, valid-free, valid-deref, valid-memtrack, valid-memcleanup, no-data-race},
+  meaning the (potentially partial) property p is violated.
+</p>
+<p>
+  If a verification run detects that no checked property is violated, 
+  then no property shall be given in the result:
+  <span style="color:green">TRUE</span>, meaning the input was found to satisfy all properties.
+</p>
 
 <h5>Unreachability of Error Function:</h5>
 <p>
@@ -348,15 +362,6 @@ as a reaction to the community feedback after the first competition
     </tr>
   </tbody>
 </table>
-
-<p>
-  If a verification run detects that a property from {valid-free, valid-deref, valid-memtrack} is violated,
-  then the violated (partial) property has to be given in the result:
-</p>
-<p>
-  <span style="color:green">FALSE(<i>p</i>)</span>,
-  with p in {valid-free, valid-deref, valid-memtrack}, means that the (partial) property p is violated.
-</p>
 
 <p>
   <i>Agreement:</i>
