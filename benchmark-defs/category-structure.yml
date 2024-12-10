@@ -185,7 +185,8 @@ properties:
   - runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
-demo_categories: []
+demo_categories:
+  - runtime-exception.RuntimeException-Java
 
 categories:
   ReachSafety:
