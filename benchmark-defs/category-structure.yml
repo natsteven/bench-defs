@@ -124,7 +124,6 @@ hors_concours:
   - gdart-llvm
   - graves
   - graves-par
-  - java-ranger
   - jdart
   - lazycseq
   - lf-checker
