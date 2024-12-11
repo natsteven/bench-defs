@@ -124,7 +124,6 @@ hors_concours:
   - gdart-llvm
   - graves
   - graves-par
-  - java-ranger
   - jdart
   - lazycseq
   - lf-checker
@@ -722,9 +721,15 @@ categories:
       - assert_java.ReachSafety-Java
       - runtime-exception.RuntimeException-Java
     verifiers:
+      - coastal
       - gdart
       - java-ranger
+      - jayhorn
       - jbmc
+      - jdart
+      - mlb
+      - spf
+      - swat
     validators:
       - wit4java-violation-1.0
       - gwit-violation-1.0
@@ -921,6 +926,18 @@ opt_out:
     - NoOverflows
     - Termination
     - no-data-race.NoDataRace-Main
+  coastal:
+    - runtime-exception.RuntimeException-Java
+  jayhorn:
+    - runtime-exception.RuntimeException-Java
+  jdart:
+    - runtime-exception.RuntimeException-Java
+  mlb:
+    - runtime-exception.RuntimeException-Java
+  spf:
+    - runtime-exception.RuntimeException-Java
+  swat:
+    - runtime-exception.RuntimeException-Java
 
 opt_in:
   aise:
@@ -1010,15 +1027,3 @@ opt_in:
     - unreach-call.ReachSafety-Heap
   verioover:
     - no-overflow.NoOverflows-Main
-  coastal:
-    - assert_java.ReachSafety-Java
-  jayhorn:
-    - assert_java.ReachSafety-Java
-  jdart:
-    - assert_java.ReachSafety-Java
-  mlb:
-    - assert_java.ReachSafety-Java
-  spf:
-    - assert_java.ReachSafety-Java
-  swat:
-    - assert_java.ReachSafety-Java
