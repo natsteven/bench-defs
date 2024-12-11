@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="gwit" displayName="GWIT" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
+<benchmark tool="{toolinfo_name}" displayName="{name}" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
  
   <resultfiles>**/witness.*</resultfiles>
 
-
+{benchexec_toolinfo_options}
 
   <rundefinition name="SV-COMP25_assert_java">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+{witness_options}
   
     <tasks name="ReachSafety-Java">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
@@ -20,7 +20,7 @@
   
   <rundefinition name="SV-COMP25_runtime-exception">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+{witness_options}
   
     <tasks name="RuntimeException-Java">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
@@ -28,5 +28,5 @@
     </tasks>
   </rundefinition>
 
-
+{extension}
 </benchmark>

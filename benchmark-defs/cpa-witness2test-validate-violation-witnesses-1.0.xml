@@ -1,24 +1,29 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="cpa-witness2test" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
+<benchmark tool="cpa-witness2test" displayName="CPA-witness2test" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-setprop">witness.checkProgramHash=false</option>
-  <option name="-heap">5000m</option>
-  <option name="-benchmark"/>
+  <option name="-setprop" />
+  <option name="witness.checkProgramHash=false" />
+  <option name="-heap" />
+  <option name="5000m" />
+  <option name="-benchmark" />
+  <option name="-setprop" />
+  <option name="analysis.summaryEdges=true" />
+  <option name="-setprop" />
+  <option name="cpa.callstack.skipVoidRecursion=true" />
+  <option name="-setprop" />
+  <option name="cpa.callstack.skipFunctionPointerRecursion=true" />
+  <option name="-outputpath" />
+  <option name="output" />
 
-  <option name="-setprop">analysis.summaryEdges=true</option>
-  <option name="-setprop">cpa.callstack.skipVoidRecursion=true</option>
-  <option name="-setprop">cpa.callstack.skipFunctionPointerRecursion=true</option>
-  <option name="-outputpath">output</option>
-
-<rundefinition name="SV-COMP25_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  <rundefinition name="SV-COMP25_unreach-call">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -82,7 +87,7 @@
       <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -110,7 +115,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-Intel-TDX-Module.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="CorrectnessWitnesses-Loops">
       <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -118,13 +123,31 @@
     <tasks name="ViolationWitnesses-ControlFlow">
       <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>    
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_valid-memcleanup">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
+    <tasks name="MemSafety-MemCleanup">
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
+      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+    <tasks name="SoftwareSystems-uthash-MemCleanup">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_valid-memsafety">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
@@ -151,7 +174,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-coreutils-MemSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -169,12 +192,13 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  
+    </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-overflow">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -200,7 +224,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -213,6 +237,19 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-</rundefinition>
+  
+    </rundefinition>
+  
+  
+  <rundefinition name="SV-COMP25_termination">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
 
 </benchmark>

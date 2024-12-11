@@ -1,22 +1,26 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="metaval" timelimit="15 min" hardtimelimit="16 min" memlimit="7 GB" cpuCores="2">
+<benchmark tool="metaval" displayName="MetaVal" timelimit="15 min" hardtimelimit="16 min" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--metavalWitnessType">correctness_witness</option>
-  <option name="--metavalVerifierBackend">cpachecker</option>
-  <option name="--svcomp24"/>
-  <option name="--heap">5000M</option>
-  <option name="--benchmark"/>
-  <option name="--timelimit">900s</option>
+  <option name="--metavalWitnessType" />
+  <option name="correctness_witness" />
+  <option name="--metavalVerifierBackend" />
+  <option name="cpachecker" />
+  <option name="--svcomp24" />
+  <option name="--heap" />
+  <option name="5000M" />
+  <option name="--benchmark" />
+  <option name="--timelimit" />
+  <option name="900s" />
 
-<rundefinition name="SV-COMP25_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  <rundefinition name="SV-COMP25_unreach-call">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -80,7 +84,7 @@
       <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -108,7 +112,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-Intel-TDX-Module.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="CorrectnessWitnesses-Loops">
       <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -117,11 +121,11 @@
       <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-</rundefinition>
+  </rundefinition>
 
-<rundefinition name="SV-COMP25_valid-memcleanup">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <rundefinition name="SV-COMP25_valid-memcleanup">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
     <tasks name="MemSafety-MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
@@ -135,11 +139,11 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
-</rundefinition>
+  </rundefinition>
 
-<rundefinition name="SV-COMP25_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <rundefinition name="SV-COMP25_valid-memsafety">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -185,12 +189,13 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-</rundefinition>
 
-<rundefinition name="SV-COMP25_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+    </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-overflow">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -216,7 +221,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -229,6 +234,18 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-</rundefinition>
+    
+    </rundefinition>
+
+  <rundefinition name="SV-COMP25_termination">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
+      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
 
 </benchmark>
