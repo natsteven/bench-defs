@@ -76,6 +76,11 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
+    <tasks name="ConcurrencySafety-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -111,6 +116,16 @@
     <tasks name="ViolationWitnesses-ControlFlow">
       <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP25_no-data-race">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+    <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+
+    <tasks name="NoDataRace-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
   </rundefinition>
 
@@ -181,7 +196,11 @@
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
-    </rundefinition>
+    <tasks name="ConcurrencySafety-MemSafety">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+  </rundefinition>
   
   <rundefinition name="SV-COMP25_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
@@ -226,12 +245,42 @@
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 
-    </rundefinition>
+    <tasks name="ConcurrencySafety-NoOverflows">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+  </rundefinition>
 
   <rundefinition name="SV-COMP25_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--validate_yaml_witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
+    <tasks name="Termination-BitVectors">
+      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainControlFlow">
+      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainHeap">
+      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-Other">
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
     <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

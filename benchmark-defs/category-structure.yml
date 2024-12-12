@@ -317,6 +317,9 @@ categories:
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
       - metaval-violation-1.0
       - metaval-violation-2.0
       - metaval-correctness-1.0
@@ -377,10 +380,12 @@ categories:
       - cpachecker-violation-2.0
       - dartagnan-violation-1.0
       - goblint-correctness-2.0
+      - mopsa-correctness-2.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
 
   NoOverflows:
     properties: no-overflow
@@ -433,6 +438,9 @@ categories:
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0
       - uautomizer-violation-2.0
+      - ureferee-correctness-1.0
+      - ureferee-correctness-2.0
+      - metaval++-correctness-2.0
       - metaval-violation-1.0
       - metaval-violation-2.0
       - metaval-correctness-1.0
@@ -481,7 +489,9 @@ categories:
       - cpachecker-violation-1.0
       - cpachecker-violation-2.0
       - goblint-correctness-2.0
+      - mopsa-correctness-2.0
       - uautomizer-violation-1.0
+      - uautomizer-violation-2.0
       - metaval-violation-1.0
       - metaval-violation-2.0
 
@@ -545,6 +555,7 @@ categories:
       - goblint-correctness-2.0
       - liv-correctness-1.0
       - liv-correctness-2.0
+      - nitwit-violation-1.0
       - uautomizer-correctness-1.0
       - uautomizer-correctness-2.0
       - uautomizer-violation-1.0

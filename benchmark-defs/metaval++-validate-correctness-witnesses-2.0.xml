@@ -154,6 +154,32 @@
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
   
+    <tasks name="NoOverflows-Main">
+      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
+      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
+      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
+      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
+      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
+      <includesfile>../sv-benchmarks/c/XCSP.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
+      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="NoOverflows-Juliet">
+      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+  
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
