@@ -1,17 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="witnesslint" timelimit="15 min" hardtimelimit="16 min" memlimit="3 GB" cpuCores="1">
+<benchmark tool="witnesslint" displayName="WitnessLint" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
-  <option name="--expectViolationWitness"/>
-  <option name="--ignoreSelfLoops"/>
-  <option name="--expectedWitnessVersion">1.0</option>
+  <resultfiles>**/witness.*</resultfiles>
 
-<rundefinition name="SV-COMP25_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  <option name="--expectViolationWitness" />
+  <option name="--ignoreSelfLoops" />
+  <option name="--expectedWitnessVersion" />
+  <option name="1.0" />
 
+  <rundefinition name="SV-COMP25_unreach-call">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -75,12 +78,12 @@
       <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="ConcurrencySafety-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -108,31 +111,31 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-Intel-TDX-Module.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="CorrectnessWitnesses-Loops">
       <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+      <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
     <tasks name="ViolationWitnesses-ControlFlow">
       <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+      <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>    
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-data-race">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
+    <tasks name="NoDataRace-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_no-data-race">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
-  <tasks name="NoDataRace-Main">
-    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
-  </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_valid-memcleanup">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_valid-memcleanup">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="MemSafety-MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
@@ -145,12 +148,12 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_valid-memsafety">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="MemSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
@@ -177,7 +180,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-coreutils-MemSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -195,17 +198,17 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="ConcurrencySafety-MemSafety">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-overflow">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -231,7 +234,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -244,17 +247,18 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
+  
     <tasks name="ConcurrencySafety-NoOverflows">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_termination">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  </rundefinition>
+  
+  
+  <rundefinition name="SV-COMP25_termination">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
@@ -285,7 +289,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-</rundefinition>
+  </rundefinition>
 
   <columns>
     <column title="witnesslint-witness-type">Witness Type</column>
@@ -304,5 +308,4 @@
     <column title="witnesslint-source-code-language">Source Code Language</column>
     <column title="witnesslint-specification">Specification</column>
   </columns>
-
 </benchmark>

@@ -1,49 +1,53 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="dartagnan" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
+<benchmark tool="dartagnan" displayName="Dartagnan" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
-      
-<rundefinition name="SV-COMP25_unreach-call">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-  <tasks name="ConcurrencySafety-Main">
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-</rundefinition>
 
-<rundefinition name="SV-COMP25_no-data-race">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
+  <rundefinition name="SV-COMP25_unreach-call">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
+    <tasks name="ConcurrencySafety-Main">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  
+    </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-data-race">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="NoDataRace-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_no-overflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
-    <tasks name="ConcurrencySafety-NoOverflows">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-</rundefinition>
-
-<rundefinition name="SV-COMP25_valid-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_valid-memsafety">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
     <tasks name="ConcurrencySafety-MemSafety">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-</rundefinition>
-
-</benchmark>
+  </rundefinition>
+  
+  <rundefinition name="SV-COMP25_no-overflow">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+  
+    <tasks name="ConcurrencySafety-NoOverflows">
+      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+  
+  
+  </benchmark>
