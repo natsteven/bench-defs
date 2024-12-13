@@ -257,15 +257,15 @@
 
     <tasks name="Termination-BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
     <tasks name="Termination-MainControlFlow">
       <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
     <tasks name="Termination-MainHeap">
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
     <tasks name="Termination-Other">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -279,11 +279,11 @@
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
     <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
 

@@ -250,7 +250,7 @@
 
     <tasks name="ConcurrencySafety-NoOverflows">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
   </rundefinition>
 

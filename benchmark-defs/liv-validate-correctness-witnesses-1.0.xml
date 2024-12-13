@@ -246,7 +246,7 @@
 
     <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
 
