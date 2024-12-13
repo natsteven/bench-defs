@@ -1,5 +1,6 @@
 competition: SV-COMP
 year: 2025
+observer_email: "sv-comp-validators@googlegroups.com"
 
 # Information about verifiers was moved to https://gitlab.com/sosy-lab/benchmarking/fm-tools
 verifiers:
