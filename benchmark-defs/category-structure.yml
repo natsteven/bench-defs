@@ -12,8 +12,6 @@ verifiers:
   - bubaak-split
   - cbmc
   - cooperace
-  - coveriteam-verifier-algo-selection
-  - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
   - cpa-bam-smg
   - cpa-lockator
@@ -33,7 +31,6 @@ verifiers:
   - gdart-llvm
   - goblint
   - graves
-  - graves-par
   - hornix
   - infer
   - korn
@@ -112,8 +109,6 @@ hors_concours:
   - cbmc
   - coastal
   - cooperace
-  - coveriteam-verifier-algo-selection
-  - coveriteam-verifier-parallel-portfolio
   - cpa-bam-bnb
   - cpa-bam-smg
   - cpa-lockator
@@ -124,7 +119,6 @@ hors_concours:
   - gazer-theta
   - gdart-llvm
   - graves
-  - graves-par
   - jdart
   - lazycseq
   - lf-checker
@@ -141,6 +135,8 @@ not_participating:
   - ceagle
   - civl
   - consequence
+  - coveriteam-verifier-algo-selection
+  - coveriteam-verifier-parallel-portfolio
   - cpa-bam-slicing
   - cpa-kind
   - cpa-par
@@ -162,6 +158,7 @@ not_participating:
   - lazycseqswarm
   - map2check
   - mucseq
+  - graves-par
   - relay-sv
   - sesl
   - skink
@@ -212,8 +209,6 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-algo-selection
-      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - cpv
       - crux
@@ -222,7 +217,6 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - infer
       - mopsa
       - nacpa
@@ -284,14 +278,12 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-smg
       - cpachecker
       - divine
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - mopsa
       - nacpa
       - pesco
@@ -344,8 +336,6 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-algo-selection
-      - coveriteam-verifier-parallel-portfolio
       - cpa-lockator
       - cpachecker
       - cseq
@@ -357,7 +347,6 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - infer
       - lazycseq
       - lf-checker
@@ -398,7 +387,6 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - crux
       - divine
@@ -407,7 +395,6 @@ categories:
       - frama-c-sv
       - goblint
       - graves
-      - graves-par
       - infer
       - mopsa
       - nacpa
@@ -463,14 +450,12 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - emergentheta
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - mopsa
       - nacpa
       - pesco
@@ -524,7 +509,6 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpa-bam-bnb
       - cpa-bam-smg
       - cpachecker
@@ -532,7 +516,6 @@ categories:
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - infer
       - mopsa
       - nacpa
@@ -630,13 +613,11 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - esbmc-kind
       - goblint
       - graves
-      - graves-par
       - mopsa
       - nacpa
       - pesco
@@ -689,12 +670,10 @@ categories:
       - bubaak
       - bubaak-split
       - cbmc
-      - coveriteam-verifier-parallel-portfolio
       - cpachecker
       - divine
       - esbmc-kind
       - graves
-      - graves-par
       - nacpa
       - pesco
       - symbiotic
@@ -876,10 +855,6 @@ opt_out:
     - no-data-race.NoDataRace-Main
   cbmc:
     - no-data-race.NoDataRace-Main
-  coveriteam-verifier-algo-selection:
-    - no-data-race.NoDataRace-Main
-  coveriteam-verifier-parallel-portfolio:
-    - no-data-race.NoDataRace-Main
   cpa-lockator:
     - no-data-race.NoDataRace-Main
   cpa-bam-bnb:
@@ -1028,13 +1003,6 @@ opt_in:
     - no-overflow.SoftwareSystems-BusyBox-NoOverflows
     - no-overflow.SoftwareSystems-uthash-NoOverflows
     - no-overflow.ConcurrencySafety-NoOverflows
-  coveriteam-verifier-algo-selection:
-    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-    - unreach-call.SoftwareSystems-Other-ReachSafety
-    - unreach-call.SoftwareSystems-uthash-ReachSafety
-    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
   predatorhp:
     - unreach-call.ReachSafety-Heap
   verioover:
