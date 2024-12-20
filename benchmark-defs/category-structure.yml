@@ -7,7 +7,6 @@ verifiers:
   - 2ls
   - aise
   - aprove
-  - blast
   - brick
   - bubaak
   - bubaak-split
@@ -107,7 +106,6 @@ validators:
 # Verifiers participating hors concours are executed and listed in the final results,
 # but cannot win any medals
 hors_concours:
-  - blast
   - cbmc
   - coastal
   - cooperace
@@ -132,6 +130,7 @@ hors_concours:
   - verioover
 
 not_participating:
+  - blast
   - cbmc-path
   - ceagle
   - civl
@@ -507,7 +506,6 @@ categories:
       - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
     verifiers:
       - 2ls
-      - blast
       - bubaak
       - bubaak-split
       - cbmc
