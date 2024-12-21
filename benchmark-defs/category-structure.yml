@@ -11,6 +11,7 @@ verifiers:
   - bubaak
   - bubaak-split
   - cbmc
+  - coastal
   - cooperace
   - cpa-bam-bnb
   - cpa-bam-smg
@@ -28,15 +29,21 @@ verifiers:
   - esbmc-kind
   - frama-c-sv
   - gazer-theta
+  - gdart
   - gdart-llvm
   - goblint
   - graves
   - hornix
   - infer
+  - java-ranger
+  - jayhorn
+  - jbmc
+  - jdart
   - korn
   - lazycseq
   - lf-checker
   - locksmith
+  - mlb
   - mopsa
   - nacpa
   - pesco
@@ -45,8 +52,10 @@ verifiers:
   - predatorhp
   - proton
   - racerf
+  - spf
   - sv-sanitizers
   - svf-svc
+  - swat
   - symbiotic
   - theta
   - thorn
@@ -58,15 +67,6 @@ verifiers:
   - veriabsl
   - verioover
   - witnessmap
-  - coastal
-  - gdart
-  - java-ranger
-  - jayhorn
-  - jbmc
-  - jdart
-  - mlb
-  - spf
-  - swat
 
 validators:
   - concurrentwitness2test-validate-violation-witnesses-1.0
