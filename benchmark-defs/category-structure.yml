@@ -115,18 +115,25 @@ hors_concours:
   - crux
   - cseq
   - divine
-  - esbmc-incr
+  - ebf
+  - frama-c-sv
   - gazer-theta
   - gdart-llvm
   - graves
+  - infer
+  - jayhorn
   - jdart
   - lazycseq
   - lf-checker
   - locksmith
+  - nacpa
   - pesco
   - pichecker
   - pinaka
+  - predatorhp
   - spf
+  - veriabs
+  - veriabsl
   - verioover
 
 not_participating:
