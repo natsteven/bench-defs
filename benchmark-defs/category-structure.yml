@@ -848,14 +848,19 @@ categories_table_order:
   - no-overflow.SoftwareSystems-uthash-NoOverflows
   - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
   - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  - ValidationCrafted
   - unreach-call.CorrectnessWitnesses-Loops
   - unreach-call.ViolationWitnesses-ControlFlow
-  - ValidationCrafted
   - FalsificationOverall
   - Overall
   - JavaOverall
   - assert_java.ReachSafety-Java
   - runtime-exception.RuntimeException-Java
+
+validation_only:
+  - ValidationCrafted
+  - unreach-call.CorrectnessWitnesses-Loops
+  - unreach-call.ViolationWitnesses-ControlFlow
 
 opt_out:
   2ls:
