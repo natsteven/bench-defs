@@ -239,35 +239,35 @@ categories:
       - veriabs
       - veriabsl
     validators:
-      - concurrentwitness2test-violation-1.0
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - liv-correctness-1.0
-      - liv-correctness-2.0
-      - nitwit-violation-1.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - metaval++-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - concurrentwitness2test-validate-violation-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
+      - liv-validate-correctness-witnesses-2.0
+      - nitwit-validate-violation-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - metaval++-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   MemSafety:
     properties:
@@ -303,29 +303,29 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - liv-correctness-1.0
-      - liv-correctness-2.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
+      - liv-validate-correctness-witnesses-2.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
 
   ConcurrencySafety:
     properties:
@@ -369,20 +369,20 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - dartagnan-violation-1.0
-      - goblint-correctness-2.0
-      - mopsa-correctness-2.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - dartagnan-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
 
   NoOverflows:
     properties: no-overflow
@@ -416,33 +416,33 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - liv-correctness-1.0
-      - liv-correctness-2.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval++-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
+      - liv-validate-correctness-witnesses-2.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval++-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   Termination:
     properties: termination
@@ -475,18 +475,18 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - goblint-correctness-2.0
-      - mopsa-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - goblint-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
 
   SoftwareSystems:
     properties:
@@ -533,34 +533,34 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - liv-correctness-1.0
-      - liv-correctness-2.0
-      - nitwit-violation-1.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - metaval++-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
+      - liv-validate-correctness-witnesses-2.0
+      - nitwit-validate-violation-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - metaval++-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   ValidationCrafted:
     properties: 
@@ -571,35 +571,35 @@ categories:
     verifiers:
       - witnessmap
     validators:
-      - concurrentwitness2test-violation-1.0
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - liv-correctness-1.0
-      - liv-correctness-2.0
-      - nitwit-violation-1.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - metaval++-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - concurrentwitness2test-validate-violation-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
+      - liv-validate-correctness-witnesses-2.0
+      - nitwit-validate-violation-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - metaval++-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   Overall:
     properties:
@@ -633,32 +633,32 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - dartagnan-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - goblint-correctness-2.0
-      - nitwit-violation-1.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - metaval-correctness-2.0
-      - mopsa-correctness-2.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - dartagnan-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - nitwit-validate-violation-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - metaval-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   FalsificationOverall:
     properties:
@@ -688,28 +688,28 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-correctness-1.0
-      - witnesslint-correctness-2.0
-      - witnesslint-violation-1.0
-      - witnesslint-violation-2.0
-      - cpachecker-correctness-1.0
-      - cpachecker-correctness-2.0
-      - cpachecker-violation-1.0
-      - cpachecker-violation-2.0
-      - cpa-witness2test-violation-1.0
-      - fshell-witness2test-violation-1.0
-      - nitwit-violation-1.0
-      - uautomizer-correctness-1.0
-      - uautomizer-correctness-2.0
-      - uautomizer-violation-1.0
-      - uautomizer-violation-2.0
-      - ureferee-correctness-1.0
-      - ureferee-correctness-2.0
-      - metaval-violation-1.0
-      - metaval-violation-2.0
-      - metaval-correctness-1.0
-      - symbiotic-witch-violation-1.0
-      - witch-violation-2.0
+      - witnesslint-validate-correctness-witnesses-1.0
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-1.0
+      - cpachecker-validate-correctness-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - cpa-witness2test-validate-violation-witnesses-1.0
+      - fshell-witness2test-validate-violation-witnesses-1.0
+      - nitwit-validate-violation-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-1.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - ureferee-validate-correctness-witnesses-1.0
+      - ureferee-validate-correctness-witnesses-2.0
+      - metaval-validate-violation-witnesses-1.0
+      - metaval-validate-violation-witnesses-2.0
+      - metaval-validate-correctness-witnesses-1.0
+      - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   JavaOverall:
     properties:
@@ -729,9 +729,9 @@ categories:
       - spf
       - swat
     validators:
-      - wit4java-violation-1.0
-      - gwit-violation-1.0
-      - jcwit-correctness-1.0
+      - wit4java-validate-violation-witnesses-1.0
+      - gwit-validate-violation-witnesses-1.0
+      - jcwit-validate-correctness-witnesses-1.0
 
 categories_process_order:
   - unreach-call.ReachSafety-Arrays
