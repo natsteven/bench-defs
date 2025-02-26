@@ -26,7 +26,7 @@ check-definitions:
 
 check-category-structure:
   script:
-    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/ --witnesslint-allowed-missing-categories CorrectnessWitnesses-Loops,ViolationWitnesses-ControlFlow --allow-unused sv-benchmarks/c/CorrectnessWitnesses-Loops.set,sv-benchmarks/c/ViolationWitnesses-ControlFlow.set,sv-benchmarks/c/Invalid-TaskDefs.set,sv-benchmarks/java/Invalid-TaskDefs.set
+    - PYTHONPATH=fm-tools/lib-fm-tools/python/src/fm_tools ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/ --witnesslint-allowed-missing-categories CorrectnessWitnesses-Loops,ViolationWitnesses-ControlFlow --allow-unused sv-benchmarks/c/CorrectnessWitnesses-Loops.set,sv-benchmarks/c/ViolationWitnesses-ControlFlow.set,sv-benchmarks/c/Invalid-TaskDefs.set,sv-benchmarks/java/Invalid-TaskDefs.set
 
 check-benchdefs-consistency:
   script:
