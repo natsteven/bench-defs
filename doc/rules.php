@@ -7,9 +7,17 @@ pageHeader(); ?>
 -->
 
 <style type="text/css">
-  table,
+  table {
+    font-size: 80%;
+    border-collapse: collapse;
+  }
+  thead {
+    font-weight: bold;
+  }
   td {
-    border: 1px solid grey;
+    padding-right: 10px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
   }
 </style>
 
@@ -156,6 +164,92 @@ as a reaction to the community feedback after the first competition
   The following categories are excluded from validation of correctness witnesses:
   *-Arrays, *-Floats, *-Heap, *MemSafety*, *MemCleanup*, ConcurrencySafety-*, *NoDataRace*, *Termination*, and *-Java.
 </p>
+<p>
+  The below table specifies which properties (sub-categories) are supported by the various witness formats.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <td>Property or Sub-Category Pattern</td>
+      <td style="text-align: center;" colspan="2">Correctness</td>
+      <td style="text-align: center;" colspan="2">Violation</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="text-align: center;">Version 1.0</td>
+      <td style="text-align: center;">Version 2.0</td>
+      <td style="text-align: center;">Version 1.0</td>
+      <td style="text-align: center;">Version 2.0</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>unreach-call</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+    </tr>
+    <tr>
+      <td>unreach-call, sub-categories *-Arrays, *-Floats, *-Heap</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+    </tr>
+    <tr>
+      <td>valid-deref, valid-free</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+    </tr>
+    <tr>
+      <td>valid-memtrack, mem-cleanup</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+      <td>no-overflow</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;">✓</td>
+    </tr>
+    <tr>
+      <td>sub-categories ConcurrencySafety-*</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+      <td>no-datarace</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+      <td>termination</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+      <td>sub-categories *-Java</td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
+    </tr>
+  </tbody>
+</table>
+
 
 <h4>Properties</h4>
 
@@ -234,22 +328,22 @@ as a reaction to the community feedback after the first competition
     </tr>
     <tr>
       <td>G valid-memtrack</td>
-      <td>All allocated memory blocks are tracked. The set of tracked blocks is defined as the 
+      <td>All allocated memory blocks are tracked. The set of tracked blocks is defined as the
         smallest set of blocks satisfying the following two rules:
         <ol>
-          <li>A block is tracked whenever there is a pointer to this block (not necessarily 
-            pointing to the beginning of the block) or to the first address after this block 
-            (see 6.5.6 of <a href="https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">C11</a> 
-            standard) stored in a program variable. The variable can be of a pointer type or 
-            of a compound type containing a pointer. The variable does not have to be in the 
+          <li>A block is tracked whenever there is a pointer to this block (not necessarily
+            pointing to the beginning of the block) or to the first address after this block
+            (see 6.5.6 of <a href="https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">C11</a>
+            standard) stored in a program variable. The variable can be of a pointer type or
+            of a compound type containing a pointer. The variable does not have to be in the
             current scope, it can be global or on the call stack.
           </li>
-          <li>If some pointer in a tracked block points to another block (again, not necessarily 
-            to the beginning of the block) or to the first address after this block, this pointed 
+          <li>If some pointer in a tracked block points to another block (again, not necessarily
+            to the beginning of the block) or to the first address after this block, this pointed
             block is also tracked.
           </li>
-        </ol>  
-        In particular, a leaked memory block is not tracked. Hence, a program with a memory leak does not satisfy this property. 
+        </ol> 
+        In particular, a leaked memory block is not tracked. Hence, a program with a memory leak does not satisfy this property.
       </td>
     </tr>
   </tbody>
@@ -714,6 +808,7 @@ second the <a href="score-schema/svcomp17_score_all.svg">scoring schema for all 
 <a href="score-schema/svcomp17_score_all.svg"><img width="100%" src="score-schema/svcomp17_score_all.png" /></a>
 -->
 </p>
+
 
 <h3>Opting-out from Categories</h3>
 
