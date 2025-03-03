@@ -7,9 +7,17 @@ pageHeader(); ?>
 -->
 
 <style type="text/css">
-  table,
+  table {
+    font-size: 80%;
+    border-collapse: collapse;
+  }
+  thead {
+    font-weight: bold;
+  }
   td {
-    border: 1px solid grey;
+    padding-right: 10px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
   }
 </style>
 
