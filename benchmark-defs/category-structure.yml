@@ -642,11 +642,7 @@ categories:
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
-      - cpa-witness2test-validate-violation-witnesses-1.0
-      - dartagnan-validate-violation-witnesses-1.0
-      - fshell-witness2test-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
-      - nitwit-validate-violation-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
@@ -658,8 +654,6 @@ categories:
       - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
-      - symbiotic-witch-validate-violation-witnesses-1.0
-      - witch-validate-violation-witnesses-2.0
 
   FalsificationOverall:
     properties:
