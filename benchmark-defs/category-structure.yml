@@ -643,6 +643,7 @@ categories:
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - goblint-validate-correctness-witnesses-2.0
+      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
       - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
