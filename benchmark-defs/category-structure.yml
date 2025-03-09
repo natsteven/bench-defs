@@ -326,6 +326,8 @@ categories:
       - metaval-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
+
 
   ConcurrencySafety:
     properties:
