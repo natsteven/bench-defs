@@ -369,6 +369,7 @@ categories:
       - ukojak
       - utaipan
     validators:
+      - concurrentwitness2test-validate-violation-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
@@ -858,6 +859,10 @@ opt_out:
   2ls:
     - no-data-race.NoDataRace-Main
   cbmc:
+    - no-data-race.NoDataRace-Main
+  concurrentwitness2test-validate-violation-witnesses-1.0:
+    - valid-memsafety.ConcurrencySafety-MemSafety
+    - no-overflow.ConcurrencySafety-NoOverflows
     - no-data-race.NoDataRace-Main
   cpa-lockator:
     - no-data-race.NoDataRace-Main
