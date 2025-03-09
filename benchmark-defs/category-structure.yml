@@ -328,7 +328,6 @@ categories:
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
 
-
   ConcurrencySafety:
     properties:
       - unreach-call
