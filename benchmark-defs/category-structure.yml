@@ -937,6 +937,8 @@ opt_in:
     - unreach-call.ReachSafety-Arrays
     - unreach-call.ReachSafety-BitVectors
     - unreach-call.ReachSafety-Floats
+  concurrentwitness2test-validate-violation-witnesses-1.0:
+    - unreach-call.ConcurrencySafety-Main
   cooperace:
     - no-data-race.NoDataRace-Main
   crux:
