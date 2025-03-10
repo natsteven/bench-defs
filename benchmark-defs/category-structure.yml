@@ -384,6 +384,7 @@ categories:
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
       - ureferee-validate-correctness-witnesses-1.0
+      - witch-validate-violation-witnesses-2.0
 
   NoOverflows:
     properties: no-overflow
@@ -488,6 +489,7 @@ categories:
       - uautomizer-validate-violation-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
+      - witch-validate-violation-witnesses-2.0
 
   SoftwareSystems:
     properties:
