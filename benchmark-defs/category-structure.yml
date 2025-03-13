@@ -490,6 +490,10 @@ categories:
       - metaval-validate-violation-witnesses-2.0
 
   SoftwareSystems:
+    description: |
+      This category consists of several sets of verification tasks. Each of these sets is an own sub-category.
+      While the categories above are collections of rather `academic', or synthesized, example verification tasks,
+      this category aims to represent verification tasks from real software systems.
     properties:
       - unreach-call
       - no-overflow
@@ -564,6 +568,8 @@ categories:
       - witch-validate-violation-witnesses-2.0
 
   ValidationCrafted:
+    description: |
+      This category contains validation tasks that were crafted to test certain features of validators.
     properties: 
       - unreach-call
     categories:
@@ -603,6 +609,10 @@ categories:
       - witch-validate-violation-witnesses-2.0
 
   Overall:
+    description: |
+      The category Overall contains all verification tasks of all above categories.
+      Each above-mentioned main category is an own sub-category in category Overall.
+      (The weighting schema is explained on the <a href="rules.php#meta">rules page</a>.)
     properties:
       - no-overflow
       - termination
@@ -660,6 +670,10 @@ categories:
       - witch-validate-violation-witnesses-2.0
 
   FalsificationOverall:
+    description: |
+      The category Falsification consists of all verification tasks with safety properties
+      and the results "correct TRUE" and "incorrect TRUE" are not counted.
+      (The weighting schema is the same as for Overall.)
     properties:
       - no-overflow
       - unreach-call
