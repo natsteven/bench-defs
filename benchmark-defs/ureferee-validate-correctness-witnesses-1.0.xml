@@ -13,7 +13,7 @@
   <rundefinition name="SV-COMP25_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  
+
     <tasks name="ReachSafety-Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -82,7 +82,7 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-  
+
     <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -110,7 +110,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-Intel-TDX-Module.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-  
+
     <tasks name="CorrectnessWitnesses-Loops">
       <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -124,7 +124,7 @@
   <rundefinition name="SV-COMP25_no-data-race">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  
+
     <tasks name="NoDataRace-Main">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
@@ -203,11 +203,11 @@
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
   </rundefinition>
-  
+
   <rundefinition name="SV-COMP25_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
-  
+
     <tasks name="NoOverflows-Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -233,7 +233,7 @@
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-  
+
     <tasks name="SoftwareSystems-BusyBox-NoOverflows">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -246,7 +246,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    
+
     <tasks name="ConcurrencySafety-NoOverflows">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
