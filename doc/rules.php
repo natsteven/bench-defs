@@ -679,7 +679,8 @@ The submitted system has to meet the following requirements:
     repository data (.svn), source files, aux folders like __MACOSX, and test files.
   </li>
   <li>The verifier should not require any special software on the competition machines; all necessary libraries and external tools
-    should be contained in the archive. Standard packages that are available as Ubuntu packages can be requested.
+    should be contained in the archive. Standard packages that are available as Ubuntu packages can be requested via an entry in the
+    <a href="https://gitlab.com/sosy-lab/benchmarking/fm-tools/-/tree/main/data">FM-Tools repository</a>.
   </li>
 </ul>
 
@@ -691,7 +692,7 @@ The submitted system has to meet the following requirements:
 <p>
   <b>Verifier.</b> A verification tool is qualified to participate as competition candidate if the tool is
   (a) publicly available for download and fulfills the <a href="#verifier">above license requirements</a>,
-  (b) works on the GNU/Linux platform (more specifically, it must run on an x86_64 machine with the latest Ubuntu LTS),
+  (b) works on the GNU/Linux platform (more specifically, it must run on an x86_64 machine with the latest Ubuntu LTS, with only the self-declared packages installed),
   (c) is installable with user privileges (no root access required, except for required standard Ubuntu packages)
   and without hard-coded absolute paths for access to libraries and non-standard external tools,
   (d) succeeds for more than 50 % of all training programs to parse the input and
