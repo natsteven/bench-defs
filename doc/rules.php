@@ -276,12 +276,12 @@ as a reaction to the community feedback after the first competition
   If a verification run detects that a property is violated,
   then the violated (potentially partial) property has to be given in the result:
   <span style="color:green">FALSE(<i>p</i>)</span>,
-  with p in 
+  with p in
   {unreach-call, termination, no-overflow, valid-free, valid-deref, valid-memtrack, valid-memcleanup, no-data-race},
   meaning the (potentially partial) property p is violated.
 </p>
 <p>
-  If a verification run detects that no checked property is violated, 
+  If a verification run detects that no checked property is violated,
   then no property shall be given in the result:
   <span style="color:green">TRUE</span>, meaning the input was found to satisfy all properties.
 </p>
