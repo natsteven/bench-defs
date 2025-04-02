@@ -510,8 +510,16 @@ as a reaction to the community feedback after the first competition
 
 <p>
   The programs are assumed to be written in GNU C (some of them adhere to ANSI C).
-  Each program contains all code that is needed for the verification, i.e., no includes (cpp -P).
-  Some programs are provided in CIL (C Intermediate Language) <a href="http://www.eecs.berkeley.edu/~necula/cil/">[1]</a>.
+  Each program consists of a single file, which is either: a .i file, which is preprocessed, or a .c file, which may be un-preprocessed.
+  Un-preprocessed programs fulfill the following requirements:
+  <ol>
+    <li><pre>#include</pre> directives only include headers from the C standard or <pre>pthread.h</pre>.</li>
+    <li>No <pre>#define</pre> directives are used.</li>
+    <li>All used macros are defined by the C standard or <pre>pthread.h</pre>.</li>
+  </ol>
+  A verifier may preprocess a .c file using <pre>cpp -m32</pre> or <pre>cpp -m64</pre>, depending on the program architecture (see below), without requiring additional macro definitions (<pre>-D</pre> arguments) or include paths (<pre>-I</pre> arguments) to be specified.
+  Note that witnesses should still refer to the un-preprocessed .c file (a verifier can rely on <a href="https://gcc.gnu.org/onlinedocs/gcc-14.2.0/cpp/Line-Control.html"><pre>#line</pre> directives</a> to achieve this).
+  Each program contains all code that is needed for the verification, i.e., all non-standard functions are defined.
 </p>
 
 <p>
