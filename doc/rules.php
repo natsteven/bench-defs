@@ -291,7 +291,7 @@ as a reaction to the community feedback after the first competition
         <pre>G ! call(func())</pre>
       </td>
       <td>
-        The function 'func' is not called in any finite execution of the program.
+        The function 'func' is not called in any execution of the program.
       </td>
     </tr>
   </tbody>
