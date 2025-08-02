@@ -588,6 +588,19 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
+    <strong>__VERIFIER_nondet_object(void *, size_t):</strong>
+    This function initializes the given memory region with arbitrary values.
+    The first argument must be a pointer to a valid memory region of the given size.
+    The second argument specifies the size of the memory region to initialize.
+    The method guarantees that any value in the initialized memory region that has a pointer type is set to 0.<br />
+    Example use:
+    <pre>
+struct structType s;
+__VERIFIER_nondet_object(&s, sizeof(s));
+    </pre>
+</p>
+
+<p>
   <strong>__VERIFIER_atomic_*(): </strong>
   These functions are deprecated, but still used in existing tasks.
   Please consider using standard C features from <tt>stdatomic.h</tt> and <tt>pthread.h</tt> to model atomicity (e.g., atomic types, atomic loads / stores, mutexes, ...).<br>
