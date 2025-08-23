@@ -893,8 +893,4 @@ with having the real results of the tool counted towards the meta category, but 
   Verifier B was even stronger than Verifier D in one category, but performed not so well in the other category, and thus, only got second overall.
 </p>
 
-<p style="text-align: right; font-size: 70%;">
-  $LastChangedDate:: 2023-11-11 14:38:43 +0100 #$
-</p>
-
 <?php pageFooter(); ?>
