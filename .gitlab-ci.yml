@@ -28,7 +28,7 @@ check-definitions:
 
 check-category-structure:
   script:
-    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/ --witnesslint-allowed-missing-categories CorrectnessWitnesses-Loops,ViolationWitnesses-ControlFlow --allow-unused sv-benchmarks/c/CorrectnessWitnesses-Loops.set,sv-benchmarks/c/ViolationWitnesses-ControlFlow.set,sv-benchmarks/Invalid-TaskDefs.set
+    - ./scripts/test/check-categories.py --tasks-directory sv-benchmarks --category-structure benchmark-defs/category-structure.yml --reference-benchdef-c benchmark-defs/cpachecker.xml --reference-benchdef-java benchmark-defs/jbmc.xml --benchdef-xmls benchmark-defs/ --witnesslint-allowed-missing-categories CorrectnessWitnesses-Loops,ViolationWitnesses-ControlFlow --allow-unused sv-benchmarks/c/CorrectnessWitnesses-Loops.set,sv-benchmarks/c/ViolationWitnesses-ControlFlow.set,sv-benchmarks/Invalid-TaskDefs.set,sv-benchmarks/c/Unused_DeviceDriversLinux64Regression.set
 
 check-benchdefs-consistency:
   script:
