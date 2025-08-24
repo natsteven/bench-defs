@@ -681,6 +681,8 @@ The submitted system has to meet the following requirements:
   <li>The verifier should not require any special software on the competition machines; all necessary libraries and external tools
     should be contained in the archive. Standard packages that are available as Ubuntu packages can be requested.
   </li>
+  <li>The verifier should be executable from any arbitrary location, and should not expect the working directory to match the tool directory.
+  </li>
 </ul>
 
 
