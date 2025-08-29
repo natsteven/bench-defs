@@ -589,14 +589,27 @@ as a reaction to the community feedback after the first competition
 
 <p>
     <strong>__VERIFIER_nondet_object(void *, size_t):</strong>
-    This function initializes the given memory region with arbitrary values.
-    The first argument must be a pointer to a valid memory region of the given size.
-    The second argument specifies the size of the memory region to initialize.
-    The method guarantees that any value in the initialized memory region that has a pointer type is set to 0.<br />
-    Example use:
+    This function initializes the given memory block with arbitrary values.
+    The first argument must be a valid pointer to the start of a memory block of the given size.
+    The second argument specifies the size of the memory to initialize.
+    It must match the size of the memory block the first argument points to.
+    The verification tool can assume that <tt>__VERIFIER_nondet_object</tt> is implemented as follows:
+    <pre>
+void __VERIFIER_nondet_object(void *mem, size_t size) {
+    unsigned char *p = mem;
+    for (size_t i = 0; i < size; i++) {
+        p[i] = __VERIFIER_nondet_uchar();
+    }
+}
+    </pre>
+    <br />
+    Example uses of <tt>__VERIFIER_nondet_object</tt>:
     <pre>
 struct structType s;
 __VERIFIER_nondet_object(&s, sizeof(s));
+
+int * values = malloc(sizeof(int) * 20);
+__VERIFIER_nondet_object(values, sizeof(int) * 20);
     </pre>
 </p>
 
