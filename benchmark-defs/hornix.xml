@@ -9,12 +9,12 @@
 
 
   <rundefinition name="SV-COMP25_unreach-call">
-    <tasks name="ReachSafety-Loops">
+    <tasks name="C.unreach-call.Loops">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Recursive">
+    <tasks name="C.unreach-call.Recursive">
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

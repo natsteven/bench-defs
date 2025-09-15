@@ -17,12 +17,12 @@ categories:
   ReachSafety:
     properties: unreach-call
     categories:
-      - unreach-call.ReachSafety-Arrays
-      - unreach-call.ReachSafety-BitVectors
-      - unreach-call.ReachSafety-ControlFlow
-      - unreach-call.ReachSafety-Floats
-      - unreach-call.ReachSafety-Heap
-      - unreach-call.ReachSafety-Loops
+      - C.unreach-call.Arrays
+      - C.unreach-call.BitVectors
+      - C.unreach-call.ControlFlow
+      - C.unreach-call.Floats
+      - C.unreach-call.Heap
+      - C.unreach-call.Loops
     verifiers:
       - cpachecker
       - cpa-par
@@ -58,21 +58,21 @@ categories:
       - esbmc-par-aws
 
 categories_process_order:
-  - unreach-call.ReachSafety-Arrays
-  - unreach-call.ReachSafety-BitVectors
-  - unreach-call.ReachSafety-ControlFlow
-  - unreach-call.ReachSafety-Floats
-  - unreach-call.ReachSafety-Heap
-  - unreach-call.ReachSafety-Loops
+  - C.unreach-call.Arrays
+  - C.unreach-call.BitVectors
+  - C.unreach-call.ControlFlow
+  - C.unreach-call.Floats
+  - C.unreach-call.Heap
+  - C.unreach-call.Loops
   - ReachSafety
 
 categories_table_order:
-  - unreach-call.ReachSafety-Arrays
-  - unreach-call.ReachSafety-BitVectors
-  - unreach-call.ReachSafety-ControlFlow
-  - unreach-call.ReachSafety-Floats
-  - unreach-call.ReachSafety-Heap
-  - unreach-call.ReachSafety-Loops
+  - C.unreach-call.Arrays
+  - C.unreach-call.BitVectors
+  - C.unreach-call.ControlFlow
+  - C.unreach-call.Floats
+  - C.unreach-call.Heap
+  - C.unreach-call.Loops
   - ReachSafety
   
 opt_out:

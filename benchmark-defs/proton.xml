@@ -10,19 +10,19 @@
   <option name="witness.graphml" />
 
   <rundefinition name="SV-COMP25_termination">
-    <tasks name="Termination-BitVectors">
+    <tasks name="C.termination.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-MainControlFlow">
+    <tasks name="C.termination.MainControlFlow">
       <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-MainHeap">
+    <tasks name="C.termination.MainHeap">
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-Other">
+    <tasks name="C.termination.Other">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
@@ -36,7 +36,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+    <tasks name="C.termination.SoftwareSystems-DeviceDriversLinux64">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>

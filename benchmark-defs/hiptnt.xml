@@ -7,19 +7,19 @@
   <resultfiles>**/witness.*</resultfiles>
 
 <rundefinition name="SV-COMP23">
-  <tasks name="Termination-MainControlFlow">
+  <tasks name="C.termination.MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
-  <tasks name="Termination-MainHeap">
+  <tasks name="C.termination.MainHeap">
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
-  <tasks name="Termination-Other">
+  <tasks name="C.termination.Other">
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>
-  <tasks name="SoftwareSystems-DeviceDriversLinux64-Termination">
+  <tasks name="C.termination.SoftwareSystems-DeviceDriversLinux64">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-Termination.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
   </tasks>

@@ -7,7 +7,7 @@
   <resultfiles>**/witness.*</resultfiles>
 
 <rundefinition name="SV-COMP25_assert_java">
-  <tasks name="ReachSafety-Java">
+  <tasks name="Java.assert_java.Java">
     <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
     <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
   </tasks>

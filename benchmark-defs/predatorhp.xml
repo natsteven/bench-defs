@@ -10,7 +10,7 @@
   <option name="witness.graphml" />
 
   <rundefinition name="SV-COMP25_unreach-call">
-    <tasks name="ReachSafety-Heap">
+    <tasks name="C.unreach-call.Heap">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -18,7 +18,7 @@
     </rundefinition>
 
   <rundefinition name="SV-COMP25_valid-memcleanup">
-    <tasks name="MemSafety-MemCleanup">
+    <tasks name="C.valid-memcleanup.MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
@@ -29,29 +29,29 @@
     </rundefinition>
 
   <rundefinition name="SV-COMP25_valid-memsafety">
-    <tasks name="MemSafety-Arrays">
+    <tasks name="C.valid-memsafety.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Heap">
+    <tasks name="C.valid-memsafety.Heap">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-LinkedLists">
+    <tasks name="C.valid-memsafety.LinkedLists">
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Other">
+    <tasks name="C.valid-memsafety.Other">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Juliet">
+    <tasks name="C.valid-memsafety.Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>

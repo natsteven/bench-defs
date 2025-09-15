@@ -190,27 +190,27 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-  - runtime-exception.RuntimeException-Java
+  - Java.runtime-exception.Java
 
 categories:
   ReachSafety:
     properties: unreach-call
     categories:
-      - unreach-call.ReachSafety-Arrays
-      - unreach-call.ReachSafety-BitVectors
-      - unreach-call.ReachSafety-ControlFlow
-      - unreach-call.ReachSafety-ECA
-      - unreach-call.ReachSafety-Floats
-      - unreach-call.ReachSafety-Heap
-      - unreach-call.ReachSafety-Loops
-      - unreach-call.ReachSafety-ProductLines
-      - unreach-call.ReachSafety-Recursive
-      - unreach-call.ReachSafety-Sequentialized
-      - unreach-call.ReachSafety-XCSP
-      - unreach-call.ReachSafety-Combinations
-      - unreach-call.ReachSafety-Hardware
-      - unreach-call.ReachSafety-Hardness
-      - unreach-call.ReachSafety-Fuzzle
+      - C.unreach-call.Arrays
+      - C.unreach-call.BitVectors
+      - C.unreach-call.ControlFlow
+      - C.unreach-call.ECA
+      - C.unreach-call.Floats
+      - C.unreach-call.Heap
+      - C.unreach-call.Loops
+      - C.unreach-call.ProductLines
+      - C.unreach-call.Recursive
+      - C.unreach-call.Sequentialized
+      - C.unreach-call.XCSP
+      - C.unreach-call.Combinations
+      - C.unreach-call.Hardware
+      - C.unreach-call.Hardness
+      - C.unreach-call.Fuzzle
     verifiers:
       - 2ls
       - bubaak
@@ -274,12 +274,12 @@ categories:
       - valid-memsafety
       - valid-memcleanup
     categories:
-      - valid-memsafety.MemSafety-Arrays
-      - valid-memsafety.MemSafety-Heap
-      - valid-memsafety.MemSafety-LinkedLists
-      - valid-memsafety.MemSafety-Other
-      - valid-memsafety.MemSafety-Juliet
-      - valid-memcleanup.MemSafety-MemCleanup
+      - C.valid-memsafety.Arrays
+      - C.valid-memsafety.Heap
+      - C.valid-memsafety.LinkedLists
+      - C.valid-memsafety.Other
+      - C.valid-memsafety.Juliet
+      - C.valid-memcleanup.MemCleanup
     verifiers:
       - 2ls
       - bubaak
@@ -335,10 +335,10 @@ categories:
       - no-overflow
       - valid-memsafety
     categories:
-      - unreach-call.ConcurrencySafety-Main
-      - valid-memsafety.ConcurrencySafety-MemSafety
-      - no-overflow.ConcurrencySafety-NoOverflows
-      - no-data-race.NoDataRace-Main
+      - C.unreach-call.Concurrency
+      - C.valid-memsafety.Concurrency
+      - C.no-overflow.Concurrency
+      - C.no-data-race.Concurrency
     verifiers:
       - 2ls
       - bubaak
@@ -388,8 +388,8 @@ categories:
   NoOverflows:
     properties: no-overflow
     categories:
-      - no-overflow.NoOverflows-Main
-      - no-overflow.NoOverflows-Juliet
+      - C.no-overflow.Main
+      - C.no-overflow.Juliet
     verifiers:
       - 2ls
       - bubaak
@@ -448,10 +448,10 @@ categories:
   Termination:
     properties: termination
     categories:
-      - termination.Termination-BitVectors
-      - termination.Termination-MainControlFlow
-      - termination.Termination-MainHeap
-      - termination.Termination-Other
+      - C.termination.BitVectors
+      - C.termination.MainControlFlow
+      - C.termination.MainHeap
+      - C.termination.Other
     verifiers:
       - 2ls
       - aprove
@@ -501,21 +501,21 @@ categories:
       - valid-memcleanup
       - termination
     categories:
-      - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-      - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-      - no-overflow.SoftwareSystems-coreutils-NoOverflows
-      - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-      - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-      - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-      - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-      - unreach-call.SoftwareSystems-Other-ReachSafety
-      - valid-memsafety.SoftwareSystems-Other-MemSafety
-      - unreach-call.SoftwareSystems-uthash-ReachSafety
-      - valid-memsafety.SoftwareSystems-uthash-MemSafety
-      - no-overflow.SoftwareSystems-uthash-NoOverflows
-      - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
-      - termination.SoftwareSystems-DeviceDriversLinux64-Termination
-      - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
+      - C.unreach-call.SoftwareSystems-AWS-C-Common
+      - C.valid-memsafety.SoftwareSystems-coreutils
+      - C.no-overflow.SoftwareSystems-coreutils
+      - C.no-overflow.SoftwareSystems-BusyBox
+      - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
+      - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
+      - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+      - C.unreach-call.SoftwareSystems-Other
+      - C.valid-memsafety.SoftwareSystems-Other
+      - C.unreach-call.SoftwareSystems-uthash
+      - C.valid-memsafety.SoftwareSystems-uthash
+      - C.no-overflow.SoftwareSystems-uthash
+      - C.valid-memcleanup.SoftwareSystems-uthash
+      - C.termination.SoftwareSystems-DeviceDriversLinux64
+      - C.unreach-call.SoftwareSystems-Intel-TDX-Module
     verifiers:
       - 2ls
       - bubaak
@@ -573,8 +573,8 @@ categories:
     properties: 
       - unreach-call
     categories:
-      - unreach-call.CorrectnessWitnesses-Loops
-      - unreach-call.ViolationWitnesses-ControlFlow
+      - C.unreach-call.CorrectnessWitnesses-Loops
+      - C.unreach-call.ViolationWitnesses-ControlFlow
     verifiers:
       - witnessmap
     validators:
@@ -725,8 +725,8 @@ categories:
       - assert_java
       - runtime-exception
     categories:
-      - assert_java.ReachSafety-Java
-      - runtime-exception.RuntimeException-Java
+      - Java.assert_java.Java
+      - Java.runtime-exception.Java
     verifiers:
       - coastal
       - gdart
@@ -743,184 +743,184 @@ categories:
       - jcwit-validate-correctness-witnesses-1.0
 
 categories_process_order:
-  - unreach-call.ReachSafety-Arrays
-  - unreach-call.ReachSafety-BitVectors
-  - unreach-call.ReachSafety-ControlFlow
-  - unreach-call.ReachSafety-ECA
-  - unreach-call.ReachSafety-Floats
-  - unreach-call.ReachSafety-Heap
-  - unreach-call.ReachSafety-Loops
-  - unreach-call.ReachSafety-ProductLines
-  - unreach-call.ReachSafety-Recursive
-  - unreach-call.ReachSafety-Sequentialized
-  - unreach-call.ReachSafety-XCSP
-  - unreach-call.ReachSafety-Combinations
-  - unreach-call.ReachSafety-Hardware
-  - unreach-call.ReachSafety-Hardness
-  - unreach-call.ReachSafety-Fuzzle
+  - C.unreach-call.Arrays
+  - C.unreach-call.BitVectors
+  - C.unreach-call.ControlFlow
+  - C.unreach-call.ECA
+  - C.unreach-call.Floats
+  - C.unreach-call.Heap
+  - C.unreach-call.Loops
+  - C.unreach-call.ProductLines
+  - C.unreach-call.Recursive
+  - C.unreach-call.Sequentialized
+  - C.unreach-call.XCSP
+  - C.unreach-call.Combinations
+  - C.unreach-call.Hardware
+  - C.unreach-call.Hardness
+  - C.unreach-call.Fuzzle
   - ReachSafety
-  - valid-memsafety.MemSafety-Arrays
-  - valid-memsafety.MemSafety-Heap
-  - valid-memsafety.MemSafety-LinkedLists
-  - valid-memsafety.MemSafety-Other
-  - valid-memsafety.MemSafety-Juliet
-  - valid-memcleanup.MemSafety-MemCleanup
+  - C.valid-memsafety.Arrays
+  - C.valid-memsafety.Heap
+  - C.valid-memsafety.LinkedLists
+  - C.valid-memsafety.Other
+  - C.valid-memsafety.Juliet
+  - C.valid-memcleanup.MemCleanup
   - MemSafety
-  - unreach-call.ConcurrencySafety-Main
-  - valid-memsafety.ConcurrencySafety-MemSafety
-  - no-overflow.ConcurrencySafety-NoOverflows
-  - no-data-race.NoDataRace-Main
+  - C.unreach-call.Concurrency
+  - C.valid-memsafety.Concurrency
+  - C.no-overflow.Concurrency
+  - C.no-data-race.Concurrency
   - ConcurrencySafety
-  - no-overflow.NoOverflows-Main
-  - no-overflow.NoOverflows-Juliet
+  - C.no-overflow.Main
+  - C.no-overflow.Juliet
   - NoOverflows
-  - termination.Termination-BitVectors
-  - termination.Termination-MainControlFlow
-  - termination.Termination-MainHeap
-  - termination.Termination-Other
+  - C.termination.BitVectors
+  - C.termination.MainControlFlow
+  - C.termination.MainHeap
+  - C.termination.Other
   - Termination
-  - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-  - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-  - no-overflow.SoftwareSystems-coreutils-NoOverflows
-  - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-  - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-  - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-  - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
-  - unreach-call.SoftwareSystems-Other-ReachSafety
-  - valid-memsafety.SoftwareSystems-Other-MemSafety
-  - unreach-call.SoftwareSystems-uthash-ReachSafety
-  - valid-memsafety.SoftwareSystems-uthash-MemSafety
-  - no-overflow.SoftwareSystems-uthash-NoOverflows
-  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
-  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-BusyBox
+  - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-Intel-TDX-Module
+  - C.unreach-call.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.unreach-call.SoftwareSystems-uthash
+  - C.valid-memsafety.SoftwareSystems-uthash
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.valid-memcleanup.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
   - SoftwareSystems
-  - unreach-call.CorrectnessWitnesses-Loops
-  - unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses-Loops
+  - C.unreach-call.ViolationWitnesses-ControlFlow
   - ValidationCrafted
   - FalsificationOverall
   - Overall
-  - assert_java.ReachSafety-Java
-  - runtime-exception.RuntimeException-Java
+  - Java.assert_java.Java
+  - Java.runtime-exception.Java
   - JavaOverall
 
 categories_table_order:
   - ReachSafety
-  - unreach-call.ReachSafety-Arrays
-  - unreach-call.ReachSafety-BitVectors
-  - unreach-call.ReachSafety-ControlFlow
-  - unreach-call.ReachSafety-ECA
-  - unreach-call.ReachSafety-Floats
-  - unreach-call.ReachSafety-Heap
-  - unreach-call.ReachSafety-Loops
-  - unreach-call.ReachSafety-ProductLines
-  - unreach-call.ReachSafety-Recursive
-  - unreach-call.ReachSafety-Sequentialized
-  - unreach-call.ReachSafety-XCSP
-  - unreach-call.ReachSafety-Combinations
-  - unreach-call.ReachSafety-Hardware
-  - unreach-call.ReachSafety-Hardness
-  - unreach-call.ReachSafety-Fuzzle
+  - C.unreach-call.Arrays
+  - C.unreach-call.BitVectors
+  - C.unreach-call.ControlFlow
+  - C.unreach-call.ECA
+  - C.unreach-call.Floats
+  - C.unreach-call.Heap
+  - C.unreach-call.Loops
+  - C.unreach-call.ProductLines
+  - C.unreach-call.Recursive
+  - C.unreach-call.Sequentialized
+  - C.unreach-call.XCSP
+  - C.unreach-call.Combinations
+  - C.unreach-call.Hardware
+  - C.unreach-call.Hardness
+  - C.unreach-call.Fuzzle
   - MemSafety
-  - valid-memsafety.MemSafety-Arrays
-  - valid-memsafety.MemSafety-Heap
-  - valid-memsafety.MemSafety-LinkedLists
-  - valid-memsafety.MemSafety-Other
-  - valid-memsafety.MemSafety-Juliet
-  - valid-memcleanup.MemSafety-MemCleanup
+  - C.valid-memsafety.Arrays
+  - C.valid-memsafety.Heap
+  - C.valid-memsafety.LinkedLists
+  - C.valid-memsafety.Other
+  - C.valid-memsafety.Juliet
+  - C.valid-memcleanup.MemCleanup
   - ConcurrencySafety
-  - unreach-call.ConcurrencySafety-Main
-  - valid-memsafety.ConcurrencySafety-MemSafety
-  - no-overflow.ConcurrencySafety-NoOverflows
-  - no-data-race.NoDataRace-Main
+  - C.unreach-call.Concurrency
+  - C.valid-memsafety.Concurrency
+  - C.no-overflow.Concurrency
+  - C.no-data-race.Concurrency
   - NoOverflows
-  - no-overflow.NoOverflows-Main
-  - no-overflow.NoOverflows-Juliet
+  - C.no-overflow.Main
+  - C.no-overflow.Juliet
   - Termination
-  - termination.Termination-BitVectors
-  - termination.Termination-MainControlFlow
-  - termination.Termination-MainHeap
-  - termination.Termination-Other
+  - C.termination.BitVectors
+  - C.termination.MainControlFlow
+  - C.termination.MainHeap
+  - C.termination.Other
   - SoftwareSystems
-  - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-  - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-  - no-overflow.SoftwareSystems-coreutils-NoOverflows
-  - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-  - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-  - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-  - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-  - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
-  - unreach-call.SoftwareSystems-Other-ReachSafety
-  - valid-memsafety.SoftwareSystems-Other-MemSafety
-  - unreach-call.SoftwareSystems-uthash-ReachSafety
-  - valid-memsafety.SoftwareSystems-uthash-MemSafety
-  - no-overflow.SoftwareSystems-uthash-NoOverflows
-  - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
-  - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-BusyBox
+  - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-Intel-TDX-Module
+  - C.unreach-call.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.unreach-call.SoftwareSystems-uthash
+  - C.valid-memsafety.SoftwareSystems-uthash
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.valid-memcleanup.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
   - ValidationCrafted
-  - unreach-call.CorrectnessWitnesses-Loops
-  - unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses-Loops
+  - C.unreach-call.ViolationWitnesses-ControlFlow
   - FalsificationOverall
   - Overall
   - JavaOverall
-  - assert_java.ReachSafety-Java
-  - runtime-exception.RuntimeException-Java
+  - Java.assert_java.Java
+  - Java.runtime-exception.Java
 
 validation_only:
   - ValidationCrafted
-  - unreach-call.CorrectnessWitnesses-Loops
-  - unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses-Loops
+  - C.unreach-call.ViolationWitnesses-ControlFlow
 
 opt_out:
   2ls:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   cbmc:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   cpa-lockator:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   cpa-bam-bnb:
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
-    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+    - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.valid-memcleanup.SoftwareSystems-uthash
   cpa-bam-smg:
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
-    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
+    - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.valid-memcleanup.SoftwareSystems-uthash
   divine:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   ebf:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   esbmc-incr:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   lazycseq:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   lf-checker:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   pichecker:
-    - no-data-race.NoDataRace-Main
-    - no-overflow.ConcurrencySafety-NoOverflows
-    - valid-memsafety.ConcurrencySafety-MemSafety
+    - C.no-data-race.Concurrency
+    - C.no-overflow.Concurrency
+    - C.valid-memsafety.Concurrency
   symbiotic:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   pesco:
     - MemSafety
     - ConcurrencySafety
     - NoOverflows
     - Termination
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   map2check:
     - ReachSafety
   infer:
     # Infer can't handle floats
-    - unreach-call.ReachSafety-Floats
+    - C.unreach-call.Floats
     # Infer's RacerD analysis does not work on these C examples
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
     # Tasks contain specific error-methods that infer-sv can not handle because of modular analysis
-    - unreach-call.ReachSafety-ProductLines
-    - unreach-call.ReachSafety-Combinations
-    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+    - C.unreach-call.ProductLines
+    - C.unreach-call.Combinations
+    - C.unreach-call.SoftwareSystems-AWS-C-Common
+    - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
+    - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
+    - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-DeviceDriversLinux64
   pinaka:
     - FalsificationOverall
     - Overall
@@ -929,100 +929,100 @@ opt_out:
     - ConcurrencySafety
     - NoOverflows
     - Termination
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   coastal:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
   jayhorn:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
   jdart:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
   mlb:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
   spf:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
   swat:
-    - runtime-exception.RuntimeException-Java
+    - Java.runtime-exception.Java
 
 opt_in:
   aise:
-    - unreach-call.ReachSafety-Loops
+    - C.unreach-call.Loops
   brick:
-    - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-BitVectors
-    - unreach-call.ReachSafety-Floats
+    - C.unreach-call.Arrays
+    - C.unreach-call.BitVectors
+    - C.unreach-call.Floats
   concurrentwitness2test-validate-violation-witnesses-1.0:
-    - unreach-call.ConcurrencySafety-Main
+    - C.unreach-call.Concurrency
   cooperace:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   crux:
-    - unreach-call.SoftwareSystems-AWS-C-Common-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64-ReachSafety
-    - unreach-call.SoftwareSystems-DeviceDriversLinux64Large-ReachSafety
-    - unreach-call.SoftwareSystems-Other-ReachSafety
-    - unreach-call.SoftwareSystems-uthash-ReachSafety
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - no-overflow.SoftwareSystems-coreutils-NoOverflows
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
-    - unreach-call.SoftwareSystems-Intel-TDX-Module-ReachSafety
+    - C.unreach-call.SoftwareSystems-AWS-C-Common
+    - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
+    - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
+    - C.unreach-call.SoftwareSystems-Other
+    - C.unreach-call.SoftwareSystems-uthash
+    - C.no-overflow.SoftwareSystems-BusyBox
+    - C.no-overflow.SoftwareSystems-coreutils
+    - C.no-overflow.SoftwareSystems-uthash
+    - C.unreach-call.SoftwareSystems-Intel-TDX-Module
   frama-c-sv:
-    - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-BitVectors
-    - unreach-call.ReachSafety-ECA
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-ProductLines
-    - unreach-call.ReachSafety-Recursive
-    - unreach-call.ReachSafety-Combinations
-    - unreach-call.ReachSafety-Hardware
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - no-overflow.SoftwareSystems-coreutils-NoOverflows
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
+    - C.unreach-call.Arrays
+    - C.unreach-call.BitVectors
+    - C.unreach-call.ECA
+    - C.unreach-call.Loops
+    - C.unreach-call.ProductLines
+    - C.unreach-call.Recursive
+    - C.unreach-call.Combinations
+    - C.unreach-call.Hardware
+    - C.no-overflow.SoftwareSystems-BusyBox
+    - C.no-overflow.SoftwareSystems-coreutils
+    - C.no-overflow.SoftwareSystems-uthash
   gacal:
-    - unreach-call.ReachSafety-Loops
+    - C.unreach-call.Loops
   gazer-theta:
-    - unreach-call.ReachSafety-BitVectors
-    - unreach-call.ReachSafety-ControlFlow
-    - unreach-call.ReachSafety-ECA
-    - unreach-call.ReachSafety-Floats
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-ProductLines
-    - unreach-call.ReachSafety-Recursive
-    - unreach-call.ReachSafety-XCSP
-    - unreach-call.ReachSafety-Combinations
+    - C.unreach-call.BitVectors
+    - C.unreach-call.ControlFlow
+    - C.unreach-call.ECA
+    - C.unreach-call.Floats
+    - C.unreach-call.Loops
+    - C.unreach-call.ProductLines
+    - C.unreach-call.Recursive
+    - C.unreach-call.XCSP
+    - C.unreach-call.Combinations
   gdart-llvm:
-    - unreach-call.ReachSafety-BitVectors
+    - C.unreach-call.BitVectors
   hornix:
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-Recursive  
+    - C.unreach-call.Loops
+    - C.unreach-call.Recursive  
   korn:
-    - unreach-call.ReachSafety-Arrays
-    - unreach-call.ReachSafety-ControlFlow
-    - unreach-call.ReachSafety-ECA
-    - unreach-call.ReachSafety-Loops
-    - unreach-call.ReachSafety-Recursive
-    - unreach-call.ReachSafety-Sequentialized
-    - unreach-call.ReachSafety-XCSP
-    - unreach-call.ReachSafety-Fuzzle
+    - C.unreach-call.Arrays
+    - C.unreach-call.ControlFlow
+    - C.unreach-call.ECA
+    - C.unreach-call.Loops
+    - C.unreach-call.Recursive
+    - C.unreach-call.Sequentialized
+    - C.unreach-call.XCSP
+    - C.unreach-call.Fuzzle
   locksmith:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   proton:
-    - termination.SoftwareSystems-DeviceDriversLinux64-Termination
+    - C.termination.SoftwareSystems-DeviceDriversLinux64
   racerf:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   relay-sv:
-    - no-data-race.NoDataRace-Main
+    - C.no-data-race.Concurrency
   sv-sanitizers:
-    - no-data-race.NoDataRace-Main
-    - valid-memsafety.SoftwareSystems-coreutils-MemSafety
-    - valid-memsafety.SoftwareSystems-DeviceDriversLinux64-MemSafety
-    - valid-memsafety.SoftwareSystems-Other-MemSafety
-    - valid-memsafety.SoftwareSystems-uthash-MemSafety
-    - valid-memsafety.ConcurrencySafety-MemSafety
-    - valid-memcleanup.SoftwareSystems-uthash-MemCleanup
-    - no-overflow.SoftwareSystems-coreutils-NoOverflows
-    - no-overflow.SoftwareSystems-BusyBox-NoOverflows
-    - no-overflow.SoftwareSystems-uthash-NoOverflows
-    - no-overflow.ConcurrencySafety-NoOverflows
+    - C.no-data-race.Concurrency
+    - C.valid-memsafety.SoftwareSystems-coreutils
+    - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+    - C.valid-memsafety.SoftwareSystems-Other
+    - C.valid-memsafety.SoftwareSystems-uthash
+    - C.valid-memsafety.Concurrency
+    - C.valid-memcleanup.SoftwareSystems-uthash
+    - C.no-overflow.SoftwareSystems-coreutils
+    - C.no-overflow.SoftwareSystems-BusyBox
+    - C.no-overflow.SoftwareSystems-uthash
+    - C.no-overflow.Concurrency
   predatorhp:
-    - unreach-call.ReachSafety-Heap
+    - C.unreach-call.Heap
   verioover:
-    - no-overflow.NoOverflows-Main
+    - C.no-overflow.Main

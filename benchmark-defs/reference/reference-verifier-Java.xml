@@ -9,14 +9,14 @@
 {benchexec_toolinfo_options}
 
   <rundefinition name="SV-COMP25_assert_java">
-    <tasks name="ReachSafety-Java">
+    <tasks name="Java.assert_java.Java">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
     </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP25_runtime-exception">
-    <tasks name="RuntimeException-Java">
+    <tasks name="Java.runtime-exception.Java">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
     </tasks>
