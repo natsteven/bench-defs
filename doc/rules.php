@@ -511,6 +511,7 @@ as a reaction to the community feedback after the first competition
 <p>
   The programs are assumed to be written in GNU C (some of them adhere to ANSI C).
   Each program consists of a single file, which is either: a .i file, which is preprocessed, or a .c file, which may be un-preprocessed.
+  A verifier may distinguish between preprocessed and un-preprocessed programs using the given file extensions.
   Un-preprocessed programs fulfill the following requirements:
   <ol>
     <li><pre>#include</pre> directives only include headers from the C standard or <pre>pthread.h</pre>.</li>
