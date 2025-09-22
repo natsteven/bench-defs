@@ -123,7 +123,7 @@
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
 {witness_options}
 
-    <tasks name="C.no-data-race.NoDataRace-Main">
+    <tasks name="C.no-data-race.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
