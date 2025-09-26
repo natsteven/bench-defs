@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="spf-z3" displayName="SPF-z3str3" timelimit="1 min" memlimit="15 GB" cpuCores="4">
+
+    <rundefinition name="String">
+        <tasks name="RuntimeException-Java">
+            <includesfile>String-Java.set</includesfile>
+            <propertyfile>sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
+        </tasks>
+    </rundefinition>
+
+</benchmark>
