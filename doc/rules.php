@@ -588,28 +588,28 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-    <strong>__VERIFIER_nondet_object(void *, size_t):</strong>
+    <strong>__VERIFIER_nondet_memory(void *, size_t):</strong>
     This function initializes the given memory block with arbitrary values.
     The first argument must be a valid pointer to the start of a memory block of the given size.
     The second argument specifies the size of the memory to initialize and must match the size of the memory block that the first argument points to.
     The dereference of any pointer value set through this method results in undefined behavior.
     This means that pointer values must be explicitly set through different means before they can be dereferenced.
-    The verification tool can assume that <tt>__VERIFIER_nondet_object</tt> is implemented as follows:
+    The verification tool can assume that <tt>__VERIFIER_nondet_memory</tt> is implemented as follows:
     <pre>
-void __VERIFIER_nondet_object(void *mem, size_t size) {
+void __VERIFIER_nondet_memory(void *mem, size_t size) {
     unsigned char *p = mem;
     for (size_t i = 0; i < size; i++) {
         p[i] = __VERIFIER_nondet_uchar();
     }
 }
     </pre>
-    Example uses of <tt>__VERIFIER_nondet_object</tt>:
+    Example uses of <tt>__VERIFIER_nondet_memory</tt>:
     <pre>
 struct structType s;
-__VERIFIER_nondet_object(&s, sizeof(s));
+__VERIFIER_nondet_memory(&s, sizeof(s));
 
 int * values = malloc(sizeof(int) * 20);
-__VERIFIER_nondet_object(values, sizeof(int) * 20);
+__VERIFIER_nondet_memory(values, sizeof(int) * 20);
     </pre>
 </p>
 
