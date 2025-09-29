@@ -591,8 +591,9 @@ as a reaction to the community feedback after the first competition
     <strong>__VERIFIER_nondet_object(void *, size_t):</strong>
     This function initializes the given memory block with arbitrary values.
     The first argument must be a valid pointer to the start of a memory block of the given size.
-    The second argument specifies the size of the memory to initialize.
-    It must match the size of the memory block the first argument points to.
+    The second argument specifies the size of the memory to initialize and must match the size of the memory block that the first argument points to.
+    The dereference of any pointer value set through this method results in undefined behavior.
+    This means that pointer values must be explicitly set through different means before they can be dereferenced.
     The verification tool can assume that <tt>__VERIFIER_nondet_object</tt> is implemented as follows:
     <pre>
 void __VERIFIER_nondet_object(void *mem, size_t size) {
@@ -602,7 +603,6 @@ void __VERIFIER_nondet_object(void *mem, size_t size) {
     }
 }
     </pre>
-    <br />
     Example uses of <tt>__VERIFIER_nondet_object</tt>:
     <pre>
 struct structType s;
