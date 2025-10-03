@@ -9,7 +9,7 @@
 
 
   <rundefinition name="SV-COMP25_unreach-call">
-    <tasks name="ReachSafety-Loops">
+    <tasks name="C.unreach-call.Loops">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

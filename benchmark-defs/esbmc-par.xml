@@ -10,27 +10,27 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <rundefinition name="SV-COMP20_unreach-call">
-    <tasks name="ReachSafety-Arrays">
+    <tasks name="C.unreach-call.Arrays">
        <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
        <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-BitVectors">
+    <tasks name="C.unreach-call.BitVectors">
       <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-ControlFlow">
+    <tasks name="C.unreach-call.ControlFlow">
       <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Floats">
+    <tasks name="C.unreach-call.Floats">
       <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Heap">
+    <tasks name="C.unreach-call.Heap">
       <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Loops">
+    <tasks name="C.unreach-call.Loops">
       <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>

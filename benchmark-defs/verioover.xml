@@ -9,7 +9,7 @@
 
 
   <rundefinition name="SV-COMP25_no-overflow">
-    <tasks name="NoOverflows-Main">
+    <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>

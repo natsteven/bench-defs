@@ -7,73 +7,73 @@
   <resultfiles>**/witness.*</resultfiles>
 
 <rundefinition name="SV-COMP25_unreach-call">
-    <tasks name="ReachSafety-Arrays">
+    <tasks name="C.unreach-call.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-BitVectors">
+    <tasks name="C.unreach-call.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-ControlFlow">
+    <tasks name="C.unreach-call.ControlFlow">
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-ECA">
+    <tasks name="C.unreach-call.ECA">
       <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Floats">
+    <tasks name="C.unreach-call.Floats">
       <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Heap">
+    <tasks name="C.unreach-call.Heap">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Loops">
+    <tasks name="C.unreach-call.Loops">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-ProductLines">
+    <tasks name="C.unreach-call.ProductLines">
       <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Recursive">
+    <tasks name="C.unreach-call.Recursive">
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Sequentialized">
+    <tasks name="C.unreach-call.Sequentialized">
       <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-XCSP">
+    <tasks name="C.unreach-call.XCSP">
       <includesfile>../sv-benchmarks/c/XCSP.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Combinations">
+    <tasks name="C.unreach-call.Combinations">
       <includesfile>../sv-benchmarks/c/Combinations.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Hardware">
+    <tasks name="C.unreach-call.Hardware">
       <includesfile>../sv-benchmarks/c/Hardware.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Hardness">
+    <tasks name="C.unreach-call.Hardness">
       <includesfile>../sv-benchmarks/c/Hardness.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="ReachSafety-Fuzzle">
+    <tasks name="C.unreach-call.Fuzzle">
       <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP25_no-overflow">
-    <tasks name="NoOverflows-Main">
+    <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
@@ -94,26 +94,26 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    <tasks name="NoOverflows-Juliet">
+    <tasks name="C.no-overflow.Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 </rundefinition>
 
 <rundefinition name="SV-COMP25_termination">
-    <tasks name="Termination-BitVectors">
+    <tasks name="C.termination.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-MainControlFlow">
+    <tasks name="C.termination.MainControlFlow">
       <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-MainHeap">
+    <tasks name="C.termination.MainHeap">
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
-    <tasks name="Termination-Other">
+    <tasks name="C.termination.Other">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>

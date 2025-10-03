@@ -8,23 +8,23 @@
 
   <option name="--local-dir" />
 
-  <rundefinition name="SV-COMP25_assert_java">
+  <rundefinition name="SV-COMP25_valid-assert">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-    <tasks name="ReachSafety-Java">
+    <tasks name="Java.valid-assert.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-      <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/java/properties/valid-assert.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_runtime-exception">
+  <rundefinition name="SV-COMP25_no-runtime-exception">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-    <tasks name="RuntimeException-Java">
+    <tasks name="Java.no-runtime-exception.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-      <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/java/properties/no-runtime-exception.prp</propertyfile>
     </tasks>
   </rundefinition>
 

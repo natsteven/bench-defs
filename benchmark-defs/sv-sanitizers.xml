@@ -9,14 +9,14 @@
 
 
   <rundefinition name="SV-COMP25_no-data-race">
-    <tasks name="NoDataRace-Main">
+    <tasks name="C.no-data-race.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP25_valid-memcleanup">
-    <tasks name="MemSafety-MemCleanup">
+    <tasks name="C.valid-memcleanup.MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
@@ -24,66 +24,66 @@
       <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-uthash-MemCleanup">
+    <tasks name="C.valid-memcleanup.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP25_valid-memsafety">
-    <tasks name="MemSafety-Arrays">
+    <tasks name="C.valid-memsafety.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Heap">
+    <tasks name="C.valid-memsafety.Heap">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-LinkedLists">
+    <tasks name="C.valid-memsafety.LinkedLists">
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Other">
+    <tasks name="C.valid-memsafety.Other">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
       <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="MemSafety-Juliet">
+    <tasks name="C.valid-memsafety.Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
-    <tasks name="SoftwareSystems-coreutils-MemSafety">
+    <tasks name="C.valid-memsafety.SoftwareSystems-coreutils">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-DeviceDriversLinux64-MemSafety">
+    <tasks name="C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-Other-MemSafety">
+    <tasks name="C.valid-memsafety.SoftwareSystems-Other">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-uthash-MemSafety">
+    <tasks name="C.valid-memsafety.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
-    <tasks name="ConcurrencySafety-MemSafety">
+    <tasks name="C.valid-memsafety.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP25_no-overflow">
-    <tasks name="NoOverflows-Main">
+    <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
@@ -104,25 +104,25 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    <tasks name="NoOverflows-Juliet">
+    <tasks name="C.no-overflow.Juliet">
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 
-    <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <tasks name="C.no-overflow.SoftwareSystems-BusyBox">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-coreutils-NoOverflows">
+    <tasks name="C.no-overflow.SoftwareSystems-coreutils">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-    <tasks name="SoftwareSystems-uthash-NoOverflows">
+    <tasks name="C.no-overflow.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 
-    <tasks name="ConcurrencySafety-NoOverflows">
+    <tasks name="C.no-overflow.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
