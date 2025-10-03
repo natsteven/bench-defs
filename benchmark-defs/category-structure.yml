@@ -186,11 +186,11 @@ properties:
   - valid-memcleanup
   - valid-memsafety
   - assert_java
-  - runtime-exception
+  - no-runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-  - Java.runtime-exception.Main
+  - Java.no-runtime-exception.Main
 
 categories:
   ReachSafety:
@@ -723,10 +723,10 @@ categories:
   JavaOverall:
     properties:
       - assert_java
-      - runtime-exception
+      - no-runtime-exception
     categories:
       - Java.assert_java.Main
-      - Java.runtime-exception.Main
+      - Java.no-runtime-exception.Main
     verifiers:
       - coastal
       - gdart
@@ -801,7 +801,7 @@ categories_process_order:
   - FalsificationOverall
   - Overall
   - Java.assert_java.Main
-  - Java.runtime-exception.Main
+  - Java.no-runtime-exception.Main
   - JavaOverall
 
 categories_table_order:
@@ -864,7 +864,7 @@ categories_table_order:
   - Overall
   - JavaOverall
   - Java.assert_java.Main
-  - Java.runtime-exception.Main
+  - Java.no-runtime-exception.Main
 
 validation_only:
   - ValidationCrafted
@@ -931,17 +931,17 @@ opt_out:
     - Termination
     - C.no-data-race.Concurrency
   coastal:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
   jayhorn:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
   jdart:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
   mlb:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
   spf:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
   swat:
-    - Java.runtime-exception.Main
+    - Java.no-runtime-exception.Main
 
 opt_in:
   aise:

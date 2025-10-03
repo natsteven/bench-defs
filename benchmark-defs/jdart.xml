@@ -15,10 +15,10 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_runtime-exception">
-    <tasks name="Java.runtime-exception.Main">
+  <rundefinition name="SV-COMP25_no-runtime-exception">
+    <tasks name="Java.no-runtime-exception.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-      <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/java/properties/no-runtime-exception.prp</propertyfile>
     </tasks>
   </rundefinition>
 
