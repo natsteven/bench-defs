@@ -8,10 +8,10 @@
 
 
 
-  <rundefinition name="SV-COMP25_assert_java">
-    <tasks name="Java.assert_java.Main">
+  <rundefinition name="SV-COMP25_valid-assert">
+    <tasks name="Java.valid-assert.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-      <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/java/properties/valid-assert.prp</propertyfile>
     </tasks>
   </rundefinition>
 

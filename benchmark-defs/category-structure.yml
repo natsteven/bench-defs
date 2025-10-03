@@ -185,7 +185,7 @@ properties:
   - no-data-race
   - valid-memcleanup
   - valid-memsafety
-  - assert_java
+  - valid-assert
   - no-runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
@@ -722,10 +722,10 @@ categories:
 
   JavaOverall:
     properties:
-      - assert_java
+      - valid-assert
       - no-runtime-exception
     categories:
-      - Java.assert_java.Main
+      - Java.valid-assert.Main
       - Java.no-runtime-exception.Main
     verifiers:
       - coastal
@@ -800,7 +800,7 @@ categories_process_order:
   - ValidationCrafted
   - FalsificationOverall
   - Overall
-  - Java.assert_java.Main
+  - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
   - JavaOverall
 
@@ -863,7 +863,7 @@ categories_table_order:
   - FalsificationOverall
   - Overall
   - JavaOverall
-  - Java.assert_java.Main
+  - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
 
 validation_only:

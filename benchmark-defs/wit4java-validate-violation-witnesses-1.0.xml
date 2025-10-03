@@ -8,13 +8,13 @@
 
   <option name="--local-dir" />
 
-  <rundefinition name="SV-COMP25_assert_java">
+  <rundefinition name="SV-COMP25_valid-assert">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-    <tasks name="Java.assert_java.Main">
+    <tasks name="Java.valid-assert.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
-      <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
+      <propertyfile>../sv-benchmarks/java/properties/valid-assert.prp</propertyfile>
     </tasks>
   </rundefinition>
 
