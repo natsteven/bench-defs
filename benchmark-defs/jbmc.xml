@@ -10,14 +10,14 @@
   <option name="witness.graphml" />
 
   <rundefinition name="SV-COMP25_assert_java">
-    <tasks name="Java.assert_java.Java">
+    <tasks name="Java.assert_java.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
     </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP25_runtime-exception">
-    <tasks name="Java.runtime-exception.Java">
+    <tasks name="Java.runtime-exception.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
     </tasks>

@@ -12,7 +12,7 @@
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-    <tasks name="Java.assert_java.Java">
+    <tasks name="Java.assert_java.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/assert_java.prp</propertyfile>
     </tasks>
@@ -22,7 +22,7 @@
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
-    <tasks name="Java.runtime-exception.Java">
+    <tasks name="Java.runtime-exception.Main">
       <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
       <propertyfile>../sv-benchmarks/java/properties/runtime-exception.prp</propertyfile>
     </tasks>

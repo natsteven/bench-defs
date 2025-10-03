@@ -190,7 +190,7 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-  - Java.runtime-exception.Java
+  - Java.runtime-exception.Main
 
 categories:
   ReachSafety:
@@ -725,8 +725,8 @@ categories:
       - assert_java
       - runtime-exception
     categories:
-      - Java.assert_java.Java
-      - Java.runtime-exception.Java
+      - Java.assert_java.Main
+      - Java.runtime-exception.Main
     verifiers:
       - coastal
       - gdart
@@ -800,8 +800,8 @@ categories_process_order:
   - ValidationCrafted
   - FalsificationOverall
   - Overall
-  - Java.assert_java.Java
-  - Java.runtime-exception.Java
+  - Java.assert_java.Main
+  - Java.runtime-exception.Main
   - JavaOverall
 
 categories_table_order:
@@ -863,8 +863,8 @@ categories_table_order:
   - FalsificationOverall
   - Overall
   - JavaOverall
-  - Java.assert_java.Java
-  - Java.runtime-exception.Java
+  - Java.assert_java.Main
+  - Java.runtime-exception.Main
 
 validation_only:
   - ValidationCrafted
@@ -931,17 +931,17 @@ opt_out:
     - Termination
     - C.no-data-race.Concurrency
   coastal:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
   jayhorn:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
   jdart:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
   mlb:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
   spf:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
   swat:
-    - Java.runtime-exception.Java
+    - Java.runtime-exception.Main
 
 opt_in:
   aise:
