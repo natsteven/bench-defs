@@ -83,7 +83,7 @@ as a reaction to the community feedback after the first competition
 </p>
 
 <p>
-  In addition, every qualified competition candidate is granted a demonstration slot
+  In addition, every qualified competition candidate is granted a presentation slot
   in the TACAS program to present the competition candidate to the TACAS audience.
 </p>
 
