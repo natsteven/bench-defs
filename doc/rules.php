@@ -665,7 +665,7 @@ __VERIFIER_nondet_memory(values, sizeof(int) * 20);
   In order to participate at SV-COMP, a benchmark definition in the SV-COMP repository is necessary.
   Technically, the benchmark definition needs to be integrated into the SV-COMP repository
   under directory <a href="https://gitlab.com/sosy-lab/sv-comp/bench-defs/tree/main/benchmark-defs">benchmark-defs</a>
-  using a <a href="https://gitlab.com/sosy-lab/sv-comp/bench-defs/merge_requests">pull request</a>.
+  using a <a href="https://gitlab.com/sosy-lab/sv-comp/bench-defs/merge_requests">merge request</a>.
 </p>
 
 <p>
