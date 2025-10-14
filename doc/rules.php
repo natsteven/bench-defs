@@ -696,7 +696,7 @@ The submitted system has to meet the following requirements:
     should be contained in the archive. Standard packages that are available as Ubuntu packages can be requested via an entry in the
     <a href="https://gitlab.com/sosy-lab/benchmarking/fm-tools/-/tree/main/data">FM-Tools repository</a>.
   </li>
-  <li>The verifier should be executable from any arbitrary location, and should not expect the working directory to match the tool directory.
+  <li>The verifier should be executable from any path, and should not expect the working directory to match the tool directory.
   </li>
 </ul>
 
