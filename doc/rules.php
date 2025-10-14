@@ -697,36 +697,7 @@ __VERIFIER_nondet_memory(values, sizeof(int) * 20);
 
 <h4 id="verifier">Verifier</h4>
 
-The submitted system has to meet the following requirements:
-<ul>
-  <li>The verifier is publicly available for download and the license
-    (i) allows reproduction and evaluation by anybody,
-    (ii) does not place any restriction on the verifier output (log files, witnesses), and
-    (iii) allows (re-) distribution of the unmodified verifier archive
-    for reproduction via the archives repository and Zenodo.
-  </li>
-  <li>The archive of the verifier contains a LICENSE file that satisfies the above requirements.
-  </li>
-  <li>The archive of the verifier contains a README file that describes the contents.
-  </li>
-  <li>The verifier is archived in a ZIP file (.zip), which contains exactly one directory (no tarbomb).
-  </li>
-  <li>The verifier does not exceed an stdout/stderr limit of at most 2 MB.
-  </li>
-  <li>The verifier has an option to report its version.
-  </li>
-  <li>The archive does not contain large amounts of unnecessary data, such as
-    repository data (.svn), source files, aux folders like __MACOSX, and test files.
-  </li>
-  <li>The verifier should not require any special software on the competition machines; all necessary libraries and external tools
-    should be contained in the archive. Standard packages that are available as Ubuntu packages can be requested via an entry in the
-    <a href="https://gitlab.com/sosy-lab/benchmarking/fm-tools/-/tree/main/data">FM-Tools repository</a>.
-  </li>
-  <li>The verifier should be executable from any path, and should not expect the working directory to match the tool directory.
-  </li>
-</ul>
-
-
+The submitted system has to meet the requirements mentioned on the <a href="submission.php">submission page</a>.
 
 
 <h3 id="qualification">Qualification</h3>
