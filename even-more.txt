@@ -1,0 +1,5 @@
+String-MAS.Collections9.yml.log
+String-MAS.Pred9.yml.log
+String-MAS.StringConstructors04.yml.log
+String-MAS.StringConstructors02.yml.log
+String-MAS.StringConstructors05.yml.log

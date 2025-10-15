@@ -1,0 +1,27 @@
+String-MAS.Basic9.yml.log
+Unhandled Numeric Constraint: bool1 != CONST_0
+--
+String-MAS.Basic4.yml.log
+Unhandled Numeric Constraint: (int1 - CONST_1) == CONST_2
+--
+String-MAS.Inter10.yml.log
+Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (Length_0_ - CONST_1)
+String-MAS.Pred2.yml.log
+Unhandled Numeric Constraint: bool1 != CONST_0
+--
+String-MAS.Basic12.yml.log
+Unhandled Numeric Constraint: bool1 != CONST_0
+--
+String-MAS.Basic2.yml.log
+Unhandled Numeric Constraint: bool1 != CONST_0
+--
+String-MAS.StringValueOf05.yml.log
+WARNING: Unhandled constraint in Reporter_Inverse.buildICG_r3() of type... UNDEFINED  7  ge!!I!:!0
+--
+String-MAS.SubString02.yml.log
+WARNING: Unhandled constraint in Reporter_Inverse.buildICG_r3() of type... UNDEFINED  7  ge!!I!:!0
+String-MAS.SubString03.yml.log
+WARNING: Unhandled constraint in Reporter_Inverse.buildICG_r3() of type... UNDEFINED  8  ge!!I!:!0
+--
+String-MAS.StringMiscellaneous03.yml.log
+Unhandled IntegerExpression: (Length_0_ - CONST_1)

@@ -1,0 +1,11 @@
+String-MAS.Sanitizers2.yml.log
+String-MAS.Basic38.yml.log
+String-MAS.Collections9.yml.log
+String-MAS.Pred9.yml.log
+String-MAS.Sanitizers1.yml.log
+String-MAS.Basic39.yml.log
+String-MAS.Basic37.yml.log
+String-MAS.StringConstructors04.yml.log
+String-MAS.StringConstructors02.yml.log
+String-MAS.StringConstructors05.yml.log
+String-MAS.char1.yml.log

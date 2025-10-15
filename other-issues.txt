@@ -1,0 +1,7 @@
+String-MAS.Basic6.yml.log
+String-MAS.Basic7.yml.log
+String-MAS.Inter9.yml.log
+String-MAS.NullPointerException1.yml.log
+String-MAS.Sanitizers3.yml.log
+String-MAS.Sanitizers5.yml.log
+String-MAS.StaticCharMethods02.yml.log
