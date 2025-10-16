@@ -145,7 +145,7 @@ as a reaction to the community feedback after the first competition
 </p>
 
 
-<h4>Witnesses</h4>
+<h4 id="witnesses">Witnesses</h4>
 <p>
   There is a <a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/">fixed exchange format for the witnesses</a>.
   The witness has to be written to a file
@@ -253,6 +253,20 @@ as a reaction to the community feedback after the first competition
   </tbody>
 </table>
 
+<p><b>Documentation of Witness Formats</b></p>
+<ul>
+  <li><a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/blob/main/user-guide/Witness-Format.md">User Guide to Witnesses 2.1</a></li>
+  <li><a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/tree/main/format/schemas">YAML Schemas 2.1</a></li>
+  <li>Papers
+    <ul>
+      <li><a href="https://doi.org/10.1145/3477579">Verification Witnesses 1.0</a>, TOSEM 2022</li>
+      <li><a href="https://doi.org/10.1007/978-3-031-66149-5_11">Verification Witnesses 2.0</a>, Proc. SPIN 2024</li>
+      <li><a href="https://doi.org/10.1007/978-3-031-82700-6_4">Concurrency Witnesses</a>, Proc. VMCAI 2025</li>
+      <li><a href="https://doi.org/10.48550/arXiv.2501.12313">Contract Witnesses</a>, arXiv 2025</li>
+      <li><a href="https://www.sosy-lab.org/research/pub/2025-ASE.Non-termination_Witnesses_and_Their_Validation.pdf">Non-termination Witnesses</a>, Proc. ASE 2025</li>
+    </ul>
+  </li>
+</ul>
 
 <h4>Properties</h4>
 
