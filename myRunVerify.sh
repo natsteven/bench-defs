@@ -23,7 +23,8 @@ fi
 "$SCRIPT_DIR"/execute_runs/execute-runcollection.sh \
 	  "benchexec/bin/benchexec" "$ARCHIVE" "$BENCHDEF" \
 	  "\"$WITNESSTARGET\"" "$(dirname "$0")/$RESULTSVERIFICATION/" \
-	  "$OPTIONSVERIFY $BENCHEXECOPTIONS $LIMIT_TIME $LIMIT_CORES $LIMIT_MEMORY $TESTCOMPOPTION"
+	  "$OPTIONSVERIFY $BENCHEXECOPTIONS $LIMIT_TIME $LIMIT_CORES $LIMIT_MEMORY $TESTCOMPOPTION"\
+	  "--numOfThreads 2"
 
 date -Iseconds
 
