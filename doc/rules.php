@@ -165,7 +165,10 @@ as a reaction to the community feedback after the first competition
   *-Arrays, *-Floats, *-Heap, *MemSafety*, *MemCleanup*, ConcurrencySafety-*, *NoDataRace*, *Termination*, and *-Java.
 </p>
 <p>
-  The below table specifies which properties (sub-categories) are supported by the various witness formats.
+  The below table specifies which witness versions
+  are supported by SV-COMP 2026 for which properties (sub-categories).
+  Witnesses in version 2.0 are supported in place of version 2.1
+  where they can express the properties.
 </p>
 
 <table>
@@ -178,15 +181,15 @@ as a reaction to the community feedback after the first competition
     <tr>
       <td></td>
       <td style="text-align: center;">Version 1.0</td>
-      <td style="text-align: center;">Version 2.0</td>
+      <td style="text-align: center;">Version 2.1</td>
       <td style="text-align: center;">Version 1.0</td>
-      <td style="text-align: center;">Version 2.0</td>
+      <td style="text-align: center;">Version 2.1</td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>unreach-call</td>
-      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
@@ -214,7 +217,7 @@ as a reaction to the community feedback after the first competition
     </tr>
     <tr>
       <td>no-overflow</td>
-      <td style="text-align: center;">✓</td>
+      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
@@ -222,7 +225,7 @@ as a reaction to the community feedback after the first competition
     <tr>
       <td>sub-categories ConcurrencySafety-*</td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓ (demo)</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;"></td>
     </tr>
@@ -236,13 +239,13 @@ as a reaction to the community feedback after the first competition
     <tr>
       <td>termination</td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓ (demo)</td>
       <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
     </tr>
     <tr>
       <td>sub-categories *-Java</td>
-      <td style="text-align: center;"></td>
+      <td style="text-align: center;">✓</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;"></td>
