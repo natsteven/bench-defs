@@ -172,24 +172,20 @@ as a reaction to the community feedback after the first competition
   <thead>
     <tr>
       <td>Property or Sub-Category Pattern</td>
-      <td style="text-align: center;" colspan="3">Correctness</td>
-      <td style="text-align: center;" colspan="3">Violation</td>
+      <td style="text-align: center;" colspan="2">Correctness</td>
+      <td style="text-align: center;" colspan="2">Violation</td>
     </tr>
     <tr>
       <td></td>
       <td style="text-align: center;">Version 1.0</td>
       <td style="text-align: center;">Version 2.0</td>
-      <td style="text-align: center;">Version 2.1</td>
       <td style="text-align: center;">Version 1.0</td>
       <td style="text-align: center;">Version 2.0</td>
-      <td style="text-align: center;">Version 2.1</td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>unreach-call</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
@@ -199,8 +195,6 @@ as a reaction to the community feedback after the first competition
       <td>unreach-call, sub-categories *-Arrays, *-Floats, *-Heap</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
     </tr>
@@ -208,8 +202,6 @@ as a reaction to the community feedback after the first competition
       <td>valid-deref, valid-free</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
     </tr>
@@ -217,15 +209,11 @@ as a reaction to the community feedback after the first competition
       <td>valid-memtrack, mem-cleanup</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
     </tr>
     <tr>
       <td>no-overflow</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;">✓</td>
@@ -235,36 +223,28 @@ as a reaction to the community feedback after the first competition
       <td>sub-categories ConcurrencySafety-*</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
     </tr>
     <tr>
       <td>no-datarace</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
     </tr>
     <tr>
       <td>termination</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓ (Demo)</td>
       <td style="text-align: center;">✓</td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓ (Demo)</td>
     </tr>
     <tr>
       <td>sub-categories *-Java</td>
       <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
       <td style="text-align: center;"></td>
     </tr>
   </tbody>
