@@ -28,6 +28,7 @@ verifiers:
   - esbmc-incr
   - esbmc-kind
   - frama-c-sv
+  - function
   - gazer-theta
   - gdart
   - gdart-llvm
@@ -462,6 +463,7 @@ categories:
       - divine
       - emergentheta
       - esbmc-kind
+      - function
       - goblint
       - graves
       - mopsa
