@@ -21,6 +21,7 @@ verifiers:
   - crux
   - cseq
   - dartagnan
+  - dasa
   - deagle
   - divine
   - ebf
@@ -729,6 +730,7 @@ categories:
       - Java.no-runtime-exception.Main
     verifiers:
       - coastal
+      - dasa
       - gdart
       - java-ranger
       - jayhorn
@@ -941,6 +943,8 @@ opt_out:
   spf:
     - Java.no-runtime-exception.Main
   swat:
+    - Java.no-runtime-exception.Main
+  dasa:
     - Java.no-runtime-exception.Main
 
 opt_in:
