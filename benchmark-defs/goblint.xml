@@ -7,7 +7,7 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <option name="--conf" />
-  <option name="conf/svcomp25.json" />
+  <option name="conf/svcomp26.json" />
 
   <rundefinition name="SV-COMP25_unreach-call">
     <tasks name="C.unreach-call.Arrays">
