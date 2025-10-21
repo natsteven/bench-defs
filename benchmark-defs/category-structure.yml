@@ -31,6 +31,7 @@ verifiers:
   - gazer-theta
   - gdart
   - gdart-llvm
+  - goblitch
   - goblint
   - graves
   - hornix
@@ -223,6 +224,7 @@ categories:
       - divine
       - emergentheta
       - esbmc-kind
+      - goblitch
       - goblint
       - graves
       - infer
