@@ -482,6 +482,7 @@ categories:
       - witnesslint-validate-violation-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-2.0
       - goblint-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
