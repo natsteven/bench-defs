@@ -22,7 +22,6 @@ verifiers:
   - cseq
   - dartagnan
   - deagle
-  - iekke
   - divine
   - ebf
   - emergentheta
@@ -35,6 +34,7 @@ verifiers:
   - goblint
   - graves
   - hornix
+  - iekke
   - infer
   - java-ranger
   - jayhorn
@@ -352,13 +352,13 @@ categories:
       - cseq
       - dartagnan
       - deagle
-      - iekke
       - divine
       - ebf
       - esbmc-incr
       - esbmc-kind
       - goblint
       - graves
+      - iekke
       - infer
       - lazycseq
       - lf-checker
