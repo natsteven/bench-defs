@@ -90,6 +90,8 @@ validators:
   - mopsa-validate-correctness-witnesses-2.0
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
+  - theta-validate-violation-witnesses-2.0
+  - theta-validate-correctness-witnesses-2.0
   - uautomizer-validate-correctness-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
@@ -268,6 +270,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   MemSafety:
     properties:
@@ -288,6 +292,7 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -299,6 +304,7 @@ categories:
       - svf-svc
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -327,6 +333,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   ConcurrencySafety:
     properties:
@@ -351,6 +359,7 @@ categories:
       - deagle
       - divine
       - ebf
+      - emergentheta
       - esbmc-incr
       - esbmc-kind
       - goblint
@@ -384,6 +393,8 @@ categories:
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
       - ureferee-validate-correctness-witnesses-1.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   NoOverflows:
     properties: no-overflow
@@ -444,6 +455,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   Termination:
     properties: termination
@@ -488,6 +501,7 @@ categories:
       - uautomizer-validate-violation-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
 
   SoftwareSystems:
     description: |
@@ -525,6 +539,7 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -534,6 +549,8 @@ categories:
       - pesco
       - svf-svc
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -566,6 +583,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   ValidationCrafted:
     description: |
@@ -607,6 +626,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   Overall:
     description: |
@@ -634,6 +655,7 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -641,6 +663,8 @@ categories:
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -668,6 +692,8 @@ categories:
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   FalsificationOverall:
     description: |
@@ -693,11 +719,14 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - graves
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -719,6 +748,8 @@ categories:
       - metaval-validate-violation-witnesses-2.0
       - metaval-validate-correctness-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   JavaOverall:
     properties:
