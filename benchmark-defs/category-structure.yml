@@ -50,6 +50,7 @@ verifiers:
   - locksmith
   - mlb
   - mopsa
+  - muval
   - nacpa
   - ogchecker
   - pesco
@@ -237,6 +238,7 @@ categories:
       - graves
       - infer
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
@@ -303,6 +305,7 @@ categories:
       - goblint-par
       - graves
       - mopsa
+      - muval
       - nacpa
       - pesco
       - predatorhp
@@ -364,6 +367,7 @@ categories:
       - lazycseq
       - lf-checker
       - mopsa
+      - muval
       - nacpa
       - ogchecker
       - pesco
@@ -408,6 +412,7 @@ categories:
       - graves
       - infer
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
@@ -465,6 +470,7 @@ categories:
       - goblint-par
       - graves
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
@@ -1161,3 +1167,40 @@ opt_in:
     - C.unreach-call.Heap
   verioover:
     - C.no-overflow.Main
+  muval:
+    # ReachSafety categories
+    - C.unreach-call.Arrays
+    - C.unreach-call.BitVectors
+    - C.unreach-call.ControlFlow
+    - C.unreach-call.ECA
+    - C.unreach-call.Floats
+    - C.unreach-call.Heap
+    - C.unreach-call.Loops
+    - C.unreach-call.ProductLines
+    - C.unreach-call.Recursive
+    - C.unreach-call.Sequentialized
+    - C.unreach-call.XCSP
+    - C.unreach-call.Combinations
+    - C.unreach-call.Hardware
+    - C.unreach-call.Hardness
+    - C.unreach-call.Fuzzle
+    # MemSafety categories
+    - C.valid-memsafety.Arrays
+    - C.valid-memsafety.Heap
+    - C.valid-memsafety.LinkedLists
+    - C.valid-memsafety.Other
+    - C.valid-memsafety.Juliet
+    - C.valid-memcleanup.MemCleanup
+    # ConcurrencySafety categories
+    - C.unreach-call.Concurrency
+    - C.valid-memsafety.Concurrency
+    - C.no-overflow.Concurrency
+    - C.no-data-race.Concurrency
+    # NoOverflows categories
+    - C.no-overflow.Main
+    - C.no-overflow.Juliet
+    # Termination categories
+    - C.termination.BitVectors
+    - C.termination.MainControlFlow
+    - C.termination.MainHeap
+    - C.termination.Other
