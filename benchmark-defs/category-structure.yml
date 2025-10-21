@@ -52,6 +52,7 @@ verifiers:
   - predatorhp
   - proton
   - racerf
+  - re3ver
   - seal
   - spf
   - sv-sanitizers
@@ -229,6 +230,7 @@ categories:
       - nacpa
       - pesco
       - pinaka
+      - re3ver
       - svf-svc
       - symbiotic
       - theta
