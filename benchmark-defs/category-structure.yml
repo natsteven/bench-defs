@@ -67,6 +67,7 @@ verifiers:
   - uautomizer
   - ugemcutter
   - ukojak
+  - uparalizer
   - utaipan
   - veriabs
   - veriabsl
@@ -137,6 +138,7 @@ hors_concours:
   - pinaka
   - predatorhp
   - spf
+  - uparalizer
   - veriabs
   - veriabsl
   - verioover
@@ -240,6 +242,7 @@ categories:
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
       - veriabs
       - veriabsl
@@ -421,6 +424,7 @@ categories:
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
     validators:
       - witnesslint-validate-correctness-witnesses-1.0
