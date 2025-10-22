@@ -210,7 +210,6 @@ categories:
       - C.unreach-call.Combinations
       - C.unreach-call.Hardware
       - C.unreach-call.Hardness
-      - C.unreach-call.Fuzzle
     verifiers:
       - 2ls
       - bubaak
@@ -757,7 +756,6 @@ categories_process_order:
   - C.unreach-call.Combinations
   - C.unreach-call.Hardware
   - C.unreach-call.Hardness
-  - C.unreach-call.Fuzzle
   - ReachSafety
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
@@ -820,7 +818,6 @@ categories_table_order:
   - C.unreach-call.Combinations
   - C.unreach-call.Hardware
   - C.unreach-call.Hardness
-  - C.unreach-call.Fuzzle
   - MemSafety
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
@@ -1001,7 +998,6 @@ opt_in:
     - C.unreach-call.Recursive
     - C.unreach-call.Sequentialized
     - C.unreach-call.XCSP
-    - C.unreach-call.Fuzzle
   locksmith:
     - C.no-data-race.Concurrency
   proton:
