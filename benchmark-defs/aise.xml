@@ -8,7 +8,7 @@
 
 
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Loops">
       <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
       <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>

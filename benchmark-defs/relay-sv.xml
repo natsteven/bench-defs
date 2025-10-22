@@ -8,7 +8,7 @@
 
 
 
-  <rundefinition name="SV-COMP25_no-data-race">
+  <rundefinition name="SV-COMP26_no-data-race">
     <tasks name="C.no-data-race.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
