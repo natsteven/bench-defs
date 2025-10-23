@@ -8,7 +8,7 @@
 
 
 
-  <rundefinition name="SV-COMP25_valid-assert">
+  <rundefinition name="SV-COMP26_valid-assert">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 
@@ -18,7 +18,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-runtime-exception">
+  <rundefinition name="SV-COMP26_no-runtime-exception">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
 

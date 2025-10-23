@@ -8,7 +8,7 @@
 
 
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -103,21 +103,21 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-data-race">
+  <rundefinition name="SV-COMP26_no-data-race">
     <tasks name="C.no-data-race.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memcleanup">
+  <rundefinition name="SV-COMP26_valid-memcleanup">
     <tasks name="C.valid-memcleanup.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memsafety">
+  <rundefinition name="SV-COMP26_valid-memsafety">
     <tasks name="C.valid-memsafety.SoftwareSystems-coreutils">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -142,7 +142,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-overflow">
+  <rundefinition name="SV-COMP26_no-overflow">
     <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -188,7 +188,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_termination">
+  <rundefinition name="SV-COMP26_termination">
     <tasks name="C.termination.SoftwareSystems-DeviceDriversLinux64">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
