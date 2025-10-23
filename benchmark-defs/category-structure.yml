@@ -52,6 +52,7 @@ verifiers:
   - predatorhp
   - proton
   - racerf
+  - seal
   - spf
   - sv-sanitizers
   - svf-svc
@@ -1006,6 +1007,8 @@ opt_in:
     - C.no-data-race.Concurrency
   relay-sv:
     - C.no-data-race.Concurrency
+  seal:
+    - C.valid-memsafety.LinkedLists
   sv-sanitizers:
     - C.no-data-race.Concurrency
     - C.valid-memsafety.SoftwareSystems-coreutils
