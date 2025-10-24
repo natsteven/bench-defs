@@ -514,6 +514,7 @@ categories:
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
       - theta-validate-violation-witnesses-2.0
+      - witch-validate-violation-witnesses-2.0
 
   SoftwareSystems:
     description: |
