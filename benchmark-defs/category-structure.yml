@@ -41,6 +41,7 @@ verifiers:
   - jayhorn
   - jbmc
   - jdart
+  - jlisa
   - korn
   - lazycseq
   - lf-checker
@@ -740,6 +741,7 @@ categories:
       - jayhorn
       - jbmc
       - jdart
+      - jlisa
       - mlb
       - spf
       - swat
