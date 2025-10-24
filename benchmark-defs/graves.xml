@@ -13,7 +13,7 @@
   <option name="-timelimit" />
   <option name="900 s" />
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -108,14 +108,14 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-data-race">
+  <rundefinition name="SV-COMP26_no-data-race">
     <tasks name="C.no-data-race.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memcleanup">
+  <rundefinition name="SV-COMP26_valid-memcleanup">
     <tasks name="C.valid-memcleanup.MemCleanup">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
@@ -130,7 +130,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memsafety">
+  <rundefinition name="SV-COMP26_valid-memsafety">
     <tasks name="C.valid-memsafety.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
@@ -182,7 +182,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-overflow">
+  <rundefinition name="SV-COMP26_no-overflow">
     <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
@@ -228,7 +228,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_termination">
+  <rundefinition name="SV-COMP26_termination">
     <tasks name="C.termination.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
