@@ -1,16 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="theta" displayName="Thorn" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+<benchmark tool="goblint" displayName="Goblitch" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
   <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--svcomp" />
-  <option name="--portfolio" />
-  <option name="HORN" />
-  <option name="--loglevel" />
-  <option name="RESULT" />
+  <option name="--conf" />
+  <option name="conf/svcomp26.json" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Arrays">
@@ -73,11 +70,6 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.unreach-call.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-
     <tasks name="C.unreach-call.SoftwareSystems-AWS-C-Common">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -107,22 +99,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP26_no-data-race">
-    <tasks name="C.no-data-race.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
-    </tasks>
-  </rundefinition>
-
   <rundefinition name="SV-COMP26_valid-memcleanup">
-    <tasks name="C.valid-memcleanup.MemCleanup">
-      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-    </tasks>
     <tasks name="C.valid-memcleanup.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
@@ -130,33 +107,6 @@
   </rundefinition>
 
   <rundefinition name="SV-COMP26_valid-memsafety">
-    <tasks name="C.valid-memsafety.Arrays">
-      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.Heap">
-      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.LinkedLists">
-      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.Other">
-      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.Juliet">
-      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-
     <tasks name="C.valid-memsafety.SoftwareSystems-coreutils">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -175,39 +125,9 @@
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.valid-memsafety.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-  </rundefinition>
+    </rundefinition>
 
   <rundefinition name="SV-COMP26_no-overflow">
-    <tasks name="C.no-overflow.Main">
-      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
-      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
-      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
-      <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/VerifyThis-Recursive.set</includesfile>
-      <includesfile>../sv-benchmarks/c/XCSP.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-    <tasks name="C.no-overflow.Juliet">
-      <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-
     <tasks name="C.no-overflow.SoftwareSystems-BusyBox">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -221,39 +141,9 @@
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.no-overflow.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
-  </rundefinition>
+    </rundefinition>
 
   <rundefinition name="SV-COMP26_termination">
-    <tasks name="C.termination.BitVectors">
-      <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    </tasks>
-    <tasks name="C.termination.MainControlFlow">
-      <includesfile>../sv-benchmarks/c/ControlFlow-Termination.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    </tasks>
-    <tasks name="C.termination.MainHeap">
-      <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    </tasks>
-    <tasks name="C.termination.Other">
-      <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
-      <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-      <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-      <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    </tasks>
     <tasks name="C.termination.SoftwareSystems-DeviceDriversLinux64">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

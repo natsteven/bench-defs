@@ -21,6 +21,7 @@ verifiers:
   - crux
   - cseq
   - dartagnan
+  - dasa
   - deagle
   - divine
   - ebf
@@ -32,13 +33,16 @@ verifiers:
   - gdart
   - gdart-llvm
   - goblint
+  - goblitch
   - graves
   - hornix
+  - iekke
   - infer
   - java-ranger
   - jayhorn
   - jbmc
   - jdart
+  - jlisa
   - korn
   - lazycseq
   - lf-checker
@@ -64,6 +68,7 @@ verifiers:
   - uautomizer
   - ugemcutter
   - ukojak
+  - uparalizer
   - utaipan
   - veriabs
   - veriabsl
@@ -92,6 +97,8 @@ validators:
   - mopsa-validate-correctness-witnesses-2.0
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
+  - theta-validate-violation-witnesses-2.0
+  - theta-validate-correctness-witnesses-2.0
   - uautomizer-validate-correctness-witnesses-1.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
@@ -134,6 +141,7 @@ hors_concours:
   - pinaka
   - predatorhp
   - spf
+  - uparalizer
   - veriabs
   - veriabsl
   - verioover
@@ -224,6 +232,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblitch
       - graves
       - infer
       - mopsa
@@ -237,6 +246,7 @@ categories:
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
       - veriabs
       - veriabsl
@@ -270,6 +280,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   MemSafety:
     properties:
@@ -290,6 +302,7 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -301,6 +314,7 @@ categories:
       - svf-svc
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -329,6 +343,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   ConcurrencySafety:
     properties:
@@ -353,10 +369,12 @@ categories:
       - deagle
       - divine
       - ebf
+      - emergentheta
       - esbmc-incr
       - esbmc-kind
       - goblint
       - graves
+      - iekke
       - infer
       - lazycseq
       - lf-checker
@@ -386,6 +404,8 @@ categories:
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
       - ureferee-validate-correctness-witnesses-1.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   NoOverflows:
     properties: no-overflow
@@ -417,6 +437,7 @@ categories:
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
     validators:
       - witnesslint-validate-correctness-witnesses-1.0
@@ -446,6 +467,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   Termination:
     properties: termination
@@ -490,6 +513,7 @@ categories:
       - uautomizer-validate-violation-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
 
   SoftwareSystems:
     description: |
@@ -527,8 +551,10 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
+      - goblitch
       - graves
       - infer
       - mopsa
@@ -536,6 +562,8 @@ categories:
       - pesco
       - svf-svc
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -568,6 +596,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   ValidationCrafted:
     description: |
@@ -609,6 +639,8 @@ categories:
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   Overall:
     description: |
@@ -636,6 +668,7 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
       - graves
@@ -643,6 +676,8 @@ categories:
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -670,6 +705,8 @@ categories:
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   FalsificationOverall:
     description: |
@@ -695,11 +732,14 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - graves
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
@@ -721,6 +761,8 @@ categories:
       - metaval-validate-violation-witnesses-2.0
       - metaval-validate-correctness-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
   JavaOverall:
     properties:
@@ -731,11 +773,13 @@ categories:
       - Java.no-runtime-exception.Main
     verifiers:
       - coastal
+      - dasa
       - gdart
       - java-ranger
       - jayhorn
       - jbmc
       - jdart
+      - jlisa
       - mlb
       - spf
       - swat
@@ -941,6 +985,8 @@ opt_out:
   spf:
     - Java.no-runtime-exception.Main
   swat:
+    - Java.no-runtime-exception.Main
+  dasa:
     - Java.no-runtime-exception.Main
 
 opt_in:
