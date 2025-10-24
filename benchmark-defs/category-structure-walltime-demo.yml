@@ -1,5 +1,5 @@
 competition: SV-COMP
-year: 2026
+year: 2020
 
 verifiers:
   - cpachecker
@@ -8,7 +8,6 @@ verifiers:
   - esbmc
   - esbmc-par
   - esbmc-par-aws
-  - uparalizer
 
 # Properties used in the competition
 properties:
@@ -31,7 +30,6 @@ categories:
       - esbmc
       - esbmc-par
       - esbmc-par-aws
-      - uparalizer
 
   Overall:
     properties:
@@ -45,7 +43,6 @@ categories:
       - esbmc
       - esbmc-par
       - esbmc-par-aws
-      - uparalizer
 
   FalsificationOverall:
     properties:
@@ -59,7 +56,6 @@ categories:
       - esbmc
       - esbmc-par
       - esbmc-par-aws
-      - uparalizer
 
 categories_process_order:
   - C.unreach-call.Arrays
