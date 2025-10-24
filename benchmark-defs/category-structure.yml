@@ -33,6 +33,7 @@ verifiers:
   - gdart
   - gdart-llvm
   - goblint
+  - goblitch
   - graves
   - hornix
   - iekke
@@ -229,6 +230,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblitch
       - graves
       - infer
       - mopsa
@@ -537,6 +539,7 @@ categories:
       - divine
       - esbmc-kind
       - goblint
+      - goblitch
       - graves
       - infer
       - mopsa
