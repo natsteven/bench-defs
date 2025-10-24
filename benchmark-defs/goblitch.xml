@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="goblitch" displayName="Goblitch" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
+<benchmark tool="goblint" displayName="Goblitch" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="4">
 
   <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
@@ -9,7 +9,7 @@
   <option name="--conf" />
   <option name="conf/svcomp26.json" />
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -69,10 +69,6 @@
       <includesfile>../sv-benchmarks/c/Hardness.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.Fuzzle">
-      <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
 
     <tasks name="C.unreach-call.SoftwareSystems-AWS-C-Common">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
@@ -103,14 +99,14 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memcleanup">
+  <rundefinition name="SV-COMP26_valid-memcleanup">
     <tasks name="C.valid-memcleanup.SoftwareSystems-uthash">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memsafety">
+  <rundefinition name="SV-COMP26_valid-memsafety">
     <tasks name="C.valid-memsafety.SoftwareSystems-coreutils">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -128,9 +124,10 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-  </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-overflow">
+    </rundefinition>
+
+  <rundefinition name="SV-COMP26_no-overflow">
     <tasks name="C.no-overflow.SoftwareSystems-BusyBox">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -143,13 +140,15 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-  </rundefinition>
 
-  <rundefinition name="SV-COMP25_termination">
+    </rundefinition>
+
+  <rundefinition name="SV-COMP26_termination">
     <tasks name="C.termination.SoftwareSystems-DeviceDriversLinux64">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
+
 
 </benchmark>
