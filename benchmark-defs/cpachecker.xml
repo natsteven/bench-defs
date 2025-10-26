@@ -6,7 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--svcomp25" />
+  <option name="--svcomp26" />
+  <option name="--preprocess" />
   <option name="--heap" />
   <option name="10000M" />
   <option name="--benchmark" />
