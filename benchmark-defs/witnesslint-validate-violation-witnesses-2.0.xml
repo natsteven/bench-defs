@@ -9,7 +9,7 @@
   <option name="--expectViolationWitness" />
   <option name="--ignoreSelfLoops" />
   <option name="--expectedWitnessVersion" />
-  <option name="2.0" />
+  <option name="2" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
