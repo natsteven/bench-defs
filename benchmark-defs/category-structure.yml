@@ -33,6 +33,7 @@ verifiers:
   - gdart
   - gdart-llvm
   - goblint
+  - goblint-par
   - goblitch
   - graves
   - hornix
@@ -232,6 +233,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - goblitch
       - graves
       - infer
@@ -305,6 +307,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - mopsa
       - nacpa
@@ -373,6 +376,7 @@ categories:
       - esbmc-incr
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - iekke
       - infer
@@ -424,6 +428,7 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+      - goblint-par
       - graves
       - infer
       - mopsa
@@ -487,6 +492,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - mopsa
       - nacpa
@@ -555,6 +561,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - goblitch
       - graves
       - infer
@@ -672,6 +679,7 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - mopsa
       - nacpa
