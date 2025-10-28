@@ -785,8 +785,8 @@ categories:
       - C.NoOverflows
       - C.Termination
       - C.SoftwareSystems
-    verifiers:
-    validators:
+    verifiers: []
+    validators: []
 
   Java.Overall:
     properties:
