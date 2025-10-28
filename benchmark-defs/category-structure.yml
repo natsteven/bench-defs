@@ -585,9 +585,11 @@ categories:
       This category contains validation tasks that were crafted to test certain features of validators.
     properties: 
       - unreach-call
+      - termination
     categories:
       - C.unreach-call.CorrectnessWitnesses
       - C.unreach-call.ViolationWitnesses
+      - C.termination.ViolationWitnesses
     verifiers:
       - witnessmap
     validators:
@@ -904,6 +906,7 @@ categories_process_order:
   - C.SoftwareSystems
   - C.unreach-call.CorrectnessWitnesses
   - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
   - C.ValidationCrafted
   - C.FalseOverall
   - C.TrueOverall
@@ -972,6 +975,7 @@ categories_table_order:
   - C.ValidationCrafted
   - C.unreach-call.CorrectnessWitnesses
   - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
   - C.FalseOverall
   - C.TrueOverall
   - C.Overall
@@ -988,6 +992,7 @@ validation_only:
   - C.ValidationCrafted
   - C.unreach-call.CorrectnessWitnesses
   - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
 
 opt_out:
   2ls:
