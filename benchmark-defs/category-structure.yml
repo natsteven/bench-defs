@@ -765,6 +765,28 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
+  C.TrueOverall:
+    description: |
+      The category C.TrueOverall consists of all verification tasks
+      and the results "correct FALSE" and "incorrect FALSE" are not counted.
+      (The weighting schema is the same as for C.Overall.)
+    properties:
+      - no-data-race
+      - no-overflow
+      - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
+    categories:
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
+    verifiers:
+    validators:
+
   Java.Overall:
     properties:
       - valid-assert
