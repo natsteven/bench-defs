@@ -200,7 +200,7 @@ properties:
   - no-runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
-demo_categories:
+demo_categories: []
 
 categories:
   C.ReachSafety:
