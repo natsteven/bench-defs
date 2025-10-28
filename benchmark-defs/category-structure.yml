@@ -203,7 +203,7 @@ properties:
 demo_categories:
 
 categories:
-  ReachSafety:
+  C.ReachSafety:
     properties: unreach-call
     categories:
       - C.unreach-call.Arrays
@@ -283,7 +283,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  MemSafety:
+  C.MemSafety:
     properties:
       - valid-memsafety
       - valid-memcleanup
@@ -346,7 +346,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  ConcurrencySafety:
+  C.Concurrency:
     properties:
       - unreach-call
       - no-data-race
@@ -408,7 +408,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  NoOverflows:
+  C.NoOverflows:
     properties: no-overflow
     categories:
       - C.no-overflow.Juliet
@@ -470,7 +470,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  Termination:
+  C.Termination:
     properties: termination
     categories:
       - C.termination.BitVectors
@@ -517,7 +517,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - witch-validate-violation-witnesses-2.0
 
-  SoftwareSystems:
+  C.SoftwareSystems:
     description: |
       This category consists of several sets of verification tasks. Each of these sets is an own sub-category.
       While the categories above are collections of rather `academic', or synthesized, example verification tasks,
@@ -601,7 +601,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  ValidationCrafted:
+  C.ValidationCrafted:
     description: |
       This category contains validation tasks that were crafted to test certain features of validators.
     properties: 
@@ -643,7 +643,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  Overall:
+  C.Overall:
     description: |
       The category Overall contains all verification tasks of all above categories.
       Each above-mentioned main category is an own sub-category in category Overall.
@@ -655,13 +655,13 @@ categories:
       - valid-memcleanup
       - valid-memsafety
     categories:
-      - ReachSafety
-      - MemSafety
-      - ConcurrencySafety
-      - NoOverflows
-      - Termination
-      - SoftwareSystems
-      - ValidationCrafted
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
+      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
@@ -709,7 +709,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  FalsificationOverall:
+  C.FalseOverall:
     description: |
       The category Falsification consists of all verification tasks with safety properties
       and the results "correct TRUE" and "incorrect TRUE" are not counted.
@@ -720,13 +720,13 @@ categories:
       - valid-memcleanup
       - valid-memsafety
     categories:
-      - ReachSafety
-      - MemSafety
-      - ConcurrencySafety
-      - NoOverflows
-      - Termination
-      - SoftwareSystems
-      - ValidationCrafted
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
+      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
@@ -765,7 +765,7 @@ categories:
       - theta-validate-violation-witnesses-2.0
       - theta-validate-correctness-witnesses-2.0
 
-  JavaOverall:
+  Java.Overall:
     properties:
       - valid-assert
       - no-runtime-exception
@@ -804,27 +804,27 @@ categories_process_order:
   - C.unreach-call.Combinations
   - C.unreach-call.Hardware
   - C.unreach-call.Hardness
-  - ReachSafety
+  - C.ReachSafety
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
   - C.valid-memsafety.Juliet
   - C.valid-memcleanup.MemCleanup
-  - MemSafety
+  - C.MemSafety
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
   - C.no-overflow.Concurrency
   - C.no-data-race.Concurrency
-  - ConcurrencySafety
+  - C.Concurrency
   - C.no-overflow.Main
   - C.no-overflow.Juliet
-  - NoOverflows
+  - C.NoOverflows
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
-  - Termination
+  - C.Termination
   - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.valid-memsafety.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-coreutils
@@ -840,18 +840,18 @@ categories_process_order:
   - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
   - C.termination.SoftwareSystems-DeviceDriversLinux64
-  - SoftwareSystems
+  - C.SoftwareSystems
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
-  - ValidationCrafted
-  - FalsificationOverall
-  - Overall
+  - C.ValidationCrafted
+  - C.FalseOverall
+  - C.Overall
   - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
-  - JavaOverall
+  - Java.Overall
 
 categories_table_order:
-  - ReachSafety
+  - C.ReachSafety
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
   - C.unreach-call.ControlFlow
@@ -866,27 +866,27 @@ categories_table_order:
   - C.unreach-call.Combinations
   - C.unreach-call.Hardware
   - C.unreach-call.Hardness
-  - MemSafety
+  - C.MemSafety
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
   - C.valid-memsafety.Juliet
   - C.valid-memcleanup.MemCleanup
-  - ConcurrencySafety
+  - C.Concurrency
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
   - C.no-overflow.Concurrency
   - C.no-data-race.Concurrency
-  - NoOverflows
+  - C.NoOverflows
   - C.no-overflow.Main
   - C.no-overflow.Juliet
-  - Termination
+  - C.Termination
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
-  - SoftwareSystems
+  - C.SoftwareSystems
   - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.valid-memsafety.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-coreutils
@@ -902,17 +902,17 @@ categories_table_order:
   - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
   - C.termination.SoftwareSystems-DeviceDriversLinux64
-  - ValidationCrafted
+  - C.ValidationCrafted
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
-  - FalsificationOverall
-  - Overall
-  - JavaOverall
+  - C.FalseOverall
+  - C.Overall
+  - Java.Overall
   - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
 
 validation_only:
-  - ValidationCrafted
+  - C.ValidationCrafted
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
 
@@ -946,13 +946,13 @@ opt_out:
   symbiotic:
     - C.no-data-race.Concurrency
   pesco:
-    - MemSafety
-    - ConcurrencySafety
-    - NoOverflows
-    - Termination
+    - C.MemSafety
+    - C.Concurrency
+    - C.NoOverflows
+    - C.Termination
     - C.no-data-race.Concurrency
   map2check:
-    - ReachSafety
+    - C.ReachSafety
   infer:
     # Infer can't handle floats
     - C.unreach-call.Floats
@@ -967,13 +967,13 @@ opt_out:
     - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
     - C.termination.SoftwareSystems-DeviceDriversLinux64
   pinaka:
-    - FalsificationOverall
-    - Overall
+    - C.FalseOverall
+    - C.Overall
   graves:
-    - MemSafety
-    - ConcurrencySafety
-    - NoOverflows
-    - Termination
+    - C.MemSafety
+    - C.Concurrency
+    - C.NoOverflows
+    - C.Termination
     - C.no-data-race.Concurrency
   coastal:
     - Java.no-runtime-exception.Main
