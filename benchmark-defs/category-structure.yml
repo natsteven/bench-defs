@@ -51,6 +51,7 @@ verifiers:
   - mlb
   - mopsa
   - nacpa
+  - ogchecker
   - pesco
   - pichecker
   - pinaka
@@ -176,7 +177,6 @@ not_participating:
   - map2check
   - mucseq
   - graves-par
-  - ogchecker
   - relay-sv
   - sesl
   - skink
@@ -382,6 +382,7 @@ categories:
       - lf-checker
       - mopsa
       - nacpa
+      - ogchecker
       - pesco
       - pichecker
       - symbiotic
