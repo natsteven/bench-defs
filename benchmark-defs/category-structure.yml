@@ -868,6 +868,7 @@ categories_process_order:
   - C.unreach-call.ViolationWitnesses-ControlFlow
   - C.ValidationCrafted
   - C.FalseOverall
+  - C.TrueOverall
   - C.Overall
   - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
