@@ -815,54 +815,54 @@ categories:
 categories_process_order:
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
+  - C.unreach-call.Combinations
   - C.unreach-call.ControlFlow
   - C.unreach-call.ECA
   - C.unreach-call.Floats
+  - C.unreach-call.Hardness
+  - C.unreach-call.Hardware
   - C.unreach-call.Heap
   - C.unreach-call.Loops
   - C.unreach-call.ProductLines
   - C.unreach-call.Recursive
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
-  - C.unreach-call.Combinations
-  - C.unreach-call.Hardware
-  - C.unreach-call.Hardness
   - C.ReachSafety
+  - C.valid-memcleanup.MemCleanup
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
+  - C.valid-memsafety.Juliet
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
-  - C.valid-memsafety.Juliet
-  - C.valid-memcleanup.MemCleanup
   - C.MemSafety
+  - C.no-data-race.Concurrency
+  - C.no-overflow.Concurrency
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
-  - C.no-overflow.Concurrency
-  - C.no-data-race.Concurrency
   - C.Concurrency
-  - C.no-overflow.Main
   - C.no-overflow.Juliet
+  - C.no-overflow.Main
   - C.NoOverflows
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
   - C.Termination
-  - C.unreach-call.SoftwareSystems-AWS-C-Common
-  - C.valid-memsafety.SoftwareSystems-coreutils
-  - C.no-overflow.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-BusyBox
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-Intel-TDX-Module
   - C.unreach-call.SoftwareSystems-Other
-  - C.valid-memsafety.SoftwareSystems-Other
   - C.unreach-call.SoftwareSystems-uthash
-  - C.valid-memsafety.SoftwareSystems-uthash
-  - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
-  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-uthash
   - C.SoftwareSystems
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
@@ -870,62 +870,62 @@ categories_process_order:
   - C.FalseOverall
   - C.TrueOverall
   - C.Overall
-  - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
+  - Java.valid-assert.Main
   - Java.Overall
 
 categories_table_order:
   - C.ReachSafety
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
+  - C.unreach-call.Combinations
   - C.unreach-call.ControlFlow
   - C.unreach-call.ECA
   - C.unreach-call.Floats
+  - C.unreach-call.Hardness
+  - C.unreach-call.Hardware
   - C.unreach-call.Heap
   - C.unreach-call.Loops
   - C.unreach-call.ProductLines
   - C.unreach-call.Recursive
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
-  - C.unreach-call.Combinations
-  - C.unreach-call.Hardware
-  - C.unreach-call.Hardness
   - C.MemSafety
+  - C.valid-memcleanup.MemCleanup
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
+  - C.valid-memsafety.Juliet
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
-  - C.valid-memsafety.Juliet
-  - C.valid-memcleanup.MemCleanup
   - C.Concurrency
+  - C.no-data-race.Concurrency
+  - C.no-overflow.Concurrency
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
-  - C.no-overflow.Concurrency
-  - C.no-data-race.Concurrency
   - C.NoOverflows
-  - C.no-overflow.Main
   - C.no-overflow.Juliet
+  - C.no-overflow.Main
   - C.Termination
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
   - C.SoftwareSystems
-  - C.unreach-call.SoftwareSystems-AWS-C-Common
-  - C.valid-memsafety.SoftwareSystems-coreutils
-  - C.no-overflow.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-BusyBox
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-Intel-TDX-Module
   - C.unreach-call.SoftwareSystems-Other
-  - C.valid-memsafety.SoftwareSystems-Other
   - C.unreach-call.SoftwareSystems-uthash
-  - C.valid-memsafety.SoftwareSystems-uthash
-  - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
-  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-uthash
   - C.ValidationCrafted
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
@@ -933,8 +933,8 @@ categories_table_order:
   - C.TrueOverall
   - C.Overall
   - Java.Overall
-  - Java.valid-assert.Main
   - Java.no-runtime-exception.Main
+  - Java.valid-assert.Main
 
 validation_only:
   - C.ValidationCrafted
@@ -993,6 +993,7 @@ opt_out:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
   pinaka:
     - C.FalseOverall
+    - C.TrueOverall
     - C.Overall
   graves:
     - C.MemSafety
