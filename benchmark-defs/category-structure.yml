@@ -523,11 +523,11 @@ categories:
       While the categories above are collections of rather `academic', or synthesized, example verification tasks,
       this category aims to represent verification tasks from real software systems.
     properties:
-      - unreach-call
       - no-overflow
-      - valid-memsafety
-      - valid-memcleanup
       - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
       - C.no-overflow.SoftwareSystems-BusyBox
       - C.no-overflow.SoftwareSystems-coreutils
@@ -645,10 +645,11 @@ categories:
 
   C.Overall:
     description: |
-      The category Overall contains all verification tasks of all above categories.
-      Each above-mentioned main category is an own sub-category in category Overall.
+      The category C.Overall contains all verification tasks of all above categories.
+      Each above-mentioned main category is an own sub-category in category C.Overall.
       (The weighting schema is explained on the <a href="rules.php#meta">rules page</a>.)
     properties:
+      - no-data-race
       - no-overflow
       - termination
       - unreach-call
@@ -661,7 +662,6 @@ categories:
       - C.NoOverflows
       - C.Termination
       - C.SoftwareSystems
-      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
@@ -711,11 +711,13 @@ categories:
 
   C.FalseOverall:
     description: |
-      The category Falsification consists of all verification tasks with safety properties
+      The category C.FalseOverall consists of all verification tasks
       and the results "correct TRUE" and "incorrect TRUE" are not counted.
-      (The weighting schema is the same as for Overall.)
+      (The weighting schema is the same as for C.Overall.)
     properties:
+      - no-data-race
       - no-overflow
+      - termination
       - unreach-call
       - valid-memcleanup
       - valid-memsafety
@@ -726,7 +728,6 @@ categories:
       - C.NoOverflows
       - C.Termination
       - C.SoftwareSystems
-      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
@@ -928,6 +929,7 @@ categories_table_order:
   - C.unreach-call.CorrectnessWitnesses-Loops
   - C.unreach-call.ViolationWitnesses-ControlFlow
   - C.FalseOverall
+  - C.TrueOverall
   - C.Overall
   - Java.Overall
   - Java.valid-assert.Main
