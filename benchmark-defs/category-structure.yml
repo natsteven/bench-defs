@@ -108,7 +108,6 @@ validators:
   - ureferee-validate-correctness-witnesses-2.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
-  - witnesslint-validate-correctness-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-2.0
   - witnesslint-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-2.0
@@ -255,7 +254,6 @@ categories:
       - veriabsl
     validators:
       - concurrentwitness2test-validate-violation-witnesses-1.0
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -323,7 +321,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -395,7 +392,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -445,7 +441,6 @@ categories:
       - uparalizer
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -507,7 +502,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -577,7 +571,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -620,7 +613,6 @@ categories:
       - witnessmap
     validators:
       - concurrentwitness2test-validate-violation-witnesses-1.0
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -692,7 +684,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -754,7 +745,6 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
