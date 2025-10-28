@@ -201,7 +201,6 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-  - Java.no-runtime-exception.Main
 
 categories:
   ReachSafety:
@@ -209,18 +208,18 @@ categories:
     categories:
       - C.unreach-call.Arrays
       - C.unreach-call.BitVectors
+      - C.unreach-call.Combinations
       - C.unreach-call.ControlFlow
       - C.unreach-call.ECA
       - C.unreach-call.Floats
+      - C.unreach-call.Hardness
+      - C.unreach-call.Hardware 
       - C.unreach-call.Heap
       - C.unreach-call.Loops
       - C.unreach-call.ProductLines
       - C.unreach-call.Recursive
       - C.unreach-call.Sequentialized
       - C.unreach-call.XCSP
-      - C.unreach-call.Combinations
-      - C.unreach-call.Hardware
-      - C.unreach-call.Hardness
     verifiers:
       - 2ls
       - bubaak
@@ -289,12 +288,12 @@ categories:
       - valid-memsafety
       - valid-memcleanup
     categories:
+      - C.valid-memcleanup.MemCleanup
       - C.valid-memsafety.Arrays
       - C.valid-memsafety.Heap
+      - C.valid-memsafety.Juliet
       - C.valid-memsafety.LinkedLists
       - C.valid-memsafety.Other
-      - C.valid-memsafety.Juliet
-      - C.valid-memcleanup.MemCleanup
     verifiers:
       - 2ls
       - bubaak
@@ -354,10 +353,10 @@ categories:
       - no-overflow
       - valid-memsafety
     categories:
+      - C.no-data-race.Concurrency
+      - C.no-overflow.Concurrency
       - C.unreach-call.Concurrency
       - C.valid-memsafety.Concurrency
-      - C.no-overflow.Concurrency
-      - C.no-data-race.Concurrency
     verifiers:
       - 2ls
       - bubaak
@@ -412,8 +411,8 @@ categories:
   NoOverflows:
     properties: no-overflow
     categories:
-      - C.no-overflow.Main
       - C.no-overflow.Juliet
+      - C.no-overflow.Main
     verifiers:
       - 2ls
       - bubaak
@@ -530,21 +529,21 @@ categories:
       - valid-memcleanup
       - termination
     categories:
-      - C.unreach-call.SoftwareSystems-AWS-C-Common
-      - C.valid-memsafety.SoftwareSystems-coreutils
-      - C.no-overflow.SoftwareSystems-coreutils
       - C.no-overflow.SoftwareSystems-BusyBox
+      - C.no-overflow.SoftwareSystems-coreutils
+      - C.no-overflow.SoftwareSystems-uthash
+      - C.termination.SoftwareSystems-DeviceDriversLinux64
+      - C.unreach-call.SoftwareSystems-AWS-C-Common
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-      - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
-      - C.unreach-call.SoftwareSystems-Other
-      - C.valid-memsafety.SoftwareSystems-Other
-      - C.unreach-call.SoftwareSystems-uthash
-      - C.valid-memsafety.SoftwareSystems-uthash
-      - C.no-overflow.SoftwareSystems-uthash
-      - C.valid-memcleanup.SoftwareSystems-uthash
-      - C.termination.SoftwareSystems-DeviceDriversLinux64
       - C.unreach-call.SoftwareSystems-Intel-TDX-Module
+      - C.unreach-call.SoftwareSystems-Other
+      - C.unreach-call.SoftwareSystems-uthash
+      - C.valid-memcleanup.SoftwareSystems-uthash
+      - C.valid-memsafety.SoftwareSystems-coreutils
+      - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+      - C.valid-memsafety.SoftwareSystems-Other
+      - C.valid-memsafety.SoftwareSystems-uthash 
     verifiers:
       - 2ls
       - bubaak
@@ -725,6 +724,7 @@ categories:
       - MemSafety
       - ConcurrencySafety
       - NoOverflows
+      - Termination
       - SoftwareSystems
       - ValidationCrafted
     verifiers:
@@ -770,8 +770,8 @@ categories:
       - valid-assert
       - no-runtime-exception
     categories:
-      - Java.valid-assert.Main
       - Java.no-runtime-exception.Main
+      - Java.valid-assert.Main
     verifiers:
       - coastal
       - dasa
