@@ -163,7 +163,6 @@
 
     </rundefinition>
 
-
   <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
     <option name="-w">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
