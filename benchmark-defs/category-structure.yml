@@ -662,6 +662,7 @@ categories:
       - C.NoOverflows
       - C.Termination
       - C.SoftwareSystems
+      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
