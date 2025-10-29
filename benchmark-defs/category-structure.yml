@@ -780,7 +780,10 @@ categories:
       - divine
       - emergentheta
       - esbmc-kind
+      - goblint
+      - goblint-par
       - graves
+      - mopsa
       - nacpa
       - pesco
       - symbiotic
