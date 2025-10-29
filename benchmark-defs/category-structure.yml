@@ -803,8 +803,7 @@ categories:
       - uautomizer
       - ukojak
       - utaipan
-    validators:    
-      - witnesslint-validate-correctness-witnesses-1.0
+    validators:
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
