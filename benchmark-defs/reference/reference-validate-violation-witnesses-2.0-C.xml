@@ -247,7 +247,6 @@
     </tasks>
   </rundefinition>
 
-
   <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
 {witness_options}
