@@ -785,7 +785,24 @@ categories:
       - C.NoOverflows
       - C.Termination
       - C.SoftwareSystems
-    verifiers: []
+    verifiers:
+      - 2ls
+      - bubaak
+      - bubaak-split
+      - cbmc
+      - cpachecker
+      - divine
+      - emergentheta
+      - esbmc-kind
+      - graves
+      - nacpa
+      - pesco
+      - symbiotic
+      - theta
+      - thorn
+      - uautomizer
+      - ukojak
+      - utaipan
     validators:    
       - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
