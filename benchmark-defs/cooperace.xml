@@ -13,6 +13,10 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
+    <tasks name="C.no-data-race.Huawei-Concurrency-Challenges">
+      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
   </rundefinition>
 
   </benchmark>

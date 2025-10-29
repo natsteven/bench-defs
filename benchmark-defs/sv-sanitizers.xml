@@ -13,6 +13,10 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     </tasks>
+    <tasks name="C.no-data-race.Huawei-Concurrency-Challenges">
+      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP26_valid-memcleanup">
@@ -80,6 +84,10 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
+    <tasks name="C.valid-memsafety.Huawei-Concurrency-Challenges">
+      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
   </rundefinition>
 
   <rundefinition name="SV-COMP26_no-overflow">
@@ -124,6 +132,10 @@
 
     <tasks name="C.no-overflow.Concurrency">
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="C.no-overflow.Huawei-Concurrency-Challenges">
+      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
   </rundefinition>
