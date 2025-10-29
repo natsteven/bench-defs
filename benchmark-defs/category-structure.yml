@@ -354,9 +354,13 @@ categories:
       - valid-memsafety
     categories:
       - C.no-data-race.Concurrency
+      - C.no-data-race.Huawei-Concurrency-Challenges
       - C.no-overflow.Concurrency
+      - C.no-overflow.Huawei-Concurrency-Challenges
       - C.unreach-call.Concurrency
+      - C.unreach-call.Huawei-Concurrency-Challenges
       - C.valid-memsafety.Concurrency
+      - C.valid-memsafety.Huawei-Concurrency-Challenges
     verifiers:
       - 2ls
       - bubaak
@@ -845,9 +849,13 @@ categories_process_order:
   - C.valid-memsafety.Other
   - C.MemSafety
   - C.no-data-race.Concurrency
+  - C.no-data-race.Huawei-Concurrency-Challenges
   - C.no-overflow.Concurrency
+  - C.no-overflow.Huawei-Concurrency-Challenges
   - C.unreach-call.Concurrency
+  - C.unreach-call.Huawei-Concurrency-Challenges
   - C.valid-memsafety.Concurrency
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
   - C.Concurrency
   - C.no-overflow.Juliet
   - C.no-overflow.Main
@@ -908,9 +916,13 @@ categories_table_order:
   - C.valid-memsafety.Other
   - C.Concurrency
   - C.no-data-race.Concurrency
+  - C.no-data-race.Huawei-Concurrency-Challenges
   - C.no-overflow.Concurrency
+  - C.no-overflow.Huawei-Concurrency-Challenges
   - C.unreach-call.Concurrency
+  - C.unreach-call.Huawei-Concurrency-Challenges
   - C.valid-memsafety.Concurrency
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
   - C.NoOverflows
   - C.no-overflow.Juliet
   - C.no-overflow.Main
@@ -1034,8 +1046,10 @@ opt_in:
     - C.unreach-call.Floats
   concurrentwitness2test-validate-violation-witnesses-1.0:
     - C.unreach-call.Concurrency
+    - C.unreach-call.Huawei-Concurrency-Challenges
   cooperace:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   crux:
     - C.unreach-call.SoftwareSystems-AWS-C-Common
     - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
@@ -1085,26 +1099,32 @@ opt_in:
     - C.unreach-call.XCSP
   locksmith:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   proton:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
   racerf:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   relay-sv:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   seal:
     - C.valid-memsafety.LinkedLists
   sv-sanitizers:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
     - C.valid-memsafety.SoftwareSystems-coreutils
     - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
     - C.valid-memsafety.SoftwareSystems-Other
     - C.valid-memsafety.SoftwareSystems-uthash
     - C.valid-memsafety.Concurrency
+    - C.valid-memsafety.Huawei-Concurrency-Challenges
     - C.valid-memcleanup.SoftwareSystems-uthash
     - C.no-overflow.SoftwareSystems-coreutils
     - C.no-overflow.SoftwareSystems-BusyBox
     - C.no-overflow.SoftwareSystems-uthash
     - C.no-overflow.Concurrency
+    - C.no-overflow.Huawei-Concurrency-Challenges
   predatorhp:
     - C.unreach-call.Heap
   verioover:
