@@ -195,7 +195,11 @@ properties:
   - no-runtime-exception
 
 # scores in demo categories are not counted towards the Overall score
-demo_categories: []
+demo_categories:
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
 
 categories:
   C.ReachSafety:
