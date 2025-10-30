@@ -76,10 +76,6 @@
       <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.Huawei-Concurrency-Challenges">
-      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
 
     <tasks name="C.unreach-call.CorrectnessWitnesses-Loops">
       <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
@@ -90,5 +86,15 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
+
+  <rundefinition name="SV-COMP26_unreach-call_demo">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+    <tasks name="C.unreach-call.Huawei-Concurrency-Challenges">
+      <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+
+    </rundefinition>
 
   </benchmark>
