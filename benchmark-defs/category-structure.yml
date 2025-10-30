@@ -196,6 +196,7 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
+  - C.Huawei-Concurrency-Challenges
   - C.no-data-race.Huawei-Concurrency-Challenges
   - C.no-overflow.Huawei-Concurrency-Challenges
   - C.unreach-call.Huawei-Concurrency-Challenges
@@ -344,13 +345,9 @@ categories:
       - valid-memsafety
     categories:
       - C.no-data-race.Concurrency
-      - C.no-data-race.Huawei-Concurrency-Challenges
       - C.no-overflow.Concurrency
-      - C.no-overflow.Huawei-Concurrency-Challenges
       - C.unreach-call.Concurrency
-      - C.unreach-call.Huawei-Concurrency-Challenges
       - C.valid-memsafety.Concurrency
-      - C.valid-memsafety.Huawei-Concurrency-Challenges
     verifiers:
       - 2ls
       - bubaak
@@ -769,6 +766,66 @@ categories:
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
 
+  C.Huawei-Concurrency-Challenges:
+    properties:
+      - unreach-call
+      - no-data-race
+      - no-overflow
+      - valid-memsafety
+    categories:
+      - C.no-data-race.Huawei-Concurrency-Challenges
+      - C.no-overflow.Huawei-Concurrency-Challenges
+      - C.unreach-call.Huawei-Concurrency-Challenges
+      - C.valid-memsafety.Huawei-Concurrency-Challenges
+    verifiers:
+      - 2ls
+      - bubaak
+      - bubaak-split
+      - cbmc
+      - cpa-lockator
+      - cpachecker
+      - cseq
+      - dartagnan
+      - deagle
+      - divine
+      - ebf
+      - emergentheta
+      - esbmc-incr
+      - esbmc-kind
+      - goblint
+      - goblint-par
+      - graves
+      - iekke
+      - infer
+      - lazycseq
+      - lf-checker
+      - mopsa
+      - nacpa
+      - ogchecker
+      - pesco
+      - pichecker
+      - symbiotic
+      - theta
+      - thorn
+      - uautomizer
+      - ugemcutter
+      - ukojak
+      - utaipan
+    validators:
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+      - cpachecker-validate-violation-witnesses-1.0
+      - cpachecker-validate-violation-witnesses-2.0
+      - dartagnan-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
+      - uautomizer-validate-correctness-witnesses-2.0
+      - uautomizer-validate-violation-witnesses-1.0
+      - uautomizer-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
+
   Java.Overall:
     properties:
       - valid-assert
@@ -817,13 +874,9 @@ categories_process_order:
   - C.valid-memsafety.Other
   - C.MemSafety
   - C.no-data-race.Concurrency
-  - C.no-data-race.Huawei-Concurrency-Challenges
   - C.no-overflow.Concurrency
-  - C.no-overflow.Huawei-Concurrency-Challenges
   - C.unreach-call.Concurrency
-  - C.unreach-call.Huawei-Concurrency-Challenges
   - C.valid-memsafety.Concurrency
-  - C.valid-memsafety.Huawei-Concurrency-Challenges
   - C.Concurrency
   - C.no-overflow.Juliet
   - C.no-overflow.Main
@@ -855,6 +908,11 @@ categories_process_order:
   - C.FalseOverall
   - C.TrueOverall
   - C.Overall
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
+  - C.Huawei-Concurrency-Challenges
   - Java.no-runtime-exception.Main
   - Java.valid-assert.Main
   - Java.Overall
@@ -921,6 +979,11 @@ categories_table_order:
   - C.FalseOverall
   - C.TrueOverall
   - C.Overall
+  - C.Huawei-Concurrency-Challenges
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
   - Java.Overall
   - Java.no-runtime-exception.Main
   - Java.valid-assert.Main
