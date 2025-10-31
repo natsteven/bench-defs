@@ -102,12 +102,12 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.unreach-call.CorrectnessWitnesses-Loops">
-      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
+    <tasks name="C.unreach-call.CorrectnessWitnesses">
+      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.ViolationWitnesses-ControlFlow">
-      <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
+    <tasks name="C.unreach-call.ViolationWitnesses">
+      <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
@@ -116,7 +116,7 @@
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
-    <tasks name="C.valid-memcleanup.MemCleanup">
+    <tasks name="C.valid-memcleanup.Main">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>

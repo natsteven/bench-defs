@@ -30,7 +30,7 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP25_valid-memcleanup">
-  <tasks name="C.valid-memcleanup.MemCleanup">
+  <tasks name="C.valid-memcleanup.Main">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>

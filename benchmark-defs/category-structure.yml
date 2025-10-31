@@ -283,7 +283,7 @@ categories:
       - valid-memsafety
       - valid-memcleanup
     categories:
-      - C.valid-memcleanup.MemCleanup
+      - C.valid-memcleanup.Main
       - C.valid-memsafety.Arrays
       - C.valid-memsafety.Heap
       - C.valid-memsafety.Juliet
@@ -586,8 +586,8 @@ categories:
     properties: 
       - unreach-call
     categories:
-      - C.unreach-call.CorrectnessWitnesses-Loops
-      - C.unreach-call.ViolationWitnesses-ControlFlow
+      - C.unreach-call.CorrectnessWitnesses
+      - C.unreach-call.ViolationWitnesses
     verifiers:
       - witnessmap
     validators:
@@ -866,7 +866,7 @@ categories_process_order:
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
   - C.ReachSafety
-  - C.valid-memcleanup.MemCleanup
+  - C.valid-memcleanup.Main
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
   - C.valid-memsafety.Juliet
@@ -902,8 +902,8 @@ categories_process_order:
   - C.valid-memsafety.SoftwareSystems-Other
   - C.valid-memsafety.SoftwareSystems-uthash
   - C.SoftwareSystems
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
   - C.ValidationCrafted
   - C.FalseOverall
   - C.TrueOverall
@@ -934,7 +934,7 @@ categories_table_order:
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
   - C.MemSafety
-  - C.valid-memcleanup.MemCleanup
+  - C.valid-memcleanup.Main
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
   - C.valid-memsafety.Juliet
@@ -970,8 +970,8 @@ categories_table_order:
   - C.valid-memsafety.SoftwareSystems-Other
   - C.valid-memsafety.SoftwareSystems-uthash
   - C.ValidationCrafted
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
   - C.FalseOverall
   - C.TrueOverall
   - C.Overall
@@ -986,8 +986,8 @@ categories_table_order:
 
 validation_only:
   - C.ValidationCrafted
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
 
 opt_out:
   2ls:
