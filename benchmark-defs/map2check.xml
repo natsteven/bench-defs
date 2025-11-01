@@ -73,7 +73,7 @@
 </rundefinition>
 
 <rundefinition name="SV-COMP25_valid-memcleanup">
-    <tasks name="C.valid-memcleanup.MemCleanup">
+    <tasks name="C.valid-memcleanup.Main">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>

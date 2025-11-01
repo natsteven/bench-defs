@@ -62,7 +62,7 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
-  <tasks name="C.valid-memcleanup.MemCleanup">
+  <tasks name="C.valid-memcleanup.Main">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
