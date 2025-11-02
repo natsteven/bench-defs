@@ -189,8 +189,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-
-    </rundefinition>
+  </rundefinition>
 
   <rundefinition name="SV-COMP26_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
@@ -234,8 +233,7 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
-    </rundefinition>
+  </rundefinition>
 
   <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
@@ -273,4 +271,5 @@
     </tasks>
   </rundefinition>
 
-  </benchmark>
+
+</benchmark>
