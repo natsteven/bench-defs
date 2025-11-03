@@ -1064,8 +1064,6 @@ opt_out:
     - Java.no-runtime-exception.Main
   spf:
     - Java.no-runtime-exception.Main
-  swat:
-    - Java.no-runtime-exception.Main
   dasa:
     - Java.no-runtime-exception.Main
 
