@@ -1,5 +1,5 @@
 competition: SV-COMP
-year: 2025
+year: 2026
 observer_email: "sv-comp-validators@googlegroups.com"
 
 # Information about verifiers was moved to https://gitlab.com/sosy-lab/benchmarking/fm-tools
@@ -21,6 +21,7 @@ verifiers:
   - crux
   - cseq
   - dartagnan
+  - dasa
   - deagle
   - divine
   - ebf
@@ -33,26 +34,34 @@ verifiers:
   - gdart
   - gdart-llvm
   - goblint
+  - goblint-par
+  - goblitch
   - graves
   - hornix
+  - iekke
   - infer
   - java-ranger
   - jayhorn
   - jbmc
   - jdart
+  - jlisa
   - korn
   - lazycseq
   - lf-checker
   - locksmith
   - mlb
   - mopsa
+  - muval
   - nacpa
+  - ogchecker
   - pesco
   - pichecker
   - pinaka
   - predatorhp
   - proton
   - racerf
+  - re3ver
+  - seal
   - spf
   - sv-sanitizers
   - svf-svc
@@ -63,6 +72,7 @@ verifiers:
   - uautomizer
   - ugemcutter
   - ukojak
+  - uparalizer
   - utaipan
   - veriabs
   - veriabsl
@@ -71,7 +81,6 @@ verifiers:
 
 validators:
   - concurrentwitness2test-validate-violation-witnesses-1.0
-  - cpachecker-validate-correctness-witnesses-1.0
   - cpachecker-validate-correctness-witnesses-2.0
   - cpachecker-validate-violation-witnesses-1.0
   - cpachecker-validate-violation-witnesses-2.0
@@ -81,9 +90,7 @@ validators:
   - goblint-validate-correctness-witnesses-2.0
   - gwit-validate-violation-witnesses-1.0
   - jcwit-validate-correctness-witnesses-1.0
-  - liv-validate-correctness-witnesses-1.0
   - liv-validate-correctness-witnesses-2.0
-  - metaval-validate-correctness-witnesses-1.0
   - metaval-validate-correctness-witnesses-2.0
   - metaval-validate-violation-witnesses-1.0
   - metaval-validate-violation-witnesses-2.0
@@ -91,15 +98,14 @@ validators:
   - mopsa-validate-correctness-witnesses-2.0
   - nitwit-validate-violation-witnesses-1.0
   - symbiotic-witch-validate-violation-witnesses-1.0
-  - uautomizer-validate-correctness-witnesses-1.0
+  - theta-validate-violation-witnesses-2.0
+  - theta-validate-correctness-witnesses-2.0
   - uautomizer-validate-correctness-witnesses-2.0
   - uautomizer-validate-violation-witnesses-1.0
   - uautomizer-validate-violation-witnesses-2.0
-  - ureferee-validate-correctness-witnesses-1.0
   - ureferee-validate-correctness-witnesses-2.0
   - witch-validate-violation-witnesses-2.0
   - wit4java-validate-violation-witnesses-1.0
-  - witnesslint-validate-correctness-witnesses-1.0
   - witnesslint-validate-correctness-witnesses-2.0
   - witnesslint-validate-violation-witnesses-1.0
   - witnesslint-validate-violation-witnesses-2.0
@@ -133,6 +139,7 @@ hors_concours:
   - pinaka
   - predatorhp
   - spf
+  - uparalizer
   - veriabs
   - veriabsl
   - verioover
@@ -191,27 +198,30 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
-  - Java.no-runtime-exception.Main
+  - C.Huawei-Concurrency-Challenges
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
 
 categories:
-  ReachSafety:
+  C.ReachSafety:
     properties: unreach-call
     categories:
       - C.unreach-call.Arrays
       - C.unreach-call.BitVectors
+      - C.unreach-call.Combinations
       - C.unreach-call.ControlFlow
       - C.unreach-call.ECA
       - C.unreach-call.Floats
+      - C.unreach-call.Hardness
+      - C.unreach-call.Hardware 
       - C.unreach-call.Heap
       - C.unreach-call.Loops
       - C.unreach-call.ProductLines
       - C.unreach-call.Recursive
       - C.unreach-call.Sequentialized
       - C.unreach-call.XCSP
-      - C.unreach-call.Combinations
-      - C.unreach-call.Hardware
-      - C.unreach-call.Hardness
-      - C.unreach-call.Fuzzle
     verifiers:
       - 2ls
       - bubaak
@@ -224,63 +234,64 @@ categories:
       - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
+      - goblitch
       - graves
       - infer
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
+      - re3ver
       - svf-svc
       - symbiotic
       - theta
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
       - veriabs
       - veriabsl
     validators:
       - concurrentwitness2test-validate-violation-witnesses-1.0
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - cpa-witness2test-validate-violation-witnesses-1.0
       - fshell-witness2test-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
       - nitwit-validate-violation-witnesses-1.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
       - ureferee-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  MemSafety:
+  C.MemSafety:
     properties:
       - valid-memsafety
       - valid-memcleanup
     categories:
+      - C.valid-memcleanup.Main
       - C.valid-memsafety.Arrays
       - C.valid-memsafety.Heap
+      - C.valid-memsafety.Juliet
       - C.valid-memsafety.LinkedLists
       - C.valid-memsafety.Other
-      - C.valid-memsafety.Juliet
-      - C.valid-memcleanup.MemCleanup
     verifiers:
       - 2ls
       - bubaak
@@ -289,10 +300,13 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - mopsa
+      - muval
       - nacpa
       - pesco
       - predatorhp
@@ -300,11 +314,11 @@ categories:
       - svf-svc
       - symbiotic
       - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
@@ -312,34 +326,25 @@ categories:
       - cpachecker-validate-violation-witnesses-2.0
       - cpa-witness2test-validate-violation-witnesses-1.0
       - fshell-witness2test-validate-violation-witnesses-1.0
-      - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
-      - liv-validate-correctness-witnesses-2.0
-      - uautomizer-validate-correctness-witnesses-1.0
-      - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
-      - ureferee-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
-      - metaval-validate-correctness-witnesses-2.0
-      - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
 
-  ConcurrencySafety:
+  C.Concurrency:
     properties:
       - unreach-call
       - no-data-race
       - no-overflow
       - valid-memsafety
     categories:
+      - C.no-data-race.Concurrency
+      - C.no-overflow.Concurrency
       - C.unreach-call.Concurrency
       - C.valid-memsafety.Concurrency
-      - C.no-overflow.Concurrency
-      - C.no-data-race.Concurrency
     verifiers:
       - 2ls
       - bubaak
@@ -352,15 +357,20 @@ categories:
       - deagle
       - divine
       - ebf
+      - emergentheta
       - esbmc-incr
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
+      - iekke
       - infer
       - lazycseq
       - lf-checker
       - mopsa
+      - muval
       - nacpa
+      - ogchecker
       - pesco
       - pichecker
       - symbiotic
@@ -371,26 +381,22 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
-      - cpachecker-validate-violation-witnesses-2.0
       - dartagnan-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
-      - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
+      - theta-validate-correctness-witnesses-2.0
 
-  NoOverflows:
+  C.NoOverflows:
     properties: no-overflow
     categories:
-      - C.no-overflow.Main
       - C.no-overflow.Juliet
+      - C.no-overflow.Main
     verifiers:
       - 2ls
       - bubaak
@@ -403,50 +409,48 @@ categories:
       - esbmc-kind
       - frama-c-sv
       - goblint
+      - goblint-par
       - graves
       - infer
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
       - sv-sanitizers
-      - svf-svc
       - symbiotic
       - theta
       - thorn
       - uautomizer
       - ukojak
+      - uparalizer
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - cpa-witness2test-validate-violation-witnesses-1.0
       - fshell-witness2test-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
       - ureferee-validate-correctness-witnesses-2.0
       - metaval++-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  Termination:
+  C.Termination:
     properties: termination
     categories:
       - C.termination.BitVectors
@@ -465,8 +469,10 @@ categories:
       - esbmc-kind
       - function-res
       - goblint
+      - goblint-par
       - graves
       - mopsa
+      - muval
       - nacpa
       - pesco
       - pinaka
@@ -478,46 +484,48 @@ categories:
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
+      - cpachecker-validate-correctness-witnesses-2.0
       - goblint-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - witch-validate-violation-witnesses-2.0
 
-  SoftwareSystems:
+  C.SoftwareSystems:
     description: |
       This category consists of several sets of verification tasks. Each of these sets is an own sub-category.
       While the categories above are collections of rather `academic', or synthesized, example verification tasks,
       this category aims to represent verification tasks from real software systems.
     properties:
-      - unreach-call
       - no-overflow
-      - valid-memsafety
-      - valid-memcleanup
       - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
     categories:
-      - C.unreach-call.SoftwareSystems-AWS-C-Common
-      - C.valid-memsafety.SoftwareSystems-coreutils
-      - C.no-overflow.SoftwareSystems-coreutils
       - C.no-overflow.SoftwareSystems-BusyBox
+      - C.no-overflow.SoftwareSystems-coreutils
+      - C.no-overflow.SoftwareSystems-uthash
+      - C.termination.SoftwareSystems-DeviceDriversLinux64
+      - C.unreach-call.SoftwareSystems-AWS-C-Common
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-      - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
-      - C.unreach-call.SoftwareSystems-Other
-      - C.valid-memsafety.SoftwareSystems-Other
-      - C.unreach-call.SoftwareSystems-uthash
-      - C.valid-memsafety.SoftwareSystems-uthash
-      - C.no-overflow.SoftwareSystems-uthash
-      - C.valid-memcleanup.SoftwareSystems-uthash
-      - C.termination.SoftwareSystems-DeviceDriversLinux64
       - C.unreach-call.SoftwareSystems-Intel-TDX-Module
+      - C.unreach-call.SoftwareSystems-Other
+      - C.unreach-call.SoftwareSystems-uthash
+      - C.valid-memcleanup.SoftwareSystems-uthash
+      - C.valid-memsafety.SoftwareSystems-coreutils
+      - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+      - C.valid-memsafety.SoftwareSystems-Other
+      - C.valid-memsafety.SoftwareSystems-uthash 
     verifiers:
       - 2ls
       - bubaak
@@ -527,8 +535,11 @@ categories:
       - cpa-bam-smg
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
+      - goblitch
       - graves
       - infer
       - mopsa
@@ -536,99 +547,96 @@ categories:
       - pesco
       - svf-svc
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - cpa-witness2test-validate-violation-witnesses-1.0
       - fshell-witness2test-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
       - nitwit-validate-violation-witnesses-1.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
       - ureferee-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  ValidationCrafted:
+  C.ValidationCrafted:
     description: |
       This category contains validation tasks that were crafted to test certain features of validators.
     properties: 
       - unreach-call
+      - termination
     categories:
-      - C.unreach-call.CorrectnessWitnesses-Loops
-      - C.unreach-call.ViolationWitnesses-ControlFlow
+      - C.unreach-call.CorrectnessWitnesses
+      - C.unreach-call.ViolationWitnesses
+      - C.termination.ViolationWitnesses
     verifiers:
       - witnessmap
     validators:
       - concurrentwitness2test-validate-violation-witnesses-1.0
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - cpa-witness2test-validate-violation-witnesses-1.0
       - fshell-witness2test-validate-violation-witnesses-1.0
       - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
       - nitwit-validate-violation-witnesses-1.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
       - ureferee-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-1.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - symbiotic-witch-validate-violation-witnesses-1.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  Overall:
+  C.Overall:
     description: |
-      The category Overall contains all verification tasks of all above categories.
-      Each above-mentioned main category is an own sub-category in category Overall.
+      The category C.Overall contains all verification tasks of all above categories.
+      Each above-mentioned main category is an own sub-category in category C.Overall.
       (The weighting schema is explained on the <a href="rules.php#meta">rules page</a>.)
     properties:
+      - no-data-race
       - no-overflow
       - termination
       - unreach-call
       - valid-memcleanup
       - valid-memsafety
     categories:
-      - ReachSafety
-      - MemSafety
-      - ConcurrencySafety
-      - NoOverflows
-      - Termination
-      - SoftwareSystems
-      - ValidationCrafted
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
+      - C.ValidationCrafted
     verifiers:
       - 2ls
       - bubaak
@@ -636,58 +644,60 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - goblint
+      - goblint-par
       - graves
       - mopsa
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
       - cpachecker-validate-correctness-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
       - cpachecker-validate-violation-witnesses-2.0
       - goblint-validate-correctness-witnesses-2.0
-      - liv-validate-correctness-witnesses-1.0
       - liv-validate-correctness-witnesses-2.0
-      - uautomizer-validate-correctness-witnesses-1.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
       - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
       - ureferee-validate-correctness-witnesses-2.0
       - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
       - metaval-validate-correctness-witnesses-2.0
       - metaval++-validate-correctness-witnesses-2.0
       - mopsa-validate-correctness-witnesses-2.0
       - witch-validate-violation-witnesses-2.0
+      - theta-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  FalsificationOverall:
+  C.FalseOverall:
     description: |
-      The category Falsification consists of all verification tasks with safety properties
+      The category C.FalseOverall consists of all verification tasks
       and the results "correct TRUE" and "incorrect TRUE" are not counted.
-      (The weighting schema is the same as for Overall.)
+      (The weighting schema is the same as for C.Overall.)
     properties:
+      - no-data-race
       - no-overflow
+      - termination
       - unreach-call
       - valid-memcleanup
       - valid-memsafety
     categories:
-      - ReachSafety
-      - MemSafety
-      - ConcurrencySafety
-      - NoOverflows
-      - SoftwareSystems
-      - ValidationCrafted
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
     verifiers:
       - 2ls
       - bubaak
@@ -695,47 +705,140 @@ categories:
       - cbmc
       - cpachecker
       - divine
+      - emergentheta
       - esbmc-kind
       - graves
       - nacpa
       - pesco
       - symbiotic
+      - theta
+      - thorn
       - uautomizer
       - ukojak
       - utaipan
     validators:
-      - witnesslint-validate-correctness-witnesses-1.0
       - witnesslint-validate-correctness-witnesses-2.0
       - witnesslint-validate-violation-witnesses-1.0
       - witnesslint-validate-violation-witnesses-2.0
-      - cpachecker-validate-correctness-witnesses-1.0
-      - cpachecker-validate-correctness-witnesses-2.0
+
+  C.TrueOverall:
+    description: |
+      The category C.TrueOverall consists of all verification tasks
+      and the results "correct FALSE" and "incorrect FALSE" are not counted.
+      (The weighting schema is the same as for C.Overall.)
+    properties:
+      - no-data-race
+      - no-overflow
+      - termination
+      - unreach-call
+      - valid-memcleanup
+      - valid-memsafety
+    categories:
+      - C.ReachSafety
+      - C.MemSafety
+      - C.Concurrency
+      - C.NoOverflows
+      - C.Termination
+      - C.SoftwareSystems
+    verifiers:
+      - 2ls
+      - bubaak
+      - bubaak-split
+      - cbmc
+      - cpachecker
+      - divine
+      - emergentheta
+      - esbmc-kind
+      - goblint
+      - goblint-par
+      - graves
+      - mopsa
+      - nacpa
+      - pesco
+      - symbiotic
+      - theta
+      - thorn
+      - uautomizer
+      - ukojak
+      - utaipan
+    validators:
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
+
+  C.Huawei-Concurrency-Challenges:
+    properties:
+      - unreach-call
+      - no-data-race
+      - no-overflow
+      - valid-memsafety
+    categories:
+      - C.no-data-race.Huawei-Concurrency-Challenges
+      - C.no-overflow.Huawei-Concurrency-Challenges
+      - C.unreach-call.Huawei-Concurrency-Challenges
+      - C.valid-memsafety.Huawei-Concurrency-Challenges
+    verifiers:
+      - 2ls
+      - bubaak
+      - bubaak-split
+      - cbmc
+      - cpa-lockator
+      - cpachecker
+      - cseq
+      - dartagnan
+      - deagle
+      - divine
+      - ebf
+      - emergentheta
+      - esbmc-incr
+      - esbmc-kind
+      - goblint
+      - goblint-par
+      - graves
+      - iekke
+      - infer
+      - lazycseq
+      - lf-checker
+      - mopsa
+      - nacpa
+      - ogchecker
+      - pesco
+      - pichecker
+      - symbiotic
+      - theta
+      - thorn
+      - uautomizer
+      - ugemcutter
+      - ukojak
+      - utaipan
+    validators:
+      - witnesslint-validate-correctness-witnesses-2.0
+      - witnesslint-validate-violation-witnesses-1.0
+      - witnesslint-validate-violation-witnesses-2.0
       - cpachecker-validate-violation-witnesses-1.0
-      - cpachecker-validate-violation-witnesses-2.0
-      - uautomizer-validate-correctness-witnesses-1.0
+      - dartagnan-validate-violation-witnesses-1.0
+      - goblint-validate-correctness-witnesses-2.0
+      - mopsa-validate-correctness-witnesses-2.0
       - uautomizer-validate-correctness-witnesses-2.0
       - uautomizer-validate-violation-witnesses-1.0
-      - uautomizer-validate-violation-witnesses-2.0
-      - ureferee-validate-correctness-witnesses-1.0
-      - ureferee-validate-correctness-witnesses-2.0
-      - metaval-validate-violation-witnesses-2.0
-      - metaval-validate-correctness-witnesses-1.0
-      - witch-validate-violation-witnesses-2.0
+      - theta-validate-correctness-witnesses-2.0
 
-  JavaOverall:
+  Java.Overall:
     properties:
       - valid-assert
       - no-runtime-exception
     categories:
-      - Java.valid-assert.Main
       - Java.no-runtime-exception.Main
+      - Java.valid-assert.Main
     verifiers:
       - coastal
+      - dasa
       - gdart
       - java-ranger
       - jayhorn
       - jbmc
       - jdart
+      - jlisa
       - mlb
       - spf
       - swat
@@ -747,139 +850,155 @@ categories:
 categories_process_order:
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
+  - C.unreach-call.Combinations
   - C.unreach-call.ControlFlow
   - C.unreach-call.ECA
   - C.unreach-call.Floats
+  - C.unreach-call.Hardness
+  - C.unreach-call.Hardware
   - C.unreach-call.Heap
   - C.unreach-call.Loops
   - C.unreach-call.ProductLines
   - C.unreach-call.Recursive
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
-  - C.unreach-call.Combinations
-  - C.unreach-call.Hardware
-  - C.unreach-call.Hardness
-  - C.unreach-call.Fuzzle
-  - ReachSafety
+  - C.ReachSafety
+  - C.valid-memcleanup.Main
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
+  - C.valid-memsafety.Juliet
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
-  - C.valid-memsafety.Juliet
-  - C.valid-memcleanup.MemCleanup
-  - MemSafety
+  - C.MemSafety
+  - C.no-data-race.Concurrency
+  - C.no-overflow.Concurrency
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
-  - C.no-overflow.Concurrency
-  - C.no-data-race.Concurrency
-  - ConcurrencySafety
-  - C.no-overflow.Main
+  - C.Concurrency
   - C.no-overflow.Juliet
-  - NoOverflows
+  - C.no-overflow.Main
+  - C.NoOverflows
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
-  - Termination
-  - C.unreach-call.SoftwareSystems-AWS-C-Common
-  - C.valid-memsafety.SoftwareSystems-coreutils
-  - C.no-overflow.SoftwareSystems-coreutils
+  - C.Termination
   - C.no-overflow.SoftwareSystems-BusyBox
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-Intel-TDX-Module
   - C.unreach-call.SoftwareSystems-Other
-  - C.valid-memsafety.SoftwareSystems-Other
   - C.unreach-call.SoftwareSystems-uthash
-  - C.valid-memsafety.SoftwareSystems-uthash
-  - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
-  - C.termination.SoftwareSystems-DeviceDriversLinux64
-  - SoftwareSystems
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
-  - ValidationCrafted
-  - FalsificationOverall
-  - Overall
-  - Java.valid-assert.Main
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-uthash
+  - C.SoftwareSystems
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
+  - C.ValidationCrafted
+  - C.FalseOverall
+  - C.TrueOverall
+  - C.Overall
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
+  - C.Huawei-Concurrency-Challenges
   - Java.no-runtime-exception.Main
-  - JavaOverall
+  - Java.valid-assert.Main
+  - Java.Overall
 
 categories_table_order:
-  - ReachSafety
+  - C.ReachSafety
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
+  - C.unreach-call.Combinations
   - C.unreach-call.ControlFlow
   - C.unreach-call.ECA
   - C.unreach-call.Floats
+  - C.unreach-call.Hardness
+  - C.unreach-call.Hardware
   - C.unreach-call.Heap
   - C.unreach-call.Loops
   - C.unreach-call.ProductLines
   - C.unreach-call.Recursive
   - C.unreach-call.Sequentialized
   - C.unreach-call.XCSP
-  - C.unreach-call.Combinations
-  - C.unreach-call.Hardware
-  - C.unreach-call.Hardness
-  - C.unreach-call.Fuzzle
-  - MemSafety
+  - C.MemSafety
+  - C.valid-memcleanup.Main
   - C.valid-memsafety.Arrays
   - C.valid-memsafety.Heap
+  - C.valid-memsafety.Juliet
   - C.valid-memsafety.LinkedLists
   - C.valid-memsafety.Other
-  - C.valid-memsafety.Juliet
-  - C.valid-memcleanup.MemCleanup
-  - ConcurrencySafety
+  - C.Concurrency
+  - C.no-data-race.Concurrency
+  - C.no-overflow.Concurrency
   - C.unreach-call.Concurrency
   - C.valid-memsafety.Concurrency
-  - C.no-overflow.Concurrency
-  - C.no-data-race.Concurrency
-  - NoOverflows
-  - C.no-overflow.Main
+  - C.NoOverflows
   - C.no-overflow.Juliet
-  - Termination
+  - C.no-overflow.Main
+  - C.Termination
   - C.termination.BitVectors
   - C.termination.MainControlFlow
   - C.termination.MainHeap
   - C.termination.Other
-  - SoftwareSystems
-  - C.unreach-call.SoftwareSystems-AWS-C-Common
-  - C.valid-memsafety.SoftwareSystems-coreutils
-  - C.no-overflow.SoftwareSystems-coreutils
+  - C.SoftwareSystems
   - C.no-overflow.SoftwareSystems-BusyBox
+  - C.no-overflow.SoftwareSystems-coreutils
+  - C.no-overflow.SoftwareSystems-uthash
+  - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
-  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-Intel-TDX-Module
   - C.unreach-call.SoftwareSystems-Other
-  - C.valid-memsafety.SoftwareSystems-Other
   - C.unreach-call.SoftwareSystems-uthash
-  - C.valid-memsafety.SoftwareSystems-uthash
-  - C.no-overflow.SoftwareSystems-uthash
   - C.valid-memcleanup.SoftwareSystems-uthash
-  - C.termination.SoftwareSystems-DeviceDriversLinux64
-  - ValidationCrafted
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
-  - FalsificationOverall
-  - Overall
-  - JavaOverall
-  - Java.valid-assert.Main
+  - C.valid-memsafety.SoftwareSystems-coreutils
+  - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
+  - C.valid-memsafety.SoftwareSystems-Other
+  - C.valid-memsafety.SoftwareSystems-uthash
+  - C.ValidationCrafted
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
+  - C.FalseOverall
+  - C.TrueOverall
+  - C.Overall
+  - C.Huawei-Concurrency-Challenges
+  - C.no-data-race.Huawei-Concurrency-Challenges
+  - C.no-overflow.Huawei-Concurrency-Challenges
+  - C.unreach-call.Huawei-Concurrency-Challenges
+  - C.valid-memsafety.Huawei-Concurrency-Challenges
+  - Java.Overall
   - Java.no-runtime-exception.Main
+  - Java.valid-assert.Main
 
 validation_only:
-  - ValidationCrafted
-  - C.unreach-call.CorrectnessWitnesses-Loops
-  - C.unreach-call.ViolationWitnesses-ControlFlow
+  - C.ValidationCrafted
+  - C.unreach-call.CorrectnessWitnesses
+  - C.unreach-call.ViolationWitnesses
+  - C.termination.ViolationWitnesses
 
 opt_out:
   2ls:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   cbmc:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   cpa-lockator:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   cpa-bam-bnb:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
     - C.valid-memcleanup.SoftwareSystems-uthash
@@ -888,28 +1007,38 @@ opt_out:
     - C.valid-memcleanup.SoftwareSystems-uthash
   divine:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   ebf:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   esbmc-incr:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   lazycseq:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   lf-checker:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   pichecker:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
     - C.no-overflow.Concurrency
+    - C.no-overflow.Huawei-Concurrency-Challenges
     - C.valid-memsafety.Concurrency
+    - C.valid-memsafety.Huawei-Concurrency-Challenges
   symbiotic:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   pesco:
-    - MemSafety
-    - ConcurrencySafety
-    - NoOverflows
-    - Termination
+    - C.MemSafety
+    - C.Concurrency
+    - C.NoOverflows
+    - C.Termination
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   map2check:
-    - ReachSafety
+    - C.ReachSafety
   infer:
     # Infer can't handle floats
     - C.unreach-call.Floats
@@ -924,13 +1053,14 @@ opt_out:
     - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
     - C.termination.SoftwareSystems-DeviceDriversLinux64
   pinaka:
-    - FalsificationOverall
-    - Overall
+    - C.FalseOverall
+    - C.TrueOverall
+    - C.Overall
   graves:
-    - MemSafety
-    - ConcurrencySafety
-    - NoOverflows
-    - Termination
+    - C.MemSafety
+    - C.Concurrency
+    - C.NoOverflows
+    - C.Termination
     - C.no-data-race.Concurrency
   coastal:
     - Java.no-runtime-exception.Main
@@ -942,7 +1072,7 @@ opt_out:
     - Java.no-runtime-exception.Main
   spf:
     - Java.no-runtime-exception.Main
-  swat:
+  dasa:
     - Java.no-runtime-exception.Main
 
 opt_in:
@@ -954,8 +1084,10 @@ opt_in:
     - C.unreach-call.Floats
   concurrentwitness2test-validate-violation-witnesses-1.0:
     - C.unreach-call.Concurrency
+    - C.unreach-call.Huawei-Concurrency-Challenges
   cooperace:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   crux:
     - C.unreach-call.SoftwareSystems-AWS-C-Common
     - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
@@ -1003,27 +1135,34 @@ opt_in:
     - C.unreach-call.Recursive
     - C.unreach-call.Sequentialized
     - C.unreach-call.XCSP
-    - C.unreach-call.Fuzzle
   locksmith:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   proton:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
   racerf:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
   relay-sv:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
+  seal:
+    - C.valid-memsafety.LinkedLists
   sv-sanitizers:
     - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
     - C.valid-memsafety.SoftwareSystems-coreutils
     - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
     - C.valid-memsafety.SoftwareSystems-Other
     - C.valid-memsafety.SoftwareSystems-uthash
     - C.valid-memsafety.Concurrency
+    - C.valid-memsafety.Huawei-Concurrency-Challenges
     - C.valid-memcleanup.SoftwareSystems-uthash
     - C.no-overflow.SoftwareSystems-coreutils
     - C.no-overflow.SoftwareSystems-BusyBox
     - C.no-overflow.SoftwareSystems-uthash
     - C.no-overflow.Concurrency
+    - C.no-overflow.Huawei-Concurrency-Challenges
   predatorhp:
     - C.unreach-call.Heap
   verioover:

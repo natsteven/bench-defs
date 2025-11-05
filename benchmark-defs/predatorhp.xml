@@ -9,7 +9,7 @@
   <option name="--witness" />
   <option name="witness.graphml" />
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.Heap">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
@@ -17,8 +17,8 @@
     </tasks>
     </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memcleanup">
-    <tasks name="C.valid-memcleanup.MemCleanup">
+  <rundefinition name="SV-COMP26_valid-memcleanup">
+    <tasks name="C.valid-memcleanup.Main">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
@@ -28,7 +28,7 @@
     </tasks>
     </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memsafety">
+  <rundefinition name="SV-COMP26_valid-memsafety">
     <tasks name="C.valid-memsafety.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
       <includesfile>../sv-benchmarks/c/Heap-Termination.set</includesfile>

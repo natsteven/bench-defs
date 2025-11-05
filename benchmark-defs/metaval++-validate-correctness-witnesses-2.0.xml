@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="metaval++" displayName="MetaVal++" timelimit="15 min" hardtimelimit="16 min" memlimit="7 GB" cpuCores="2">
+<benchmark tool="metaval++" displayName="MetaVal++" timelimit="5 min" hardtimelimit="6 min" memlimit="7 GB" cpuCores="2">
 
   <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
 
@@ -10,7 +10,7 @@
   <option name="framac-wp" />
   <option name="--debug" />
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -73,10 +73,6 @@
       <includesfile>../sv-benchmarks/c/Hardness.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.Fuzzle">
-      <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
 
     <tasks name="C.unreach-call.SoftwareSystems-AWS-C-Common">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
@@ -106,51 +102,21 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.unreach-call.CorrectnessWitnesses-Loops">
-      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
+    <tasks name="C.unreach-call.CorrectnessWitnesses">
+      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.ViolationWitnesses-ControlFlow">
-      <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
+    <tasks name="C.unreach-call.ViolationWitnesses">
+      <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="C.termination.ViolationWitnesses">
+      <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memcleanup">
-    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-
-    <tasks name="C.valid-memcleanup.SoftwareSystems-uthash">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-    </tasks>
-  </rundefinition>
-
-  <rundefinition name="SV-COMP25_valid-memsafety">
-    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-
-    <tasks name="C.valid-memsafety.SoftwareSystems-coreutils">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-coreutils.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.SoftwareSystems-Other">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-    <tasks name="C.valid-memsafety.SoftwareSystems-uthash">
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
-
-    </rundefinition>
-
-  <rundefinition name="SV-COMP25_no-overflow">
+  <rundefinition name="SV-COMP26_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -195,7 +161,7 @@
 
     </rundefinition>
 
-  <rundefinition name="SV-COMP25_termination">
+  <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -205,5 +171,4 @@
     </tasks>
   </rundefinition>
 
-
-</benchmark>
+  </benchmark>

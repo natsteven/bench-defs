@@ -9,7 +9,7 @@
   <option name="--graphml-witness" />
   <option name="witness.graphml" />
 
-  <rundefinition name="SV-COMP25_termination">
+  <rundefinition name="SV-COMP26_termination">
     <tasks name="C.termination.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
@@ -42,5 +42,4 @@
     </tasks>
   </rundefinition>
 
-
-</benchmark>
+  </benchmark>

@@ -7,13 +7,12 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <option name="--violation-witness-validation" />
+  <option name="--preprocess" />
   <option name="--heap" />
   <option name="5000m" />
   <option name="--benchmark" />
   <option name="--option" />
   <option name="witness.checkProgramHash=false" />
-  <option name="--option" />
-  <option name="cpa.predicate.memoryAllocationsAlwaysSucceed=true" />
   <option name="--option" />
   <option name="cpa.smg.memoryAllocationFunctions=malloc,__kmalloc,kmalloc,kzalloc,kzalloc_node,ldv_zalloc,ldv_malloc" />
   <option name="--option" />
@@ -23,7 +22,7 @@
   <option name="--option" />
   <option name="cpa.smg.deallocationFunctions=free,kfree,kfree_const" />
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -86,15 +85,6 @@
       <includesfile>../sv-benchmarks/c/Hardness.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.Fuzzle">
-      <includesfile>../sv-benchmarks/c/Fuzzle.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
-
-    <tasks name="C.unreach-call.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    </tasks>
 
     <tasks name="C.unreach-call.SoftwareSystems-AWS-C-Common">
       <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common.set</includesfile>
@@ -124,31 +114,25 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    <tasks name="C.unreach-call.CorrectnessWitnesses-Loops">
-      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses-Loops.set</includesfile>
+    <tasks name="C.unreach-call.CorrectnessWitnesses">
+      <includesfile>../sv-benchmarks/c/CorrectnessWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
-    <tasks name="C.unreach-call.ViolationWitnesses-ControlFlow">
-      <includesfile>../sv-benchmarks/c/ViolationWitnesses-ControlFlow.set</includesfile>
+    <tasks name="C.unreach-call.ViolationWitnesses">
+      <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="C.termination.ViolationWitnesses">
+      <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-data-race">
+  <rundefinition name="SV-COMP26_valid-memcleanup">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
-    <tasks name="C.no-data-race.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
-    </tasks>
-  </rundefinition>
-
-  <rundefinition name="SV-COMP25_valid-memcleanup">
-    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
-
-    <tasks name="C.valid-memcleanup.MemCleanup">
+    <tasks name="C.valid-memcleanup.Main">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
       <includesfile>../sv-benchmarks/c/Juliet.set</includesfile>
       <includesfile>../sv-benchmarks/c/LinkedLists.set</includesfile>
@@ -162,7 +146,7 @@
     </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_valid-memsafety">
+  <rundefinition name="SV-COMP26_valid-memsafety">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -210,14 +194,9 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     </tasks>
-
-    <tasks name="C.valid-memsafety.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    </tasks>
   </rundefinition>
 
-  <rundefinition name="SV-COMP25_no-overflow">
+  <rundefinition name="SV-COMP26_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
@@ -259,15 +238,9 @@
       <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     </tasks>
-
-    <tasks name="C.no-overflow.Concurrency">
-      <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    </tasks>
   </rundefinition>
 
-
-  <rundefinition name="SV-COMP25_termination">
+  <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
     <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 

@@ -8,7 +8,7 @@
 
 
 
-  <rundefinition name="SV-COMP25_unreach-call">
+  <rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
