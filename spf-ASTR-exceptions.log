@@ -1,0 +1,20 @@
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings01.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: (Length_0_ + CONST_1)
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings02.yml.log:java.lang.ClassCastException: gov.nasa.jpf.symbc.string.DerivedStringExpression cannot be cast to gov.nasa.jpf.symbc.numeric.IntegerExpression
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings52.yml.log:Property Violated: result is  "java.lang.RuntimeException: This should not happen..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings52.yml.log:java.lang.RuntimeException: This should not happen
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings52.yml.log:()  --> "java.lang.RuntimeException: This should not happen..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings52.yml.log:<tr><td>"java.lang.RuntimeException: This should not happen..."</td></tr>
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings52.yml.log:error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: This should not happen..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings57.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: IndexOf2_0_
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings58.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: IndexOf_0_
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings60.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: lastIndexOfChar_0_
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStrings61.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: (lastIndexOfChar_0_ + CONST_1)
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStringsDemo.yml.log:java.lang.RuntimeException: Does not work
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.ExSymExeStringsDemo.yml.log:error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: Does not work  at Main..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.IndexOfTest.yml.log:java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.IndexOfTest.yml.log:error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.StringIndexOutOfBoundsException: String ..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.MysteryQuestionMin.yml.log:java.lang.RuntimeException: Problem found
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.MysteryQuestionMin.yml.log:error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.RuntimeException: Problem found  at Main..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.Performance03.yml.log:java.lang.StringIndexOutOfBoundsException: String index out of range: 1
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.Performance03.yml.log:error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.StringIndexOutOfBoundsException: String ..."
+results-verified/first-spf-benches-run/spf.2025-11-05_14-40-59.logfiles/String-MAS.StringSearch.yml.log:java.lang.RuntimeException: Unhandled IntegerExpression type: (Length_0_ + CONST_1)
