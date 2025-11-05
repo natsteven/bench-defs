@@ -1110,6 +1110,8 @@ opt_in:
     - C.no-overflow.SoftwareSystems-BusyBox
     - C.no-overflow.SoftwareSystems-coreutils
     - C.no-overflow.SoftwareSystems-uthash
+  function-res:
+    - C.termination.SoftwareSystems-DeviceDriversLinux64
   gacal:
     - C.unreach-call.Loops
   gazer-theta:
