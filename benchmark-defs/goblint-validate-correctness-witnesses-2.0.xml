@@ -6,8 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--conf" />
-  <option name="conf/svcomp26-validate.json" />
+  <option name="--portfolio-conf" />
+  <option name="conf/svcomp26/seq-validate.txt" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
