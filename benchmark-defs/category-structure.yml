@@ -120,7 +120,6 @@ hors_concours:
   - cpa-bam-smg
   - cpa-lockator
   - crux
-  - cseq
   - divine
   - ebf
   - frama-c-sv
