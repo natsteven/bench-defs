@@ -13,6 +13,8 @@
   <option name="--benchmark" />
   <option name="--option" />
   <option name="witness.checkProgramHash=false" />
+  <option name="--option" />
+  <option name="cpa.predicate.memoryAllocationsAlwaysSucceed=true" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
