@@ -752,13 +752,14 @@ The submitted system has to meet the requirements mentioned on the <a href="subm
 
 <h3>Requirements on Verifier Behavior</h3>
 <p>
-  The verifier should not use identifiers contained in the verification task to fingerprint and identify individual tasks or groups of tasks.
+  The verifier should not use identifiers nor comments contained in the verification task to fingerprint and identify individual tasks or groups of tasks.
   It is acceptable to use occurrence of calls to extern functions from standard libraries
   (for example <code>malloc</code>, <code>pthread_create</code>, arithmetic functions, etc.)
   to detect which feature a verification tasks uses
   and change the verifier behavior based on this.
-  The competition organizer is allowed to apply obfuscation to the C code
-  and rename local identifiers (with the exception of extern functions and an allowlist of common identifiers).
+  The competition organizer is allowed to apply obfuscation to the C code,
+  rename local identifiers (with the exception of extern functions and an allowlist of common identifiers),
+  and add/change/remove comments.
 </p>
 
 <h3 id="scores">Evaluation by Scores and Runtime</h3>
