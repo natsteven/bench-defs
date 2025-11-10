@@ -1019,6 +1019,13 @@ opt_out:
   lf-checker:
     - C.no-data-race.Concurrency
     - C.no-data-race.Huawei-Concurrency-Challenges
+  ogchecker:
+    - C.no-data-race.Concurrency
+    - C.no-data-race.Huawei-Concurrency-Challenges
+    - C.no-overflow.Concurrency
+    - C.no-overflow.Huawei-Concurrency-Challenges
+    - C.valid-memsafety.Concurrency
+    - C.valid-memsafety.Huawei-Concurrency-Challenges
   pichecker:
     - C.no-data-race.Concurrency
     - C.no-data-race.Huawei-Concurrency-Challenges
