@@ -716,7 +716,6 @@ __VERIFIER_nondet_memory(values, sizeof(int) * 20);
 
 The submitted system has to meet the requirements mentioned on the <a href="submission.php">submission page</a>.
 
-
 <h3 id="qualification">Qualification</h3>
 
 <p>
@@ -727,7 +726,8 @@ The submitted system has to meet the requirements mentioned on the <a href="subm
   and without hard-coded absolute paths for access to libraries and non-standard external tools,
   (d) succeeds for more than 50 % of all training programs to parse the input and
   start the verification process (a tool crash during the verification phase does not disqualify), and
-  (e) produces witness files (for violation and correctness) that adhere to the witness exchange format (syntactically correct).
+  (e) produces witness files (for violation and correctness) that adhere to the witness exchange format (syntactically correct), and
+  (f) does not create/modify files outside of the current working directory and /tmp.
   The competition organizer can always add verifiers from previous years as participants.
 </p>
 <p>
