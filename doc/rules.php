@@ -716,10 +716,6 @@ __VERIFIER_nondet_memory(values, sizeof(int) * 20);
 
 The submitted system has to meet the requirements mentioned on the <a href="submission.php">submission page</a>.
 
-<!--
-<li>The verifier should not assume read-write access to files and folders outside of the current working directory and /tmp.
-  -->
-
 <h3 id="qualification">Qualification</h3>
 
 <p>
