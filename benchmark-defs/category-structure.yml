@@ -465,6 +465,7 @@ categories:
       - bubaak-split
       - cbmc
       - cpachecker
+      - cpv
       - divine
       - emergentheta
       - esbmc-kind
