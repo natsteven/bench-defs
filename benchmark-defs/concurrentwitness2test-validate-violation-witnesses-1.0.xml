@@ -99,7 +99,7 @@
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
 
-    </rundefinition>  
+    </rundefinition>
 
   <columns>
     <column title="Verdict">Verdict</column>
