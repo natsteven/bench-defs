@@ -147,117 +147,132 @@ as a reaction to the community feedback after the first competition
 
 <h4 id="witnesses">Witnesses</h4>
 <p>
-  There is a <a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/">fixed exchange format for the witnesses</a>.
-  The witness has to be written to a file
-  <span style="font-family: monospace;">witness.graphml</span> or <span style="font-family: monospace;">witness.yml</span>,
-  which is given to a witness validator to check validity.
-  The result is counted as correct only if at least one validator successfully validated it.
-  Verifiers may output both a GraphML (version 1) and a YAML (version 2.0) witness,
-  in which case it suffices that one of these two witnesses is validated.
-  The resource limits for the witness validators are 2 processing units, 7 GB memory, and
-  10 % of the verification time (i.e., 90 s) for violation witnesses
-  and 100 % (900 s) for correctness witnesses.
+  There is an <a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/">exchange format for witnesses</a> of verification results. 
+  We currently support three version of the format, namely version 1.0 based on GraphML and versions 2.0 and 2.1 based on YAML.
+  Each verification result has to be accompanied by a witness in the format version specified by the following table (some exceptions are mentioned below).
 </p>
 
 <p>
-  No category is excluded from validation of violation witnesses.
-  The following categories are excluded from validation of correctness witnesses:
-  *-Arrays, *-Floats, *-Heap, *MemSafety*, *MemCleanup*, ConcurrencySafety-*, *NoDataRace*, *Termination*, and *-Java.
-</p>
-<p>
-  The below table specifies which witness versions
-  are supported by SV-COMP 2026 for which properties (sub-categories).
-  Witnesses in version 2.0 are supported in place of version 2.1
-  where they can express the properties.
-</p>
-
-<table>
+<table style="margin: 0 auto;">
   <thead>
     <tr>
-      <td>Property or Sub-Category Pattern</td>
-      <td style="text-align: center;" colspan="2">Correctness</td>
-      <td style="text-align: center;" colspan="2">Violation</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td style="text-align: center;">Version 1.0</td>
-      <td style="text-align: center;">Version 2.1</td>
-      <td style="text-align: center;">Version 1.0</td>
-      <td style="text-align: center;">Version 2.1</td>
+      <td>Language&nbsp;&nbsp;</td><td>Property</td><td>Base Category</td>
+      <td style="text-align: center;">Correctness</td>
+      <td style="text-align: center;">Violation</td>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>unreach-call</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
+      <td rowspan="10">C</td>
+      <td rowspan="3">unreach-call</td>
+      <td>*.Arrays, *.Floats, *.Heap&nbsp;&nbsp;</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0, 2.0, 2.1</td>
     </tr>
     <tr>
-      <td>unreach-call, sub-categories *-Arrays, *-Floats, *-Heap</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
+      <td>*Concurrency*</td>
+      <td style="text-align: center;">&nbsp;2.1* (demo mode)&nbsp;</td>
+      <td style="text-align: center;">1.0</td>
     </tr>
     <tr>
-      <td>valid-deref, valid-free</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
+      <td>all others</td>
+      <td style="text-align: center;">2.0, 2.1*</td>
+      <td style="text-align: center;">1.0, 2.0, 2.1</td>
     </tr>
     <tr>
-      <td>valid-memtrack, mem-cleanup</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
+      <td rowspan="2">valid-memsafety</td>
+      <td>*Concurrency*</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0</td>
     </tr>
     <tr>
-      <td>no-overflow</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
+      <td>all others</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0, 2.0**, 2.1**</td>
     </tr>
     <tr>
-      <td>sub-categories ConcurrencySafety-*</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓ (demo)</td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
+      <td>valid-memcleanup</td>
+      <td>all</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0</td>
     </tr>
     <tr>
-      <td>no-datarace</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
+      <td rowspan="2">no-overflow</td>
+      <td>*Concurrency*</td>
+      <td style="text-align: center;">2.1* (demo mode)</td>
+      <td style="text-align: center;">1.0</td>
+    </tr>
+    <tr>
+      <td>all others</td>
+      <td style="text-align: center;">2.0, 2.1*</td>
+      <td style="text-align: center;">1.0, 2.0, 2.1</td>
+    </tr>
+    <tr>
+      <td>no-data-race</td>
+      <td>all</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0</td>
     </tr>
     <tr>
       <td>termination</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓ (demo)</td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;">✓</td>
+      <td>all</td>
+      <td style="text-align: center;">2.1* (demo mode)</td>
+      <td style="text-align: center;">1.0, 2.1</td>
     </tr>
     <tr>
-      <td>sub-categories *-Java</td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
-      <td style="text-align: center;">✓</td>
-      <td style="text-align: center;"></td>
+      <td rowspan="2">Java</td>
+      <td>valid-assert</td>
+      <td>all</td>
+      <td style="text-align: center;">1.0 (demo mode)</td>
+      <td style="text-align: center;">1.0</td>
+    </tr>
+    <tr>
+      <td>no-runtime-exception&nbsp;&nbsp;</td>
+      <td>all</td>
+      <td style="text-align: center;">not supported</td>
+      <td style="text-align: center;">1.0</td>
     </tr>
   </tbody>
 </table>
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none;" valign="top">*</td>
+    <td style="border: none;">We do not support two features of the format 2.1, namely function <b>contracts</b> and <b>inductive invariants</b>, as
+      they have been introduced only very recently and/or do not have sufficient tool support.</td>
+  </tr> <tr>
+    <td style="border: none;" valign="top">**</td>
+    <td style="border: none;">The format versions 2.0 and 2.1 support only violation of the subproperties valid-deref and valid-free of valid-memsafety.
+      If the violated subproperty is valid-memtrack, the fromat version 1.0 has to be used.</td>
+  </tr>
+</table>  
+</p>
+
+<p>
+  No witnesses for the <span style="color:green">TRUE</span> results are required in the base categories where
+  the table says that the correctness witnesses are not supported or supported only in a demo mode. 
+</p>
+
+<p>
+  Each witness has to be written to a file 
+  <span style="font-family: monospace;">witness.graphml</span> (format 1.0) or
+  <span style="font-family: monospace;">witness.yml</span> (format 2.0 or higher).
+  Each tool is supposed to produce only one witness (if both files are produced, 
+  <span style="font-family: monospace;">witness.graphml</span> is ignored).
+  The witness is given to witness validators to check its validity
+  The resource limits for a witness validation task are 2 processing units, 7 GB memory,
+  and 90 s (i.e., 10 % of the verification time)
+  for violation witnesses and 300 s (33 %) for correctness witnesses.
+  The verification result is counted as correct only
+  if at least one validator successfully validates the corresponding witness
+  (except for the cases where witnesses are not required).
+</p>
 
 <p><b>Documentation of Witness Formats</b></p>
 <ul>
   <li><a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/blob/main/user-guide/Witness-Format.md">User Guide to Witnesses 2.1</a></li>
   <li><a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/tree/main/format/schemas">YAML Schemas 2.1</a></li>
-  <li>Papers
+  <li>Literature
     <ul>
       <li><a href="https://doi.org/10.1145/3477579">Verification Witnesses 1.0</a>, TOSEM 2022</li>
       <li><a href="https://doi.org/10.1007/978-3-031-66149-5_11">Verification Witnesses 2.0</a>, Proc. SPIN 2024</li>
@@ -711,41 +726,12 @@ __VERIFIER_nondet_memory(values, sizeof(int) * 20);
 </p>
 
 
-
-<h4 id="verifier">Verifier</h4>
+<h4 id="verifier">Tool</h4>
 
 The submitted system has to meet the requirements mentioned on the <a href="submission.php">submission page</a>.
-
-<h3 id="qualification">Qualification</h3>
-
-<p>
-  <b>Verifier.</b> A verification tool is qualified to participate as competition candidate if the tool is
-  (a) publicly available for download and fulfills the <a href="#verifier">above license requirements</a>,
-  (b) works on the GNU/Linux platform (more specifically, it must run on an x86_64 machine with the latest Ubuntu LTS, with only the self-declared packages installed),
-  (c) is installable with user privileges (no root access required, except for required standard Ubuntu packages)
-  and without hard-coded absolute paths for access to libraries and non-standard external tools,
-  (d) succeeds for more than 50 % of all training programs to parse the input and
-  start the verification process (a tool crash during the verification phase does not disqualify), and
-  (e) produces witness files (for violation and correctness) that adhere to the witness exchange format (syntactically correct), and
-  (f) does not create/modify files outside of the current working directory and /tmp.
-  The competition organizer can always add verifiers from previous years as participants.
-</p>
-<p>
-  <b>Person.</b> A person (participant) is qualified as competition contributor for a competition candidate if
-  the person (a) is a contributing designer/developer
-  of the submitted competition candidate
-  (witnessed by occurrence of the person’s name on the tool's project web page, a tool paper,
-  or in the revision logs)
-  or (b) is authorized by the competition organizer (after the designer/developer was contacted about the participation).
-</p>
-<p>
-  <b>Paper.</b> A paper is qualified if the quality of the description of the competition candidate suffices to run the tool in the competition
-  and meets the scientific standards of TACAS as competition-candidate representation in the TACAS proceedings.
-</p>
-
 <p>
   Note: A verification tool can participate several times as different competition candidates, if a significant difference of the
-  conceptual or technological basis of the implementation is justified in the accompanying description paper.
+  conceptual or technological basis of the implementation is justified in the description.
   This applies to different versions as well as different configurations,
   in order to avoid forcing developers to create a new tool for every new concept.
 </p>
