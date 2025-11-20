@@ -56,4 +56,4 @@ rm -rf bin/$VERIFIER*
 ./makeCacheInfo.sh "$LOGDIR"
 ./calcSolverTimes.sh "$LOGDIR"
 
-awk -F',' 'NR>1 {astr+=$2; z3+=$3} END {print "Total Solving Time (ms):\nAstr: " astr "\nZ3: " z3}' "$LOGDIR/solver-times.csv"
+awk -F',' 'NR>1 {astr+=$2; z3+=$3} END {print "Total Solving Time (ms):\nAstr: " astr "\nZ3: " z3}' "$LOGDIR/solver-times.csv" | tee "$LOGDIR/total-solver-times.txt"
