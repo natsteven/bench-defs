@@ -1,0 +1,231 @@
+./jpf-sv-comp --string-dp z3str3 --propertyfile ../../sv-benchmarks/java/properties/runtime-exception.prp ../../sv-benchmarks/java/common ../../sv-benchmarks/java/spf/ExSymExeStrings09
+
+
+--------------------------------------------------------------------------------
+
+
+PROP_FILE=../../sv-benchmarks/java/properties/runtime-exception.prp
+CHECK(init(Main.main()), LTL(G ! uncaught(java.lang.RuntimeException)))
+ASSERTION_MODE=FALSE
+RUNTIME_EXCEPTION_MODE=TRUE
+/tmp/jpf-benchmark.q5uQ5Q/config.jpf
+LD_LIBRARY_PATH=/home/nat/Repos/bench-defs/bin/spf-verify-abtYf2EDFV/jpf-symbc/lib:/home/nat/Repos/SPF/jpf-symbc/lib:
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-1.7976931348623157E308
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 (rev 1d363a60ab176410bb63a12e8268f06560f889ef) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Main.main()
+
+====================================================== search started: 11/20/25 1:36 PM
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string0 () String  "abA")
+Z3str3 Solver Time (ms):58
+*************************************
+Satisfiable: true
+string0 => "abA"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "A")
+(define-fun string0 () String  "abB")
+Z3str3 Solver Time (ms):27
+*************************************
+Satisfiable: true
+string1 => "A"
+string0 => "abB"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "A")
+(define-fun string0 () String  "abB")
+Z3str3 Solver Time (ms):16
+*************************************
+Satisfiable: true
+string1 => "A"
+string0 => "abB"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "aAC")
+(define-fun string0 () String  "aAC")
+Z3str3 Solver Time (ms):18
+*************************************
+Satisfiable: true
+string1 => "aAC"
+string0 => "aAC"
+*************************************
+
+aaa
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "b")
+(define-fun string0 () String  "abA")
+Z3str3 Solver Time (ms):14
+*************************************
+Satisfiable: true
+string1 => "b"
+string0 => "abA"
+*************************************
+
+ccc
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "b")
+(define-fun string0 () String  "abA")
+Z3str3 Solver Time (ms):13
+*************************************
+Satisfiable: true
+string1 => "b"
+string0 => "abA"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "bA")
+(define-fun string0 () String  "bA")
+Z3str3 Solver Time (ms):14
+*************************************
+Satisfiable: true
+string1 => "bA"
+string0 => "bA"
+*************************************
+
+aaa
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):12
+*************************************
+Satisfiable: true
+string0 => "abc"
+*************************************
+
+bbb
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "A")
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):13
+*************************************
+Satisfiable: true
+string1 => "A"
+string0 => "abc"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "A")
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):13
+*************************************
+Satisfiable: true
+string1 => "A"
+string0 => "abc"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "abc")
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):14
+*************************************
+Satisfiable: true
+string1 => "abc"
+string0 => "abc"
+*************************************
+
+aaa
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "b")
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):12
+*************************************
+Satisfiable: true
+string1 => "b"
+string0 => "abc"
+*************************************
+
+ccc
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Returned solutions: 
+(define-fun string1 () String  "b")
+(define-fun string0 () String  "abc")
+Z3str3 Solver Time (ms):15
+*************************************
+Satisfiable: true
+string1 => "b"
+string0 => "abc"
+*************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling Z3str3
+
+Z3str3 Solver Time (ms):14
+*************************************
+Satisfiable: false
+*************************************
+
+
+====================================================== Method Summaries
+
+====================================================== Method Summaries (HTML)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=22,visited=0,backtracked=22,end=7
+search:             maxDepth=4,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=7
+heap:               new=494,released=103,maxLive=472,gcCycles=14
+instructions:       6507
+max memory:         477MB
+loaded code:        classes=85,methods=1828
+
+====================================================== search finished: 11/20/25 1:36 PM
+inside runtime_exception_mode=true
+SAFE

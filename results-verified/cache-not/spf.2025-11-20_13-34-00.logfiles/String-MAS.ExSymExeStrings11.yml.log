@@ -1,0 +1,111 @@
+./jpf-sv-comp --string-dp MAS --propertyfile ../../sv-benchmarks/java/properties/runtime-exception.prp ../../sv-benchmarks/java/common ../../sv-benchmarks/java/spf/ExSymExeStrings11
+
+
+--------------------------------------------------------------------------------
+
+
+PROP_FILE=../../sv-benchmarks/java/properties/runtime-exception.prp
+CHECK(init(Main.main()), LTL(G ! uncaught(java.lang.RuntimeException)))
+ASSERTION_MODE=FALSE
+RUNTIME_EXCEPTION_MODE=TRUE
+/tmp/jpf-benchmark.ObzJXX/config.jpf
+LD_LIBRARY_PATH=/home/nat/Repos/bench-defs/bin/spf-verify-abtYf2EDFV/jpf-symbc/lib:/home/nat/Repos/SPF/jpf-symbc/lib:
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-1.7976931348623157E308
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 (rev 1d363a60ab176410bb63a12e8268f06560f889ef) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Main.main()
+
+====================================================== search started: 11/20/25 1:34 PM
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (not (= out_str "ab")))
+
+(declare-const nwc RegLan)
+(assert (and (str.in_re string0 (re.++ ws (str.to_re out_str) ws)) (or (= out_str "")(and (str.in_re out_str (re.++ nwc re.all)) (str.in_re out_str (re.++ re.all nwc))))))
+(declare-const ws RegLan)
+(assert (= nwc (re.diff re.allchar (re.range (str.from_code 0) (str.from_code 32)))))
+(assert (= ws (re.union (re.+ (re.range (str.from_code 0) (str.from_code 32))) (str.to_re ""))))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (.trim(string0) notequals CONST_ab) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+	Operations involved: trim
+*****************************
+sat,
+string0: ""
+*****************************
+A-Str Solver Time (ms):44
+sat,
+string0: ""
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (= out_str "ab"))
+
+(declare-const nwc RegLan)
+(assert (and (str.in_re string0 (re.++ ws (str.to_re out_str) ws)) (or (= out_str "")(and (str.in_re out_str (re.++ nwc re.all)) (str.in_re out_str (re.++ re.all nwc))))))
+(declare-const ws RegLan)
+(assert (= nwc (re.diff re.allchar (re.range (str.from_code 0) (str.from_code 32)))))
+(assert (= ws (re.union (re.+ (re.range (str.from_code 0) (str.from_code 32))) (str.to_re ""))))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (.trim(string0) equals CONST_ab) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+	Operations involved: trim
+*****************************
+sat,
+string0: "ab"
+*****************************
+A-Str Solver Time (ms):3
+sat,
+string0: "ab"
+************************************
+hello
+
+====================================================== Method Summaries
+
+====================================================== Method Summaries (HTML)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=4,visited=0,backtracked=4,end=2
+search:             maxDepth=2,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=1
+heap:               new=482,released=42,maxLive=468,gcCycles=3
+instructions:       6421
+max memory:         477MB
+loaded code:        classes=85,methods=1828
+
+====================================================== search finished: 11/20/25 1:34 PM
+inside runtime_exception_mode=true
+SAFE

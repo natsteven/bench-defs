@@ -1,0 +1,335 @@
+   BENCHMARK INFORMATION
+SPF
+benchmark definition:    ../../spf.xml
+name:                    spf
+run sets:                String-MAS.RuntimeException-Java, String-z3.RuntimeException-Java
+date:                    Thu, 2025-11-20 13:34:00 MST
+tool:                    SPF Thu Nov 20 01:30:44 PM MST 2025
+tool executable:         ./jpf-sv-comp
+options:
+parallel runs:           4
+resource limits:
+- memory:                1000.0 MB
+- time:                  30 s
+hardware requirements:
+- memory:                1000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    natwork
+os:                      Linux-6.14.0-35-generic-x86_64-with-glibc2.39
+cpu:                     Intel Core i7-10700 CPU @ 2.90GHz
+- cores:                 16
+- max frequency:         4800.0 MHz
+- turbo boost enabled:   True
+ram:                     33420.10368 MB
+------------------------------------------------------------
+
+
+
+String-MAS.RuntimeException-Java
+Run set 1 of 2 with options '--string-dp MAS' and propertyfile 'None'
+
+inputfile                                         status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------------
+jdart-regression/startswith.yml                   true                             2.70        1.17        None
+jdart-regression/OverapproximationString01.yml    true                             3.16        1.19        None
+securibench/Factories3.yml                        true                             5.28        1.56        None
+securibench/Pred4.yml                             true                             5.55        1.61        None
+securibench/Datastructures1.yml                   true                             5.61        1.69        None
+securibench/Collections3.yml                      true                             5.95        1.66        None
+securibench/Collections14.yml                     true                             7.23        2.07        None
+securibench/Aliasing5.yml                         true                             6.20        1.81        None
+securibench/Basic33.yml                           true                             5.74        1.72        None
+securibench/Aliasing6.yml                         true                             7.89        2.01        None
+securibench/Collections1.yml                      true                             5.87        1.74        None
+securibench/Pred8.yml                             true                             5.59        1.70        None
+securibench/Basic17.yml                           true                             5.90        1.63        None
+securibench/Session3.yml                          true                             5.74        1.71        None
+securibench/Datastructures2.yml                   true                             5.66        1.66        None
+securibench/Inter12.yml                           true                             6.35        1.72        None
+securibench/Basic5.yml                            true                             9.42        2.31        None
+securibench/Arrays3.yml                           true                             5.74        1.72        None
+securibench/Collections4.yml                      true                             5.98        1.75        None
+securibench/Aliasing1.yml                         true                             5.71        1.75        None
+securibench/Collections6.yml                      true                             5.81        1.72        None
+securibench/Factories1.yml                        true                             6.00        1.72        None
+securibench/Aliasing4.yml                         true                             6.69        1.83        None
+securibench/Inter3.yml                            true                            11.28        3.43        None
+securibench/Refl1.yml                             true                             5.66        1.65        None
+securibench/Session1.yml                          true                             5.79        1.70        None
+securibench/Collections2.yml                      true                             5.78        1.72        None
+securibench/Basic16.yml                           true                             6.60        1.83        None
+securibench/Arrays4.yml                           true                             6.81        1.97        None
+securibench/Basic11.yml                           true                             7.85        2.24        None
+securibench/Arrays2.yml                           true                             7.14        2.12        None
+securibench/Inter14.yml                           true                             9.02        2.47        None
+securibench/Collections13.yml                     true                             6.85        2.04        None
+securibench/Arrays1.yml                           true                             6.95        1.98        None
+securibench/Basic32.yml                           true                             6.55        1.97        None
+securibench/Inter8.yml                            true                             6.77        1.97        None
+securibench/Basic19.yml                           TIMEOUT                         34.32        9.79        None
+securibench/Basic18.yml                           true                             8.61        2.27        None
+securibench/Collections9.yml                      false                            7.43        2.16        None
+securibench/Inter5.yml                            true                             7.30        1.94        None
+securibench/Basic3.yml                            true                             7.01        1.95        None
+securibench/Factories2.yml                        true                             6.80        1.91        None
+securibench/Arrays9.yml                           true                             6.45        2.03        None
+securibench/Refl4.yml                             true                             6.84        2.19        None
+securibench/Pred9.yml                             true                             5.60        2.15        None
+securibench/Arrays10.yml                          false                            6.20        1.90        None
+securibench/Collections12.yml                     true                             6.93        1.93        None
+securibench/Inter4.yml                            true                             7.10        1.90        None
+securibench/Basic35.yml                           true                             9.24        2.62        None
+securibench/Arrays7.yml                           true                             6.91        2.27        None
+securibench/Datastructures5.yml                   true                             7.99        2.43        None
+securibench/Collections7.yml                      true                             6.99        2.02        None
+securibench/Inter1.yml                            true                             6.99        1.95        None
+securibench/Inter2.yml                            true                             7.29        2.08        None
+securibench/Arrays6.yml                           true                             7.18        2.06        None
+securibench/Inter11.yml                           true                             7.24        2.00        None
+securibench/Inter6.yml                            true                             6.87        1.98        None
+securibench/Arrays8.yml                           true                             7.09        2.02        None
+securibench/Session2.yml                          true                             7.25        2.07        None
+securibench/Datastructures3.yml                   true                             6.75        1.96        None
+securibench/Basic15.yml                           true                             7.71        2.13        None
+securibench/Inter7.yml                            true                             7.26        2.02        None
+securibench/Basic1.yml                            true                             7.16        2.08        None
+securibench/Basic10.yml                           true                             7.07        2.01        None
+securibench/Datastructures6.yml                   true                            10.62        2.87        None
+securibench/Refl3.yml                             true                             7.29        2.15        None
+securibench/Pred5.yml                             true                             7.11        2.12        None
+securibench/Collections5.yml                      true                             6.82        2.00        None
+securibench/Basic34.yml                           true                             7.37        2.01        None
+securibench/Basic30.yml                           true                             6.86        1.99        None
+securibench/Inter13.yml                           true                             7.32        2.09        None
+securibench/Basic31.yml                           true                             7.46        2.06        None
+jbmc-regression/StringValueOf10.yml               true                             3.61        1.19        None
+jbmc-regression/StringBuilderChars02.yml          true                             3.23        1.14        None
+jbmc-regression/StringStartEnd02.yml              true                             3.28        1.16        None
+jbmc-regression/StringStartEnd03.yml              true                             3.74        1.22        None
+jbmc-regression/CharSequenceToString.yml          true                             3.04        1.10        None
+jbmc-regression/StringBuilderChars06.yml          true                             3.16        1.15        None
+jbmc-regression/StringConcatenation04.yml         true                             3.54        1.18        None
+jbmc-regression/StringBuilderCapLen02.yml         true                             3.84        1.24        None
+jbmc-regression/StringContains02.yml              true                             3.36        1.16        None
+jbmc-regression/StringConstructors04.yml          true                             2.89        1.06        None
+jbmc-regression/StringConstructors02.yml          true                             2.81        1.00        None
+jbmc-regression/StringContains01.yml              true                             3.43        1.19        None
+jbmc-regression/bug-test-gen-095.yml              true                             3.33        1.13        None
+jbmc-regression/StringConcatenation03.yml         true                             9.64        2.17        None
+jbmc-regression/StringConcatenation02.yml         true                             3.65        1.28        None
+jbmc-regression/StringConcatenation01.yml         true                             4.30        1.46        None
+jbmc-regression/StringConstructors03.yml          true                             3.34        1.25        None
+jbmc-regression/StringConstructors05.yml          true                             3.30        1.13        None
+strings-MAS/UpperCaseTest.yml                     true                             3.31        1.19        None
+strings-MAS/ReplaceTest.yml                       true                             5.14        1.52        None
+strings-MAS/IsEmptyTest.yml                       true                             7.19        1.76        None
+strings-MAS/ValueOfTest.yml                       true                             4.21        1.46        None
+strings-MAS/ReverseTest.yml                       TIMEOUT                         30.62       17.88        None
+strings-MAS/TrimTest.yml                          true                             4.12        1.45        None
+strings-MAS/DeleteTest.yml                        true                             3.75        1.43        None
+strings-MAS/HelloWorld.yml                        true                             3.72        1.38        None
+strings-MAS/ContainsTest.yml                      true                            10.90        4.91        None
+strings-MAS/InsertTest.yml                        true                             6.63        1.84        None
+strings-MAS/LowerCaseTest.yml                     true                             3.77        1.25        None
+strings-MAS/StartsWithTest.yml                    true                             3.60        1.08        None
+strings-MAS/EndsWithTest.yml                      true                             4.56        1.22        None
+strings-MAS/ConcatTest.yml                        true                             4.31        1.24        None
+strings-MAS/CharAtTest.yml                        true                             3.46        1.15        None
+spf/ExSymExeStrings03.yml                         false                            3.00        0.98        None
+spf/ExSymExeStrings07.yml                         true                             3.24        1.11        None
+spf/ExSymExeStrings09.yml                         true                             3.96        1.16        None
+spf/ExSymExeStrings10.yml                         true                             2.83        1.05        None
+spf/ExSymExeStrings11.yml                         true                             2.83        1.03        None
+spf/ExSymExeStrings12.yml                         true                             3.09        0.99        None
+spf/ExSymExeStrings13.yml                         true                             3.04        1.03        None
+spf/ExSymExeStrings15.yml                         true                             2.86        1.03        None
+spf/ExSymExeStrings17.yml                         true                             3.23        1.09        None
+spf/ExSymExeStrings18.yml                         true                             2.73        1.04        None
+spf/ExSymExeStrings19.yml                         true                             4.05        1.17        None
+spf/ExSymExeStrings20.yml                         true                             3.16        1.03        None
+spf/ExSymExeStrings21.yml                         false                            3.28        1.11        None
+spf/ExSymExeStrings22.yml                         false                            3.58        1.11        None
+spf/ExSymExeStrings23.yml                         false                            3.52        1.11        None
+spf/ExSymExeStrings24.yml                         true                             3.44        1.17        None
+spf/ExSymExeStrings25.yml                         true                             3.27        1.12        None
+spf/ExSymExeStrings26.yml                         true                             3.33        1.07        None
+spf/ExSymExeStrings27.yml                         true                             3.30        1.12        None
+spf/ExSymExeStrings28.yml                         true                             3.26        1.04        None
+spf/ExSymExeStrings29.yml                         true                             3.20        1.03        None
+spf/ExSymExeStrings31.yml                         true                             3.11        1.10        None
+spf/ExSymExeStrings32.yml                         true                             3.51        1.15        None
+spf/ExSymExeStrings33.yml                         true                             3.68        1.12        None
+spf/ExSymExeStrings34.yml                         true                             3.10        1.08        None
+spf/ExSymExeStrings39.yml                         true                             4.44        1.39        None
+spf/ExSymExeStrings40.yml                         true                             6.33        1.89        None
+spf/ExSymExeStrings43.yml                         true                             3.97        1.27        None
+spf/ExSymExeStrings44.yml                         true                             3.92        1.27        None
+spf/ExSymExeStrings45.yml                         true                             3.34        1.20        None
+spf/ExSymExeStrings46.yml                         true                             3.19        1.10        None
+spf/ExSymExeStrings52.yml                         true                             3.14        1.12        None
+spf/ExSymExeStrings53.yml                         true                             3.28        1.10        None
+spf/ExSymExeStringsFailed.yml                     true                             3.18        1.06        None
+spf/GoodbyeWorld.yml                              true                             3.23        1.03        None
+---------------------------------------------------------------------------------------------------------------
+Run set 1                                         done                           745.96       68.48           -
+
+
+String-z3.RuntimeException-Java
+Run set 2 of 2 with options '--string-dp z3str3' and propertyfile 'None'
+
+inputfile                                         status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------------
+jdart-regression/startswith.yml                   true                             3.04        1.23        None
+jdart-regression/OverapproximationString01.yml    true                             3.04        1.25        None
+securibench/Factories3.yml                        true                             6.42        1.75        None
+securibench/Pred4.yml                             true                             6.32        1.77        None
+securibench/Datastructures1.yml                   true                             6.63        2.00        None
+securibench/Collections3.yml                      true                             6.48        1.95        None
+securibench/Collections14.yml                     true                             9.43        2.49        None
+securibench/Aliasing5.yml                         true                             6.98        1.98        None
+securibench/Basic33.yml                           true                             6.68        2.05        None
+securibench/Aliasing6.yml                         true                             7.45        2.35        None
+securibench/Collections1.yml                      true                             7.05        1.99        None
+securibench/Pred8.yml                             true                             6.96        1.94        None
+securibench/Basic17.yml                           true                             6.91        1.93        None
+securibench/Session3.yml                          true                             7.01        2.03        None
+securibench/Datastructures2.yml                   true                             6.74        1.98        None
+securibench/Inter12.yml                           true                             7.26        1.99        None
+securibench/Basic5.yml                            true                            15.95       11.06        None
+securibench/Arrays3.yml                           true                             6.69        2.00        None
+securibench/Collections4.yml                      true                             6.78        1.95        None
+securibench/Aliasing1.yml                         true                             6.80        1.88        None
+securibench/Collections6.yml                      true                             6.57        1.71        None
+securibench/Factories1.yml                        true                            15.26       10.52        None
+securibench/Aliasing4.yml                         true                             6.54        1.79        None
+securibench/Inter3.yml                            true                             6.63        1.79        None
+securibench/Refl1.yml                             true                             6.06        1.46        None
+securibench/Session1.yml                          true                             6.18        1.54        None
+securibench/Collections2.yml                      true                             6.09        1.52        None
+securibench/Basic16.yml                           true                             6.40        1.57        None
+securibench/Arrays4.yml                           true                             6.08        1.54        None
+securibench/Basic11.yml                           true                            21.29       16.74        None
+securibench/Arrays2.yml                           true                             6.16        1.56        None
+securibench/Inter14.yml                           true                             6.57        1.90        None
+securibench/Collections13.yml                     true                             6.05        1.49        None
+securibench/Arrays1.yml                           true                             6.62        1.78        None
+securibench/Basic32.yml                           true                             6.72        1.80        None
+securibench/Inter8.yml                            true                             6.56        1.81        None
+securibench/Basic19.yml                           true                             6.25        1.69        None
+securibench/Basic18.yml                           true                             7.16        1.99        None
+securibench/Collections9.yml                      false                            6.58        1.77        None
+securibench/Inter5.yml                            true                            14.03        9.19        None
+securibench/Basic3.yml                            true                            14.16        9.10        None
+securibench/Factories2.yml                        true                             6.79        1.82        None
+securibench/Arrays9.yml                           true                             5.97        1.34        None
+securibench/Refl4.yml                             true                             5.50        1.22        None
+securibench/Pred9.yml                             true                             5.48        1.31        None
+securibench/Arrays10.yml                          false                            5.50        1.26        None
+securibench/Collections12.yml                     true                             5.32        1.29        None
+securibench/Inter4.yml                            true                             6.72        1.92        None
+securibench/Basic35.yml                           true                             7.35        2.52        None
+securibench/Arrays7.yml                           true                             6.95        1.98        None
+securibench/Datastructures5.yml                   true                            16.02       11.28        None
+securibench/Collections7.yml                      true                             6.46        1.70        None
+securibench/Inter1.yml                            true                             6.40        1.70        None
+securibench/Inter2.yml                            true                             6.49        1.72        None
+securibench/Arrays6.yml                           true                             6.61        1.79        None
+securibench/Inter11.yml                           true                            15.50       10.68        None
+securibench/Inter6.yml                            true                             6.35        1.75        None
+securibench/Arrays8.yml                           true                             5.98        1.51        None
+securibench/Session2.yml                          true                             6.16        1.51        None
+securibench/Datastructures3.yml                   true                             6.02        1.51        None
+securibench/Basic15.yml                           true                             6.24        1.57        None
+securibench/Inter7.yml                            true                             6.33        1.54        None
+securibench/Basic1.yml                            true                             6.43        1.52        None
+securibench/Basic10.yml                           true                             6.12        1.55        None
+securibench/Datastructures6.yml                   true                             9.57        2.46        None
+securibench/Refl3.yml                             true                             6.55        1.88        None
+securibench/Pred5.yml                             true                             6.64        1.78        None
+securibench/Collections5.yml                      true                             6.71        1.83        None
+securibench/Basic34.yml                           true                             6.84        1.89        None
+securibench/Basic30.yml                           true                             6.73        1.93        None
+securibench/Inter13.yml                           true                             6.91        1.95        None
+securibench/Basic31.yml                           true                             6.90        1.83        None
+jbmc-regression/StringValueOf10.yml               true                             3.26        1.25        None
+jbmc-regression/StringBuilderChars02.yml          true                             3.73        1.23        None
+jbmc-regression/StringStartEnd02.yml              true                             3.12        1.22        None
+jbmc-regression/StringStartEnd03.yml              true                             3.33        1.15        None
+jbmc-regression/CharSequenceToString.yml          true                             3.14        1.16        None
+jbmc-regression/StringBuilderChars06.yml          true                             3.08        1.11        None
+jbmc-regression/StringConcatenation04.yml         true                             3.26        1.13        None
+jbmc-regression/StringBuilderCapLen02.yml         true                             3.02        1.05        None
+jbmc-regression/StringContains02.yml              true                             2.93        1.07        None
+jbmc-regression/StringConstructors04.yml          true                             3.01        1.05        None
+jbmc-regression/StringConstructors02.yml          true                             2.82        1.06        None
+jbmc-regression/StringContains01.yml              true                             2.95        1.05        None
+jbmc-regression/bug-test-gen-095.yml              true                             2.87        1.08        None
+jbmc-regression/StringConcatenation03.yml         true                             2.95        1.09        None
+jbmc-regression/StringConcatenation02.yml         true                             2.93        1.02        None
+jbmc-regression/StringConcatenation01.yml         true                             3.24        1.18        None
+jbmc-regression/StringConstructors03.yml          true                             3.23        1.11        None
+jbmc-regression/StringConstructors05.yml          true                             3.15        1.11        None
+strings-MAS/UpperCaseTest.yml                     true                             5.83        3.66        None
+strings-MAS/ReplaceTest.yml                       true                             3.25        1.10        None
+strings-MAS/IsEmptyTest.yml                       true                             3.28        1.31        None
+strings-MAS/ValueOfTest.yml                       true                             3.41        1.16        None
+strings-MAS/ReverseTest.yml                       true                             3.56        1.83        None
+strings-MAS/TrimTest.yml                          unknown                          2.68        0.96        None
+strings-MAS/DeleteTest.yml                        true                             2.80        1.00        None
+strings-MAS/HelloWorld.yml                        true                             2.57        0.92        None
+strings-MAS/ContainsTest.yml                      TIMEOUT                         30.46       28.28        None
+strings-MAS/InsertTest.yml                        true                             3.60        1.27        None
+strings-MAS/LowerCaseTest.yml                     true                             5.61        3.69        None
+strings-MAS/StartsWithTest.yml                    true                             3.33        1.19        None
+strings-MAS/EndsWithTest.yml                      true                             3.02        1.04        None
+strings-MAS/ConcatTest.yml                        true                             2.79        0.91        None
+strings-MAS/CharAtTest.yml                        true                             2.83        0.94        None
+spf/ExSymExeStrings03.yml                         unknown                          2.55        0.87        None
+spf/ExSymExeStrings07.yml                         true                             2.84        0.97        None
+spf/ExSymExeStrings09.yml                         true                             3.40        1.24        None
+spf/ExSymExeStrings10.yml                         true                             2.71        1.01        None
+spf/ExSymExeStrings11.yml                         unknown                          2.71        0.87        None
+spf/ExSymExeStrings12.yml                         true                             2.69        0.96        None
+spf/ExSymExeStrings13.yml                         unknown                          2.78        0.99        None
+spf/ExSymExeStrings15.yml                         true                             2.74        0.96        None
+spf/ExSymExeStrings17.yml                         true                             2.87        0.97        None
+spf/ExSymExeStrings18.yml                         true                             2.96        0.98        None
+spf/ExSymExeStrings19.yml                         true                             2.95        1.15        None
+spf/ExSymExeStrings20.yml                         true                             3.25        1.09        None
+spf/ExSymExeStrings21.yml                         false                            2.81        0.98        None
+spf/ExSymExeStrings22.yml                         false                            3.14        1.03        None
+spf/ExSymExeStrings23.yml                         false                            3.11        1.06        None
+spf/ExSymExeStrings24.yml                         true                             3.38        1.21        None
+spf/ExSymExeStrings25.yml                         true                             2.95        1.00        None
+spf/ExSymExeStrings26.yml                         true                             2.77        0.92        None
+spf/ExSymExeStrings27.yml                         true                             2.67        0.94        None
+spf/ExSymExeStrings28.yml                         true                             2.76        0.96        None
+spf/ExSymExeStrings29.yml                         true                             2.56        0.93        None
+spf/ExSymExeStrings31.yml                         true                             3.11        1.10        None
+spf/ExSymExeStrings32.yml                         true                             3.05        1.05        None
+spf/ExSymExeStrings33.yml                         true                             2.98        1.05        None
+spf/ExSymExeStrings34.yml                         true                             2.81        1.08        None
+spf/ExSymExeStrings39.yml                         true                             3.08        1.06        None
+spf/ExSymExeStrings40.yml                         true                             4.06        2.15        None
+spf/ExSymExeStrings43.yml                         true                             3.32        1.23        None
+spf/ExSymExeStrings44.yml                         true                             3.07        1.09        None
+spf/ExSymExeStrings45.yml                         true                             2.95        1.00        None
+spf/ExSymExeStrings46.yml                         true                             2.86        0.97        None
+spf/ExSymExeStrings52.yml                         true                             3.30        1.11        None
+spf/ExSymExeStrings53.yml                         true                             3.10        1.04        None
+spf/ExSymExeStringsFailed.yml                     true                             2.92        1.01        None
+spf/GoodbyeWorld.yml                              true                             2.53        0.96        None
+---------------------------------------------------------------------------------------------------------------
+Run set 2                                         done                           745.22       87.77           -
+
+Statistics:            280 Files
+  correct:             273
+    correct true:      262
+    correct false:      11
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               7
+  Score:               535 (max: 548)

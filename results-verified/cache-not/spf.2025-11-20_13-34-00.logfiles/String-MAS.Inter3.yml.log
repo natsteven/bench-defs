@@ -1,0 +1,606 @@
+./jpf-sv-comp --string-dp MAS --propertyfile ../../sv-benchmarks/java/properties/runtime-exception.prp ../../sv-benchmarks/java/common ../../sv-benchmarks/java/securibench/micro ../../sv-benchmarks/java/securibench/Inter3
+
+
+--------------------------------------------------------------------------------
+
+
+PROP_FILE=../../sv-benchmarks/java/properties/runtime-exception.prp
+CHECK(init(Main.main()), LTL(G ! uncaught(java.lang.RuntimeException)))
+ASSERTION_MODE=FALSE
+RUNTIME_EXCEPTION_MODE=TRUE
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+/tmp/jpf-benchmark.zTDbDV/config.jpf
+LD_LIBRARY_PATH=/home/nat/Repos/bench-defs/bin/spf-verify-abtYf2EDFV/jpf-symbc/lib:/home/nat/Repos/SPF/jpf-symbc/lib:
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-1.7976931348623157E308
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 (rev 1d363a60ab176410bb63a12e8268f06560f889ef) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Main.main()
+
+====================================================== search started: 11/20/25 1:34 PM
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+*****************************
+sat,
+string0: ""
+*****************************
+A-Str Solver Time (ms):32
+sat,
+string0: ""
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "///////"
+*****************************
+A-Str Solver Time (ms):46
+sat,
+string0: "///////"
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 3
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 3 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):57
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 4
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 4 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):92
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 5
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 5 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):72
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 6
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 6 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):101
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 7
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 7 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):149
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 8
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 8 predicates.
+	Operations involved: concat
+*****************************
+sat,
+string0: "       "
+*****************************
+A-Str Solver Time (ms):131
+sat,
+string0: "       "
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>"))
+(assert (not (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 8
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) contains CONST_<bad/>) && (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 8 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):30
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "adsf " (str.++ "ade" string0)) "abc") "<bad/>"))
+(assert (not (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 7
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(CONST_ade.concat(string0)).concat(CONST_abc) contains CONST_<bad/>) && (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 7 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):27
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "" (str.++ "ade" string0)) "abc") "<bad/>"))
+(assert (not (str.contains (str.++ "ade" string0) "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 6
+		Pred: (CONST_.concat(CONST_ade.concat(string0)).concat(CONST_abc) contains CONST_<bad/>) && (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_ade.concat(string0) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 6 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):18
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ "ade" string0) "<bad/>"))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 5
+		Pred: (CONST_ade.concat(string0) contains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 5 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):1
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>"))
+(assert (not (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>")))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 4
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) contains CONST_<bad/>) && (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 4 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):13
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "adsf " string0) "abc") "<bad/>"))
+(assert (not (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>")))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 3
+		Pred: (CONST_adsf .concat(string0).concat(CONST_abc) contains CONST_<bad/>) && (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (CONST_.concat(string0).concat(CONST_abc) notcontains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 3 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):7
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains (str.++ (str.++ "" string0) "abc") "<bad/>"))
+(assert (not (str.contains string0 "<bad/>")))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: (CONST_.concat(string0).concat(CONST_abc) contains CONST_<bad/>) && (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (string0 notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: concat
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):3
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains string0 "<bad/>"))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (string0 contains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+*****************************
+sat,
+string0: "<bad/>"
+*****************************
+A-Str Solver Time (ms):3
+sat,
+string0: "<bad/>"
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.contains string0 "<bad/>"))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (string0 contains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+*****************************
+sat,
+string0: "<bad/>"
+*****************************
+A-Str Solver Time (ms):2
+sat,
+string0: "<bad/>"
+************************************
+Property Violated: PC is constraint # = 0
+Property Violated: result is  "java.lang.AssertionError..."
+****************************
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError
+	at mockx.servlet.http.HttpServletResponse.checkNoSymbolic(HttpServletResponse.java:38)
+	at mockx.servlet.http.HttpServletResponse.access$000(HttpServletResponse.java:12)
+	at mockx.servlet.http.HttpServletResponse$1.println(HttpServletResponse.java:22)
+	at securibench.micro.inter.Inter3.f9(Inter3.java:74)
+	at securibench.micro.inter.Inter3.f8(Inter3.java:69)
+	at securibench.micro.inter.Inter3.f7(Inter3.java:65)
+	at securibench.micro.inter.Inter3.f6(Inter3.java:58)
+	at securibench.micro.inter.Inter3.f5(Inter3.java:54)
+	at securibench.micro.inter.Inter3.f4(Inter3.java:50)
+	at securibench.micro.inter.Inter3.f3(Inter3.java:46)
+	at securibench.micro.inter.Inter3.f2(Inter3.java:41)
+	at securibench.micro.inter.Inter3.f1(Inter3.java:37)
+	at securibench.micro.inter.Inter3.doGet(Inter3.java:33)
+	at Main.main(Main.java:23)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at mockx.servlet.http.HttpServletResponse.checkNoSymbolic(HttpServletResponse.java:38)
+	at mockx.servlet.http.HttpServletResponse.access$000(HttpServletResponse.java:12)
+	at mockx.servlet.http.HttpServletResponse$1.println(HttpServletResponse.java:22)
+	at securibench.micro.inter.Inter3.f9(Inter3.java:74)
+	at securibench.micro.inter.Inter3.f8(Inter3.java:69)
+	at securibench.micro.inter.Inter3.f7(Inter3.java:65)
+	at securibench.micro.inter.Inter3.f6(Inter3.java:58)
+	at securibench.micro.inter.Inter3.f5(Inter3.java:54)
+	at securibench.micro.inter.Inter3.f4(Inter3.java:50)
+	at securibench.micro.inter.Inter3.f3(Inter3.java:46)
+	at securibench.micro.inter.Inter3.f2(Inter3.java:41)
+	at securibench.micro.inter.Inter3.f1(Inter3.java:37)
+	at securibench.micro.inter.Inter3.doGet(Inter3.java:33)
+	at Main.main(Main.java:23)
+
+
+====================================================== Method Summaries
+Inputs: 
+
+()  --> "java.lang.AssertionError..."
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for  (Path Coverage) </h1>
+<table border=1>
+<tr><td>RETURN</td></tr>
+<tr><td>"java.lang.AssertionError..."</td></tr>
+</table>
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError  at mockx.servlet.http.Ht..."
+
+====================================================== statistics
+elapsed time:       00:00:02
+states:             new=25,visited=0,backtracked=23,end=1
+search:             maxDepth=9,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=8
+heap:               new=592,released=58,maxLive=544,gcCycles=9
+instructions:       7177
+max memory:         652MB
+loaded code:        classes=107,methods=2042
+
+====================================================== search finished: 11/20/25 1:34 PM
+inside runtime_exception_mode=true
+SAFE

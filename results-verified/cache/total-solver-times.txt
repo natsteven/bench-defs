@@ -1,0 +1,3 @@
+Total Solving Time (ms):
+Astr: 11736
+Z3: 98163

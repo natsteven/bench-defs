@@ -1,0 +1,302 @@
+./jpf-sv-comp --string-dp MAS --propertyfile ../../sv-benchmarks/java/properties/runtime-exception.prp ../../sv-benchmarks/java/common ../../sv-benchmarks/java/securibench/micro ../../sv-benchmarks/java/securibench/Basic5
+
+
+--------------------------------------------------------------------------------
+
+
+PROP_FILE=../../sv-benchmarks/java/properties/runtime-exception.prp
+CHECK(init(Main.main()), LTL(G ! uncaught(java.lang.RuntimeException)))
+ASSERTION_MODE=FALSE
+RUNTIME_EXCEPTION_MODE=TRUE
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+/tmp/jpf-benchmark.2RFmA9/config.jpf
+LD_LIBRARY_PATH=/home/nat/Repos/bench-defs/bin/spf-verify-ZjEVN23ex3/jpf-symbc/lib:/home/nat/Repos/SPF/jpf-symbc/lib:
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-1.7976931348623157E308
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 (rev 1d363a60ab176410bb63a12e8268f06560f889ef) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Main.main()
+
+====================================================== search started: 11/20/25 1:40 PM
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (not (str.contains (str.++ out_str ";") "<bad/>")))
+
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+	Operations involved: concat
+	Operations involved: tolowercase
+*****************************
+sat,
+string0: "///////"
+*****************************
+A-Str Solver Time (ms):84
+sat,
+string0: "///////"
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (not (str.contains (str.replace_all (str.++ out_str ";") "." ";") "<bad/>")))
+(assert (not (str.contains (str.++ out_str ";") "<bad/>")))
+
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] notcontains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: concat
+	Operations involved: replace
+	Operations involved: tolowercase
+*****************************
+sat,
+string0: "......."
+*****************************
+A-Str Solver Time (ms):95
+sat,
+string0: "......."
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (not (str.contains out_str "<bad/>")))
+(assert (not (str.contains (str.replace_all (str.++ out_str ";") "." ";") "<bad/>")))
+(assert (not (str.contains (str.++ out_str ";") "<bad/>")))
+
+(declare-const nwc RegLan)
+(declare-const ws RegLan)
+(assert (and (str.in_re (str.replace_all (str.++ out_str ";") "." ";") (re.++ ws (str.to_re out_str) ws)) (or (= out_str "")(and (str.in_re out_str (re.++ nwc re.all)) (str.in_re out_str (re.++ re.all nwc))))))
+(assert (= nwc (re.diff re.allchar (re.range (str.from_code 0) (str.from_code 32)))))
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+(assert (= ws (re.union (re.+ (re.range (str.from_code 0) (str.from_code 32))) (str.to_re ""))))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 3
+		Pred: (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] notcontains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.trim(.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)]) notcontains CONST_<bad/>) && (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] notcontains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 3 predicates.
+	Operations involved: trim
+	Operations involved: concat
+	Operations involved: replace
+	Operations involved: tolowercase
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):92
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (str.contains out_str "<bad/>"))
+(assert (not (str.contains (str.replace_all (str.++ out_str ";") "." ";") "<bad/>")))
+(assert (not (str.contains (str.++ out_str ";") "<bad/>")))
+
+(declare-const nwc RegLan)
+(declare-const ws RegLan)
+(assert (and (str.in_re (str.replace_all (str.++ out_str ";") "." ";") (re.++ ws (str.to_re out_str) ws)) (or (= out_str "")(and (str.in_re out_str (re.++ nwc re.all)) (str.in_re out_str (re.++ re.all nwc))))))
+(assert (= nwc (re.diff re.allchar (re.range (str.from_code 0) (str.from_code 32)))))
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+(assert (= ws (re.union (re.+ (re.range (str.from_code 0) (str.from_code 32))) (str.to_re ""))))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 3
+		Pred: (.trim(.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)]) contains CONST_<bad/>) && (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] notcontains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] notcontains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 3 predicates.
+	Operations involved: trim
+	Operations involved: concat
+	Operations involved: replace
+	Operations involved: tolowercase
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):31
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (str.contains (str.replace_all (str.++ out_str ";") "." ";") "<bad/>"))
+(assert (not (str.contains (str.++ out_str ";") "<bad/>")))
+
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: (.replace[(.tolowercase(string0).concat(CONST_;))(CONST_.)(CONST_;)] contains CONST_<bad/>) && (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+		Pred: (.tolowercase(string0).concat(CONST_;) notcontains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: concat
+	Operations involved: replace
+	Operations involved: tolowercase
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):32
+unsat
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (str.contains (str.++ out_str ";") "<bad/>"))
+
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (.tolowercase(string0).concat(CONST_;) contains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+	Operations involved: concat
+	Operations involved: tolowercase
+
+################################################
+################################################
+################	CACHE HIT	################
+################################################
+################################################
+
+****** Solutions from cache ******
+string0: ""
+**********************************
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+(declare-const out_str String)
+
+(assert (str.contains (str.++ out_str ";") "<bad/>"))
+
+(define-fun-rec toLower ((x String) (y String)) Bool (or (and (= x "") (= y "")) (and (not (= x "")) (not (= y "")) (let ((x_head (str.at x 0)) (y_head (str.at y 0)) (x_tail (str.substr x 1 (- (str.len x) 1))) (y_tail (str.substr y 1 (- (str.len y) 1)))) (and (= (str.to_code y_head) (ite (and (<= 65 (str.to_code x_head)) (<= (str.to_code x_head)                 90)) (+ (str.to_code x_head) 32) (str.to_code x_head))) (toLower x_tail y_tail))))))
+(assert (toLower string0 out_str))
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (.tolowercase(string0).concat(CONST_;) contains CONST_<bad/>) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+	Operations involved: concat
+	Operations involved: tolowercase
+
+################################################
+################################################
+################	CACHE HIT	################
+################################################
+################################################
+
+****** Solutions from cache ******
+string0: ""
+**********************************
+************************************
+Property Violated: PC is constraint # = 0
+Property Violated: result is  "java.lang.AssertionError..."
+****************************
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError
+	at mockx.servlet.http.HttpServletResponse.checkNoSymbolic(HttpServletResponse.java:38)
+	at mockx.servlet.http.HttpServletResponse.access$000(HttpServletResponse.java:12)
+	at mockx.servlet.http.HttpServletResponse$1.println(HttpServletResponse.java:22)
+	at securibench.micro.basic.Basic5.doGet(Basic5.java:34)
+	at Main.main(Main.java:23)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at mockx.servlet.http.HttpServletResponse.checkNoSymbolic(HttpServletResponse.java:38)
+	at mockx.servlet.http.HttpServletResponse.access$000(HttpServletResponse.java:12)
+	at mockx.servlet.http.HttpServletResponse$1.println(HttpServletResponse.java:22)
+	at securibench.micro.basic.Basic5.doGet(Basic5.java:34)
+	at Main.main(Main.java:23)
+
+
+====================================================== Method Summaries
+Inputs: 
+
+()  --> "java.lang.AssertionError..."
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for  (Path Coverage) </h1>
+<table border=1>
+<tr><td>RETURN</td></tr>
+<tr><td>"java.lang.AssertionError..."</td></tr>
+</table>
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError  at mockx.servlet.http.Ht..."
+
+====================================================== statistics
+elapsed time:       00:00:01
+states:             new=10,visited=0,backtracked=8,end=0
+search:             maxDepth=4,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=3
+heap:               new=568,released=10,maxLive=542,gcCycles=3
+instructions:       6873
+max memory:         477MB
+loaded code:        classes=107,methods=2031
+
+====================================================== search finished: 11/20/25 1:40 PM
+inside runtime_exception_mode=true
+SAFE

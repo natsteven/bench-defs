@@ -1,0 +1,10 @@
+tool		SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025	SPF Thu Nov 20 01:30:44 PM MST 2025
+run set		String-MAS.RuntimeException-Java	String-MAS.RuntimeException-Java	String-MAS.RuntimeException-Java	String-MAS.RuntimeException-Java	String-z3.RuntimeException-Java	String-z3.RuntimeException-Java	String-z3.RuntimeException-Java	String-z3.RuntimeException-Java
+sv-benchmarks/java/		status	cputime (s)	walltime (s)	memory (MB)	status	cputime (s)	walltime (s)	memory (MB)
+securibench/Basic19.yml	true	TIMEOUT	34.318218	9.78962095899999	986.902528	true	6.251565	1.6948855089999881	137.760768
+strings-MAS/ReverseTest.yml	true	TIMEOUT	30.619977	17.876537990999992	528.572416	true	3.556767	1.8312203030000092	140.578816
+strings-MAS/TrimTest.yml	true	true	4.124147	1.4492975180000087	140.898304	unknown	2.6835	0.9595325310000078	135.974912
+strings-MAS/ContainsTest.yml	true	true	10.897858	4.908182192999988	467.664896	TIMEOUT	30.464931	28.283728604999993	216.293376
+spf/ExSymExeStrings03.yml	false	false	2.996848	0.9760399070000005	137.719808	unknown	2.548757	0.8677262130000258	138.547200
+spf/ExSymExeStrings11.yml	true	true	2.827502	1.0280312749999894	118.153216	unknown	2.713369	0.8717689910000104	148.905984
+spf/ExSymExeStrings13.yml	true	true	3.036096	1.027408022000003	128.372736	unknown	2.784881	0.9883901549999905	135.106560

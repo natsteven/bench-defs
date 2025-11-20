@@ -1,0 +1,151 @@
+./jpf-sv-comp --string-dp MAS --propertyfile ../../sv-benchmarks/java/properties/runtime-exception.prp ../../sv-benchmarks/java/common ../../sv-benchmarks/java/spf/ExSymExeStrings39
+
+
+--------------------------------------------------------------------------------
+
+
+PROP_FILE=../../sv-benchmarks/java/properties/runtime-exception.prp
+CHECK(init(Main.main()), LTL(G ! uncaught(java.lang.RuntimeException)))
+ASSERTION_MODE=FALSE
+RUNTIME_EXCEPTION_MODE=TRUE
+/tmp/jpf-benchmark.UYmgJW/config.jpf
+LD_LIBRARY_PATH=/home/nat/Repos/bench-defs/bin/spf-verify-ZjEVN23ex3/jpf-symbc/lib:/home/nat/Repos/SPF/jpf-symbc/lib:
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-1.7976931348623157E308
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 (rev 1d363a60ab176410bb63a12e8268f06560f889ef) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Main.main()
+
+====================================================== search started: 11/20/25 1:41 PM
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (not (str.prefixof "hello" string0)))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (string0 notstartswith CONST_hello) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+*****************************
+sat,
+string0: ""
+*****************************
+A-Str Solver Time (ms):25
+sat,
+string0: ""
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.prefixof "hello" string0))
+
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 1
+		Pred: (string0 startswith CONST_hello) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 1 predicates.
+
+################################################
+################################################
+################	CACHE HIT	################
+################################################
+################################################
+
+****** Solutions from cache ******
+string0: "hello"
+**********************************
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.prefixof "hello" string0))
+(assert (not (= (str.indexof string0 "WWWWW's Birthday is 12-17-77") 2)))
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: (string0 startswith CONST_hello) involves 1 symbolic variables.
+		Pred: IndexOf_0_ != CONST_2 involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: indexof
+Numeric Path Condition Exists: IndexOf_0_ != CONST_2
+*****************************
+sat,
+string0: "hello"
+*****************************
+A-Str Solver Time (ms):69
+sat,
+string0: "hello"
+************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Calling MAS
+
+The smtlib query is: 
+(declare-const string0 String)
+
+(assert (str.prefixof "hello" string0))
+(assert (= (str.indexof string0 "WWWWW's Birthday is 12-17-77") 2))
+
+=======================================
+Path Constraint Analysis Info:
+	Predicates: 2
+		Pred: IndexOf_0_ == CONST_2 involves 1 symbolic variables.
+		Pred: (string0 startswith CONST_hello) involves 1 symbolic variables.
+	Symbolic Variables: 1
+		SymVar: string0 involved in 2 predicates.
+	Operations involved: indexof
+Numeric Path Condition Exists: IndexOf_0_ == CONST_2
+*****************************
+unsat
+*****************************
+A-Str Solver Time (ms):13
+unsat
+************************************
+
+====================================================== Method Summaries
+
+====================================================== Method Summaries (HTML)
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=4,visited=0,backtracked=4,end=2
+search:             maxDepth=2,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=1
+heap:               new=492,released=54,maxLive=470,gcCycles=3
+instructions:       6473
+max memory:         477MB
+loaded code:        classes=85,methods=1828
+
+====================================================== search finished: 11/20/25 1:41 PM
+inside runtime_exception_mode=true
+SAFE
