@@ -6,20 +6,13 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--metavalWitnessType" />
-  <option name="violation_witness" />
-  <option name="--metavalVerifierBackend" />
-  <option name="cpachecker" />
-  <option name="--predicateAnalysis" />
-  <option name="--heap" />
-  <option name="5000M" />
-  <option name="--benchmark" />
-  <option name="--timelimit" />
-  <option name="90s" />
+  <option name="--config" />
+  <option name="./config/svcomp26.yml" />
+  <option name="--debug" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="C.unreach-call.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -125,7 +118,7 @@
 
   <rundefinition name="SV-COMP26_valid-memcleanup">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="C.valid-memcleanup.Main">
       <includesfile>../sv-benchmarks/c/Heap.set</includesfile>
@@ -143,7 +136,7 @@
 
   <rundefinition name="SV-COMP26_valid-memsafety">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="C.valid-memsafety.Arrays">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -193,7 +186,7 @@
 
   <rundefinition name="SV-COMP26_no-overflow">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="C.no-overflow.Main">
       <includesfile>../sv-benchmarks/c/Arrays.set</includesfile>
@@ -237,7 +230,7 @@
 
   <rundefinition name="SV-COMP26_termination">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
 
     <tasks name="C.termination.BitVectors">
       <includesfile>../sv-benchmarks/c/BitVectors-Termination.set</includesfile>

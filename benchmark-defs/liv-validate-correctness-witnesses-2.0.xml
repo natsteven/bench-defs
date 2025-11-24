@@ -6,18 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--verifier" />
-  <option name="actors/cbmc.yml" />
-  <option name="--verifierversion" />
-  <option name="default" />
-  <option name="--cache-dir" />
-  <option name="lib/cvt_cache" />
-  <option name="--no-cache-update" />
-  <option name="--all-possible-invariant-locations" />
-  <option name="--fuzzy-invariant-locations" />
-  <option name="1" />
-  <option name="--non-strict" />
-  <option name="--prep-cgroup" />
+  <option name="--config" />
+  <option name="./config/liv-runexec.yml" />
   <option name="--debug" />
 
   <rundefinition name="SV-COMP26_unreach-call">
