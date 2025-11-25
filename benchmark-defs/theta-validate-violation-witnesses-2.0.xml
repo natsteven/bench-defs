@@ -266,5 +266,10 @@
     </tasks>
   </rundefinition>
 
-
+  <columns>
+    <column title="Successful config">success-result</column>
+    <column title="Error">Error</column>
+    <column title="Portfolio">Using portfolio</column>
+    <column title="Arithmetic">Arithmetic</column>
+  </columns>
 </benchmark>

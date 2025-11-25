@@ -101,4 +101,7 @@
 
     </rundefinition>
 
-  </benchmark>
+  <columns>
+    <column title="Verdict">Verdict</column>
+  </columns>
+</benchmark>
