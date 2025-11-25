@@ -6,8 +6,6 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="-witness" />
-  <option name="witness.graphml" />
   <option name="-smt2" />
   <option name="clauses.smt2" />
   <option name="-model" />
