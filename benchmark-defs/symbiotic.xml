@@ -6,8 +6,6 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--witness" />
-  <option name="witness.graphml" />
   <option name="--sv-comp" />
 
   <rundefinition name="SV-COMP26_unreach-call">

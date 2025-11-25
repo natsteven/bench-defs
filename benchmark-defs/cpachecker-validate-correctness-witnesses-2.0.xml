@@ -7,7 +7,6 @@
   <resultfiles>**/witness.*</resultfiles>
 
   <option name="--correctness-witness-validation" />
-  <option name="--preprocess" />
   <option name="--heap" />
   <option name="5000m" />
   <option name="--benchmark" />
