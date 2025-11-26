@@ -96,7 +96,6 @@
       <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
       <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
       <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-      <includesfile>../sv-benchmarks/c/SoftwareSystems-uthash.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     </tasks>
     </rundefinition>

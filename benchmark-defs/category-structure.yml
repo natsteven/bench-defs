@@ -513,6 +513,7 @@ categories:
       - C.no-overflow.SoftwareSystems-coreutils
       - C.no-overflow.SoftwareSystems-uthash
       - C.termination.SoftwareSystems-DeviceDriversLinux64
+      - C.termination.SoftwareSystems-uthash
       - C.unreach-call.SoftwareSystems-AWS-C-Common
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
       - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
@@ -883,6 +884,7 @@ categories_process_order:
   - C.no-overflow.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-uthash
   - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.termination.SoftwareSystems-uthash
   - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
@@ -952,6 +954,7 @@ categories_table_order:
   - C.no-overflow.SoftwareSystems-coreutils
   - C.no-overflow.SoftwareSystems-uthash
   - C.termination.SoftwareSystems-DeviceDriversLinux64
+  - C.termination.SoftwareSystems-uthash
   - C.unreach-call.SoftwareSystems-AWS-C-Common
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64
   - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
@@ -997,9 +1000,11 @@ opt_out:
     - C.no-data-race.Huawei-Concurrency-Challenges
   cpa-bam-bnb:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-uthash
     - C.valid-memcleanup.SoftwareSystems-uthash
   cpa-bam-smg:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-uthash
     - C.valid-memcleanup.SoftwareSystems-uthash
   divine:
     - C.no-data-race.Concurrency
@@ -1055,6 +1060,7 @@ opt_out:
     - C.unreach-call.SoftwareSystems-DeviceDriversLinux64Large
     - C.valid-memsafety.SoftwareSystems-DeviceDriversLinux64
     - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-uthash
   pinaka:
     - C.FalseOverall
     - C.TrueOverall
@@ -1115,6 +1121,7 @@ opt_in:
     - C.no-overflow.SoftwareSystems-uthash
   function-res:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-uthash
   gacal:
     - C.unreach-call.Loops
   gazer-theta:
@@ -1146,6 +1153,7 @@ opt_in:
     - C.no-data-race.Huawei-Concurrency-Challenges
   proton:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
+    - C.termination.SoftwareSystems-uthash
   racerf:
     - C.no-data-race.Concurrency
     - C.no-data-race.Huawei-Concurrency-Challenges
