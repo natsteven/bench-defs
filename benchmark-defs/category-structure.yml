@@ -238,7 +238,6 @@ categories:
       - graves
       - infer
       - mopsa
-      - muval
       - nacpa
       - pesco
       - pinaka
@@ -304,7 +303,6 @@ categories:
       - goblint-par
       - graves
       - mopsa
-      - muval
       - nacpa
       - pesco
       - predatorhp
@@ -365,7 +363,6 @@ categories:
       - lazycseq
       - lf-checker
       - mopsa
-      - muval
       - nacpa
       - ogchecker
       - pesco
@@ -411,7 +408,6 @@ categories:
       - graves
       - infer
       - mopsa
-      - muval
       - nacpa
       - pesco
       - pinaka
