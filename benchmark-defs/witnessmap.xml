@@ -6,7 +6,7 @@
 
 <resultfiles>**/witness.*</resultfiles>
 
-<rundefinition name="SV-COMP25_unreach-call">
+<rundefinition name="SV-COMP26_unreach-call">
     <tasks name="C.unreach-call.CorrectnessWitnesses">
         <includesfile>../sv-benchmarks/c/CorrectnessWitnesses.set</includesfile>
         <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
