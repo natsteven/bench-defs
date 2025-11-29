@@ -8,7 +8,6 @@
 
   <option name="--config" />
   <option name="./config/liv-runexec.yml" />
-  <option name="--debug" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
