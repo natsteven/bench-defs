@@ -15,6 +15,9 @@
         <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
         <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
+</rundefinition>
+
+<rundefinition name="SV-COMP26_termination">
     <tasks name="C.termination.ViolationWitnesses">
       <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
