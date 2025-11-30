@@ -85,6 +85,12 @@
       <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP26_termination">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</requiredfiles>
+    <option name="--witness">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.graphml</option>
+
     <tasks name="C.termination.ViolationWitnesses">
       <includesfile>../sv-benchmarks/c/ViolationWitnesses.set</includesfile>
       <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
