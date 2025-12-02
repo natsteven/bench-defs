@@ -9,6 +9,8 @@
   <option name="--config" />
   <option name="./config/svcomp26.yml" />
   <option name="--debug" />
+  <option name="--expect-witness-type" />
+  <option name="correctness" />
 
   <rundefinition name="SV-COMP26_unreach-call">
     <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
