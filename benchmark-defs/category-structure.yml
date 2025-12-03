@@ -199,9 +199,13 @@ properties:
   - valid-memsafety
   - valid-assert
   - no-runtime-exception
+  - correct-tags
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
+  - SV-LIB.correct-tags.CoreVerification
+  - SV-LIB.correct-tags.CoreValidation
+  - SV-LIB.correct-tags.CTranslated
   - C.Huawei-Concurrency-Challenges
   - C.no-data-race.Huawei-Concurrency-Challenges
   - C.no-overflow.Huawei-Concurrency-Challenges
@@ -877,6 +881,17 @@ categories:
       - gwit-validate-violation-witnesses-v1
       - jcwit-validate-correctness-witnesses-v1
 
+  SV-LIB.Overall:
+    properties:
+      - correct-tags
+    categories:
+      - SV-LIB.correct-tags.CoreVerification
+      - SV-LIB.correct-tags.CoreValidation
+      - SV-LIB.correct-tags.CTranslated
+    verifiers:
+      - cpachecker
+    validators: []
+
 categories_process_order:
   - C.unreach-call.Arrays
   - C.unreach-call.BitVectors
@@ -945,6 +960,10 @@ categories_process_order:
   - Java.no-runtime-exception.Main
   - Java.valid-assert.Main
   - Java.Overall
+  - SV-LIB.correct-tags.CoreVerification
+  - SV-LIB.correct-tags.CoreValidation
+  - SV-LIB.correct-tags.CTranslated
+  - SV-LIB.Overall
 
 categories_table_order:
   - C.ReachSafety
@@ -1014,6 +1033,10 @@ categories_table_order:
   - Java.Overall
   - Java.no-runtime-exception.Main
   - Java.valid-assert.Main
+  - SV-LIB.Overall
+  - SV-LIB.correct-tags.CoreVerification
+  - SV-LIB.correct-tags.CoreValidation
+  - SV-LIB.correct-tags.CTranslated
 
 validation_only:
   - C.ValidationCrafted

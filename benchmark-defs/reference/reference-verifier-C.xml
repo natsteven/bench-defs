@@ -260,6 +260,21 @@
     </tasks>
   </rundefinition>
 
+  <rundefinition name="SV-COMP26_correct-tags">
+    <tasks name="SV-LIB.correct-tags.CoreVerification">
+      <includesfile>../sv-benchmarks/sv-lib/CoreVerification.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+    <tasks name="SV-LIB.correct-tags.CoreValidation">
+      <includesfile>../sv-benchmarks/sv-lib/CoreValidation.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+    <tasks name="SV-LIB.correct-tags.CTranslated">
+      <includesfile>../sv-benchmarks/sv-lib/CTranslated.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
   <rundefinition name="SV-COMP26_unreach-call_demo">
     <tasks name="C.unreach-call.Huawei-Concurrency-Challenges">
       <includesfile>../sv-benchmarks/c/Huawei-Concurrency-Challenges.set</includesfile>
