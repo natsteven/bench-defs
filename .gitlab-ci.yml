@@ -23,10 +23,9 @@ before_script:
   - pip install fm-tools/lib-fm-tools/python/
 
 check-definitions:
-  before_script:
+  script:
     - apt-get update
     - apt-get install -y yq
-  script:
     - |
       yq --raw-output --slurp 'map( select( .competition_participations[]?
                                             | .competition=="SV-COMP 2026" and .track=="Verification" and (.label | length == 0)
