@@ -7,9 +7,6 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://gitlab.com/sosy-lab/benchmarking/competition-scripts.git
-[submodule "coveriteam"]
-	path = coveriteam
-	url = https://gitlab.com/sosy-lab/software/coveriteam.git
 [submodule "sv-witnesses"]
 	path = sv-witnesses
 	url = https://gitlab.com/sosy-lab/benchmarking/sv-witnesses.git
