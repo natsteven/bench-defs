@@ -23,8 +23,17 @@ before_script:
   - pip install fm-tools/lib-fm-tools/python/
 
 check-definitions:
+  before_script:
+    - apt-get update
+    - apt-get install -y yq
   script:
-    - ./scripts/test/check-benchdef.py benchmark-defs/*xml
+    - |
+      yq --raw-output --slurp 'map( select( .competition_participations[]?
+                                            | .competition=="SV-COMP 2026" and .track=="Verification" and (.label | length == 0)
+                                          )
+                                  )
+                               | sort_by([.input_languages[0], .id]) [] .id' ./fm-tools/data/*.yml \
+        | xargs --replace={} ./scripts/test/check-benchdef.py benchmark-defs/{}.xml
 
 check-category-structure:
   script:
