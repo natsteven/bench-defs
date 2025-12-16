@@ -16,6 +16,7 @@ properties:
 
 # scores in demo categories are not counted towards the Overall score
 demo_categories:
+  - SV-LIB.Overall
   - SV-LIB.correct-tags.CoreVerification
   - SV-LIB.correct-tags.CoreValidation
   - SV-LIB.correct-tags.CTranslated
