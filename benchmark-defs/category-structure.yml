@@ -928,8 +928,6 @@ opt_in:
   function-res:
     - C.termination.SoftwareSystems-DeviceDriversLinux64
     - C.termination.SoftwareSystems-uthash
-  gacal:
-    - C.unreach-call.Loops
   gazer-theta:
     - C.unreach-call.BitVectors
     - C.unreach-call.ControlFlow
