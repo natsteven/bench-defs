@@ -961,9 +961,6 @@ opt_in:
   racerf:
     - C.no-data-race.Concurrency
     - C.no-data-race.Huawei-Concurrency-Challenges
-  relay-sv:
-    - C.no-data-race.Concurrency
-    - C.no-data-race.Huawei-Concurrency-Challenges
   seal:
     - C.valid-memsafety.LinkedLists
   sv-sanitizers:
