@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="pysvlib" displayName="PySvLib-Linter" timelimit="5 min" hardtimelimit="6 min" memlimit="7 GB" cpuCores="2">
+
+  <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" />
+
+  <resultfiles>**/witness.*</resultfiles>
+
+  <option name="lint" />
+
+  <rundefinition name="SV-COMP26_correct-tags">
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+    <option name="--print-file-metadata">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+
+    <tasks name="SV-LIB.correct-tags.CoreVerification">
+      <includesfile>../sv-benchmarks/sv-lib/CoreVerification.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+    <tasks name="SV-LIB.correct-tags.CoreValidation">
+      <includesfile>../sv-benchmarks/sv-lib/CoreValidation.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+    <tasks name="SV-LIB.correct-tags.CTranslated">
+      <includesfile>../sv-benchmarks/sv-lib/CTranslated.set</includesfile>
+      <propertyfile>../sv-benchmarks/sv-lib/properties/correct-tags.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+
+</benchmark>
