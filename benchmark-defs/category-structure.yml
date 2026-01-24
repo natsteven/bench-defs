@@ -713,6 +713,7 @@ categories:
       - SV-LIB.correct-tags.CTranslated
     verifiers:
       - cpachecker
+      - svlibchecker
     validators: []
 
 categories_table_order:
