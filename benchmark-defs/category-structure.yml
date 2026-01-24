@@ -714,7 +714,9 @@ categories:
     verifiers:
       - cpachecker
       - svlibchecker
-    validators: []
+    validators:
+      - pysvlib-linter-validate-sv-lib-witnesses
+      - pysvlib-validator-validate-sv-lib-witnesses
 
 categories_table_order:
   - C.ReachSafety
