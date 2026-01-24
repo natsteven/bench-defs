@@ -260,6 +260,20 @@
     </tasks>
   </rundefinition>
 
+  <rundefinition name="SV-COMP26_valid-assert">
+    <tasks name="Java.valid-assert.Main">
+      <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+      <propertyfile>../sv-benchmarks/java/properties/valid-assert.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP26_no-runtime-exception">
+    <tasks name="Java.no-runtime-exception.Main">
+      <includesfile>../sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+      <propertyfile>../sv-benchmarks/java/properties/no-runtime-exception.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
   <rundefinition name="SV-COMP26_correct-tags">
     <tasks name="SV-LIB.correct-tags.CoreVerification">
       <includesfile>../sv-benchmarks/sv-lib/CoreVerification.set</includesfile>
