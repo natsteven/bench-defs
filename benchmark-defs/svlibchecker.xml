@@ -6,7 +6,8 @@
 
   <resultfiles>**/witness.*</resultfiles>
 
-  <option name="--predicateAnalysisCegar" />
+  <option name="--config" />
+  <option name="predicateAnalysisCegar" />
 
   <rundefinition name="SV-COMP26_correct-tags">
     <tasks name="SV-LIB.correct-tags.CoreVerification">
