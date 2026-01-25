@@ -9,8 +9,8 @@
   <option name="lint" />
 
   <rundefinition name="SV-COMP26_correct-tags">
-    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
-    <option name="--print-file-metadata">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</option>
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.svlib</requiredfiles>
+    <option name="--print-file-metadata">../../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.svlib</option>
 
     <tasks name="SV-LIB.correct-tags.CoreVerification">
       <includesfile>../sv-benchmarks/sv-lib/CoreVerification.set</includesfile>

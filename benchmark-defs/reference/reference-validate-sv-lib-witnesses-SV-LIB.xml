@@ -9,7 +9,7 @@
 {benchexec_toolinfo_options}
 
   <rundefinition name="SV-COMP26_correct-tags">
-    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.yml</requiredfiles>
+    <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}/${taskdef_name}/witness.svlib</requiredfiles>
 {witness_options}
 
     <tasks name="SV-LIB.correct-tags.CoreVerification">
