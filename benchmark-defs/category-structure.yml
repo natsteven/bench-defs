@@ -713,6 +713,7 @@ categories:
       - SV-LIB.correct-tags.CTranslated
     verifiers:
       - cpachecker
+      - pysvlib-chc
       - svlibchecker
     validators:
       - pysvlib-linter-validate-sv-lib-witnesses-v1
