@@ -848,13 +848,6 @@ opt_out:
   symbiotic:
     - C.no-data-race.Concurrency
     - C.no-data-race.Huawei-Concurrency-Challenges
-  pesco:
-    - C.MemSafety
-    - C.Concurrency
-    - C.NoOverflows
-    - C.Termination
-    - C.no-data-race.Concurrency
-    - C.no-data-race.Huawei-Concurrency-Challenges
   map2check:
     - C.ReachSafety
   infer:
@@ -875,12 +868,6 @@ opt_out:
     - C.FalseOverall
     - C.TrueOverall
     - C.Overall
-  graves:
-    - C.MemSafety
-    - C.Concurrency
-    - C.NoOverflows
-    - C.Termination
-    - C.no-data-race.Concurrency
   coastal:
     - Java.no-runtime-exception.Main
   jayhorn:
