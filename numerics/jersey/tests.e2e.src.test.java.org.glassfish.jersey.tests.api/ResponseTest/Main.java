@@ -1,0 +1,174 @@
+/** filtered and transformed by ARG-V */
+
+/*
+ * Copyright (c) 2012, 2022 Oracle and/or its affiliates. All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0, which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * This Source Code may also be made available under the following Secondary
+ * Licenses when the conditions for such availability set forth in the
+ * Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+ * version 2 with the GNU Classpath Exception, which is available at
+ * https://www.gnu.org/software/classpath/license.html.
+ *
+ * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+ */
+import org.sosy_lab.sv_benchmarks.Verifier;
+import java.security.AccessController;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+
+/**
+ * @author Pavel Bucek
+ */
+public class Main {
+
+    /*
+     * Create an instance of Response using Response.ok(String, Variant).build()
+     * verify that correct status code is returned
+     */
+    public void OkTest5() {
+        int status = 200;
+        String content = "Test Only";
+        List<String> encoding = Arrays.asList("gzip", "compress");
+        List<String> lang = Arrays.asList("en-US", "en-GB", "zh-CN");
+
+        String tmp = Verifier.nondetString();
+    }
+
+    /*
+     * Create an instance of Response using
+     * Response.ResponseBuilder.clone()
+     * verify that correct status code is returned
+     */
+    /** ARG-V: suitable */
+	 public void cloneTest() throws Exception {
+        StringBuilder sb = new StringBuilder();
+
+        int status = 200;
+        List<String> type = Arrays.asList("text/plain", "text/html");
+        List<String> encoding = Arrays.asList("gzip", "compress");
+        List<String> lang = Arrays.asList("en-US", "en-GB", "zh-CN");
+
+        String name = "name_1";
+        String value = "value_1";
+        List<String> cookies = null;
+
+        String tmp = Verifier.nondetString();
+        if (tmp.endsWith("false")) {
+            System.out.println("### " + sb.toString());
+        }
+        sb.append(tmp).append(newline);
+
+        String content = "TestOnly";
+        tmp = Verifier.nondetString();
+        if (tmp.endsWith("false")) {
+            System.out.println("### " + sb.toString());
+        }
+
+        if (Verifier.nondetBoolean()) {
+            System.out.println("### " + sb.toString());
+        }
+        sb.append(tmp).append(newline);
+    }
+
+    /*
+     * Create an instance of Response using
+     * Response.fromResponse(Response).build()
+     * verify that correct status code is returned
+     */
+    public void fromResponseTest() {
+        int status = 200;
+        String content = "Test Only";
+        List<String> type = Arrays.asList("text/plain", "text/html");
+        List<String> encoding = Arrays.asList("gzip", "compress");
+        List<String> lang = Arrays.asList("en-US", "en-GB", "zh-CN");
+
+        String tmp = Verifier.nondetString();
+    }
+
+    /*
+     * Create an instance of Response using
+     * Response.ResponseBuilder.header(String, Object).build()
+     * verify that correct status code is returned
+     */
+    /** ARG-V: suitable */
+	 public void headerTest() {
+        int status = 200;
+        List<String> type = Arrays.asList("text/plain", "text/html");
+        List<String> encoding = Arrays.asList("gzip", "compress");
+        List<String> lang = Arrays.asList("en-US", "en-GB", "zh-CN");
+
+        String name = "name_1";
+        String value = "value_1";
+        List<String> cookies = null;
+
+        String tmp = Verifier.nondetString();
+        if (tmp.endsWith("false")) {
+            System.out.println("### " + tmp);
+        }
+    }
+
+    /*
+     * Create an instance of Response using
+     * Response.status(int).variant(Variant).build()
+     * verify that correct status code is returned
+     */
+    public void variantTest() {
+        int status = 200;
+        List<String> encoding = Arrays.asList("gzip", "compress");
+        List<String> lang = Arrays.asList("en-US", "en-GB", "zh-CN");
+
+        String tmp = Verifier.nondetString();
+    }
+
+    private static String indent = "    ";
+    private static String newline = Verifier.nondetString();
+
+    public void bufferEntityTest() {
+        try {
+        } catch (Exception e) {
+            // expected
+        }
+    }
+
+    public void getEntityTest() {
+        try {
+        } catch (Exception e) {
+            // expected
+        }
+    }
+
+    public void hasEntityTest() {
+        try {
+        } catch (Exception e) {
+            // expected
+        }
+    }
+
+    // Reproducer for JERSEY-1553
+    public void testVariants() {
+        List<String> encoding = Arrays.asList("gzip", "compress");
+    }
+
+	/** This main was generated by ARG-V */
+	
+	public static void main(String[] args) throws Exception {
+		Main instance = new Main();
+		instance.OkTest5();
+		instance.cloneTest();
+		instance.fromResponseTest();
+		instance.headerTest();
+		instance.variantTest();
+		instance.bufferEntityTest();
+		instance.getEntityTest();
+		instance.hasEntityTest();
+		instance.testVariants();
+	}
+}

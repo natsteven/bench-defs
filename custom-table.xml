@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<table>
+  <result filename="results/spf.*.results.*.xml" />
+
+  <column title="status"/>
+  <column title="cputime"/>
+  <column title="walltime"/>
+
+  <column title="Z3 Time (ms)">Z3 Solving Time:\s*([0-9.]+)</column>
+</table>

@@ -1,0 +1,1314 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solver Benchmark Report</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css" />
+<style>
+    body { font-family: sans-serif; margin: 20px; background-color: #f9f9f9; }
+    table { border-collapse: collapse; width: 100%; background-color: #ffffff; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background-color: #e2e8f0; }
+    a { color: #0066cc; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+    .missing { color: #999; font-style: italic; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h2>Benchmark Solver Results</h2>
+<table id="benchmarkTable" class="display">
+
+<thead><tr>
+<th>bench</th>
+<th>ASTR-time (ms)</th>
+<th>ASTR-calls</th>
+<th>ASTR-error</th>
+<th>SPF-error</th>
+<th>Z3-time (ms)</th>
+<th>Z3-calls</th>
+<th>Z3-error</th>
+<th>z3-status</th>
+<th>astr-status</th>
+<th>spf-astr-cputime (s)</th>
+<th>spf-astr-walltime (s)</th>
+<th>spf-z3-cputime (s)</th>
+<th>spf-z3-walltime (s)</th>
+<th>ASTR Log</th>
+<th>Z3 Log</th>
+<th>Bench</th>
+<th>Source</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>AbstractJsonFunction</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>26</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.64</td>
+<td>0.72</td>
+<td>1.69</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AbstractJsonFunction.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.AbstractJsonFunction.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/blaze-persistence/core.impl.src.main.java.com.blazebit.persistence.impl.function.jsonset/AbstractJsonFunction/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/blaze-persistence/core/impl/src/main/java/com/blazebit/persistence/impl/function/jsonset/AbstractJsonFunction.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>AddExecutionParametersRequest</td>
+<td>194</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>412</td>
+<td>8</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.62</td>
+<td>1.0</td>
+<td>2.26</td>
+<td>1.11</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AddExecutionParametersRequest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.AddExecutionParametersRequest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Qualitis/web.project.src.main.java.com.webank.wedatasphere.qualitis.rule.request/AddExecutionParametersRequest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Qualitis/web/project/src/main/java/com/webank/wedatasphere/qualitis/rule/request/AddExecutionParametersRequest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>BeanShellUtil</td>
+<td>37</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>68</td>
+<td>5</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.76</td>
+<td>0.75</td>
+<td>1.69</td>
+<td>0.69</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BeanShellUtil.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.BeanShellUtil.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/JYso/src.main.java.com.qi4l.JYso.gadgets.utils.beanshell/BeanShellUtil/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/JYso/src/main/java/com/qi4l/JYso/gadgets/utils/beanshell/BeanShellUtil.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>BigIntegerConverter</td>
+<td>34</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>58</td>
+<td>4</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.05</td>
+<td>0.83</td>
+<td>1.91</td>
+<td>0.77</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BigIntegerConverter.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.BigIntegerConverter.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/TLS-Attacker/TLS-Core.src.main.java.de.rub.nds.tlsattacker.core.config.converters/BigIntegerConverter/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/TLS-Attacker/TLS-Core/src/main/java/de/rub/nds/tlsattacker/core/config/converters/BigIntegerConverter.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>BuildCompat</td>
+<td>16</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>26</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.62</td>
+<td>0.71</td>
+<td>1.58</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BuildCompat.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.BuildCompat.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Thanox/android.android_framework.base.src.main.java.github.tornaco.android.thanos.core.compat/BuildCompat/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Thanox/android/android_framework/base/src/main/java/github/tornaco/android/thanos/core/compat/BuildCompat.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>CIDRUtils</td>
+<td>25</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>47</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.83</td>
+<td>0.76</td>
+<td>1.7</td>
+<td>0.75</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CIDRUtils.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.CIDRUtils.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Arduino/arduino-core.src.edazdarevic.commons.net/CIDRUtils/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Arduino/arduino-core/src/edazdarevic/commons/net/CIDRUtils.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>CamundaBpmRunAuthenticationProperties</td>
+<td>21</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.76</td>
+<td>0.73</td>
+<td>1.74</td>
+<td>0.75</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CamundaBpmRunAuthenticationProperties.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.CamundaBpmRunAuthenticationProperties.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/camunda-bpm-platform/distro.run.core.src.main.java.org.camunda.bpm.run.property/CamundaBpmRunAuthenticationProperties/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/camunda-bpm-platform/distro/run/core/src/main/java/org/camunda/bpm/run/property/CamundaBpmRunAuthenticationProperties.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>CleanNodeFormatter</td>
+<td>87</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>147</td>
+<td>8</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.04</td>
+<td>0.84</td>
+<td>1.93</td>
+<td>0.86</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CleanNodeFormatter.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.CleanNodeFormatter.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/leetcode-editor/src.main.java.com.shuzijun.leetcode.plugin.utils.doc/CleanNodeFormatter/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/leetcode-editor/src/main/java/com/shuzijun/leetcode/plugin/utils/doc/CleanNodeFormatter.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ClojureUtil</td>
+<td>40</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>74</td>
+<td>5</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.78</td>
+<td>0.74</td>
+<td>1.7</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ClojureUtil.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ClojureUtil.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/JYso/src.main.java.com.qi4l.JYso.gadgets.utils.clojure/ClojureUtil/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/JYso/src/main/java/com/qi4l/JYso/gadgets/utils/clojure/ClojureUtil.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>Config_1</td>
+<td>21</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.72</td>
+<td>0.72</td>
+<td>1.72</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Config_1.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.Config_1.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/mcaselector/src.main.java.net.querz.mcaselector.config/Config_1/Main.java' target='_blank'>Bench</a></td>
+<td><span class='missing'>No source found</span></td>
+</tr>
+<tr>
+<td>CoreOjClassLoader</td>
+<td>33</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>49</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.74</td>
+<td>0.77</td>
+<td>1.67</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CoreOjClassLoader.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.CoreOjClassLoader.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/AndroidHiddenApiBypass/library.src.main.java.org.lsposed.hiddenapibypass/CoreOjClassLoader/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/AndroidHiddenApiBypass/library/src/main/java/org/lsposed/hiddenapibypass/CoreOjClassLoader.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DailyRotateLogStore</td>
+<td>22</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>34</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.88</td>
+<td>0.76</td>
+<td>1.73</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DailyRotateLogStore.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DailyRotateLogStore.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.log/DailyRotateLogStore/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/dble/src/main/java/com/actiontech/dble/log/DailyRotateLogStore.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DataFilePaths</td>
+<td>70</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>71</td>
+<td>4</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.92</td>
+<td>0.79</td>
+<td>1.77</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DataFilePaths.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DataFilePaths.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.util/DataFilePaths/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CoreNLP/src/edu/stanford/nlp/util/DataFilePaths.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DatabaseUrlReplacer</td>
+<td>276</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>1127</td>
+<td>9</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>2.75</td>
+<td>1.09</td>
+<td>2.75</td>
+<td>1.81</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DatabaseUrlReplacer.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DatabaseUrlReplacer.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/datavines/datavines-engine.datavines-engine-plugins.datavines-engine-flink.datavines-engine-flink-connector-jdbc.src.main.java.io.datavines.engine.flink.jdbc.utils/DatabaseUrlReplacer/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/datavines/datavines-engine/datavines-engine-plugins/datavines-engine-flink/datavines-engine-flink-connector-jdbc/src/main/java/io/datavines/engine/flink/jdbc/utils/DatabaseUrlReplacer.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DesyncBox</td>
+<td>188</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>62</td>
+<td>3</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.4</td>
+<td>0.93</td>
+<td>1.78</td>
+<td>0.78</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DesyncBox.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DesyncBox.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/http-request-smuggler/src.burp/DesyncBox/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/http-request-smuggler/src/burp/DesyncBox.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DolphinSchedulerTokenManager_1_X</td>
+<td>23</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>47</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.86</td>
+<td>0.78</td>
+<td>1.78</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DolphinSchedulerTokenManager_1_X.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DolphinSchedulerTokenManager_1_X.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/DataSphereStudio/dss-appconn.appconns.dss-dolphinscheduler-appconn.src.main.java.com.webank.wedatasphere.dss.appconn.dolphinscheduler.sso/DolphinSchedulerTokenManager_1_X/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/DataSphereStudio/dss-appconn/appconns/dss-dolphinscheduler-appconn/src/main/java/com/webank/wedatasphere/dss/appconn/dolphinscheduler/sso/DolphinSchedulerTokenManager_1_X.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>DomXPathNamespaceResolver</td>
+<td>30</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>47</td>
+<td>3</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.73</td>
+<td>0.76</td>
+<td>1.71</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DomXPathNamespaceResolver.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.DomXPathNamespaceResolver.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/camunda-bpm-platform/spin.dataformat-xml-dom.src.main.java.org.camunda.spin.impl.xml.dom.query/DomXPathNamespaceResolver/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/camunda-bpm-platform/spin/dataformat-xml-dom/src/main/java/org/camunda/spin/impl/xml/dom/query/DomXPathNamespaceResolver.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ElideStandaloneExportTest</td>
+<td>316</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>256</td>
+<td>24</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>3.0</td>
+<td>1.1</td>
+<td>2.21</td>
+<td>0.94</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ElideStandaloneExportTest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ElideStandaloneExportTest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/elide/elide-standalone.src.test.java.example/ElideStandaloneExportTest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/elide/elide-standalone/src/test/java/example/ElideStandaloneExportTest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ExtensibilityTest</td>
+<td>204</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>186</td>
+<td>14</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.55</td>
+<td>0.99</td>
+<td>2.16</td>
+<td>0.91</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ExtensibilityTest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ExtensibilityTest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/hippo4j/infra.common.src.test.java.cn.hippo4j.common.toolkit/ExtensibilityTest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/hippo4j/infra/common/src/test/java/cn/hippo4j/common/toolkit/ExtensibilityTest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ExternalProcessOutputParser</td>
+<td>16</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>53</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.84</td>
+<td>0.77</td>
+<td>1.79</td>
+<td>0.77</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ExternalProcessOutputParser.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ExternalProcessOutputParser.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Arduino/arduino-core.src.cc.arduino.i18n/ExternalProcessOutputParser/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Arduino/arduino-core/src/cc/arduino/i18n/ExternalProcessOutputParser.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ExtractorVerbalVBNZero</td>
+<td>37</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>70</td>
+<td>6</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.83</td>
+<td>0.77</td>
+<td>1.76</td>
+<td>0.75</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ExtractorVerbalVBNZero.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ExtractorVerbalVBNZero.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.tagger.maxent/ExtractorVerbalVBNZero/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CoreNLP/src/edu/stanford/nlp/tagger/maxent/ExtractorVerbalVBNZero.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>FFmpegParser</td>
+<td>57</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>2</td>
+<td>0</td>
+<td>OUT OF MEMORY</td>
+<td>true</td>
+<td>1.86</td>
+<td>0.78</td>
+<td>27.7</td>
+<td>26.8</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FFmpegParser.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.FFmpegParser.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/BilibiliDown/src.nicelee.bilibili.parsers.impl/FFmpegParser/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/BilibiliDown/src/nicelee/bilibili/parsers/impl/FFmpegParser.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>FSFunction</td>
+<td>24</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.72</td>
+<td>0.72</td>
+<td>1.62</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FSFunction.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.FSFunction.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/OpenPDF/openpdf-html.src.main.java.org.openpdf.css.parser/FSFunction/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/OpenPDF/openpdf-html/src/main/java/org/openpdf/css/parser/FSFunction.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>FileUtils</td>
+<td>28</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>40</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.89</td>
+<td>0.78</td>
+<td>1.77</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FileUtils.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.FileUtils.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Sermant/sermant-agentcore.sermant-agentcore-core.src.main.java.io.sermant.core.utils/FileUtils/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Sermant/sermant-agentcore/sermant-agentcore-core/src/main/java/io/sermant/core/utils/FileUtils.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>FreeMarkerScriptEngineFactory</td>
+<td>254</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>85</td>
+<td>7</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.58</td>
+<td>1.01</td>
+<td>1.88</td>
+<td>0.78</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FreeMarkerScriptEngineFactory.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.FreeMarkerScriptEngineFactory.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/camunda-bpm-platform/freemarker-template-engine.src.main.java.org.camunda.templateengines/FreeMarkerScriptEngineFactory/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/camunda-bpm-platform/freemarker-template-engine/src/main/java/org/camunda/templateengines/FreeMarkerScriptEngineFactory.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>GoogleCloudExtensionModule</td>
+<td>28</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.73</td>
+<td>0.74</td>
+<td>1.61</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.GoogleCloudExtensionModule.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.GoogleCloudExtensionModule.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/data-transfer-project/extensions.cloud.portability-cloud-google.src.main.java.org.datatransferproject.cloud.google/GoogleCloudExtensionModule/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/data-transfer-project/extensions/cloud/portability-cloud-google/src/main/java/org/datatransferproject/cloud/google/GoogleCloudExtensionModule.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>HTMLEditorUtils</td>
+<td>302</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td>221</td>
+<td>24</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.9</td>
+<td>1.07</td>
+<td>1.9</td>
+<td>0.88</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HTMLEditorUtils.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.HTMLEditorUtils.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.extension.frontend.client.widget.htmleditor/HTMLEditorUtils/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/document-management-system/src/main/java/com/openkm/extension/frontend/client/widget/htmleditor/HTMLEditorUtils.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>HtpasswdFileUserAuthenticator</td>
+<td>86</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>98</td>
+<td>5</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>2.11</td>
+<td>0.84</td>
+<td>1.83</td>
+<td>0.79</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HtpasswdFileUserAuthenticator.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.HtpasswdFileUserAuthenticator.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/drill/exec.java-exec.src.main.java.org.apache.drill.exec.rpc.user.security/HtpasswdFileUserAuthenticator/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/drill/exec/java-exec/src/main/java/org/apache/drill/exec/rpc/user/security/HtpasswdFileUserAuthenticator.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>HttpRouter</td>
+<td>29</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>55</td>
+<td>4</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.68</td>
+<td>0.71</td>
+<td>1.71</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HttpRouter.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.HttpRouter.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Sermant/sermant-agentcore.sermant-agentcore-implement.src.main.java.io.sermant.implement.service.httpserver.common/HttpRouter/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Sermant/sermant-agentcore/sermant-agentcore-implement/src/main/java/io/sermant/implement/service/httpserver/common/HttpRouter.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>IdentifiersRegister</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>25</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.67</td>
+<td>0.7</td>
+<td>1.6</td>
+<td>0.69</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.IdentifiersRegister.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.IdentifiersRegister.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/java/structurizr-dsl.src.main.java.com.structurizr.dsl/IdentifiersRegister/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/java/structurizr-dsl/src/main/java/com/structurizr/dsl/IdentifiersRegister.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ImageKit</td>
+<td>22</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>44</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.22</td>
+<td>0.87</td>
+<td>2.19</td>
+<td>0.84</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ImageKit.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ImageKit.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.kit/ImageKit/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/jfinal/src/main/java/com/jfinal/kit/ImageKit.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ImageName</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>33</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.83</td>
+<td>0.74</td>
+<td>1.62</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ImageName.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ImageName.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/docker-maven-plugin/src.main.java.io.fabric8.maven.docker.util/ImageName/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/docker-maven-plugin/src/main/java/io/fabric8/maven/docker/util/ImageName.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ImpersonationUtil</td>
+<td>23</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>26</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.75</td>
+<td>0.72</td>
+<td>1.53</td>
+<td>0.68</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ImpersonationUtil.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ImpersonationUtil.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/drill/exec.java-exec.src.main.java.org.apache.drill.exec.util/ImpersonationUtil/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/drill/exec/java-exec/src/main/java/org/apache/drill/exec/util/ImpersonationUtil.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ItemFuncGetFormat</td>
+<td>168</td>
+<td>36</td>
+<td>0</td>
+<td>0</td>
+<td>344</td>
+<td>36</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.67</td>
+<td>1.06</td>
+<td>2.25</td>
+<td>1.04</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ItemFuncGetFormat.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ItemFuncGetFormat.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.plan.common.item.function.timefunc/ItemFuncGetFormat/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/dble/src/main/java/com/actiontech/dble/plan/common/item/function/timefunc/ItemFuncGetFormat.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>Jianpian</td>
+<td>54</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>61</td>
+<td>4</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>2.11</td>
+<td>0.84</td>
+<td>1.87</td>
+<td>0.75</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Jianpian.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.Jianpian.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.spider/Jianpian/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CatVodSpider/app/src/main/java/com/github/catvod/spider/Jianpian.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>KBPAnnotatorBenchmark</td>
+<td>349</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>150</td>
+<td>14</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>3.08</td>
+<td>1.19</td>
+<td>1.95</td>
+<td>0.82</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.KBPAnnotatorBenchmark.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.KBPAnnotatorBenchmark.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CoreNLP/itest.src.edu.stanford.nlp.pipeline/KBPAnnotatorBenchmark/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CoreNLP/itest/src/edu/stanford/nlp/pipeline/KBPAnnotatorBenchmark.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>KeycloakExportProvider</td>
+<td>74</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>47</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.0</td>
+<td>0.83</td>
+<td>1.64</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.KeycloakExportProvider.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.KeycloakExportProvider.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/keycloak-config-cli/src.main.java.de.adorsys.keycloak.config.provider/KeycloakExportProvider/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/keycloak-config-cli/src/main/java/de/adorsys/keycloak/config/provider/KeycloakExportProvider.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>KeycloakImportProvider</td>
+<td>81</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>47</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.9</td>
+<td>0.81</td>
+<td>1.66</td>
+<td>0.71</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.KeycloakImportProvider.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.KeycloakImportProvider.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/keycloak-config-cli/src.main.java.de.adorsys.keycloak.config.provider/KeycloakImportProvider/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/keycloak-config-cli/src/main/java/de/adorsys/keycloak/config/provider/KeycloakImportProvider.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>MWTAnnotator</td>
+<td>17</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>37</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.89</td>
+<td>0.8</td>
+<td>1.65</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MWTAnnotator.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.MWTAnnotator.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.pipeline/MWTAnnotator/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CoreNLP/src/edu/stanford/nlp/pipeline/MWTAnnotator.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ModulePlan</td>
+<td>49</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>58</td>
+<td>4</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.79</td>
+<td>0.75</td>
+<td>1.67</td>
+<td>0.7</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ModulePlan.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ModulePlan.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/SecurityShepherd/src.main.java.utils/ModulePlan/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/SecurityShepherd/src/main/java/utils/ModulePlan.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>NewMybatisProcessor</td>
+<td>88</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>164</td>
+<td>8</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.04</td>
+<td>0.81</td>
+<td>1.72</td>
+<td>0.8</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NewMybatisProcessor.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.NewMybatisProcessor.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/MoonBox/moonbox-agent.moonbox-java-agent.moonbox-plugins.repeater.mybatis-plugin.src.main.java.com.alibaba.jvm.sandbox.repeater.plugin.mybatis/NewMybatisProcessor/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/MoonBox/moonbox-agent/moonbox-java-agent/moonbox-plugins/repeater/mybatis-plugin/src/main/java/com/alibaba/jvm/sandbox/repeater/plugin/mybatis/NewMybatisProcessor.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>OracleDbmsDialect</td>
+<td>23</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>38</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.69</td>
+<td>0.73</td>
+<td>1.73</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.OracleDbmsDialect.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.OracleDbmsDialect.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/blaze-persistence/core.impl.src.main.java.com.blazebit.persistence.impl.dialect/OracleDbmsDialect/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/blaze-persistence/core/impl/src/main/java/com/blazebit/persistence/impl/dialect/OracleDbmsDialect.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>Output</td>
+<td>35</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>43</td>
+<td>3</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.77</td>
+<td>0.77</td>
+<td>1.79</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Output.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.Output.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/dexcount-gradle-plugin/src.main.java.com.android.dexdeps/Output/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/dexcount-gradle-plugin/src/main/java/com/android/dexdeps/Output.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PDFFontEncoding</td>
+<td>240</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>73</td>
+<td>6</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.54</td>
+<td>0.98</td>
+<td>1.65</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PDFFontEncoding.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PDFFontEncoding.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/OpenPDF/openpdf-renderer.src.main.java.org.openpdf.renderer.font/PDFFontEncoding/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/OpenPDF/openpdf-renderer/src/main/java/org/openpdf/renderer/font/PDFFontEncoding.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PathUtil</td>
+<td>2398</td>
+<td>126</td>
+<td>0</td>
+<td>0</td>
+<td>1970</td>
+<td>126</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>10.13</td>
+<td>3.47</td>
+<td>4.34</td>
+<td>2.82</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PathUtil.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PathUtil.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/forest/forest-examples.example-solon.src.main.java.com.dtflys.forest.example.utils/PathUtil/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/forest/forest-examples/example-solon/src/main/java/com/dtflys/forest/example/utils/PathUtil.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PathUtil_1</td>
+<td>2300</td>
+<td>126</td>
+<td>0</td>
+<td>0</td>
+<td>2076</td>
+<td>126</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>9.79</td>
+<td>3.39</td>
+<td>4.37</td>
+<td>2.91</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PathUtil_1.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PathUtil_1.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/forest/forest-examples.example-springboot.src.main.java.com.dtflys.forest.example.utils/PathUtil_1/Main.java' target='_blank'>Bench</a></td>
+<td><span class='missing'>No source found</span></td>
+</tr>
+<tr>
+<td>PathUtil_2</td>
+<td>2599</td>
+<td>126</td>
+<td>0</td>
+<td>0</td>
+<td>2120</td>
+<td>126</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>10.43</td>
+<td>3.65</td>
+<td>4.47</td>
+<td>2.94</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PathUtil_2.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PathUtil_2.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/forest/forest-examples.example-springboot3.src.main.java.com.dtflys.forest.forestspringboot3example.utils/PathUtil_2/Main.java' target='_blank'>Bench</a></td>
+<td><span class='missing'>No source found</span></td>
+</tr>
+<tr>
+<td>PermissionsFragment</td>
+<td>26</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.83</td>
+<td>0.87</td>
+<td>1.66</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PermissionsFragment.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PermissionsFragment.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/APK-Explorer-Editor/app.src.main.java.com.apk.editor.fragments/PermissionsFragment/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/APK-Explorer-Editor/app/src/main/java/com/apk/editor/fragments/PermissionsFragment.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PineConfig</td>
+<td>20</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>45</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.62</td>
+<td>0.73</td>
+<td>1.74</td>
+<td>0.77</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PineConfig.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PineConfig.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/pine/core.src.main.java.top.canyie.pine/PineConfig/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/pine/core/src/main/java/top/canyie/pine/PineConfig.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PluginManifestParser</td>
+<td>30</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>72</td>
+<td>4</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.72</td>
+<td>0.73</td>
+<td>1.69</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PluginManifestParser.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PluginManifestParser.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Android-Plugin-Framework/FairyPlugin.src.main.java.com.limpoxe.fairy.manager/PluginManifestParser/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Android-Plugin-Framework/FairyPlugin/src/main/java/com/limpoxe/fairy/manager/PluginManifestParser.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ProtocolRigidityTest</td>
+<td>43</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.8</td>
+<td>0.73</td>
+<td>1.78</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ProtocolRigidityTest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ProtocolRigidityTest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/hippo4j/infra.common.src.test.java.cn.hippo4j.common.toolkit/ProtocolRigidityTest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/hippo4j/infra/common/src/test/java/cn/hippo4j/common/toolkit/ProtocolRigidityTest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>PunctEquivalenceClasser</td>
+<td>33</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>60</td>
+<td>3</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.81</td>
+<td>0.75</td>
+<td>1.64</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PunctEquivalenceClasser.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.PunctEquivalenceClasser.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.parser.tools/PunctEquivalenceClasser/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CoreNLP/src/edu/stanford/nlp/parser/tools/PunctEquivalenceClasser.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ReloadStatus</td>
+<td>51</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>68</td>
+<td>6</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.79</td>
+<td>0.74</td>
+<td>1.7</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ReloadStatus.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ReloadStatus.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.meta/ReloadStatus/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/dble/src/main/java/com/actiontech/dble/meta/ReloadStatus.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ResourcesExtractor</td>
+<td>21</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>41</td>
+<td>2</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.71</td>
+<td>0.71</td>
+<td>1.66</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ResourcesExtractor.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ResourcesExtractor.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/freemarker/freemarker-test-utils.src.main.java.freemarker.test/ResourcesExtractor/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/freemarker/freemarker-test-utils/src/main/java/freemarker/test/ResourcesExtractor.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>Samba</td>
+<td>25</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>33</td>
+<td>2</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.8</td>
+<td>0.75</td>
+<td>1.64</td>
+<td>0.69</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Samba.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.Samba.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.spider/Samba/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CatVodSpider/app/src/main/java/com/github/catvod/spider/Samba.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ScoreboardStatus</td>
+<td>122</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>73</td>
+<td>6</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>2.13</td>
+<td>0.83</td>
+<td>1.73</td>
+<td>0.73</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ScoreboardStatus.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ScoreboardStatus.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/SecurityShepherd/src.main.java.utils/ScoreboardStatus/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/SecurityShepherd/src/main/java/utils/ScoreboardStatus.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ScriptPidUtilsTest</td>
+<td>266</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>68</td>
+<td>6</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>2.74</td>
+<td>1.1</td>
+<td>1.88</td>
+<td>0.76</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ScriptPidUtilsTest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ScriptPidUtilsTest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Saturn/saturn-core.src.test.java.com.vip.saturn.job.utils/ScriptPidUtilsTest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Saturn/saturn-core/src/test/java/com/vip/saturn/job/utils/ScriptPidUtilsTest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>ShareOpenActivity</td>
+<td>64</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>98</td>
+<td>6</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.9</td>
+<td>0.79</td>
+<td>1.72</td>
+<td>0.74</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ShareOpenActivity.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.ShareOpenActivity.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Kore/app.src.main.java.org.xbmc.kore/ShareOpenActivity/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Kore/app/src/main/java/org/xbmc/kore/ShareOpenActivity.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>SikuliIDEPopUpMenu</td>
+<td>53</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>67</td>
+<td>5</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.92</td>
+<td>0.78</td>
+<td>1.84</td>
+<td>0.77</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SikuliIDEPopUpMenu.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.SikuliIDEPopUpMenu.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/SikuliX1/IDE.src.main.java.org.sikuli.ide/SikuliIDEPopUpMenu/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/SikuliX1/IDE/src/main/java/org/sikuli/ide/SikuliIDEPopUpMenu.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>SpringBootVFS</td>
+<td>20</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>36</td>
+<td>2</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>1.73</td>
+<td>0.74</td>
+<td>1.61</td>
+<td>0.68</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SpringBootVFS.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.SpringBootVFS.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Mapper/spring-boot-starter.mapper-spring-boot-autoconfigure.src.main.java.tk.mybatis.mapper.autoconfigure/SpringBootVFS/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Mapper/spring-boot-starter/mapper-spring-boot-autoconfigure/src/main/java/tk/mybatis/mapper/autoconfigure/SpringBootVFS.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>TagRouterTest</td>
+<td>454</td>
+<td>118</td>
+<td>0</td>
+<td>0</td>
+<td>934</td>
+<td>118</td>
+<td>0</td>
+<td>true</td>
+<td>true</td>
+<td>5.16</td>
+<td>1.76</td>
+<td>4.28</td>
+<td>1.97</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TagRouterTest.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.TagRouterTest.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/Sermant/sermant-integration-tests.spring-test.spring-integration-test.src.test.java.io.sermant.integration.router/TagRouterTest/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/Sermant/sermant-integration-tests/spring-test/spring-integration-test/src/test/java/io/sermant/integration/router/TagRouterTest.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>Tooltip</td>
+<td>22</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>25</td>
+<td>1</td>
+<td>0</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>1.71</td>
+<td>0.76</td>
+<td>1.64</td>
+<td>0.69</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Tooltip.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.Tooltip.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/delverengine/core.src.main.java.com.interrupt.dungeoneer.ui/Tooltip/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/delverengine/core/src/main/java/com/interrupt/dungeoneer/ui/Tooltip.java' target='_blank'>Source</a></td>
+</tr>
+<tr>
+<td>WebDAV</td>
+<td>29</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>45</td>
+<td>3</td>
+<td>0</td>
+<td>false</td>
+<td>false</td>
+<td>1.97</td>
+<td>0.8</td>
+<td>1.69</td>
+<td>0.72</td>
+<td><a href='results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.WebDAV.yml.log' target='_blank'>astr Log</a></td>
+<td><a href='results-verified/spf-z3/logfiles/SV-COMP26_no-runtime-exception.WebDAV.yml.log' target='_blank'>z3 Log</a></td>
+<td><a href='sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.spider/WebDAV/Main.java' target='_blank'>Bench</a></td>
+<td><a href='/home/nat/Repos/good-programs/CatVodSpider/app/src/main/java/com/github/catvod/spider/WebDAV.java' target='_blank'>Source</a></td>
+</tr>
+</tbody></table>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#benchmarkTable').DataTable({
+            "pageLength": 50,
+            "lengthMenu": [10, 25, 50, 100, -1]
+        });
+    });
+</script>
+</body></html>

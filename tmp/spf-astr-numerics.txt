@@ -1,0 +1,1144 @@
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AgentRollupIds.yml.log
+sv-benchmarks/java/argv/glowroot/central.src.main.java.org.glowroot.central.repo/AgentRollupIds/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: LastIndexOf2_1_ == CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AnimatedPhoneNumberEditText_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.ui.Components/AnimatedPhoneNumberEditText_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool10 == CONST_0 &&
+CONST_0 >= int7 &&
+CONST_6 >= Length_0_ &&
+CONST_5 < Length_0_ &&
+CONST_4 < Length_0_ &&
+CONST_3 < Length_0_ &&
+CONST_2 < Length_0_ &&
+CONST_1 < Length_0_ &&
+CONST_0 < Length_0_ &&
+bool4 != CONST_0 &&
+bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AnimatedPhoneNumberEditText.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.ui.Components/AnimatedPhoneNumberEditText/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool10 == CONST_0 &&
+CONST_0 >= int7 &&
+CONST_6 >= Length_0_ &&
+CONST_5 < Length_0_ &&
+CONST_4 < Length_0_ &&
+CONST_3 < Length_0_ &&
+CONST_2 < Length_0_ &&
+CONST_1 < Length_0_ &&
+CONST_0 < Length_0_ &&
+bool4 != CONST_0 &&
+bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AntFarmRpcCall.yml.log
+sv-benchmarks/java/argv/Sesame/app.src.main.java.io.github.lazyimmortal.sesame.model.task.antFarm/AntFarmRpcCall/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (Length_1_ / CONST_2) &&
+bool70 != CONST_0 &&
+Length_0_ >= (Length_0_ / CONST_2)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ApiDocsController.yml.log
+sv-benchmarks/java/argv/elide/elide-spring.elide-spring-boot-autoconfigure.src.main.java.com.yahoo.elide.spring.controllers/ApiDocsController/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.APKExplorer.yml.log
+sv-benchmarks/java/argv/APK-Explorer-Editor/app.src.main.java.com.apk.editor.utils/APKExplorer/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: lastIndexOfChar_0_ < CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AppHelper.yml.log
+sv-benchmarks/java/argv/customiuizer/app.src.main.java.name.monwf.customiuizer.utils/AppHelper/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AppInstanceConstants.yml.log
+sv-benchmarks/java/argv/DataSphereStudio/dss-appconn.dss-appconn-manager.dss-appconn-manager-core.src.main.java.com.webank.wedatasphere.dss.appconn.manager.utils/AppInstanceConstants/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ArgLineParser.yml.log
+sv-benchmarks/java/argv/pitest/pitest-entry.src.main.java.org.pitest.process/ArgLineParser/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ArraySliceOperation.yml.log
+sv-benchmarks/java/argv/JsonPath/json-path.src.main.java.com.jayway.jsonpath.internal.path/ArraySliceOperation/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int1 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ASMUtil_1.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.utils/ASMUtil_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (lastIndexOfChar_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ASMUtil.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.dbg.utils/ASMUtil/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (lastIndexOfChar_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AssertDeleteStatement.yml.log
+sv-benchmarks/java/argv/blaze-persistence/testsuite-base.assertion.src.main.java.com.blazebit.persistence.testsuite.base.jpa.assertion/AssertDeleteStatement/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AssertSelectStatement.yml.log
+sv-benchmarks/java/argv/blaze-persistence/testsuite-base.assertion.src.main.java.com.blazebit.persistence.testsuite.base.jpa.assertion/AssertSelectStatement/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (IndexOf_0_ + CONST_2)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AssetUtil.yml.log
+sv-benchmarks/java/argv/cordova-plugin-local-notifications/src.android.util/AssetUtil/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int2 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.AudioDecoder.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.messenger.video/AudioDecoder/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: CONST_0 < int8
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BaseHandler.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.server.handler.base/BaseHandler/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: IndexOf2_2_ == CONST_-1 &&
+Length_0_ != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BashUtils.yml.log
+sv-benchmarks/java/argv/Qualitis/web.common.src.main.java.com.webank.wedatasphere.qualitis.util/BashUtils/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_1_ + IndexOf_0_)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:356)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Bili.yml.log
+sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.spider/Bili/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool6 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.BindParamsParser.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.util/BindParamsParser/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int4 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Bitmap.yml.log
+sv-benchmarks/java/argv/delverengine/core.src.main.java.com.interrupt.dungeoneer.gfx/Bitmap/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Browser_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.messenger.browser/Browser_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Browser.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.messenger.browser/Browser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CallingCodeInfo_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.PhoneFormat/CallingCodeInfo_1/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CallingCodeInfo.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.PhoneFormat/CallingCodeInfo/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CategoryWordTag.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.ling/CategoryWordTag/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CCursorKeyBehavior.yml.log
+sv-benchmarks/java/argv/bindiff/java.zylib.src.main.java.com.google.security.zynamics.zylib.gui.zygraph.realizers.KeyBehaviours/CCursorKeyBehavior/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int0 > CONST_0 &&
+int0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CDelKeyBehavior.yml.log
+sv-benchmarks/java/argv/bindiff/java.zylib.src.main.java.com.google.security.zynamics.zylib.gui.zygraph.realizers.KeyBehaviours/CDelKeyBehavior/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool25 != CONST_0 &&
+Length_0_ >= (int23 + CONST_1) &&
+Length_0_ >= int23 &&
+int23 < Length_0_ &&
+bool21 != CONST_0 &&
+bool20 == CONST_0 &&
+bool19 != CONST_0 &&
+bool18 == CONST_0 &&
+bool14 != CONST_0 &&
+bool9 != CONST_0 &&
+bool5 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Cell.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-core.src.main.java.org.openpdf.text/Cell/Main.java
+(declare-const string8 String)java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ChangeUsernameActivity.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.ui/ChangeUsernameActivity/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 == CONST_0 &&
+bool11 != CONST_0 &&
+bool7 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Chromium.yml.log
+sv-benchmarks/java/argv/autopsy/RecentActivity.src.org.sleuthkit.autopsy.recentactivity/Chromium/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CommandPattern.yml.log
+sv-benchmarks/java/argv/coffee-gb/core.src.main.java.eu.rekawek.coffeegb.core.debug/CommandPattern/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CommentManager.yml.log
+sv-benchmarks/java/argv/Thanox/android.app.src.main.java.github.tornaco.thanos.android.module.profile.codeditor.plugin/CommentManager/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int4 != int5
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CompactMediaTypeIdConverter.yml.log
+sv-benchmarks/java/argv/jjwt/impl.src.main.java.io.jsonwebtoken.impl.lang/CompactMediaTypeIdConverter/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ComparisonCompactor.yml.log
+sv-benchmarks/java/argv/junit4/src.main.java.junit.framework/ComparisonCompactor/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ > Length_1_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CompoundEmoji.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.messenger/CompoundEmoji/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_2)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Config.yml.log
+sv-benchmarks/java/argv/leetcode-editor/src.main.java.com.shuzijun.leetcode.plugin.model/Config/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool21 != CONST_0 &&
+bool19 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CoNLLUDocumentWriter.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.trees.ud/CoNLLUDocumentWriter/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Converter.yml.log
+sv-benchmarks/java/argv/californium/cf-pubsub.src.main.java.org.eclipse.californium.pubsub/Converter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= lastIndexOfChar_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CoreTextContentNodeRenderer.yml.log
+sv-benchmarks/java/argv/commonmark-java/commonmark.src.main.java.org.commonmark.renderer.text/CoreTextContentNodeRenderer/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CReturnKeyBehavior.yml.log
+sv-benchmarks/java/argv/bindiff/java.zylib.src.main.java.com.google.security.zynamics.zylib.gui.zygraph.realizers.KeyBehaviours/CReturnKeyBehavior/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool10 != CONST_0 &&
+bool9 != CONST_0 &&
+bool0 == CONST_0 &&
+bool4 != CONST_0 &&
+bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CronTabUtils.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.util/CronTabUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.CTemplateNumberFormat.yml.log
+sv-benchmarks/java/argv/freemarker/freemarker-core.src.main.java.freemarker.core/CTemplateNumberFormat/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DbleHintParser.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/DbleHintParser/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int1 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DescriptorUtils.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.analyze.frame/DescriptorUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (LastIndexOf_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DialogueOverlay.yml.log
+sv-benchmarks/java/argv/delverengine/core.src.main.java.com.interrupt.dungeoneer.overlays/DialogueOverlay/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DocumentUtils.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.util/DocumentUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool1 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DomStringUtil.yml.log
+sv-benchmarks/java/argv/freemarker/freemarker-core.src.main.java.freemarker.ext.dom/DomStringUtil/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DrillAssert.yml.log
+sv-benchmarks/java/argv/drill/common.src.test.java.org.apache.drill.test/DrillAssert/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DruidPlugin.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.plugin.druid/DruidPlugin/Main.java
+(assert (not (str.prefixof "jdbc:db2" string18)))java.lang.RuntimeException: Unhandled Numeric Constraint: bool20 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.DSelectColumnsParser.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.util/DSelectColumnsParser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int3 < int1 &&
+int3 <= int1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Emitter.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.com.github.rjeschke.txtmark/Emitter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int5 != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.EmojiManager.yml.log
+sv-benchmarks/java/argv/emoji-java/src.main.java.com.vdurmont.emoji/EmojiManager/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.EqlAdapter.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.grammer/EqlAdapter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (Length_1_ - CONST_1) &&
+CharAt(CONST_0)_0_ == CONST_40
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.EscapeUtils_1.yml.log
+sv-benchmarks/java/argv/DevUtils/lib.DevJava.src.main.java.dev.utils.common.encrypt/EscapeUtils_1/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.EscapeUtils.yml.log
+sv-benchmarks/java/argv/DevUtils/lib.DevApp.src.main.java.dev.utils.common.encrypt/EscapeUtils/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ExtendedScrollTable.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.frontend.client.widget.filebrowser/ExtendedScrollTable/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool7 != CONST_0 &&
+IndexOf_1_ >= CONST_0 &&
+IndexOf_0_ >= CONST_0 &&
+bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ExtractIE.yml.log
+sv-benchmarks/java/argv/autopsy/RecentActivity.src.org.sleuthkit.autopsy.recentactivity/ExtractIE/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 != CONST_0 &&
+bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FeedUtils.yml.log
+sv-benchmarks/java/argv/libretorrent/app.src.main.java.com.ernieyu.feedparser/FeedUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: lastIndexOfChar_0_ != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FileLogger.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.util/FileLogger/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Firefox.yml.log
+sv-benchmarks/java/argv/autopsy/RecentActivity.src.org.sleuthkit.autopsy.recentactivity/Firefox/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool18 != CONST_0 &&
+bool15 != CONST_0 &&
+bool13 != CONST_0 &&
+bool11 != CONST_0 &&
+bool9 != CONST_0 &&
+bool8 != CONST_0 &&
+bool6 != CONST_0 &&
+bool4 != CONST_0 &&
+bool1 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FlowClassUtils.yml.log
+sv-benchmarks/java/argv/compileflow/compileflow-core.src.main.java.com.alibaba.compileflow.engine.core.builder.generator.util/FlowClassUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (lastIndexOfChar_0_ + CONST_1) &&
+Length_1_ >= lastIndexOfChar_0_ &&
+lastIndexOfChar_0_ > CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FLVDownloader.yml.log
+sv-benchmarks/java/argv/BilibiliDown/src.nicelee.bilibili.downloaders.impl/FLVDownloader/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool6 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FolderTree.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.frontend.client.widget.foldertree/FolderTree/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.FontUtil.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-html.src.main.java.org.openpdf.util/FontUtil/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (IndexOf_0_ + CONST_7)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.GeneralClusterLogic.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.cluster.logic/GeneralClusterLogic/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.GenericType.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.org.jetbrains.java.decompiler.struct.gen.generics/GenericType/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.GraphqlController.yml.log
+sv-benchmarks/java/argv/elide/elide-spring.elide-spring-boot-autoconfigure.src.main.java.com.yahoo.elide.spring.controllers/GraphqlController/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.GrayscaleRocketmqTest.yml.log
+sv-benchmarks/java/argv/Sermant/sermant-integration-tests.mq-grayscale-rocketmq-test.grayscale-rocketmq-integration-test.src.test.java.io.sermant.demo.grayscale.rocketmq.integration/GrayscaleRocketmqTest/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool234 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HiveSqlDialect.yml.log
+sv-benchmarks/java/argv/datavines/datavines-engine.datavines-engine-plugins.datavines-engine-spark.datavines-engine-spark-api.src.main.java.io.datavines.engine.spark.api.dialect/HiveSqlDialect/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (IndexOf_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HostFragmentManualConfiguration.yml.log
+sv-benchmarks/java/argv/Kore/app.src.main.java.org.xbmc.kore.ui.sections.hosts/HostFragmentManualConfiguration/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int1 <= CONST_65535 &&
+int1 > CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HtmlEncoder.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-core.src.main.java.org.openpdf.text.html/HtmlEncoder/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HTMLParser.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.extractor/HTMLParser/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HttpGetFileTask.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.ui.web/HttpGetFileTask/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HttpRequest.yml.log
+sv-benchmarks/java/argv/http-kit/src.java.org.httpkit.server/HttpRequest/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: IndexOf_0_ == CONST_-1 &&
+bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.HttpServerHandler.yml.log
+sv-benchmarks/java/argv/glowroot/ui.src.main.java.org.glowroot.ui/HttpServerHandler/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ImageMapUtils.yml.log
+sv-benchmarks/java/argv/jfreechart/src.main.java.org.jfree.chart.imagemap/ImageMapUtils/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Include.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.template.stat.ast/Include/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: lastIndexOfChar_0_ != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.InetAddresses.yml.log
+sv-benchmarks/java/argv/jersey/core-common.src.main.java.org.glassfish.jersey.internal.guava/InetAddresses/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.InfoObj.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.shell.analyzer.model/InfoObj/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Info.yml.log
+sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.js.bean/Info/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.InlineBox.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-html.src.main.java.org.openpdf.render/InlineBox/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool12 != CONST_0 &&
+bool13 == CONST_0 &&
+bool15 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.InsnText.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.analyze.cfg/InsnText/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (LastIndexOf_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ItemFuncUnhex.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.plan.common.item.function.strfunc/ItemFuncUnhex/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: [B@1de_length == (Length_0_ / CONST_2) &&
+(Length_0_ / CONST_2) >= CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Jable.yml.log
+sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.spider/Jable/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.JarUtil.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.utils/JarUtil/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.JavaScanner.yml.log
+sv-benchmarks/java/argv/Thanox/android.annotation_processors.xposed_hook_compiler.src.main.java.github.tornaco.permission.compiler/JavaScanner/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int2 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.JavaTemplateDateFormatFactory.yml.log
+sv-benchmarks/java/argv/freemarker/freemarker-core.src.main.java.freemarker.core/JavaTemplateDateFormatFactory/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.JsonApiController.yml.log
+sv-benchmarks/java/argv/elide/elide-spring.elide-spring-boot-autoconfigure.src.main.java.com.yahoo.elide.spring.controllers/JsonApiController/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.KeywordSearchUtil.yml.log
+sv-benchmarks/java/argv/autopsy/KeywordSearch.src.org.sleuthkit.autopsy.keywordsearch/KeywordSearchUtil/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.LightCache_1.yml.log
+sv-benchmarks/java/argv/light-novel-library_Wenku8_Android/eclipse-android.src.org.mewx.lightnovellibrary.util/LightCache_1/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.LightCache.yml.log
+sv-benchmarks/java/argv/light-novel-library_Wenku8_Android/eclipse-android-old.LightNovelLibrary.src.org.mewx.lightnovellibrary.util/LightCache/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.LinkPreview.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.ui.Components.Paint.Views/LinkPreview/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int18 == CONST_1 &&
+bool15 != CONST_0 &&
+bool14 == CONST_0 &&
+bool25 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Location.yml.log
+sv-benchmarks/java/argv/document-management-system/src.main.java.com.openkm.frontend.client.util/Location/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (IndexOf_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.LuceneSearchResult.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.entity/LuceneSearchResult/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (Length_1_ - CONST_6)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Main.yml.log
+sv-benchmarks/java/argv/Thanox/android.android_framework.dex-maker.src.main.java.com.android.dx.command.dump/Main/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: byte1 < CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseCheck.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseCheck/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseClear.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseClear/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseConfig.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseConfig/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int2 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseHeartbeat.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseHeartbeat/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int1 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseOnOff.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseOnOff/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseReload.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseReload/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseRollback.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseRollback/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseShow.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseShow/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParseStop.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParseStop/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ManagerParse.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.parser/ManagerParse/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (CharAt(CONST_0)_1_ - CONST_32) == CONST_0 &&
+CONST_0 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Markup.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-core.src.main.java.org.openpdf.text.html/Markup/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (CharAt(CONST_0)_1_ - CONST_43) == CONST_0 &&
+CONST_0 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MergeAdapter.yml.log
+sv-benchmarks/java/argv/drill/exec.java-exec.src.main.java.org.apache.drill.exec.compile/MergeAdapter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= lastIndexOfChar_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MessagePreviewParams.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.messenger/MessagePreviewParams/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool28 != CONST_0 &&
+CONST_0 < int24
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MethodELProcessor.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.el/MethodELProcessor/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: CONST_0 >= int32 &&
+Length_10_ != CONST_0 &&
+Length_9_ != CONST_0 &&
+Length_8_ != CONST_0 &&
+Length_7_ != CONST_0 &&
+Length_6_ != CONST_0 &&
+Length_5_ != CONST_0 &&
+Length_4_ != CONST_0 &&
+Length_3_ != CONST_0 &&
+Length_2_ != CONST_0 &&
+Length_1_ != CONST_0 &&
+Length_0_ != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ModuleAttribution.yml.log
+sv-benchmarks/java/argv/countly-sdk-android/sdk.src.main.java.ly.count.android.sdk/ModuleAttribution/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool8 == CONST_0 &&
+Length_2_ != CONST_0 &&
+Length_1_ != CONST_0 &&
+Length_0_ != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ModuleDeviceId.yml.log
+sv-benchmarks/java/argv/countly-sdk-android/sdk.src.main.java.ly.count.android.sdk/ModuleDeviceId/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool7 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MoreConfigDefaults.yml.log
+sv-benchmarks/java/argv/glowroot/common2.src.main.java.org.glowroot.common2.config/MoreConfigDefaults/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: LastIndexOf_0_ != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Mutf8.yml.log
+sv-benchmarks/java/argv/Thanox/android.android_framework.dex-maker.src.main.java.com.android.dex/Mutf8/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.MyStringEscaper.yml.log
+sv-benchmarks/java/argv/Qualitis/util.src.main.java.com.webank.wedatasphere.qualitis.util/MyStringEscaper/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NacosServiceNotify.yml.log
+sv-benchmarks/java/argv/Sermant/sermant-plugins.sermant-service-registry.dubbo-registry-service.src.main.java.io.sermant.dubbo.registry.service/NacosServiceNotify/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool4 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NameUtils.yml.log
+sv-benchmarks/java/argv/forest/forest-core.src.main.java.com.dtflys.forest.utils/NameUtils/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NetworkFile.yml.log
+sv-benchmarks/java/argv/AnExplorer/app.src.main.java.dev.dworks.apps.anexplorer.network/NetworkFile/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: lastIndexOfChar_2_ == CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NoticeFilesTest.yml.log
+sv-benchmarks/java/argv/jersey/tests.release-test.src.test.java.org.glassfish.jersey.test.artifacts/NoticeFilesTest/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.NumberParseUtil.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.function/NumberParseUtil/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.OracleTranslator.yml.log
+sv-benchmarks/java/argv/diboot/diboot-core.src.main.java.com.diboot.core.util.sql/OracleTranslator/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool10 != CONST_0 &&
+bool4 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.OrmQueryDetailParser.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.querydefn/OrmQueryDetailParser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool1 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PageSqlKit.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.plugin.activerecord/PageSqlKit/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: CONST_7 < (Length_0_ - CONST_5)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PApplet.yml.log
+sv-benchmarks/java/argv/Arduino/arduino-core.src.processing.app.legacy/PApplet/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_10.yml.log
+sv-benchmarks/java/argv/owlapi/parsers.src.main.java.org.semanticweb.owlapi.rdf.turtle.parser/ParseException_10/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_1.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.semgraph.semgrex/ParseException_1/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_2.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.trees.tregex.tsurgeon/ParseException_2/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_3.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.trees.tregex/ParseException_3/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_5.yml.log
+sv-benchmarks/java/argv/owlapi/compatibility.src.main.java.org.coode.owlapi.obo12.parser/ParseException_5/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_6.yml.log
+sv-benchmarks/java/argv/owlapi/parsers.src.main.java.org.semanticweb.owlapi.dlsyntax.parser/ParseException_6/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_7.yml.log
+sv-benchmarks/java/argv/owlapi/parsers.src.main.java.org.semanticweb.owlapi.functional.parser/ParseException_7/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_8.yml.log
+sv-benchmarks/java/argv/owlapi/parsers.src.main.java.org.semanticweb.owlapi.krss1.parser/ParseException_8/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException_9.yml.log
+sv-benchmarks/java/argv/owlapi/parsers.src.main.java.org.semanticweb.owlapi.krss2.parser/ParseException_9/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseException.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.ling.tokensregex.parser/ParseException/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ParseFetchConfig.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.grammer/ParseFetchConfig/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PartitionByDate.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.route.function/PartitionByDate/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PathToJavaClassConverter.yml.log
+sv-benchmarks/java/argv/pitest/pitest-maven.src.main.java.org.pitest.maven/PathToJavaClassConverter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (lastIndexOfChar_0_ + CONST_1) &&
+lastIndexOfChar_0_ >= CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PdfChunk.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-core.src.main.java.org.openpdf.text.pdf/PdfChunk/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int9 < Length_0_ &&
+int5 <= CONST_8238 &&
+int5 >= CONST_8234 &&
+int5 > CONST_8207 &&
+int5 >= CONST_8203
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PDFStringUtil.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-renderer.src.main.java.org.openpdf.renderer/PDFStringUtil/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PermissionParser.yml.log
+sv-benchmarks/java/argv/glowroot/common2.src.main.java.org.glowroot.common2.config/PermissionParser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PGMImage.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.messenger.wallpaper.pgm/PGMImage/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PhoneRule_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.PhoneFormat/PhoneRule_1/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PhoneRule.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.PhoneFormat/PhoneRule/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PlantUMLImporter.yml.log
+sv-benchmarks/java/argv/java/structurizr-import.src.main.java.com.structurizr.importer.diagrams.plantuml/PlantUMLImporter/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PlatformTypeConverter.yml.log
+sv-benchmarks/java/argv/ebean/ebean-ddl-generator.src.main.java.io.ebeaninternal.dbmigration.ddlgeneration.platform.util/PlatformTypeConverter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_3_ >= IndexOf2_4_ &&
+IndexOf2_4_ > CONST_-1 &&
+Length_3_ >= int2 &&
+Length_3_ >= (lastIndexOfChar_2_ + CONST_1) &&
+(lastIndexOfChar_2_ + CONST_1) < Length_3_ &&
+lastIndexOfChar_2_ != CONST_-1 &&
+lastIndexOfChar_1_ == CONST_-1 &&
+IndexOf_0_ > CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.poorAuth2_Main.yml.log
+sv-benchmarks/java/argv/SecurityShepherd/src.MobileShepherd.MobileShepherd.app.src.main.java.com.mobshep.mobileshepherd/poorAuth2_Main/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.PostgreSqlDataSourceInfo.yml.log
+sv-benchmarks/java/argv/datavines/datavines-connector.datavines-connector-plugins.datavines-connector-postgresql.src.main.java.io.datavines.connector.plugin/PostgreSqlDataSourceInfo/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ProxyUserSSOUtils.yml.log
+sv-benchmarks/java/argv/DataSphereStudio/dss-standard.sso-standard.sso-integration-standard.src.main.java.com.webank.wedatasphere.dss.standard.sso.utils/ProxyUserSSOUtils/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.QueryTestUtil.yml.log
+results-verified/z3/logfiles/SV-COMP26_no-runtime-exception.QueryTestUtil.yml.log
+sv-benchmarks/java/argv/drill/exec.java-exec.src.test.java.org.apache.drill.test/QueryTestUtil/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int1 > (int2 + int1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RedirectRender.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.render/RedirectRender/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: IndexOf_2_ == CONST_-1 &&
+bool5 != CONST_0 &&
+IndexOf_1_ > CONST_5 &&
+IndexOf_0_ != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RegexPartialAttribute.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.semgraph.semgrex/RegexPartialAttribute/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Resin.yml.log
+sv-benchmarks/java/argv/JYso/src.main.java.com.qi4l.JYso.gadgets/Resin/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: IndexOf_2_ >= CONST_0 &&
+CONST_0 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ResizeCommand.yml.log
+sv-benchmarks/java/argv/drill/drill-yarn.src.main.java.org.apache.drill.yarn.client/ResizeCommand/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ResponseTest.yml.log
+sv-benchmarks/java/argv/jersey/tests.e2e.src.test.java.org.glassfish.jersey.tests.api/ResponseTest/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool4 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RouterTest.yml.log
+sv-benchmarks/java/argv/Sermant/sermant-integration-tests.dubbo-test.dubbo-integration-test.src.test.java.io.sermant.integration.router/RouterTest/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RwSplitServerParseSelect.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/RwSplitServerParseSelect/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RwSplitServerParseStart.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/RwSplitServerParseStart/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int1 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.RwSplitServerParse.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/RwSplitServerParse/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (CharAt(CONST_0)_1_ - CONST_9) == CONST_0 &&
+CONST_0 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ScriptPrepareParse.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ScriptPrepareParse/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int1 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SearchCounterView_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.ui.Components/SearchCounterView_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool14 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SearchCounterView.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.ui.Components/SearchCounterView/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool14 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SecorConfig.yml.log
+sv-benchmarks/java/argv/secor/src.main.java.com.pinterest.secor.common/SecorConfig/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SeparatorConverter.yml.log
+sv-benchmarks/java/argv/jpmml-evaluator/pmml-evaluator-example.src.main.java.org.jpmml.evaluator.example/SeparatorConverter/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ServerParseSelect.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ServerParseSelect/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ServerParseShow.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ServerParseShow/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (CharAt(int1)_1_ - CONST_9) == CONST_0 &&
+int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ServerParseStart.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ServerParseStart/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: int1 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:390)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ServerParseValidations.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ServerParseValidations/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int1 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ServerRunner.yml.log
+sv-benchmarks/java/argv/SikuliX1/IDE.src.main.java.org.sikuli.support.runner/ServerRunner/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool14 != CONST_0 &&
+bool13 != CONST_0 &&
+bool12 != CONST_0 &&
+bool9 != CONST_0 &&
+bool7 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ShardingServerParse.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.server.parser/ShardingServerParse/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (CharAt(CONST_0)_1_ - CONST_9) == CONST_0 &&
+CONST_0 < Length_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ShortenedThrowableConverter.yml.log
+sv-benchmarks/java/argv/logstash-logback-encoder/src.main.java.net.logstash.logback.stacktrace/ShortenedThrowableConverter/Main.java
+java.lang.RuntimeException: Unhandled StringComparator:  notinteger 
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:137)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:32)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SongInformation.yml.log
+sv-benchmarks/java/argv/beatoraja/src.bms.player.beatoraja.song/SongInformation/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: %NonLinInteger% (Length_0_ % CONST_10) != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SongUtils.yml.log
+sv-benchmarks/java/argv/beatoraja/src.bms.player.beatoraja.song/SongUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= (Length_0_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SplitName.yml.log
+sv-benchmarks/java/argv/ebean/ebean-api.src.main.java.io.ebean.util/SplitName/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SqlServerTranslator.yml.log
+sv-benchmarks/java/argv/diboot/diboot-core.src.main.java.com.diboot.core.util.sql/SqlServerTranslator/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool15 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StopCommand.yml.log
+sv-benchmarks/java/argv/drill/drill-yarn.src.main.java.org.apache.drill.yarn.client/StopCommand/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 != CONST_0 &&
+bool1 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StringBuilderUtils.yml.log
+sv-benchmarks/java/argv/jersey/core-common.src.main.java.org.glassfish.jersey.message.internal/StringBuilderUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StringDictionary.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.ie.machinereading.common/StringDictionary/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool6 != CONST_0 &&
+bool3 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StringEncoding.yml.log
+sv-benchmarks/java/argv/janusgraph/janusgraph-core.src.main.java.org.janusgraph.util.encoding/StringEncoding/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StringExt.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.template.ext.extensionmethod/StringExt/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool1 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.StrKit.yml.log
+sv-benchmarks/java/argv/jfinal/src.main.java.com.jfinal.kit/StrKit/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SuggestEmojiView_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.org.telegram.ui.Components/SuggestEmojiView_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int11 != int12 &&
+bool10 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SuggestEmojiView.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.org.telegram.ui.Components/SuggestEmojiView/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int14 != int15 &&
+bool13 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.SystemProfilerParser.yml.log
+sv-benchmarks/java/argv/Arduino/arduino-core.src.processing.app.macosx/SystemProfilerParser/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TagRouterAzTest.yml.log
+sv-benchmarks/java/argv/Sermant/sermant-integration-tests.spring-test.spring-integration-test.src.test.java.io.sermant.integration.router/TagRouterAzTest/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool1 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TaintMethodAdapter.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.me.n1ar4.jar.analyzer.taint/TaintMethodAdapter/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: int6 != int13
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TestTagProjection.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.parser.lexparser/TestTagProjection/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError_1.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.semgraph.semgrex/TokenMgrError_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError_2.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.trees.tregex.tsurgeon/TokenMgrError_2/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError_3.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.trees.tregex/TokenMgrError_3/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError_4.yml.log
+sv-benchmarks/java/argv/freemarker/freemarker-core.src.main.java.freemarker.core/TokenMgrError_4/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError_5.yml.log
+sv-benchmarks/java/argv/owlapi/compatibility.src.main.java.org.coode.owlapi.obo12.parser/TokenMgrError_5/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TokenMgrError.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.ling.tokensregex.parser/TokenMgrError/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool0 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TreeCollinizer.yml.log
+sv-benchmarks/java/argv/CoreNLP/src.edu.stanford.nlp.parser.lexparser/TreeCollinizer/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: (int2 & CONST_1) != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TriggeredWarp.yml.log
+sv-benchmarks/java/argv/delverengine/core.src.main.java.com.interrupt.dungeoneer.entities.triggers/TriggeredWarp/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool8 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TtmlNode_1.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.com.google.android.exoplayer2.text.ttml/TtmlNode_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool11 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.TtmlNode.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.com.google.android.exoplayer2.text.ttml/TtmlNode/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool11 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UriUtil_1.yml.log
+sv-benchmarks/java/argv/Nullgram/TMessagesProj.src.main.java.com.google.android.exoplayer2.util/UriUtil_1/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (IndexOf_1_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UriUtil_2.yml.log
+sv-benchmarks/java/argv/chatAir/TMessagesProj.src.main.java.com.google.android.exoplayer2.util/UriUtil_2/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (IndexOf_1_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UriUtil.yml.log
+sv-benchmarks/java/argv/CatVodSpider/app.src.main.java.com.github.catvod.utils/UriUtil/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (IndexOf_1_ + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UrlBuilder.yml.log
+sv-benchmarks/java/argv/docker-maven-plugin/src.main.java.io.fabric8.maven.docker.access/UrlBuilder/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UrlInfo_1.yml.log
+sv-benchmarks/java/argv/jar-analyzer/src.main.java.com.n1ar4.agent.dto/UrlInfo_1/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= LastIndexOf_2_ &&
+Length_1_ >= LastIndexOf_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UrlInfo.yml.log
+sv-benchmarks/java/argv/jar-analyzer/agent.src.main.java.com.n1ar4.agent.dto/UrlInfo/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_1_ >= LastIndexOf_2_ &&
+Length_1_ >= LastIndexOf_0_
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.URLUTF8Encoder.yml.log
+sv-benchmarks/java/argv/OpenPDF/openpdf-html.src.main.java.org.openpdf.simple.extend/URLUTF8Encoder/Main.java
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UrlUtils_2.yml.log
+sv-benchmarks/java/argv/zfile/src.main.java.im.zhaojun.zfile.core.util/UrlUtils_2/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool4 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.UtilLocation.yml.log
+sv-benchmarks/java/argv/ebean/ebean-core.src.main.java.io.ebeaninternal.server.profile/UtilLocation/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_5_ >= (lastIndexOfChar2_4_ + CONST_1) &&
+lastIndexOfChar2_4_ > CONST_-1 &&
+lastIndexOfChar_3_ > CONST_-1 &&
+lastIndexOfChar_2_ == CONST_-1 &&
+lastIndexOfChar_1_ > CONST_-1 &&
+lastIndexOfChar_0_ > CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.V09Support.yml.log
+sv-benchmarks/java/argv/glowroot/central.src.main.java.org.glowroot.central.v09support/V09Support/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: LastIndexOf2_3_ == CONST_-1 &&
+LastIndexOf2_1_ == CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.VersionParser.yml.log
+sv-benchmarks/java/argv/BilibiliDown/src.nicelee.bilibili.parsers.impl/VersionParser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool3 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ViewMetaParser.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.meta/ViewMetaParser/Main.java
+java.lang.RuntimeException: Unhandled IntegerExpression: (int2 + CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:521)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:479)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:351)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.WebappProperty.yml.log
+sv-benchmarks/java/argv/camunda-bpm-platform/spring-boot-starter.starter.src.main.java.org.camunda.bpm.spring.boot.starter.property/WebappProperty/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1) &&
+Length_0_ != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.Wenku8Parser.yml.log
+sv-benchmarks/java/argv/light-novel-library_Wenku8_Android/studio-android.LightNovelLibrary.app.src.main.java.org.mewx.wenku8.global.api/Wenku8Parser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_2_ >= IndexOf2_1_ &&
+bool3 != CONST_0 &&
+IndexOf2_1_ != CONST_-1 &&
+IndexOf_0_ != CONST_-1
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.YamlFrontMatterBlockParser.yml.log
+sv-benchmarks/java/argv/commonmark-java/commonmark-ext-yaml-front-matter.src.main.java.org.commonmark.ext.front.matter.internal/YamlFrontMatterBlockParser/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.YarnUtils.yml.log
+sv-benchmarks/java/argv/datavines/datavines-common.src.main.java.io.datavines.common.utils/YarnUtils/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool2 == CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ZkSender.yml.log
+sv-benchmarks/java/argv/dble/src.main.java.com.actiontech.dble.cluster.zkprocess/ZkSender/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint with SymbolicLengthInteger and non-IntegerConstant: Length_0_ >= (Length_0_ - CONST_1)
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:379)
+
+results-verified/spf-astr/logfiles/SV-COMP26_no-runtime-exception.ZProxy.yml.log
+sv-benchmarks/java/argv/jeromq/jeromq-core.src.main.java.org.zeromq/ZProxy/Main.java
+java.lang.RuntimeException: Unhandled Numeric Constraint: bool12 == CONST_0 &&
+bool15 != CONST_0 &&
+bool13 != CONST_0 &&
+bool10 != CONST_0 &&
+bool6 != CONST_0 &&
+bool9 != CONST_0 &&
+bool7 != CONST_0 &&
+bool4 != CONST_0 &&
+bool0 != CONST_0 &&
+bool3 != CONST_0 &&
+bool1 != CONST_0
+	at edu.boisestate.cs.util.ConstraintTranslator.translate(ConstraintTranslator.java:395)
+
