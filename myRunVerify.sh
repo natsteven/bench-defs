@@ -42,7 +42,6 @@ OUTPUT_DIR="$RESULTS/$TIMESTAMP".results
 LOGS="$OUTPUT_DIR/spf.logfiles"
 UTIL="$OUTPUT_DIR/util"
 mkdir -p "$OUTPUT_DIR"
-mkdir -p "$LOGS"
 mkdir -p "$UTIL"
 
 mv "$RESULTS"/$VERIFIER.* "$UTIL"
