@@ -2,21 +2,11 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
 <benchmark tool="spf" displayName="SPF">
 
-
-    <rundefinition name="String-MAS">
-        <option>--string-dp</option>
-        <option>MAS</option>
-        <tasks name="Java.no-runtime-exception.Main">
-            <includesfile>Strings-test.set</includesfile>
-            <propertyfile>sv-benchmarks/java/properties/no-runtime-exception.prp</propertyfile>
-        </tasks>
-    </rundefinition>
-
     <rundefinition name="String-z3">
         <option>--string-dp</option>
         <option>z3str3</option>
         <tasks name="Java.no-runtime-exception.Main">
-            <includesfile>Strings-test.set</includesfile>
+            <includesfile>Strings.set</includesfile>
             <propertyfile>sv-benchmarks/java/properties/no-runtime-exception.prp</propertyfile>
         </tasks>
     </rundefinition>

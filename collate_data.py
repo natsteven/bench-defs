@@ -14,7 +14,7 @@ solver_results = pd.read_csv(results_dir + "solver-metrics.csv")
 
 ## get the spf recorded timings etc
 z3_spf = pd.read_table(results_dir + "util/spf.results.z3.csv", header=[0,1,2], index_col=0)
-astr_spf = pd.read_table(results_dir + "util/spf.results.MAS.csv", header=[0,1,2], index_col=0)
+# astr_spf = pd.read_table(results_dir + "util/spf.results.MAS.csv", header=[0,1,2], index_col=0)
 
 ## make them nice for merging
 def process_spf_results(spf_df, solver_name):
