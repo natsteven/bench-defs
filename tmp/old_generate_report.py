@@ -1,14 +1,7 @@
-#!.venv/bin/python
-
-import sys
+import os
 import pandas as pd
 
-if len(sys.argv) != 2:
-    print("Provide results directory as argument")
-    exit(1)
-
-results_dir = sys.argv[1]
-df = pd.read_csv(results_dir + "combined_results.csv")
+df = pd.read_csv("combined_results.csv")
 # weird = df[df['Z3-calls'] != df['ASTR-calls']]
 # print(weird)
 
@@ -51,24 +44,10 @@ html_out = [
 """
 ]
 
-solver_columns = [
-    "bench",
-    "astr-time (ms)",
-    "astr-error",
-    "z3-time (ms)",
-    "z3-error",
-    "spf-error",
-]
-spf_columns = [
-    "spf-astr-cputime (s)",
-    "spf-astr-walltime (s)",
-    "astr-status",
-    "spf-z3-cputime (s)",
-    "spf-z3-walltime (s)",
-    "z3-status",
-]
-data_columns = solver_columns + spf_columns
-link_columns = ["astr-log", "z3-log", "benchmark"]
+data_columns = ["bench","ASTR-time (ms)","ASTR-calls","ASTR-error","SPF-error","Z3-time (ms)","Z3-calls","Z3-error","z3-status","astr-status"]
+spf_columns = ["spf-astr-cputime (s)", "spf-astr-walltime (s)", "spf-z3-cputime (s)", "spf-z3-walltime (s)"]
+data_columns = data_columns + spf_columns
+link_columns = ["ASTR Log", "Z3 Log","Bench"]
 headers = data_columns + link_columns
 
 # Create a single, properly formatted <thead> block
@@ -85,12 +64,13 @@ html_out.append("<tr class='filter-row'>")
 for i, header in enumerate(headers):
     # Only add the 'filterable' class if it's a data column
     if i < len(data_columns) - 4:
-        html_out.append("<th class='filterable'></th>")
+        html_out.append("<th class='filterable'></th>") 
     else:
-        html_out.append("<th></th>")  # Leave blank for link columns
+        html_out.append("<th></th>") # Leave blank for link columns
 html_out.append("</tr>")
 
 html_out.append("</thead>")
+# (Make sure to delete the old <tfoot> loop you had underneath as well, we don't need it!)
 
 html_out.append("<tbody>")
 
@@ -119,13 +99,7 @@ html_out.append("<tbody>")
 #     return f"<span class='missing'>No source found</span>"
 #
 def strip_html_tags(text):
-    return (
-        text.replace("<a href='", "")
-        .replace("' target='_blank'>", "")
-        .replace("Source</a>", "")
-        .replace("Bench</a>", "")
-    )
-
+    return text.replace("<a href='","").replace("' target='_blank'>","").replace("Source</a>","").replace("Bench</a>","")
 
 def log_html(path, solver_name):
     if path:
@@ -133,26 +107,24 @@ def log_html(path, solver_name):
     else:
         return f"<span class='missing'>No log found</span>"
 
-
 def bench_html(path):
     if path:
         return f"<a href='{path}' target='_blank'>Bench</a>"
     else:
         return f"<span class='missing'>No bench found</span>"
 
-
 for index, row in df.iterrows():
-    # bench_name = str(row["bench"])
+    bench_name = str(row["bench"])
     # if bench_name not in nice:
     #     continue
     # if row["Z3-calls"] == row["ASTR-calls"]:
-    # continue
+        # continue
     html_out.append("<tr>")
 
     # bad=False
     # if row["Z3-calls"] != row["ASTR-calls"]:
     #     print(bench_name)
-    # bad=True
+        # bad=True
 
     # Add standard data columns
     for col in data_columns:
@@ -162,9 +134,9 @@ for index, row in df.iterrows():
         #     bad=True
 
     # Add the interactive log links
-    astr_log = log_html(row["astr-log"], "astr")
-    z3_log = log_html(row["z3-log"], "z3")
-    bench_path = bench_html(row["benchmark"])
+    astr_log=log_html(row["astr-log"], 'astr')
+    z3_log=log_html(row["z3-log"], 'z3')
+    bench_path=bench_html(row["benchmark"])
     html_out.append(f"<td>{astr_log}</td>")
     html_out.append(f"<td>{z3_log}</td>")
     html_out.append(f"<td>{bench_path}</td>")
@@ -223,7 +195,7 @@ html_out.append("""
 """)
 
 # 6. Write to output file
-with open(results_dir + "combined_report.html", "w", encoding="utf-8") as f:
+with open("combined_report.html", "w", encoding="utf-8") as f:
     f.write("\n".join(html_out))
 
-print("Successfully generated combined_solver_report.html!")
+# print("Successfully generated combined_solver_report.html!")
