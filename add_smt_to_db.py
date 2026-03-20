@@ -1,7 +1,7 @@
 import sqlite3
-import csv
 import os
 import re
+import json
 
 # 1. Database Setup
 DB_FILE = 'results_database.db'
@@ -9,6 +9,7 @@ DB_FILE = 'results_database.db'
 def parse_log_file_queries(filepath):
     """
     Parses an SMT log file and returns a list of dictionaries containing query info.
+    Handles both Z3 and ASTR result formatting.
     """
     extracted_queries = []
     
@@ -20,49 +21,52 @@ def parse_log_file_queries(filepath):
         content = f.read()
 
     # Regex breakdown:
-    # 1. Finds the time: "Solver Time (ms):71" -> Group 1
-    # 2. Skips the asterisks and grabs the query text on the single line -> Group 2
-    # 3. Grabs the boolean status -> Group 3
-    # 4. Grabs everything after the status until it hits the next block of asterisks -> Group 4 (Model)
+    # 1. Grabs the query text -> Group 1
+    # 2. Uses \*{10,} to jump over the divider asterisks
+    # 3. Grabs the entire raw result block -> Group 2
+    # 4. Jumps over the next divider asterisks
+    # 5. Grabs the solver name (e.g., "Z3str3" or "ASTR") -> Group 3
+    # 6. Grabs the time -> Group 4
     block_pattern = re.compile(
-        r"Solver Time \(ms\):(\d+(?:\.\d+)?)\s*\**\s*"
-        r"SMT QUERY:(.*?)\s+"
-        r"Satisfiable:\s*(true|false)\s*"
-        r"(.*?)(?=\s*\*{10,}|$)",
+        r"SMT QUERY:(.*?)\s*\*{10,}\s*"
+        r"(.*?)\s*\*{10,}\s*"
+        r"(.*?)\s*Solver Time \(ms\):(\d+(?:\.\d+)?)",
         re.DOTALL
     )
 
     for match in block_pattern.finditer(content):
-        # 1. Extract raw regex groups
-        time_ms = float(match.group(1))
-        raw_query = match.group(2)
-        status_bool = match.group(3)
-        raw_model = match.group(4).strip()
+        # 1. Extract raw blocks
+        raw_query = match.group(1).strip()
+        raw_result = match.group(2).strip()
+        solver_name = match.group(3).strip()
+        time_ms = float(match.group(4))
         
-        # 2. Clean up the query
-        # Replace 1 or more occurrences of "||" with a single newline
-        # (Using (\|\|)+ ensures we don't accidentally replace a single SMT '|' symbol if one exists)
+        #  Clean up the query (Replace || with newlines)
         clean_query = re.sub(r'(\|\|)+', '\n', raw_query).strip()
         
-        # 3. Map status to 'sat' or 'unsat'
-        status = "sat" if status_bool == "true" else "unsat"
+        status = "unknown"
+        model = None
         
-        # 4. Handle the model
-        # If unsat, the model text is likely empty, but we enforce None/NULL just to be safe
-        model = raw_model if status == "sat" else None
+        if raw_result.startswith("sat"):
+            status = "sat"
+            raw_model = re.sub(r"^sat,?\s*", "", raw_result).strip()
+            assignments = re.findall(r'(\w+):\s*"(.*?)"', raw_model)
+            models = {var: val for var, val in assignments}
+            model = json.dumps(models)
+        else:
+            status = "unsat"
 
-        # 5. Append to our list mapping directly to the keys your INSERT statement uses
         extracted_queries.append({
             'time_ms': time_ms,
             'query': clean_query,
             'status': status,
-            'model': model
+            'model': model if model else None, # Enforce NULL if model is empty
+            'solver': solver_name # Added this just in case you want to save it!
         })
 
     return extracted_queries
 
 def main():
-    # Connect to SQLite (this creates the file if it doesn't exist)
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     
