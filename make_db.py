@@ -4,31 +4,22 @@ import os
 import re
 
 # 1. Database Setup
-DB_FILE = 'results_database.db'
-CSV_FILE = '/home/nat/Repos/bench-defs/results/03-17_20-11.results/combined_results.csv'
+DB_FILE = 'database.db'
 
 def setup_database(cursor):
-    """Creates the tables if they don't exist."""
-    
-    # Table 1: The main benchmarks from your CSV
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS benchmarks (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             bench_name TEXT,
             benchmark_path TEXT,
             benchmark_source TEXT,
-            spf_time_astr_s REAL,
-            spf_time_z3_s REAL,
-            astr_time_ms REAL,
-            z3_time_ms REAL,
             astr_status TEXT,
             z3_status TEXT,
-            astr_log TEXT,
-            z3_log TEXT
         )
     ''')
 
-    # Table 2: The individual SMT queries linked to a benchmark
+
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS smt_queries (
             id INTEGER PRIMARY KEY AUTOINCREMENT,

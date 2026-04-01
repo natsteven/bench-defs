@@ -51,9 +51,9 @@ mv "$OUTPUT_DIR"/spf.*.logfiles/ "$LOGS"
 
 mv "$UTIL"/$VERIFIER.*.html "$OUTPUT_DIR/"
 # mv "$OUTPUT_DIR"/$VERIFIER.*.results.String-MAS.*.html "$OUTPUT_DIR"/spf.results.MAS.html
-mv "$OUTPUT_DIR"/$VERIFIER.*.results.String-z3.*.html "$OUTPUT_DIR"/spf.results.z3.html
+# mv "$OUTPUT_DIR"/$VERIFIER.*.results.String-z3.*.html "$OUTPUT_DIR"/spf.results.z3.html
 # mv "$UTIL"/$VERIFIER.*.results.String-MAS.*.csv "$OUTPUT_DIR"/spf.results.MAS.csv
-mv "$UTIL"/$VERIFIER.*.results.String-z3.*.csv "$OUTPUT_DIR"/spf.results.z3.csv
+# mv "$UTIL"/$VERIFIER.*.results.String-z3.*.csv "$OUTPUT_DIR"/spf.results.z3.csv
 
 # ./makeCacheInfo.sh "$OUTPUT_DIR"
 # ./calcSolverTimes.sh "$OUTPUT_DIR"

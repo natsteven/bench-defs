@@ -58,6 +58,8 @@ solver_columns = [
     "z3-time (ms)",
     "z3-error",
     "spf-error",
+    "astr_call",
+    "z3_call",
 ]
 spf_columns = [
     "spf-astr-cputime (s)",
