@@ -1,9 +1,17 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="cpachecker" displayName="CPAchecker" timelimit="1 min" hardtimelimit="2 min" memlimit="4 GB" cpuCores="2">
+<benchmark tool="cpachecker" displayName="CPAchecker" timelimit="1 min" hardtimelimit="2 min" memlimit="4 GB" cpuCores="4">
 
   <resultfiles>**/witness.*</resultfiles>
   <resultfiles>output/*</resultfiles>
+
+  <option name="--svcomp26" />
+  <option name="--heap" />
+  <option name="10000M" />
+  <option name="--benchmark" />
+  <option name="--timelimit" />
+  <option name="900 s" />
+
 
   <tasks name="argc-benchmarks">
     <includesfile>../sv-benchmarks/c/argc-benchmarks/unreach-call.set</includesfile>
